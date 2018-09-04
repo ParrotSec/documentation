@@ -1,0 +1,20 @@
+site_name: Parrot Documentation
+site_url: https://docs.parrotsec.org
+
+theme:
+    name: cyborg
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+
+nav:
+    - Parrot Website: https://www.parrotsec.org
+    - Introduction:
+        - 01.Introduction/01.what-is-parrot.md
+        - 01.Introduction/02.should-i-use-parrot.md
+    - Getting Started:
+        - 02.getting-started/01.download.md
+        - 02.getting-started/02.create-boot-device.md
+        - 02.getting-started/03.how-to-boot.md
+        - 02.getting-started/04.use-parrot.md

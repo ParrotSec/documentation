@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/01.Introduction/01.what-is-parrot/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/01.Introduction/02.should-i-use-parrot/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/02.getting-started/01.download/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/02.getting-started/02.create-boot-device/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/02.getting-started/03.how-to-boot/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/02.getting-started/04.use-parrot/</loc>
+     <lastmod>2018-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
