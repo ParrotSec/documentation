@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Parrot Documentation</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://docs.parrotsec.org/02.getting-started/05.install-parrot/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Install Parrot - Parrot Documentation</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".">Parrot Documentation</a>
+                    <a class="navbar-brand" href="../..">Parrot Documentation</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -61,36 +61,36 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="01.Introduction/01.what-is-parrot/">What is Parrot?</a>
+    <a href="../../01.Introduction/01.what-is-parrot/">What is Parrot?</a>
 </li>
                                     
 <li >
-    <a href="01.Introduction/02.should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../../01.Introduction/02.should-i-use-parrot/">Should I use Parrot?</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="02.getting-started/01.download/">Where to Download</a>
+    <a href="../01.download/">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="02.getting-started/02.create-boot-device/">Create Boot Device</a>
+    <a href="../02.create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="02.getting-started/03.how-to-boot/">How To Boot</a>
+    <a href="../03.how-to-boot/">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="02.getting-started/04.use-parrot/">Use Parrot</a>
+    <a href="../04.use-parrot/">Use Parrot</a>
 </li>
                                     
-<li >
-    <a href="02.getting-started/05.install-parrot/">Install Parrot</a>
+<li class="active">
+    <a href="./">Install Parrot</a>
 </li>
                                 </ul>
                             </li>
@@ -102,21 +102,37 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../04.use-parrot/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#work-in-progress">Work In Progress</a></li>
+        <li class="main "><a href="#want-to-contribute">Want to contribute?</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h2 id="work-in-progress">Work In Progress</h2>
+<p>This documentation is under construction, and our volunteers are working to write an upgraded installation tutorial.</p>
+<p>Please contact <a href="https://comunity.parrotsec.org">Our Support</a> if you need help with the installation process.</p>
+<p>Parrot uses the Debian Installer with a simplified configuration to install the system. If you know how the Debian Installer works, then you are already able to install Parrot. For everyone else, our community will provide full support while the new installation tutorial is finished.</p>
+<h2 id="want-to-contribute">Want to contribute?</h2>
+<p>This documentation page is maintained via <a href="https://dev.parrotsec.org/parrot/documentation">git</a> written in <a href="https://daringfireball.net/projects/markdown/syntax">markdown</a>, an idiot-proof, pretty easy to write, read and maintain markup language.</p>
+<p>If you want to contribute to this wiki page, log in to our <a href="https://dev.parrotsec.org">development portal</a> and make a push request to our <a href="https://dev.parrotsec.org/parrot/documentation">documentation git project</a></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -124,11 +140,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">

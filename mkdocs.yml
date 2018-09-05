@@ -12,7 +12,6 @@ theme:
         - bash
         - cpp
         - perl
-        -
 
 nav:
     - Parrot Website: https://www.parrotsec.org
@@ -25,4 +24,3 @@ nav:
         - 02.getting-started/03.how-to-boot.md
         - 02.getting-started/04.use-parrot.md
         - 02.getting-started/05.install-parrot.md
-    - Project internals:
