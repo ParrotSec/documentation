@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/02.getting-started/05.install-parrot/">
+        <link rel="canonical" href="https://docs.parrotsec.org/intro/what-is-parrot/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Install Parrot - Parrot Documentation</title>
+        <title>What is Parrot? - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -56,41 +56,54 @@
                             <li >
                                 <a href="https://www.parrotsec.org">Parrot Website</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../01.Introduction/01.what-is-parrot/">What is Parrot?</a>
+<li class="active">
+    <a href="./">What is Parrot?</a>
 </li>
                                     
 <li >
-    <a href="../../01.Introduction/02.should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../should-i-use-parrot/">Should I use Parrot?</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../01.download/">Where to Download</a>
+    <a href="../../getting-started/01.download/">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="../02.create-boot-device/">Create Boot Device</a>
+    <a href="../../getting-started/02.create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="../03.how-to-boot/">How To Boot</a>
+    <a href="../../getting-started/03.how-to-boot/">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="../04.use-parrot/">Use Parrot</a>
+    <a href="../../getting-started/04.use-parrot/">Use Parrot</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Install Parrot</a>
+<li >
+    <a href="../../getting-started/05.install-parrot/">Install Parrot</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parrot Project <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../mirror-list/">Mirror list</a>
+</li>
+                                    
+<li >
+    <a href="../../community/">Community</a>
 </li>
                                 </ul>
                             </li>
@@ -102,13 +115,13 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../04.use-parrot/">
+                            <li class="disabled">
+                                <a rel="next" >
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../should-i-use-parrot/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -120,19 +133,45 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#work-in-progress">Work In Progress</a></li>
-        <li class="main "><a href="#want-to-contribute">Want to contribute?</a></li>
+        <li class="main active"><a href="#the-parrot-system">The Parrot System</a></li>
+        <li class="main "><a href="#_1">&nbsp;</a></li>
+            <li><a href="#history-and-team">History and Team</a></li>
+            <li><a href="#who-is-it-designed-for">Who is it designed for</a></li>
+            <li><a href="#secure-sandboxed-environment">Secure Sandboxed Environment</a></li>
+            <li><a href="#software-store">Software Store</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="work-in-progress">Work In Progress</h2>
-<p>This documentation is under construction, and our volunteers are working to write an upgraded installation tutorial.</p>
-<p>Please contact <a href="https://comunity.parrotsec.org">Our Support</a> if you need help with the installation process.</p>
-<p>Parrot uses the Debian Installer with a simplified configuration to install the system. If you know how the Debian Installer works, then you are already able to install Parrot. For everyone else, our community will provide full support while the new installation tutorial is finished.</p>
-<h2 id="want-to-contribute">Want to contribute?</h2>
-<p>This documentation page is maintained via <a href="https://dev.parrotsec.org/parrot/documentation">git</a> written in <a href="https://daringfireball.net/projects/markdown/syntax">markdown</a>, an idiot-proof, pretty easy to write, read and maintain markup language.</p>
-<p>If you want to contribute to this wiki page, log in to our <a href="https://dev.parrotsec.org">development portal</a> and make a push request to our <a href="https://dev.parrotsec.org/parrot/documentation">documentation git project</a></p></div>
+<h2 id="the-parrot-system">The Parrot System</h2>
+<p><strong>Parrot</strong> (Parrot Security, ParrotOS, Parrot GNU/Linux) is a free and open source GNU/Linux distribution based on <a href="https://www.debian.org/releases/testing/">Debian Testing</a> designed for security experts, developers and privacy aware people.</p>
+<p>It includes a full portable arsenal for IT security and digital forensics operations, but it also includes everything you need to develop your own programs or protect your privacy while surfing the net.</p>
+<p>The operating system ships with the MATE desktop environment preinstalled and is available in several flavors to fit your needs.</p>
+<p><img src="/img/parrot.svg" width="200"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id="_1">&nbsp;</h2>
+<h3 id="history-and-team">History and Team</h3>
+<p>The first public release appeared on April 10th, 2013 as the result of the work of <strong>Lorenzo Faletra</strong> who continues to lead development.</p>
+<p>Originally developed as part of Frozenbox, the effort has grown to include a community of open source developers, professional security experts, advocates of digital rights, and Linux enthusiasts from all around the globe.</p>
+<p>The project is headquartered in Palermo, Italy and it is supported by an international team of experts and enthusiasts.</p>
+<hr />
+<h3 id="who-is-it-designed-for">Who is it designed for</h3>
+<p>The system is designed to be familiar for the security expert and easy to use for the new entry student, but it does not try to hide its internals as other general purpose distributions try to do.</p>
+<p><strong>Parrot can be used as a daily system</strong>, and it provides all the programs for the day to day tasks, including dedicated system flavors that don't ship security tools.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr />
+<h3 id="secure-sandboxed-environment">Secure Sandboxed Environment</h3>
+<p>People familiar with other pentest distributions may notice that Parrot is quite unique, as <strong>it does not allow direct root logins</strong> for safety reasons (root can only be used with sudo), and it provides its own sandbox system by combining <a href="https://firejail.wordpress.com">Firejail</a> and <a href="https://wiki.ubuntu.com/AppArmor">AppArmor</a> with custom security profiles.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr />
+<h3 id="software-store">Software Store</h3>
+<p>The system has its own applications repository including all the packages supported by Debian (more than 56000 packages available over 4 different architectures), plus many other applications and tools Debian can't provide yet, all of them are accessible directly from the APT package manager.</p>
+<p>Additionally, Parrot supports <a href="https://snapcraft.io">SNAP</a>, a new package distribution system that provides easy access to many other programs that GNU/Linux distributions don't always ship in their software archives. <a href="https://snapcraft.io/store">Take a look at the snap programs list</a>.</p>
+<p><a href="https://www.flatpak.org/">Flatpak</a> is an universal software store similar to snap. It can be installed from the Parrot official repository.</p>
+<p>Parrot supports Wine, a compatibility layer to run Windows applications in Linux environments.</p></div>
         </div>
 
         <footer class="col-md-12">

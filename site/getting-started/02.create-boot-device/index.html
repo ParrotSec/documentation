@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/02.getting-started/01.download/">
+        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/02.create-boot-device/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Where to Download - Parrot Documentation</title>
+        <title>Create Boot Device - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -61,11 +61,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../01.Introduction/01.what-is-parrot/">What is Parrot?</a>
+    <a href="../../intro/what-is-parrot/">What is Parrot?</a>
 </li>
                                     
 <li >
-    <a href="../../01.Introduction/02.should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../../intro/should-i-use-parrot/">Should I use Parrot?</a>
 </li>
                                 </ul>
                             </li>
@@ -73,12 +73,12 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">Where to Download</a>
+<li >
+    <a href="../01.download/">Where to Download</a>
 </li>
                                     
-<li >
-    <a href="../02.create-boot-device/">Create Boot Device</a>
+<li class="active">
+    <a href="./">Create Boot Device</a>
 </li>
                                     
 <li >
@@ -94,6 +94,19 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parrot Project <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../mirror-list/">Mirror list</a>
+</li>
+                                    
+<li >
+    <a href="../../community/">Community</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -103,12 +116,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../01.Introduction/02.should-i-use-parrot/">
+                                <a rel="next" href="../01.download/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../02.create-boot-device/">
+                                <a rel="prev" href="../03.how-to-boot/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -120,32 +133,35 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#parrot-security">Parrot Security</a></li>
-        <li class="main "><a href="#parrot-home">Parrot Home</a></li>
-        <li class="main "><a href="#netinstall-images">Netinstall Images</a></li>
-        <li class="main "><a href="#docker-templates">Docker templates</a></li>
+        <li class="main active"><a href="#the-iso-formats">The ISO Formats</a></li>
+        <li class="main "><a href="#how-not-to-create-a-parrot-usb-drive">How NOT to create a Parrot USB drive</a></li>
+        <li class="main "><a href="#how-to-create-a-parrot-usb-drives">How to create a Parrot USB drives</a></li>
+            <li><a href="#etcher">Etcher</a></li>
+            <li><a href="#dd">DD</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="parrot-security">Parrot Security</h2>
-<p>Parrot Security is our complete all-in-one environment for pentesting, privacy, digital forensics, reverse engineering and software development.</p>
-<p>The system includes a full arsenal of security oriented tools to cover many steps of the work of a pentester.</p>
-<h2 id="parrot-home">Parrot Home</h2>
-<p>Parrot Home is a special edition of Parrot designed for daily use, and it targets regular users who need a lightweight, always updated and beautiful system on their laptops or workstations.</p>
-<p>The distribution has the same look and feel of a regular Parrot environment and includes all the basic programs for daily work. Parrot Home also includes programs to chat privately, encrypt documents with the highest cryptographic standards or surf the net in a completely anonymous and secure way.</p>
-<p>The system can also be used as a starting point to build a very customized pentesting platform with only the bare needed tools, or you can use it to build your professional workstation by taking advantage of all the latest and most powerful technologies of Debian without hassle.</p>
-<h2 id="netinstall-images">Netinstall Images</h2>
-<p>Parrot offers netinstall images.</p>
-<p>Netinstall imges are special lightweight iso files containing only the installer.</p>
-<p>The installer is configured to partition the disk, establish an internet connection and install the system from scratch by downloading all the packages via internet.</p>
-<p>The netinstall image can be used to install only the headless Parrot Core, or it can be used to install different Desktop Environments.</p>
-<h2 id="docker-templates">Docker templates</h2>
-<p>Docker is a powerful containerization technology that allows the user to start multiple instances of a template and use them as isolated environments that can be destroyed and restarted in a matter of seconds.</p>
-<p>A full virtual machine usually requires more computer resources (ram, cpu time and storage), long installation and configuration times and maintenance.</p>
-<p>The purpose of Parrot for Docker is to easily offer the whole Parrot toolkit on top of every operating system supported by Docker (*NIX distributions, Mac OS and Windows) without all the negative effects of a full virtualized environment.</p>
-<p>You can fire up a Parrot container inside your existing system or using a cloud provider in just few seconds, and by using an extremely limited amount of resources (just the memory required by the individual tools you run).</p>
-<p>If you want to perform more tests, each in an isolated environment/workspace, you can start multiple instances from the same Parrot template.</p></div>
+<h1 id="the-iso-formats">The ISO Formats</h1>
+<p>ISO is a special file format that represents the content of a small storage device.</p>
+<p>The Parrot ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.</p>
+<p>You can use a special software like <a href="https://www.etcher.io">Etcher</a> to clone the content of the Parrot ISO to a USB drive and transform such USB drive into a full Parrot USB device.</p>
+<hr />
+<h1 id="how-not-to-create-a-parrot-usb-drive">How NOT to create a Parrot USB drive</h1>
+<p>The Parrot ISO uses the iso9660 format (also known as isohybrid). It is a special ISO format that contains not only the partition content, but also the partition table.</p>
+<p>Some ISO writing programs do not write the iso bit-per-bit into the usb drive at a low level. They create a custom partition table and just copy the file in the USB drive in an unofficial and non-standard way. This behavior is against what the isohybrid was created for, and may break core system functionalities and make the system uninstallable from such USB drives.</p>
+<p>Parrot users have <strong>NOT</strong> to use programs like <strong>unetbootin</strong>, or any program not isohybrid compliant.</p>
+<hr />
+<h1 id="how-to-create-a-parrot-usb-drives">How to create a Parrot USB drives</h1>
+<p>To create a Parrot bootable device you need a USB drive of at least 4gb for the security edition or 2gb for the home edition</p>
+<h2 id="etcher">Etcher</h2>
+<p><strong>Our official ISO Writing Tool is <a href="https://www.etcher.io">Etcher - www.etcher.io</a>.</strong></p>
+<p><strong>It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We suggest all our users to use it.</strong></p>
+<p><img alt="Etcher" src="../../img/etcher.png" /></p>
+<hr />
+<h2 id="dd">DD</h2>
+<p><strong>DD (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit.</strong></p>
+<p><img alt="DD" src="../../img/dd.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
