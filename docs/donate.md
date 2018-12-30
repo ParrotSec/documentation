@@ -1,5 +1,5 @@
 ---
-title: 'Partners'
+title: 'Donate'
 taxonomy:
     category:
         - docs
