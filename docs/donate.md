@@ -20,10 +20,6 @@ adopt us and support our work now!
 
 <html><a href="https://www.patreon.com/parrot" target="_blank" class="btn btn-primary">Donate with Patreon</a></html>
 
-<html>
-<br><br><br><br>
-</html>
-
 ## Paypal
 
 <html>
@@ -34,10 +30,6 @@ adopt us and support our work now!
 </html>
 
 ----
-
-<html>
-<br><br><br><br>
-</html>
 
 ## Bitcoin
 
@@ -61,9 +53,7 @@ Ethereum Address
 
 ETH: 0x64A449d5839813024861601720B173f562c8d3F8
 
-<html>
-<br><br><br><br>
-</html>
+----
 
 ## Gadgets
 <html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Frozenbox Store</a></html>
