@@ -20,9 +20,11 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ## Dasaweb
 
-<html><a href="https://www.dasaweb.net/" target="_blank" class="btn btn-primary"><img src="https://docs.parrotsec.org/lib/exe/fetch.php/dasaweb.png?w=400&tok=454005" type=image></a></html> is a hosting provider that collaborate with us and sponsors our Parrot Cloud project by selling Virtual Private Servers with Parrot Cloud pre-installed.
+<html><a href="https://www.dasaweb.net/" target="_blank" class="btn btn-primary"><img src="https://docs.parrotsec.org/lib/exe/fetch.php/dasaweb.png?w=400&tok=454005" type=image></a></html>
+<br>
+<html><a href="https://www.dasaweb.net/" target="_blank" class="btn btn-primary">Dasaweb</a></html> is a hosting provider that collaborate with us and sponsors our Parrot Cloud project by selling Virtual Private Servers with Parrot Cloud pre-installed.
 
-<html><a href="https://www.dasaweb.net/" target="_blank" class="btn btn-primary">Dasaweb</a></html> is also the main sponsor of most of the Parrot Community events in Italy.
+Dasaweb is also the main sponsor of most of the Parrot Community events in Italy.
 
 ***
 
