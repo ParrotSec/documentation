@@ -12,7 +12,7 @@ Economical contribution is fundamental for our project as all the servers needed
 
 ----
 
-# Adopt us on Patreon
+## Adopt us on Patreon
 
 We are now on Patreon to offer you a new way to contribute to our project
 
@@ -65,5 +65,5 @@ ETH: 0x64A449d5839813024861601720B173f562c8d3F8
 <br><br><br><br>
 </html>
 
-# Gadgets
-[[http://frozenbox.spreadshirt.net/|Frozenbox Store]]
+## Gadgets
+<html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Frozenbox Store</a></html>
