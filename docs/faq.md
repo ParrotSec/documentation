@@ -8,12 +8,12 @@ visible: true
 
 # Parrot Project Frequently Asked Questions
 
-## Why should i use parrot
+## Why should i use parrot?
 
 Penetration testing is a time consuming job, so is maintaining your tools up to date.
 We make it easier for professionals to accomplish tasks that should be automatized by reducing the time and efforts they have to put into them. 
 
-## What is the default live password
+## What is the default live password?
 
 Live user: user Live pass: toor
 ARM user: parrot ARM pass: toor
@@ -60,11 +60,11 @@ If you are not sure of what software is involved, or if you don't know how to co
 deb http://deb.parrotsec.org/parrot stable main contrib non-free
 #deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 
-## What is the mysql / mariadb / postgresql default password
+## What is the mysql / mariadb / postgresql default password?
 
 Read this post <html><a href="https://blog.parrotsec.org/reconfigure-mysql-mariadb-or-postgresql-passwords/" target="_blank" class="btn btn-primary">reconfigure the database password</a></html>.
 
-## The installer wants a CD/DVD but i am using a USB drive
+## The installer wants a CD/DVD but i am using a USB drive.
 
 If this happens, then you did something terribly wrong during the creation of the USB bootable device.
 This usually happens when you use a software that doesn't respect the isohybrid standards.
