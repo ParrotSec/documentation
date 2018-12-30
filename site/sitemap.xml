@@ -7,47 +7,52 @@
     </url>
     <url>
      <loc>https://docs.parrotsec.org/intro/what-is-parrot/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/intro/should-i-use-parrot/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/01.download/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/02.create-boot-device/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/03.how-to-boot/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/04.use-parrot/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/05.install-parrot/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/mirror-list/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/community/</loc>
-     <lastmod>2018-12-10</lastmod>
+     <lastmod>2018-12-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/team/</loc>
+     <lastmod>2018-12-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

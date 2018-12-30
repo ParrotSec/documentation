@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="https://docs.parrotsec.org/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Parrot Documentation</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="https://docs.parrotsec.org/team/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>The Parrot Team - Parrot Documentation</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -32,7 +32,7 @@
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".">Parrot Documentation</a>
+                    <a class="navbar-brand" href="..">Parrot Documentation</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -61,11 +61,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="intro/what-is-parrot/">What is Parrot?</a>
+    <a href="../intro/what-is-parrot/">What is Parrot?</a>
 </li>
                                     
 <li >
-    <a href="intro/should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../intro/should-i-use-parrot/">Should I use Parrot?</a>
 </li>
                                 </ul>
                             </li>
@@ -74,40 +74,40 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="getting-started/01.download/">Where to Download</a>
+    <a href="../getting-started/01.download/">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="getting-started/02.create-boot-device/">Create Boot Device</a>
+    <a href="../getting-started/02.create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="getting-started/03.how-to-boot/">How To Boot</a>
+    <a href="../getting-started/03.how-to-boot/">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="getting-started/04.use-parrot/">Use Parrot</a>
+    <a href="../getting-started/04.use-parrot/">Use Parrot</a>
 </li>
                                     
 <li >
-    <a href="getting-started/05.install-parrot/">Install Parrot</a>
+    <a href="../getting-started/05.install-parrot/">Install Parrot</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parrot Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="mirror-list/">Mirror list</a>
+    <a href="../mirror-list/">Mirror list</a>
 </li>
                                     
 <li >
-    <a href="community/">Community</a>
+    <a href="../community/">Community</a>
 </li>
                                     
-<li >
-    <a href="team/">The Parrot Team</a>
+<li class="active">
+    <a href="./">The Parrot Team</a>
 </li>
                                 </ul>
                             </li>
@@ -119,6 +119,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../community/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -127,43 +137,156 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#home">Home</a></li>
-            <li><a href="#need-help-contact-our-staff">Need help? Contact our Staff</a></li>
-            <li><a href="#debian-documentation">Debian Documentation</a></li>
+        <li class="main active"><a href="#core-team">Core Team</a></li>
+        <li class="main "><a href="#contributors">Contributors</a></li>
+        <li class="main "><a href="#special-thanks">Special Thanks</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="home">Home</h1>
-<p>For the Parrot Project homepage, visit <a href="https://parrotsec.org">parrotsec.org</a>.</p>
-<p>An important part of any operating system is documentation, the technical manuals that describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.</p>
-<p>The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.</p>
-<p><img alt="screenshot" src="img/screenshot.png" /></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h3 id="need-help-contact-our-staff">Need help? <a href="https://community.parrotsec.org">Contact our Staff</a></h3>
-<p>We have a staff of volunteers and community members who can help you
-troubleshooting system bugs and guiding you from the installation to the
-configuration and customization of the system.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h3 id="debian-documentation">Debian Documentation</h3>
-<p>The Parrot Project is based on top of the testing branch of Debian GNU/Linux, then most of the <a href="https://www.debian.org/doc">Debian Documentation</a> is valid for Parrot as well.</p>
-<ul>
-<li><a href="https://www.debian.org/doc/manuals/debian-handbook/">Debian Handbook</a>, the comprehensive user manual</li>
-<li><a href="https://www.debian.org/doc/manuals/debian-reference/">Debian Reference</a>, a terse user's guide with the focus on the shell command line</li>
-<li><a href="https://wiki.debian.org/">The Debian Wiki</a></li>
-</ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p></div>
+<p>The Parrot Project is a community-driven project.</p>
+<p>In this page we list people who gave a significant contribution to the project.</p>
+<h1 id="core-team">Core Team</h1>
+<table>
+<thead>
+<tr>
+<th align="center">nickname</th>
+<th align="left">full name</th>
+<th align="center">role(s)</th>
+<th align="right">email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">palinuro</td>
+<td align="left">Lorenzo Faletra</td>
+<td align="center">Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer</td>
+<td align="right">palinuro at parrotsec dot org</td>
+</tr>
+<tr>
+<td align="center">sheireen</td>
+<td align="left">Lisetta Ferrero</td>
+<td align="center">Core Dev</td>
+<td align="right">sheireen at parrotsec dot org</td>
+</tr>
+<tr>
+<td align="center">mibofra</td>
+<td align="left">Francesco Bonanno</td>
+<td align="center">ARM release dev<br>Sysadmin</td>
+<td align="right">mibofra at parrotsec dot org</td>
+</tr>
+<tr>
+<td align="center">nikksno</td>
+<td align="left">Nicolas North</td>
+<td align="center">Sysadmin<br>legal shit</td>
+<td align="right">nz at os dot vu</td>
+</tr>
+<tr>
+<td align="center">marafed</td>
+<td align="left">Federica Marasà</td>
+<td align="center">Graphic Designer</td>
+<td align="right">marafed at parrotsec dot org</td>
+</tr>
+</tbody>
+</table>
+<h1 id="contributors">Contributors</h1>
+<table>
+<thead>
+<tr>
+<th align="center">nickname</th>
+<th align="left">full name</th>
+<th align="center">role(s)</th>
+<th align="right">email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">gnugr</td>
+<td align="left">Vangelis Mouhtsis</td>
+<td align="center">Debian/MATE<br>Greek community</td>
+<td align="right">gnugr at parrotsec dot org</td>
+</tr>
+<tr>
+<td align="center">mastrobirraio</td>
+<td align="left">Pino Matranga</td>
+<td align="center">Website &amp; frontend</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">terabreik</td>
+<td align="left">Jose Gatica</td>
+<td align="center">Spanish Community</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="left">Tiago Teixeira</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="left">Andrea Costa</td>
+<td align="center">Webiste</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="left">Agent Reborn</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">meu</td>
+<td align="left">M. Emrah Ünsür</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">Tissy</td>
+<td align="left">Irene Pirrotta</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">Quietwalker</td>
+<td align="left">Irene Pirrotta</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">nemo</td>
+<td align="left">Sandipan Roy</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="special-thanks">Special Thanks</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Nanni Bassetti</td>
+</tr>
+<tr>
+<td align="left">Darix Deros (KNXSecurity)</td>
+</tr>
+<tr>
+<td align="left">Giancarlo Niccolai</td>
+</tr>
+<tr>
+<td align="left">Nathaniel Jones</td>
+</tr>
+<tr>
+<td align="left">John Draper (cap'n crunch)</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -171,11 +294,11 @@ configuration and customization of the system.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -243,8 +366,3 @@ configuration and customization of the system.</p>
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.3
-Build Date UTC : 2018-12-30 18:47:11
--->
