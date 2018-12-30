@@ -28,7 +28,7 @@ In this page we list people who gave a significant contribution to the project.
 |:----------------:|:----------------------|:---------------------:|---------------:|
 | mastrobirraio    | Pino Matranga         | Website contributor   | |
 |                  | Tiago Teixeira        | | |
-|                  | Andrea Costa          | Webiste contributor   | |
+|                  | Andrea Costa          | Website contributor   | |
 | Tissy            | Irene Pirrotta        | Former Package Manager | tissy at parrotsec dot org |
 | Quietwalker      | Manuel Di Vita        | Former free software licensing consultant | |
 
