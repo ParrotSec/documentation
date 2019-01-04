@@ -29,9 +29,13 @@ The documentation is still under construction, and all the Parrot users are invi
 ## Getting Started
 
 [Download](getting-started/download.md)
+
 [Create a boot device](getting-started/create-boot-device.md)
+
 [How to boot](getting-started/how-to-boot.md)
+
 [Use Parrot](getting-started/use-parrot.md)
+
 [Install Parrot](getting-started/install-parrot.md)
 
 
