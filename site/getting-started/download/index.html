@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/06.what-is-live-mode/">
+        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/download/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>What is live mode - Parrot Documentation</title>
+        <title>Where to Download - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -69,28 +69,32 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../01.download/">Where to Download</a>
+<li class="active">
+    <a href="./">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="../02.create-boot-device/">Create Boot Device</a>
+    <a href="../create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="../03.how-to-boot/">How To Boot</a>
+    <a href="../what-is-live-mode/">What is live mode</a>
 </li>
                                     
 <li >
-    <a href="../04.use-parrot/">Use Parrot</a>
+    <a href="../how-to-boot/">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="../05.install-parrot/">Install Parrot</a>
+    <a href="../use-parrot/">Use Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../install-parrot/">Install Parrot</a>
 </li>
                                 </ul>
                             </li>
@@ -109,7 +113,22 @@
 <li >
     <a href="../../team/">The Parrot Team</a>
 </li>
+                                    
+<li >
+    <a href="../../partners/">Project Partners</a>
+</li>
+                                    
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+                                    
+<li >
+    <a href="../../donate/">Donate</a>
+</li>
                                 </ul>
+                            </li>
+                            <li >
+                                <a href="../../faq/">F.A.Q.</a>
                             </li>
                         </ul>
 
@@ -119,6 +138,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../../intro/should-i-use-parrot/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../create-boot-device/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -127,20 +156,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#what-is-live-mode">What is live mode</a></li>
-        <li class="main "><a href="#default-username-and-password">Default username and password</a></li>
+        <li class="main active"><a href="#parrot-security">Parrot Security</a></li>
+        <li class="main "><a href="#parrot-home">Parrot Home</a></li>
+        <li class="main "><a href="#netinstall-images">Netinstall Images</a></li>
+        <li class="main "><a href="#docker-templates">Docker templates</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="what-is-live-mode">What is live mode</h2>
-<p>The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.</p>
-<p>This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory.</p>
-<p>Parrot OS offers the ability to install the OS while in the live environment, use all of its tools and even create a persistent live environment.</p>
-<p>To create a live boot device please read this page.
-To learn how to boot from the live media read this page instead.</p>
-<h2 id="default-username-and-password">Default username and password</h2>
-<p>In Parrot OS live environment the default username is user and the default password is toor.</p></div>
+<h2 id="parrot-security">Parrot Security</h2>
+<p>Parrot Security is our complete all-in-one environment for pentesting, privacy, digital forensics, reverse engineering and software development.</p>
+<p>The system includes a full arsenal of security oriented tools to cover many steps of the work of a pentester.</p>
+<h2 id="parrot-home">Parrot Home</h2>
+<p>Parrot Home is a special edition of Parrot designed for daily use, and it targets regular users who need a lightweight, always updated and beautiful system on their laptops or workstations.</p>
+<p>The distribution has the same look and feel of a regular Parrot environment and includes all the basic programs for daily work. Parrot Home also includes programs to chat privately, encrypt documents with the highest cryptographic standards or surf the net in a completely anonymous and secure way.</p>
+<p>The system can also be used as a starting point to build a very customized pentesting platform with only the bare needed tools, or you can use it to build your professional workstation by taking advantage of all the latest and most powerful technologies of Debian without hassle.</p>
+<h2 id="netinstall-images">Netinstall Images</h2>
+<p>Parrot offers netinstall images.</p>
+<p>Netinstall imges are special lightweight iso files containing only the installer.</p>
+<p>The installer is configured to partition the disk, establish an internet connection and install the system from scratch by downloading all the packages via internet.</p>
+<p>The netinstall image can be used to install only the headless Parrot Core, or it can be used to install different Desktop Environments.</p>
+<h2 id="docker-templates">Docker templates</h2>
+<p>Docker is a powerful containerization technology that allows the user to start multiple instances of a template and use them as isolated environments that can be destroyed and restarted in a matter of seconds.</p>
+<p>A full virtual machine usually requires more computer resources (ram, cpu time and storage), long installation and configuration times and maintenance.</p>
+<p>The purpose of Parrot for Docker is to easily offer the whole Parrot toolkit on top of every operating system supported by Docker (*NIX distributions, Mac OS and Windows) without all the negative effects of a full virtualized environment.</p>
+<p>You can fire up a Parrot container inside your existing system or using a cloud provider in just few seconds, and by using an extremely limited amount of resources (just the memory required by the individual tools you run).</p>
+<p>If you want to perform more tests, each in an isolated environment/workspace, you can start multiple instances from the same Parrot template.</p></div>
         </div>
 
         <footer class="col-md-12">

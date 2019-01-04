@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://docs.parrotsec.org/faq/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - Parrot Documentation</title>
+        <title>F.A.Q. - Parrot Documentation</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -74,23 +74,27 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../getting-started/01.download/">Where to Download</a>
+    <a href="../getting-started/download/">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/02.create-boot-device/">Create Boot Device</a>
+    <a href="../getting-started/create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/03.how-to-boot/">How To Boot</a>
+    <a href="../getting-started/what-is-live-mode/">What is live mode</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/04.use-parrot/">Use Parrot</a>
+    <a href="../getting-started/how-to-boot/">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/05.install-parrot/">Install Parrot</a>
+    <a href="../getting-started/use-parrot/">Use Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../getting-started/install-parrot/">Install Parrot</a>
 </li>
                                 </ul>
                             </li>
@@ -109,7 +113,22 @@
 <li >
     <a href="../team/">The Parrot Team</a>
 </li>
+                                    
+<li >
+    <a href="../partners/">Project Partners</a>
+</li>
+                                    
+<li >
+    <a href="../warrant-canary/">Warrant Canary</a>
+</li>
+                                    
+<li >
+    <a href="../donate/">Donate</a>
+</li>
                                 </ul>
+                            </li>
+                            <li class="active">
+                                <a href="./">F.A.Q.</a>
                             </li>
                         </ul>
 
@@ -119,6 +138,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../donate/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -156,26 +185,38 @@ Live pass: <strong>live</strong></p>
 <p>Parrot does not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use <strong>sudo</strong></p>
 <h2 id="how-can-i-upgrade-my-system">How can i upgrade my system?</h2>
 <p>There are several different ways to upgrade the parrot system</p>
-<p>1) First method
-Open a terminal window and launch the following command;
-<strong>sudo parrot-upgrade</strong></p>
-<p>2) Second method
-Open a terminal window and launch the following commands
-<strong>sudo apt update</strong>
-<strong>sudo apt full-upgrade</strong></p>
-<p>3) Third method
-Open System &gt; Administration &gt; Package Manager (synaptic)
-then click on the button to update the packages list.
-click on the other button to select the upgrades and finally apply the changes.</p>
+<p>1) First method</p>
+<p>Open a terminal window and launch the following command;</p>
+<p><code>sudo parrot-upgrade</code></p>
+<p>2) Second method</p>
+<p>Open a terminal window and launch the following commands</p>
+<p><code>sudo apt update
+sudo apt full-upgrade</code></p>
+<p>3) Third method</p>
+<p>Open System &gt; Administration &gt; Package Manager (synaptic)</p>
+<p>then click on the button to update the packages list.</p>
+<p>click on the other button to select the upgrades and finally apply the changes.</p>
 <h2 id="why-isnt-toolname-installed">Why isn't $toolname installed?</h2>
-<p>We have a set of requisites to check before a tool makes its way into our repositories such as:
-- is the tool actively being maintained?
-- does it have the necessary documentation?
-- is it FLOSS, FOSS or does its license allow redistribution?
-- are there other tools that do the same thing?
-- is there someone disposed to package and maintain it?
-and more[...];
-If the answers were “Yes” we're more than glad to take your request via our <a href="https://community.parrotsec.org/c/development">Community Portal</a>.</p>
+<p>We have a set of requisites to check before a tool makes its way into our repositories such as:</p>
+<ul>
+<li>
+<p>is the tool actively maintained?</p>
+</li>
+<li>
+<p>does it have the necessary documentation?</p>
+</li>
+<li>
+<p>is it FLOSS, FOSS or does its license allow redistribution?</p>
+</li>
+<li>
+<p>are there other tools that do the same thing?</p>
+</li>
+<li>
+<p>is there someone disposed to package and maintain it?</p>
+</li>
+</ul>
+<p>and more[...];</p>
+<p>If the answers were “Yes” we're more than glad to take your request via our <a href="https://community.parrotsec.org/c/development">Community Portal</a>.</p>
 <h2 id="where-can-bugs-be-submitted">Where can bugs be submitted?</h2>
 <p>If the bug involves a specific piece of software maintained by Parrot, then search the project on our <html><a href="https://dev.parrotsec.org/parrot" target="_blank" class="btn btn-primary">Dev Portal</a></html> and open an issue.</p>
 <p>If the bug involves a software package that is not listed <html><a href="https://dev.parrotsec.org/parrot" target="_blank" class="btn btn-primary">here</a></html>, then you should contact the maintainer of that particular software.</p>
@@ -190,12 +231,12 @@ If the answers were “Yes” we're more than glad to take your request via our 
 <p>If this happens, then you did something terribly wrong during the creation of the USB bootable device.</p>
 <p>This usually happens when you use a software that doesn't respect the isohybrid standards.</p>
 <p>We have a dedicated documentation page that describes this issue, how to fox it and why</p>
-<p><a href="https://www.parrotsec.org/docs/getting-started/02.create-boot-device/">Create a Boot Device</a></p>
+<p><a href="getting-started/create-boot-device">Create a Boot Device</a></p>
 <h2 id="how-do-i-prepare-a-bootable-parrot-usb-drive">How do i prepare a bootable Parrot USB drive?</h2>
 <p>1) Download etcher from our <a href="https://www.parrotsec.org/download.php">Download page</a> or directly from <a href="https://www.etcher.io">www.etcher.io</a>.</p>
 <p>2) Download the ISO file of the Parrot version you need from our our <a href="https://www.parrotsec.org/download.php">Download Page</a></p>
 <p>3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased)</p>
-<p>Read more <a href="https://www.parrotsec.org/docs/getting-started/02.create-boot-device/">HERE</a>.</p>
+<p>Read more <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device">HERE</a>.</p>
 <h2 id="is-this-faq-under-construction">Is this FAQ under construction?</h2>
 <p>Yes it is.</p>
 <h2 id="can-i-contribute-to-this-faq">Can i contribute to this FAQ?</h2>

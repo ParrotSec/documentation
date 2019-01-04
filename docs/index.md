@@ -87,3 +87,5 @@ The Parrot Project is based on top of the testing branch of Debian GNU/Linux, th
  &nbsp;
 
  &nbsp;
+
+[Warrant Canary](warrant-canary)

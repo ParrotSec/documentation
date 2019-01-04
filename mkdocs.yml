@@ -19,13 +19,17 @@ nav:
         - intro/what-is-parrot.md
         - intro/should-i-use-parrot.md
     - Getting Started:
-        - getting-started/01.download.md
-        - getting-started/02.create-boot-device.md
-        - getting-started/03.how-to-boot.md
-        - getting-started/04.use-parrot.md
-        - getting-started/05.install-parrot.md
+        - getting-started/download.md
+        - getting-started/create-boot-device.md
+        - getting-started/what-is-live-mode.md
+        - getting-started/how-to-boot.md
+        - getting-started/use-parrot.md
+        - getting-started/install-parrot.md
     - Parrot Project:
         - mirror-list.md
         - community.md
         - team.md
-        #- partners.md
+        - partners.md
+        - warrant-canary.md
+        - donate.md
+    - F.A.Q.: faq.md

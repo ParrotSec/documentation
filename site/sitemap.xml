@@ -16,27 +16,32 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/01.download/</loc>
+     <loc>https://docs.parrotsec.org/getting-started/download/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/02.create-boot-device/</loc>
+     <loc>https://docs.parrotsec.org/getting-started/create-boot-device/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/03.how-to-boot/</loc>
+     <loc>https://docs.parrotsec.org/getting-started/what-is-live-mode/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/04.use-parrot/</loc>
+     <loc>https://docs.parrotsec.org/getting-started/how-to-boot/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/05.install-parrot/</loc>
+     <loc>https://docs.parrotsec.org/getting-started/use-parrot/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/getting-started/install-parrot/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -52,6 +57,26 @@
     </url>
     <url>
      <loc>https://docs.parrotsec.org/team/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/partners/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/warrant-canary/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/donate/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/faq/</loc>
      <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>

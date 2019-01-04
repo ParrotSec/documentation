@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/04.use-parrot/">
+        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/how-to-boot/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Use Parrot - Parrot Documentation</title>
+        <title>How To Boot - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -74,23 +74,27 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../01.download/">Where to Download</a>
+    <a href="../download/">Where to Download</a>
 </li>
                                     
 <li >
-    <a href="../02.create-boot-device/">Create Boot Device</a>
+    <a href="../create-boot-device/">Create Boot Device</a>
 </li>
                                     
 <li >
-    <a href="../03.how-to-boot/">How To Boot</a>
+    <a href="../what-is-live-mode/">What is live mode</a>
 </li>
                                     
 <li class="active">
-    <a href="./">Use Parrot</a>
+    <a href="./">How To Boot</a>
 </li>
                                     
 <li >
-    <a href="../05.install-parrot/">Install Parrot</a>
+    <a href="../use-parrot/">Use Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../install-parrot/">Install Parrot</a>
 </li>
                                 </ul>
                             </li>
@@ -109,7 +113,22 @@
 <li >
     <a href="../../team/">The Parrot Team</a>
 </li>
+                                    
+<li >
+    <a href="../../partners/">Project Partners</a>
+</li>
+                                    
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+                                    
+<li >
+    <a href="../../donate/">Donate</a>
+</li>
                                 </ul>
+                            </li>
+                            <li >
+                                <a href="../../faq/">F.A.Q.</a>
                             </li>
                         </ul>
 
@@ -120,12 +139,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../03.how-to-boot/">
+                                <a rel="next" href="../what-is-live-mode/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../05.install-parrot/">
+                                <a rel="prev" href="../use-parrot/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -137,27 +156,45 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#first-contact-with-the-system">First contact with the system</a></li>
-        <li class="main "><a href="#i-have-a-parrot-usb-or-dvd-now-what">I have a Parrot USB or DVD, now what?</a></li>
-        <li class="main "><a href="#live-mode-and-installer">Live Mode and Installer</a></li>
+        <li class="main active"><a href="#system-boot">System boot</a></li>
+        <li class="main "><a href="#usb-drive">USB Drive</a></li>
+            <li><a href="#obsolete-computers">Obsolete computers</a></li>
+            <li><a href="#new-computers">New computers</a></li>
+            <li><a href="#option-disabled">Option disabled</a></li>
+            <li><a href="#option-is-not-available">Option is not available</a></li>
+            <li><a href="#secure-boot">Secure boot</a></li>
+        <li class="main "><a href="#dvd">DVD</a></li>
+            <li><a href="#regular-pc">Regular PC</a></li>
+            <li><a href="#mac">MAC</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="first-contact-with-the-system">First contact with the system</h1>
-<p><img alt="Parrot first contact" src="../../img/martian-first-contact.jpg" /></p>
-<h1 id="i-have-a-parrot-usb-or-dvd-now-what">I have a Parrot USB or DVD, now what?</h1>
-<p>If you properly followed the precedent tutorial, then you have a bootable USB drive or DVD.</p>
-<p>These storage supports can be used as boot devices to start the computer with the Parrot live environment.</p>
-<p>Every computer firmware is different, and an unique omnicomprehensive tutorial to boot an external system from USB just does not exist.</p>
-<p>It is your responsibility to know how your own computer works and how to change boot device on it.</p>
-<p>Once you booted the system from the USB device you can choose many ways to boot the system from the <strong>Parrot Live Boot Menu</strong>.</p>
-<h1 id="live-mode-and-installer">Live Mode and Installer</h1>
-<p>The Parrot Boot Menu can let you install the system on your computer, or start it in Live Mode.</p>
-<p>The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.</p>
-<p>This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory.</p>
-<p><img alt="parrot-live" src="../../img/parrot-live.png" /></p>
-<p>Parrot OS offers the ability to install the OS while in the live environment offers the ability to test the system without interfering with the computer's hard drive.</p></div>
+<h1 id="system-boot">System boot</h1>
+<p>Once ownloaded your operating system and created a boot device, you are ready to boot Parrot on your computer.</p>
+<p>In order to do so, simply insert your boot device in the computer and reboot it.</p>
+<p>During the boot sequence, when asked to select a booting disk, choose the Parrot device.</p>
+<h1 id="usb-drive">USB Drive</h1>
+<h4 id="obsolete-computers">Obsolete computers</h4>
+<p>If you're using a very old computer you might not be able to boot your system from a USB drive: in this case you will have to use a DVD or another device your computer will recognize as a booting device.</p>
+<h4 id="new-computers">New computers</h4>
+<p>Most laptops allow you to access the booting menu pressing f12; for most desktop computers press f8; for other kind of devices try pressing esc, f12, f11 or f10.</p>
+<h4 id="option-disabled">Option disabled</h4>
+<p>A lot of computers, even recent ones, the booting menu may be disabled by default: you will have to access the bios settings and enable such option, reboot the computer and press the right key to access the booting menu.</p>
+<h4 id="option-is-not-available">Option is not available</h4>
+<p>Some computers allow you to boot the system from USB drives but don't display a menu to select the booting device. If this is your case you need to access the bios settings, go to the booting panel and change the order of which booting devices, placing the USB drive on top of the list. Then simply reboot the computer and the bios will choose the USB drive as a booting device.</p>
+<h4 id="secure-boot">Secure boot</h4>
+<p>Secure Boot</p>
+<p>In case you have a new computer with Secure Boot enabled, you will have to open the BIOS settings, disenable the secure boot and set a legacy boot. If your computer doesn't provide a booting menu, follow the instructions displayed on this page in the section above (“option is not available”).</p>
+<h1 id="dvd">DVD</h1>
+<p>Booting a system from a DVD is much easier and compatible with most machines.</p>
+<h3 id="regular-pc">Regular PC</h3>
+<p>You can boot a DVD by using the standard procedure for the USB pendrive described above.</p>
+<h3 id="mac">MAC</h3>
+<h4 id="dvd-method-on-old-macs">DVD method on old MACs</h4>
+<p>Turn on your computer, insert the DVD straightaway and press the C key as soon as you hear the beep signaling the computer has been turned on. Release the button after a few seconds, as soon as you hear the DVD has started working.</p>
+<h4 id="standard-method">Standard method</h4>
+<p>Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.</p></div>
         </div>
 
         <footer class="col-md-12">
