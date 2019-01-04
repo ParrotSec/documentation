@@ -3,15 +3,15 @@ site_url: https://docs.parrotsec.org
 
 theme:
     name: cyborg
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - rust
-        - c
-        - python
-        - bash
-        - cpp
-        - perl
+#    highlightjs: true
+#    hljs_languages:
+#        - yaml
+#        - rust
+#        - c
+#        - python
+#        - bash
+#        - cpp
+#        - perl
 
 nav:
     - Parrot Website: https://www.parrotsec.org
