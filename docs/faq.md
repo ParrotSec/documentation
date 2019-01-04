@@ -16,6 +16,8 @@ We make it easier for professionals to accomplish tasks that should be automatiz
 Read the dedicated documentation page to know more
 [should i use parrot](https://www.parrotsec.org/docs/intro/should-i-use-parrot/)
 
+
+
 ## What is the default live password?
 
 Live user: **user**
@@ -25,34 +27,57 @@ If the password does not work, also try with: **toor**
 
 Parrot does not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use **sudo**
 
+
+
 ## How can i upgrade my system?
 
 There are several different ways to upgrade the parrot system
 
 1) First method
+
 Open a terminal window and launch the following command;
-**sudo parrot-upgrade**
+
+`sudo parrot-upgrade`
 
 2) Second method
+
 Open a terminal window and launch the following commands
-**sudo apt update**
-**sudo apt full-upgrade**
+
+`sudo apt update
+sudo apt full-upgrade
+`
 
 3) Third method
+
 Open System > Administration > Package Manager (synaptic)
+
 then click on the button to update the packages list.
+
 click on the other button to select the upgrades and finally apply the changes.
+
+
 
 ## Why isn't $toolname installed?
 
 We have a set of requisites to check before a tool makes its way into our repositories such as:
-- is the tool actively being maintained?
+
+- is the tool actively maintained?
+
 - does it have the necessary documentation?
+
 - is it FLOSS, FOSS or does its license allow redistribution?
+
 - are there other tools that do the same thing?
+
 - is there someone disposed to package and maintain it?
+
+
 and more[...];
+
+
 If the answers were “Yes” we're more than glad to take your request via our [Community Portal](https://community.parrotsec.org/c/development).
+
+
 
 ## Where can bugs be submitted?
 
@@ -81,7 +106,7 @@ This usually happens when you use a software that doesn't respect the isohybrid 
 
 We have a dedicated documentation page that describes this issue, how to fox it and why
 
-[Create a Boot Device](https://www.parrotsec.org/docs/getting-started/02.create-boot-device/)
+[Create a Boot Device](getting-started/create-boot-device)
 
 ## How do i prepare a bootable Parrot USB drive?
 
@@ -91,7 +116,7 @@ We have a dedicated documentation page that describes this issue, how to fox it 
 
 3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased)
 
-Read more [HERE](https://www.parrotsec.org/docs/getting-started/02.create-boot-device/).
+Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-device).
 
 
 ## Is this FAQ under construction?
