@@ -1,5 +1,5 @@
 ---
-title: 'FAQ'
+title: 'Project Partners'
 taxonomy:
     category:
         - docs
