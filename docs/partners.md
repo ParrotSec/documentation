@@ -38,6 +38,13 @@ KNXSecurity is an Italian community dedicated to cyber security training that he
 <br>
 <html><a href="https://www.thefreecircle.org/" target="_blank" class="btn btn-primary">TheFreeCircle</a></html> is the Italian GNU/Linux user group of <html><a href="http://lugmap.linux.it/sicilia/" target="_blank" class="btn btn-primary">Palermo and Sicily</a></html> that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
 
+## fSecurity Academy
+
+Emerging learning resource in Costa Rica that makes use of the Parrot system.
+
+[About FSecurity Academy](https://www.fsecurityacademy.com/about/)
+
+
 # Mirrors
 
 ## MIT
