@@ -154,6 +154,7 @@ Europe Middle East and Asia
 |Spain<br>Osluz<br>1 Gbps|Osluz (Oficina de software libre de la Universidad de Zaragoza)|[matojo.unizar.es/parrot](http://matojo.unizar.es/parrot)|<sub>deb http://matojo.unizar.es/parrot/ parrot main contrib non-free</sub>|
 |Portugal<br>UP<br>1 Gbps|U.Porto (University of Porto)|[mirrors.up.pt/parrot](http://mirrors.up.pt/parrot)|<sub>deb https://mirrors.up.pt/parrot/ parrot main contrib non-free</sub>|
 |Denmark<br>Dotsrc<br>10 Gbps|Dotsrc (Aalborg university)|[mirrors.dotsrc.org/parrot](http://mirrors.dotsrc.org/parrot)|<sub>deb https://mirrors.dotsrc.org/parrot/ parrot main contrib non-free</sub>|
+|Hungary<br>quantum-mirror<br>200Mbps|quantum-mirror.hu|[quantum-mirror.hu/mirrors/pub/parrot](https://quantum-mirror.hu/mirrors/pub/parrot)|<sub>deb https://quantum-mirror.hu/mirrors/pub/parrot parrot main contrib non-free</sub>|
 |Turkey<br>EB<br>100 Mbps|EB|[turkey.archive.parrotsec.org/parrot](http://turkey.archive.parrotsec.org/parrot)|<sub>deb http://turkey.archive.parrotsec.org/parrot/ parrot main contrib non-free</sub>|
 |Russia<br>Yandex<br>1 Gbps|Yandex|[mirror.yandex.ru/mirrors/parrot](http://mirror.yandex.ru/mirrors/parrot)|<sub>deb https://mirror.yandex.ru/mirrors/parrot/ parrot main contrib non-free</sub>|
 |Russia<br>Truenetwork<br>10 Gbps|Truenetwork|[mirror.truenetwork.ru/parrot](http://mirror.truenetwork.ru/parrot)|<sub>deb https://mirror.truenetwork.ru/parrot/ parrot main contrib non-free</sub>|
