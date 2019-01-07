@@ -125,4 +125,4 @@ Yes it is.
 
 ## Can i contribute to this FAQ?
 
-Of course you can, [source code of this page](https://dev.parrotsec.org/parrot/documentation/blob/master/docs/faq.md) - [source code of this documentation portal](https://dev.parrotsec.org/parrot/documentation)
+Of course you can, [source code of this page](https://nest.parrotsec.org/parrot-organization/documentation/blob/master/docs/faq.md) - [source code of this documentation portal](https://nest.parrotsec.org/parrot-organization/documentation)
