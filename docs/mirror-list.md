@@ -127,7 +127,6 @@ North Central and South Americas
 | Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
 |:----------------------------------|:---------------:|:-----|:-------------------|
 |Massachussetts<br>MIT<br>1 Gbps|SIPB MIT|[mirrors.mit.edu/parrot](http://mirrors.mit.edu/parrot/)|<sub>deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free</sub>|
-|Virginia<br>JMU<br>1 Gbps|James Madison University|[mirror.jmu.edu/pub/parrot](http://mirror.jmu.edu/pub/parrot)|<sub>deb http://mirror.jmu.edu/pub/parrot/ parrot main contrib non-free</sub>|
 |New York<br>Clarkson<br>1 Gbps|Clarkson University|[mirror.clarkson.edu/parrot](https://mirror.clarkson.edu/parrot/)|<sub>deb https://mirror.clarkson.edu/parrot/ parrot main contrib non-free</sub>|
 |California<br>Berkeley<br>1 Gbps|Berkeley Open Computing Facility|[mirrors.ocf.berkeley.edu/parrot](http://mirrors.ocf.berkeley.edu/parrot)|<sub>deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free</sub>|
 |Oregon<br>Osuosl<br>1 Gbps|Oregon State University - Open Source Lab|[ftp.osuosl.org/pub/parrotos](https://ftp.osuosl.org/pub/parrotos)|<sub>deb https://ftp.osuosl.org/pub/parrotos parrot main contrib non-free</sub>|
