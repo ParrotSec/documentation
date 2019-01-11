@@ -149,9 +149,7 @@ Europe Middle East and Asia
 |Germany<br>Halifax<br>20 Gbps|RWTH-Aachen (Halifax students group)|[ftp.halifax.rwth-aachen.de/parrotsec](http://ftp.halifax.rwth-aachen.de/parrotsec)|<sub>deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free</sub>|
 |Germany<br>Esslingen<br>10 Gbps|Esslingen (University of Applied Sciences)|[ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org](http://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org)|<sub>deb https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/ parrot main contrib non-free</sub>|
 |Netherland<br>NLUUG<br>10 Gbps| Nluug |[ftp.nluug.nl/os/Linux/distr/parrot](http://ftp.nluug.nl/os/Linux/distr/parrot)|<sub>deb https://ftp.nluug.nl/os/Linux/distr/parrot/ parrot main contrib non-free</sub>|
-|Poland<br>Onet<br>10 Gbps|Onet Datacenter|[mirror.onet.pl/pub/mirrors/parrot](http://mirror.onet.pl/pub/mirrors/parrot)|<sub>deb http://mirror.onet.pl/pub/mirrors/parrot/ parrot main contrib non-free</sub>|
 |Sweden<br>UMU<br>20 Gbps|ACC UMU (Academic Computer Club, Umea University)|[ftp.acc.umu.se/mirror/parrotsec.org/parrot](http://ftp.acc.umu.se/mirror/parrotsec.org/parrot)|<sub>deb https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/ parrot main contrib non-free</sub>|
-|Ireland<br>Heanet<br> 10 Gbps|Heanet (Ireland's National Research & Education Network)|[ftp.heanet.ie/pub/parrotsec](http://ftp.heanet.ie/pub/parrotsec)|<sub>deb https://ftp.heanet.ie/pub/parrotsec/ parrot main contrib non-free</sub>|
 |Greece<br>UOC<br>1 Gbps|UoC (University of Crete - Computer Center)|[ftp.cc.uoc.gr/mirrors/linux/parrot](http://ftp.cc.uoc.gr/mirrors/linux/parrot)|<sub>deb https://ftp.cc.uoc.gr/mirrors/linux/parrot/ parrot main contrib non-free</sub>|
 |Belgium<br>Belnet<br>10 Gbps|Belnet (The Belgian National Research)|[ftp.belnet.be/archive.parrotsec.org](http://ftp.belnet.be/mirror/archive.parrotsec.org)|<sub>deb http://ftp.belnet.be/mirror/archive.parrotsec.org/ parrot main contrib non-free</sub>|
 |Spain<br>Osluz<br>1 Gbps|Osluz (Oficina de software libre de la Universidad de Zaragoza)|[matojo.unizar.es/parrot](http://matojo.unizar.es/parrot)|<sub>deb http://matojo.unizar.es/parrot/ parrot main contrib non-free</sub>|
@@ -172,15 +170,13 @@ Asia and Pacific
 |Bangladesh<br>Amberit<br>1 Gbps|Amberit (formerly Dhakacom)|[mirror.amberit.com.bd/parrotsec](http://mirror.amberit.com.bd/parrotsec)|<sub>deb http://mirror.amberit.com.bd/parrotsec/ parrot main contrib non-free</sub>|
 |Taiwan<br>NCHC<br>20 Gbps|NCHC (Free Software Lab)|[free.nchc.org.tw/parrot](http://free.nchc.org.tw/parrot)|<sub>deb http://free.nchc.org.tw/parrot/ parrot main contrib non-free</sub>|
 |Singapore<br>0x<br>10 Gbps|0x|[mirror.0x.sg/parrot](http://mirror.0x.sg/parrot)|<sub>deb https://mirror.0x.sg/parrot/ parrot main contrib non-free</sub>|
-|China<br>USTC<br>1Gbps CMCC<br>1Gbps Cernet<br>300Mbps ChinaNet||[](http://)|<sub></sub>|
+|China<br>USTC<br>1Gbps CMCC<br>1Gbps Cernet<br>300Mbps ChinaNet|University of Science and Technology of China and USTCLUG|[mirrors.ustc.edu.cn/parrot](http://mirrors.ustc.edu.cn/parrot)|<sub>deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free</sub>|
 |China<br>TUNA<br>2 Gbps|TUNA (Tsinghua university of Beijing, TUNA association)|[mirrors.tuna.tsinghua.edu.cn/parrot](http://mirrors.tuna.tsinghua.edu.cn/parrot)|<sub>deb https://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free</sub>|
-|China<br>SHU<br>2 Gbps|SHU(Shanghai University)|[mirrors.shu.edu.cn/parrot
-](http://mirrors.shu.edu.cn/parrot
-)|<sub>deb https://mirrors.shu.edu.cn/parrot/ parrot main contrib non-free</sub>|
+|China<br>SHU<br>2 Gbps|SHU(Shanghai University)|[mirrors.shu.edu.cn/parrot](http://mirrors.shu.edu.cn/parrot)|<sub>deb https://mirrors.shu.edu.cn/parrot/ parrot main contrib non-free</sub>|
 |China<br>SJTUG<br>2 Gbps|SJTUG (SJTU *NIX User Group)|[mirrors.sjtug.sjtu.edu.cn/parrot](http://mirrors.sjtug.sjtu.edu.cn/parrot)|<sub>deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ parrot main contrib non-free</sub>|
 |New Caledonia<br>Lagoon<br>1 Gbps|Lagoon Networks|[mirror.lagoon.nc/pub/parrot](http://mirror.lagoon.nc/pub/parrot)|<sub>deb http://mirror.lagoon.nc/pub/parrot/ parrot main contrib non-free</sub>|
 |Thailand<br>KKU<br>1 Gbps|KKU (Khon Kaen University)|[mirror.kku.ac.th/parrot](http://mirror.kku.ac.th/parrot)|<sub>deb https://mirror.kku.ac.th/parrot/ parrot main contrib non-free</sub>|
-|Indonesia<br>Datautama<br>1 Gbps|Datautama (PT. Data Utama Dinamika|[kartolo.sby.datautama.net.id/parrot](http://kartolo.sby.datautama.net.id/parrot)|<sub>deb http://kartolo.sby.datautama.net.id/parrot/ parrot main contrib non-free</sub>|
+|Indonesia<br>Datautama<br>1 Gbps|Datautama (PT. Data Utama Dinamika)|[kartolo.sby.datautama.net.id/parrot](http://kartolo.sby.datautama.net.id/parrot)|<sub>deb http://kartolo.sby.datautama.net.id/parrot/ parrot main contrib non-free</sub>|
 
 
 ## Make your own mirror
