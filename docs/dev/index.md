@@ -7,7 +7,7 @@ or reviewed yet.
 
 [Contact our dev team](https://community.parrotsec.org) if you need help.
 
-![screenshot](img/developer-background.jpg)
+![screenshot](../img/developer-background.jpg)
 
 &nbsp;
 

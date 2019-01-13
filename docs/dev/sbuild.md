@@ -3,7 +3,7 @@
 Sbuild is the official debian tool to compile and cross-compile deb packages
 for all the supported architectures.
 
-![screenshot](img/developer-background.jpg)
+![screenshot](../img/developer-background.jpg)
 
 &nbsp;
 
