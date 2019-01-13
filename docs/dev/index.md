@@ -26,7 +26,7 @@ under construction
 
 ## The parrot workflow
 
-[set up sbuild](dev/sbuild.md)
+[set up sbuild](sbuild.md)
 
 
 &nbsp;

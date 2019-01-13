@@ -104,27 +104,27 @@ sbuild-update --keygen
 Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):
 
 ```
-mk-sbuild --arch=amd64 --name=parrot --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for i386:
 
 ```
-mk-sbuild --arch=i386 --name=parrot --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 Do the same for arm64:
 
 ```
-mk-sbuild --arch=arm64 --name=parrot --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for armhf:
 
 ```
-mk-sbuild --arch=armhf --name=parrot --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
