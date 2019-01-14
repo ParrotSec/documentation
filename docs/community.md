@@ -10,8 +10,7 @@ visible: true
 
 
 Parrot Security is a community-driven open source project,
-
-and it is also a gateway to spread innovative ideas born inside its community.
+and a gateway to spread innovative ideas born inside its community.
 
 
 ## Join Our Community
@@ -20,7 +19,7 @@ and it is also a gateway to spread innovative ideas born inside its community.
 
 ## Social Pages
 
-<a href="https://dev.parrotsec.org" target="_blank" class="btn btn-primary">Git</a>
+<a href="https://nest.parrotsec.org" target="_blank" class="btn btn-primary">Git</a>
 <a href="https://facebook.com/parrotsec" target="_blank" class="btn btn-primary">Facebook</a>
 <a href="https://twitter.com/parrotsec" target="_blank" class="btn btn-primary">Twitter</a>
 <a href="https://www.youtube.com/channel/UCj2dezzTc_Oy9eAEwBBodpw" target="_blank" class="btn btn-primary">Youtube</a>

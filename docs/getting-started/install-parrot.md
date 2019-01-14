@@ -10,13 +10,13 @@ visible: true
 
 ## Security/Home/Workstation
 
-These images can be installed from removable DVD, USB or SD storage media. For example, they can be used to make a handy Parrot install medium that can be taken anywhere.
+These images can be installed from removable DVD, USB or SD storage media. 
 
 The easiest way to prepare the installation media is to download any of the 32-bit or 64-bit Parrot images that will fit on the device and burn it. Of course this will destroy anything already there.
 
-To know how to burn the images, please go to [this link](https://dev.parrotsec.org/parrot/documentation/blob/master/docs/02.getting-started/02.create-boot-device.md).
+To learn how to burn the images, please see [here](https://www.parrotsec.org/docs/getting-started/create-boot-device/).
 
-Some BIOSes can boot USB or SD storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.
+Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.
 
 ## Netinstall
 
@@ -48,88 +48,88 @@ Once the installer starts the initial screen will appear. Press Enter to boot or
 
 8. If there is an existing DOS or Windows partition that has to be preserved, be very careful with automatic partitioning. If manual partitioning is selected, the installer can be used to resize existing FAT or NTFS partitions to create room for the Parrot install: simply select the partition and specify its new size.
 
-9. On the next screen the partition table will be seen, how the partitions will be formatted, and where they will be mounted. Select a partition to modify or delete it. If automatic partitioning was selected, the "Finish" option can be selected and the changes can be written to disk to use what it set up. Remember to assign at least one partition for swap space and to mount a partition on /.
+9. On the next screen the partition table will be seen, how the partitions will be formatted, and where they will be mounted. Select a partition to modify or delete it. If automatic partitioning was selected, the "Finish" option can be selected and the changes can be written to disk to use what it set up. Remember to assign at least one partition for swap space and to mount a partition on __/__.
 
-10. Now the installer will format partitions and start to install the base system, which can take a while.
+10. The installer will format partitions and start to install the base system, which can take a while.
 
-11. The last step is to install a boot loader. If the installer detects other operating systems on the computer, it will add them to the boot menu and let know. By default GRUB will be installed to the master boot record of the first harddrive, which is generally a good choice. That choice can be overridden and install it elsewhere.
+11. The last step is to install a boot loader. If the installer detects other operating systems on the computer, it will add them to the boot menu and let GRUB know. By default GRUB will be installed to the master boot record of the first harddrive, which is generally a good choice. That choice can be overridden and install it elsewhere. 
 
 12. The installer will now tell that the installation has finished. Remove the media and hit Enter to reboot the machine. It should boot up into the newly installed Parrot system and allow to log in.
 
 ## Docker
 
-#### parrotsec/parrot-core
+#### Parrotsec/Parrot-core
 
 Official Parrot Security Base system without tools.
 
 Start a new instance
 
 Public image from Docker Cloud
-
+```
     docker run -ti --rm --network host parrotsec/parrot-core
-
+```
 Local image from Dockerfile
-
+```
     docker run -ti --rm -network host parrot-core
-
+```
 Install/Update from Docker Cloud
-
+```
     docker pull parrotsec/parrot-core
-
+```
 Install/Update from local Dockerfile
-
+```
     git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
 
     docker build -t parrot-core[:version] parrot-core
-
-#### parrotsec/parrot
+```
+#### Parrotsec/Parrot
 
 Official Parrot Security image with basic security tools.
 
-Start a new instance
+-Start a new instance
 
-Public image from Docker Cloud
-
+-Public image from Docker Cloud
+```
     docker run -ti --rm --network host parrotsec/parrot
-
+```
 Local image from Dockerfile
-
+```
     docker run -ti --rm -network host parrot
-
+```
 Install/Update from Docker Cloud
-
+```
     docker pull parrotsec/parrot
-
+```
 Install/Update from local Dockerfile
-
+```
     git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
 
     docker build -t parrot[:version] parrot
-
-#### parrotsec/metasploit
+```
+#### Parrotsec/Metasploit
 
 Parrot Security Metasploit bundle.
 
 Install/Update from Docker Cloud
-
+```
     docker pull parrotsec/metasploit
-
+```
 Install/Update from local Dockerfile
-
+```
     git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
 
     docker build -t metasploit[:version] metasploit
-
+```
 Start a new instance
 
 Public image from Docker Cloud
-
+```
     docker run -ti --network host parrotsec/metasploit
-
+```
 Local image from Dockerfile
-
+```
     docker run -ti -network host metasploit
-
+```
 ## Rpi
 
 #### The Flashing Process
@@ -139,21 +139,21 @@ It is recommended to use high speed class SD Cards (Class 10) to flash the image
 Use Etcher for GNU/Linux, Win32 Disk Imager for Windows or ApplePiBaker for Mac to load the Parrot image onto the SD card.
 
 On a Mac, before plugging in the SD card, run the following in Terminal:
-
+```
     df -h
-
+```
 This will display a list of all the disks attached to the system. Attach the SD card and run the command again, and note the filesystem name of the SD card (it's the one that wasn't there before). It should look like "/dev/disk2s1", be careful in the next steps, since mixing things up could overwrite the hard drive data.
 
-Now, use the DD command to load the Parrot image onto the card. Use "man dd" to see the rest of the operands for dd.
+Now, use the DD command to load the Parrot image onto the card. Use ```man dd``` to see the rest of the operands for dd.
 
 First, let's unmount the partition with the following command, with "x" being the correct disk number:
-
+```
     sudo diskutil unmount /dev/diskX
-
+```
 Now Parrot is ready to load. Type, but don't run the command, sudo dd bs=1m if= and enter the location of the Parrot image to load onto the card. Use drag and drop with the disk image into the window to show the file path. After that, type a space, then of=/dev/rdisk and the number of the disk from before.
 
 If there is an "s" after the initial disk number (like rdisk2s1), do not include the "s" or following number. So, "rdisk2s1" should look like "rdisk2." Here's what it should look like altogether:
-
+```
     sudo dd bs=1m if=LocationOfParrotImage of=/dev/rdiskX
-
-Press enter to begin the process, and note that DD does not provide any on-screen information unless there is an error or it finishes. To view the progress during the transfer, type Ctrl T. Wait for the process to complete. You'll know the process is complete when a readout of bytes transferred over the time the process ran appears.
+```
+Press enter to begin the process, and note that DD does not provide any on-screen information unless there is an error or it finishes. To view the progress during the transfer, type Ctrl+T. Wait for the process to complete. You'll know the process is complete when a readout of bytes transferred over the time the process ran appears.
