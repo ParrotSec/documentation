@@ -18,15 +18,24 @@ or reviewed yet.
 &nbsp;
 
 
-# Developer resources
+### Dev's to be
 
-## Being a parrot developer
+-[Edx](https://www.edx.org/)
+-[Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/?sf_action=get_data&sf_data=all&_sft_course_mode=e-learning&sf_paged=2)
+-[Debian Packaging](https://wiki.debian.org/Packaging)
+- [GNU Coding Standard](https://www.gnu.org/prep/standards/html_node/index.html)
 
-under construction
+### Developer resources
 
-## The parrot workflow
+WIP
 
-[set up sbuild](sbuild.md)
+## Being a Parrot developer
+
+WIP
+
+## The Parrot workflow
+
+[Set up sbuild](sbuild.md)
 
 
 &nbsp;

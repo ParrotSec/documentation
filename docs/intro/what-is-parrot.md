@@ -59,10 +59,10 @@ People familiar with other pentest distributions may notice that Parrot is quite
 
 ### Software Store
 
-The system has its own applications repository including all the packages supported by Debian (more than 56000 packages available over 4 different architectures), plus many other applications and tools Debian can't provide yet, all of them are accessible directly from the APT package manager.
+The system has its own applications repository including all the packages supported by Debian (more than 56,000 packages available over 4 different architectures), plus many other applications and tools Debian can't provide yet, all of them are accessible directly from the APT package manager.
 
 Additionally, Parrot supports [SNAP](https://snapcraft.io), a new package distribution system that provides easy access to many other programs that GNU/Linux distributions don't always ship in their software archives. [Take a look at the snap programs list](https://snapcraft.io/store).
 
 [Flatpak](https://www.flatpak.org/) is an universal software store similar to snap. It can be installed from the Parrot official repository.
 
-Parrot supports Wine, a compatibility layer to run Windows applications in Linux environments.
+Parrot supports [Wine](https://www.winehq.org/), a compatibility layer to run Windows applications in Linux environments.

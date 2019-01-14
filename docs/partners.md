@@ -6,9 +6,9 @@ taxonomy:
 visible: true
 ---
 
-# Collaborations
+## Collaborations
 
-## Caine
+### Caine
 
 
 We have an open collaboration channel with Nanni Bassetti, developer of Caine, a GNU/Linux distribution focused on digital forensics.
@@ -17,7 +17,7 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ***
 
-## Dasaweb
+### Dasaweb
 
 
 [Dasaweb](https://www.dasaweb.net) is a hosting provider that collaborate with us and sponsors our Parrot Cloud project by selling Virtual Private Servers with Parrot Cloud pre-installed.
@@ -26,22 +26,22 @@ Dasaweb is also the main sponsor of most of the Parrot Community events in Italy
 
 ***
 
-## KNXSecurity
+### KNXSecurity
 
 KNXSecurity is an Italian community dedicated to cyber security training that helps us by testing the beta images of Parrot before the final release.
 
-## The Free Circle GLUG
+### The Free Circle GLUG
 
 [TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
 
-## fSecurity Academy
+### FSecurity Academy
 
 Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 [About FSecurity Academy](https://www.fsecurityacademy.com/about/)
 
 
-# Mirrors
+## Mirrors
 
 ## MIT
 
