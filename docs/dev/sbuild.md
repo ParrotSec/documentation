@@ -100,6 +100,7 @@ Optionally generate a GPG keypair for sbuild to use:
 sbuild-update --keygen
 ```
 
+# Create the schroot environments
 
 Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):
 
@@ -128,7 +129,31 @@ mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-secu
 ```
 
 
+# Additional setup (optional)
 
+You may find convenient to have some additional utilities pre-installed in your schroot environments to speed the build process up or to be able to quickly enter the environment of a failed build and spot eventual bugs.
+
+Install useful packages:
+
+```
+sudo schroot --all-source-chroots -d / -u root -- apt-get update
+
+sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl wget devscripts build-essential ubuntu-dev-tools
+```
+
+The parrot-core package depends on apt-parrot that installs the parrot repository in /etc/apt/sources.list.d/parrot.list. If the /etc/parrot.testing file exists, then apt-parrot will enable the testing repo instead of the stable one. Ths is the recommended setup for the build environment.
+
+If your setup relies on apt-cacher-ng, you have to re-apply the cacher proxy to /etc/apt/sources.list.d/parrot.list
+
+The faster way to accomplish it is to remove the content of /etc/apt/sources.list, rely on the default content of /etc/apt/sources.list.d/parrot.list and setup apt-cacher-ng as the global apt cacher. with `echo 'Acquire::http::Proxy "http://127.0.0.1:3142";' | sudo tee /etc/apt/apt.conf.d/01acng`
+
+```
+sudo schroot --all-source-chroots -d / -u root -- touch /etc/parrot.testing
+
+sudo schroot --all-source-chroots -d / -u root -- apt-get -y install parrot-core
+
+sudo schroot --all-source-chroots -d / -u root -- bash -c "echo 'Acquire::http::Proxy \"http://127.0.0.1:3142\";' | sudo tee /etc/apt/apt.conf.d/01acng"
+```
 
 
 # Notes
