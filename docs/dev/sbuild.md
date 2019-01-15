@@ -100,35 +100,46 @@ Optionally generate a GPG keypair for sbuild to use:
 sbuild-update --keygen
 ```
 
+# Create the schroot environments
 
 Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):
 
 ```
-mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for i386:
 
 ```
-mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 Do the same for arm64:
 
 ```
-mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for armhf:
 
 ```
-mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
+mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
+# Additional setup (optional)
 
+You may find convenient to have some additional utilities pre-installed in your schroot environments to speed the build process up or to be able to quickly enter the environment of a failed build and spot eventual bugs.
+
+Install useful packages:
+
+```
+sudo schroot --all-source-chroots -d / -u root -- apt-get update
+
+sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl wget devscripts build-essential ubuntu-dev-tools
+```
 
 
 ## Notes
