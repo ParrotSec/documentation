@@ -56,4 +56,20 @@ ETH: 0x64A449d5839813024861601720B173f562c8d3F8
 ----
 
 ## Gadgets
-<html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Frozenbox Store</a></html>
+<html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Spreadshirt Store</a></html>
+
+----
+
+## Referral links
+
+Even if we host most of our infrastructure on bare metal servers, some of our nodes (CDN edge nodes etc) is hosted on famous cloud providers that provide referral programs.
+
+#### Vultr
+
+[Earn $50, give us $25 (limited) - https://www.vultr.com/?ref=7782068-4F](https://www.vultr.com/?ref=7782068-4F)
+
+[Be active for 30+ days, give us $10 - https://www.vultr.com/?ref=7782050](https://www.vultr.com/?ref=7782050)
+
+#### DigitalOcean
+
+[Earn $100, give us $25 - https://m.do.co/c/6be719a80450](https://m.do.co/c/6be719a80450)
