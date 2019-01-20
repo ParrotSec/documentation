@@ -6,16 +6,16 @@ taxonomy:
 visible: true
 ---
 
-# First contact with the system
+### First contact with the system
 
 ![Parrot first contact](/img/martian-first-contact.jpg)
 
 
-# I have a Parrot USB or DVD, now what?
+### I have a Parrot USB or DVD, now what?
 
 If you properly followed the precedent tutorial, then you have a bootable USB drive or DVD.
 
-These storage supports can be used as boot devices to start the computer with the Parrot live environment.
+These storage devices can be used to boot the computer up with Parrot live environment.
 
 Every computer firmware is different, and an unique omnicomprehensive tutorial to boot an external system from USB just does not exist.
 
@@ -24,7 +24,7 @@ It is your responsibility to know how your own computer works and how to change 
 Once you booted the system from the USB device you can choose many ways to boot the system from the **Parrot Live Boot Menu**.
 
 
-# Live Mode and Installer
+### Live Mode and Installer
 
 The Parrot Boot Menu can let you install the system on your computer, or start it in Live Mode.
 

@@ -2,7 +2,7 @@
 
 For the Parrot Project homepage, visit [parrotsec.org](https://parrotsec.org).
 
-An important part of any operating system is documentation, the technical manuals that describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.
+An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.
 
 The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.
 
@@ -24,7 +24,7 @@ The documentation is still under construction, and all the Parrot users are invi
 
 [What is Parrot](intro/what-is-parrot)
 
-[Should i use Parrot?](intro/should-i-use-parrot)
+[Should I use Parrot?](intro/should-i-use-parrot)
 
 ## Getting Started
 
@@ -51,8 +51,8 @@ The documentation is still under construction, and all the Parrot users are invi
 ### Need help? [Contact our Staff](https://community.parrotsec.org)
 
 We have a staff of volunteers and community members who can help you
-troubleshooting system bugs and guiding you from the installation to the
-configuration and customization of the system.
+troubleshoot system bugs and guide you from installation to configuration 
+and customization of the system.
 
 
 &nbsp;

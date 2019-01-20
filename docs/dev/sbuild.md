@@ -1,4 +1,4 @@
-# Build deb packages with sbuild
+## Build deb packages with sbuild
 
 Sbuild is the official debian tool to compile and cross-compile deb packages
 for all the supported architectures.
@@ -14,7 +14,7 @@ for all the supported architectures.
 &nbsp;
 
 
-# Setup
+## Setup
 
 Install the needed tools
 
@@ -142,9 +142,9 @@ sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl w
 ```
 
 
-# Notes
+## Notes
 
-## BTRFS
+### BTRFS
 
 If you use btrfs, the *--type="btrfs-snapshot"* option will handle the chroots as btrfs subvolumes for easier management,
 and every build will be performed on a dedicated snapshot of that subvolume that is automatically created and destroyed for each build,
@@ -152,7 +152,7 @@ keeping your original chroots clean, making every build isolated and speeding up
 
 Remove *--type="btrfs-snapshot"* if you don't use btrfs.
 
-## Boostrap failures
+### Boostrap failures
 
 If something went wrong during the creation of the chroot, then you have to delete its folder or snapshot before you retry.
 

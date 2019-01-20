@@ -10,16 +10,16 @@ visible: true
 
 Parrot Security is our complete all-in-one environment for pentesting, privacy, digital forensics, reverse engineering and software development.
 
-The system includes a full arsenal of security oriented tools to cover many steps of the work of a pentester.
+The system includes a full arsenal of security oriented tools to to ensure as security professional, you've got everything you need.
 
 
 ## Parrot Home
 
-Parrot Home is a special edition of Parrot designed for daily use, and it targets regular users who need a lightweight, always updated and beautiful system on their laptops or workstations.
+Parrot Home is a special edition of Parrot designed for daily use. It's geared toward regular users who need a lightweight, always updated and beautiful system.
 
 The distribution has the same look and feel of a regular Parrot environment and includes all the basic programs for daily work. Parrot Home also includes programs to chat privately, encrypt documents with the highest cryptographic standards or surf the net in a completely anonymous and secure way.
 
-The system can also be used as a starting point to build a very customized pentesting platform with only the bare needed tools, or you can use it to build your professional workstation by taking advantage of all the latest and most powerful technologies of Debian without hassle.
+The system can also be used as a starting point to build a very customized pentesting platform with only the bare essentials, or you can use it to build your professional workstation by taking advantage of all the latest and most powerful technologies of Debian without the hassle.
 
 
 ## Netinstall Images
@@ -44,3 +44,5 @@ The purpose of Parrot for Docker is to easily offer the whole Parrot toolkit on 
 You can fire up a Parrot container inside your existing system or using a cloud provider in just few seconds, and by using an extremely limited amount of resources (just the memory required by the individual tools you run).
 
 If you want to perform more tests, each in an isolated environment/workspace, you can start multiple instances from the same Parrot template.
+
+[__Downloads__](https://www.parrotsec.org/download.php)
