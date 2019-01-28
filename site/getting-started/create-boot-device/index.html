@@ -152,32 +152,32 @@
         <li class="main active"><a href="#the-iso-formats">The ISO Formats</a></li>
         <li class="main "><a href="#how-not-to-create-a-parrot-usb-drive">How NOT to create a Parrot USB drive</a></li>
         <li class="main "><a href="#how-to-create-a-parrot-usb-drives">How to create a Parrot USB drives</a></li>
-            <li><a href="#etcher">Etcher</a></li>
-            <li><a href="#dd">DD</a></li>
+        <li class="main "><a href="#etcher">Etcher</a></li>
+        <li class="main "><a href="#dd">DD</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="the-iso-formats">The ISO Formats</h1>
+<h2 id="the-iso-formats">The ISO Formats</h2>
 <p>ISO is a special file format that represents the content of a small storage device.</p>
 <p>The Parrot ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.</p>
 <p>You can use a special software like <a href="https://www.etcher.io">Etcher</a> to clone the content of the Parrot ISO to a USB drive and transform such USB drive into a full Parrot USB device.</p>
 <hr />
-<h1 id="how-not-to-create-a-parrot-usb-drive">How NOT to create a Parrot USB drive</h1>
+<h2 id="how-not-to-create-a-parrot-usb-drive">How NOT to create a Parrot USB drive</h2>
 <p>The Parrot ISO uses the iso9660 format (also known as isohybrid). It is a special ISO format that contains not only the partition content, but also the partition table.</p>
 <p>Some ISO writing programs do not write the iso bit-per-bit into the usb drive at a low level. They create a custom partition table and just copy the file in the USB drive in an unofficial and non-standard way. This behavior is against what the isohybrid was created for, and may break core system functionalities and make the system uninstallable from such USB drives.</p>
-<p>Parrot users have <strong>NOT</strong> to use programs like <strong>unetbootin</strong>, or any program not isohybrid compliant.</p>
+<p>It is highly recommended <strong>NOT</strong> to use programs like <strong>unetbootin</strong>, or any program which not isohybrid compliant.</p>
 <hr />
-<h1 id="how-to-create-a-parrot-usb-drives">How to create a Parrot USB drives</h1>
+<h2 id="how-to-create-a-parrot-usb-drives">How to create a Parrot USB drives</h2>
 <p>To create a Parrot bootable device you need a USB drive of at least 4gb for the security edition or 2gb for the home edition</p>
-<h2 id="etcher">Etcher</h2>
+<h2 id="etcher"><strong>Etcher</strong></h2>
 <p><strong>Our official ISO Writing Tool is <a href="https://www.etcher.io">Etcher - www.etcher.io</a>.</strong></p>
-<p><strong>It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We suggest all our users to use it.</strong></p>
-<p><img alt="Etcher" src="../../img/etcher.png" /></p>
+<p><strong>It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We <strong>highly</strong> suggest Etcher over all other methods.</strong></p>
+<p><img alt="Etcher" src="/img/etcher.png" /></p>
 <hr />
-<h2 id="dd">DD</h2>
-<p><strong>DD (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit.</strong></p>
-<p><img alt="DD" src="../../img/dd.png" /></p></div>
+<h2 id="dd"><strong>DD</strong></h2>
+<p><strong><a href="https://en.wikipedia.org/wiki/Dd_(Unix)">dd</a> (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit. Due to the potential to brick your system if you are not familiar with linux we recommend that you use Etcher.</strong></p>
+<p><img alt="DD" src="/img/dd.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -186,7 +186,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

@@ -162,10 +162,10 @@
 
 <h1 id="parrot-images">Parrot Images</h1>
 <h2 id="securityhomeworkstation">Security/Home/Workstation</h2>
-<p>These images can be installed from removable DVD, USB or SD storage media. For example, they can be used to make a handy Parrot install medium that can be taken anywhere.</p>
+<p>These images can be installed from removable DVD, USB or SD storage media. </p>
 <p>The easiest way to prepare the installation media is to download any of the 32-bit or 64-bit Parrot images that will fit on the device and burn it. Of course this will destroy anything already there.</p>
-<p>To know how to burn the images, please go to <a href="https://dev.parrotsec.org/parrot/documentation/blob/master/docs/02.getting-started/02.create-boot-device.md">this link</a>.</p>
-<p>Some BIOSes can boot USB or SD storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.</p>
+<p>To learn how to burn the images, please see <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device/">here</a>.</p>
+<p>Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.</p>
 <h2 id="netinstall">Netinstall</h2>
 <p>This image is intended to boot from small storage media (like an old USB drive or CD) and install additional packages over a network; hence the name 'netinst'.</p>
 <p>The image has the software components needed to run the installer and the base packages to provide a minimal Parrot system. There are several architectures to select: i386, amd64, arm64 and armhf.</p>
@@ -199,87 +199,102 @@
 <p>If there is an existing DOS or Windows partition that has to be preserved, be very careful with automatic partitioning. If manual partitioning is selected, the installer can be used to resize existing FAT or NTFS partitions to create room for the Parrot install: simply select the partition and specify its new size.</p>
 </li>
 <li>
-<p>On the next screen the partition table will be seen, how the partitions will be formatted, and where they will be mounted. Select a partition to modify or delete it. If automatic partitioning was selected, the "Finish" option can be selected and the changes can be written to disk to use what it set up. Remember to assign at least one partition for swap space and to mount a partition on /.</p>
+<p>On the next screen the partition table will be seen, how the partitions will be formatted, and where they will be mounted. Select a partition to modify or delete it. If automatic partitioning was selected, the "Finish" option can be selected and the changes can be written to disk to use what it set up. Remember to assign at least one partition for swap space and to mount a partition on <strong>/</strong>.</p>
 </li>
 <li>
-<p>Now the installer will format partitions and start to install the base system, which can take a while.</p>
+<p>The installer will format partitions and start to install the base system, which can take a while.</p>
 </li>
 <li>
-<p>The last step is to install a boot loader. If the installer detects other operating systems on the computer, it will add them to the boot menu and let know. By default GRUB will be installed to the master boot record of the first harddrive, which is generally a good choice. That choice can be overridden and install it elsewhere.</p>
+<p>The last step is to install a boot loader. If the installer detects other operating systems on the computer, it will add them to the boot menu and let GRUB know. By default GRUB will be installed to the master boot record of the first harddrive, which is generally a good choice. That choice can be overridden and install it elsewhere. </p>
 </li>
 <li>
 <p>The installer will now tell that the installation has finished. Remove the media and hit Enter to reboot the machine. It should boot up into the newly installed Parrot system and allow to log in.</p>
 </li>
 </ol>
 <h2 id="docker">Docker</h2>
-<h4 id="parrotsecparrot-core">parrotsec/parrot-core</h4>
+<h4 id="parrotsecparrot-core">Parrotsec/Parrot-core</h4>
 <p>Official Parrot Security Base system without tools.</p>
 <p>Start a new instance</p>
 <p>Public image from Docker Cloud</p>
-<pre><code>docker run -ti --rm --network host parrotsec/parrot-core
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot-core
 </code></pre>
-<p>Local image from Dockerfile</p>
-<pre><code>docker run -ti --rm -network host parrot-core
-</code></pre>
-<p>Install/Update from Docker Cloud</p>
-<pre><code>docker pull parrotsec/parrot-core
-</code></pre>
-<p>Install/Update from local Dockerfile</p>
-<pre><code>git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
 
-docker build -t parrot-core[:version] parrot-core
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot-core
 </code></pre>
-<h4 id="parrotsecparrot">parrotsec/parrot</h4>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot-core
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot-core[:version] parrot-core
+</code></pre>
+
+<h4 id="parrotsecparrot">Parrotsec/Parrot</h4>
 <p>Official Parrot Security image with basic security tools.</p>
-<p>Start a new instance</p>
-<p>Public image from Docker Cloud</p>
-<pre><code>docker run -ti --rm --network host parrotsec/parrot
+<p>-Start a new instance</p>
+<p>-Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot
 </code></pre>
-<p>Local image from Dockerfile</p>
-<pre><code>docker run -ti --rm -network host parrot
-</code></pre>
-<p>Install/Update from Docker Cloud</p>
-<pre><code>docker pull parrotsec/parrot
-</code></pre>
-<p>Install/Update from local Dockerfile</p>
-<pre><code>git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
 
-docker build -t parrot[:version] parrot
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot
 </code></pre>
-<h4 id="parrotsecmetasploit">parrotsec/metasploit</h4>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot[:version] parrot
+</code></pre>
+
+<h4 id="parrotsecmetasploit">Parrotsec/Metasploit</h4>
 <p>Parrot Security Metasploit bundle.</p>
 <p>Install/Update from Docker Cloud</p>
-<pre><code>docker pull parrotsec/metasploit
+<pre><code>    docker pull parrotsec/metasploit
 </code></pre>
-<p>Install/Update from local Dockerfile</p>
-<pre><code>git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
 
-docker build -t metasploit[:version] metasploit
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://dev.parrotsec.org/parrot/docker-images &amp;&amp; cd docker-images
+
+    docker build -t metasploit[:version] metasploit
 </code></pre>
+
 <p>Start a new instance</p>
 <p>Public image from Docker Cloud</p>
-<pre><code>docker run -ti --network host parrotsec/metasploit
+<pre><code>    docker run -ti --network host parrotsec/metasploit
 </code></pre>
+
 <p>Local image from Dockerfile</p>
-<pre><code>docker run -ti -network host metasploit
+<pre><code>    docker run -ti -network host metasploit
 </code></pre>
+
 <h2 id="rpi">Rpi</h2>
 <h4 id="the-flashing-process">The Flashing Process</h4>
 <p>It is recommended to use high speed class SD Cards (Class 10) to flash the image otherwise the process may be slow.</p>
 <p>Use Etcher for GNU/Linux, Win32 Disk Imager for Windows or ApplePiBaker for Mac to load the Parrot image onto the SD card.</p>
 <p>On a Mac, before plugging in the SD card, run the following in Terminal:</p>
-<pre><code>df -h
+<pre><code>    df -h
 </code></pre>
+
 <p>This will display a list of all the disks attached to the system. Attach the SD card and run the command again, and note the filesystem name of the SD card (it's the one that wasn't there before). It should look like "/dev/disk2s1", be careful in the next steps, since mixing things up could overwrite the hard drive data.</p>
-<p>Now, use the DD command to load the Parrot image onto the card. Use "man dd" to see the rest of the operands for dd.</p>
+<p>Now, use the DD command to load the Parrot image onto the card. Use <code>man dd</code> to see the rest of the operands for dd.</p>
 <p>First, let's unmount the partition with the following command, with "x" being the correct disk number:</p>
-<pre><code>sudo diskutil unmount /dev/diskX
+<pre><code>    sudo diskutil unmount /dev/diskX
 </code></pre>
+
 <p>Now Parrot is ready to load. Type, but don't run the command, sudo dd bs=1m if= and enter the location of the Parrot image to load onto the card. Use drag and drop with the disk image into the window to show the file path. After that, type a space, then of=/dev/rdisk and the number of the disk from before.</p>
 <p>If there is an "s" after the initial disk number (like rdisk2s1), do not include the "s" or following number. So, "rdisk2s1" should look like "rdisk2." Here's what it should look like altogether:</p>
-<pre><code>sudo dd bs=1m if=LocationOfParrotImage of=/dev/rdiskX
+<pre><code>    sudo dd bs=1m if=LocationOfParrotImage of=/dev/rdiskX
 </code></pre>
-<p>Press enter to begin the process, and note that DD does not provide any on-screen information unless there is an error or it finishes. To view the progress during the transfer, type Ctrl T. Wait for the process to complete. You'll know the process is complete when a readout of bytes transferred over the time the process ran appears.</p></div>
+
+<p>Press enter to begin the process, and note that DD does not provide any on-screen information unless there is an error or it finishes. To view the progress during the transfer, type Ctrl+T. Wait for the process to complete. You'll know the process is complete when a readout of bytes transferred over the time the process ran appears.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -288,7 +303,7 @@ docker build -t metasploit[:version] metasploit
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
