@@ -44,7 +44,7 @@ var master = L.marker([51.514198, -0.093100], {title: 'CDN Edge', icon: iconserv
 .bindTooltip('1', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>london1.uk.emea.parrotsec.org");
 // newyork
-var master = L.marker([40.7142700, -74.0059700], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
+var master = L.marker([40.8370495, -73.8654295], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
 .bindTooltip('2', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>newyork1.us.ncsa.parrotsec.org<br>newyork2.us.ncsa.parrotsec.org");
 //sanfrancisco
@@ -128,7 +128,7 @@ var master = L.marker([44.6592, -74.9681], {title: 'Mirror Server', icon: iconmi
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Clarkson University<br>[http://mirror.clarkson.edu/parrot/](http://mirror.clarkson.edu/parrot/)');
 // mirror osusol
-var master = L.marker([40.7143, -74.006], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+var master = L.marker([42.497540120, -123.277491], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Oregon State University - Open Source Lab<br>[http://ftp.osuosl.org/pub/parrotos/](http://ftp.osuosl.org/pub/parrotos/)');
 // mirror berkeley
