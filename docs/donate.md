@@ -8,13 +8,13 @@ visible: true
 
 # Donations
 
-Economical contribution is fundamental to the Parrot Project as the amount of servers needed to keep the infrastructure up and running are something our Core Developers could not afford without the generous assistance of our community.  Together we can continue to do the work that needs to doing.
+Economical contribution is fundamental to Parrot Linux as the amount of servers needed to keep the infrastructure up and running are something our Core Developers could not afford without the generous assistance of our community.  Together we can continue to do the work that needs to doing.
 
 ----
 
 ## Adopt us on Patreon
 
-We are now on Patreon to offer you a new way to contribute to the Parrot Project
+We are now on Patreon to offer you a new way to contribute to Parrot Linux
 
 adopt us and support our work now!
 

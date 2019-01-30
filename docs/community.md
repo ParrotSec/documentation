@@ -9,7 +9,7 @@ visible: true
 ## Community Portal
 
 
-Parrot Security is a community-driven open source project,
+Parrot Linux is a community-driven open source project,
 and a gateway to spread innovative ideas born inside its community.
 
 

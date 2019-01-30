@@ -19,3 +19,5 @@ To learn how to boot from the live media read this [page](https://www.parrotsec.
 
 ## Default username and password
 In Parrot OS live environment the default username is "user" and the default password is "toor".
+
+[Wiki Home](wiki/startpage.md)

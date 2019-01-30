@@ -6,9 +6,9 @@ taxonomy:
 visible: true
 ---
 
-# Parrot Project Frequently Asked Questions
+# Parrot Linux Frequently Asked Questions
 
-## Why should I use parrot?
+## Why should I use Parrot?
 
 Penetration testing is a time intensive job, maintaining your toolkit shouldn't 
 be also. We make it easier for professionals to accomplish the important stuff 
@@ -82,7 +82,7 @@ If the answers were “Yes” we're more than glad to take your request via our 
 
 ## Where can bugs be submitted?
 
-If the bug involves a specific piece of software maintained by Parrot, then search the project on our <html><a href="https://nest.parrotsec.org/" target="_blank" class="btn btn-primary">Dev Portal</a></html> and open an issue.
+If the bug involves a specific piece of software maintained by Parrot, then search the project on our [Dev Portal](https://nest.parrotsec.org/) and open an issue.
 
 If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.
 
@@ -119,6 +119,10 @@ We have a dedicated documentation page which describes this issue, how to fix it
 3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased).
 
 Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-device).
+
+## I'm new to Linux, please help me!
+
+Of Course! Please check out [helpme](wiki/helpme.md)
 
 ## Is this FAQ under construction?
 
