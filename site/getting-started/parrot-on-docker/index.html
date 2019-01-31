@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/intro/should-i-use-parrot/">
+        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/parrot-on-docker/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Should I use Parrot? - Parrot Documentation</title>
+        <title>Parrot on Docker - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -49,62 +49,41 @@
                             <li >
                                 <a href="https://www.parrotsec.org">Parrot Website</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../what-is-parrot/">What is Parrot?</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Should I use Parrot?</a>
+    <a href="../../intro/what-is-parrot/">What is Parrot</a>
 </li>
                                     
 <li >
-    <a href="../what-is-debian/">What is Debian?</a>
+    <a href="../../intro/what-is-debian/">What is Debian</a>
 </li>
                                     
 <li >
-    <a href="../what-is-linux/">What is Linux?</a>
+    <a href="../../intro/what-is-linux/">What is Linux</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../getting-started/system-requirements/">System Requirements</a>
+    <a href="../download/">Download Parrot</a>
 </li>
                                     
 <li >
-    <a href="../../getting-started/download/">Download</a>
+    <a href="../create-boot-device/">Create a boot device</a>
 </li>
                                     
 <li >
-    <a href="../../getting-started/create-boot-device/">Create Boot Device</a>
+    <a href="../how-to-boot/">How to boot the system</a>
 </li>
                                     
-<li >
-    <a href="../../getting-started/what-is-live-mode/">What is live mode</a>
-</li>
-                                    
-<li >
-    <a href="../../getting-started/how-to-boot/">How To Boot</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../installation/install-parrot/">Install Parrot</a>
-</li>
-                                    
-<li >
-    <a href="../../installation/before-installing/">Before installing</a>
+<li class="active">
+    <a href="./">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
@@ -112,9 +91,27 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../mirror-list/">Mirror list</a>
+    <a href="../../mirror-list/">APT Mirror list</a>
 </li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li >
+    <a href="../../weathermap/">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
                                     
 <li >
     <a href="../../community/">Community</a>
@@ -126,14 +123,6 @@
                                     
 <li >
     <a href="../../partners/">Project Partners</a>
-</li>
-                                    
-<li >
-    <a href="../../weathermap/">Weathermap</a>
-</li>
-                                    
-<li >
-    <a href="../../warrant-canary/">Warrant Canary</a>
 </li>
                                     
 <li >
@@ -153,12 +142,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../what-is-parrot/">
+                                <a rel="next" href="../how-to-boot/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../what-is-debian/">
+                                <a rel="prev" href="../../mirror-list/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -170,55 +159,77 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#why-parrot-is-different">Why Parrot is different</a></li>
-            <li><a href="#general-purpose-distributions">General purpose distributions</a></li>
-            <li><a href="#pentest-distributions">Pentest distributions</a></li>
-            <li><a href="#secure-distributions">Secure distributions</a></li>
-            <li><a href="#forensics-distributions">Forensics distributions</a></li>
-            <li><a href="#who-parrot-is-made-for">Who Parrot is made for</a></li>
+        <li class="main active"><a href="#docker">Docker</a></li>
+            <li><a href="#parrotsecparrot-core">Parrotsec/Parrot-core</a></li>
+            <li><a href="#parrotsecparrot">Parrotsec/Parrot</a></li>
+            <li><a href="#parrotsecmetasploit">Parrotsec/Metasploit</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="why-parrot-is-different">Why Parrot is different</h2>
-<p>Even if we, would like everyone to use the Parrot System or, at least, give it a try, there are some important considerations to make about who we expect to use Parrot and who may have a bad experience from it.</p>
-<p>First of all, even if Parrot provides general purpose flavors, its core is still tuned for Security and Forensics operations.
-In this section we will explain how different is Parrot compared to other general purpose distributions and how different it is from other Pentest and Forensics distributions. Then we will present some categories of people and what kind of experience they may have by using this system.</p>
-<p><img alt="macaw-poly" src="/img/macaw-poly.jpg" /></p>
-<h3 id="general-purpose-distributions">General purpose distributions</h3>
-<p>Parrot is different from a general purpose distribution (i.e. Ubuntu) because it does not try in any way to hide its internals.</p>
-<p>Meaning that many automation tools are included in the system to make it easier to use, yet expose quite well what the system has under the hood.</p>
-<p>A good example is the <em>parrot update reminder</em>: it is a simple yet powerful program that prompts the user to check for system upgrades once a week. but instead of hiding the upgrade process behind a progress bar, it shows the user the full upgrade process from the <strong>apt</strong> output.</p>
-<p>Another important difference is that Parrot disables by default all the network services pre-installed in the system, not only to maintain a very low RAM footprint and offer better performance, but also to avoid services exposure in a target network.
-Every network service needs to be manually started when the user needs it.</p>
-<hr />
-<h3 id="pentest-distributions">Pentest distributions</h3>
-<p>Pentest distributions are famous for integrating only security tools, allowing easy root access and taking down all the security system barriers that may influence the workflow of a pentester.</p>
-<p>Parrot was designed to be a very comfortable environment for security experts and researchers. It includes many basic programs for daily use which pentesting distributions usually exclude (at the cost of less than an additional gigabyte of storage). This choice was taken to make Parrot not only a good system to perform security tests, but also a good environment where you can write reports, build your own tools, and communicate seamlessly with teammates, without the need for additional computers, operating systems or configuration.</p>
-<p>Our goal is to allow any professional pentester to make a whole security test from the beginning, to the report with just a Parrot ISO and an average laptop.</p>
-<hr />
-<h3 id="secure-distributions">Secure distributions</h3>
-<p>Parrot includes its own sandbox system obtained with the combination of <a href="https://firejail.wordpress.com">Firejail</a> and <a href="https://wiki.ubuntu.com/AppArmor">AppArmor</a> with custom security profiles.</p>
-<p>User applications in Parrot are <strong>protected</strong> and <strong>"jailed"</strong> to limit the damages in case the system is compromised.</p>
-<p>All this additional security comes with a cost: it is harder to adopt bad behaviors on Parrot. For instance it is not possible to log in as root with the whole desktop environment, or to start critical applications like browsers, media players or advanced document readers with unnecessary privileged permissions.</p>
-<p>The user can still open root consoles, launch security tools with privileged permissions and use the system without limits. The only thing that changes is that all the critical user applications are now protected from very bad behaviors and common exploit techniques, and the damages caused by advanced exploits are very limited.</p>
-<hr />
-<h3 id="forensics-distributions">Forensics distributions</h3>
-<p>Digital forensics experts need an environment that does not compromise their proof.</p>
-<p>Parrot comes with automount functions <strong>disabled by default</strong>, to allow forensics acquisitions to be performed in a safe way.
-The global automount policy is configured in a redundant way in all the layers of the system stack, from the noautomount kernel option passed by default at boot, to the specific file manager settings to disable auto mount and plug&amp;play features.</p>
-<p>Don't forget that the disks are still recognized by the system, and the system will mount them without protections if the user accidentally open them.</p>
-<p>The no-automount behavior is consistent and stable, but no protection is provided in case of accidental mounts. A write blocker is always recommended in any digital forensics scenario.</p>
-<h3 id="who-parrot-is-made-for">Who Parrot is made for</h3>
-<ul>
-<li>Security Experts</li>
-<li>Digital forensics experts</li>
-<li>Engineering and IT Students</li>
-<li>Researchers</li>
-<li>Journalists &amp; Hacktivists</li>
-<li>Wannabe Hackers</li>
-<li>Police officers and special security institutions</li>
-</ul></div>
+<h1 id="docker">Docker</h1>
+<h4 id="parrotsecparrot-core">Parrotsec/Parrot-core</h4>
+<p>Official Parrot Security Base system without tools.</p>
+<p>Start a new instance</p>
+<p>Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot-core
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot-core
+</code></pre>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot-core
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot-core[:version] parrot-core
+</code></pre>
+
+<h4 id="parrotsecparrot">Parrotsec/Parrot</h4>
+<p>Official Parrot Security image with basic security tools.</p>
+<p>-Start a new instance</p>
+<p>-Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot
+</code></pre>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot[:version] parrot
+</code></pre>
+
+<h4 id="parrotsecmetasploit">Parrotsec/Metasploit</h4>
+<p>Parrot Security Metasploit bundle.</p>
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/metasploit
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t metasploit[:version] metasploit
+</code></pre>
+
+<p>Start a new instance</p>
+<p>Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --network host parrotsec/metasploit
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti -network host metasploit
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

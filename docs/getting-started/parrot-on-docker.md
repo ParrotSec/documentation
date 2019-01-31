@@ -1,6 +1,4 @@
-# Virtual Machines
-
-## Docker
+# Docker
 
 #### Parrotsec/Parrot-core
 
@@ -22,7 +20,7 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://nest.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t parrot-core[:version] parrot-core
 ```
@@ -46,7 +44,7 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://nest.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t parrot[:version] parrot
 ```
@@ -60,7 +58,7 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://nest.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t metasploit[:version] metasploit
 ```
@@ -74,7 +72,3 @@ Local image from Dockerfile
 ```
     docker run -ti -network host metasploit
 ```
-
-## Virtual Machines 
-
-Under construction.

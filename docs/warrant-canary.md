@@ -23,7 +23,7 @@ Warrant canaries have been found to be legal by the United States Justice Depart
 
 ![warrant canary](img/warrant-canary.png)
 
-Warrant Canary, January 4th 2019
+Warrant Canary, January 31 2019
 
 
 

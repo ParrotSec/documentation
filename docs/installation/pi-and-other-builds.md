@@ -32,5 +32,3 @@ Press enter to begin the process, and note that DD does not provide any on-scree
 
 ## Pine64
 Under construction
-
-[Wiki Home](wiki/startpage.md)

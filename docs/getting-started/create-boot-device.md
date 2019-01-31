@@ -46,5 +46,3 @@ __[dd](https://en.wikipedia.org/wiki/Dd_(Unix)) (and its derivatives) is a comma
 
 
 ![DD](/img/dd.png)
-
-- [Previous](getting-started/download.md)/[Next](getting-started/how-to-boot.md)

@@ -12,10 +12,27 @@ visible: true
 Parrot Linux is a community-driven open source project,
 and a gateway to spread innovative ideas born inside its community.
 
+&nbsp;
+
+
+&nbsp;
+
+
+&nbsp;
+
 
 ## Join Our Community
 
-<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Join us</strong></a>
+<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Communty Forum</strong></a>
+
+&nbsp;
+
+
+&nbsp;
+
+
+&nbsp;
+
 
 ## Social Pages
 
@@ -27,17 +44,27 @@ and a gateway to spread innovative ideas born inside its community.
 
 Or join #parrotsec on irc.freenode.net
 
+&nbsp;
+
+
+&nbsp;
+
+
+&nbsp;
 
 ## Groups
 Our community lives in several places, here are some links to stay in touch with us
 
 <a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Community Forum</strong></a> <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
 
-----
+&nbsp;
 
-## Events
 
-Check our <a href="https://blog.parrotsec.org/category/events/" class="btn btn-primary">Events</a> page and meet our team and other community members.
+&nbsp;
+
+
+&nbsp;
+
 
 ----
 
