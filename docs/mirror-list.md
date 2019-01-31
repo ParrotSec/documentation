@@ -7,7 +7,7 @@ visible: true
 ---
 
 ## Introduction
-The Parrot project does not only deliver a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
+Parrot Linux does not only deliver a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
 
 The Parrot repository is used to provide officially supported software, system updates and security fixes.
 

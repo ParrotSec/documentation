@@ -1,8 +1,8 @@
 # Home
 
-For the Parrot Project homepage, visit [parrotsec.org](https://parrotsec.org).
+For the Parrot Linux homepage, visit [parrotsec.org](https://parrotsec.org).
 
-An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.
+An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, Parrot Linux is making every effort to provide all of its users with proper documentation in an easily accessible form.
 
 The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.
 
@@ -22,23 +22,18 @@ The documentation is still under construction, and all the Parrot users are invi
 
 ## Introduction
 
-[What is Parrot](intro/what-is-parrot)
+- [What is Parrot](intro/what-is-parrot)
 
-[Should I use Parrot?](intro/should-i-use-parrot)
+- [Should I use Parrot?](intro/should-i-use-parrot)
 
 ## Getting Started
 
-[Download](getting-started/download.md)
+- [Start here](getting-started/system-requirements.md)
 
-[Create a boot device](getting-started/create-boot-device.md)
+- [Install Parrot](getting-started/install-parrot.md)
 
-[How to boot](getting-started/how-to-boot.md)
-
-[Use Parrot](getting-started/use-parrot.md)
-
-[Install Parrot](getting-started/install-parrot.md)
-
-
+## Wiki
+- [Parrot Wiki](wiki/startpage.md)
 &nbsp;
 
 
@@ -66,7 +61,7 @@ and customization of the system.
 
 ### Debian Documentation
 
-The Parrot Project is based on top of the testing branch of Debian GNU/Linux, then most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
+Parrot Linux is based on top of the testing branch of Debian GNU/Linux, then most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
 
  * [Debian Handbook](https://www.debian.org/doc/manuals/debian-handbook/), the comprehensive user manual
  * [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/), a terse user's guide with the focus on the shell command line

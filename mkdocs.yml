@@ -13,19 +13,25 @@ theme:
 #        - cpp
 #        - perl
 
+
 nav:
     - Parrot Website: https://www.parrotsec.org
     - Introduction:
         - intro/what-is-parrot.md
         - intro/should-i-use-parrot.md
+        - intro/what-is-debian.md
+        - intro/what-is-linux.md
     - Getting Started:
+        - getting-started/system-requirements.md
         - getting-started/download.md
         - getting-started/create-boot-device.md
         - getting-started/what-is-live-mode.md
         - getting-started/how-to-boot.md
-        - getting-started/use-parrot.md
-        - getting-started/install-parrot.md
-    - Parrot Project:
+    - Parrot-Wiki: wiki/startpage.md
+    - Installation:
+        - install-parrot.md
+        - before-installing.md    
+    - Parrot Linux:
         - mirror-list.md
         - community.md
         - team.md

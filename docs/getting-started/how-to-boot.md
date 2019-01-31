@@ -12,7 +12,7 @@ So you've downloaded the ISO, you've burned it onto some media, and you're ready
 
 In order to do so, simply insert your boot media in the computer and reboot it. Now ensure your BIOS/UEFI is set to boot your removable media first or you'll pass Parrot and go straight to your harddrive.
 
- If everything goes well you will be greated by the Parrot boot screen and soon on to endless fun.
+ If everything goes well you will be greeted by the Parrot boot screen and soon on to endless fun.
 
 # USB Drive
 
@@ -56,3 +56,5 @@ Turn on your computer, insert the DVD straightaway and press the C key as soon a
 #### Standard method
 
  Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.
+
+- [Previous](getting-started/create-boot-device.md)/- [Next](wiki/startpage.md)

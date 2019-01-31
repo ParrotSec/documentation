@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-The Parrot Project is a community-driven project.
+Parrot Linux is a community-driven project.
 
 In this page we list people who gave a significant contribution to the project.
 
