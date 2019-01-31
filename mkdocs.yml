@@ -27,15 +27,15 @@ nav:
         - getting-started/create-boot-device.md
         - getting-started/what-is-live-mode.md
         - getting-started/how-to-boot.md
-    - Parrot-Wiki: wiki/startpage.md
     - Installation:
         - install-parrot.md
         - before-installing.md    
-    - Parrot Linux:
+    - project:
         - mirror-list.md
         - community.md
         - team.md
         - partners.md
+        - weathernam.md
         - warrant-canary.md
         - donate.md
     - F.A.Q.: faq.md

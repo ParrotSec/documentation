@@ -32,9 +32,6 @@ The documentation is still under construction, and all the Parrot users are invi
 
 - [Install Parrot](getting-started/install-parrot.md)
 
-## Wiki
-- [Parrot Wiki](wiki/startpage.md)
-&nbsp;
 
 
 &nbsp;
