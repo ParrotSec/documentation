@@ -55,5 +55,3 @@ Just import, configure system resources and start the VM.
 
 
 [__Downloads__](https://www.parrotsec.org/download.php)
-
-[Previous](getting-started/system-requirements.md)/[Next](getting-started/create-boot-device.md)

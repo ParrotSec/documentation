@@ -22,16 +22,58 @@ The documentation is still under construction, and all the Parrot users are invi
 
 ## Introduction
 
-- [What is Parrot](intro/what-is-parrot)
+- [What is Parrot](intro/what-is-parrot.md)
 
-- [Should I use Parrot?](intro/should-i-use-parrot)
+- [What is Debian](intro/what-is-debian.md)
 
-## Getting Started
+- [What is Linux](intro/what-is-linux.md)
 
-- [Start here](getting-started/system-requirements.md)
+## Getting started
 
-- [Install Parrot](getting-started/install-parrot.md)
+[Download Parrot](getting-started/download.md)
 
+[Create a boot device](getting-started/create-boot-device.md)
+
+[What is live mode](getting-started/what-is-live-mode.md)
+
+[How to boot the system](getting-started/how-to-boot.md)
+
+[Run Parrot on Docker](getting-started/parrot-on-docker.md)
+
+
+# Infrastructure Zone
+
+[CDN Speedtest](https://deb.parrotsec.org/speedtest)
+
+[Parrot network Map](weathermap.md)
+
+[Apt Mirror List](mirror-list.md)
+
+[Make your own Parrot mirror](https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror)
+
+
+
+
+# Developer zone
+
+[Developer Portal](https://nest.parrotsec.org)
+
+[Developer Documentation](dev/index.md)
+
+[Setup a cross-platform sbuild environment](dev/sbuild.md)
+
+
+
+
+# Side projects
+
+[aenigma federated xmpp server](https://github.com/openspace42/aenigma)
+
+[LibreFiber](https://github.com/openspace42/LibreFibre)
+
+
+
+&nbsp;
 
 
 &nbsp;

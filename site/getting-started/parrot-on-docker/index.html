@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/system-requirements/">
+        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/parrot-on-docker/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>System Requirements - Parrot Documentation</title>
+        <title>Parrot on Docker - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -54,19 +54,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../intro/what-is-parrot/">What is Parrot?</a>
+    <a href="../../intro/what-is-parrot/">What is Parrot</a>
 </li>
                                     
 <li >
-    <a href="../../intro/should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../../intro/what-is-debian/">What is Debian</a>
 </li>
                                     
 <li >
-    <a href="../../intro/what-is-debian/">What is Debian?</a>
-</li>
-                                    
-<li >
-    <a href="../../intro/what-is-linux/">What is Linux?</a>
+    <a href="../../intro/what-is-linux/">What is Linux</a>
 </li>
                                 </ul>
                             </li>
@@ -74,34 +70,48 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+<li >
+    <a href="../download/">Download Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../create-boot-device/">Create a boot device</a>
+</li>
+                                    
+<li >
+    <a href="../how-to-boot/">How to boot the system</a>
+</li>
+                                    
 <li class="active">
-    <a href="./">System Requirements</a>
-</li>
-                                    
-<li >
-    <a href="../download/">Download</a>
-</li>
-                                    
-<li >
-    <a href="../create-boot-device/">Create Boot Device</a>
-</li>
-                                    
-<li >
-    <a href="../what-is-live-mode.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../how-to-boot/">How To Boot</a>
+    <a href="./">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">project <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../mirror-list/">Mirror list</a>
+    <a href="../../mirror-list/">APT Mirror list</a>
 </li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li >
+    <a href="../../weathermap/">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
                                     
 <li >
     <a href="../../community/">Community</a>
@@ -113,14 +123,6 @@
                                     
 <li >
     <a href="../../partners/">Project Partners</a>
-</li>
-                                    
-<li >
-    <a href="../../weathernam.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../../warrant-canary/">Warrant Canary</a>
 </li>
                                     
 <li >
@@ -140,12 +142,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../intro/what-is-linux/">
+                                <a rel="next" href="../how-to-boot/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../download/">
+                                <a rel="prev" href="../../mirror-list/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -157,44 +159,77 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#parrot-linux-is-pretty-nimble-but-requires-the-following-as-a-bare-minimum">Parrot Linux is pretty nimble but requires the following as a bare minimum.</a></li>
-            <li><a href="#parrot-home-full-install">Parrot Home Full install</a></li>
-            <li><a href="#parrot-security-full-install">Parrot Security Full install</a></li>
-            <li><a href="#parrot-netinstall">Parrot Netinstall</a></li>
+        <li class="main active"><a href="#docker">Docker</a></li>
+            <li><a href="#parrotsecparrot-core">Parrotsec/Parrot-core</a></li>
+            <li><a href="#parrotsecparrot">Parrotsec/Parrot</a></li>
+            <li><a href="#parrotsecmetasploit">Parrotsec/Metasploit</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="parrot-linux-is-pretty-nimble-but-requires-the-following-as-a-bare-minimum">Parrot Linux is pretty nimble but requires the following as a bare minimum.</h2>
-<h3 id="parrot-home-full-install">Parrot Home Full install</h3>
-<ul>
-<li>x86_64 Processor</li>
-<li>2 GB of RAM DDR3</li>
-<li>30 GB of Hard drive space</li>
-</ul>
-<h3 id="parrot-security-full-install">Parrot Security Full install</h3>
-<ul>
-<li>x86_64 Processor</li>
-<li>2 GB of RAM DDR3</li>
-<li>40 GB of Hard drive space</li>
-</ul>
-<h3 id="parrot-netinstall">Parrot Netinstall</h3>
-<ul>
-<li>x86_64 Processor</li>
-<li>512 MB of RAM DDR3</li>
-<li>2 GB of Hard drive space</li>
-</ul>
-<h4 id="recommended">Recommended</h4>
-<ul>
-<li>x86_64 Processor</li>
-<li>1 GB of RAM DDR3</li>
-<li>
-<p>10 GB of Hard drive space</p>
-</li>
-<li>
-<p><a href="getting-started/download.md">Next</a></p>
-</li>
-</ul></div>
+<h1 id="docker">Docker</h1>
+<h4 id="parrotsecparrot-core">Parrotsec/Parrot-core</h4>
+<p>Official Parrot Security Base system without tools.</p>
+<p>Start a new instance</p>
+<p>Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot-core
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot-core
+</code></pre>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot-core
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot-core[:version] parrot-core
+</code></pre>
+
+<h4 id="parrotsecparrot">Parrotsec/Parrot</h4>
+<p>Official Parrot Security image with basic security tools.</p>
+<p>-Start a new instance</p>
+<p>-Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --rm --network host parrotsec/parrot
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti --rm -network host parrot
+</code></pre>
+
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/parrot
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t parrot[:version] parrot
+</code></pre>
+
+<h4 id="parrotsecmetasploit">Parrotsec/Metasploit</h4>
+<p>Parrot Security Metasploit bundle.</p>
+<p>Install/Update from Docker Cloud</p>
+<pre><code>    docker pull parrotsec/metasploit
+</code></pre>
+
+<p>Install/Update from local Dockerfile</p>
+<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+
+    docker build -t metasploit[:version] metasploit
+</code></pre>
+
+<p>Start a new instance</p>
+<p>Public image from Docker Cloud</p>
+<pre><code>    docker run -ti --network host parrotsec/metasploit
+</code></pre>
+
+<p>Local image from Dockerfile</p>
+<pre><code>    docker run -ti -network host metasploit
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

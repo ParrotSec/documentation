@@ -146,6 +146,7 @@ Europe Middle East and Asia
 | Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
 |:----------------------------------|:---------------:|:-----|:-------------------|
 |Italy<br>GARR<br>10 Gbps|GARR Consortium (Italian Research & Education Network)|[parrot.mirror.garr.it/mirrors/parrot](http://parrot.mirror.garr.it/mirrors/parrot)|<sub>deb https://parrot.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free</sub>|
+|Italy<br>udupalermo<br>300 Mbps|UDU Palermo (Unione Degli Universitari)|[mirror.udupalermo.it/parrot](http://mirror.udupalermo.it/parrot)|<sub>deb http://mirror.udupalermo.it/parrot/ parrot main contrib non-free</sub>|
 |Germany<br>Halifax<br>20 Gbps|RWTH-Aachen (Halifax students group)|[ftp.halifax.rwth-aachen.de/parrotsec](http://ftp.halifax.rwth-aachen.de/parrotsec)|<sub>deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free</sub>|
 |Germany<br>Esslingen<br>10 Gbps|Esslingen (University of Applied Sciences)|[ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org](http://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org)|<sub>deb https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/ parrot main contrib non-free</sub>|
 |Netherland<br>NLUUG<br>10 Gbps| Nluug |[ftp.nluug.nl/os/Linux/distr/parrot](http://ftp.nluug.nl/os/Linux/distr/parrot)|<sub>deb https://ftp.nluug.nl/os/Linux/distr/parrot/ parrot main contrib non-free</sub>|
@@ -203,23 +204,13 @@ Feel free to contact the Parrot team if you have specific mirroring needs or ban
 Main Mirror Director:
     archive.parrotsec.org
 
-Global Zones:
+Global Zones (read the notes):
     EMEA:
         emea.archive.parrotsec.org
     NCSA:
         ncsa.archive.parrotsec.org
     APAC:
         apac.archive.parrotsec.org
-
-Individual Masters:
-    archive1 france:
-        archive1.parrotsec.org
-    archive2 canada:
-        archive2.parrotsec.org
-    archive3 france:
-        archive3.parrotsec.org
-    archive4 poland:
-        archive4.parrotsec.org
 </pre>
 
 Single archives may be unavailable or replaced form time to time.

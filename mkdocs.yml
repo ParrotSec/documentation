@@ -17,22 +17,22 @@ theme:
 nav:
     - Parrot Website: https://www.parrotsec.org
     - Introduction:
-        - intro/what-is-parrot.md
-        - intro/should-i-use-parrot.md
-        - intro/what-is-debian.md
-        - intro/what-is-linux.md
+        - What is Parrot: intro/what-is-parrot.md
+        - What is Debian: intro/what-is-debian.md
+        - What is Linux: intro/what-is-linux.md
     - Getting Started:
-        - getting-started/system-requirements.md
-        - getting-started/download.md
-        - getting-started/create-boot-device.md
-        - getting-started/what-is-live-mode.md
-        - getting-started/how-to-boot.md
-    - project:
-        - mirror-list.md
+        - Download Parrot: getting-started/download.md
+        - Create a boot device: getting-started/create-boot-device.md
+        - How to boot the system: getting-started/how-to-boot.md
+        - Parrot on Docker: getting-started/parrot-on-docker.md
+    - Project:
+        - Infrastructure:
+            - APT Mirror list: mirror-list.md
+            - Make your own mirror: https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror
+            - Infrastructure Weathermap: weathermap.md
+            - Warrant Canary: warrant-canary.md
         - community.md
         - team.md
         - partners.md
-        - weathernam.md
-        - warrant-canary.md
         - donate.md
     - F.A.Q.: faq.md

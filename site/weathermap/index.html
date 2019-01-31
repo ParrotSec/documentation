@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://docs.parrotsec.org/weathermap/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Weathermap - Parrot Documentation</title>
+        <title>Infrastructure Weathermap - Parrot Documentation</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -54,19 +54,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../intro/what-is-parrot/">What is Parrot?</a>
+    <a href="../intro/what-is-parrot/">What is Parrot</a>
 </li>
                                     
 <li >
-    <a href="../intro/should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../intro/what-is-debian/">What is Debian</a>
 </li>
                                     
 <li >
-    <a href="../intro/what-is-debian/">What is Debian?</a>
-</li>
-                                    
-<li >
-    <a href="../intro/what-is-linux/">What is Linux?</a>
+    <a href="../intro/what-is-linux/">What is Linux</a>
 </li>
                                 </ul>
                             </li>
@@ -75,33 +71,47 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../getting-started/system-requirements/">System Requirements</a>
+    <a href="../getting-started/download/">Download Parrot</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/download/">Download</a>
+    <a href="../getting-started/create-boot-device/">Create a boot device</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/create-boot-device/">Create Boot Device</a>
+    <a href="../getting-started/how-to-boot/">How to boot the system</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/what-is-live-mode.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../getting-started/how-to-boot/">How To Boot</a>
+    <a href="../getting-started/parrot-on-docker/">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">project <b class="caret"></b></a>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../mirror-list/">Mirror list</a>
+    <a href="../mirror-list/">APT Mirror list</a>
 </li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li class="active">
+    <a href="./">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
                                     
 <li >
     <a href="../community/">Community</a>
@@ -113,14 +123,6 @@
                                     
 <li >
     <a href="../partners/">Project Partners</a>
-</li>
-                                    
-<li >
-    <a href="../weathernam.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../warrant-canary/">Warrant Canary</a>
 </li>
                                     
 <li >
@@ -139,6 +141,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../mirror-list/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../warrant-canary/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -197,7 +209,7 @@ var master = L.marker([51.514198, -0.093100], {title: 'CDN Edge', icon: iconserv
 .bindTooltip('1', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>london1.uk.emea.parrotsec.org");
 // newyork
-var master = L.marker([40.7142700, -74.0059700], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
+var master = L.marker([40.8370495, -73.8654295], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
 .bindTooltip('2', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>newyork1.us.ncsa.parrotsec.org<br>newyork2.us.ncsa.parrotsec.org");
 //sanfrancisco
@@ -281,7 +293,7 @@ var master = L.marker([44.6592, -74.9681], {title: 'Mirror Server', icon: iconmi
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Clarkson University<br><a href="http://mirror.clarkson.edu/parrot/">http://mirror.clarkson.edu/parrot/</a>');
 // mirror osusol
-var master = L.marker([40.7143, -74.006], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+var master = L.marker([42.497540120, -123.277491], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Oregon State University - Open Source Lab<br><a href="http://ftp.osuosl.org/pub/parrotos/">http://ftp.osuosl.org/pub/parrotos/</a>');
 // mirror berkeley

@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/wiki/pi-and-other-builds/">
+        <link rel="canonical" href="https://docs.parrotsec.org/installation/multi-boot-macintosh/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>All builds are currently experimental and not yet ready for release. - Parrot Documentation</title>
+        <title>Multi boot macintosh - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -54,19 +54,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../intro/what-is-parrot/">What is Parrot?</a>
+    <a href="../../intro/what-is-parrot/">What is Parrot</a>
 </li>
                                     
 <li >
-    <a href="../../intro/should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../../intro/what-is-debian/">What is Debian</a>
 </li>
                                     
 <li >
-    <a href="../../intro/what-is-debian/">What is Debian?</a>
-</li>
-                                    
-<li >
-    <a href="../../intro/what-is-linux/">What is Linux?</a>
+    <a href="../../intro/what-is-linux/">What is Linux</a>
 </li>
                                 </ul>
                             </li>
@@ -75,33 +71,47 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../getting-started/system-requirements/">System Requirements</a>
+    <a href="../../getting-started/download/">Download Parrot</a>
 </li>
                                     
 <li >
-    <a href="../../getting-started/download/">Download</a>
+    <a href="../../getting-started/create-boot-device/">Create a boot device</a>
 </li>
                                     
 <li >
-    <a href="../../getting-started/create-boot-device/">Create Boot Device</a>
+    <a href="../../getting-started/how-to-boot/">How to boot the system</a>
 </li>
                                     
 <li >
-    <a href="../../getting-started/what-is-live-mode.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../../getting-started/how-to-boot/">How To Boot</a>
+    <a href="../../getting-started/parrot-on-docker/">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">project <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../mirror-list/">Mirror list</a>
+    <a href="../../mirror-list/">APT Mirror list</a>
 </li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li >
+    <a href="../../weathermap/">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
                                     
 <li >
     <a href="../../community/">Community</a>
@@ -113,14 +123,6 @@
                                     
 <li >
     <a href="../../partners/">Project Partners</a>
-</li>
-                                    
-<li >
-    <a href="../../weathernam.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../../warrant-canary/">Warrant Canary</a>
 </li>
                                     
 <li >
@@ -147,38 +149,11 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#all-builds-are-currently-experimental-and-not-yet-ready-for-release">All builds are currently experimental and not yet ready for release.</a></li>
-            <li><a href="#last-updated-jan-29th-2019">Last updated Jan 29th 2019.</a></li>
-            <li><a href="#rpi">Rpi</a></li>
-            <li><a href="#pine64">Pine64</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="all-builds-are-currently-experimental-and-not-yet-ready-for-release">All builds are currently experimental and not yet ready for release.</h1>
-<h2 id="last-updated-jan-29th-2019">Last updated Jan 29th 2019.</h2>
-<h2 id="rpi">Rpi</h2>
-<h4 id="the-flashing-process">The Flashing Process</h4>
-<p>It is recommended to use high speed class SD Cards (Class 10) to flash the image otherwise the process may be slow.</p>
-<p>Use Etcher for GNU/Linux, Win32 Disk Imager for Windows or ApplePiBaker for Mac to load the Parrot image onto the SD card.</p>
-<p>On a Mac, before plugging in the SD card, run the following in Terminal:</p>
-<pre><code>    df -h
-</code></pre>
-
-<p>This will display a list of all the disks attached to the system. Attach the SD card and run the command again, and note the filesystem name of the SD card (it's the one that wasn't there before). It should look like "/dev/disk2s1", be careful in the next steps, since mixing things up could overwrite the hard drive data.</p>
-<p>Now, use the DD command to load the Parrot image onto the card. Use <code>man dd</code> to see the rest of the operands for dd.</p>
-<p>First, let's unmount the partition with the following command, with "x" being the correct disk number:</p>
-<pre><code>    sudo diskutil unmount /dev/diskX
-</code></pre>
-
-<p>Now Parrot is ready to load. Type, but don't run the command, sudo dd bs=1m if= and enter the location of the Parrot image to load onto the card. Use drag and drop with the disk image into the window to show the file path. After that, type a space, then of=/dev/rdisk and the number of the disk from before.</p>
-<p>If there is an "s" after the initial disk number (like rdisk2s1), do not include the "s" or following number. So, "rdisk2s1" should look like "rdisk2." Here's what it should look like altogether:</p>
-<pre><code>    sudo dd bs=1m if=LocationOfParrotImage of=/dev/rdiskX
-</code></pre>
-
-<p>Press enter to begin the process, and note that DD does not provide any on-screen information unless there is an error or it finishes. To view the progress during the transfer, type Ctrl+T. Wait for the process to complete. You'll know the process is complete when a readout of bytes transferred over the time the process ran appears.</p>
-<h2 id="pine64">Pine64</h2>
-<p>Under construction</p>
+<p>Under Construction</p>
 <p><a href="wiki/startpage.md">Wiki Home</a></p></div>
         </div>
 

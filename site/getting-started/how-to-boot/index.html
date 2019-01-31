@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://docs.parrotsec.org/getting-started/how-to-boot/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>How To Boot - Parrot Documentation</title>
+        <title>How to boot the system - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -54,19 +54,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../intro/what-is-parrot/">What is Parrot?</a>
+    <a href="../../intro/what-is-parrot/">What is Parrot</a>
 </li>
                                     
 <li >
-    <a href="../../intro/should-i-use-parrot/">Should I use Parrot?</a>
+    <a href="../../intro/what-is-debian/">What is Debian</a>
 </li>
                                     
 <li >
-    <a href="../../intro/what-is-debian/">What is Debian?</a>
-</li>
-                                    
-<li >
-    <a href="../../intro/what-is-linux/">What is Linux?</a>
+    <a href="../../intro/what-is-linux/">What is Linux</a>
 </li>
                                 </ul>
                             </li>
@@ -75,33 +71,47 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../system-requirements/">System Requirements</a>
+    <a href="../download/">Download Parrot</a>
 </li>
                                     
 <li >
-    <a href="../download/">Download</a>
-</li>
-                                    
-<li >
-    <a href="../create-boot-device/">Create Boot Device</a>
-</li>
-                                    
-<li >
-    <a href="../what-is-live-mode.md">None</a>
+    <a href="../create-boot-device/">Create a boot device</a>
 </li>
                                     
 <li class="active">
-    <a href="./">How To Boot</a>
+    <a href="./">How to boot the system</a>
+</li>
+                                    
+<li >
+    <a href="../parrot-on-docker/">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">project <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
 <li >
-    <a href="../../mirror-list/">Mirror list</a>
+    <a href="../../mirror-list/">APT Mirror list</a>
 </li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li >
+    <a href="../../weathermap/">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
                                     
 <li >
     <a href="../../community/">Community</a>
@@ -113,14 +123,6 @@
                                     
 <li >
     <a href="../../partners/">Project Partners</a>
-</li>
-                                    
-<li >
-    <a href="../../weathernam.md">None</a>
-</li>
-                                    
-<li >
-    <a href="../../warrant-canary/">Warrant Canary</a>
 </li>
                                     
 <li >
@@ -145,7 +147,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../../mirror-list/">
+                                <a rel="prev" href="../parrot-on-docker/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -167,6 +169,8 @@
         <li class="main "><a href="#dvd">DVD</a></li>
             <li><a href="#regular-pc">Regular PC</a></li>
             <li><a href="#mac">MAC</a></li>
+            <li><a href="#what-is-live-mode">What is live mode</a></li>
+            <li><a href="#default-username-and-password">Default username and password</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -195,9 +199,14 @@
 <p>Turn on your computer, insert the DVD straightaway and press the C key as soon as you hear the beep signaling the computer has been turned on. Release the button after a few seconds, as soon as you hear the DVD has started working.</p>
 <h4 id="standard-method">Standard method</h4>
 <p>Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.</p>
-<ul>
-<li><a href="getting-started/create-boot-device.md">Previous</a>/- <a href="wiki/startpage.md">Next</a></li>
-</ul></div>
+<h2 id="what-is-live-mode">What is live mode</h2>
+<p>The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.</p>
+<p>This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory (Random Access Memory).</p>
+<p>Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.</p>
+<p>To create a live boot device please read this <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device/">page</a>.
+To learn how to boot from the live media read this <a href="https://www.parrotsec.org/docs/getting-started/how-to-boot/">page</a> instead.</p>
+<h2 id="default-username-and-password">Default username and password</h2>
+<p>In Parrot OS live environment the default username is "user" and the default password is "toor".</p></div>
         </div>
 
         <footer class="col-md-12">

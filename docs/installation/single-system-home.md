@@ -30,5 +30,3 @@ Once the installer starts the initial screen will appear. Press Enter to boot or
 12. The installer will now tell that the installation has finished. Remove the media and hit Enter to reboot the machine. It should boot up into the newly installed Parrot system and allow to log in.
 
 ### BOOM Done!
-
-[Parrot Wiki](wiki/startpage.md)
