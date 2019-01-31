@@ -51,16 +51,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://docs.parrotsec.org/mirror-list/</loc>
      <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
