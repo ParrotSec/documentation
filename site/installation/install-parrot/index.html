@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/use-parrot/">
+        <link rel="canonical" href="https://docs.parrotsec.org/installation/install-parrot/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Use Parrot - Parrot Documentation</title>
+        <title>Install Parrot - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,39 +60,56 @@
 <li >
     <a href="../../intro/should-i-use-parrot/">Should I use Parrot?</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../download/">Where to Download</a>
+    <a href="../../intro/what-is-debian/">What is Debian?</a>
 </li>
                                     
 <li >
-    <a href="../create-boot-device/">Create Boot Device</a>
-</li>
-                                    
-<li >
-    <a href="../what-is-live-mode/">What is live mode</a>
-</li>
-                                    
-<li >
-    <a href="../how-to-boot/">How To Boot</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Use Parrot</a>
-</li>
-                                    
-<li >
-    <a href="../install-parrot/">Install Parrot</a>
+    <a href="../../intro/what-is-linux/">What is Linux?</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parrot Project <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting-started/system-requirements/">System Requirements</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/download/">Download</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/create-boot-device/">Create Boot Device</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/what-is-live-mode/">What is live mode</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/how-to-boot/">How To Boot</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Install Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../before-installing/">Before installing</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
@@ -109,6 +126,10 @@
                                     
 <li >
     <a href="../../partners/">Project Partners</a>
+</li>
+                                    
+<li >
+    <a href="../../weathermap/">Weathermap</a>
 </li>
                                     
 <li >
@@ -132,12 +153,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../how-to-boot/">
+                                <a rel="next" href="../../getting-started/how-to-boot/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../install-parrot/">
+                                <a rel="prev" href="../before-installing/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -149,14 +170,24 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#first-contact-with-the-system">First contact with the system</a></li>
-        <li class="main "><a href="#i-have-a-parrot-usb-or-dvd-now-what">I have a Parrot USB or DVD, now what?</a></li>
-        <li class="main "><a href="#live-mode-and-installer">Live Mode and Installer</a></li>
+        <li class="main active"><a href="#parrot-images">Parrot Images</a></li>
+            <li><a href="#securityhomeworkstation">Security/Home/Workstation</a></li>
+            <li><a href="#netinstall">Netinstall</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="first-contact-with-the-system">First contact with the system</h3>
+<h1 id="parrot-images">Parrot Images</h1>
+<h2 id="securityhomeworkstation">Security/Home/Workstation</h2>
+<p>These images can be installed from removable DVD, USB or SD storage media. </p>
+<p>The easiest way to prepare the installation media is to download any of the 64-bit Parrot images that will fit on the device and burn it. Of course this will destroy anything already there.</p>
+<p>To learn how to burn the images, please see <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device/">here</a>.</p>
+<p>Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.</p>
+<p>For detailed instructions visit the <a href="wiki/single-system-home.md">wiki</a></p>
+<h2 id="netinstall">Netinstall</h2>
+<p>This image is intended to boot from small storage media (like an old USB drive or CD) and install additional packages over a network; hence the name 'netinst'.</p>
+<p>The image has the software components needed to run the installer and the base packages to provide a minimal Parrot system. There are several architectures to select: amd64, arm64 and armhf.</p>
+<p>Download whichever type you prefer and burn it. The procedure is the same as described on the above link.</p>
 <p><img alt="Parrot first contact" src="/img/martian-first-contact.jpg" /></p>
 <h3 id="i-have-a-parrot-usb-or-dvd-now-what">I have a Parrot USB or DVD, now what?</h3>
 <p>If you properly followed the precedent tutorial, then you have a bootable USB drive or DVD.</p>

@@ -7,77 +7,97 @@
     </url>
     <url>
      <loc>https://docs.parrotsec.org/intro/what-is-parrot/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/intro/should-i-use-parrot/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/intro/what-is-debian/</loc>
+     <lastmod>2019-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/intro/what-is-linux/</loc>
+     <lastmod>2019-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/getting-started/system-requirements/</loc>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/download/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/create-boot-device/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/what-is-live-mode/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/getting-started/how-to-boot/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/use-parrot/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <loc>https://docs.parrotsec.org/installation/install-parrot/</loc>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.parrotsec.org/getting-started/install-parrot/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <loc>https://docs.parrotsec.org/installation/before-installing/</loc>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/mirror-list/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/community/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/team/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/partners/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.parrotsec.org/weathermap/</loc>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/warrant-canary/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/donate/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.parrotsec.org/faq/</loc>
-     <lastmod>2019-01-29</lastmod>
+     <lastmod>2019-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

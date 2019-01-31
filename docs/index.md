@@ -22,18 +22,13 @@ The documentation is still under construction, and all the Parrot users are invi
 
 ## Introduction
 
-- [What is Parrot](intro/what-is-parrot)
+- [What is Parrot](intro/what-is-parrot.md)
 
-- [Should I use Parrot?](intro/should-i-use-parrot)
+- [Should I use Parrot?](intro/should-i-use-parrot.md)
 
-## Getting Started
+- [System Requirements](intro/system-requirements.md)
 
-- [Start here](getting-started/system-requirements.md)
 
-- [Install Parrot](getting-started/install-parrot.md)
-
-## Wiki
-- [Parrot Wiki](wiki/startpage.md)
 &nbsp;
 
 
