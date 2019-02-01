@@ -34,12 +34,13 @@ The documentation is still under construction, and all the Parrot users are invi
 
 [Create a boot device](getting-started/create-boot-device.md)
 
-[What is live mode](getting-started/what-is-live-mode.md)
+[What is live mode](info/what-is-live-mode.md)
 
 [How to boot the system](getting-started/how-to-boot.md)
 
-[Run Parrot on Docker](getting-started/parrot-on-docker.md)
+[Run Parrot on Docker](getting-started/parrot-on-docker.md)  
 
+[Further Information](startpage.md)
 
 # Infrastructure Zone
 

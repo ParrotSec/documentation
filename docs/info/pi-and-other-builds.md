@@ -32,3 +32,6 @@ Press enter to begin the process, and note that DD does not provide any on-scree
 
 ## Pine64
 Under construction
+
+
+[Parrot Info Home](https://www.parrotsec.org/docs/startpage)

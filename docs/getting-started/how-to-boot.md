@@ -67,8 +67,8 @@ This is possible because the system is not loaded onto the system's hard drive, 
 
 Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.
 
-To create a live boot device please read this [page](https://www.parrotsec.org/docs/getting-started/create-boot-device/).
-To learn how to boot from the live media read this [page](https://www.parrotsec.org/docs/getting-started/how-to-boot/) instead.
+To create a live boot device please read this [page](create-boot-device.md).
+To learn how to boot from the live media read this [page](how-to-boot.md) instead.
 
 ## Default username and password
 In Parrot OS live environment the default username is "user" and the default password is "toor".

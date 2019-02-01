@@ -1,3 +1,11 @@
+---
+title: 'Before Installing'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
+
 ## Backup all your data!
 ### Seriously! Please back up all data before install. 
 
@@ -9,3 +17,4 @@ Ensure you know the limitations of your hardware (don't attempt to install am64 
 
 Learn about your BIOS/UEFI before you start installing. Make all necessary changes before you install.
 
+[Parrot Info Home](https://www.parrotsec.org/docs/startpage)

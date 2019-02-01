@@ -18,7 +18,7 @@ To learn how to burn the images, please see [here](https://www.parrotsec.org/doc
 
 Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.
 
-For detailed instructions visit the [wiki](wiki/single-system-home.md)
+For detailed instructions visit the [here](parrot-home-install.md)
 
 ## Netinstall
 
@@ -55,3 +55,5 @@ This is possible because the system is not loaded onto the system's hard drive, 
 ![parrot-live](/img/parrot-live.png)
 
 Parrot OS offers the ability to install the OS while in the live environment offers the ability to test the system without interfering with the computer's hard drive.
+
+[Parrot Info Home](https://www.parrotsec.org/docs/startpage)

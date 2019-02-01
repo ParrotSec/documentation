@@ -15,7 +15,7 @@ be also. We make it easier for professionals to accomplish the important stuff
 by reducing the time and effort wasted making sure their tools work.
 
 Read the dedicated documentation page to know more:
-[Should I use parrot?](https://www.parrotsec.org/docs/intro/should-i-use-parrot/)
+[Should I use parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)
 
 
 
@@ -44,7 +44,8 @@ Open a terminal window and launch the following command;
 
 Open a terminal window and launch the following commands
 
-`sudo apt update
+`
+sudo apt update
 sudo apt full-upgrade
 `
 
@@ -108,7 +109,7 @@ This usually happens when you use software that doesn't respect the isohybrid st
 
 We have a dedicated documentation page which describes this issue, how to fix it and why.
 
-[Create a Boot Device](getting-started/create-boot-device)
+[Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device)
 
 ## How do I prepare a bootable Parrot USB drive?
 
@@ -122,7 +123,7 @@ Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-devi
 
 ## I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](wiki/helpme.md)
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme) and the [Parrot Info](https://www.parrotsec.org/docs/startpage) page. 
 
 ## Is this FAQ under construction?
 

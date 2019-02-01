@@ -1,3 +1,10 @@
+---
+title: 'Supported Chipsets'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
 # List of chipsets Parrot Linux works on:
 
 - WiFi - TP-Link TL-WN722N v1
@@ -6,3 +13,5 @@
 - WiFi - Alfa AWUSO36NH
 - WiFi - Qualcomm Atheros QCA9337
 (If your device works and it is not on the list please leave a post [here](https://community.parrotsec.org/))
+
+[Parrot Info Home](https://www.parrotsec.org/docs/startpage)

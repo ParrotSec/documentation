@@ -27,3 +27,5 @@ visible: true
 - Quad core x86_64 Processor
 - 8 GB of RAM DDR3
 - 128 GB SSD
+
+[Parrot Info Home](https://www.parrotsec.org/docs/startpage)
