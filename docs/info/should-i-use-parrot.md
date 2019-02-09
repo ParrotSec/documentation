@@ -73,5 +73,5 @@ The no-automount behavior is consistent and stable, but no protection is provide
  * Journalists & Hacktivists
  * Wannabe Hackers
  * Police officers and special security institutions
-
+    
 [Parrot Info Home](https://www.parrotsec.org/docs/startpage)

@@ -40,6 +40,8 @@ The documentation is still under construction, and all the Parrot users are invi
 
 [Run Parrot on Docker](getting-started/parrot-on-docker.md)  
 
+## Further Info (troubleshooting, install help, etc)    
+
 [Further Information](startpage.md)
 
 # Infrastructure Zone

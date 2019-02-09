@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/getting-started/how-to-boot/">
+        <link rel="canonical" href="https://docs.parrotsec.org/info/troubleshooting-grub/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>How to boot the system - Parrot Documentation</title>
+        <title>Troubleshooting GRUB - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -66,24 +66,24 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../download/">Download Parrot</a>
+    <a href="../../getting-started/download/">Download Parrot</a>
 </li>
                                     
 <li >
-    <a href="../create-boot-device/">Create a boot device</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">How to boot the system</a>
+    <a href="../../getting-started/create-boot-device/">Create a boot device</a>
 </li>
                                     
 <li >
-    <a href="../parrot-on-docker/">Parrot on Docker</a>
+    <a href="../../getting-started/how-to-boot/">How to boot the system</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/parrot-on-docker/">Parrot on Docker</a>
 </li>
                                 </ul>
                             </li>
@@ -141,16 +141,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../create-boot-device/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../parrot-on-docker/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -159,54 +149,50 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#system-boot">System boot</a></li>
-        <li class="main "><a href="#usb-drive">USB Drive</a></li>
-            <li><a href="#obsolete-computers">Obsolete computers</a></li>
-            <li><a href="#new-computers">New computers</a></li>
-            <li><a href="#option-disabled">Option disabled</a></li>
-            <li><a href="#option-is-not-available">Option is not available</a></li>
-            <li><a href="#secure-boot">Secure boot</a></li>
-        <li class="main "><a href="#dvd">DVD</a></li>
-            <li><a href="#regular-pc">Regular PC</a></li>
-            <li><a href="#mac">MAC</a></li>
-            <li><a href="#what-is-live-mode">What is live mode</a></li>
-            <li><a href="#default-username-and-password">Default username and password</a></li>
+        <li class="main active"><a href="#1-the-first-step-is-to-boot-live-using-a-bootable-usb-key-of-debian-or-parrotos-boot-on-it-and-then-open-a-terminal">1) The first step is to boot live using a bootable USB key of Debian or ParrotOS. Boot on it, and then open a terminal.</a></li>
+        <li class="main "><a href="#2-in-the-terminal-type">2) In the terminal type:</a></li>
+        <li class="main "><a href="#3-now-you-have-to-mount-the-partitions">3) Now you have to mount the partitions</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="system-boot">System boot</h1>
-<p>So you've downloaded the ISO, you've burned it onto some media, and you're ready to boot Parrot on your computer.</p>
-<p>In order to do so, simply insert your boot media in the computer and reboot it. Now ensure your BIOS/UEFI is set to boot your removable media first or you'll pass Parrot and go straight to your harddrive.</p>
-<p>If everything goes well you will be greeted by the Parrot boot screen and soon on to endless fun.</p>
-<h1 id="usb-drive">USB Drive</h1>
-<h4 id="obsolete-computers">Obsolete computers</h4>
-<p>If you're using a very old computer you might not be able to boot your system from a USB drive: in this case you will have to use a DVD or another device your computer will recognize as a boot device.</p>
-<h4 id="new-computers">New computers</h4>
-<p>Most laptops allow you to access the booting menu pressing f2 or f12; for most desktop computers press f8; for other kind of devices try pressing esc, f12, f11 or f10. Google your manufacturer to find out what makes your system barf up its BIOS.</p>
-<h4 id="option-disabled">Option disabled</h4>
-<p>For some computers, the booting menu may be disabled by default: you will have to access the BIOS settings and enable such option, reboot the computer and press the right key to access the booting menu.</p>
-<h4 id="option-is-not-available">Option is not available</h4>
-<p>Some computers allow you to boot the system from USB drives but don't display a menu to select the booting device. If this is your case you need to access the BIOS settings, go to the booting panel and change the order of which booting devices, placing the USB drive on top of the list. Then simply reboot the computer and the BIOS will choose the USB drive as a booting device.</p>
-<h4 id="secure-boot">Secure boot</h4>
-<p>In case you have a computer with Secure Boot enabled, you will have to open the BIOS settings, disable secure boot and set it to legacy boot. If your computer doesn't provide a booting menu, follow the instructions displayed on this page in the section above (“option is not available”). If all else fails, google your make and model. It is likely someone has attempted to install Linux also and might have a solution. </p>
-<h1 id="dvd">DVD</h1>
-<p>Booting a system from a DVD is much easier and compatible with most machines.</p>
-<h3 id="regular-pc">Regular PC</h3>
-<p>You can boot a DVD by using the standard procedure for the USB drive as described above.</p>
-<h3 id="mac">MAC</h3>
-<h4 id="dvd-method-on-old-macs">DVD method on old MACs</h4>
-<p>Turn on your computer, insert the DVD straightaway and press the C key as soon as you hear the beep signaling the computer has been turned on. Release the button after a few seconds, as soon as you hear the DVD has started working.</p>
-<h4 id="standard-method">Standard method</h4>
-<p>Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.</p>
-<h2 id="what-is-live-mode">What is live mode</h2>
-<p>The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.</p>
-<p>This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory (Random Access Memory).</p>
-<p>Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.</p>
-<p>To create a live boot device please read this <a href="../create-boot-device/">page</a>.
-To learn how to boot from the live media read this <a href="./">page</a> instead.</p>
-<h2 id="default-username-and-password">Default username and password</h2>
-<p>In Parrot OS live environment the default username is "user" and the default password is "toor".</p></div>
+<p>Occationally grub doesn't seem to work properly because of a Windows update or grub was not properly installed during Parrot's install and so on.</p>
+<h3 id="1-the-first-step-is-to-boot-live-using-a-bootable-usb-key-of-debian-or-parrotos-boot-on-it-and-then-open-a-terminal">1) The first step is to boot live using a bootable USB key of Debian or ParrotOS. Boot on it, and then open a terminal.</h3>
+<h3 id="2-in-the-terminal-type">2) In the terminal type:</h3>
+<pre><code>sudo -i 
+
+fdisk -l
+</code></pre>
+
+<p>The fdisk command will show your partition scheme, you have to identify 2 things (only one for those using legacy instead of uefi)</p>
+<ul>
+<li>The partition that contain the "/" which is the partition where the system is installed.</li>
+<li>The <em>EFI</em> partition  </li>
+</ul>
+<p>Let's say my system partition is <code>/dev/sda2</code> and my EFI partition is <code>/dev/sda1</code>. Your partition "name" might be different (e.g.nvme01 etc), just replace mine with yours in the command shown below. </p>
+<h3 id="3-now-you-have-to-mount-the-partitions">3) Now you have to mount the partitions</h3>
+<pre><code>mount /dev/sda1 /mnt
+mount --bind /proc /mnt/proc
+mount --bind /sys /mnt/sys
+mount --bind /dev /mnt/dev
+</code></pre>
+
+<p>Those that have Legacy instead of EFI can go to step 4) 
+For EFI there is one extra step: Mount your EFI partition
+<code>mount /dev/sda1 /mnt/boot/efi</code></p>
+<p>Sometimes errors like this can result: <em><code>mount: /mnt/boot/efi: mount point does not exist.</code></em> 
+To solve it create the efi directory in <em><code>/mnt/boot/</code></em> using this command:</p>
+<p><code>mkdir /mnt/boot/efi</code> </p>
+<p>then try to mount the efi partition again.</p>
+<p>4) Now we have to chroot into the system</p>
+<p><code>chroot /mnt</code></p>
+<p>Now that you are in you can just install the grub by typing the command below (grub-install will ask for the disk, not a partition so don't put any number like this: <em>sda</em> instead of <em>sda1</em></p>
+<p><code>grub-install /dev/sda</code></p>
+<p>Then if no errors are found you can just exit by typing:</p>
+<p><code>exit</code></p>
+<p>and reboot the system.  Once the system is rebooted, run <code>update-grub</code> to be sure that any other OS is detected by the grub.
+<code>sudo update-grub</code></p>
+<p>If you run into any issues please post in <a href="https://community.parrotsec.org/c/support">support</a> on the forum.</p></div>
         </div>
 
         <footer class="col-md-12">

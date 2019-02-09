@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-# The Installation Process
+# The Installation Process through the installer
 
 ## Computer
 

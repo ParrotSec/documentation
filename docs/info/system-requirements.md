@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-## Parrot Linux is pretty nimble but requires the following as a bare minimum.
+## Parrot Linux is pretty nimble but the following is a bare minimum.
 
 ### Parrot Home
 - Dual core x86_64 Processor

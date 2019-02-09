@@ -20,10 +20,10 @@ or reviewed yet.
 
 ### Dev's to be
 
--[Edx](https://www.edx.org/)
--[Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/?sf_action=get_data&sf_data=all&_sft_course_mode=e-learning&sf_paged=2)
--[Debian Packaging](https://wiki.debian.org/Packaging)
-- [GNU Coding Standard](https://www.gnu.org/prep/standards/html_node/index.html)
+- [Edx](https://www.edx.org/)<b>
+- [Linux Foundation](https://training.linuxfoundation.org/training/introduction-to-linux/?sf_action=get_data&sf_data=all&_sft_course_mode=e-learning&sf_paged=2)<b>
+- [Debian Packaging](https://wiki.debian.org/Packaging)<b>
+- [GNU Coding Standard](https://www.gnu.org/prep/standards/html_node/index.html)<b>
 
 ### Developer resources
 

@@ -11,7 +11,9 @@ visible: true
 - WiFi - Panda Pau09 N600
 - WiFi - Alfa AWUS036NHA
 - WiFi - Alfa AWUSO36NH
-- WiFi - Qualcomm Atheros QCA9337
+- WiFi - Qualcomm Atheros QCA9337    
 (If your device works and it is not on the list please leave a post [here](https://community.parrotsec.org/))
+
+
 
 [Parrot Info Home](https://www.parrotsec.org/docs/startpage)
