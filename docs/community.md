@@ -8,6 +8,7 @@ visible: true
 
 ## Community Portal
 
+&nbsp;
 
 Parrot Linux is a community-driven open source project,
 and a gateway to spread innovative ideas born inside its community.
@@ -18,29 +19,23 @@ and a gateway to spread innovative ideas born inside its community.
 &nbsp;
 
 
+### Join Our Community
 &nbsp;
-
-
-## Join Our Community
 
 <a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Communty Forum</strong></a>
 
 &nbsp;
 
 
-&nbsp;
-
-
-&nbsp;
-
-
-## Social Pages
+### Social Pages
 
 <a href="https://nest.parrotsec.org" target="_blank" class="btn btn-primary">Git</a>
 <a href="https://facebook.com/parrotsec" target="_blank" class="btn btn-primary">Facebook</a>
 <a href="https://twitter.com/parrotsec" target="_blank" class="btn btn-primary">Twitter</a>
 <a href="https://www.youtube.com/channel/UCj2dezzTc_Oy9eAEwBBodpw" target="_blank" class="btn btn-primary">Youtube</a>
 <a href="https://telegram.me/parrotsec" target="_blank" class="btn btn-primary">Telegram channel</a>
+
+&nbsp;
 
 Or join #parrotsec on irc.freenode.net
 
@@ -52,7 +47,8 @@ Or join #parrotsec on irc.freenode.net
 
 &nbsp;
 
-## Groups
+### Groups
+
 Our community lives in several places, here are some links to stay in touch with us
 
 <a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Community Forum</strong></a> <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
@@ -68,7 +64,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-## Local Communities
+### Local Communities
 
 <a href="https://community.parrotsec.org/c/community/ar" class="btn btn-default btn-primary"><strong>Arabic Community</strong></a>  <a href="https://t.me/joinchat/DtqPLgxQJOqKW7qsVVypSg" class="btn btn-default">Telegram</a>
 

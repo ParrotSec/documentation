@@ -193,10 +193,11 @@ Make sure to have enough free space to host a mirror, and be ready for future up
 
 The current archive size is available here [archive.parrotsec.org/parrot/misc/archive-size.txt](https://archive.parrotsec.org/parrot/misc/archive-size.txt)
 
+---
 
 ### Choose the upstream server
 
-We handle several domains for repository syncing services, we suggest to use `archive.parrotsec.org` for automatic and failproof setups, but upstream settings can be adjusted in case of specific needs.
+We handle several domains for repository syncing services, we suggest you use `archive.parrotsec.org` for automatic and failproof setups, but upstream settings can be adjusted in case of specific needs.
 
 Feel free to contact the Parrot team if you have specific mirroring needs or bandwidth limitations. We can provide you dedicated upstream sources or professional support for your mirror.
 

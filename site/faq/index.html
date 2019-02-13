@@ -175,32 +175,35 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="parrot-linux-frequently-asked-questions">Parrot Linux Frequently Asked Questions</h1>
-<h2 id="why-should-i-use-parrot">Why should I use Parrot?</h2>
+<h2 id="parrot-linux-frequently-asked-questions">Parrot Linux Frequently Asked Questions</h2>
+<h3 id="why-should-i-use-parrot">Why should I use Parrot?</h3>
 <p>Penetration testing is a time intensive job, maintaining your toolkit shouldn't 
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.</p>
-<p>Read the dedicated documentation page to know more:
-<a href="https://www.parrotsec.org/docs/info/should-i-use-parrot">Should I use parrot?</a></p>
-<h2 id="what-is-the-default-live-password">What is the default live password?</h2>
+<p>Not sure if Parrot Linux is for you? Check out "<a href="https://www.parrotsec.org/docs/info/should-i-use-parrot">Should I use parrot?</a>" to be sure.</p>
+<h3 id="what-is-the-default-live-password">What is the default live password?</h3>
 <p>Live user: <strong>user</strong>
 Live pass: <strong>live</strong></p>
 <p>If the password does not work, also try with: <strong>toor</strong></p>
 <p>Parrot does not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use <strong>sudo</strong></p>
-<h2 id="how-can-i-upgrade-my-system">How can I upgrade my system?</h2>
+<h3 id="how-can-i-upgrade-my-system">How can I upgrade my system?</h3>
 <p>There are several different ways to upgrade the parrot system</p>
 <p>1) First method</p>
 <p>Open a terminal window and launch the following command;</p>
-<p><code>sudo parrot-upgrade</code></p>
+<pre><code class="bash">sudo parrot-upgrade
+</code></pre>
+
 <p>2) Second method</p>
 <p>Open a terminal window and launch the following commands</p>
-<p><code>sudo apt update
-sudo apt full-upgrade</code></p>
+<pre><code class="bash">sudo apt update
+sudo apt full-upgrade
+</code></pre>
+
 <p>3) Third method</p>
 <p>Open System &gt; Administration &gt; Package Manager (synaptic)</p>
 <p>then click on the button to update the packages list.</p>
 <p>click on the other button to select the upgrades and finally apply the changes.</p>
-<h2 id="why-isnt-toolname-installed">Why isn't $toolname installed?</h2>
+<h3 id="why-isnt-toolname-installed">Why isn't $toolname installed?</h3>
 <p>We have a set of requisites to check before a tool makes its way into our repositories such as:</p>
 <ul>
 <li>
@@ -221,32 +224,32 @@ sudo apt full-upgrade</code></p>
 </ul>
 <p>and more[...];</p>
 <p>If the answers were “Yes” we're more than glad to take your request via our <a href="https://community.parrotsec.org/c/development">Community Portal</a>.</p>
-<h2 id="where-can-bugs-be-submitted">Where can bugs be submitted?</h2>
+<h3 id="where-can-bugs-be-submitted">Where can bugs be submitted?</h3>
 <p>If the bug involves a specific piece of software maintained by Parrot, then search the project on our <a href="https://nest.parrotsec.org/">Dev Portal</a> and open an issue.</p>
 <p>If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.</p>
 <p>If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our <a href="https://community.parrotsec.org/">Community Portal</a></p>
-<h2 id="what-should-my-sourceslist-look-like">What should my sources.list look like?</h2>
+<h3 id="what-should-my-sourceslist-look-like">What should my sources.list look like?</h3>
 <p><code>/etc/apt/sources.list</code> should be <strong>EMPTY</strong></p>
 <p><code>/etc/apt/sources.list.d/parrot.list</code> should contain the following content</p>
 <pre><code>deb http://deb.parrotsec.org/parrot stable main contrib non-free
 #deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 </code></pre>
 
-<h2 id="the-installer-wants-a-cddvd-but-im-using-a-usb-drive">The installer wants a CD/DVD but I'm using a USB drive.</h2>
+<h3 id="the-installer-wants-a-cddvd-but-im-using-a-usb-drive">The installer wants a CD/DVD but I'm using a USB drive.</h3>
 <p>If this happens, then you did something terribly wrong during the creation of the USB bootable device.</p>
 <p>This usually happens when you use software that doesn't respect the isohybrid standards.</p>
 <p>We have a dedicated documentation page which describes this issue, how to fix it and why.</p>
 <p><a href="https://www.parrotsec.org/docs/getting-started/create-boot-device">Create a Boot Device</a></p>
-<h2 id="how-do-i-prepare-a-bootable-parrot-usb-drive">How do I prepare a bootable Parrot USB drive?</h2>
+<h3 id="how-do-i-prepare-a-bootable-parrot-usb-drive">How do I prepare a bootable Parrot USB drive?</h3>
 <p>1) Download etcher from our <a href="https://www.parrotsec.org/download.php">Download page</a> or directly from <a href="https://www.etcher.io">www.etcher.io</a>.</p>
 <p>2) Download the ISO file of the Parrot version you need from our our <a href="https://www.parrotsec.org/download.php">Download Page</a></p>
 <p>3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased).</p>
 <p>Read more <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device">HERE</a>.</p>
-<h2 id="im-new-to-linux-please-help-me">I'm new to Linux, please help me!</h2>
-<p>Of Course! Please check out <a href="https://www.parrotsec.org/docs/info/helpme">helpme</a> and the <a href="https://www.parrotsec.org/docs/startpage">Parrot Info</a> page. </p>
-<h2 id="is-this-faq-under-construction">Is this FAQ under construction?</h2>
+<h3 id="im-new-to-linux-please-help-me">I'm new to Linux, please help me!</h3>
+<p>Of Course! Please check out <a href="https://www.parrotsec.org/docs/info/helpme">helpme</a> and the <a href="https://www.parrotsec.org/docs/startpage">Parrot Wiki</a> page. </p>
+<h3 id="is-this-faq-under-construction">Is this FAQ under construction?</h3>
 <p>Yes it is.</p>
-<h2 id="can-i-contribute-to-this-faq">Can I contribute to this FAQ?</h2>
+<h3 id="can-i-contribute-to-this-faq">Can I contribute to this FAQ?</h3>
 <p>Of course! The pages are written in Markdown and can be accessed <a href="https://nest.parrotsec.org/parrot-organization/documentation/blob/master/docs/faq.md">here</a>.</p></div>
         </div>
 

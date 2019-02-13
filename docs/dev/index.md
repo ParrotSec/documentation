@@ -1,4 +1,11 @@
-# Developer Zone
+---
+title: 'Developer Zone'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
+## Developer Zone
 
 This section is dedicated to the Parrot project development.
 
@@ -29,11 +36,11 @@ or reviewed yet.
 
 WIP
 
-## Being a Parrot developer
+### Being a Parrot developer
 
 WIP
 
-## The Parrot workflow
+### The Parrot workflow
 
 [Set up sbuild](sbuild.md)
 

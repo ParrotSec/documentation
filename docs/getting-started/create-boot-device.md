@@ -22,7 +22,7 @@ It is highly recommended **NOT** to use programs like **unetbootin**, or any pro
 
 ---
 
-## How to create a Parrot USB drives
+## How to create a Parrot USB drives 
 
 To create a Parrot bootable device you need a USB drive of at least 4gb for the security edition or 2gb for the home edition
 

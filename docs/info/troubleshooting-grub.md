@@ -58,6 +58,6 @@ Then if no errors are found you can just exit by typing:
 and reboot the system.  Once the system is rebooted, run `update-grub` to be sure that any other OS is detected by the grub.
 `sudo update-grub`
 
-Written by Killian    
+Written by KileXt    
 
 If you run into any issues please post in [support](https://community.parrotsec.org/c/support) on the forum.

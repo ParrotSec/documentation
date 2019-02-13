@@ -21,4 +21,8 @@ Linux also runs on embedded systems, i.e. devices whose operating system is typi
 
 Linux is one of the most prominent examples of free and open-source software collaboration. The source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License." 
 
-*Parrot Linux is not endorsed or affiliated with Linux.*
+&nbsp;
+
+---
+
+*Parrot Linux is not endorsed nor affiliated with Linux.*

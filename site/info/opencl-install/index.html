@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.parrotsec.org/dev/sbuild/">
+        <link rel="canonical" href="https://docs.parrotsec.org/info/opencl-install/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Building deb packages with sbuild - Parrot Documentation</title>
+        <title>Installing OpenCL for Hashcat - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -149,125 +149,50 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#building-deb-packages-with-sbuild">Building deb packages with sbuild</a></li>
-        <li class="main "><a href="#setup">Setup</a></li>
-        <li class="main "><a href="#create-the-schroot-environments">Create the schroot environments</a></li>
-        <li class="main "><a href="#additional-setup-optional">Additional setup (optional)</a></li>
-            <li><a href="#notes">Notes:</a></li>
+        <li class="main active"><a href="#1-why">1. Why?</a></li>
+        <li class="main "><a href="#2-how">2. How?</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="building-deb-packages-with-sbuild">Building deb packages with sbuild</h3>
-<p>Sbuild is the official debian tool to compile and cross-compile deb packages
-for all the supported architectures.</p>
-<p><img alt="screenshot" src="../../img/developer-background.jpg" /></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h1 id="setup">Setup</h1>
-<p>Install the needed tools</p>
-<pre><code class="bash">sudo apt install sbuild debhelper ubuntu-dev-tools piuparts
-sudo adduser $USER sbuild
+<h3 id="1-why">1. Why?</h3>
+<ul>
+<li>Your machine has no AMD / Nvidia graphic card, but you still want to use hashcat.</li>
+<li>You want it more stable and faster than pre-installed driver (beignet)</li>
+</ul>
+<p><img alt="opencl" src="/img/opencl_1.png" /></p>
+<ul>
+<li>Hashcat doesn't detect your devices (even if beignet was pre-installed)
+<img alt="opencl" src="/img/opencl_2.png" /> </li>
+</ul>
+<h3 id="2-how">2. How?</h3>
+<ul>
+<li>Remove beignet: </li>
+</ul>
+<pre><code class="bash">sudo apt purge beignet
 </code></pre>
 
-<p>Optionally install and enable apt-cacher-ng</p>
-<p>(keep in mind that network packages are not started by default)</p>
-<pre><code class="bash">sudo apt install apt-cacher-ng
-sudo service apt-cacher-ng start
-sudo systemctl enable apt-cacher-ng
-echo 'Acquire::http::Proxy &quot;http://127.0.0.1:3142&quot;;' | sudo tee /etc/apt/apt.conf.d/01acng
+<ul>
+<li>Download <em><code>opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz</code></em> from <code>http://registrationcenter-download.intel.com/akdlm/irc_nas/12556/opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz</code>. Currently, Intel opencl has github project with 18.X versions. All 18.X versions don't work for me, and 16.1.2 version is latest workable version I can find.</li>
+<li>Extract downloaded file</li>
+</ul>
+<pre><code>tar -xvf opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz
 </code></pre>
 
-<p>Create the sbuild config files:</p>
-<p>Create ~/.sbuildrc:</p>
-<pre><code class="bash"># Name to use as override in .changes files for the Maintainer: field
-# (mandatory, no default!).
-$maintainer_name='Your Name &lt;user@ubuntu.com&gt;';
-
-# Default distribution to build.
-$distribution = &quot;parrot&quot;;
-# Build arch-all by default.
-$build_arch_all = 1;
-
-# When to purge the build directory afterwards; possible values are &quot;never&quot;,
-# &quot;successful&quot;, and &quot;always&quot;.  &quot;always&quot; is the default. It can be helpful
-# to preserve failing builds for debugging purposes.  Switch these comments
-# if you want to preserve even successful builds, and then use
-# &quot;schroot -e --all-sessions&quot; to clean them up manually.
-$purge_build_directory = 'successful';
-$purge_session = 'successful';
-$purge_build_deps = 'successful';
-# $purge_build_directory = 'never';
-# $purge_session = 'never';
-# $purge_build_deps = 'never';
-
-# Directory for writing build logs to
-#$log_dir=$ENV{HOME}.&quot;/build/logs&quot;;
-
-# don't remove this, Perl needs it:
-1;
+<p>Then run </p>
+<pre><code>install.sh
 </code></pre>
 
-<p>Create ~/.mk-sbuild.rc:</p>
-<pre><code class="bash">SCHROOT_CONF_SUFFIX=&quot;source-root-users=root,sbuild,admin
-source-root-groups=root,sbuild,admin
-preserve-environment=true&quot;
-# you will want to undo the below for stable releases, read `man mk-sbuild` for details
-# during the development cycle, these pockets are not used, but will contain important
-# updates after each release of Ubuntu
-SKIP_UPDATES=&quot;1&quot;
-SKIP_PROPOSED=&quot;1&quot;
-# if you have e.g. apt-cacher-ng around
-# DEBOOTSTRAP_PROXY=http://127.0.0.1:3142/
-</code></pre>
-
-<p>Log out and log in again in order for your group change to take effect.</p>
-<p>otherwise use the following command to enter the sbuild group without reloading your session:</p>
-<pre><code class="bash">sg sbuild
-</code></pre>
-
-<p>Optionally generate a GPG keypair for sbuild to use:</p>
-<pre><code class="bash">sbuild-update --keygen
-</code></pre>
-
-<h1 id="create-the-schroot-environments">Create the schroot environments</h1>
-<p>Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):</p>
-<pre><code class="bash">mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
-</code></pre>
-
-<p>Do the same for i386:</p>
-<pre><code class="bash">mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
-</code></pre>
-
-<p>Do the same for arm64:</p>
-<pre><code class="bash">mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
-</code></pre>
-
-<p>Do the same for armhf:</p>
-<pre><code class="bash">mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
-</code></pre>
-
-<h1 id="additional-setup-optional">Additional setup (optional)</h1>
-<p>You may find convenient to have some additional utilities pre-installed in your schroot environments to speed the build process up or to be able to quickly enter the environment of a failed build and spot eventual bugs.</p>
-<p>Install useful packages:</p>
-<pre><code class="bash">sudo schroot --all-source-chroots -d / -u root -- apt-get update
-sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl wget devscripts build-essential ubuntu-dev-tools
-</code></pre>
-
-<h2 id="notes">Notes:</h2>
-<p>&nbsp;</p>
-<h4 id="btrfs">BTRFS</h4>
-<p>If you use btrfs, the <em>--type="btrfs-snapshot"</em> option will handle the chroots as btrfs subvolumes for easier management,
-and every build will be performed on a dedicated snapshot of that subvolume that is automatically created and destroyed for each build,
-keeping your original chroots clean, making every build isolated and speeding up the initial bootstrap of the build process.</p>
-<p>Remove <em>--type="btrfs-snapshot"</em> if you don't use btrfs.</p>
-<h4 id="boostrap-failures">Boostrap failures</h4>
-<p>If something went wrong during the creation of the chroot, then you have to delete its folder or snapshot before you retry.</p>
-<p>If your backend is btrfs then you can't just delete the folder in /var/lib/schroot/chroots/ because it is a btrfs subvolume.</p>
-<p>The following command is an example of how you can delete the subvolume called parrot-amd64:</p>
-<pre><code class="bash">btrfs subvolume delete /var/lib/schroot/chroots/parrot-amd64
-</code></pre></div>
+<p>If you have missing libraries in this step (screenshot bellow), you can exit installation and install libraries. If there is only lsb-core&gt;=4.0 is missing, you can move to next step (it worked for me).
+- Accept their license, choose next and wait.
+<img alt="opencl" src="/img/opencl_3.png" /> 
+<img alt="opencl" src="/img/opencl_4.png" /> 
+- Hashcat now detect my devices (it shows error with beignet driver)
+<img alt="opencl" src="/img/opencl_5.png" /> 
+- Benchmark is not very fast (compare AMD / Nvidia devices) but it looks faster than beignet
+<img alt="opencl" src="/img/opencl_6.png" /></p>
+<p>Written by dmknight</p>
+<p>If you run into any issues please post in <a href="https://community.parrotsec.org/c/support">support</a> on the forum.</p></div>
         </div>
 
         <footer class="col-md-12">

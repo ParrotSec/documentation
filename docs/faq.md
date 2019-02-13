@@ -6,20 +6,19 @@ taxonomy:
 visible: true
 ---
 
-# Parrot Linux Frequently Asked Questions
+## Parrot Linux Frequently Asked Questions
 
-## Why should I use Parrot?
+### Why should I use Parrot?
 
 Penetration testing is a time intensive job, maintaining your toolkit shouldn't 
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.
 
-Read the dedicated documentation page to know more:
-[Should I use parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)
+Not sure if Parrot Linux is for you? Check out "[Should I use parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)" to be sure.
 
 
 
-## What is the default live password?
+### What is the default live password?
 
 Live user: **user**
 Live pass: **live**
@@ -30,7 +29,7 @@ Parrot does not have a root password since Parrot 4.4, to launch programs as roo
 
 
 
-## How can I upgrade my system?
+### How can I upgrade my system?
 
 There are several different ways to upgrade the parrot system
 
@@ -38,16 +37,18 @@ There are several different ways to upgrade the parrot system
 
 Open a terminal window and launch the following command;
 
-`sudo parrot-upgrade`
+```bash
+sudo parrot-upgrade
+```
 
 2) Second method
 
 Open a terminal window and launch the following commands
 
-`
+```bash
 sudo apt update
 sudo apt full-upgrade
-`
+```
 
 3) Third method
 
@@ -59,7 +60,7 @@ click on the other button to select the upgrades and finally apply the changes.
 
 
 
-## Why isn't $toolname installed?
+### Why isn't $toolname installed?
 
 We have a set of requisites to check before a tool makes its way into our repositories such as:
 
@@ -81,7 +82,7 @@ If the answers were “Yes” we're more than glad to take your request via our 
 
 
 
-## Where can bugs be submitted?
+### Where can bugs be submitted?
 
 If the bug involves a specific piece of software maintained by Parrot, then search the project on our [Dev Portal](https://nest.parrotsec.org/) and open an issue.
 
@@ -89,7 +90,7 @@ If the bug involves a software package that is not listed, then you should conta
 
 If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotsec.org/)
 
-## What should my sources.list look like?
+### What should my sources.list look like?
 
 `/etc/apt/sources.list` should be **EMPTY**
 
@@ -101,7 +102,7 @@ deb http://deb.parrotsec.org/parrot stable main contrib non-free
 ```
 
 
-## The installer wants a CD/DVD but I'm using a USB drive.
+### The installer wants a CD/DVD but I'm using a USB drive.
 
 If this happens, then you did something terribly wrong during the creation of the USB bootable device.
 
@@ -111,7 +112,7 @@ We have a dedicated documentation page which describes this issue, how to fix it
 
 [Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device)
 
-## How do I prepare a bootable Parrot USB drive?
+### How do I prepare a bootable Parrot USB drive?
 
 1) Download etcher from our [Download page](https://www.parrotsec.org/download.php) or directly from [www.etcher.io](https://www.etcher.io).
 
@@ -121,14 +122,14 @@ We have a dedicated documentation page which describes this issue, how to fix it
 
 Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-device).
 
-## I'm new to Linux, please help me!
+### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme) and the [Parrot Info](https://www.parrotsec.org/docs/startpage) page. 
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme) and the [Parrot Wiki](https://www.parrotsec.org/docs/startpage) page. 
 
-## Is this FAQ under construction?
+### Is this FAQ under construction?
 
 Yes it is.
 
-## Can I contribute to this FAQ?
+### Can I contribute to this FAQ?
 
 Of course! The pages are written in Markdown and can be accessed [here](https://nest.parrotsec.org/parrot-organization/documentation/blob/master/docs/faq.md).
