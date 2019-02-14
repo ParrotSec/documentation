@@ -51,7 +51,12 @@ OVA is the standard for Virtual Machines and Parrot Linux is Proud to offer OVA 
 
 Just import, configure system resources and start the VM.
 
+&nbsp;
+
+---
+
 *Note: Users have ran into some issues with VMware depending on kernel compatibility and is therefore not recommended.*
 
+&nbsp;
 
 [__Downloads__](https://www.parrotsec.org/download.php)

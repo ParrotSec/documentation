@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-## Collaborations
+## __Collaborations__
 
 ### Caine
 
@@ -30,9 +30,13 @@ Dasaweb is also the main sponsor of most of the Parrot Community events in Italy
 
 KNXSecurity is an Italian community dedicated to cyber security training that helps us by testing the beta images of Parrot before the final release.
 
+***
+
 ### The Free Circle GLUG
 
 [TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
+
+***
 
 ### FSecurity Academy
 
@@ -40,161 +44,168 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 [About FSecurity Academy](https://www.fsecurityacademy.com/about/)
 
+***
+&nbsp;
 
-## Mirrors
+## __Mirrors__
 
-## MIT
-
+### MIT
 
 SIPB MIT (Student Information Processing Board, Massachussetts Institute of Technology)
 
-## Clarkson
+### Clarkson
 
 
 Clarkson University - New York
 
-## Berkeley
+### Berkeley
 
 
 Berkeley Open Computing Facility - California
 
-## GARR
+### GARR
 
 
 GARR Consortium - Italy
 
-## RWTH-Aachen
+### RWTH-Aachen
 
 
 RWTH-Aachen (Halifax students group) - Germany
 
-## Nluug
+### Nluug
 
 
 Nluug - Netherlands
 
-## Onet
+### Onet
 
 
 Onet Datacenter - Poland
 
-## UMU
+### UMU
 
 
 ACC UMU (Academic Computer Club, Umea University) - Sweden
 
-## Heanet
+### Heanet
 
 
 Heanet - Ireland
 
-## Esslingen
+### Esslingen
 
 
 Esslingen (University of Applied Sciences) - Germany
 
-## UoC
+### UoC
 
 
 UoC (University of Crete - Computer Center) - Greece
 
-## Belnet
+### Belnet
 
 
 The Belgian National Research Network
 
-## UP
+### UP
 
 
 University of Porto - Portugal
 
-## Aalborg Dotsrc
+### Aalborg Dotsrc
 
 
 Dotsrc - Aalborg University - Denmark
 
-## CEDIA
+### CEDIA
 
 
 RED CEDIA (National research and education center of Ecuador)
 
-## UTA
+### UTA
 
 
 UTA (Universidad Técnica de ambato) - Ecuador
 
-## UEB
+### UEB
 
 
 UEB (Universidad Estatal de Bolivar) - Ecuador
 
-## Espoch
+### Espoch
 
 
 ESPOCH (Escuela Superior Politecnica de Chimborazo)
 
 This mirror is no longer available, but we want to dedicate a big “Thank you” to the ESPOCH mirror maintainers.
 
-## Yandex
+### Yandex
 
 
 Yandex - Russia
 
-## Amberit
+### Amberit
 
 
 Amberit - Bangladesh
 
-## NCHC
+### NCHC
 
 
 NCHC (Free Software Lab) - Taiwan
 
-## USTC
+### USTC
 
 
 USTC (University of Science and Technology of China and USTCLUG)
 
-## TUNA
+### TUNA
 
 
 TUNA (Tsinghua university of Beijing, TUNA association) - China
 
-## ASIS
+### ASIS
 
 
 ASIS - Iran
 
-## Lagoon
+### Lagoon
 
 
 Lagoon - New Caledonia
 
-## KKU
+### KKU
 
 
 Khon Kaen University - Thailand
 
-## OSLUZ
+### OSLUZ
 
 
 Oficina Software Libre Universidad de Zaragoza - University of Zaragoza
 
-## SHUOSC
+### SHUOSC
 
 
 Shanghai University Open Source Community - China
 
-## EB
+### EB
 
 
 Eczacıbaşı Bilişim - Turkey
 
-## TrueNetwork
+### TrueNetwork
 
 
 TrueNetwork - Russia
 
-## Quantum Mirror
+### Quantum Mirror
 
 Quantum-mirror - Open source mirroring solutions in Hungary
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;

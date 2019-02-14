@@ -13,7 +13,7 @@ In this page we list people who gave a significant contribution to the project.
 
 # Core Team
 
-|     nickname     |       full name       |     role(s)           |      email     |
+|     nickname     |       full name       |       role(s)           |      email     |
 |:----------------:|:----------------------|:---------------------:|---------------:|
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer| palinuro at parrotsec dot org|
 | sheireen         | Lisetta Ferrero       | Core Dev        | sheireen at parrotsec dot org |
@@ -26,6 +26,7 @@ In this page we list people who gave a significant contribution to the project.
 
 |     nickname     |       full name       |     role(s)           |      email     |
 |:----------------:|:----------------------|:---------------------:|---------------:|
+| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br>Greek community| gnugr at parrotsec dot org |
 | mastrobirraio    | Pino Matranga         | Website contributor   | |
 |                  | Tiago Teixeira        | | |
 |                  | Andrea Costa          | Website contributor   | |
@@ -36,7 +37,6 @@ In this page we list people who gave a significant contribution to the project.
 |     nickname     |       full name       |     role(s)           |      email     |
 |:----------------:|:----------------------|:---------------------:|---------------:|
 | meu              | M. Emrah Ünsür        | Community manager / Turkish community | meu at parrotsec dot org |
-| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br>Greek community| gnugr at parrotsec dot org |
 | terabreik        | Jose Gatica           | Spanish Community     | josegatica at parrotsec dot org |
 | nemo             | Sandipan Roy          | Indian community | nemo at parrotsec dot org |
 

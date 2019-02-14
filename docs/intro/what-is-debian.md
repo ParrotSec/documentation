@@ -24,4 +24,7 @@ Of course, the thing that people want is application software: programs to help 
 
 It's a bit like a tower. At the base is the kernel. On top of that are all the basic tools. Next is all the software that you run on the computer. At the top of the tower is Debian — carefully organizing and fitting everything so it all works together."
 
+&nbsp;
+
+---
 *Parrot Linux is not affiliated with Debian. Debian is a registered trademark owned by Software in the Public Interest, Inc.*
