@@ -172,63 +172,64 @@
 <p>Official Parrot Security Base system without tools.</p>
 <p>Start a new instance</p>
 <p>Public image from Docker Cloud</p>
-<pre><code>    docker run -ti --rm --network host parrotsec/parrot-core
+<pre><code class="bash">    docker run -ti --rm --network host parrotsec/parrot-core
 </code></pre>
 
 <p>Local image from Dockerfile</p>
-<pre><code>    docker run -ti --rm -network host parrot-core
+<pre><code class="bash">    docker run -ti --rm -network host parrot-core
 </code></pre>
 
 <p>Install/Update from Docker Cloud</p>
-<pre><code>    docker pull parrotsec/parrot-core
+<pre><code class="bash">    docker pull parrotsec/parrot-core
 </code></pre>
 
 <p>Install/Update from local Dockerfile</p>
-<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
-
-    docker build -t parrot-core[:version] parrot-core
+<pre><code class="bash">git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+docker build -t parrot-core[:version] parrot-core
 </code></pre>
 
+<hr />
 <h4 id="parrotsecparrot">Parrotsec/Parrot</h4>
 <p>Official Parrot Security image with basic security tools.</p>
 <p>-Start a new instance</p>
 <p>-Public image from Docker Cloud</p>
-<pre><code>    docker run -ti --rm --network host parrotsec/parrot
+<pre><code class="bash">    docker run -ti --rm --network host parrotsec/parrot
 </code></pre>
 
 <p>Local image from Dockerfile</p>
-<pre><code>    docker run -ti --rm -network host parrot
+<pre><code class="bash">    docker run -ti --rm -network host parrot
 </code></pre>
 
 <p>Install/Update from Docker Cloud</p>
-<pre><code>    docker pull parrotsec/parrot
+<pre><code class="bash">    docker pull parrotsec/parrot
 </code></pre>
 
 <p>Install/Update from local Dockerfile</p>
-<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+<pre><code class="bash">    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
 
     docker build -t parrot[:version] parrot
 </code></pre>
 
+<hr />
 <h4 id="parrotsecmetasploit">Parrotsec/Metasploit</h4>
 <p>Parrot Security Metasploit bundle.</p>
 <p>Install/Update from Docker Cloud</p>
-<pre><code>    docker pull parrotsec/metasploit
+<pre><code class="bash">    docker pull parrotsec/metasploit
 </code></pre>
 
 <p>Install/Update from local Dockerfile</p>
-<pre><code>    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
+<pre><code class="bash">    git clone https://nest.parrotsec.org/parrot-build/docker-images &amp;&amp; cd docker-images
 
     docker build -t metasploit[:version] metasploit
 </code></pre>
 
 <p>Start a new instance</p>
 <p>Public image from Docker Cloud</p>
-<pre><code>    docker run -ti --network host parrotsec/metasploit
+<pre><code class="bash">    docker run -ti --network host parrotsec/metasploit
 </code></pre>
 
 <p>Local image from Dockerfile</p>
-<pre><code>    docker run -ti -network host metasploit
+<pre><code class="bash">    docker run -ti -network host metasploit
 </code></pre></div>
         </div>
 

@@ -1,4 +1,12 @@
-## Build deb packages with sbuild
+---
+title: 'Building deb packages with sbuild'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
+
+### Building deb packages with sbuild
 
 Sbuild is the official debian tool to compile and cross-compile deb packages
 for all the supported architectures.
@@ -14,11 +22,11 @@ for all the supported architectures.
 &nbsp;
 
 
-## Setup
+# Setup
 
 Install the needed tools
 
-```
+```bash
 sudo apt install sbuild debhelper ubuntu-dev-tools piuparts
 sudo adduser $USER sbuild
 ```
@@ -27,7 +35,7 @@ Optionally install and enable apt-cacher-ng
 
 (keep in mind that network packages are not started by default)
 
-```
+```bash
 sudo apt install apt-cacher-ng
 sudo service apt-cacher-ng start
 sudo systemctl enable apt-cacher-ng
@@ -39,7 +47,7 @@ Create the sbuild config files:
 
 Create ~/.sbuildrc:
 
-```
+```bash
 # Name to use as override in .changes files for the Maintainer: field
 # (mandatory, no default!).
 $maintainer_name='Your Name <user@ubuntu.com>';
@@ -71,7 +79,7 @@ $purge_build_deps = 'successful';
 
 Create ~/.mk-sbuild.rc:
 
-```
+```bash
 SCHROOT_CONF_SUFFIX="source-root-users=root,sbuild,admin
 source-root-groups=root,sbuild,admin
 preserve-environment=true"
@@ -89,14 +97,14 @@ Log out and log in again in order for your group change to take effect.
 
 otherwise use the following command to enter the sbuild group without reloading your session:
 
-```
+```bash
 sg sbuild
 ```
 
 
 Optionally generate a GPG keypair for sbuild to use:
 
-```
+```bash
 sbuild-update --keygen
 ```
 
@@ -104,27 +112,27 @@ sbuild-update --keygen
 
 Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):
 
-```
+```bash
 mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for i386:
 
-```
+```bash
 mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 Do the same for arm64:
 
-```
+```bash
 mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
 
 Do the same for armhf:
 
-```
+```bash
 mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type="btrfs-snapshot" --distro="debian" parrot
 ```
 
@@ -135,16 +143,17 @@ You may find convenient to have some additional utilities pre-installed in your 
 
 Install useful packages:
 
-```
+```bash
 sudo schroot --all-source-chroots -d / -u root -- apt-get update
-
 sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl wget devscripts build-essential ubuntu-dev-tools
 ```
 
 
-## Notes
+## Notes:
 
-### BTRFS
+&nbsp;
+
+#### BTRFS
 
 If you use btrfs, the *--type="btrfs-snapshot"* option will handle the chroots as btrfs subvolumes for easier management,
 and every build will be performed on a dedicated snapshot of that subvolume that is automatically created and destroyed for each build,
@@ -152,7 +161,7 @@ keeping your original chroots clean, making every build isolated and speeding up
 
 Remove *--type="btrfs-snapshot"* if you don't use btrfs.
 
-### Boostrap failures
+#### Boostrap failures
 
 If something went wrong during the creation of the chroot, then you have to delete its folder or snapshot before you retry.
 
@@ -160,6 +169,6 @@ If your backend is btrfs then you can't just delete the folder in /var/lib/schro
 
 The following command is an example of how you can delete the subvolume called parrot-amd64:
 
-```
+```bash
 btrfs subvolume delete /var/lib/schroot/chroots/parrot-amd64
 ```

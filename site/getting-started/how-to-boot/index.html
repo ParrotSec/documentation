@@ -160,12 +160,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#system-boot">System boot</a></li>
-        <li class="main "><a href="#usb-drive">USB Drive</a></li>
-            <li><a href="#obsolete-computers">Obsolete computers</a></li>
-            <li><a href="#new-computers">New computers</a></li>
-            <li><a href="#option-disabled">Option disabled</a></li>
-            <li><a href="#option-is-not-available">Option is not available</a></li>
-            <li><a href="#secure-boot">Secure boot</a></li>
+            <li><a href="#usb-drive">USB Drive</a></li>
         <li class="main "><a href="#dvd">DVD</a></li>
             <li><a href="#regular-pc">Regular PC</a></li>
             <li><a href="#mac">MAC</a></li>
@@ -176,20 +171,28 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="system-boot">System boot</h1>
+<p>&nbsp;</p>
+<p>Note: Can't find what you're looking for? checkout the Parrot Wiki</p>
+<hr />
 <p>So you've downloaded the ISO, you've burned it onto some media, and you're ready to boot Parrot on your computer.</p>
 <p>In order to do so, simply insert your boot media in the computer and reboot it. Now ensure your BIOS/UEFI is set to boot your removable media first or you'll pass Parrot and go straight to your harddrive.</p>
 <p>If everything goes well you will be greeted by the Parrot boot screen and soon on to endless fun.</p>
-<h1 id="usb-drive">USB Drive</h1>
+<h2 id="usb-drive">USB Drive</h2>
 <h4 id="obsolete-computers">Obsolete computers</h4>
 <p>If you're using a very old computer you might not be able to boot your system from a USB drive: in this case you will have to use a DVD or another device your computer will recognize as a boot device.</p>
+<hr />
 <h4 id="new-computers">New computers</h4>
 <p>Most laptops allow you to access the booting menu pressing f2 or f12; for most desktop computers press f8; for other kind of devices try pressing esc, f12, f11 or f10. Google your manufacturer to find out what makes your system barf up its BIOS.</p>
+<hr />
 <h4 id="option-disabled">Option disabled</h4>
 <p>For some computers, the booting menu may be disabled by default: you will have to access the BIOS settings and enable such option, reboot the computer and press the right key to access the booting menu.</p>
+<hr />
 <h4 id="option-is-not-available">Option is not available</h4>
 <p>Some computers allow you to boot the system from USB drives but don't display a menu to select the booting device. If this is your case you need to access the BIOS settings, go to the booting panel and change the order of which booting devices, placing the USB drive on top of the list. Then simply reboot the computer and the BIOS will choose the USB drive as a booting device.</p>
+<hr />
 <h4 id="secure-boot">Secure boot</h4>
 <p>In case you have a computer with Secure Boot enabled, you will have to open the BIOS settings, disable secure boot and set it to legacy boot. If your computer doesn't provide a booting menu, follow the instructions displayed on this page in the section above (“option is not available”). If all else fails, google your make and model. It is likely someone has attempted to install Linux also and might have a solution. </p>
+<hr />
 <h1 id="dvd">DVD</h1>
 <p>Booting a system from a DVD is much easier and compatible with most machines.</p>
 <h3 id="regular-pc">Regular PC</h3>
@@ -199,12 +202,14 @@
 <p>Turn on your computer, insert the DVD straightaway and press the C key as soon as you hear the beep signaling the computer has been turned on. Release the button after a few seconds, as soon as you hear the DVD has started working.</p>
 <h4 id="standard-method">Standard method</h4>
 <p>Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.</p>
+<hr />
 <h2 id="what-is-live-mode">What is live mode</h2>
 <p>The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.</p>
 <p>This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory (Random Access Memory).</p>
 <p>Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.</p>
-<p>To create a live boot device please read this <a href="https://www.parrotsec.org/docs/getting-started/create-boot-device/">page</a>.
-To learn how to boot from the live media read this <a href="https://www.parrotsec.org/docs/getting-started/how-to-boot/">page</a> instead.</p>
+<p>To create a live boot device please read this <a href="../create-boot-device/">page</a>.
+To learn how to boot from the live media read this <a href="./">page</a> instead.</p>
+<hr />
 <h2 id="default-username-and-password">Default username and password</h2>
 <p>In Parrot OS live environment the default username is "user" and the default password is "toor".</p></div>
         </div>

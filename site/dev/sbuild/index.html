@@ -8,7 +8,7 @@
         
         <link rel="canonical" href="https://docs.parrotsec.org/dev/sbuild/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Sbuild - Parrot Documentation</title>
+        <title>Building deb packages with sbuild - Parrot Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -149,31 +149,31 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#build-deb-packages-with-sbuild">Build deb packages with sbuild</a></li>
+        <li class="main active"><a href="#building-deb-packages-with-sbuild">Building deb packages with sbuild</a></li>
         <li class="main "><a href="#setup">Setup</a></li>
         <li class="main "><a href="#create-the-schroot-environments">Create the schroot environments</a></li>
         <li class="main "><a href="#additional-setup-optional">Additional setup (optional)</a></li>
-            <li><a href="#notes">Notes</a></li>
+            <li><a href="#notes">Notes:</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="build-deb-packages-with-sbuild">Build deb packages with sbuild</h2>
+<h3 id="building-deb-packages-with-sbuild">Building deb packages with sbuild</h3>
 <p>Sbuild is the official debian tool to compile and cross-compile deb packages
 for all the supported architectures.</p>
 <p><img alt="screenshot" src="../../img/developer-background.jpg" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h2 id="setup">Setup</h2>
+<h1 id="setup">Setup</h1>
 <p>Install the needed tools</p>
-<pre><code>sudo apt install sbuild debhelper ubuntu-dev-tools piuparts
+<pre><code class="bash">sudo apt install sbuild debhelper ubuntu-dev-tools piuparts
 sudo adduser $USER sbuild
 </code></pre>
 
 <p>Optionally install and enable apt-cacher-ng</p>
 <p>(keep in mind that network packages are not started by default)</p>
-<pre><code>sudo apt install apt-cacher-ng
+<pre><code class="bash">sudo apt install apt-cacher-ng
 sudo service apt-cacher-ng start
 sudo systemctl enable apt-cacher-ng
 echo 'Acquire::http::Proxy &quot;http://127.0.0.1:3142&quot;;' | sudo tee /etc/apt/apt.conf.d/01acng
@@ -181,7 +181,7 @@ echo 'Acquire::http::Proxy &quot;http://127.0.0.1:3142&quot;;' | sudo tee /etc/a
 
 <p>Create the sbuild config files:</p>
 <p>Create ~/.sbuildrc:</p>
-<pre><code># Name to use as override in .changes files for the Maintainer: field
+<pre><code class="bash"># Name to use as override in .changes files for the Maintainer: field
 # (mandatory, no default!).
 $maintainer_name='Your Name &lt;user@ubuntu.com&gt;';
 
@@ -210,7 +210,7 @@ $purge_build_deps = 'successful';
 </code></pre>
 
 <p>Create ~/.mk-sbuild.rc:</p>
-<pre><code>SCHROOT_CONF_SUFFIX=&quot;source-root-users=root,sbuild,admin
+<pre><code class="bash">SCHROOT_CONF_SUFFIX=&quot;source-root-users=root,sbuild,admin
 source-root-groups=root,sbuild,admin
 preserve-environment=true&quot;
 # you will want to undo the below for stable releases, read `man mk-sbuild` for details
@@ -224,49 +224,49 @@ SKIP_PROPOSED=&quot;1&quot;
 
 <p>Log out and log in again in order for your group change to take effect.</p>
 <p>otherwise use the following command to enter the sbuild group without reloading your session:</p>
-<pre><code>sg sbuild
+<pre><code class="bash">sg sbuild
 </code></pre>
 
 <p>Optionally generate a GPG keypair for sbuild to use:</p>
-<pre><code>sbuild-update --keygen
+<pre><code class="bash">sbuild-update --keygen
 </code></pre>
 
 <h1 id="create-the-schroot-environments">Create the schroot environments</h1>
 <p>Create the amd64 chroot using the btrfs backend (remove the btrfs option if /var uses a different filesystem):</p>
-<pre><code>mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
+<pre><code class="bash">mk-sbuild --arch=amd64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
 </code></pre>
 
 <p>Do the same for i386:</p>
-<pre><code>mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
+<pre><code class="bash">mk-sbuild --arch=i386 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
 </code></pre>
 
 <p>Do the same for arm64:</p>
-<pre><code>mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
+<pre><code class="bash">mk-sbuild --arch=arm64 --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
 </code></pre>
 
 <p>Do the same for armhf:</p>
-<pre><code>mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
+<pre><code class="bash">mk-sbuild --arch=armhf --name=parrot  --skip-proposed --skip-updates --skip-security --debootstrap-include=ca-certificates,parrot-archive-keyring,gnupg2 --debootstrap-mirror=http://127.0.0.1:3142/deb.parrotsec.org/parrot --type=&quot;btrfs-snapshot&quot; --distro=&quot;debian&quot; parrot
 </code></pre>
 
 <h1 id="additional-setup-optional">Additional setup (optional)</h1>
 <p>You may find convenient to have some additional utilities pre-installed in your schroot environments to speed the build process up or to be able to quickly enter the environment of a failed build and spot eventual bugs.</p>
 <p>Install useful packages:</p>
-<pre><code>sudo schroot --all-source-chroots -d / -u root -- apt-get update
-
+<pre><code class="bash">sudo schroot --all-source-chroots -d / -u root -- apt-get update
 sudo schroot --all-source-chroots -d / -u root -- apt-get -y install nano curl wget devscripts build-essential ubuntu-dev-tools
 </code></pre>
 
-<h2 id="notes">Notes</h2>
-<h3 id="btrfs">BTRFS</h3>
+<h2 id="notes">Notes:</h2>
+<p>&nbsp;</p>
+<h4 id="btrfs">BTRFS</h4>
 <p>If you use btrfs, the <em>--type="btrfs-snapshot"</em> option will handle the chroots as btrfs subvolumes for easier management,
 and every build will be performed on a dedicated snapshot of that subvolume that is automatically created and destroyed for each build,
 keeping your original chroots clean, making every build isolated and speeding up the initial bootstrap of the build process.</p>
 <p>Remove <em>--type="btrfs-snapshot"</em> if you don't use btrfs.</p>
-<h3 id="boostrap-failures">Boostrap failures</h3>
+<h4 id="boostrap-failures">Boostrap failures</h4>
 <p>If something went wrong during the creation of the chroot, then you have to delete its folder or snapshot before you retry.</p>
 <p>If your backend is btrfs then you can't just delete the folder in /var/lib/schroot/chroots/ because it is a btrfs subvolume.</p>
 <p>The following command is an example of how you can delete the subvolume called parrot-amd64:</p>
-<pre><code>btrfs subvolume delete /var/lib/schroot/chroots/parrot-amd64
+<pre><code class="bash">btrfs subvolume delete /var/lib/schroot/chroots/parrot-amd64
 </code></pre></div>
         </div>
 

@@ -8,7 +8,9 @@ visible: true
 
 # The Parrot System
 
-**Parrot** (Parrot Security, ParrotOS, Parrot GNU/Linux) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
+&nbsp;
+
+**Parrot Linux** (Parrot Security, ParrotOS, Parrot GNU/Linux) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
 
 It includes a full portable arsenal for IT security and digital forensics operations, but it also includes everything you need to develop your own programs or protect your privacy while surfing the net.
 
@@ -68,11 +70,12 @@ Additionally, Parrot supports [SNAP](https://snapcraft.io), a new package distri
 
 Parrot supports [Wine](https://www.winehq.org/), a compatibility layer to run Windows applications in Linux environments.
 
+&nbsp;
+---
 
+# Should I use Parrot?
 
-# Should i use Parrot?
-
-## Why Parrot is different
+### Why Parrot is different
 
 Even if we, would like everyone to use the Parrot System or, at least, give it a try, there are some important considerations to make about who we expect to use Parrot and who may have a bad experience from it.
 
@@ -139,3 +142,4 @@ The no-automount behavior is consistent and stable, but no protection is provide
  * Journalists & Hacktivists
  * Wannabe Hackers
  * Police officers and special security institutions
+

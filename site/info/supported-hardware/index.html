@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://docs.parrotsec.org/info/supported-hardware/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Supported Hardware - Parrot Documentation</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Parrot Documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.parrotsec.org">Parrot Website</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../intro/what-is-parrot/">What is Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../../intro/what-is-debian/">What is Debian</a>
+</li>
+                                    
+<li >
+    <a href="../../intro/what-is-linux/">What is Linux</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting-started/download/">Download Parrot</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/create-boot-device/">Create a boot device</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/how-to-boot/">How to boot the system</a>
+</li>
+                                    
+<li >
+    <a href="../../getting-started/parrot-on-docker/">Parrot on Docker</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Infrastructure</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mirror-list/">APT Mirror list</a>
+</li>
+            
+<li >
+    <a href="https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror">Make your own mirror</a>
+</li>
+            
+<li >
+    <a href="../../weathermap/">Infrastructure Weathermap</a>
+</li>
+            
+<li >
+    <a href="../../warrant-canary/">Warrant Canary</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../community/">Community</a>
+</li>
+                                    
+<li >
+    <a href="../../team/">The Parrot Team</a>
+</li>
+                                    
+<li >
+    <a href="../../partners/">Project Partners</a>
+</li>
+                                    
+<li >
+    <a href="../../donate/">Donate</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../faq/">F.A.Q.</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#what-parrot-linux-supports-and-doesnt">What Parrot Linux supports (and doesn't)</a></li>
+            <li><a href="#note-this-list-is-a-work-in-progress-and-not-all-inclusive-please-email-s1udge-at-pm-dot-me-or-leave-a-comment-on-the-forums-here">NOTE: this list is a work in progress and not all inclusive.  Please email s1udge AT pm DOT me or leave a comment on the forums here</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#experimental">Experimental</a></li>
+            <li><a href="#not-supported">Not Supported</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="what-parrot-linux-supports-and-doesnt">What Parrot Linux supports (and doesn't)</h1>
+<h4 id="note-this-list-is-a-work-in-progress-and-not-all-inclusive-please-email-s1udge-at-pm-dot-me-or-leave-a-comment-on-the-forums-here"><em>NOTE: this list is a work in progress and not all inclusive. <br> Please email s1udge AT pm DOT me or leave a comment on the forums <a href="https://community.parrotsec.org/t/what-parrot-supports/5674">here</a></em></h4>
+<h3 id="hardware">Hardware</h3>
+<h4 id="processors">Processors</h4>
+<ul>
+<li>x86_64 (64bit, not to include IA-64)</li>
+</ul>
+<p>Hardware we know it works on:</p>
+<ul>
+<li>Purism systems</li>
+<li>System76 systems</li>
+<li>Dell XPS (most systems)</li>
+<li>MacBook Pro (2013)</li>
+<li>Tongfang GK5CN6Z (Modifications needed see <a href="../odd-hardware/">here</a>)</li>
+</ul>
+<hr />
+<h3 id="software">Software</h3>
+<p>Firmware</p>
+<ul>
+<li>Most BIOS/UEFI</li>
+<li>Coreboot</li>
+</ul>
+<p>Virtual Machine Emulators</p>
+<ul>
+<li>VMware (not guaranteed as it depends on what linux kernel they support)</li>
+<li>Docker</li>
+<li>QEMU</li>
+<li>VirtualBox</li>
+<li>KVM</li>
+</ul>
+<p>Other </p>
+<ul>
+<li>NVMe</li>
+<li>Netinstall</li>
+<li>SNAP</li>
+<li>Flatpak</li>
+<li>Wine</li>
+<li>HiDPi (part of MATE) </li>
+<li>KDE</li>
+<li>Xfce4</li>
+<li>Dual boot with other systems</li>
+</ul>
+<p>Functions enabled by default.</p>
+<ul>
+<li>Firejail</li>
+<li>AppArmor</li>
+<li>uBlock Origin</li>
+<li>Noscript</li>
+<li>Privacy Badger</li>
+</ul>
+<p>Functions disabled by default.</p>
+<ul>
+<li>automount</li>
+</ul>
+<hr />
+<h3 id="experimental">Experimental</h3>
+<p>Processors</p>
+<ul>
+<li>ARMv7 (<a href="https://en.wikipedia.org/wiki/ARM_architecture#VFP">armhf</a>) </li>
+<li>ARMv8 (<a href="https://en.wikipedia.org/wiki/ARM_architecture#64-bit">arm64</a>)</li>
+</ul>
+<p>Hardware overall </p>
+<ul>
+<li>Raspberry Pi 2 &amp; 3</li>
+<li>Orange Pi PC</li>
+<li>Orange Pi Nano</li>
+<li>Pine64 (Rock64, Pinebook, Sopine)</li>
+</ul>
+<h2 id="not-supported">Not Supported</h2>
+<ul>
+<li>Mobile devices (Android, iPhone, iPad, Tablet, etc)</li>
+<li>Chromebooks (sometimes it will work but huge hit or miss depending on the manufacturer)</li>
+<li>Most IOT devices (e.g. Arduino)</li>
+<li>gnome-software (no future plans to provide support, though community members are more than welcome to provide other desktop environments)</li>
+<li>All other Architectures not listed.</li>
+<li>Secure boot</li>
+<li>Intel Optane (Only works with Windows)</li>
+</ul>
+<h3 id="note-want-something-thats-not-listed-help-us-make-it-happen">NOTE: Want something that's not listed? Help us make it <a href="https://nest.parrotsec.org/">happen</a></h3>
+<p><b>
+Want to learn? Check out our library<br>
+<a href="https://archive.parrotsec.org/parrot/misc/openbooks/">Parrot Open Books</a><br>
+And other resources<br>
+<a href="https://www.debian.org/doc/">Debian Documentation</a><br>
+<a href="https://www.debian.org/doc/user-manuals#debian-handbook">Debian Handbook</a><br>
+<a href="https://www.edx.org/course/introduction-to-linux">Edx</a><br>
+<a href="http://www.bash.academy/">Bash Academy</a><br>
+<a href="https://www.cprogramming.com/">C &amp; C++ Documentation</a><br></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.parrotsec.org/docs/startpage">Parrot Info Home</a> </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
