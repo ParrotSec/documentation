@@ -45,7 +45,7 @@ var master = L.marker([51.514198, -0.093100], {title: 'CDN Edge', icon: iconserv
 .bindPopup("<b>CDN Edge Servers:</b><br>london1.uk.emea.parrotsec.org");
 // newyork
 var master = L.marker([40.8370495, -73.8654295], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
-.bindTooltip('2', {permanent: true, opacity: 0.8, direction: 'top'})
+.bindTooltip('3', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>newyork1.us.ncsa.parrotsec.org<br>newyork2.us.ncsa.parrotsec.org<br>ny.any.parrotsec.org");
 //sanfrancisco
 var master = L.marker([37.3382082, -121.8863286], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
@@ -53,7 +53,7 @@ var master = L.marker([37.3382082, -121.8863286], {title: 'CDN Edge', icon: icon
 .bindPopup("<b>CDN Edge Servers:</b><br>sanfrancisco1.us.ncsa.parrotsec.org<br>sanfrancisco2.us.ncsa.parrotsec.org");
 //losangeles
 var master = L.marker([34.052235, -118.243683], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
-.bindTooltip('2', {permanent: true, opacity: 0.8, direction: 'top'})
+.bindTooltip('1', {permanent: true, opacity: 0.8, direction: 'top'})
 .bindPopup("<b>CDN Edge Servers:</b><br>la.any.parrotsec.org");
 // toronto
 var master = L.marker([43.655499, -79.362602], {title: 'CDN Edge', icon: iconserver}).addTo(mymap)
