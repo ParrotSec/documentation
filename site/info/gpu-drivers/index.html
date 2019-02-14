@@ -159,9 +159,13 @@
 
 <h3 id="part-1-amd-drivers"><em><strong>Part 1: AMD Drivers</strong></em></h3>
 <p>To install the AMD graphics driver open a terminal and type out the following:</p>
-<p><code>sudo apt install xserver-xorg-video-amdgpu</code></p>
+<pre><code class="bash">sudo apt install xserver-xorg-video-amdgpu
+</code></pre>
+
 <p>To install AMD firmware type out: </p>
-<p><code>sudo apt install firmware-amd-graphics</code></p>
+<pre><code class="bash">sudo apt install firmware-amd-graphics
+</code></pre>
+
 <p>For further reference see <a href="https://linuxconfig.org/how-to-install-amdgpu-drivers-on-debian-9-stretch-linux">AMD GPU drivers</a></p>
 <h2 id="nvidia-andor-nouveau">Nvidia and/or Nouveau</h2>
 <p>This tutorial is for those that have two GPUs (laptops primarily), which are an Intel integrated GPU (low-power consumption) and Nvidia GPU (high-power consumption). </p>
@@ -169,19 +173,27 @@
 <p>For those that choose the <em>Nouveau driver</em> follow the steps in <strong>part 2</strong>. For Nvidia start at <strong>part 3</strong>. </p>
 <h3 id="part-2-nouveau"><em><strong>Part 2:  Nouveau</strong></em></h3>
 <p>Since the Nouveau driver is already integrated to the kernel, there is only one thing to do: Install <em>bumblebee</em> and <em>primus</em>:</p>
-<p><code>sudo apt update &amp;&amp; sudo apt install bumblebee primus</code></p>
+<pre><code class="bash">sudo apt update &amp;&amp; sudo apt install bumblebee primus
+</code></pre>
+
 <p>To start a program using the nvidia gpu do this:</p>
-<p><code>optirun</code> <em><code>yourprogram</code></em></p>
+<pre><code class="bash">optirun _yourprogram_
+</code></pre>
+
 <p>And you are done with the install! <br />
 To test if the install is successful run this:</p>
-<p><code>optirun glxgears</code></p>
+<pre><code class="bash">optirun glxgears
+</code></pre>
+
 <p>You might need to reboot to make it work. </p>
 <h3 id="part-3-nvidia-driver"><strong><em>Part 3: Nvidia-driver</em></strong></h3>
 <p>For those that choose the proprietary Nvidia driver, two extra steps are needed. </p>
 <p>The first thing to do is blacklist the Nouveau driver, in order to do that, you have to create this file:</p>
-<p><code>sudo nano /etc/modprobe.d/blacklist-nouveau.conf</code></p>
+<pre><code class="bash">sudo nano /etc/modprobe.d/blacklist-nouveau.conf
+</code></pre>
+
 <p>And write this in the file:</p>
-<pre><code>blacklist nouveau
+<pre><code class="bash">blacklist nouveau
 blacklist lbm-nouveau
 options nouveau modeset=0
 alias nouveau off 
@@ -190,16 +202,26 @@ alias lbm-nouveau off
 
 <p>When you are done hit <code>Ctrl+X</code> and save the file.</p>
 <p>Then run the following to make the changes:</p>
-<p><code>sudo update-initramfs -u</code></p>
+<pre><code class="bash">sudo update-initramfs -u
+</code></pre>
+
 <p>Reboot.</p>
 <p>Now you can install the Nvidia driver:</p>
-<p><code>sudo apt update &amp;&amp; sudo apt install nvidia-driver</code></p>
+<pre><code class="bash">sudo apt update &amp;&amp; sudo apt install nvidia-driver
+</code></pre>
+
 <p>You can install Bumblebee and Primus:</p>
-<p><code>sudo apt install bumblebee-nvidia primus</code></p>
+<pre><code class="bash">sudo apt install bumblebee-nvidia primus
+</code></pre>
+
 <p>To run a program using the Nvidia gpu, use optirun:</p>
-<p><code>optirun</code> <em><code>yourprogram</code></em></p>
+<pre><code class="bash">optirun _yourprogram_
+</code></pre>
+
 <p>To test your config, you can run this:</p>
-<p><code>optirun glxgears</code></p>
+<pre><code class="bash">optirun glxgears
+</code></pre>
+
 <p>A reboot might be needed to make Bumblebee work as well as firejail adjustments.</p>
 <p>Written by KileXt</p>
 <p>For further information see <a href="https://github.com/Bumblebee-Project/Bumblebee/wiki">here</a>
