@@ -32,7 +32,7 @@ Our official ISO Writing Tool is [Etcher - www.etcher.io](https://www.etcher.io)
 
 It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We **highly** suggest Etcher over all other methods.
 
-![Etcher](/img/etcher.png)
+![Etcher](../img/etcher.png)
 
 ---
 
@@ -41,4 +41,4 @@ It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well
 __[dd](https://en.wikipedia.org/wiki/Dd_(Unix))__ (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit. Due to the potential to brick your system if you are not familiar with linux we recommend that you use Etcher.
 
 
-![DD](/img/dd.png)
+![DD](../img/dd.png)
