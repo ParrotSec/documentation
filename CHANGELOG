@@ -1,0 +1,7 @@
+17 Feb 2019
+
+- Added changelog to provide easy to read access to documetation updates in the future.
+- Devs and Contributors can provide a quick summary of changes in bullet format for when major changes are conducted such as adding or removing pages.
+- All changelogs should begin with the date, use bullet format, be no more than 25 lines and end with the name or handle of the person committing the changes.
+
+ -s1udge
