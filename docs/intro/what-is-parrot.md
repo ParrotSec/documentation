@@ -17,7 +17,7 @@ It includes a full portable arsenal for IT security and digital forensics operat
 The operating system ships with the MATE desktop environment preinstalled and is available in several flavors to fit your needs.
 
 
-![macaw-poly](../img/macaw-poly.jpg)
+![macaw-poly](/img/macaw-poly.jpg)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ In this section we will explain how different is Parrot compared to other genera
 
 
 
-<img src="../img/parrot.svg" width="200">
+<img src="/img/parrot.svg" width="200">
 
 
 ### General purpose distributions

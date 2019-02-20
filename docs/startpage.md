@@ -11,7 +11,7 @@ visible: true
 
 &nbsp;
 
-<img src="../img/parrot.svg" width="200">
+<img src="/img/parrot.svg" width="200">
 
 &nbsp;
 
