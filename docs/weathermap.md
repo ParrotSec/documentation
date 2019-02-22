@@ -119,6 +119,10 @@ var master = L.marker([41.6561, -0.8773], {title: 'Mirror Server', icon: iconmir
 var master = L.marker([50.85, 4.35], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Belgian National Research network<br>[http://ftp.belnet.be/archive.parrotsec.org/](http://ftp.belnet.be/archive.parrotsec.org/)');
+// mirror datacenterby
+var master = L.marker([53, 28], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>mirror.datacenter.by - Beltelecom Datacenter<br>[https://mirror.datacenter.by/pub/mirrors/parrotsec.org/](https://mirror.datacenter.by/pub/mirrors/parrotsec.org/)');
 // mirror asis
 var master = L.marker([35.69, 51.42], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
