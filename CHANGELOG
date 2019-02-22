@@ -1,4 +1,11 @@
-17 Feb 2019
+2019/02/22
+
+- Use a more universal and easily greppable data format to this changelog
+- Add missing mirrors to weathermap
+
+ -Palinuro
+
+2019/02/17
 
 - Added changelog to provide easy to read access to documetation updates in the future.
 - Devs and Contributors can provide a quick summary of changes in bullet format for when major changes are conducted such as adding or removing pages.
