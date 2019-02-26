@@ -45,6 +45,12 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 [About FSecurity Academy](https://www.fsecurityacademy.com/about/)
 
 ***
+
+### Hack The Box
+
+[Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
+
+***
 &nbsp;
 
 ## __Mirrors__
