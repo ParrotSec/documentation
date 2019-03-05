@@ -1,0 +1,17 @@
+img files need to be linked with double periods or they link improperly on the
+server. For example:
+
+[parrot](/img/parrot.svg) will show as https://www.parrotsec.org/img/parrot.svg
+
+when we want:
+
+https://www.parrotsec.org/docs/img/parrot.svg
+To use the correct file path,use:
+[parrot](../img/parrot.svg) 
+
+NOTE: For Parrot docs all images should be kept in docs/img/ path
+
+to download Images off a site (e.g. several)
+
+wget -r -P /download/location -A jpg,jpeg,gif,png http://www.site.here
+
