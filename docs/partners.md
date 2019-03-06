@@ -210,6 +210,12 @@ TrueNetwork - Russia
 
 Quantum-mirror - Open source mirroring solutions in Hungary
 
+
+### Muug Mirror
+
+Manitoba Unix User Group - Winnipeg
+
+
 &nbsp;
 
 &nbsp;
