@@ -130,6 +130,7 @@ North Central and South Americas
 |New York<br>Clarkson<br>1 Gbps|Clarkson University|[mirror.clarkson.edu/parrot](https://mirror.clarkson.edu/parrot/)|<sub>deb https://mirror.clarkson.edu/parrot/ parrot main contrib non-free</sub>|
 |California<br>Berkeley<br>1 Gbps|Berkeley Open Computing Facility|[mirrors.ocf.berkeley.edu/parrot](http://mirrors.ocf.berkeley.edu/parrot)|<sub>deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free</sub>|
 |Oregon<br>Osuosl<br>1 Gbps|Oregon State University - Open Source Lab|[ftp.osuosl.org/pub/parrotos](https://ftp.osuosl.org/pub/parrotos)|<sub>deb https://ftp.osuosl.org/pub/parrotos parrot main contrib non-free</sub>|
+|Winnipeg - Canada<br>muug<br>10 Gbps|Manitoba Unix User Group|[muug.ca/mirror/parrot/](https://muug.ca/mirror/parrot/)|<sub>deb https://muug.ca/mirror/parrot/ parrot main contrib non-free</sub>|
 
 | Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
 |:----------------------------------|:---------------:|:-----|:-------------------|
