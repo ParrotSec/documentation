@@ -82,7 +82,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/joinchat/EbgW4A2wfkmP8whsTvZ8TQ" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/parrotsecgr" class="btn btn-default">Telegram</a>
 
 ----
 
