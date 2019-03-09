@@ -1,3 +1,9 @@
+This is how it should work but due to numerous isssues we've gone back to using the full URL for imgs
+The information below is for informational purposes only. PLEASE FOLLOW the [documentation wiki]()
+
+ extra:
+    logo: 
+
 img files need to be linked with double periods or they link improperly on the
 server. For example:
 
@@ -14,4 +20,5 @@ NOTE: For Parrot docs all images should be kept in docs/img/ path
 to download Images off a site (e.g. several)
 
 wget -r -P /download/location -A jpg,jpeg,gif,png http://www.site.here
+
 
