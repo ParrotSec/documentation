@@ -28,4 +28,6 @@ visible: true
 - 8 GB of RAM DDR3
 - 128 GB SSD
 
-[Parrot Info Home](https://www.parrotsec.org/docs/startpage)
+
+         
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

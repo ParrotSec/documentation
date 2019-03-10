@@ -8,15 +8,17 @@ visible: true
 
 ## Parrot Linux Frequently Asked Questions
 
-### Why should I use Parrot?
+### Why should I use Parrot Linux?
 
 Penetration testing is a time intensive job, maintaining your toolkit shouldn't 
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.
 
-Not sure if Parrot Linux is for you? Check out "[Should I use parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)" to be sure.
+Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)" to be sure.
 
+### What is the difference between Kali Linux and Parrot Linux? 
 
+Our focus for one (Their focus i), Our design approach to the system as a whole is different.
 
 ### What is the default live password?
 
@@ -27,25 +29,23 @@ If the password does not work, also try with: **toor**
 
 Parrot does not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use **sudo**
 
+### How do I upgrade my system?
 
-
-### How can I upgrade my system?
-
-There are several different ways to upgrade the parrot system
+First please, do __NOT__ use `apt-get upgrade`. Because Parrot Linux is a rolling distribution and how APT works, the command will cause considerable problems to your system. We don't recommend `apt-get` in general as the command is not really meant for end-users. The following are the recommended ways to update your system:
 
 1) First method
 
-Open a terminal window and launch the following command;
+Open a terminal window (default is Alt+T) and launch the following command:
 
-```bash
+```text
 sudo parrot-upgrade
 ```
 
 2) Second method
 
-Open a terminal window and launch the following commands
+Open a terminal window and launch the following commands:
 
-```bash
+```text
 sudo apt update
 sudo apt full-upgrade
 ```
@@ -54,21 +54,19 @@ sudo apt full-upgrade
 
 Open System > Administration > Package Manager (synaptic)
 
-then click on the button to update the packages list.
+Then click on the button to update the packages list.
 
-click on the other button to select the upgrades and finally apply the changes.
-
-
+Click on the other button to select the upgrades and finally apply the changes.
 
 ### Why isn't $toolname installed?
 
-We have a set of requisites to check before a tool makes its way into our repositories such as:
+We have a set of prerequisites to check before a tool makes its way into our repositories such as:
 
 - Is the tool actively maintained?
 
 - Does it have the necessary documentation?
 
-- Is it FLOSS, FOSS or does its license allow redistribution?
+- Is it FLOSS, FOSS or does it's license allow redistribution?
 
 - Are there other tools that do the same thing?
 
@@ -79,7 +77,6 @@ and more[...];
 
 
 If the answers were “Yes” we're more than glad to take your request via our [Community Portal](https://community.parrotsec.org/c/development).
-
 
 
 ### Where can bugs be submitted?
@@ -96,7 +93,7 @@ If you are not sure what software is involved, or if you don't know how to conta
 
 `/etc/apt/sources.list.d/parrot.list` should contain the following content
 
-```
+```bash
 deb http://deb.parrotsec.org/parrot stable main contrib non-free
 #deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 ```
@@ -114,7 +111,7 @@ We have a dedicated documentation page which describes this issue, how to fix it
 
 ### How do I prepare a bootable Parrot USB drive?
 
-1) Download etcher from our [Download page](https://www.parrotsec.org/download.php) or directly from [www.etcher.io](https://www.etcher.io).
+1) Download Etcher from our [Download page](https://www.parrotsec.org/download.php) or directly from [www.etcher.io](https://www.etcher.io).
 
 2) Download the ISO file of the Parrot version you need from our our [Download Page](https://www.parrotsec.org/download.php)
 
@@ -124,12 +121,35 @@ Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-devi
 
 ### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme) and the [Parrot Wiki](https://www.parrotsec.org/docs/startpage) page. 
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme), the [Using Parrot Linux](https://www.parrotsec.org/docs/startpage) pages and the [further reading](https://www.parrotsec.org/docs/library/library-start/). We also strongly recommend taking the [EdX course](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/) by the [Linux Foundation](https://www.linuxfoundation.org/).
 
-### Is this FAQ under construction?
+### Should I encrypt my harddrive
 
-Yes it is.
+Yes, always. Do it during your initial install or you will need to reinstall. 
+
+### My hardware is *xyz-super-cool gizmo . . .* will it run Parrot Linux?
+
+Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/supported-hardware/) page.
+
+### Can you teach me how to hack, become a Linux uber-duber user, or live a holy life like Cucumber Bob.
+
+Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/library-start/) will lead you down the path of autodidactic salvation.
+
+### Why doesn't Parrot Linux use HTTPS with APT?
+
+Please see [here](https://whydoesaptnotusehttps.com/).
+
+### How do I setup auto-login?
+
+Our OVA images are already configured for auto-login (any passwords needed are on the desktop). We don't recommend or support auto-login for our other builds.
 
 ### Can I contribute to this FAQ?
 
 Of course! The pages are written in Markdown and can be accessed [here](https://nest.parrotsec.org/parrot-organization/documentation/blob/master/docs/faq.md).
+
+
+&nbsp;
+
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

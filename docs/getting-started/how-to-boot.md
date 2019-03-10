@@ -10,7 +10,7 @@ visible: true
 
 &nbsp;
 
-Note: Can't find what you're looking for? checkout the Parrot Wiki
+Note: Can't find what you're looking for? checkout  [Using Parrot](https://www.parrotsec.org/docs/info/startpage/) or [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/)
 
 ---
 
@@ -89,3 +89,10 @@ To learn how to boot from the live media read this [page](how-to-boot.md) instea
 ## Default username and password
 In Parrot OS live environment the default username is "user" and the default password is "toor".
 
+
+
+
+
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

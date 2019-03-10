@@ -1,5 +1,5 @@
 ---
-title: 'Install Parrot'
+title: 'Install Parrot Linux'
 taxonomy:
     category:
         - docs
@@ -14,11 +14,11 @@ These images can be installed from removable DVD, USB or SD storage media.
 
 The easiest way to prepare the installation media is to download any of the 64-bit Parrot images that will fit on the device and burn it. Of course this will destroy anything already there.
 
-To learn how to burn the images, please see [here](https://www.parrotsec.org/docs/getting-started/create-boot-device/).
+To learn how to burn the images, please see [here](../../getting-started/create-boot-device/).
 
 Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.
 
-For detailed instructions visit the [here](parrot-home-install.md)
+For detailed instructions visit the [here](install-debian.md)
 
 ## Netinstall
 
@@ -28,7 +28,7 @@ The image has the software components needed to run the installer and the base p
 
 Download whichever type you prefer and burn it. The procedure is the same as described on the above link.
 
-![Parrot first contact](/img/martian-first-contact.jpg)
+![Parrot first contact](../img/martian-first-contact.jpg)
 
 
 ### I have a Parrot USB or DVD, now what?
@@ -52,8 +52,10 @@ The live mode is a special boot mode offered by many linux distributions, includ
 
 This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory.
 
-![parrot-live](/img/parrot-live.png)
+![parrot-live](../img/parrot-live.png)
 
 Parrot OS offers the ability to install the OS while in the live environment offers the ability to test the system without interfering with the computer's hard drive.
 
-[Parrot Info Home](https://www.parrotsec.org/docs/startpage)
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

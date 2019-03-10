@@ -1,17 +1,17 @@
+
 site_name: Parrot Documentation
 site_url: https://docs.parrotsec.org
+site_author: Parrot Linux Team
+copyright: <p><br/>
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Parrot Documentation</span> is written by the <a
+                xmlns:cc="http://creativecommons.org/ns#" href="https://www.parrotsec.org/docs/community/team/" property="cc:attributionName"
+                rel="cc:attributionURL">Parrot Linux Team</a> <br> Copyright © Lorenzo "Palinuro" Faletra 2019 some rights reserved.  <br> Licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>.
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+                    style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></p>                
 
 theme:
     name: cyborg
-#    highlightjs: true
-#    hljs_languages:
-#        - yaml
-#        - rust
-#        - c
-#        - python
-#        - bash
-#        - cpp
-#        - perl
 
 
 nav:
@@ -20,19 +20,27 @@ nav:
         - What is Parrot: intro/what-is-parrot.md
         - What is Debian: intro/what-is-debian.md
         - What is Linux: intro/what-is-linux.md
-    - Getting Started:
-        - Download Parrot: getting-started/download.md
-        - Create a boot device: getting-started/create-boot-device.md
-        - How to boot the system: getting-started/how-to-boot.md
-        - Parrot on Docker: getting-started/parrot-on-docker.md
-    - Project:
+    - User Guide:
+        - Getting Started: getting-started/start-pg.md
+        - Using Parrot: info/startpage.md    
+        - Troubleshooting: trbl/trbl-start.md
+    - Library: 
+        - Parrot Linux: library/library-start.md
+        - Knowledge Nest: library/knowledge-start.md  
+    - The Project:
         - Infrastructure:
             - APT Mirror list: mirror-list.md
-            - Make your own mirror: https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror
+            - Make your own mirror: mirror-list/#make-your-own-mirror
             - Infrastructure Weathermap: weathermap.md
-            - Warrant Canary: warrant-canary.md
-        - community.md
-        - team.md
-        - partners.md
-        - donate.md
+        - Community:
+            - News: https://www.parrotsec.org/blog/
+            - Future Plans: community/roadmap.md
+            - The Community: community/community-pg.md
+            - The Team: community/team.md
+            - Partners: community/partners.md
+            - Donate: community/donate.md
+            - Nest: https://nest.parrotsec.org/explore/groups
+        - Legal: legal/legal-start.md
+        - Warrant Canary: legal/warrant-canary.md
     - F.A.Q.: faq.md
+

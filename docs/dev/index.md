@@ -12,7 +12,7 @@ This section is dedicated to the Parrot project development.
 This section is under heavy development and many pages were not written
 or reviewed yet.
 
-[Contact our dev team](https://community.parrotsec.org) if you need help.
+[Contact our dev team](https://www.parrotsec.org/docs/community/team/) with the subject line "DEV HELP" if you need help and we will get back to you as soon as possible.
 
 ![screenshot](../img/developer-background.jpg)
 
@@ -34,7 +34,8 @@ or reviewed yet.
 
 ### Developer resources
 
-WIP
+[Packaging](packaging.md)      
+[Rebuilding .deb from source](rebuild-deb-from-src.md)
 
 ### Being a Parrot developer
 
@@ -52,3 +53,5 @@ WIP
 
 
 &nbsp;
+
+[Home](https://www.parrotsec.org/docs/) 

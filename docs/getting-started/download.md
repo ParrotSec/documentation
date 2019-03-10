@@ -45,6 +45,7 @@ You can fire up a Parrot container inside your existing system or using a cloud 
 
 If you want to perform more tests, each in an isolated environment/workspace, you can start multiple instances from the same Parrot template.
 
+
 # Open Virtualization Format
 
 OVA is the standard for Virtual Machines and Parrot Linux is Proud to offer OVA for both Parrot Home and Parrot Security.
@@ -59,4 +60,8 @@ Just import, configure system resources and start the VM.
 
 &nbsp;
 
-[__Downloads__](https://www.parrotsec.org/download.php)
+### [__Downloads__](https://www.parrotsec.org/download.php)
+
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

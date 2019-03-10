@@ -1,3 +1,4 @@
+
 # Home
 
 For the Parrot Linux homepage, visit [parrotsec.org](https://parrotsec.org).
@@ -7,7 +8,7 @@ An important part of any operating system is documentation, the technical manual
 The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.
 
 
-![screenshot](img/screenshot.png)
+![screenshot](https://www.parrotsec.org/docs/img/screenshot.png)
 
 &nbsp;
 
@@ -20,59 +21,31 @@ The documentation is still under construction, and all the Parrot users are invi
 
 # Documentation
 
-## Introduction
+### User Guide
 
-- [What is Parrot](intro/what-is-parrot.md)
+- [Getting Started](getting-started/start-pg.md)
 
-- [What is Debian](intro/what-is-debian.md)
+- [Using Parrot](info/startpage.md)
 
-- [What is Linux](intro/what-is-linux.md)
+- [Troubleshooting](trbl/trbl-start.md)
 
-## Getting started
+### Infrastructure Zone
 
-[Download Parrot](getting-started/download.md)
+- [CDN Speedtest](https://deb.parrotsec.org/speedtest)
 
-[Create a boot device](getting-started/create-boot-device.md)
+- [Parrot's Network Map](weathermap.md)
 
-[What is live mode](info/what-is-live-mode.md)
+### Developer zone
 
-[How to boot the system](getting-started/how-to-boot.md)
+- [Developer Portal](https://nest.parrotsec.org)
 
-[Run Parrot on Docker](getting-started/parrot-on-docker.md)  
+- [Developer Documentation](dev/index.md)
 
-## Parrot Wiki (troubleshooting, install help, etc)    
+### Side projects
 
-[Parrot Wiki](startpage.md)
+- [Aenigma Federated XMPP Server](https://github.com/openspace42/aenigma)
 
-# Infrastructure Zone
-
-[CDN Speedtest](https://deb.parrotsec.org/speedtest)
-
-[Parrot network Map](weathermap.md)
-
-[Apt Mirror List](mirror-list.md)
-
-[Make your own Parrot mirror](https://www.parrotsec.org/docs/mirror-list/#make-your-own-mirror)
-
-
-
-
-# Developer zone
-
-[Developer Portal](https://nest.parrotsec.org)
-
-[Developer Documentation](dev/index.md)
-
-[Setup a cross-platform sbuild environment](dev/sbuild.md)
-
-
-
-
-# Side projects
-
-[aenigma federated xmpp server](https://github.com/openspace42/aenigma)
-
-[LibreFiber](https://github.com/openspace42/LibreFibre)
+- [LibreFiber](https://github.com/openspace42/LibreFibre)
 
 
 
@@ -95,15 +68,9 @@ and customization of the system.
 &nbsp;
 
 
-&nbsp;
-
-
-&nbsp;
-
-
 ### Debian Documentation
 
-Parrot Linux is based on top of the testing branch of Debian GNU/Linux, then most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
+Parrot Linux is based on top of the testing branch of Debian GNU/Linux, so most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
 
  * [Debian Handbook](https://www.debian.org/doc/manuals/debian-handbook/), the comprehensive user manual
  * [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/), a terse user's guide with the focus on the shell command line
@@ -125,4 +92,4 @@ Parrot Linux is based on top of the testing branch of Debian GNU/Linux, then mos
 
  &nbsp;
 
-[Warrant Canary](warrant-canary)
+[Warrant Canary](legal/warrant-canary)

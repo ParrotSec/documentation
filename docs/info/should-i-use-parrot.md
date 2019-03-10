@@ -13,7 +13,7 @@ Even if we, would like everyone to use the Parrot System or, at least, give it a
 First of all, even if Parrot provides general purpose flavors, its core is still tuned for Security and Forensics operations.
 In this section we will explain how different is Parrot compared to other general purpose distributions and how different it is from other Pentest and Forensics distributions. Then we will present some categories of people and what kind of experience they may have by using this system.
 
-![macaw-poly](/img/macaw-poly.jpg)
+![macaw-poly](https://www.parrotsec.org/docs/img/macaw-poly.jpg)
 
 
 
@@ -74,4 +74,4 @@ The no-automount behavior is consistent and stable, but no protection is provide
  * Wannabe Hackers
  * Police officers and special security institutions
     
-[Parrot Info Home](https://www.parrotsec.org/docs/startpage)
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

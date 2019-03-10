@@ -1,7 +1,25 @@
+2019/03/10
+
+- Added Creative Commons license to repository and embedded within docs site.
+- Changed .yml layout to align with sitemap and docs roadmap.
+- Added the majority of documents outlined in the sitemap (many are blank).
+- changed images to have full url.
+- added legal and privacy.
+- X was pulled as Pi is the only one remotely ready and it is still in testing.
+- Added to the FAQ
+
+ -s1udge
+
+2019/03/04              
+- Added disrupt_the_flow's tutorials for QubesOS and KVM.
+- Added Contributing guidelines.
+
+ -s1udge
+
 2019/02/22
 
 - Use a more universal and easily greppable data format to this changelog
-- Add missing mirrors to weathermap
+- Added missing mirrors to weathermap
 
  -Palinuro
 
