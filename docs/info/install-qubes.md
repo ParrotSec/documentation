@@ -1,6 +1,6 @@
 ### QubesOS
 
-There are three ways to install ParrotSec GNU/Linux on QUbesOS for now.
+There are two ways to create a ParrotSec GNU/Linux VM on QUbesOS for now.
 
 #### Option 1 - Create an HVM
 
@@ -110,7 +110,7 @@ The above command should return OK In a single line.
 ```
 
 
-#### (Optional)Install the penetraton testing tools
+#### (Optional)Install the penetration testing tools
 At this point you should have a working template and you can install the tools you need.
 
 1. Resize the template disk image if you plan on installing the full ParrotSec distribution. For example to install parrot-tools-full you must grow the size of the VM system from 10GB to at least 20GB.
