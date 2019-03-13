@@ -29,6 +29,7 @@ Before you start using Debian User Forums, please observe the following guidelin
 
     Do not cross post. Posting the same topic in more than one category only creates confusion and makes it hard to keep track on the various replies. Double posts will be locked.
     Be descriptive. Use a meaningful headline and try to make your question as clear as possible. Include as much information as possible such as what Debian branch you are using, error messages, what you did that may have caused the problem etc. This greatly increase the chances of getting useful help.
+    
     Be patient. Not everyone knows everything and not everyone is online all the time. If you don't get a reply chances are that no one is online that knows the answer at the moment. Do not 'bump' your questions just because there have been a few hours with no reply.
     Do not post a reply to obvious SPAM. If the forums are getting severely spammed and no moderators are online please use the spam reporting thread or send an e-mail to team@forums.debian.net
     Be polite. Remember that the skill level of the forum members ranges from the absolute beginner to the very seasoned Linux user and what might be obvious to you might be very hard to understand for others. It's OK to point someone to other resources or suggest means of learning but do so politely; 'RTFM' has no place on this board.
