@@ -1,6 +1,6 @@
 # Verify
 # ASK Palinuro!
-# Merge with GPU tutorial?
+# Merge with GPU tutorial? (palinuro: absolutely yes)
 # Missing Photos
 NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
 

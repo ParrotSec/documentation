@@ -23,11 +23,11 @@ The documentation is still under construction, and all the Parrot users are invi
 
 ### User Guide
 
-- [Getting Started](getting-started/start-pg.md)
+- [Getting Started](getting-started/start.md)
 
-- [Using Parrot](info/startpage.md)
+- [Using Parrot](info/start.md)
 
-- [Troubleshooting](trbl/trbl-start.md)
+- [Troubleshooting](trbl/start.md)
 
 ### Infrastructure Zone
 

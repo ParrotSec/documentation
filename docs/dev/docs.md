@@ -3,8 +3,8 @@
 
 &nbsp;
 
-NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
+NOTE: Currently a WIP (work in progress), some links might not work and some documentation is likely missing.
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](../info/start.md) | [Troubleshooting](../trbl/start.md) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 

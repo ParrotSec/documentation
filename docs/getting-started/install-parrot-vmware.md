@@ -2,7 +2,7 @@
 ## NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
 
 
-How to Install Parrot Security in VMware Workstation Step-by-Step Guide
+How to Install Parrot OS in VMware Workstation Step-by-Step Guide
 
 This step-by-step article shows you how to install Parrot Security in VMware Workstation step-by-step but you can also use VMware Player which is free. This tutorial also helps if you install Parrot Security on physical hardware. In fact, Parrot Security installation is not very hard. First of all, why Parrot Security as a virtual machine? Because, if you are new on Parrot Security, it is very safe to use it as virtual machine. You can easily explore Parrot Security new features without damaging any live data on your computer.
 

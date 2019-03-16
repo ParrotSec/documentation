@@ -6,7 +6,7 @@ NOTE: to install docker on ParrotLinux xecute the following, otherwise start at 
 
 #### Parrotsec/Parrot-core
 
-**Official Parrot Security Base system without tools.**
+**Official Parrot OS Base system without tools.**
 
 Start a new instance
 
@@ -24,13 +24,13 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```bash
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://dev.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t parrot-core[:version] parrot-core
 ```
 #### Parrotsec/Parrot
 
-**Official Parrot Security image with basic security tools.**
+**Official Parrot OS image with basic security tools.**
 
 -Start a new instance
 
@@ -48,7 +48,7 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```bash
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://dev.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t parrot[:version] parrot
 ```
@@ -62,7 +62,7 @@ Install/Update from Docker Cloud
 ```
 Install/Update from local Dockerfile
 ```bash
-    git clone https://dev.parrotsec.org/parrot/docker-images && cd docker-images
+    git clone https://dev.parrotsec.org/parrot-build/docker-images && cd docker-images
 
     docker build -t metasploit[:version] metasploit
 ```

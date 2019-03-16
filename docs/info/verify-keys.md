@@ -1,6 +1,6 @@
 # Key verification
 
-## Why should anyone verify keys?
+## Why should anyone verify keys and signatures?
 
 Most people — even programmers — are confused about the basic concepts underlying digital signatures. Therefore, most people should read this section, even if it looks trivial at first sight.
 
@@ -35,7 +35,7 @@ Optional: Complete the steps below if unfamiliar with GnuPG or if they haven't a
 
 3. Get the ParrotSec key.
 ```bash
-    wget -q -O - http://archive.parrotsec.org/parrot/misc/parrotsec.gpg | gpg --import
+    wget -q -O - https://deb.parrotsec.org/parrot/misc/parrotsec.gpg | gpg --import
 ```
 or
 ```bash 

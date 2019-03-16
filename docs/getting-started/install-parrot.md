@@ -14,7 +14,7 @@ These images can be installed from removable DVD, USB or SD storage media.
 
 The easiest way to prepare the installation media is to download any of the 64-bit Parrot images that will fit on the device and burn it. Of course this will destroy anything already there.
 
-To learn how to burn the images, please see [here](../../getting-started/create-boot-device/).
+To learn how to burn the images, please see [here](create-boot-device.md).
 
 Some BIOSes can boot USB or SD card storage directly or allow to boot temporarily from them, and some cannot. You may need to configure your BIOS to boot from a “Removable Drive” or even a “USB-ZIP” to get it done.
 

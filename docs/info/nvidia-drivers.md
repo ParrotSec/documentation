@@ -2,6 +2,9 @@
 # ASK Palinuro are these still good instruction sets?
 # If still good organize into table with three columns
 
+
+## Palinuro says that this list is old as fuck and should be uèdated with the latest nvidia driver in debian/parrot and the boards it supports
+
  Parrot includes three nvidia drivers, the first is the opensource nouveau driver which is pre-installed and supports many common nvidia cards.
 
 The other driver is the official proprietary driver shipped by Nvidia which is divided in 2 drivers, one legacy driver for old devices no longer supported by Nvidia, and the latest Nvidia driver which supports the latest GPUs.

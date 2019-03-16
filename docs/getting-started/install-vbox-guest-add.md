@@ -1,7 +1,7 @@
 # VERIFY!
 # Missing photos
 
-Introduction To Virtualbox Guest Additions
+# Introduction To Virtualbox Guest Additions
 
 The Guest Additions are designed to be installed inside a virtual machine after the guest operating system has been installed.
 They consist of device drivers and system applications that optimize the guest operating system for better performance and usability.
@@ -23,58 +23,44 @@ Features Of Virtualbox Guest Additions
     Shared clipboard
         Shared clipboard from host to Parrot.
 
-Guest Additions Installation(s)
-Method 1 (Easiest)
 
-1. Open a terminal and update your packages list from the repository with sudo apt-get update
+# Method 1 (Easiest)
 
+1. Open a terminal and update your packages list from the repository to retrieve the latest list of available packages
 
-
-2. Install the Guest Additions from ParrotOS repository with sudo apt-get install virtualbox-guest-utils
-If requested to continue write Y then hit Enter on your keyboard.
+`sudo apt update`
 
 
 
-3. And install the last package with sudo apt-get install virtualbox-guest-x11
+2. Install the Guest Additions from ParrotOS repository with the following command
+
+`sudo apt install -y virtualbox-guest-dkms`
 
 
 
-4. When installation is completed, you can reboot your machine with sudo reboot
+
+1. When installation is completed, you can reboot your machine with sudo reboot
 
 
 
-5. Check if Guest Additions are correctly installed by running sudo /usr/sbin/VBoxService -V
+2. Check if Guest Additions are correctly installed by running sudo /usr/sbin/VBoxService -V
 
 
-Method 2 (From ISO)
+# Method 2 (From ISO)
 
 1. On Virtual Machine menu bar, select Devices > Insert Guest Additions CD image…
 
-
-
 2. Login as root by using sudo su, and insert your current user password
-
-
 
 3. Enter the CDROM directory by using cd /media/cdrom0/
 
-
-
 4. Copy the Guest Additions file to “/root” directory with cp VBoxLinuxAdditions.run ~
-
-
 
 5. Enter the “/root” directory with cd ~
 
-
-
 6. Give the permission for execute “+x” to “VBoxLinuxAdditions.run” by using chmod +x VBoxLinuxAdditions.run
 
-
-
 7. Execute “VBoxLinuxAdditions.run” with ./VBoxLinuxAdditions.run
-
-
 
 8. At installation completed, reboot the virtual machine with reboot
 

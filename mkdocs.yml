@@ -21,9 +21,9 @@ nav:
         - What is Debian: intro/what-is-debian.md
         - What is Linux: intro/what-is-linux.md
     - User Guide:
-        - Getting Started: getting-started/start-pg.md
-        - Using Parrot: info/startpage.md    
-        - Troubleshooting: trbl/trbl-start.md
+        - Getting Started: getting-started/start.md
+        - Using Parrot: info/start.md    
+        - Troubleshooting: trbl/start.md
     - Library: 
         - Parrot Linux: library/library-start.md
         - Knowledge Nest: library/knowledge-start.md  

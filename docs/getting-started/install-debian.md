@@ -1,5 +1,5 @@
 ---
-title: 'Parrot Home Installation'
+title: 'Debian Installer'
 taxonomy:
     category:
         - docs
@@ -24,7 +24,7 @@ Once the installer starts the initial screen will appear. Press Enter to boot or
 
 7. Now it is time to partition disks. Automatic partitioning can be done either on an entire drive, or available free space on a drive. This is recommended for new users or anyone in a hurry. If autopartition is not wanted, choose "Manual" from the menu.
 
-8. If there is an existing DOS or Windows partition that has to be preserved, be very careful with automatic partitioning. If manual partitioning is selected, the installer can be used to resize existing FAT or NTFS partitions to create room for the Parrot install: simply select the partition and specify its new size.
+8. If there is an existing Windows or Linux installation that has to be preserved, be very careful with automatic partitioning. If manual partitioning is selected, the installer can be used to resize existing FAT or NTFS partitions to create room for the Parrot install: simply select the partition and specify its new size.
 
 9. On the next screen the partition table will be seen, how the partitions will be formatted, and where they will be mounted. Select a partition to modify or delete it. If automatic partitioning was selected, the "Finish" option can be selected and the changes can be written to disk to use what it set up. Remember to assign at least one partition for swap space and to mount a partition on __/__.
 
