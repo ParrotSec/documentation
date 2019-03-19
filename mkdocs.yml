@@ -25,7 +25,7 @@ nav:
         - Using Parrot: info/start.md    
         - Troubleshooting: trbl/start.md
     - Library: 
-        - Parrot Linux: library/library-start.md
+        - Parrot Linux: library/start.md
         - Knowledge Nest: library/knowledge-start.md  
     - The Project:
         - Infrastructure:
@@ -34,11 +34,10 @@ nav:
             - Infrastructure Weathermap: weathermap.md
         - Community:
             - News: https://www.parrotsec.org/blog/
-            - Future Plans: community/roadmap.md
-            - The Community: community/community-pg.md
-            - The Team: community/team.md
-            - Partners: community/partners.md
-            - Donate: community/donate.md
+            - Future Plans: roadmap.md
+            - The Team: team.md
+            - Partners: partners.md
+            - Donate: donate.md
             - Nest: https://nest.parrotsec.org/explore/groups
         - Legal: legal/legal-start.md
         - Warrant Canary: legal/warrant-canary.md

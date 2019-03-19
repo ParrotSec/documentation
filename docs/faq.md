@@ -16,10 +16,6 @@ by reducing the time and effort wasted making sure their tools work.
 
 Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)" to be sure.
 
-### What is the difference between Kali Linux and Parrot Linux? 
-
-Our focus for one (Their focus i), Our design approach to the system as a whole is different.
-
 ### What is the default live password?
 
 Live user: **user**
@@ -107,7 +103,7 @@ This usually happens when you use software that doesn't respect the isohybrid st
 
 We have a dedicated documentation page which describes this issue, how to fix it and why.
 
-[Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device)
+[Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device/)
 
 ### How do I prepare a bootable Parrot USB drive?
 
@@ -117,13 +113,13 @@ We have a dedicated documentation page which describes this issue, how to fix it
 
 3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased).
 
-Read more [HERE](https://www.parrotsec.org/docs/getting-started/create-boot-device).
+Read more [here](https://www.parrotsec.org/docs/getting-started/create-boot-device).
 
 ### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme), the [Using Parrot Linux](https://www.parrotsec.org/docs/startpage) pages and the [further reading](https://www.parrotsec.org/docs/library/library-start/). We also strongly recommend taking the [EdX course](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/) by the [Linux Foundation](https://www.linuxfoundation.org/).
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme/), the [Using Parrot Linux](https://www.parrotsec.org/docs/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
 
-### Should I encrypt my harddrive
+### Should I encrypt my harddrive?
 
 Yes, always. Do it during your initial install or you will need to reinstall. 
 
@@ -131,17 +127,33 @@ Yes, always. Do it during your initial install or you will need to reinstall.
 
 Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/supported-hardware/) page.
 
-### Can you teach me how to hack, become a Linux uber-duber user, or live a holy life like Cucumber Bob.
+### Can you teach me how to hack, become a Linux uber-duber user, or live a holy life like Cucumber Bob?
 
-Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/library-start/) will lead you down the path of autodidactic salvation.
+Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/start/) will lead you down the path of autodidactic salvation.
 
 ### Why doesn't Parrot Linux use HTTPS with APT?
 
 Please see [here](https://whydoesaptnotusehttps.com/).
 
+### How can I disable the GUI update reminder? 
+
+Please see [here](https://community.parrotsec.org/t/parrot-updater/1485/2)
+
+### I can't login at startup as root?
+
+That is by design, use `sudo` instead.
+
 ### How do I setup auto-login?
 
 Our OVA images are already configured for auto-login (any passwords needed are on the desktop). We don't recommend or support auto-login for our other builds.
+
+### Does Parrot Replace Heads/Tails?
+
+No, although similar Parrot isn't designed to replace or be used as a Heads/Tails system.
+
+### What is the difference between Kali Linux and Parrot Linux? 
+
+There are several and we think you should try both to really get a solid feeling of which one fits you best. 
 
 ### Can I contribute to this FAQ?
 
@@ -152,4 +164,4 @@ Of course! The pages are written in Markdown and can be accessed [here](https://
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

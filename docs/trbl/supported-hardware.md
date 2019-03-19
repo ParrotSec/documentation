@@ -7,7 +7,7 @@ visible: true
 ---
 
 # What Parrot Linux supports (and doesn't)
-#### *NOTE: this list is a work in progress and not all inclusive. <br> Please email s1udge AT pm DOT me or leave a comment on the forums [here](https://community.parrotsec.org/t/what-parrot-supports/5674)*
+#### *NOTE: this list is a work in progress and not all inclusive. <br> Please email s1udge AT parrotsec DOT org or leave a comment on the forums [here](https://community.parrotsec.org/t/what-parrot-supports/5674)*
 
 ### Hardware
 #### Processors
@@ -90,14 +90,7 @@ Hardware overall
 
 ### NOTE: Want something that's not listed? Help us make it [happen](https://nest.parrotsec.org/)
 <b>
-Want to learn? Check out our library<br>
-[Parrot Open Books](https://archive.parrotsec.org/parrot/misc/openbooks/)<br>
-And other resources<br>
-[Debian Documentation](https://www.debian.org/doc/)<br>
-[Debian Handbook](https://www.debian.org/doc/user-manuals#debian-handbook)<br>
-[Edx](https://www.edx.org/course/introduction-to-linux)<br>
-[Bash Academy](http://www.bash.academy/)<br>
-[C &amp; C++ Documentation](https://www.cprogramming.com/)<br>
+
 
 &nbsp;
 
@@ -110,4 +103,4 @@ And other resources<br>
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

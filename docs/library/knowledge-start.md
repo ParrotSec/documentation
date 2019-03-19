@@ -16,9 +16,10 @@ NOTE: Currently a WIP (work in progress, some links might not work and some docu
 - [What is AppArmor](apparmor.md)
 - [What is Digital Forensics?](forensics.md)
 - [Compiling a Custom Kernel](compile-custom-k.md)
-- [Linux Beginner Guide](lbg-start.md)
+
+Linux Beginner Guide
 - [Linux Beginner Guide: The Basics](lbg-basics.md)
-- [Linux Beginner Guide: Further Research](lbg-resources.md)
+- [Linux Beginner Guide: Research](lbg-resources.md)
 - [Helpme](helpme.md)
 
 &nbsp;
@@ -27,5 +28,5 @@ NOTE: Currently a WIP (work in progress, some links might not work and some docu
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
 

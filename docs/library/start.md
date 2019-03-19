@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-NOTE: We believe knowledge and self-learning to be of the highest importance. The order is temporarily disorganized.
+NOTE: We believe self-learning is the best way to learn to be of the highest importance. The order is temporarily disorganized.
 
 And as always, search the internet before you post.
 
@@ -14,6 +14,15 @@ And as always, search the internet before you post.
 
 - [Hacking the Xbox](https://nostarch.com/xboxfree)
 - [Open Books](https://archive.parrotsec.org/parrot/misc/openbooks/)
+
+Want to learn? Check out our library<br>
+[Parrot Open Books](https://archive.parrotsec.org/parrot/misc/openbooks/)<br>
+And other resources<br>
+[Debian Documentation](https://www.debian.org/doc/)<br>
+[Debian Handbook](https://www.debian.org/doc/user-manuals#debian-handbook)<br>
+[Edx](https://www.edx.org/course/introduction-to-linux)<br>
+[Bash Academy](http://www.bash.academy/)<br>
+[C &amp; C++ Documentation](https://www.cprogramming.com/)<br>
 
 ### Web Resources
 
@@ -52,4 +61,4 @@ And as always, search the internet before you post.
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

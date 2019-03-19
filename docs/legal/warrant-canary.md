@@ -22,7 +22,7 @@ Warrant Canaries have been found to be legal by the United States Justice Depart
 
 
 
-![warrant canary](../img/warrant-canary.png)
+![warrant canary](https://www.parrotsec.org/docs/img/warrant-canary.png)
 
 Warrant Canary, March 16 2019
 

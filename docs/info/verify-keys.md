@@ -1,3 +1,10 @@
+---
+title: 'Hash and Key Verification'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
 # Key verification
 
 ## Why should anyone verify keys and signatures?
@@ -133,3 +140,6 @@ which will generate this
 ```bash
 7e378ff51e4e62601c37f05c7b46a698449fdf7593a597c6e9b260573ab0b589e2cebac706189a2d9a616d50ff10d05c174771ab114fa7bcb20ba05dd2c7b35f
 ```
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

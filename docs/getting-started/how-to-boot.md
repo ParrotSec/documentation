@@ -10,7 +10,7 @@ visible: true
 
 &nbsp;
 
-Note: Can't find what you're looking for? checkout  [Using Parrot](https://www.parrotsec.org/docs/info/startpage/) or [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/)
+Note: Can't find what you're looking for? checkout  [Using Parrot](https://www.parrotsec.org/docs/info/start/) or [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/)
 
 ---
 
@@ -20,7 +20,7 @@ In order to do so, simply insert your boot media in the computer and reboot it. 
 
  If everything goes well you will be greeted by the Parrot boot screen and soon on to endless fun.
 
-## USB Drive
+## By USB Drive
 
 #### Obsolete computers
 
@@ -30,7 +30,7 @@ If you're using a very old computer you might not be able to boot your system fr
 
 #### New computers
 
-Most laptops allow you to access the booting menu pressing f2 or f12; for most desktop computers press f8; for other kind of devices try pressing esc, f12, f11 or f10. Google your manufacturer to find out what makes your system barf up its BIOS.
+Most laptops allow you to access the booting menu pressing F2 or F12; for most desktop computers press F8; for other kind of devices try pressing esc, F12, f11 or F10. Google your manufacturer to find out what makes your system barf up its BIOS.
 
 ---
 
@@ -52,7 +52,7 @@ In case you have a computer with Secure Boot enabled, you will have to open the 
 
 ---
 
-# DVD
+# By DVD
 
 Booting a system from a DVD is much easier and compatible with most machines.
 
@@ -82,12 +82,11 @@ This is possible because the system is not loaded onto the system's hard drive, 
 Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.
 
 To create a live boot device please read this [page](create-boot-device.md).
-To learn how to boot from the live media read this [page](how-to-boot.md) instead.
 
 ---
 
 ## Default username and password
-In Parrot OS live environment the default username is "user" and the default password is "toor".
+In Parrot OS live environment the default username is "user" and the default password is "live". (if live does not work, try toor)
 
 
 
@@ -95,4 +94,4 @@ In Parrot OS live environment the default username is "user" and the default pas
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

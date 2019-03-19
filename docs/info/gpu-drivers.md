@@ -111,3 +111,6 @@ For further information see [here](https://github.com/Bumblebee-Project/Bumblebe
 and [here](https://community.parrotsec.org/t/bumblebee-fails-to-run-optirun-xorg/5732/3)
 If you run into any issues please post in [support](https://community.parrotsec.org/c/support) on the forum.
 
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

@@ -87,3 +87,6 @@ You can customize Grub’s options, including which operating system is the defa
 But normally Parrot Security's GRUB does respond well if installed correctly and there is not any problems. 
 
 
+&nbsp;
+
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

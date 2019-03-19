@@ -10,10 +10,10 @@ visible: true
 - Your machine has no AMD / Nvidia graphic card, but you still want to use hashcat.
 - You want it more stable and faster than pre-installed driver (beignet)
 
-![opencl](../img/opencl_1.png)
+![opencl](../img/tuto_opencl_1.png)
 
 - Hashcat doesn't detect your devices (even if beignet was pre-installed)
-![opencl](../img/opencl_2.png) 
+![opencl](../img/tuto_opencl_2.png) 
 ### 2. How?
 - Remove beignet: 
 ```bash
@@ -31,12 +31,12 @@ install.sh
 ```
 If you have missing libraries in this step (screenshot bellow), you can exit installation and install libraries. If there is only lsb-core>=4.0 is missing, you can move to next step (it worked for me).
 - Accept their license, choose next and wait.
-![opencl](../img/opencl_3.png) 
-![opencl](../img/opencl_4.png) 
+![opencl](../img/tuto_opencl_3.png) 
+![opencl](../img/tuto_opencl_4.png) 
 - Hashcat now detect my devices (it shows error with beignet driver)
-![opencl](../img/opencl_5.png) 
+![opencl](../img/tuto_opencl_5.png) 
 - Benchmark is not very fast (compare AMD / Nvidia devices) but it looks faster than beignet
-![opencl](../img/opencl_6.png)
+![opencl](../img/tuto_opencl_6.png)
 
 Written by dmknight
 
@@ -44,4 +44,4 @@ If you run into any issues please post in [support](https://community.parrotsec.
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

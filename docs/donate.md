@@ -55,7 +55,7 @@ ETH: 0x64A449d5839813024861601720B173f562c8d3F8
 
 ----
 
-## Gadgets
+## Merch
 <html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Spreadshirt Store</a></html>
 
 ----
@@ -76,4 +76,4 @@ Even if we host most of our infrastructure on bare metal servers, some of our no
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/) 

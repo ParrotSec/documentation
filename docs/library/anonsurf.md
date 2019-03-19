@@ -27,6 +27,7 @@ Tor Technical Details
 To be able to route multiple relays, Tor has something called stream multiplexing capability: [+] multiple TCP connections can be carried over a single Tor circuit. [+] Each node knows only the source and destination pairing for a circuit. It does not know the whole path.
 
 Taken from Mike Perry's talk at blackhat in 2007 found here [7]
+
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

@@ -1,5 +1,5 @@
 ---
-title: 'Developer Zone'
+title: 'Developer Nest'
 taxonomy:
     category:
         - docs
@@ -54,4 +54,4 @@ WIP
 
 &nbsp;
 
-[Home](https://www.parrotsec.org/docs/) 
+[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
