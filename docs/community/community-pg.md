@@ -51,7 +51,8 @@ Or join #parrotsec on irc.freenode.net
 
 Our community lives in several places, here are some links to stay in touch with us
 
- <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
+ <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> 
+ <a href="https://t.me/ParrotSecofftopic" target="_blank" class="btnbtn-primary">Telegram International Offtopic group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
 
 &nbsp;
 
@@ -82,7 +83,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/joinchat/EbgW4A2wfkmP8whsTvZ8TQ" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/parrotsecgr" class="btn btn-default">Telegram</a>
 
 ----
 
