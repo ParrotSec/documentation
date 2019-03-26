@@ -1,4 +1,4 @@
-# Recompile the ParrotsSec kernel
+# Recompile the ParrotSec kernel
 
 ##  Why compile the kernel
 
