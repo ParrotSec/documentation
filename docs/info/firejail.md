@@ -1,6 +1,14 @@
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
+
 # Firejail
 
-## What is Firejaik
+## What is Firejail
 
 Firejail is a SUID program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces and seccomp-bpf. It allows a process and all its descendants to have their own private view of the globally shared kernel resources, such as the network stack, process table, mount table.
 
@@ -123,8 +131,9 @@ Run the default audit program:
 firejail --audit firefox
 ```
 Run a custom audit program: 
-```bassh
+```bash
 firejail --audit=~/sandbox-test firefox
+```
 
 In the examples above, the sandbox configures the firefox profile and starts the test program. The real program, firefox, will not be started.
 Note: The audit feature is not implemented for --x11 commands.
@@ -216,4 +225,4 @@ See also
 [Firejail GitHub project page[(https://github.com/netblue30/firejail)]
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

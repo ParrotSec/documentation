@@ -16,7 +16,7 @@ Download the OVA images from parrotsec.org
 
 3. Click the Folder icon and select your .ova file 
 
-NOTE: in Parrot Linux the firejail profile limits the directories VirtualBox has access to.
+NOTE: in Parrot OS the firejail profile limits the directories VirtualBox has access to.
 
 4. Once you have your file, edit to your likeing > click import > agree/disagree with the license > import! 
 
@@ -29,7 +29,13 @@ Password: toor
 (same password for root)
 To change password use `passwd` on the account you want to change the password of.
 
-Installing Parrot Security On VirtualBox
+&nbsp;
+
+&nbsp;
+
+NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
+
+## Installing Parrot Security ISO On VirtualBox
 In this guide, I will cover the following:
 
     Create a new Virtual Machine
@@ -308,4 +314,4 @@ Install VirtualBox Guest Additions
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

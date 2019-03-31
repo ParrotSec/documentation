@@ -1,9 +1,9 @@
 
 # Home
 
-For the Parrot Linux homepage, visit [parrotsec.org](https://parrotsec.org).
+For the ParrotOS homepage, visit [parrotsec.org](https://parrotsec.org).
 
-An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, Parrot Linux is making every effort to provide all of its users with proper documentation in an easily accessible form.
+An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, ParrotOS is making every effort to provide all of its users with proper documentation in an easily accessible form.
 
 The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.
 
@@ -70,7 +70,7 @@ and customization of the system.
 
 ### Debian Documentation
 
-Parrot Linux is based on top of the testing branch of Debian GNU/Linux, so most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
+ParrotOS is based on top of the testing branch of Debian GNUOS, so most of the [Debian Documentation](https://www.debian.org/doc) is valid for Parrot as well.
 
  * [Debian Handbook](https://www.debian.org/doc/manuals/debian-handbook/), the comprehensive user manual
  * [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/), a terse user's guide with the focus on the shell command line

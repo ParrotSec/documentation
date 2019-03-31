@@ -7,10 +7,10 @@ visible: true
 ---
 ## Docker
 
-NOTE: to install docker on Parrot Linux execute the following, otherwise start at __Parrotsec/Parrot-core below__
+NOTE: to install docker on Parrot OS execute the following, otherwise start at __Parrotsec/Parrot-core below__
 
 
-#### Parrotsec/Parrot-core
+#### ParrotOS/Parrot-core
 
 **Official Parrot OS Base system without tools.**
 
@@ -85,4 +85,4 @@ Local image from Dockerfile
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

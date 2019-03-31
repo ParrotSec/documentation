@@ -43,6 +43,8 @@ NOTE: Currently a WIP (work in progress, some links might not work and some docu
 - [Installing GPU Drivers](gpu-drivers.md)
 - [Installing OpenCL for Hashcat](opencl-install.md)
 - [Network setup](network-setup.md)
+- [Assistive Technologies](assistive-tech.md)
+
 - [ARM and other builds](pi-and-other-builds.md) 
 
 
@@ -69,4 +71,4 @@ Looking for Dev resources?
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

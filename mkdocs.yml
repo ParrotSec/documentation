@@ -1,11 +1,11 @@
 
 site_name: Parrot Documentation
 site_url: https://docs.parrotsec.org
-site_author: Parrot Linux Team
+site_author: Parrot Team
 copyright: <p><br/>
             <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Parrot Documentation</span> is written by the <a
-                xmlns:cc="http://creativecommons.org/ns#" href="https://www.parrotsec.org/docs/community/team/" property="cc:attributionName"
-                rel="cc:attributionURL">Parrot Linux Team</a> <br> Copyright © Lorenzo "Palinuro" Faletra 2019 some rights reserved.  <br> Licensed under a <a rel="license"
+                xmlns:cc="http://creativecommons.org/ns#" href="https://www.parrotsec.org/docs/team/" property="cc:attributionName"
+                rel="cc:attributionURL">Parrot Team</a> <br> Copyright © Lorenzo "Palinuro" Faletra 2019 some rights reserved.  <br> Licensed under a <a rel="license"
                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>.
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
                     style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></p>                

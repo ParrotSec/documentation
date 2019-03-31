@@ -10,7 +10,7 @@ visible: true
 
 ISO is a special file format that represents the content of a small storage device.
 
-The Parrot ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.
+The ParrotOS ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.
 
 You can use a special software like [Etcher](https://www.etcher.io) to clone the content of the Parrot ISO to a USB drive and transform such USB drive into a full Parrot USB device.
 
@@ -45,4 +45,4 @@ __[dd](https://en.wikipedia.org/wiki/Dd_(Unix))__ (and its derivatives) is a com
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

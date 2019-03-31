@@ -8,6 +8,7 @@ visible: true
 To download onto your system, please visit [here](https://nest.parrotsec.org/s1udge/helpme)
 			
 ```text
+			
 			Welcome to Parrot
 
 This system has its own quirks and maybe you want to change something and 
@@ -41,7 +42,7 @@ don't bother asking for support, just reinstall)*/
 ______________________________________________________________________________
 Written by s1udge (with lots of stuff from people smarter than him).
 Contributors: meu, Palinuro, KidKlown and KileXt
-Rendered in less if on Linux. v0.0.5
+Rendered in less if on Linux. v0.0.6
 ______________________________________________________________________________
 
 For help with less type h or H (less is the program rendering this file). 
@@ -62,9 +63,7 @@ hence it is the root directory, also why root is the godmode for users.
 /etc/ is your friend as it contains a lot of configuration files.
 -Global environment variables are stored in 
 /etc/environment
--Git commit errors generally take another commit to fix.
--After setting up your repo ensure you remote add origin YOURSITE.git or 
-life will suck.
+
 -APT packages 
 - To search for packages in parrot's repositories use:
 sudo apt-cache search "PACKAGE-NAME" /* You can also just search for a word
@@ -81,12 +80,20 @@ sudo apt install NAME-OF-METAPACKAGE
 sudo apt install python-pip
 sudo apt install python3-venv python3-pip
 
-Parrot doesn't have a swap file because we use Btrfs as the file system (fs)
-normally you want a swap file to act as a buffer when you have little ram 
-or when you want to put your system to sleep/hibernate. If you encrypted your
-system (and we highly recommend full-disk encryption) then you will see the 
-partitions are first written in ext4 encrypted with LUKS and 
-LVM as your volume manager
+Parrot didn't have a swap file for a while because we use btrfs which until 
+kernel 5.0 didn't support swap. (it's not in parrot yet but should be here 
+shortly) Normally you want a swap file to act as a buffer when you don't have
+enough ram or when you want to put your system to sleep/hibernate. With btrfs 
+your suspend is taken care of without swap. and swap isn't necessary if you 
+have enough ram (that's a big if, it all depends on your requirements)
+
+If you encrypted your system (and we highly recommend full-disk encryption) 
+then you will see some of the partitions are first written in ext4 encrypted 
+with LUKS and LVM as your volume manager. Your main /home and other partitions 
+(if you made different partitions in your LUKS encrypted volume then you will 
+see several btrfs partitions) will have the best of both worlds as btrfs is 
+crazy fast and your disk is fully encrypted with LUKS.
+
 ------------------------------------------------------------------------------
 			     Troubleshooting
 ------------------------------------------------------------------------------
@@ -139,7 +146,7 @@ conduct other types of searches change -name to whatever option you need.*/
 dpkg -s PACKAGE-LOOKING-4 /*shows whether a package is installed*/
 apropos /* used to search manpages globally.*/
 locate FILENAME /* only works if you ensure it's database is updated. use:*/
-updatedb /*to update the locate database*/
+sudo updatedb /*to update the locate database*/
 
 -extracting/compressing
 tar -cf $HOME/backup.tar -C $HOME YOURFILES /*a technique to back up stuff 
@@ -174,7 +181,8 @@ clamAV, rtkit, and others should be cron jobs which automatically execute.
 ls (list directory contents)
 cat (concatenate files and print on the standard output)
 id (print real and effective user and group IDs)
-ifconfig (configure a network interface)
+ifconfig (configure a network interface, this is not a permanent solution
+it will be gone on reboot.)
 route -n (show/manipulate the IP routing table)
 ss -ut (show open UDP/TCP sockets)
 
@@ -245,6 +253,10 @@ CTRL+F /*find within the page*/
 			------Git shortcuts------
 ******************************************************************************
 - NOTE: A git tutorial is in the works
+ 
+-Git commit errors generally take another commit to fix.
+-After setting up your repo ensure you remote add origin YOURSITE.git or 
+life will suck.
 
 git init -to build your repo
 git push --set-upstream git@WEBSITEYOURPUSHINGTO:YOURUSERNAME/$(git 
@@ -265,7 +277,7 @@ git push origin --tags /*if you ever want to send your tags with the
 commits.*/
 
 git pull --all /*super useful if you need to fetch multiple branchs and 
-merge them with your local branches.
+merge them with your local branches. (you can all just use git pull)*/
 
 git remote set-url origin URL-ADDED-HERE /*use if you screw up and upload 
 to the wrong place or your website has changed, handy*/ 
@@ -490,9 +502,9 @@ ______________________________________________________________________________
 
 That's all for now folks! 
 
-v0.0.5 Feb 26 2019
+v0.0.6 Mar 08 2019
 ```
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

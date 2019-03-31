@@ -15,45 +15,44 @@ Digital signatures can prove both authenticity and integrity to a reasonable deg
 
 Digital signatures cannot prove any other property, e.g., that the signed file is not malicious. In fact, there is nothing that could stop someone from signing a malicious program (and it happens from time to time in reality).
 
-The point is that we must decide who we will trust (e.g., Linus Torvalds, Microsoft, or the ParrotSec OS GNU/Linux) and assume that if a given file was signed by a trusted party, then it should not be malicious or negligently buggy. The decision of whether to trust any given party is beyond the scope of digital signatures. It’s more of a sociological and political decision.
+The point is that we must decide who we will trust (e.g., Linus Torvalds, Microsoft, or the Parrot Project) and assume that if a given file was signed by a trusted party, then it should not be malicious or negligently buggy. The decision of whether to trust any given party is beyond the scope of digital signatures. It’s more of a sociological and political decision.
 
 Once we make the decision to trust certain parties, digital signatures are useful, because they make it possible for us to limit our trust only to those few parties we choose and not to worry about all the bad things that can happen between us and them, e.g., server compromises (parrotsec.org will surely be compromised one day, so don’t blindly trust the live version of this site), dishonest IT staff at the hosting company, dishonest staff at the ISPs, Wi-Fi attacks, etc.
 
 By verifying all the files we download that purport to be authored by a party we’ve chosen to trust, we eliminate concerns about the bad things discussed above, since we can easily detect whether any files have been tampered with (and subsequently choose to refrain from executing, installing, or opening them).
 
-However, for digital signatures to make any sense, we must ensure that the public keys we use for signature verification are indeed the original ones. Anybody can generate a GPG key pair that purports to belong to “ParrotSec OS GNU/Linux” but of course only the key pair that we (i.e., the ParrotSec staff) generated is the legitimate one. The next section explains how to verify the validity of the ParrotSec signing keys in the process of verifying a ParrotSec ISO. (However, the same general principles apply to all cases in which you may wish to verify a PGP signature, such as verifying repos, not just
-verifying ISOs.)
+However, for digital signatures to make any sense, we must ensure that the public keys we use for signature verification are indeed the original ones. Anybody can generate a GPG key pair that purports to belong to the “Parrot OS” but of course only the key pair that we (i.e., the Parrot Team) generated is the legitimate one. The next section explains how to verify the validity of the ParrotOS signing keys in the process of verifying a ParrotOS ISO. (However, the same general principles apply to all cases in which you may wish to verify a PGP signature, such as verifying repositories, not just ISOs.)
 
 
 
 
-## Fetch the key - Verify the repos
+## Fetch the key - Verify the repositories
 
-Optional: Complete the steps below if unfamiliar with GnuPG or if they haven't already been performed. This will fix eventual gpg: WARNING: unsafe ownership warnings. 
+Optional: Complete the steps below if unfamiliar with GnuPG or if they haven't already been performed. This will fix eventual GPG: WARNING: unsafe ownership warnings. 
 1 .First have GnuPG initialize your user data folder.
 ```bash
-    [user@parrotsec ~]$ gpg --fingerprint
+    [user@parrot ~]$ gpg --fingerprint
 ```
 
 1. Set warning free permissions.
 ```bash
-    [user@parrotsec ~]$ chmod --recursive og-rwx ~/.gnupg
+    [user@parrot ~]$ chmod --recursive og-rwx ~/.gnupg
 ```
 
-3. Get the ParrotSec key.
+3. Get the ParrotOS key.
 ```bash
     wget -q -O - https://deb.parrotsec.org/parrot/misc/parrotsec.gpg | gpg --import
 ```
 or
 ```bash 
-    [user@parrotsec ~]$ gpg --keyserver hkp://keys.gnupg.net --recv-key 3B3EAB807D70721BA9C03E55C7B39D0362972489
-    [user@parrotsec ~]$ gpg --list-keys --with-fingerprint 3B3EAB807D70721BA9C03E55C7B39D0362972489 
-    [user@parrotsec ~]$ gpg --export --armor 3B3EAB807D70721BA9C03E55C7B39D0362972489 > parrot-key.asc
+    [user@parrot ~]$ gpg --keyserver hkp://keys.gnupg.net --recv-key 3B3EAB807D70721BA9C03E55C7B39D0362972489
+    [user@parrot ~]$ gpg --list-keys --with-fingerprint 3B3EAB807D70721BA9C03E55C7B39D0362972489 
+    [user@parrot ~]$ gpg --export --armor 3B3EAB807D70721BA9C03E55C7B39D0362972489 > parrot-key.asc
 ```
 
 4. Check fingerprints/owners without actually importing anything.
 ```bash
-    [user@parrotsec ~]$ gpg --keyid-format long --with-fingerprint parrot-key.asc
+    [user@parrot ~]$ gpg --keyid-format long --with-fingerprint parrot-key.asc
 ```
 5. Verify the output.
 The output should be identical to the following.
@@ -66,7 +65,7 @@ The output should be identical to the following.
 
 6. Import the key.
 ```bash 
-    [user@parrotsec ~]$ gpg --import parrot-key.asc
+    [user@parrot ~]$ gpg --import parrot-key.asc
 ```
 You should see something similar to this in the output:
 ```bash
@@ -82,7 +81,7 @@ If this appears at the end of the output:
 ```bash 
     gpg: no ultimately trusted keys found
 ```
-Analyze the other messages as usual. This extra message does not relate to the ParrotSec signing key itself, but instead usually means the user has not created an OpenPGP key yet, which is of no importance.
+Analyze the other messages as usual. This extra message does not relate to the ParrotOS signing key itself, but instead usually means the user has not created an OpenPGP key yet, which is of no importance.
 
 ## Image verification 
 
@@ -92,7 +91,7 @@ Then, start the cryptographic verification, it can take several minutes.
     cd [the directory in which you downloaded the .ova and the .asc]
     gpg --verify-options show-notations --verify *.iso.asc *.asc
 ```
-If the image is correct then gpg will tell you it's good.See the below output.
+If the image is correct then GPG will tell you it's good. See the below output.
 ```bash
 
 ```
@@ -102,13 +101,13 @@ If the following message appears don't worry.
     gpg:          There is no indication that the signature belongs to the owner.
 ```
 
-This message does not alter the validity of the signature related to the downloaded key. Rather, this warning refers to the level of trust placed in the ParrotSec signing key and the web of trust. To remove this warning, the ParrotSec signing key must be personally signed with your own key.
-warning
+This message does not alter the validity of the signature related to the downloaded key. Rather, this warning refers to the level of trust placed in the ParrotOS signing key and the web of trust. To remove this warning, the ParrotOS signing key must be personally signed with your own key.
+
+### Warning
 	
 Checking the GPG signature timestamp makes sense. For example, if you previously saw a signature from 2018 and now see a signature from 2017, then this might be a targeted rollback (downgrade) or indefinite [freeze attack](https://github.com/theupdateframework/tuf/blob/develop/SECURITY.md). 
 
 The first line includes the signature creation timestamp. Example. 
-
 
 ### MD5Sum hash verification
 
@@ -126,7 +125,7 @@ b4dbb5702c2666dc24ac4ba05d7b6608 Parrot-home-4.5.1_amd64.iso
 ```
 5. Compare the hash (the alphanumeric string on left) that your machine calculated with the corresponding hash on the page from Step 1.
 
-An easy way to do this is to open the page frm Step 1 in your browser, then copy the hash your machine calculated from the terminal into the "Find" box in your browser (in Firefox you can open the "Find" box by pressing <Ctrl> <F>).
+An easy way to do this is to open the page from Step 1 in your browser, then copy the hash your machine calculated from the terminal into the "Find" box in your browser (in Firefox you can open the "Find" box by pressing <Ctrl> <F>).
 
 When both hashes match exactly then the downloaded file is almost certainly intact. If the hashes do not match, then there was a problem with either the download or a problem with the server. You should download the file again from either the same mirror, or from a different mirror if you suspect a server error. If you continuously receive an erroneous file from a server, please be kind and notify the webmaster of that mirror so they can investigate the issue. 
 
@@ -142,4 +141,4 @@ which will generate this
 ```
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

@@ -86,7 +86,7 @@ To create a live boot device please read this [page](create-boot-device.md).
 ---
 
 ## Default username and password
-In Parrot OS live environment the default username is "user" and the default password is "live". (if live does not work, try toor)
+In a Parrot OS live environment the default username is "user" and the default password is "live". (if live does not work, try toor)
 
 
 
@@ -94,4 +94,4 @@ In Parrot OS live environment the default username is "user" and the default pas
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

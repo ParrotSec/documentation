@@ -4,9 +4,9 @@
 
 Tor Browser uses the Tor network to protect your privacy and anonymity. Using the Tor network has two main properties:
 
-    Your internet service provider, and anyone watching your connection locally, will not be able to track your internet activity, including the names and addresses of the websites you visit.
+1. Your internet service provider, and anyone watching your connection locally, will not be able to track your internet activity, including the names and addresses of the websites you visit.
 
-    The operators of the websites and services that you use, and anyone watching them, will see a connection coming from the Tor network instead of your real Internet (IP) address, and will not know who you are unless you explicitly identify yourself.
+2. The operators of the websites and services that you use, and anyone watching them, will see a connection coming from the Tor network instead of your real Internet (IP) address, and will not know who you are unless you explicitly identify yourself.
 
 In addition, Tor Browser is designed to prevent websites from “fingerprinting” or identifying you based on your browser configuration.
 
@@ -29,7 +29,7 @@ When starting Tor Browser you may see the following error:
 ![SVF](https://i.ibb.co/6PWxpK7/photo-2019-01-05-23-28-53-3.jpg)
 
 This is due to an outdated key for verifying the torbrowser-launcher download. Try:
-```bash
+```text
 gpg --homedir "$HOME/.local/share/torbrowser/gnupg_homedir/" --refresh-keys --keyserver pgp.mit.edu
 ```
 Now relaunch Tor Browser.
@@ -47,9 +47,9 @@ To use a bridge, you have two options. Tor Browser now provides some bridges by 
 
  As an example, when you obtain a bridge from https://bridges.torproject.org, you'll get a bridge entry that looks like the following:
 
-
-    141.201.27.48:443 4352e58420e68f5e40bf7c74faddccd9d1349413
-    
+```text
+141.201.27.48:443 4352e58420e68f5e40bf7c74faddccd9d1349413
+```
     
 
 Understanding the components of a bridge line isn't strictly required but may prove useful. You can skip this section if you'd like.
@@ -59,9 +59,9 @@ The third element, the fingerprint (unique identifier of the bridge), is optiona
 
  If your bridge line looks like this:
 
-
-    obfs4 141.201.27.48:420 4352e58420e68f5e40bf7c74faddccd9d1349413
-    
+```text
+obfs4 141.201.27.48:420 4352e58420e68f5e40bf7c74faddccd9d1349413
+```    
     
 
 The first element is the name of the pluggable transport technology used by the bridge. For example, in the case above, the bridge is using the obfs4 pluggable transport.
@@ -156,34 +156,34 @@ The following instructions assume Tor Browser successfully loads and you are abl
 
 You can also get bridges by sending mail to bridges@bridges.torproject.org with the line "get bridges" by itself in the body of the mail. You'll need to send this request from a Gmail, Riseup!, or Yahoo! account, though — we only accept these providers because otherwise we make it too easy for an attacker to make a lot of email addresses and learn about all the bridges. Almost instantly, you'll receive a reply that includes:
 
-    Here are your bridges:
-
-     60.16.182.53:9001
-     87.237.118.139:444
-     60.63.97.221:443
-
+Here are your bridges:
+```text
+60.16.182.53:9001
+87.237.118.139:444
+60.63.97.221:443
+```
     
 
 Similarly, if you need bridges with a specific pluggable transport, the process is just as easy. First, decide which type you want. Currently we provide obfs2, obfs3, obfs4, scramblesuit, and fte. If you don't know which one you should choose, then obfs4 is usually a good choice. Send an email to bridges@bridges.torproject.org with "get transport obfs4" by itself in the body of the email (replace "obfs4" with whichever pluggable transport you want to use). You should receive an email like this:
 
-    Here are your bridges:
-
-      obfs4 60.16.182.53:9001 cc8ca10a63aae8176a52ca5129ce816d011523f5
-      obfs4 87.237.118.139:444 0ed110497858f784dfd32d448dc8c0b93fee20ca
-      obfs4 60.63.97.221:443 daa5e435819275f88d695cb7fce73ed986878cf3
-    
+Here are your bridges:
+```text
+obfs4 60.16.182.53:9001 cc8ca10a63aae8176a52ca5129ce816d011523f5
+obfs4 87.237.118.139:444 0ed110497858f784dfd32d448dc8c0b93fee20ca
+obfs4 60.63.97.221:443 daa5e435819275f88d695cb7fce73ed986878cf3
+```
 
 Once you've received the email with bridge information, you can continue the configuration steps outlined above. 
 
 #### Verifying you are using a bridge
 
 Open a terminal and open nyx:
-```bash
+```text
 nyx
 ```
 
 If you are connected to a bridge the following will indicate:
-```bash 
+```text 
 "192.168.0.1 UNKNOWN 1 / Guard" in circuit information
 ```
 If you are directly connecting to the public Tor network (without using a Tor Bridge), you should see the real IP and Nickname of the Guard instead.
@@ -196,15 +196,15 @@ The logs are in /var/log/tor/
 If you compiled Tor from source, by default your Tor logs to "stdout" at log-level notice. If you enable logs in your torrc file, they default to /usr/local/var/log/tor/.
 
 To change your logging setup by hand, edit your torrc and find the section (near the top of the file) which contains the following line:
-
-    ## Logs go to stdout at level "notice" unless redirected by something
-    ## else, like one of the below lines.
-    
+```text
+## Logs go to stdout at level "notice" unless redirected by something
+## else, like one of the below lines.
+```    
 
 For example, if you want Tor to send complete debug, info, notice, warn, and err level messages to a file, append the following line to the end of the section:
-
-    Log debug file /home/<youruser>/Documents/tor/debug.log
-    
+```text
+Log debug file /home/<youruser>/Documents/tor/debug.log
+```    
 
 Replace /home/<youruser>/Documents/tor/debug.log with a directory and filename for your Tor log.
 
@@ -233,7 +233,7 @@ If Tor can establish a circuit, Tor Browser will automatically launch the browse
 If Tor can't establish a circuit, here are some hints:
 
 Check your system clock. If it's more than a few hours off, Tor will refuse to build circuits. 
-```bash 
+```text 
 date -u
 Sat Mar  9 16:59:51 UTC 2019
 sudo date --set "Sat Mar  9 16:59:51 UTC 2019"
@@ -268,4 +268,4 @@ Sixth, if the above ideas don't point out the bug, consider increasing your log 
 More info on Tor: https://www.torproject.org/docs/faq.html.en
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

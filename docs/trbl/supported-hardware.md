@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-# What Parrot Linux supports (and doesn't)
+# What ParrotOS supports (and doesn't)
 #### *NOTE: this list is a work in progress and not all inclusive. <br> Please email s1udge AT parrotsec DOT org or leave a comment on the forums [here](https://community.parrotsec.org/t/what-parrot-supports/5674)*
 
 ### Hardware
@@ -20,6 +20,8 @@ Hardware we know it works on:
 - Dell XPS (most systems)
 - MacBook Pro (2013)
 - Tongfang GK5CN6Z (Modifications needed see [here](odd-hardware.md))
+- Lenovo (Most Systems)
+- Lenovo Ideapad 510 (needs modprobe thinkpad-acpi)
 
 ---
 
@@ -43,7 +45,7 @@ Other
 
 - NVMe
 - Netinstall
-- SNAP
+- Snap
 - Flatpak
 - Wine
 - HiDPi (part of MATE) 
@@ -83,7 +85,7 @@ Hardware overall
 - Mobile devices (Android, iPhone, iPad, Tablet, etc)
 - Chromebooks (sometimes it will work but huge hit or miss depending on the manufacturer)
 - Most IOT devices (e.g. Arduino)
-- gnome-software (no future plans to provide support, though community members are more than welcome to provide other desktop environments)
+- gnome software (no future plans to provide support, though community members are more than welcome to provide other desktop environments)
 - All other Architectures not listed.
 - Secure boot
 - Intel Optane (Only works with Windows)
@@ -103,4 +105,4 @@ Hardware overall
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

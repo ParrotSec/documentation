@@ -16,7 +16,7 @@ The system includes a full arsenal of security oriented tools to to ensure as se
 
 ## Parrot Home
 
-[Parrot Home](https://www.parrotsec.org/download-home.php) is a special edition of Parrot designed for daily use. It's geared toward regular users who need a lightweight, always updated and beautiful system.
+[Parrot Home](https://www.parrotsec.org/download-home.php) is designed for daily use. It's geared toward regular users who need a lightweight, always updated and beautiful system.
 
 The distribution has the same look and feel of a regular Parrot environment and includes all the basic programs for daily work. Parrot Home also includes programs to chat privately, encrypt documents with the highest cryptographic standards or surf the net in a completely anonymous and secure way.
 
@@ -68,4 +68,4 @@ Just import, configure system resources and start the VM.
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

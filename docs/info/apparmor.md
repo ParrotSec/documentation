@@ -1,6 +1,20 @@
-# AppArmor 
+---
+title: 'AppArmor'
+taxonomy:
+    category:
+        - docs
+visible: true
+---
 
-## What is AppArmor
+&nbsp;
+
+&nbsp;
+
+NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
+
+## AppArmor 
+
+### What is AppArmor
 
 AppArmor is an effective and easy-to-use Linux application security
 system. AppArmor proactively protects the operating system and
@@ -13,11 +27,11 @@ with AppArmor, and using a combination of advanced static analysis
 and learning-based tools, AppArmor policies for even very complex
 applications can be deployed successfully in a matter of hours.
 
-## How to install AppArmor
+### How to install AppArmor
 
 #### Check if AppArmor is already installed
 
-AppArmor and it's profiles shoiuld be already enabled and exist in ParrotSec.To check if AppArmor is active do:
+AppArmor and it's profiles should already be enabled and running on Parrot OS. To check if AppArmor is active do:
 ```bash
 sudo aa-status --enabled ; echo $?
 ```
@@ -26,7 +40,7 @@ Alternatively run the following command to see the loaded AppArmor profiles:
 ```bash
 sudo aa-status
 ```
-If for any reason they are not pre-installed continue readng.
+If for any reason they are not pre-installed continue reading.
 
 #### Installation of AppArmor
 
@@ -35,6 +49,7 @@ First run the following command to install AppArmor tools:
 sudo apt install apparmor apparmor-utils auditd
 ```
 To enable AppArmor run the followng commands.
+```bash
 sudo mkdir -p /etc/default/grub.d
 echo 'GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT apparmor=1 security=apparmor"' \
   | sudo tee /etc/default/grub.d/apparmor.cfg
@@ -45,7 +60,7 @@ Then run the following command to inspect the current state:
 ```bash 
 sudo aa-status
 ```
-will list all loaded AppArmor profiles for applications and processes and detail their status (enforced, complain, unconfined). 
+This will list all loaded AppArmor profiles for applications, processes and detail their status (enforced, complain, unconfined). 
 Also run the following command:
 ```bash 
 ps auxZ | grep -v '^unconfined'
@@ -54,7 +69,7 @@ To install profile run the following commands:
 ```bash
 sudo apt install apparmor-profiles-extra apparmor-profiles
 ```
-Or click the following link https://udd.debian.org/cgi-bin/bts-usertags.cgi?user=pkg-apparmor-team@lists.alioth.debian.org
+Or click the following [link](https://udd.debian.org/cgi-bin/bts-usertags.cgi?user=pkg-apparmor-team@lists.alioth.debian.org).
 
 AppArmor profiles live in /etc/apparmor.d/. One can use apparmor_parser(8) to insert them into the kernel. This is done automatically when installing packages that drop policy in /etc/apparmor.d/.
 
@@ -131,8 +146,8 @@ sudo aa-unconfined
 ```
 also possible with the --paranoid parameter 
 
-Profiles in complain mode will send ALLOWED lines in the logs for entries that would normally be DENIED in enforce mode. You can use this to tweak configs before turning them on in enforce mode. 
+Profiles in complain mode will send ALLOWED lines in the logs for entries that would normally be DENIED in enforce mode. You can use this to tweak configurations before turning them on in enforce mode. 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/startpage/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/trbl-start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-start/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/) 
 

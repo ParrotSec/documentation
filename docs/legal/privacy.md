@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-NOTE: This policy is incomplete (it does not yet cover all the infrastructure of Parrot Linux), we hope to finish it shortly.
+NOTE: This policy is incomplete (it does not yet cover all the infrastructure of the Parrot Project), we hope to finish it shortly.
 
 ## Privacy Policy
 
@@ -33,7 +33,7 @@ We periodically delete logs from servers when we are sure that no attacks were r
 We have never received a warrant since we began this project. Please note our [warrant canary](warrant-canary.md).
 
 
-### Parrot's OpenNIC DNS Servers
+### The Parrot Project's OpenNIC DNS Servers
 
 
 We provide free DNS resolvers for the OpenNIC network. These servers have logs disabled by default.
@@ -44,4 +44,8 @@ automatically as new requests come in and it is the standard behavior of the DNS
 
 
         
-Last updated 08 Mar 2019
+Last updated 26 Mar 2019
+
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

@@ -10,7 +10,7 @@ visible: true
 
 &nbsp;
 
-Parrot Linux is a community-driven open source project,
+ParrotOS is a community-driven open source project,
 and a gateway to spread innovative ideas born inside it's community.
 
 &nbsp;
@@ -71,7 +71,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://parrotsec-china.org" class="btn btn-default btn-primary"><strong>Chinese Community</strong></a>  <a href="https://t.me/parrotsecCN" class="btn btn-default">Telegram</a>
+<a href="https://parrotsec-cn.org" class="btn btn-default btn-primary"><strong>Chinese Community</strong></a>  <a href="https://t.me/parrotsecCN" class="btn btn-default">Telegram</a>
 
 ----
 
@@ -109,10 +109,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 <a href="https://community.parrotsec.org/c/community/tr" class="btn btn-default btn-primary"><strong>Turkish Community</strong></a>  <a href="https://t.me/parrotsecturkey" class="btn btn-default">Telegram</a>
 
-----
-
-<a href="https://t.me/joinchat/ETmFfgm0QN1bfRzSQRlc1A" class="btn btn-default">Telegram Algerian Community</a>
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

@@ -6,9 +6,9 @@ taxonomy:
 visible: true
 ---
 
-## Parrot Linux Frequently Asked Questions
+## ParrotOS Frequently Asked Questions
 
-### Why should I use Parrot Linux?
+### Why should I use ParrotOS?
 
 Penetration testing is a time intensive job, maintaining your toolkit shouldn't 
 be also. We make it easier for professionals to accomplish the important stuff 
@@ -27,7 +27,7 @@ Parrot does not have a root password since Parrot 4.4, to launch programs as roo
 
 ### How do I upgrade my system?
 
-First please, do __NOT__ use `apt-get upgrade`. Because Parrot Linux is a rolling distribution and how APT works, the command will cause considerable problems to your system. We don't recommend `apt-get` in general as the command is not really meant for end-users. The following are the recommended ways to update your system:
+First please, do __NOT__ use `apt-get upgrade`. Because ParrotOS is a rolling distribution and how APT works, the command will cause considerable problems to your system. We don't recommend `apt-get` in general as the command is not really meant for end-users. The following are the recommended ways to update your system:
 
 1) First method
 
@@ -117,13 +117,13 @@ Read more [here](https://www.parrotsec.org/docs/getting-started/create-boot-devi
 
 ### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme/), the [Using Parrot Linux](https://www.parrotsec.org/docs/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme/), the [Using ParrotOS](https://www.parrotsec.org/docs/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
 
 ### Should I encrypt my harddrive?
 
 Yes, always. Do it during your initial install or you will need to reinstall. 
 
-### My hardware is *xyz-super-cool gizmo . . .* will it run Parrot Linux?
+### My hardware is *xyz-super-cool gizmo . . .* will it run ParrotOS?
 
 Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/supported-hardware/) page.
 
@@ -131,7 +131,7 @@ Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/suppor
 
 Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/start/) will lead you down the path of autodidactic salvation.
 
-### Why doesn't Parrot Linux use HTTPS with APT?
+### Why doesn't ParrotOS use HTTPS with APT?
 
 Please see [here](https://whydoesaptnotusehttps.com/).
 
@@ -151,7 +151,7 @@ Our OVA images are already configured for auto-login (any passwords needed are o
 
 No, although similar Parrot isn't designed to replace or be used as a Heads/Tails system.
 
-### What is the difference between Kali Linux and Parrot Linux? 
+### What is the difference between Kali Linux and ParrotOS? 
 
 There are several and we think you should try both to really get a solid feeling of which one fits you best. 
 
@@ -164,4 +164,4 @@ Of course! The pages are written in Markdown and can be accessed [here](https://
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

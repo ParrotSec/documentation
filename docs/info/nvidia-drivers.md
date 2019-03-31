@@ -1,9 +1,8 @@
-# Merge with GPU-drivers
-# ASK Palinuro are these still good instruction sets?
-# If still good organize into table with three columns
+&nbsp;
 
+&nbsp;
 
-## Palinuro says that this list is old as fuck and should be uèdated with the latest nvidia driver in debian/parrot and the boards it supports
+NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)
 
  Parrot includes three nvidia drivers, the first is the opensource nouveau driver which is pre-installed and supports many common nvidia cards.
 
@@ -645,4 +644,4 @@ or use the commands
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

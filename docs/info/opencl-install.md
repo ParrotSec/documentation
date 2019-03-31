@@ -21,12 +21,12 @@ sudo apt purge beignet
 ```
 - Download _`opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz`_ from `http://registrationcenter-download.intel.com/akdlm/irc_nas/12556/opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz`. Currently, Intel opencl has github project with 18.X versions. All 18.X versions don't work for me, and 16.1.2 version is latest workable version I can find.
 - Extract downloaded file
-```
+```text
 tar -xvf opencl_runtime_16.1.2_x64_rh_6.4.0.37.tgz
 ``` 
 Then run 
 
-```
+```text
 install.sh
 ```
 If you have missing libraries in this step (screenshot bellow), you can exit installation and install libraries. If there is only lsb-core>=4.0 is missing, you can move to next step (it worked for me).
@@ -44,4 +44,4 @@ If you run into any issues please post in [support](https://community.parrotsec.
 
 &nbsp;
 
-[Using Parrot Linux](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
