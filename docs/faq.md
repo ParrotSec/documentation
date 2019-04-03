@@ -81,7 +81,7 @@ If the bug involves a specific piece of software maintained by Parrot, then sear
 
 If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.
 
-If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotsec.org/)
+If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotsec.org/c/development/)
 
 ### What should my sources.list look like?
 
@@ -130,10 +130,6 @@ Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/suppor
 ### Can you teach me how to hack, become a Linux uber-duber user, or live a holy life like Cucumber Bob?
 
 Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/start/) will lead you down the path of autodidactic salvation.
-
-### Why doesn't ParrotOS use HTTPS with APT?
-
-Please see [here](https://whydoesaptnotusehttps.com/).
 
 ### How can I disable the GUI update reminder? 
 

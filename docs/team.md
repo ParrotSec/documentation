@@ -31,37 +31,30 @@ In this page we list contributors and members past and present, who've given a s
 
 NOTE: Slots are open, must be able to perform package maintainer duties and responsibilities (e.g. maintain apt packages).
 
-
 &nbsp;
 
-# Parrot Team Members
-
+# Community Team
 |  nickname        |         name          |                             role(s)                             |           email              |
-| ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |           
-| Dm knght         |                       | Forum Moderator <br> Tutorial writer                            |                              |
-| KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
-| h0tw4t3r         |                       | Forum Moderator <br> Tutorial Writer <br> Website contributor   |                              | 
+| ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
+| meu              | M. Emrah Ünsür        | Turkish Community Leader <br> Forum Moderator                          | meu at parrotsec dot org     |
+| terabreik        | Jose Gatica           | Spanish Community Leader <br> Forum Moderator                       | josegatica at parrotsec dot org |
+| Nemo             | Sandipan Roy          | Indian community Leader <br> Forum Moderator                           | nemo at parrotsec dot org    |
+| anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                           | anubi5 at parrotsec dot org  |
+| disrupt_the_flow |  | Greek Community Leader <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
+|  Mr-B Relax      |                       | Indonesian Community Leader <br> Forum Moderator                | |
+|      Fugu        |                       | French Community Leader <br> Forum Moderator                | |
+|   Kratvers       |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
+|                  |                       | German Community Leader <br> Forum Moderator                   | |
+| Nico_Paul        | Nico Gialluca         | English Community Leader <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
+| Kidklown         |                       | English Community Leader <br> Forum Moderator                          | |
+| Palinuro         | Lorenzo Faletra       | Italian Community Leader (see above)                           | palinuro at parrotsec dot org |
+| Jeff             | Jeff Seyzel            | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
 | Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             |                              |
 | mastrobirraio    | Pino Matranga         | Website contributor <br> Forum Moderator                        | |
 |   LulzRose       | Kurt Bruggeman        | Graphic Design <br> Forum Moderator                             | |
-&nbsp;
-
-# Community Team Leaders
-|  nickname        |         name          |                             role(s)                             |           email              |
-| ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| meu              | M. Emrah Ünsür        | Turkish Community <br> Forum Moderator          | meu at parrotsec dot org     |
-| terabreik        | Jose Gatica           | Spanish Community <br> Forum Moderator                | josegatica at parrotsec dot org |
-| Nemo             | Sandipan Roy          | Indian community <br> Forum Moderator                    | nemo at parrotsec dot org    |
-| anubi5           | Abdel Rhman Anter     | Arabic Community <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
-| disrupt_the_flow |     | Greek Community <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
-|                  |                       | Indonesian Community <br> Forum Moderator                | |
-|                  |                       | French Community <br> Forum Moderator                | |
-|                  |                       | Russian Community <br> Forum Moderator                   | |
-|                  |                       | German Community <br> Forum Moderator                   | |
-| Nico_Paul        | Nico Gialluca         | English Community <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
-| Kidklown         |                       | English Community <br> Forum Moderator                          | |
-| Palinuro         | Lorenzo Faletra       | Italian Community (see above)                                  | palinuro at parrotsec dot org |
-
+| Dm knght         |                       | Forum Moderator <br> Tutorial writer                            |                              |
+| KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
+| h0tw4t3r         |                       | Forum Moderator <br> Tutorial Writer <br> Website contributor   |                              | 
 &nbsp;
 
 Contributors
@@ -93,7 +86,7 @@ Contributors
 | Tissy            | Irene Pirrotta        | Former Package Manager                                          |  tissy at parrotsec dot org  |
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
 | Paal             |                       | Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
-| Jeff             | Jeff Seyzel            | Facebook admin <br> former Sysadmin                             |   jeff at parrotsec dot org  |
+
 
 &nbsp;
 
