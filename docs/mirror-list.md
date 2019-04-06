@@ -7,7 +7,7 @@ visible: true
 ---
 
 ## Introduction
-Parrot Linux does not only deliver a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
+ParrotOS does not only deliver a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
 
 The Parrot repository is used to provide officially supported software, system updates and security fixes.
 
@@ -326,3 +326,5 @@ If you want your mirror to be added to our official mirrors list and to our mirr
 
 
 have fun :)
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

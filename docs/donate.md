@@ -14,7 +14,7 @@ Economical contribution is fundamental to the Parrot Project, as the number of s
 
 ## Adopt us on Patreon
 
-We are now on Patreon to offer you a new way to contribute to Parrot Linux
+We are now on Patreon to offer you a new way to contribute to the Parrot Project
 
 Adopt us and support our work!
 
@@ -55,7 +55,7 @@ ETH: 0x64A449d5839813024861601720B173f562c8d3F8
 
 ----
 
-## Gadgets
+## Merch
 <html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Spreadshirt Store</a></html>
 
 ----
@@ -73,3 +73,7 @@ Even if we host most of our infrastructure on bare metal servers, some of our no
 #### DigitalOcean
 
 [Earn $100, give us $25 - https://m.do.co/c/6be719a80450](https://m.do.co/c/6be719a80450)
+
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

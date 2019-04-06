@@ -25,4 +25,4 @@ Linux is one of the most prominent examples of free and open-source software col
 
 ---
 
-*Parrot Linux is not endorsed nor affiliated with Linux.*
+*Parrot Linux is not endorsed nor affiliated with Linux. Linux is a Registered Trademark of Linus Torvalds.*

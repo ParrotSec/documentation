@@ -10,8 +10,8 @@ visible: true
 
 &nbsp;
 
-Parrot Linux is a community-driven open source project,
-and a gateway to spread innovative ideas born inside its community.
+ParrotOS is a community-driven open source project,
+and a gateway to spread innovative ideas born inside it's community.
 
 &nbsp;
 
@@ -22,7 +22,7 @@ and a gateway to spread innovative ideas born inside its community.
 ### Join Our Community
 &nbsp;
 
-<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Communty Forum</strong></a>
+<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Community Forum</strong></a>
 
 &nbsp;
 
@@ -51,7 +51,8 @@ Or join #parrotsec on irc.freenode.net
 
 Our community lives in several places, here are some links to stay in touch with us
 
-<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Community Forum</strong></a> <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
+ <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> 
+ <a href="https://t.me/ParrotSecofftopic" target="_blank" class="btnbtn-primary">Telegram International Offtopic group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
 
 &nbsp;
 
@@ -70,7 +71,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://parrotsec-china.org" class="btn btn-default btn-primary"><strong>Chinese Community</strong></a>  <a href="https://t.me/parrotsecCN" class="btn btn-default">Telegram</a>
+<a href="https://parrotsec-cn.org" class="btn btn-default btn-primary"><strong>Chinese Community</strong></a>  <a href="https://t.me/parrotsecCN" class="btn btn-default">Telegram</a>
 
 ----
 
@@ -82,7 +83,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/joinchat/EbgW4A2wfkmP8whsTvZ8TQ" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/parrotsecgr" class="btn btn-default">Telegram</a>
 
 ----
 
@@ -90,7 +91,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/AerigkL_Y5YbDQY4W9vEGw" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/AerigkL_Y5Z1ZSpOLNNerQ" class="btn btn-default">Telegram</a>
 
 ----
 
@@ -108,6 +109,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 <a href="https://community.parrotsec.org/c/community/tr" class="btn btn-default btn-primary"><strong>Turkish Community</strong></a>  <a href="https://t.me/parrotsecturkey" class="btn btn-default">Telegram</a>
 
-----
 
-<a href="https://t.me/joinchat/ETmFfgm0QN1bfRzSQRlc1A" class="btn btn-default">Telegram Algerian Community</a>
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

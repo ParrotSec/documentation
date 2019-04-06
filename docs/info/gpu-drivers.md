@@ -71,12 +71,6 @@ alias lbm-nouveau off
 ```
 When you are done hit `Ctrl+X` and save the file.
 
-Then run the following to make the changes:
-
-```bash
-sudo update-initramfs -u
-```
-
 Reboot.
 
 Now you can install the Nvidia driver:
@@ -103,11 +97,50 @@ To test your config, you can run this:
 optirun glxgears
 ```
 
-A reboot might be needed to make Bumblebee work as well as firejail adjustments.
+Also in order to have no screen tearing when using Intel card, you may have to add custom configuration file by running next command:
 
-Written by KileXt
+```bash
+sudo nano /usr/share/X11/xorg.conf.d/20-intel.conf
+```
+And insert next content by copying it with `Ctrl+C` and inserting to nano with `Ctrl+Shift+V`:
+
+```bash
+Section "Device"
+    Identifier "Intel Graphics"
+    Driver "intel"
+    Option "TearFree" "true"
+EndSection
+```
+
+Also append next nvidia configuration file:
+
+```bash
+sudo nano /etc/bumblebee/xorg.conf.nvidia
+```
+
+And at the end of the file insert next content:
+
+```bash
+Section "Screen"
+    Identifier "Default Screen"
+    Device "DiscreteNvidia"
+EndSection
+```
+
+And the last step is installing OpenCL driver to make your hashcat and any other GUI programm work:
+
+```bash
+sudo apt install -y ocl-icd-libopencl1 nvidia-cuda-toolkit
+```
+
+A reboot is needed to make Bumblebee work as well as firejail adjustments.
+
+Written by KileXt, h0tw4t3r
 
 For further information see [here](https://github.com/Bumblebee-Project/Bumblebee/wiki)
 and [here](https://community.parrotsec.org/t/bumblebee-fails-to-run-optirun-xorg/5732/3)
 If you run into any issues please post in [support](https://community.parrotsec.org/c/support) on the forum.
 
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

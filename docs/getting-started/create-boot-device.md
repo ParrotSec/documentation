@@ -10,7 +10,7 @@ visible: true
 
 ISO is a special file format that represents the content of a small storage device.
 
-The Parrot ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.
+The ParrotOS ISO file is a bit-per-bit representation of the content of a Parrot USB or DVD drive.
 
 You can use a special software like [Etcher](https://www.etcher.io) to clone the content of the Parrot ISO to a USB drive and transform such USB drive into a full Parrot USB device.
 
@@ -32,7 +32,7 @@ Our official ISO Writing Tool is [Etcher - www.etcher.io](https://www.etcher.io)
 
 It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We **highly** suggest Etcher over all other methods.
 
-![Etcher](/img/etcher.png)
+![Etcher](../img/etcher.png)
 
 ---
 
@@ -41,4 +41,8 @@ It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well
 __[dd](https://en.wikipedia.org/wiki/Dd_(Unix))__ (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit. Due to the potential to brick your system if you are not familiar with linux we recommend that you use Etcher.
 
 
-![DD](/img/dd.png)
+![DD](../img/dd.png)
+
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

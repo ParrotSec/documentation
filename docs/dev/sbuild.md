@@ -172,3 +172,9 @@ The following command is an example of how you can delete the subvolume called p
 ```bash
 btrfs subvolume delete /var/lib/schroot/chroots/parrot-amd64
 ```
+
+&nbsp;
+
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

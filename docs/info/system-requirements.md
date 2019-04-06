@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-## Parrot Linux is pretty nimble but the following is a bare minimum.
+## ParrotOS is pretty nimble but the following is a bare minimum.
 
 ### Parrot Home
 - Dual core x86_64 Processor
@@ -28,4 +28,7 @@ visible: true
 - 8 GB of RAM DDR3
 - 128 GB SSD
 
-[Parrot Info Home](https://www.parrotsec.org/docs/startpage)
+
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

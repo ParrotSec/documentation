@@ -10,14 +10,14 @@ visible: true
 
 &nbsp;
 
-**Parrot Linux** (Parrot Security, ParrotOS, Parrot GNU/Linux) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
+**ParrotOS** (Parrot Security, ParrotOS) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
 
 It includes a full portable arsenal for IT security and digital forensics operations, but it also includes everything you need to develop your own programs or protect your privacy while surfing the net.
 
 The operating system ships with the MATE desktop environment preinstalled and is available in several flavors to fit your needs.
 
 
-![macaw-poly](/img/macaw-poly.jpg)
+![macaw-poly](https://www.parrotsec.org/docs/img/macaw-poly.jpg)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ In this section we will explain how different is Parrot compared to other genera
 
 
 
-<img src="/img/parrot.svg" width="200">
+<img src="https://www.parrotsec.org/docs/img/parrot.svg" width="200">
 
 
 ### General purpose distributions
@@ -143,3 +143,6 @@ The no-automount behavior is consistent and stable, but no protection is provide
  * Wannabe Hackers
  * Police officers and special security institutions
 
+&nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/) 
