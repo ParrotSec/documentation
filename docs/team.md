@@ -22,14 +22,6 @@ In this page we list contributors and members past and present, who've given a s
 | sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer               | s1udge at parrotsec dot org  |
 
-&nbsp;
-
-# Dev Team
-
-| nickname     |         name          |                             role(s)                             |           email              |
-| ------------ | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-
-NOTE: Slots are open, must be able to perform package maintainer duties and responsibilities (e.g. maintain apt packages).
 
 &nbsp;
 
