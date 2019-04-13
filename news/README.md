@@ -1,1 +1,1 @@
-Used by Parrot's Social Outreach Team to provide a coordinated news narrative
+Used by Parrot's Social Outreach lead to provide a coordinated news narrative

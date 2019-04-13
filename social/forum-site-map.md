@@ -1,6 +1,4 @@
-2019/03/05 last updated.
-
-NOTE: Waiting on Guidelines to be finalized for Mods and Categories.
+2019/04/13 last updated.
 
 ## Reorganization of Groups and Forum categories
 

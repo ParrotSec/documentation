@@ -30,5 +30,5 @@ For Asking Help:
 * Ban
 ~ Warning
 
-(we need some form of appeals process)
+To Appeal a ban or action send a PM to @reporting on the forum, detailing what happened and why you think it was wrong. The moderator will have a chance to give his side of the story and a decision will be made shortly after. All decisions are final.
 
