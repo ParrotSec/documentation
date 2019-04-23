@@ -10,7 +10,7 @@ In the interest of fostering an open environment, we as Parrot Team members and 
 **Defining Parrot Project values:**
 
 
-Examples of behavior that contributes to creating a positive environment include:
+### Examples of behavior that contributes to creating a positive environment include:
 
 * Being respectful of differing viewpoints and experiences.
 We have a global group of people, your perspective is not the only one. Even if you know you're right. Let them finish and present your logical arguement on why you believe they're wrong.
@@ -27,7 +27,7 @@ We have a global group of people, your perspective is not the only one. Even if 
 - [Accepting Contructive Criticism](https://www.entrepreneur.com/article/250304)
 - [Growth Mindset](https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/)
 
-Examples of unacceptable behavior by participants include:
+### Examples of unacceptable behavior by participants include:
 
 * The use of sexualized language or imagery, unwelcome sexual attention or
   advances.
@@ -43,12 +43,9 @@ Examples of unacceptable behavior by participants include:
 
 ## Our Responsibilities
 
-Parrot Project's board of directors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+Parrot Project's board of directors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
-Parrot Project's board of directors have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to The values of the Parrot Project and this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+Parrot Project's board of directors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to The values of the Parrot Project and this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
 Any action taken by the board of directors will have an opportunity to hear everyone's versions of events and allow for a rebuttal to be received and actions reconsidered. Any decision after this is final.
 
@@ -70,8 +67,7 @@ is deemed necessary and appropriate to the circumstances. The board of directors
 obligated to maintain confidentiality with regard to the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
 
-Parrot Team members and contributors who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other
-members of the Parrot Project's board of directors.
+Parrot Team members, leaders, directors and contributors who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the Parrot Project's board of directors.
 
 ## Attribution
 

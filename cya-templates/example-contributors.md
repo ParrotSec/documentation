@@ -1,5 +1,0 @@
-## Contributors
-
-|         |         |             |
-| ------- | ------- | ----------- |
-| Nickname |  Name  |   Email     |
