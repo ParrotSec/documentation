@@ -19,11 +19,9 @@ Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.par
 ### What is the default live password?
 
 Live user: **user**
-Live pass: **live**
+Live pass: **toor**
 
-If the password does not work, also try with: **toor**
-
-Parrot does not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use **sudo**
+Parrot may not have a root password since Parrot 4.4, to launch programs as root or to obtain a root terminal, use **sudo**
 
 ### How do I upgrade my system?
 
