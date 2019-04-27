@@ -88,8 +88,8 @@ If you are not sure what software is involved, or if you don't know how to conta
 `/etc/apt/sources.list.d/parrot.list` should contain the following content
 
 ```bash
-deb http://deb.parrotsec.org/parrot stable main contrib non-free
-#deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
+deb https://deb.parrotsec.org/parrot stable main contrib non-free
+#deb-src https://deb.parrotsec.org/parrot stable main contrib non-free
 ```
 
 
@@ -99,7 +99,7 @@ If this happens, then you did something terribly wrong during the creation of th
 
 This usually happens when you use software that doesn't respect the isohybrid standards.
 
-We have a dedicated documentation page which describes this issue, how to fix it and why.
+The following page will describe the issue, how to fix it and why it can occur.
 
 [Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device/)
 
