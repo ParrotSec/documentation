@@ -94,7 +94,7 @@ Sometimes Tor does not work due to a silly mistake rather than your ISP interfer
 
 3) If you must configure a proxy then, activate the second checkbox and enter the details. 
 
-![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.pngg)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.png)
 
 4) Now you have three configuration options. You can use bridges which are preconfigured and provided with Tor Browser, you can specify your own bridge(s), or request bridges.
 

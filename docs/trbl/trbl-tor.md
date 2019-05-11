@@ -94,7 +94,7 @@ Sometimes Tor does not work due to a silly mistake rather than your ISP interfer
 
 3) If you must configure a proxy then, activate the second checkbox and enter the details. 
 
-![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.pngg)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.png)
 
 4) Now you have three configuration options. You can use bridges which are preconfigured and provided with Tor Browser, you can specify your own bridge(s), or request bridges.
 
@@ -282,5 +282,7 @@ Sixth, if the above ideas don't point out the bug, consider increasing your log 
 
 More info on Tor: https://www.torproject.org/docs/faq.html.en
 &nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
 
 [Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)

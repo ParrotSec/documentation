@@ -29,6 +29,7 @@ However, for digital signatures to make any sense, we must ensure that the publi
 ## Fetch the key - Verify the repositories
 
 Optional: Complete the steps below if unfamiliar with GnuPG or if they haven't already been performed. This will fix eventual GPG: WARNING: unsafe ownership warnings. 
+
 1 .First have GnuPG initialize your user data folder.
 ```bash
     [user@parrot ~]$ gpg --fingerprint
@@ -87,8 +88,7 @@ Analyze the other messages as usual. This extra message does not relate to the P
 	
 Checking the GPG signature timestamp makes sense. For example, if you previously saw a signature from 2018 and now see a signature from 2017, then this might be a targeted rollback (downgrade) or indefinite [freeze attack](https://github.com/theupdateframework/tuf/blob/develop/SECURITY.md). 
 
-The first line includes the signature creation timestamp. Example. 
-##ISO verification 
+## ISO verification 
 
 ### MD5Sum hash verification
 
