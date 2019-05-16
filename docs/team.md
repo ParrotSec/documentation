@@ -18,7 +18,7 @@ In this page we list contributors and members, past and present, who have contri
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
 | mibofra          | Francesco Bonanno     | ARM release dev<br>Sysadmin                                     | mibofra at parrotsec dot org |
 | nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
-| marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
+| marafed          | Federica Marasà       | Graphic Designer                                           | marafed at parrotsec dot org |
 | sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer               | s1udge at parrotsec dot org  |
 
@@ -28,7 +28,7 @@ In this page we list contributors and members, past and present, who have contri
 # Dev Team
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| Andi             |                       |                                                                 |   | 
+| Andi             |                       | Dev                                                          |   | 
 
 &nbsp;
 
@@ -37,7 +37,7 @@ In this page we list contributors and members, past and present, who have contri
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | meu              | M. Emrah Ünsür        | Turkish Community Leader <br> Forum Moderator                    | meu at parrotsec dot org     |
 | terabreik        | Jose Gatica           | Spanish Community Leader <br> Forum Moderator                    | josegatica at parrotsec dot org |
-| ByteHackr       | Nemo Sandipan Roy      | Indian community Leader <br> Forum Moderator                     | nemo at parrotsec dot org    |
+| ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | nemo at parrotsec dot org    |
 | AresX            |                       | Chinese Community Leader <br> Forum Moderator                   | |
 | anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
 | disrupt_the_flow |  | Greek Community Leader <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
@@ -49,7 +49,7 @@ In this page we list contributors and members, past and present, who have contri
 | Nico_Paul        | Nico Gialluca         | English Community Leader <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
 | Kidklown         |                       | English Community  <br> Forum Moderator                          | |
 | Jeff             | Jeff Szydel           | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
-| Zaphod BB        | Patrick Dunn          | Telegram Admin <br> Forum Moderator                             |                              |
+| Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             |                              |
 | mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                        | |
 |   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose@riseup.net  |
 | Dm knght         |                       | Forum Moderator <br> Tutorial writer                            |                              |

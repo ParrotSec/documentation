@@ -32,9 +32,10 @@ nav:
             - APT Mirror list: mirror-list.md
             - Make your own mirror: mirror-list/#make-your-own-mirror
             - Infrastructure Weathermap: weathermap.md
-        - Community:
+        - Community: 
             - News: https://www.parrotsec.org/blog/
             - Future Plans: roadmap.md
+            - Social Media: community.md
             - The Team: team.md
             - Partners: partners.md
             - Donate: donate.md

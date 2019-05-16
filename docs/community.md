@@ -10,7 +10,7 @@ visible: true
 
 &nbsp;
 
-ParrotOS is a community-driven open source project,
+The Parrot Project is a community-driven opensource project,
 and a gateway to spread innovative ideas born inside it's community.
 
 &nbsp;
@@ -91,7 +91,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/AerigkL_Y5Z1ZSpOLNNerQ" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/BykV5UL_Y5Z1KOY81UxicA" class="btn btn-default">Telegram</a>
 
 ----
 
