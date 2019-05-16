@@ -34,7 +34,6 @@ Firmware
 
 Virtual Machine Emulators and Containers
 
-- VMware (not guaranteed as it depends on what linux kernel they support)
 - Docker
 - QEMU
 - VirtualBox
@@ -88,6 +87,7 @@ Hardware overall
 - gnome software (no future plans to provide support, though community members are more than welcome to provide other desktop environments)
 - All other Architectures not listed.
 - Secure boot
+- VMware
 - Intel Optane (Only works with Windows)
 
 ### NOTE: Want something that's not listed? Help us make it [happen](https://nest.parrotsec.org/)

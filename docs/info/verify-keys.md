@@ -29,12 +29,13 @@ However, for digital signatures to make any sense, we must ensure that the publi
 ## Fetch the key - Verify the repositories
 
 Optional: Complete the steps below if unfamiliar with GnuPG or if they haven't already been performed. This will fix eventual GPG: WARNING: unsafe ownership warnings. 
+
 1 .First have GnuPG initialize your user data folder.
 ```bash
     [user@parrot ~]$ gpg --fingerprint
 ```
 
-1. Set warning free permissions.
+2. Set warning free permissions.
 ```bash
     [user@parrot ~]$ chmod --recursive og-rwx ~/.gnupg
 ```
@@ -83,45 +84,25 @@ If this appears at the end of the output:
 ```
 Analyze the other messages as usual. This extra message does not relate to the ParrotOS signing key itself, but instead usually means the user has not created an OpenPGP key yet, which is of no importance.
 
-## Image verification 
-
-Download the cryptographic (OpenPGP) signature corresponding to the image you want to verify and save it in the same folder as the image:
-Then, start the cryptographic verification, it can take several minutes. 
-```bash
-    cd [the directory in which you downloaded the .ova and the .asc]
-    gpg --verify-options show-notations --verify *.iso.asc *.asc
-```
-If the image is correct then GPG will tell you it's good. See the below output.
-```bash
-
-```
-If the following message appears don't worry.
-```bash 
-    gpg: WARNING: This key is not certified with a trusted signature!
-    gpg:          There is no indication that the signature belongs to the owner.
-```
-
-This message does not alter the validity of the signature related to the downloaded key. Rather, this warning refers to the level of trust placed in the ParrotOS signing key and the web of trust. To remove this warning, the ParrotOS signing key must be personally signed with your own key.
-
 ### Warning
 	
 Checking the GPG signature timestamp makes sense. For example, if you previously saw a signature from 2018 and now see a signature from 2017, then this might be a targeted rollback (downgrade) or indefinite [freeze attack](https://github.com/theupdateframework/tuf/blob/develop/SECURITY.md). 
 
-The first line includes the signature creation timestamp. Example. 
+## ISO verification 
 
 ### MD5Sum hash verification
 
 #### GNU/Linux
 
-1. After you obtained the ISO of your choice go here https://cdimage.parrotsec.org/parrot/iso/4.5.1/signed-hashes.txt to see the signed hashes.
+1. After you obtained the ISO of your choice go here https://cdimage.parrotsec.org/parrot/iso/4.6/signed-hashes.txt to see the signed hashes.
 2. On the first section where it says "MD5" find the hash that matches your downloaded IASO.For the purpose of this tutorial we will use "Parrot-home-4.5.1_amd64.iso".
 3. Now run the following command.
 ```bash 
-md5sum Parrot-home-4.5.1_amd64.iso
+md5sum Parrot-home-4.6_amd64.iso
 ```
 4. The above command should generate an outut like this
 ```bash
-b4dbb5702c2666dc24ac4ba05d7b6608 Parrot-home-4.5.1_amd64.iso
+e5390f46ce916d7a027e6e4a25035698 
 ```
 5. Compare the hash (the alphanumeric string on left) that your machine calculated with the corresponding hash on the page from Step 1.
 
@@ -133,11 +114,11 @@ When both hashes match exactly then the downloaded file is almost certainly inta
 
 The method for other hashes such as SHA256 or SHA512 is exactly the same with the above guides only instead of md5 you must use the proper hash you want.For example.
 ```bash
-sha512sum Parrot-home-4.5.1_amd64.iso
+sha512sum Parrot-home-4.6_amd64.iso
 ```
 which will generate this
 ```bash
-7e378ff51e4e62601c37f05c7b46a698449fdf7593a597c6e9b260573ab0b589e2cebac706189a2d9a616d50ff10d05c174771ab114fa7bcb20ba05dd2c7b35f
+ef4042653ae599001b59ab8efc12648d7c63de64397b2c6848881adc52594b8e92bab0f9b22d81d81650bf1299faabf4d279b14fdfc8bb993335236adf571b27
 ```
 &nbsp;
 

@@ -76,48 +76,56 @@ Sadly, pluggable transports are not immune to detection, if a censor is given en
 
 Bridges which support pluggable transports can be used with Tor Browser easily. Tor Browser includes some pre-configured bridges and you can get more from BridgeDB, if those don't work.
 
-#### Usng PTs to bypass censorship
+### Usng PTs to bypass censorship
 
-![PT](https://www.torproject.org/images/PT/2016-07-how-to-use-PT.png)
-
-### Using bridges with Tor 
+#### Using bridges with Tor 
 
 #### Adding bridges in Tor Browser when Tor does not work 
 
 Sometimes Tor does not work due to a silly mistake rather than your ISP interfering with your Internet connection.
 
-1) To add a bridge, follow the instructions on screen. Click the "Configure" button. 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-startup.png)
+1) To add a bridge, follow the instructions on screen. Click the "Configure" button.
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.png)
 
 2) Proxy and Censorship prevention settings are now on one page. If your Internet Service Provider (ISP) blocks or otherwise censors connections to the Tor Network, tick this checkbox. 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-network-settings.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-network-settings.png)
 
 3) If you must configure a proxy then, activate the second checkbox and enter the details. 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-proxy.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-proxy.png)
 
 4) Now you have three configuration options. You can use bridges which are preconfigured and provided with Tor Browser, you can specify your own bridge(s), or request bridges.
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
 
 5a) If you want to use one of the provided bridges, then choose one of the offered transport types. obfs4 is currently recommend, but depending on where you are located another one may work better for you. If you have any questions, please contact us.
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bridges-provided.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bridges-provided.png)
 
 5b) If none of the provided bridges works for you, try to request one: 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-connect.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-captcha.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-success.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-connect.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-captcha.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-success.png)
 
 5c) To use a custom bridge select "Provide a bridge I know". 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-provide-bridge.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-provide-bridge.png)
 
 6) After you decide which bridges you want to use, click "Connect". Tor should now be able to load successfully and the browser window should appear.
-![bridge](https://www.torproject.org/images/tb-frontpage.png)
+
+![bridge](https://2019.www.torproject.org/images/tb-frontpage.png)
 
 #### Troubleshooting bridges 
 
-Sometimes the bootstrapping gets stuck at some point, for example when a bridge went offline, the connection is blocked, or when the Pluggable Transport is hit by a bug. 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bootstrap.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bootstrap-failed.png)
+Sometimes the bootstrapping gets stuck at some point, for example when a bridge went offline, the connection is blocked, or when the Pluggable Transport is hit by a bug.
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bootstrap.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bootstrap-failed.png)
+
  Ideally it works after some tries, using a different bridge, or restarting the browser. If not, remove the Tor Browser folder and extract the archive again. It should work now. If it still fails, we want to hear from you!
 
 #### Adding bridges in Tor Browser when Tor does work
@@ -125,28 +133,35 @@ Sometimes the bootstrapping gets stuck at some point, for example when a bridge 
 The following instructions assume Tor Browser successfully loads and you are able to surf the web. If you do not see the web browser when you run Tor Browser (like in step (1) below), you may need to follow the instructions above.
 
 1) Start Tor Browser:
-![bridge](https://www.torproject.org/images/tb-frontpage.png)
+
+![bridge](https://2019.www.torproject.org/images/tb-frontpage.png)
 
 2) To begin using bridges, open Tor Browser's Network Settings:
-![bridge](https://www.torproject.org/images/tb-tor-button-menu.png)
 
-3) Select "My Internet Service Provider (ISP) blocks connections to the Tor network":
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
+![bridge](https://2019.www.torproject.org/images/tb-tor-button-menu.png)
+
+3) Select "Tor is censored in my country":
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
 
 4) Now you have three configuration options. You can use bridges which are preconfigured and provided with Tor Browser, you can request new bridges, or specify your own bridge(s).
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bridges.png)
 
 5a) If you want to use one of the provided bridges, then choose one of the offered transport types. obfs4 is currently recommend, but depending on where you are located another one may work better for you. If you have any questions, please contact us.
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-bridges-provided.png)
 
-5b) If none of the provided bridges works for you, try "Request a bridge from torproject.org" 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-connect.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-captcha.png)
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-success.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-bridges-provided.png)
+
+5b) If none of the provided bridges work for you, try "Request a bridge from torproject.org" and click on " Request a Bridge"
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-connect.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-captcha.png)
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-request-bridges-success.png)
 
 5c) To use a custom bridge select "Provide a bridge I know". 
-![bridge](https://www.torproject.org/images/bridges/tb-tor-launcher-provide-bridge.png)
+
+![bridge](https://2019.www.torproject.org/images/bridges/tb-tor-launcher-provide-bridge.png)
 
  Tor will only use one bridge at a time, but it is good to add more than one bridge so you can continue using Tor even if your first bridge becomes unavailable. 
 
@@ -267,5 +282,7 @@ Sixth, if the above ideas don't point out the bug, consider increasing your log 
 
 More info on Tor: https://www.torproject.org/docs/faq.html.en
 &nbsp;
+
+[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
 
 [Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
