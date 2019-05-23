@@ -14,7 +14,7 @@ Penetration testing is a time intensive job, maintaining your toolkit shouldn't
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.
 
-Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.parrotsec.org/docs/info/should-i-use-parrot)" to be sure.
+Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.parrotsec.org/docs/intro/what-is-parrot/#should-i-use-parrot)" to be sure.
 
 ### What is the default live password?
 
