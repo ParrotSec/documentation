@@ -17,12 +17,9 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ***
 
-### Dasaweb
+### Hack The Box
 
-
-[Dasaweb](https://www.dasaweb.net) is a hosting provider that collaborate with us and sponsors our Parrot Cloud project by selling Virtual Private Servers with Parrot Cloud pre-installed.
-
-Dasaweb is also the main sponsor of most of the Parrot Community events in Italy.
+[Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
 
 ***
 
@@ -46,14 +43,13 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 ***
 
-### Hack The Box
-
-[Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
-
-***
 &nbsp;
 
 ## __Mirrors__
+
+### Leaseweb
+
+Leaseweb Global B.V. - Multiple Mirror Locations
 
 ### MIT
 
@@ -214,6 +210,10 @@ Quantum-mirror - Open source mirroring solutions in Hungary
 ### Muug Mirror
 
 Manitoba Unix User Group - Winnipeg
+
+### Cythin
+
+Cythin.com - France | Canada
 
 
 &nbsp;
