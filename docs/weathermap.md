@@ -123,6 +123,22 @@ var master = L.marker([50.85, 4.35], {title: 'Mirror Server', icon: iconmirror})
 var master = L.marker([53, 28], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>mirror.datacenter.by - Beltelecom Datacenter<br>[https://mirror.datacenter.by/pub/mirrors/parrotsec.org/](https://mirror.datacenter.by/pub/mirrors/parrotsec.org/)');
+// mirror Comsys
+var master = L.marker([50.450001, 30.523300], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>KPI (National Technical University of Ukraine - Comsys)<br>[mirrors.comsys.kpi.ua/parrot](http://mirrors.comsys.kpi.ua/parrot)');
+// mirror Cythin
+var master = L.marker([48.862801, 2.329200], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Cythin<br>[parrot.mirror.cythin.com/parrot](https://parrot.mirror.cythin.com/parrot)');
+// mirror Leaseweb
+var master = L.marker([52.382401, 4.899500], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.ams1.nl.leaseweb.net/parrot](https://mirror.ams1.nl.leaseweb.net/parrot)');
+// mirror Leaseweb
+var master = L.marker([51.299301, 9.490900], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.fra10.de.leaseweb.net/parrot](https://mirror.fra10.de.leaseweb.net/parrot)');
 // mirror asis
 var master = L.marker([35.69, 51.42], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
@@ -139,6 +155,26 @@ var master = L.marker([44.6592, -74.9681], {title: 'Mirror Server', icon: iconmi
 var master = L.marker([42.497540120, -123.277491], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Oregon State University - Open Source Lab<br>[http://ftp.osuosl.org/pub/parrotos/](http://ftp.osuosl.org/pub/parrotos/)');
+// mirror Cythin
+var master = L.marker([45.504002, -73.574699], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Cythin<br>[parrot.ca.mirror.cythin.com/parrot](https://parrot.ca.mirror.cythin.com/parrot)');
+// mirror Leaseweb
+var master = L.marker([33.674801, -111.951897], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.mia11.us.leaseweb.net/parrot](https://mirror.mia11.us.leaseweb.net/parrot)');
+// mirror Leaseweb
+var master = L.marker([37.387402, -121.902397], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.sfo12.us.leaseweb.net/parrot](https://mirror.sfo12.us.leaseweb.net/parrot)');
+// mirror Leaseweb
+var master = L.marker([38.770100, -77.632103], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.wdc1.us.leaseweb.net/parrot](https://mirror.wdc1.us.leaseweb.net/parrot)');
+// mirror Leaseweb
+var master = L.marker([32.782501, -96.820702], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.dal10.us.leaseweb.net/parrot](https://mirror.dal10.us.leaseweb.net/parrot)');
 // mirror berkeley
 var master = L.marker([37.8718992, -122.2585399], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
@@ -207,6 +243,11 @@ var master = L.marker([23.5, 121], {title: 'Mirror Server', icon: iconmirror}).a
 var master = L.marker([31.0275000, 121.4322222], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>SJTUG (SJTU *NIX User Group)<br>[http://mirrors.sjtug.sjtu.edu.cn/parrot/](http://mirrors.sjtug.sjtu.edu.cn/parrot/)');
+// mirror Takeshi
+var master = L.marker([-38.0667, 176.3667], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+.bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
+.bindPopup('<b>Download Mirror Server:</b><br>Takeshi (D T Consulting Ltd)<br>[mirrors.takeshi.nz/parrot](https://mirrors.takeshi.nz/parrot/)');
+
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 maxZoom: 10,
 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
