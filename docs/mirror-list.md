@@ -170,7 +170,7 @@ Europe Middle East and Asia
 |Russia<br>Yandex<br>1 Gbps|Yandex|[mirror.yandex.ru/mirrors/parrot](http://mirror.yandex.ru/mirrors/parrot)|<sub>deb https://mirror.yandex.ru/mirrors/parrot/ parrot main contrib non-free</sub>|
 |Russia<br>Truenetwork<br>10 Gbps|Truenetwork|[mirror.truenetwork.ru/parrot](http://mirror.truenetwork.ru/parrot)|<sub>deb https://mirror.truenetwork.ru/parrot/ parrot main contrib non-free</sub>|
 |Iran<br>ASIS<br>1 Gbps|ASIS|[parrot.asis.io](http://parrot.asis.io)|<sub>deb http://parrot.asis.io/ parrot main contrib non-free</sub>|
-|Ukraine<br>comsys<br>1 Gbps|[mirrors.comsys.kpi.ua/parrot](http://mirrors.comsys.kpi.ua/parrot)|<sub>only ISO files are mirrored</sub>|
+|Ukraine<br>comsys<br>1 Gbps|KPI (National Technical University of Ukraine - Comsys)|[mirrors.comsys.kpi.ua/parrot](http://mirrors.comsys.kpi.ua/parrot)|<sub>only ISO files are mirrored</sub>|
 
 
 ### APAC
