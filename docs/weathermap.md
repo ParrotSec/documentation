@@ -132,7 +132,7 @@ var master = L.marker([48.862801, 2.329200], {title: 'Mirror Server', icon: icon
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Cythin<br>[parrot.mirror.cythin.com/parrot](https://parrot.mirror.cythin.com/parrot)');
 // mirror Leaseweb
-var master = L.marker([52.382401, 4.899500], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
+var master = L.marker([52.3, 4.8], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Leaseweb<br>[mirror.ams1.nl.leaseweb.net/parrot](https://mirror.ams1.nl.leaseweb.net/parrot)');
 // mirror Leaseweb
@@ -247,7 +247,7 @@ var master = L.marker([31.0275000, 121.4322222], {title: 'Mirror Server', icon: 
 var master = L.marker([-38.0667, 176.3667], {title: 'Mirror Server', icon: iconmirror}).addTo(mymap)
 .bindTooltip('mirror server', {permanent: false, opacity: 0.8, direction: 'top'})
 .bindPopup('<b>Download Mirror Server:</b><br>Takeshi (D T Consulting Ltd)<br>[mirrors.takeshi.nz/parrot](https://mirrors.takeshi.nz/parrot/)');
-
+// load map
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 maxZoom: 10,
 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
