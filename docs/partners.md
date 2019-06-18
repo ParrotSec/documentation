@@ -17,11 +17,23 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ***
 
+### FSecurity Academy
+
+Emerging learning resource in Costa Rica that makes use of the Parrot system.
+
+[About FSecurity Academy](https://www.fsecurityacademy.com/about/)
+
+***
+
 ### Hack The Box
 
 [Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
 
 ***
+
+### Leaseweb Global B.V.
+
+Leaseweb is a global Infrastructure-as-a-Service (IaaS) provider offering customers hosting solutions to boost their business while cutting costs. 
 
 ### KNXSecurity
 
@@ -32,14 +44,6 @@ KNXSecurity is an Italian community dedicated to cyber security training that he
 ### The Free Circle GLUG
 
 [TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
-
-***
-
-### FSecurity Academy
-
-Emerging learning resource in Costa Rica that makes use of the Parrot system.
-
-[About FSecurity Academy](https://www.fsecurityacademy.com/about/)
 
 ***
 
