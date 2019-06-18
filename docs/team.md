@@ -28,8 +28,9 @@ In this page we list contributors and members, past and present, who have contri
 # Dev Team
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| Andi             |                       | Dev                                                          |   | 
-
+| Andi             |                       | Dev                                                             |   | 
+| h0tw4t3r         |                       | Dev <br> Forum Moderator <br> Tutorial Writer <br> Website contributor   | h0tw4t3r at parrotsec dot org | 
+| Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at protonmail dot com    |
 &nbsp;
 
 # Community Team
@@ -51,10 +52,9 @@ In this page we list contributors and members, past and present, who have contri
 | Jeff             | Jeff Szydel           | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
 | Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             |                              |
 | mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                        | |
-|   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose@riseup.net  |
-| Dm knght         |                       | Forum Moderator <br> Tutorial writer                            |                              |
+|   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose at riseup dot net  |
 | KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
-| h0tw4t3r         |                       | Forum Moderator <br> Tutorial Writer <br> Website contributor   |                              | 
+
 
 &nbsp;
 

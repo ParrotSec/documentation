@@ -17,27 +17,6 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ***
 
-### Dasaweb
-
-
-[Dasaweb](https://www.dasaweb.net) is a hosting provider that collaborate with us and sponsors our Parrot Cloud project by selling Virtual Private Servers with Parrot Cloud pre-installed.
-
-Dasaweb is also the main sponsor of most of the Parrot Community events in Italy.
-
-***
-
-### KNXSecurity
-
-KNXSecurity is an Italian community dedicated to cyber security training that helps us by testing the beta images of Parrot before the final release.
-
-***
-
-### The Free Circle GLUG
-
-[TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
-
-***
-
 ### FSecurity Academy
 
 Emerging learning resource in Costa Rica that makes use of the Parrot system.
@@ -51,9 +30,30 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 [Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
 
 ***
+
+### Leaseweb Global B.V.
+
+Leaseweb is a global Infrastructure-as-a-Service (IaaS) provider offering customers hosting solutions to boost their business while cutting costs. 
+
+### KNXSecurity
+
+KNXSecurity is an Italian community dedicated to cyber security training that helps us by testing the beta images of Parrot before the final release.
+
+***
+
+### The Free Circle GLUG
+
+[TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
+
+***
+
 &nbsp;
 
 ## __Mirrors__
+
+### Leaseweb
+
+Leaseweb Global B.V. - Multiple Mirror Locations
 
 ### MIT
 
@@ -214,6 +214,10 @@ Quantum-mirror - Open source mirroring solutions in Hungary
 ### Muug Mirror
 
 Manitoba Unix User Group - Winnipeg
+
+### Cythin
+
+Cythin.com - France | Canada
 
 
 &nbsp;
