@@ -6,9 +6,7 @@ In the interest of fostering an open environment, we as Parrot Team members and 
 
 ## Our Standards
 
-* Sign and adhere to the Parrot Project's [values](LINK VALUES).
-**Defining Parrot Project values:**
-
+* Sign and adhere to the Parrot Project's [values](parrot-values.md).
 
 ### Examples of behavior that contributes to creating a positive environment include:
 
@@ -21,7 +19,7 @@ We have a global group of people, your perspective is not the only one. Even if 
 * Basing ideas, recommendations or solutions on facts and not on feelings.
 * Having a growth mindset and helping others keep a growth mindset too.
 
-**Note:** Not sure what this means? check the links below for some clarity:
+**Note:** Not sure what this means? check the links below for clarity:
 - [Logical Arguements](https://danielmiessler.com/blog/how-to-build-a-strong-argument/)
 - [Giving constructive criticism](https://personalexcellence.co/blog/constructive-criticism/)
 - [Accepting Contructive Criticism](https://www.entrepreneur.com/article/250304)
@@ -29,23 +27,24 @@ We have a global group of people, your perspective is not the only one. Even if 
 
 ### Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery, unwelcome sexual attention or
-  advances.
+* The use of sexualized language or imagery, unwelcome sexual attention or advances.
 * Trolling, insulting/derogatory comments, personal or political attacks.
-* Public or private harassment.
-* Publishing others' private information, such as a physical or electronic
+* Publishing others' private information, such as a physical or electronic 
   address, without explicit permission (If it's not documented, you don't have permission).
 * Discussion of illegal activities.
+* Backstabbing and/or being passive-aggressive with others. 
+  - If you don't agree with someone be an adult and send that person a personal message and resolve the issue. 
 * Victim blaming/shaming, false accusations, or defaming someone.
+  - We don't have a place for drama queens or predators.
 * Use of the trope "In my experience as a . .". Unless the next word or words pertain to job positions of a technical nature (sysadmin, software engineer, etc).
-
-
+* Constantly whining or asking for help because you're too lazy to do your own research.
+  - if a task is too dificult say "hey I can't do this"
 
 ## Our Responsibilities
 
 Parrot Project's board of directors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
-Parrot Project's board of directors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to The values of the Parrot Project and this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+Parrot Project's board of directors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to the values of the Parrot Project and this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem useless to pushing the project in a forward motion.
 
 Any action taken by the board of directors will have an opportunity to hear everyone's versions of events and allow for a rebuttal to be received and actions reconsidered. Any decision after this is final.
 
@@ -61,9 +60,9 @@ is further defined and clarified by Parrot's directors, the Community Team Leade
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the board of directors at directors@parrotsec.org. All
+reported by contacting the board of directors at `directors at parrotsec dot org`. All
 complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The board of directors is
+is deemed appropriate to the circumstances. The board of directors is
 obligated to maintain confidentiality with regard to the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
 
@@ -75,6 +74,4 @@ This Code of Conduct is adapted and considerably modified from the [Contributor 
 
 [homepage](https://www.parrotsec.org)
 
-For answers to common questions about this code of conduct, see
-[Code of Conduct FAQ](https://www.parrotsec.org/docs/coc-faq) <br>
 For any other questions please email the Social Engagement Team at social at parrotsec dot org

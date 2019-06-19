@@ -2,7 +2,7 @@
 
 Thank you for wishing to contribute to the Parrot Project.
 
-Before you begin please read through the requirements below,  the [licenses](https://nest.parrotsec.org/parrot-organization/community/blob/master/DCO_licenses.md) and the readme of the repo.
+Before you begin please read through the requirements below,  the [licenses](https://nest.parrotsec.org/parrot-organization/community-team/community/blob/master/LICENSES.md) and the readme of the repo.
 
 Parrot's workflow is as follows:
 
@@ -35,19 +35,16 @@ Example:
 
 We welcome your enhancement requests, doc improvements, and issue reports. However, we are not accepting major feature requests on nest(gitlab) at this time.
 
-Before you submit an issue, search the issues archive; maybe the issue has already been submitted or considered. If the issue appears to be a bug, and hasn't been reported, open a new issue.
-
-Please do not report duplicate issues; help us maximize the effort we can spend fixing issues and adding enhancements.
+Before you submit an issue, search issues (closed and open); the issue may have been submitted or considered already. If the issue appears to be a bug, and hasn't been reported, open a new issue. Please do not report duplicate issues.
 
 Providing the following information will increase the chances of your issue being dealt with quickly:
 
-- Issue Title - provide a concise issue title prefixed with a snake-case name of the associated service or component (if any): <component>: <issue title>. Adding the md- prefix should be avoided.
-
-     e.g.
+- Issue Title - provide a concise issue title 
+  for example:
      menu-bar: does not support dark mode themes #11238
      tooltip: memory leak on destroy #11133
 
-- Complete the full Issue Template.
+- Complete the Issue Template.
 
 - Suggest a Fix - if you can't fix the bug yourself, perhaps you can point to what might be causing the problem (line of code or commit).
 
@@ -55,10 +52,14 @@ Providing the following information will increase the chances of your issue bein
 
 Important: We are not accepting major feature requests or MR/PRs that contain major new features or breaking changes at this time.
 
+Please fill out the entire merge request.
+
 ### Bug reporting
+
 When reporting bugs please use and fill out in it's entirely the report and please attach your logs.
 
 ### Reasons why your merge request was rejected:
+
 - Your commit(s) were not signed. 
 - Your merge was accepted and merged locally but there was an issue resolving the merge with gitlab.
 - Your Code is poorly written or does not conform the above coding standards.
@@ -67,7 +68,7 @@ When reporting bugs please use and fill out in it's entirely the report and plea
 (Spotted an error? open an issue [here](https://nest.parrotsec.org/parrot-organization/community-team/community/issues/new) to help keep our info on target.)
 
 ### How-tos
-need one? The above links double as informational how-to's from Gitlab.
+Need one? The above links double as informational how-to's from Gitlab.
 
 ## Frequently Asked Questions
 - What does "rebase your code" mean? <br>
