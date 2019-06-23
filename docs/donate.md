@@ -47,14 +47,6 @@ LTC: LR5Lxq2M5ijEgLryi6aNd2iFMpxT7pgEKL
 
 ----
 
-## Ethereum
-
-Ethereum Address
-
-ETH: 0x64A449d5839813024861601720B173f562c8d3F8
-
-----
-
 ## Merch
 <html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Spreadshirt Store</a></html>
 
