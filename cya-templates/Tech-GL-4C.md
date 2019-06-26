@@ -2,7 +2,7 @@
 
 Thank you for wishing to contribute to the Parrot Project.
 
-Before you begin please read through the requirements below,  the [licenses](https://nest.parrotsec.org/parrot-organization/community-team/community/blob/master/LICENSES.md) and the readme of the repo.
+Before you begin please read through the requirements below, the [licenses](https://nest.parrotsec.org/parrot-organization/community-team/community/blob/master/LICENSE.md) and the readme of the repo.
 
 Parrot's workflow is as follows:
 
