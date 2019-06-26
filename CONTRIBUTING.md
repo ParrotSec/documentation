@@ -7,7 +7,7 @@ distributed by the Parrot Project, You reserve all right, title, and interest in
 Your Contributions. All Contributions are subject to the following DCO + License
 terms.
 
-[DCO + Licenses](LICENSES.md)
+[DCO + Licenses](LICENSE.md)
 
 _This notice should stay as the first item in the CONTRIBUTING.md file._
 
@@ -21,7 +21,7 @@ Please email `security at parrotsec dot org` or send Palinuro a PM on Telegram.
 
 You can help improve our documentation by submitting merge requests (pull requests in github) to this repository.
 
-For more information about how to contribute please see our [Technical Guidelines for Contributing](https://nest.parrotsec.org/parrot-organization/community/blob/master/Tech-GL-4C.md).
+For more information about how to contribute please see our [Technical Guidelines for Contributing](https://nest.parrotsec.org/parrot-organization/community-team/community/blob/master/Tech-GL-4C.md).
 
 We want to create a welcome environment for everyone who is interested in contributing. Please see our [Code of Conduct](https://nest.parrotsec.org/parrot-organization/community/blob/master/code-of-conduct.md) to learn more about our committment to an open environment.
 
