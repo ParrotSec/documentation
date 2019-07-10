@@ -46,7 +46,7 @@ from <a target="_blank" href="https://riot.im">Riot.im</a> or any other <a targe
 
 Join `#parrotsec` on `irc.freenode.net`
 
-    Our IRC channel is can be accessed from our Matrix room.
+Our IRC channel can be accessed from our Matrix room.
 
 
 &nbsp;
