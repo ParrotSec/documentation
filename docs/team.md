@@ -18,7 +18,7 @@ In this page we list contributors and members, past and present, who have contri
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
 | mibofra          | Francesco Bonanno     | ARM release dev<br>Sysadmin                                     | mibofra at parrotsec dot org |
 | nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
-| marafed          | Federica Marasà       | Graphic Designer                                           | marafed at parrotsec dot org |
+| marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
 | sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer               | s1udge at parrotsec dot org  |
 
