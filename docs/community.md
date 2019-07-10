@@ -24,6 +24,11 @@ and a gateway to spread innovative ideas born inside it's community.
 
 <a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Community Forum</strong></a>
 
+### Chat with us on Matrix / Riot.im
+
+Join <a href="https://matrix.to/#/#parrot:matrix.org?via=matrix.org" target="_blank" class="btn btn-primary">#parrot:matrix.org</a>
+from <a target="_blank" href="https://riot.im">Riot.im</a> or any other <a target="_blank" href="https://matrix.org">matrix-compatible software</a>
+
 &nbsp;
 
 
@@ -41,11 +46,7 @@ and a gateway to spread innovative ideas born inside it's community.
 
 Join `#parrotsec` on `irc.freenode.net`
 
-### Matrix / Riot.im
-
-Join `#parrot:matrix.org` from <a target="_blank" href="https://riot.im">Riot.im</a> or any other <a target="_blank" href="https://matrix.org">matrix-compatible software</a>
-
-&nbsp;
+    Our IRC channel is can be accessed from our Matrix room.
 
 
 &nbsp;
@@ -53,12 +54,16 @@ Join `#parrot:matrix.org` from <a target="_blank" href="https://riot.im">Riot.im
 
 &nbsp;
 
-### Groups
+
+&nbsp;
+
+### Other Groups
 
 Our community lives in several places, here are some links to stay in touch with us
 
  <a href="https://t.me/parrotsecgroup" target="_blank" class="btn btn-primary">Telegram International Group</a> 
- <a href="https://t.me/ParrotSecofftopic" target="_blank" class="btnbtn-primary">Telegram International Offtopic group</a> <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
+ <a href="https://t.me/ParrotSecofftopic" target="_blank" class="btn btn-primary">Telegram International Offtopic group</a>
+ <a href="https://www.facebook.com/groups/parrotsec/" target="_blank" class="btn btn-primary">Facebook International group</a>
 
 &nbsp;
 
