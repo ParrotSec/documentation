@@ -37,7 +37,13 @@ and a gateway to spread innovative ideas born inside it's community.
 
 &nbsp;
 
-Or join #parrotsec on irc.freenode.net
+### IRC
+
+Join `#parrotsec` on `irc.freenode.net`
+
+### Matrix / Riot.im
+
+Join `#parrot:matrix.org` from <a target="_blank" href="https://riot.im">Riot.im</a> or any other <a target="_blank" href="https://matrix.org">matrix-compatible software</a>
 
 &nbsp;
 
