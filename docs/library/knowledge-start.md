@@ -17,7 +17,7 @@ NOTE: Currently a WIP (work in progress, some links might not work and some docu
 
 Linux Beginner Guide
 - [Linux Beginner Guide: The Basics](lbg-basics.md)
-- [Linux Beginner Guide: Research](lbg-resources.md)
+- Linux Beginner Guide: Research
 - [Helpme](helpme.md)
 
 &nbsp;
