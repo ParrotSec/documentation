@@ -88,8 +88,11 @@ If you are not sure what software is involved, or if you don't know how to conta
 `/etc/apt/sources.list.d/parrot.list` should contain the following content
 
 ```bash
-deb https://deb.parrotsec.org/parrot stable main contrib non-free
-#deb-src https://deb.parrotsec.org/parrot stable main contrib non-free
+deb https://deb.parrotsec.org/parrot/ rolling main contrib non-free
+#deb-src https://deb.parrotsec.org/parrot/ rolling main contrib non-free
+deb https://deb.parrotsec.org/parrot/ rolling-security main contrib non-free
+#deb-src https://deb.parrotsec.org/parrot/ rolling-security main contrib non-free
+
 ```
 
 

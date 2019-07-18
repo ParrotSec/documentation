@@ -78,7 +78,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ### Local Communities
 
-<a href="https://community.parrotsec.org/c/community/ar" class="btn btn-default btn-primary"><strong>Arabic Community</strong></a>  <a href="https://t.me/joinchat/DtqPLgxQJOqKW7qsVVypSg" class="btn btn-default">Telegram</a>
+<a href="https://community.parrotsec.org/c/community/ar" class="btn btn-default btn-primary"><strong>Arabic Community</strong></a>  <a href="https://t.me/joinchat/ParrotArabic" class="btn btn-default">Telegram</a>
 
 ----
 
