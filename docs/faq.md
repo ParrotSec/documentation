@@ -118,7 +118,7 @@ Read more [here](https://www.parrotsec.org/docs/getting-started/create-boot-devi
 
 ### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/info/helpme/), the [Using ParrotOS](https://www.parrotsec.org/docs/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
+Of Course! Please check out [helpme](https://www.parrotsec.org/docs/library/helpme/), the [Using ParrotOS](https://www.parrotsec.org/docs/info/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
 
 ### Should I encrypt my harddrive?
 
