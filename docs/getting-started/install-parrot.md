@@ -28,7 +28,7 @@ The image has the software components needed to run the installer and the base p
 
 Download whichever type you prefer and burn it. The procedure is the same as described on the above link.
 
-![Parrot first contact](https://www.parrotsec.org/docs/img/martian-first-contact.jpg)
+![Parrot first contact](https://docs.parrot.sh/img/martian-first-contact.jpg)
 
 
 ### I have a Parrot USB or DVD, now what?
@@ -52,10 +52,10 @@ The live mode is a special boot mode offered by many linux distributions, includ
 
 This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory.
 
-![parrot-live](https://www.parrotsec.org/docs/img/parrot-live.png)
+![parrot-live](https://docs.parrot.sh/img/parrot-live.png)
 
 Parrot OS offers the ability to install the OS while in the live environment offers the ability to test the system without interfering with the computer's hard drive.
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

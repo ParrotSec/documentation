@@ -10,7 +10,7 @@ visible: true
 
 &nbsp;
 
-Note: Can't find what you're looking for? checkout  [Using Parrot](https://www.parrotsec.org/docs/info/start/) or [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/)
+Note: Can't find what you're looking for? checkout  [Using Parrot](https://docs.parrot.sh/info/start/) or [Troubleshooting](https://docs.parrot.sh/trbl/start/)
 
 ---
 
@@ -94,4 +94,4 @@ In a Parrot OS live environment the default username is "user" and the default p
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

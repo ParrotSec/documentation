@@ -22,7 +22,7 @@ GPG ID (new): 813E EFE8 0280 C579 E2A1  F5E6 B56F FA94 6EB1 660A
 GPG KEY: https://download.parrotsec.org/misc/archive.gpg
 ```
 
-![warrant canary](https://www.parrotsec.org/docs/img/warrant-canary.png)
+![warrant canary](https://docs.parrot.sh/img/warrant-canary.png)
 
 Warrant Canary, July 10 2019
 

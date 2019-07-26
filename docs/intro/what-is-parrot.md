@@ -17,7 +17,7 @@ It includes a full portable arsenal for IT security and digital forensics operat
 The operating system ships with the MATE desktop environment preinstalled and is available in several flavors to fit your needs.
 
 
-![macaw-poly](https://www.parrotsec.org/docs/img/macaw-poly.jpg)
+![macaw-poly](https://docs.parrot.sh/img/macaw-poly.jpg)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ In this section we will explain how different is Parrot compared to other genera
 
 
 
-<img src="https://www.parrotsec.org/docs/img/parrot.svg" width="200">
+<img src="https://docs.parrot.sh/img/parrot.svg" width="200">
 
 
 ### General purpose distributions
@@ -145,4 +145,4 @@ The no-automount behavior is consistent and stable, but no protection is provide
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/) 
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/) 

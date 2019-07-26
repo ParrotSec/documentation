@@ -4,7 +4,7 @@ site_url: https://docs.parrotsec.org
 site_author: Parrot Team
 copyright: <p><br/>
             <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Parrot Documentation</span> is written by the <a
-                xmlns:cc="http://creativecommons.org/ns#" href="https://www.parrotsec.org/docs/team/" property="cc:attributionName"
+                xmlns:cc="http://creativecommons.org/ns#" href="https://docs.parrot.sh/team/" property="cc:attributionName"
                 rel="cc:attributionURL">Parrot Team</a> <br> Copyright © Lorenzo "Palinuro" Faletra 2019 some rights reserved.  <br> Licensed under a <a rel="license"
                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 International License</a>.
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
@@ -15,7 +15,7 @@ theme:
 
 
 nav:
-    - Parrot Website: https://www.parrotsec.org
+    - Parrot Website: https://www.parrot.sh
     - Introduction:
         - What is Parrot: intro/what-is-parrot.md
         - What is Debian: intro/what-is-debian.md
@@ -33,7 +33,7 @@ nav:
             - Make your own mirror: mirror-list/#make-your-own-mirror
             - Infrastructure Weathermap: weathermap.md
         - Community: 
-            - News: https://www.parrotsec.org/blog/
+            - News: https://blog.parrot.sh/
             - Future Plans: roadmap.md
             - Social Media: community.md
             - The Team: team.md

@@ -16,7 +16,7 @@ In this page we list contributors and members, past and present, who have contri
 | nickname         |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
-| mibofra          | Francesco Bonanno     | ARM release dev<br>Sysadmin                                     | mibofra at parrotsec dot org |
+| mibofra          | Francesco Bonanno     | ARM Releases Dev<br>Core Dev<br>Sysadmin<br>IPFS Repository Maintainer | mibofra at parrotsec dot org |
 | nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
 | marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
 | sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
@@ -103,5 +103,5 @@ In this page we list contributors and members, past and present, who have contri
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)
   
