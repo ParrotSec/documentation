@@ -8,7 +8,7 @@ visible: true
 
 ## Parrot Security
 
-[Parrot Security](https://www.parrotsec.org/download-security.php) is our complete all-in-one environment for pentesting, privacy, digital forensics, reverse engineering and software development.
+[Parrot Security](https://www.parrot.sh/download-security.php) is our complete all-in-one environment for pentesting, privacy, digital forensics, reverse engineering and software development.
 
 The system includes a full arsenal of security oriented tools to to ensure as security professional, you've got everything you need.
 
@@ -16,7 +16,7 @@ The system includes a full arsenal of security oriented tools to to ensure as se
 
 ## Parrot Home
 
-[Parrot Home](https://www.parrotsec.org/download-home.php) is designed for daily use. It's geared toward regular users who need a lightweight, always updated and beautiful system.
+[Parrot Home](https://www.parrot.sh/download-home.php) is designed for daily use. It's geared toward regular users who need a lightweight, always updated and beautiful system.
 
 The distribution has the same look and feel of a regular Parrot environment and includes all the basic programs for daily work. Parrot Home also includes programs to chat privately, encrypt documents with the highest cryptographic standards or surf the net in a completely anonymous and secure way.
 
@@ -26,7 +26,7 @@ The system can also be used as a starting point to build a very customized pente
 
 ## Netinstall Images
 
-Parrot offers [netinstall images](https://www.parrotsec.org/download-other.php).
+Parrot offers [netinstall images](https://www.parrot.sh/download-other.php).
 
 Netinstall images are special lightweight iso files containing only the installer.
 
@@ -38,7 +38,7 @@ The netinstall image can be used to install only the headless Parrot Core, or it
 
 ## Docker templates
 
-[Docker](https://www.parrotsec.org/download-other.php) is a powerful containerization technology that allows the user to start multiple instances of a template and use them as isolated environments that can be destroyed and restarted in a matter of seconds.
+[Docker](https://www.parrot.sh/download-other.php) is a powerful containerization technology that allows the user to start multiple instances of a template and use them as isolated environments that can be destroyed and restarted in a matter of seconds.
 
 A full virtual machine usually requires more computer resources (RAM, CPU time and storage), long installation and configuration times and maintenance.
 
@@ -52,7 +52,7 @@ If you want to perform more tests, each in an isolated environment/workspace, yo
 
 # Open Virtualization Format
 
-OVA is the standard for Virtual Machines and Parrot Linux is proud to offer OVA apps for both [Parrot Home](https://www.parrotsec.org/download-home.php) and [Parrot Security](https://www.parrotsec.org/download-security.php).
+OVA is the standard for Virtual Machines and Parrot Linux is proud to offer OVA apps for both [Parrot Home](https://www.parrot.sh/download-home.php) and [Parrot Security](https://www.parrot.sh/download-security.php).
 
 Just import, configure system resources and start the VM.
 
@@ -64,8 +64,8 @@ Just import, configure system resources and start the VM.
 
 &nbsp;
 
-### [__Downloads__](https://www.parrotsec.org/download.php)
+### [__Downloads__](https://www.parrot.sh/download.php)
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

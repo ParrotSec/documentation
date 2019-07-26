@@ -14,7 +14,7 @@ Penetration testing is a time intensive job, maintaining your toolkit shouldn't
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.
 
-Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://www.parrotsec.org/docs/intro/what-is-parrot/#should-i-use-parrot)" to be sure.
+Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://docs.parrot.sh/intro/what-is-parrot/#should-i-use-parrot)" to be sure.
 
 ### What is the default live password?
 
@@ -104,21 +104,21 @@ This usually happens when you use software that doesn't respect the isohybrid st
 
 The following page will describe the issue, how to fix it and why it can occur.
 
-[Create a Boot Device](https://www.parrotsec.org/docs/getting-started/create-boot-device/)
+[Create a Boot Device](https://docs.parrot.sh/getting-started/create-boot-device/)
 
 ### How do I prepare a bootable Parrot USB drive?
 
-1) Download Etcher from our [Download page](https://www.parrotsec.org/download.php) or directly from [www.etcher.io](https://www.etcher.io).
+1) Download Etcher from our [Download page](https://www.parrot.sh/download.php) or directly from [www.etcher.io](https://www.etcher.io).
 
-2) Download the ISO file of the Parrot version you need from our our [Download Page](https://www.parrotsec.org/download.php)
+2) Download the ISO file of the Parrot version you need from our our [Download Page](https://www.parrot.sh/download.php)
 
 3) Use Etcher to flash the ISO file into a free pen drive (the pen drive will be erased).
 
-Read more [here](https://www.parrotsec.org/docs/getting-started/create-boot-device).
+Read more [here](https://docs.parrot.sh/getting-started/create-boot-device).
 
 ### I'm new to Linux, please help me!
 
-Of Course! Please check out [helpme](https://www.parrotsec.org/docs/library/helpme/), the [Using ParrotOS](https://www.parrotsec.org/docs/info/start/) pages and the [further reading](https://www.parrotsec.org/docs/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
+Of Course! Please check out [helpme](https://docs.parrot.sh/library/helpme/), the [Using ParrotOS](https://docs.parrot.sh/info/start/) pages and the [further reading](https://docs.parrot.sh/library/start/). We also strongly recommend taking the [EdX course](https://www.edx.org/course/introduction-to-linux/) by the [Linux Foundation](https://www.linuxfoundation.org/).
 
 ### Should I encrypt my harddrive?
 
@@ -126,11 +126,11 @@ Yes, always. Do it during your initial install or you will need to reinstall.
 
 ### My hardware is *xyz-super-cool gizmo . . .* will it run ParrotOS?
 
-Maybe, check our [supported hardware](https://www.parrotsec.org/docs/trbl/supported-hardware/) page.
+Maybe, check our [supported hardware](https://docs.parrot.sh/trbl/supported-hardware/) page.
 
 ### Can you teach me how to hack, become a Linux uber-duber user, or live a holy life like Cucumber Bob?
 
-Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://www.parrotsec.org/docs/library/start/) will lead you down the path of autodidactic salvation.
+Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://docs.parrot.sh/library/start/) will lead you down the path of autodidactic salvation.
 
 ### How can I disable the GUI update reminder? 
 
@@ -161,4 +161,4 @@ Of course! The pages are written in Markdown and can be accessed [here](https://
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

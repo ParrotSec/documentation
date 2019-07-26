@@ -11,11 +11,11 @@ visible: true
 
 &nbsp;
 
-<img src="https://www.parrotsec.org/docs/img/parrot.svg" width="200">
+<img src="https://docs.parrot.sh/img/parrot.svg" width="200">
 
 &nbsp;
 
-### If you can't find the answer here, or in our [FAQ](https://www.parrotsec.org/docs/faq/) please post on the [forum](https://community.parrotsec.org/c/support/)
+### If you can't find the answer here, or in our [FAQ](https://docs.parrot.sh/faq/) please post on the [forum](https://community.parrotsec.org/c/support/)
 &nbsp;
 
 ---
@@ -24,7 +24,7 @@ If you've never used Linux we suggest you look at this course by the Linux found
 </b>
 
 NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)<br>
-(looking for how to install? see [here](https://www.parrotsec.org/docs/getting-started/start/))
+(looking for how to install? see [here](https://docs.parrot.sh/getting-started/start/))
 ### Setup and Configuration
 
 - [System Requirements](system-requirements.md) 
@@ -71,4 +71,4 @@ Looking for Dev resources?
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

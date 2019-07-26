@@ -75,7 +75,7 @@ You can then resize it normally, and BitLocker will be re-enabled on the partiti
 
 **Create Bootable USB/DVD:**
 
-Next, make installation media for your Parrot Security system. You can download the ISO file from[[https://www.parrotsec.org/download.fx]] and burn it to a disk or create a bootable USB drive. Reboot your computer and it should automatically boot from the installation media you’ve inserted. If not, you’ll need to change its boot order or use the UEFI boot menu to boot from a device.
+Next, make installation media for your Parrot Security system. You can download the ISO file from[[https://www.parrot.sh/download.fx]] and burn it to a disk or create a bootable USB drive. Reboot your computer and it should automatically boot from the installation media you’ve inserted. If not, you’ll need to change its boot order or use the UEFI boot menu to boot from a device.
 
 On some newer PCs, your PC may refuse to boot from the Linux installation media because Secure Boot is enabled. Many Linux distributions will now boot normally on Secure Boot systems, but not all of them. You may need to disable Secure Boot before installing Parrot Security.
 
@@ -93,4 +93,4 @@ But normally Parrot Security's GRUB does respond well if installed correctly and
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)

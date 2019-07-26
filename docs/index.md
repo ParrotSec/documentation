@@ -8,7 +8,7 @@ An important part of any operating system is documentation, the technical manual
 The documentation is still under construction, and all the Parrot users are invited to contribute to the creation and translation process of this portal.
 
 
-![screenshot](https://www.parrotsec.org/docs/img/screenshot.png)
+![screenshot](https://docs.parrot.sh/img/screenshot.png)
 
 &nbsp;
 

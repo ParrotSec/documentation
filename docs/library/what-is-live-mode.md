@@ -14,8 +14,8 @@ This is possible because the system is not loaded onto the system's hard drive, 
 
 Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.
 
-To create a live boot device please read this [page](https://www.parrotsec.org/docs/getting-started/create-boot-device/).
-To learn how to boot from the live media read this [page](https://www.parrotsec.org/docs/getting-started/how-to-boot/) instead.
+To create a live boot device please read this [page](https://docs.parrot.sh/getting-started/create-boot-device/).
+To learn how to boot from the live media read this [page](https://docs.parrot.sh/getting-started/how-to-boot/) instead.
 
 ## Default username and password
 In live mode, the default username is "user" and the default password is "toor".
@@ -29,4 +29,4 @@ In live mode, the default username is "user" and the default password is "toor".
 
 &nbsp;
 
-[Using Parrot](https://www.parrotsec.org/docs/info/start/) | [Troubleshooting](https://www.parrotsec.org/docs/trbl/start/) | [Linux Beginner Guide](https://www.parrotsec.org/docs/library/lbg-basics/) | [Home](https://www.parrotsec.org/docs/)
+[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)
