@@ -25,6 +25,14 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 ***
 
+### ProDefence SRL
+
+[ProDefence SRL](https://www.prodefence.ro/) is an IT company dedicated to cyber security services, protecting companies from vulnerabilities and system penetration, providing security information training to their employees. Company employees can take advantage of the remote support we give anytime anyday to any platform. In addition to this, we analyze any file, as well as, network activity for malware or any other malicious and suspicious activity and help to recover and educate the users involved.
+
+[ProDefence SRL Blog](https://www.prodefence.org/)
+
+***
+
 ### Hack The Box
 
 [Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
