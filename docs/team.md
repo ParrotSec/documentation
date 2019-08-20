@@ -19,9 +19,7 @@ In this page we list contributors and members, past and present, who have contri
 | mibofra          | Francesco Bonanno     | ARM Releases Dev<br>Core Dev<br>Sysadmin<br>IPFS Repository Maintainer | mibofra at parrotsec dot org |
 | nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
 | marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
-| sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
-| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer               | s1udge at parrotsec dot org  |
-
+| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
 
 &nbsp;
 
@@ -30,7 +28,8 @@ In this page we list contributors and members, past and present, who have contri
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | Andi             |                       | Dev                                                             |   | 
 | h0tw4t3r         |                       | Dev <br> Forum Moderator <br> Tutorial Writer <br> Website contributor   | h0tw4t3r at parrotsec dot org | 
-| Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at protonmail dot com    |
+| Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at parrotsec dot org    |
+| disrupt_the_flow |                  | Dev <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
 &nbsp;
 
 # Community Team
@@ -41,17 +40,17 @@ In this page we list contributors and members, past and present, who have contri
 | ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | nemo at parrotsec dot org    |
 | AresX            |                       | Chinese Community Leader <br> Forum Moderator                   | |
 | anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
-| disrupt_the_flow |  | Greek Community Leader <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
+| disrupt_the_flow |         | Greek Community Leader                                                  | disrupt_the_flow at parrotsec dot org|
 |  Mr-B Relax     | Bimantara Sutato Putra | Indonesian Community Leader <br> Forum Moderator                | |
 | Fugu             |                       | French Community Leader <br> Forum Moderator                | |
 | Kratvers         |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
-| xx4h             | Fabian Melters        | German Community Leader <br> Forum Moderator                 | |
-| ku3k3n           |                       | German Community Leader (Alternate) <br> Forum Moderator                   | |
+| ku3k3n             |    | German Community Leader <br> Forum Moderator                 |  |
+| rowie           |                       | German Community Leader (Alternate) <br> Forum Moderator                   | rowie at parrotsec dot org |
 | Nico_Paul        | Nico Gialluca         | English Community Leader <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
 | Kidklown         |                       | English Community  <br> Forum Moderator                          | |
 | Jeff             | Jeff Szydel           | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
-| Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             |                              |
-| mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                        | |
+| Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             | ptd at parrotsec dot org  |
+| mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                     | |
 |   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose at riseup dot net  |
 | KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
 
@@ -62,9 +61,10 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| Serverket        |  Manuel Hernandez     | Design Team Leader                                           |                               |
-| janopineda       |  Alejandro Pineda     |                                                                 |                             |
 | marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
+| Serverket        |  Manuel Hernandez     | Design Team Leader                                             |                          |
+| janopineda       |  Alejandro Pineda     |                                                                 |                             |
+
 &nbsp;
 
 # Contributors
@@ -97,7 +97,7 @@ In this page we list contributors and members, past and present, who have contri
 | Tissy            | Irene Pirrotta        | Former Package Manager                                          |  tissy at parrotsec dot org  |
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
 | Paal             |                       | Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
-
+| sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
 
 &nbsp;
 

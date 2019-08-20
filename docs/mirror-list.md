@@ -7,7 +7,7 @@ visible: true
 ---
 
 ## Introduction
-ParrotOS does not only deliver a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
+The Parrot Project not only delivers a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
 
 The Parrot repository is used to provide officially supported software, system updates and security fixes.
 
@@ -332,7 +332,7 @@ Start the rsync service:
 
 ### Make your mirror official
 
-If you want your mirror to be added to our official mirrors list and to our mirror directors, contact us with the following email: team AT parrotsec DOT org
+If you want your mirror to be added to our official mirrors list and to our mirror directors, email us at team AT parrotsec DOT org
 
 
 

@@ -17,11 +17,22 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ***
 
+### CS-Academy
+
+![logo](/img/cs-academy.png)
+
+CS-Academy is an Spanish-language online training center that provides Cybersecurity and Ethical Hacking training courses, Pentesting services, digital forensics analysis and incidents response for individuals and companies.
+
+[About CS-Academy](https://cs-academy.org/) (en español)
+
+***
+
 ### FSecurity Academy
+
 
 Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
-[About FSecurity Academy](https://www.fsecurityacademy.com/about/)
+[About FSecurity Academy](https://www.fsecurityacademy.com/#partner) (en español)
 
 ***
 
@@ -29,7 +40,7 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 [ProDefence SRL](https://www.prodefence.ro/) is an IT company dedicated to cyber security services, protecting companies from vulnerabilities and system penetration, providing security information training to their employees. Company employees can take advantage of the remote support we give anytime anyday to any platform. In addition to this, we analyze any file, as well as, network activity for malware or any other malicious and suspicious activity and help to recover and educate the users involved.
 
-[ProDefence SRL Blog](https://www.prodefence.org/)
+[ProDefence SRL Blog](https://www.prodefence.org/) 
 
 ***
 
@@ -41,11 +52,7 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 ### Leaseweb Global B.V.
 
-Leaseweb is a global Infrastructure-as-a-Service (IaaS) provider offering customers hosting solutions to boost their business while cutting costs. 
-
-### KNXSecurity
-
-KNXSecurity is an Italian community dedicated to cyber security training that helps us by testing the beta images of Parrot before the final release.
+[Leaseweb](https://www.leaseweb.com/about) is a global Infrastructure-as-a-Service (IaaS) provider offering customers hosting solutions to boost their business while cutting costs. 
 
 ***
 
