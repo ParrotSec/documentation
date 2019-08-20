@@ -33,9 +33,11 @@ Adopt us and support our work!
 
 ## Bitcoin
 
-Bitcoin Address
+Bitcoin Address (NEW - 2019/08/20)
 
-BTC: 1NB1xDyiSigYNL5gaNXANvP6bYmHr77N1Q
+    BTC: 1PaRrotouWgDVeiGTaoGRdXYQdFcjoo7fw
+
+former address was: 1NB1xDyiSigYNL5gaNXANvP6bYmHr77N1Q
 
 ----
 
@@ -43,7 +45,7 @@ BTC: 1NB1xDyiSigYNL5gaNXANvP6bYmHr77N1Q
 
 Litecoin Address
 
-LTC: LR5Lxq2M5ijEgLryi6aNd2iFMpxT7pgEKL 
+    LTC: LR5Lxq2M5ijEgLryi6aNd2iFMpxT7pgEKL 
 
 ----
 
