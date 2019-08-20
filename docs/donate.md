@@ -36,6 +36,7 @@ Adopt us and support our work!
 Bitcoin Address (NEW - 2019/08/20)
 
     BTC: 1PaRrotouWgDVeiGTaoGRdXYQdFcjoo7fw
+    BTC SegWit: bc1qf9krvsmktwkjge2rfaug08233zh20l3a0dlyk4
 
 former address was: 1NB1xDyiSigYNL5gaNXANvP6bYmHr77N1Q
 
