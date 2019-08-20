@@ -22,7 +22,7 @@ and a gateway to spread innovative ideas born inside it's community.
 ### Join Our Community
 &nbsp;
 
-<a href="https://community.parrotsec.org" class="btn btn-default btn-success"><strong>Parrot Community Forum</strong></a>
+<a href="https://community.parrot.sh" class="btn btn-default btn-success"><strong>Parrot Community Forum</strong></a>
 
 ### Chat with us on Matrix / Riot.im
 
@@ -78,7 +78,7 @@ Our community lives in several places, here are some links to stay in touch with
 
 ### Local Communities
 
-<a href="https://community.parrotsec.org/c/community/ar" class="btn btn-default btn-primary"><strong>Arabic Community</strong></a>  <a href="https://t.me/joinchat/ParrotArabic" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/ar" class="btn btn-default btn-primary"><strong>Arabic Community</strong></a>  <a href="https://t.me/joinchat/ParrotArabic" class="btn btn-default">Telegram</a>
 
 ----
 
@@ -86,39 +86,39 @@ Our community lives in several places, here are some links to stay in touch with
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/fr" class="btn btn-default btn-primary"><strong>French Community</strong></a>  <a href="https://t.me/ParrotSecFrance" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/fr" class="btn btn-default btn-primary"><strong>French Community</strong></a>  <a href="https://t.me/ParrotSecFrance" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/de" class="btn btn-default btn-primary"><strong>German Community</strong></a>  <a href="https://t.me/ParrotSecGer" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/de" class="btn btn-default btn-primary"><strong>German Community</strong></a>  <a href="https://t.me/ParrotSecGer" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/parrotsecgr" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/gr" class="btn btn-default btn-primary"><strong>Greek Community</strong></a>  <a href="https://t.me/parrotsecgr" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/in" class="btn btn-default btn-primary"><strong>Indian Community</strong></a>  <a href="https://t.me/parrotsecindia" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/in" class="btn btn-default btn-primary"><strong>Indian Community</strong></a>  <a href="https://t.me/parrotsecindia" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/BykV5UL_Y5Z1KOY81UxicA" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/it" class="btn btn-default btn-primary"><strong>Italian Community</strong></a>  <a href="https://t.me/joinchat/BykV5UL_Y5Z1KOY81UxicA" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/id" class="btn btn-default btn-primary"><strong>Indonesian Community</strong></a>  <a href="https://t.me/parrotsecurityindonesia" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/id" class="btn btn-default btn-primary"><strong>Indonesian Community</strong></a>  <a href="https://t.me/parrotsecurityindonesia" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/es" class="btn btn-default btn-primary"><strong>Spanish Community</strong></a>  <a href="https://t.me/ParrotSpanishGroup" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/es" class="btn btn-default btn-primary"><strong>Spanish Community</strong></a>  <a href="https://t.me/ParrotSpanishGroup" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/ru" class="btn btn-default btn-primary"><strong>Russian Community</strong></a>  <a href="https://t.me/ParrotSecRU" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/ru" class="btn btn-default btn-primary"><strong>Russian Community</strong></a>  <a href="https://t.me/ParrotSecRU" class="btn btn-default">Telegram</a>
 
 ----
 
-<a href="https://community.parrotsec.org/c/community/tr" class="btn btn-default btn-primary"><strong>Turkish Community</strong></a>  <a href="https://t.me/parrotsecturkey" class="btn btn-default">Telegram</a>
+<a href="https://community.parrot.sh/c/community/tr" class="btn btn-default btn-primary"><strong>Turkish Community</strong></a>  <a href="https://t.me/parrotsecturkey" class="btn btn-default">Telegram</a>
 
 
 &nbsp;

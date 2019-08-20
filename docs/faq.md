@@ -79,7 +79,7 @@ If the bug involves a specific piece of software maintained by Parrot, then sear
 
 If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.
 
-If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotsec.org/c/development/)
+If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrot.sh/c/development/)
 
 ### What should my sources.list look like?
 
@@ -88,10 +88,10 @@ If you are not sure what software is involved, or if you don't know how to conta
 `/etc/apt/sources.list.d/parrot.list` should contain the following content
 
 ```bash
-deb https://deb.parrotsec.org/parrot/ rolling main contrib non-free
-#deb-src https://deb.parrotsec.org/parrot/ rolling main contrib non-free
-deb https://deb.parrotsec.org/parrot/ rolling-security main contrib non-free
-#deb-src https://deb.parrotsec.org/parrot/ rolling-security main contrib non-free
+deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling main contrib non-free
+deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
 ```
 
 
@@ -133,7 +133,7 @@ Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://doc
 
 ### How can I disable the GUI update reminder? 
 
-Please see [here](https://community.parrotsec.org/t/parrot-updater/1485/2)
+Please see [here](https://community.parrot.sh/t/parrot-updater/1485/2)
 
 ### I can't login at startup as root?
 
