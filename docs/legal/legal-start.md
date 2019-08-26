@@ -31,7 +31,7 @@ The Parrot and Frozenbox logos (below) are registered trademarks of Lorenzo "Pal
 
 All other trademarks are property of their respective owners.    
 
-<a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html"></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ParrotOS source code</span> by the <a xmlns:cc="http://creativecommons.org/ns#" href="https://docs.parrot.sh/team/" property="cc:attributionName" rel="cc:attributionURL">Parrot Team</a><br> Copyright © Lorenzo "Palinuro" Faletra 2013-2019 some rights reserved. <br> Licensed under a <a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GENERAL PUBLIC LICENSE v3</a>.
+<a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html"></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ParrotOS source code</span> by the <a xmlns:cc="http://creativecommons.org/ns#" href="https://docs.parrotlinux.org/team/" property="cc:attributionName" rel="cc:attributionURL">Parrot Team</a><br> Copyright © Lorenzo "Palinuro" Faletra 2013-2019 some rights reserved. <br> Licensed under a <a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GENERAL PUBLIC LICENSE v3</a>.
 
 &nbsp;
 

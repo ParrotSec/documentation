@@ -1,14 +1,14 @@
 
 # Home
 
-For the Parrot Project homepage, visit [parrotsec.org](https://parrotsec.org).
+For the Parrot Project homepage, visit [parrotlinux.org](https://parrotlinux.org).
 
 An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.
 
 The documentation is a continuous work in progress, and all Parrot users are invited to contribute to the creation and translation process of this portal.
 
 
-![screenshot](https://docs.parrot.sh/img/screenshot.png)
+![screenshot](https://docs.parrotlinux.org/img/screenshot.png)
 
 &nbsp;
 
@@ -31,7 +31,7 @@ The documentation is a continuous work in progress, and all Parrot users are inv
 
 ### Infrastructure Zone
 
-- [CDN Speedtest](https://deb.parrotsec.org/speedtest)
+- [CDN Speedtest](https://deb.parrot.sh/speedtest)
 
 - [Parrot's Network Map](weathermap.md)
 

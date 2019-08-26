@@ -149,5 +149,5 @@ also possible with the --paranoid parameter
 Profiles in complain mode will send ALLOWED lines in the logs for entries that would normally be DENIED in enforce mode. You can use this to tweak configurations before turning them on in enforce mode. 
 &nbsp;
 
-[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/) 
+[Using Parrot](https://docs.parrotlinux.org/info/start/) | [Troubleshooting](https://docs.parrotlinux.org/trbl/start/) | [Linux Beginner Guide](https://docs.parrotlinux.org/library/lbg-basics/) | [Home](https://docs.parrotlinux.org/) 
 

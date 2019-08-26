@@ -20,6 +20,7 @@ In this page we list contributors and members, past and present, who have contri
 | nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
 | marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
+| Tissy            | Irene Pirrotta        | Former Package Manager                                          |  tissy at parrotsec dot org  |
 
 &nbsp;
 
@@ -94,7 +95,6 @@ In this page we list contributors and members, past and present, who have contri
 | gnugr            | Vangelis Mouhtsis     | Debian/MATE<br>Greek Community Leader                           | gnugr at parrotsec dot org   |
 |                  | Tiago Teixeira        |                                | |
 |                  | Andrea Costa          | Website contributor   | |
-| Tissy            | Irene Pirrotta        | Former Package Manager                                          |  tissy at parrotsec dot org  |
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
 | Paal             |                       | Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
 | sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
@@ -103,5 +103,5 @@ In this page we list contributors and members, past and present, who have contri
 
 &nbsp;
 
-[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)
+[Using Parrot](https://docs.parrotlinux.org/info/start/) | [Troubleshooting](https://docs.parrotlinux.org/trbl/start/) | [Linux Beginner Guide](https://docs.parrotlinux.org/library/lbg-basics/) | [Home](https://docs.parrotlinux.org/)
   
