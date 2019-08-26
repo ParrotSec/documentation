@@ -19,8 +19,6 @@ The collaboration consists in a friendly partnership where we help Caine in its 
 
 ### CS-Academy
 
-![logo](/img/cs-academy.png)
-
 CS-Academy is an Spanish-language online training center that provides Cybersecurity and Ethical Hacking training courses, Pentesting services, digital forensics analysis and incidents response for individuals and companies.
 
 [About CS-Academy](https://cs-academy.org/) (en español)
@@ -243,4 +241,4 @@ Cythin.com - France | Canada
 
 &nbsp;
 
-[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)
+[Using Parrot](https://docs.parrotlinux.org/info/start/) | [Troubleshooting](https://docs.parrotlinux.org/trbl/start/) | [Linux Beginner Guide](https://docs.parrotlinux.org/library/lbg-basics/) | [Home](https://docs.parrotlinux.org/)

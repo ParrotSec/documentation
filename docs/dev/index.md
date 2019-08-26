@@ -12,7 +12,7 @@ This section is dedicated to the Parrot project development.
 This section is under heavy development and many pages were not written
 or reviewed yet.
 
-[Contact our dev team](https://docs.parrot.sh/community/team/) with the subject line "DEV HELP" if you need help and we will get back to you as soon as possible.
+[Contact our dev team](https://docs.parrotlinux.org/community/team/) with the subject line "DEV HELP" if you need help and we will get back to you as soon as possible.
 
 ![screenshot](../img/developer-background.jpg)
 
@@ -54,4 +54,4 @@ WIP
 
 &nbsp;
 
-[Using Parrot](https://docs.parrot.sh/info/start/) | [Troubleshooting](https://docs.parrot.sh/trbl/start/) | [Linux Beginner Guide](https://docs.parrot.sh/library/lbg-basics/) | [Home](https://docs.parrot.sh/)
+[Using Parrot](https://docs.parrotlinux.org/info/start/) | [Troubleshooting](https://docs.parrotlinux.org/trbl/start/) | [Linux Beginner Guide](https://docs.parrotlinux.org/library/lbg-basics/) | [Home](https://docs.parrotlinux.org/)
