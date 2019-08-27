@@ -17,7 +17,8 @@ You fork the repository you want to contribute to. > You make your changes and G
 - whatever code you are attempting to change.
 
 ### Requirements to contribute:
-- GPG-sign your commits
+- GPG-sign your commits.
+  - Commits which are 10 characters or less do not need to be signed with GPG, and can be done with Gitlab tools (like the WebIDE or the modify option) unless the change will have a significant impact (such as IP addresses or boolean responses).
 - Code must adhere to the [GNU Coding Standards](https://www.gnu.org/prep/standards/).
 - If you added more than 5 lines of code or a significant feature, update the changelog
 - Write concise commit comments and add tags as appropriate.
