@@ -17,7 +17,6 @@ In this page we list contributors and members, past and present, who have contri
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
 | mibofra          | Francesco Bonanno     | ARM Releases Dev<br>Core Dev<br>Sysadmin<br>IPFS Repository Maintainer | mibofra at parrotsec dot org |
-| nikksno          | Nicolas North         | Sysadmin<br>legal shit                                          |      nz at os dot vu         |
 | marafed          | Federica Marasà       | Graphic Designer <br> UX/UI lead                                | marafed at parrotsec dot org |
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
 | Tissy            | Irene Pirrotta        | Package Manager <br> Social Media                               |  tissy at parrotsec dot org  |
@@ -31,7 +30,7 @@ In this page we list contributors and members, past and present, who have contri
 | Andi             |                       | Dev                                                             |   | 
 | h0tw4t3r         |                       | Dev <br> Forum Moderator <br> Tutorial Writer <br> Website contributor   | h0tw4t3r at parrotsec dot org | 
 | Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at parrotsec dot org    |
-| disrupt_the_flow |                  | Dev <br> Docs writer <br> Telegram Admin <br> Forum Moderator     | disrupt_the_flow at parrotsec dot org|
+| disrupt_the_flow |                  | Dev <br> Docs writer <br> Telegram Admin      | disrupt_the_flow at parrotsec dot org|
 &nbsp;
 
 # Community Team
@@ -42,7 +41,7 @@ In this page we list contributors and members, past and present, who have contri
 | ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | nemo at parrotsec dot org    |
 | AresX            |                       | Chinese Community Leader <br> Forum Moderator                   | |
 | anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
-| disrupt_the_flow |         | Greek Community Leader                                                  | disrupt_the_flow at parrotsec dot org|
+| disrupt_the_flow |         | Greek Community Leader <br> Forum Moderator                                | disrupt_the_flow at parrotsec dot org|
 |  Mr-B Relax     | Bimantara Sutato Putra | Indonesian Community Leader <br> Forum Moderator                | |
 | Fugu             |                       | French Community Leader <br> Forum Moderator                | |
 | Kratvers         |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
@@ -74,7 +73,7 @@ In this page we list contributors and members, past and present, who have contri
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | v1s1t0r          |                       | Airgeddon Creator/Maintainer                                | v1s1t0r.1s.h3r3 at gmail dot com |
-
+| nikksno          | Nicolas North         | Sysadmin<br>legal support                                       |      nz at os dot vu         |
 &nbsp;
 
 # Special Thanks
@@ -93,12 +92,12 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br>Greek Community Leader                           | gnugr at parrotsec dot org   |
+| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br> Former Greek Community Leader                    | gnugr at parrotsec dot org   |
 |                  | Tiago Teixeira        |                                | |
 |                  | Andrea Costa          | Website contributor   | |
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
-| Paal             |                       | Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
-| sheireen         | Lisetta Ferrero       | Core Dev                                                        | sheireen at parrotsec dot org | 
+| Paal             |                       | Former Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
+| sheireen         | Lisetta Ferrero       | Former Core Dev                                                        | sheireen at parrotsec dot org | 
 
 &nbsp;
 
