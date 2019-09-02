@@ -70,7 +70,7 @@ We have a set of prerequisites to check before a tool makes its way into our rep
 and more[...];
 
 
-If the answers were “Yes” we're more than glad to take your request via our [Community Portal](https://community.parrot.sh/c/development).
+If the answers were “Yes” we're more than glad to take your request via our [Community Portal](https://community.parrotlinux.org/c/development).
 
 
 ### Where can bugs be submitted?
@@ -79,7 +79,7 @@ If the bug involves a specific piece of software maintained by Parrot, then sear
 
 If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.
 
-If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrot.sh/c/development/)
+If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotlinux.org/c/development/)
 
 ### What should my sources.list look like?
 
@@ -133,7 +133,7 @@ Uh no. Nooope. . . You do not know deh way. <br>Seriously, [reading](https://doc
 
 ### How can I disable the GUI update reminder? 
 
-Please see [here](https://community.parrot.sh/t/parrot-updater/1485/2)
+Please see [here](https://community.parrotlinux.org/t/parrot-updater/1485/2)
 
 ### I can't login at startup as root?
 
