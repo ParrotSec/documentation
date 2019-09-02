@@ -97,9 +97,11 @@ NOTE:
 
 
 ### Content of /etc/apt/sources.list.d/parrot.list:
-```
-    deb https://deb.parrotsec.org/parrot stable main contrib non-free
-    #deb-src https://deb.parrotsec.org/parrot stable main contrib non-free
+```bash
+deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling main contrib non-free
+deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+#deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
 ```
 
 
