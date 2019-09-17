@@ -39,6 +39,8 @@ from <a target="_blank" href="https://riot.im">Riot.im</a> or any other <a targe
 <a href="https://twitter.com/parrotsec" target="_blank" class="btn btn-primary">Twitter</a>
 <a href="https://www.youtube.com/channel/UCj2dezzTc_Oy9eAEwBBodpw" target="_blank" class="btn btn-primary">Youtube</a>
 <a href="https://telegram.me/parrotsec" target="_blank" class="btn btn-primary">Telegram channel</a>
+<a href="https://www.instagram.com/parrotproject/" target="_blank" class="btn btn-primary">Instagram page</a>
+
 
 &nbsp;
 
