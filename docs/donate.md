@@ -49,6 +49,36 @@ Litecoin Address
     LTC: LR5Lxq2M5ijEgLryi6aNd2iFMpxT7pgEKL 
 
 ----
+## Stellar Lumens
+
+Stellar Address
+
+    XLM: GA7OVMQNTET4ZDUZSUFADOQUFENNMB3PNJCQFWQDBNW5Q2VI4FW2WYXE
+    Memo is optional.
+
+----
+
+## Ethereum
+
+Ethereum Address
+
+    ETH: 0x7e6138783c7dbDd09dE19Ca0F186d5DC82B48172
+----
+
+## Bitcoin Cash
+
+Bitcoin Cash Address
+
+    BCH: qz6m0kw2az6xnntqs5a6nas3sedjxpvqx50c74p6n8
+
+----
+## Basic Attention Tokens
+
+Basic Attention Tokens Address
+From the Brave Browser guys
+
+    BAT: 0xf6c6A3A2fB14e8606530074bf7F18D73965972c2
+----
 
 ## Merch
 <html><a href="http://frozenbox.spreadshirt.net/" target="_blank" class="btn btn-primary">Spreadshirt Store</a></html>
