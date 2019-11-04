@@ -17,9 +17,8 @@ In this page we list contributors and members, past and present, who have contri
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
 | mibofra          | Francesco Bonanno     | ARM Releases Dev<br>Core Dev<br>Sysadmin<br>IPFS Repository Maintainer | mibofra at parrotsec dot org |
-| marafed          | Federica Marasà       | Graphic Designer <br> UX/UI lead                                | marafed at parrotsec dot org |
-| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
-| Tissy            | Irene Pirrotta        | Package Manager <br> Social Media                               |  tissy at parrotsec dot org  |
+| marafed          | Federica Marasà       | Project Manager <br> Package Maintainer <br> Graphic Designer   | marafed at parrotsec dot org |
+| Tissy            | Irene Pirrotta        | Project Manager <br> Package Maintainer <br> Social Media Manager |  tissy at parrotsec dot org  |
 
 
 &nbsp;
@@ -63,7 +62,7 @@ In this page we list contributors and members, past and present, who have contri
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
-| Serverket        |  Manuel Hernandez     | Design Team Leader                                             |                          |
+| Serverket        |  Manuel Hernandez     | Graphic Designer                                             |                          |
 | janopineda       |  Alejandro Pineda     |                                                                 |                             |
 
 &nbsp;
@@ -72,7 +71,7 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| v1s1t0r          |                       | Airgeddon Creator/Maintainer                                | v1s1t0r.1s.h3r3 at gmail dot com |
+| v1s1t0r          |                       | Airgeddon Creator/Maintainer                                    | v1s1t0r.1s.h3r3 at gmail dot com |
 | nikksno          | Nicolas North         | Sysadmin<br>legal support                                       |      nz at os dot vu         |
 &nbsp;
 
