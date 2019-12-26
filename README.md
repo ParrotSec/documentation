@@ -46,7 +46,6 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, 
 | ---------------- | ------------------ | --------------------------------- |
 | palinuro         | Lorenzo Faletra    |   palinuro at parrotsec dot org   |
 | Jeff             | Jeff Szydel        |     jeff at parrotsec dot org     |
-| s1udge           |                    |   s1udge at parrotsec dot org     |
 | h0tw4t3r         |                    |   h0tw4t3r at parrotsec dot org   | 
 | Dm Knght         | Nông Hoàng Tú      |  dmknght at protonmail dot com    |
 | terabreik        | Jose Gatica        |   josegatica at parrotsec dot org |
