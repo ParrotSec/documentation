@@ -30,6 +30,7 @@ In this page we list contributors and members, past and present, who have contri
 | h0tw4t3r         |                       | Dev <br> Forum Moderator <br> Tutorial Writer <br> Website contributor   | h0tw4t3r at parrotsec dot org | 
 | Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at parrotsec dot org    |
 | disrupt_the_flow |                  | Dev <br> Docs writer <br> Telegram Admin      | disrupt_the_flow at parrotsec dot org|
+| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br> Former Greek Community Leader                    | gnugr at parrotsec dot org   |
 &nbsp;
 
 # Community Team
@@ -91,7 +92,6 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| gnugr            | Vangelis Mouhtsis     | Debian/MATE<br> Former Greek Community Leader                    | gnugr at parrotsec dot org   |
 |                  | Tiago Teixeira        |                                | |
 |                  | Andrea Costa          | Website contributor   | |
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
