@@ -24,13 +24,13 @@ It is highly recommended **NOT** to use programs like **unetbootin**, or any pro
 
 ## How to create a Parrot USB drives 
 
-To create a Parrot bootable device you need a USB drive of at least 4gb for the security edition or 2gb for the home edition
+To create a Parrot bootable device you need a USB drive of at least 4gb for the Security edition or 2gb for the Home edition
 
 ## __Etcher__
 
 Our official ISO Writing Tool is [Etcher - www.etcher.io](https://www.etcher.io).
 
-It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well. We **highly** suggest Etcher over all other methods.
+It works on GNU/Linux, Mac OS and Windows. We **highly** suggest Etcher over all other methods.
 
 ![Etcher](../img/etcher.png)
 
@@ -38,7 +38,7 @@ It works on GNU/Linux, Mac OS and Windows, it does one thing and it does it well
 
 ## __DD__
 
-__[dd](https://en.wikipedia.org/wiki/Dd_(Unix))__ (and its derivatives) is a command line tool integrated in every unix and unix-like system, and it can be used to write the ISO file into a block device bit per bit. Due to the potential to brick your system if you are not familiar with linux we recommend that you use Etcher.
+__[dd](https://en.wikipedia.org/wiki/Dd_(Unix))__ (and its derivatives) is a command line tool integrated in every UNIX and UNIX-like system, and it can be used to write the ISO file into a block device bit per bit. Due to the potential to brick your system, if you are not familiar with Linux we strongly recommend to use Etcher.
 
 
 ![DD](../img/dd.png)
