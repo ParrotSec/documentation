@@ -97,6 +97,7 @@ In this page we list contributors and members, past and present, who have contri
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
 | Paal             |                       | Former Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
 | sheireen         | Lisetta Ferrero       | Former Core Dev                                                        | sheireen at parrotsec dot org | 
+| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
 
 &nbsp;
 
