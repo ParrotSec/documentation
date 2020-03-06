@@ -43,7 +43,7 @@ In this page we list contributors and members, past and present, who have contri
 | anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
 | disrupt_the_flow |         | Greek Community Leader <br> Forum Moderator                                | disrupt_the_flow at parrotsec dot org|
 |  Mr-B Relax     | Bimantara Sutato Putra | Indonesian Community Leader <br> Forum Moderator                | |
-| Fugu             |                       | French Community Leader <br> Forum Moderator                | |
+| Jarfr             | Jérôme Brichese                      | French Community Leader <br> Forum Moderator                | jarfr at parrotsec dot org |
 | Kratvers         |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
 | ku3k3n             |    | German Community Leader <br> Forum Moderator                 |  |
 | rowie           |                       | German Community Leader (Alternate) <br> Forum Moderator                   | rowie at parrotsec dot org |
