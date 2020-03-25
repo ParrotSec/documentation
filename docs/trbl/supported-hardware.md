@@ -7,7 +7,7 @@ visible: true
 ---
 
 # What ParrotOS supports (and doesn't)
-#### *NOTE: this list is a work in progress and not all inclusive. <br> Please email s1udge AT parrotsec DOT org or leave a comment on the forums [here](https://community.parrotsec.org/t/what-parrot-supports/5674)*
+#### *NOTE: this list is a work in progress and not all inclusive. <br> Please email tissy AT parrotsec DOT org or leave a comment on the forums [here](https://community.parrotsec.org/t/what-parrot-supports/5674)*
 
 ### Hardware
 #### Processors
@@ -54,7 +54,6 @@ Other
 
 Functions enabled by default.
 
-- Firejail
 - AppArmor
 - uBlock Origin
 - Noscript
