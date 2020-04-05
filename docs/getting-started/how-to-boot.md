@@ -30,25 +30,25 @@ If you're using a very old computer you might not be able to boot your system fr
 
 #### New computers
 
-Most laptops allow you to access the booting menu pressing F2 or F12; for most desktop computers press F8; for other kind of devices try pressing esc, F12, f11 or F10. Google your manufacturer to find out what makes your system barf up its BIOS.
+Most laptops allow you to access BIOS/Ueffi screen and/or booting menu pressing F2 or F12; for most desktop computers press F8; for other kind of devices try pressing esc, F12, f11 or F10. Google your manufacturer to find out what makes your system barf up its BIOS.
 
 ---
 
-#### Option disabled
+#### Boot Menu disabled
 
-For some computers, the booting menu may be disabled by default: you will have to access the BIOS settings and enable such option, reboot the computer and press the right key to access the booting menu.
+For some computers, the booting menu may be disabled by default: you will have to access the BIOS settings and enable it, then reboot the computer and press the right key to access the booting menu.
 
 ---
 
-#### Option is not available
+#### Boot Menu not available
 
-Some computers allow you to boot the system from USB drives but don't display a menu to select the booting device. If this is your case you need to access the BIOS settings, go to the booting panel and change the order of which booting devices, placing the USB drive on top of the list. Then simply reboot the computer and the BIOS will choose the USB drive as a booting device.
+Some computers allow you to boot the system from USB drives but don't display a menu to select the booting device. If this is your case, you need to access the BIOS settings, go to the booting panel and change the order of booting devices, placing the USB drive on top of the list. Then simply reboot the computer and the BIOS will boot from USB drive.
 
 ---
 
 #### Secure boot
 
-In case you have a computer with Secure Boot enabled, you will have to open the BIOS settings, disable secure boot and set it to legacy boot. If your computer doesn't provide a booting menu, follow the instructions displayed on this page in the section above (“option is not available”). If all else fails, google your make and model. It is likely someone has attempted to install Linux also and might have a solution. 
+In case you have a computer with Secure Boot enabled, you will have to access the BIOS settings, disable secure boot and set it to legacy boot. If your computer doesn't provide a booting menu, follow the instructions displayed on this page in the section above (“Boot Menu not available”). If all else fails, google your make and model. Someone who attempted to install Linux might have a solution. 
 
 ---
 
@@ -63,30 +63,30 @@ You can boot a DVD by using the standard procedure for the USB drive as describe
 
 ### MAC
 
-#### DVD method on old MACs
+#### Booting DVD on old MACs
 
 Turn on your computer, insert the DVD straightaway and press the C key as soon as you hear the beep signaling the computer has been turned on. Release the button after a few seconds, as soon as you hear the DVD has started working.
 
-#### Standard method
+#### Standard Booting
 
  Insert the Parrot boot device during the booting step and press the ALT key: keep it pressed until the booting device menu has been displayed.
 
 ---
 
-## What is live mode
+## What is live mode?
 
-The live mode is a special boot mode offered by many linux distributions, including Parrot OS, which allows the users to load a fully working linux environment without the need to install it.
+The live mode is a special boot mode offered by many Linux distributions, including Parrot OS, which allows the users to load a fully working Linux environment without installing it.
 
-This is possible because the system is not loaded onto the system's hard drive, instead it is loaded into memory (Random Access Memory).
+This is possible because the system is not loaded onto the PC's hard drive, instead it is loaded in RAM (Random Access Memory).
 
-Parrot OS offers the ability to install the OS while in a live environment, use all the tools and even create a persistent live environment.
+Parrot OS allows you to install the OS while in a live environment, use all the tools and even create a persistent live environment.
 
 To create a live boot device please read this [page](create-boot-device.md).
 
 ---
 
 ## Default username and password
-In a Parrot OS live environment the default username is "user" and the default password is "live". (if live does not work, try toor)
+In Parrot OS live environment, the default username is "user" and the default password is "live". (if live does not work, try toor)
 
 
 
