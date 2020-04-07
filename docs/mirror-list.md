@@ -205,32 +205,32 @@ You can sync the entire repository or pick just the ISO images.
 
 Make sure to have enough free space to host a mirror, and be ready for future upgrades as the archive size fluctuates.
 
-The current archive size is available here [archive.parrotsec.org/parrot/misc/archive-size.txt](https://archive.parrotsec.org/parrot/misc/archive-size.txt)
+The current archive size is available here [archive.parrotsec.org/parrot/misc/archive-size.txt](https://deb.parrotsec.org/parrot/misc/archive-size.txt)
 
 ---
 
 ### Choose the upstream server
 
-We handle several domains for repository syncing services, we suggest you use `archive.parrotsec.org` for automatic and failproof setups, but upstream settings can be adjusted in case of specific needs.
+We handle several domains for repository syncing services, we suggest you use `rsync.parrot.sh` for automatic and failproof setups, but upstream settings can be adjusted in case of specific needs.
 
 Feel free to contact the Parrot team if you have specific mirroring needs or bandwidth limitations. We can provide you dedicated upstream sources or professional support for your mirror.
 
 <pre>
 Main Mirror Director:
-    archive.parrotsec.org
+    rsync.parrot.sh
 
 Global Zones (read the notes):
     EMEA:
-        emea.archive.parrotsec.org
+        emea.rsync.parrot.sh
     NCSA:
-        ncsa.archive.parrotsec.org
+        ncsa.rsync.parrot.sh
     APAC:
-        apac.archive.parrotsec.org
+        apac.rsync.parrot.sh
 </pre>
 
 Single archives may be unavailable or replaced form time to time.
 
-`archive.parrotsec.org` is automatically balanced between all the available mirrors and will give you zero downtimes.
+`rsync.parrot.sh` is automatically balanced between all the available mirrors and will give you zero downtimes.
 
 
 ### Download the archive
@@ -241,7 +241,7 @@ ISO files are included by default!
 
 #### Sync the repository
 
-<pre>rsync -Pahv --delete-after rsync://archive.parrotsec.org:/parrot /var/www/html/parrot</pre>
+<pre>rsync -Pahv --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot</pre>
 
 #### Configure a cronjob
 
@@ -251,7 +251,7 @@ launch the following command:
 
 and add the following content to the crontab file:
 
-`*/10 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://archive.parrotsec.org:/parrot /var/www/html/parrot'`
+`*/10 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot'`
 
 
 
@@ -265,7 +265,7 @@ use the following instructions if you want to sync only the ISO files.
 
 #### Sync the repository
 
-<pre>rsync -Pahv --delete-after rsync://archive.parrotsec.org:/parrot-iso /var/www/html/parrot</pre>
+<pre>rsync -Pahv --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot</pre>
 
 #### Configure a cronjob
 
@@ -275,7 +275,7 @@ launch the following command:
 
 and add the following content to the crontab file:
 
-`30 2 * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://archive.parrotsec.org:/parrot-iso /var/www/html/parrot'`
+`30 2 * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot'`
 
 
 ### Expose your mirror via rsync
@@ -298,7 +298,7 @@ paste the following settings in the config file and save it:
 
 <pre>
 [parrot]
-        comment = Parrot OS - full archive [archive.parrotsec.org/parrot]
+        comment = Parrot OS - full archive [rsync.parrot.sh/parrot]
         path = /var/www/html/parrot/
         hosts allow = *
         #hosts deny = *
@@ -310,7 +310,7 @@ paste the following settings in the config file and save it:
         dont compress # for better performance
 
 [parrot-iso]
-        comment = Parrot OS - ISO files only [archive.parrotsec.org/parrot-iso]
+        comment = Parrot OS - ISO files only [rsync.parrot.sh/parrot-iso]
         path = /var/www/html/parrot/
         exclude = pool dists
         hosts allow = *
