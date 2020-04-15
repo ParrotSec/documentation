@@ -38,7 +38,7 @@ In this page we list contributors and members, past and present, who have contri
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
 | meu              | M. Emrah Ünsür        | Turkish Community Leader <br> Forum Moderator                    | meu at parrotsec dot org     |
 | terabreik        | Jose Gatica           | Spanish Community Leader <br> Forum Moderator                    | josegatica at parrotsec dot org |
-| ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | nemo at parrotsec dot org    |
+| ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | sandipan at parrotsec dot org    |
 | AresX            |                       | Chinese Community Leader <br> Forum Moderator                   | |
 | anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
 | disrupt_the_flow |         | Greek Community Leader <br> Forum Moderator                                | disrupt_the_flow at parrotsec dot org|
@@ -97,7 +97,8 @@ In this page we list contributors and members, past and present, who have contri
 | Quietwalker      | Manuel Di Vita        | Former free-software licensing consultant | |
 | Paal             |                       | Former Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
 | sheireen         | Lisetta Ferrero       | Former Core Dev                                                        | sheireen at parrotsec dot org | 
-| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev      | s1udge at parrotsec dot org  |
+| s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev             | s1udge at parrotsec dot org  |
+| qr0f1l3r         | Andre Patock         | Contributor  <br> Forum Admin <br>                                     | qr0f1l3r at parrotsec dot org
 
 &nbsp;
 
