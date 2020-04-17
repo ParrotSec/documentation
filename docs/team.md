@@ -98,7 +98,7 @@ In this page we list contributors and members, past and present, who have contri
 | Paal             |                       | Former Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
 | sheireen         | Lisetta Ferrero       | Former Core Dev                                                        | sheireen at parrotsec dot org | 
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev             | s1udge at parrotsec dot org  |
-| qr0f1l3r         | Andre Patock         | Contributor  <br> Forum Admin <br>                                     | qr0f1l3r at parrotsec dot org
+| qr0f1l3r         | Andre Patock         | Contributor  <br> Forum Admin <br>                                     | andrepatock at parrotsec dot org
 
 &nbsp;
 
