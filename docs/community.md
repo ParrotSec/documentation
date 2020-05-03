@@ -122,6 +122,10 @@ Our community lives in several places, here are some links to stay in touch with
 
 <a href="https://community.parrotlinux.org/c/community/tr" class="btn btn-default btn-primary"><strong>Turkish Community</strong></a>  <a href="https://t.me/parrotsecturkey" class="btn btn-default">Telegram</a>
 
+----
+
+<a href="https://community.parrotlinux.org/c/community/br" class="btn btn-default btn-primary"><strong>Brazilian Community</strong></a>  <a href="https://t.me/ParrotOSBR" class="btn btn-default">Telegram</a>
+
 
 &nbsp;
 
