@@ -6,6 +6,15 @@ taxonomy:
 visible: true
 ---
 
+
+## Main Sponsors
+
+### Hack The Box
+
+[Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
+
+***
+
 ## __Collaborations__
 
 ### Caine
@@ -14,6 +23,15 @@ visible: true
 We have an open collaboration channel with Nanni Bassetti, developer of Caine, a GNU/Linux distribution focused on digital forensics.
 
 The collaboration consists in a friendly partnership where we help Caine in its development and testing process and Caine helps us with our digital forensics section.
+
+***
+
+### Zorin OS
+
+
+We love Zorin OS and the amazing work done by its team, and we have some common goals for the future we would like to invest together in.
+
+The collaboration consists in a friendly partnership on some long term plans of both the projects.
 
 ***
 
@@ -42,31 +60,9 @@ Emerging learning resource in Costa Rica that makes use of the Parrot system.
 
 ***
 
-### Hack The Box
-
-[Hack The Box](https://www.hackthebox.eu) is an online platform providing labs and challenges for cyber security training. Users can improve their penetration testing skills and exchange ideas and methodologies with thousands of people in the security field. By employing several social and gamification elements Hack The Box makes the learning experience fun and rewarding.
-
-***
-
-### Leaseweb Global B.V.
-
-[Leaseweb](https://www.leaseweb.com/about) is a global Infrastructure-as-a-Service (IaaS) provider offering customers hosting solutions to boost their business while cutting costs. 
-
-***
-
-### The Free Circle GLUG
-
-[TheFreeCircle](https://www.thefreecircle.org/) is the Italian GNU/Linux user group of [Palermo and Sicily](http://lugmap.linux.it/sicilia/) that helped many times the local Parrot Community and Parrot Developers Team to organize events and meetings.
-
-***
-
 &nbsp;
 
 ## __Mirrors__
-
-### Leaseweb
-
-Leaseweb Global B.V. - Multiple Mirror Locations
 
 ### MIT
 
@@ -96,11 +92,6 @@ RWTH-Aachen (Halifax students group) - Germany
 
 
 Nluug - Netherlands
-
-### Onet
-
-
-Onet Datacenter - Poland
 
 ### UMU
 
