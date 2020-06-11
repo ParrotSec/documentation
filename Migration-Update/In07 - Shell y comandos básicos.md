@@ -217,38 +217,38 @@ Esto nos indica que el permiso ha sido denegado y nos pregunta si somos root. En
 
 	$ ls
 Lista ficheros de un directorio.
-	
+
 	$ ls -l
-		
+    
 Lista también las propiedades y atributos.
-	
+
 	$ ls -la
-		
+    
 Lista ficheros, incluidos los ocultos del sistema.
-	
+
 	$ ls -la | more
-		
+
 Lista los ficheros de un directorio de forma paginada.
 	
 	$ ls -lh
 	
 Lista ficheros especificando la unidad de tamaño.
-	
+
 	$ ls -l | grep^d
-	
+
 Lista sólo los directorios.
 
 	$ cat -n fichero
-	
+
 Muestra el contenido de un fichero (-n lo numera).
 
 	$ pr -t fichero
-	
+
 Muestra el contenido de un fichero de manera formateada
 
 	$ more fichero
 	$ less fichero
-	
+
 Muestran el contenido de un fichero de forma paginada.
 
 	$ zcat fichero
@@ -257,122 +257,156 @@ Muestran el contenido de un fichero de forma paginada.
 Muestran el contenido de un fichero comprimido (.gz).
 
 	$ echo cadena
+
 Muestra en pantalla el texto que le siga.
 
 	$ grep 'cadena' archivo
-Muestra las líneas de un archivo que contienen la cadena.
+
+Muestra las líneas de un archivo que contienen cadena.
 
 	$ stat fichero
+
 Muestra el estado de un fichero.
 
 	$ file fichero
+
 Muestra de qué tipo es un fichero.
 
 	$ tail archivo
-	
+
 Muestra las últimas líneas de un archivo, 10 por defecto.
-	
+
 	$ tail -n 12 archivo
+
 Muestra las últimas 12 líneas de un archivo.
-	
+
 	$ tail -f archivo
+
 Muestra las últimas líneas del archivo, actualizándolo a medida que se van añadiendo. Útil para controlar logs.
 
 	$ head archivo
+
 Muestra las primeras 10 líneas de un archivo. Admite -n al igual que el comando tail.
 
-	$ find /usr -name lilo -print
-	
-Busca todos los ficheros con el nombre lilo en /usr.
+	$ find /boot -name grub
 
-	$ find /home/user -name *.jpg -print
+Busca todos los ficheros con el nombre grub en /boot.
+
+	$ find /home/user -name *.jpg 
+
 Busca todas las imágenes *.jpg en /home/user/
 
 	$ pwd
+
 Visualiza el directorio actual.
 
 	$ history
+
 Muestra el listado de comandos usados por el usuario.
 
 	$ cd directorio
+
 Cambia de directorio.
 
 	$ cd ..
+
 Vuelve al directorio anterior.
 
 	$ cd /home/user/Documents
+
 Cambia al directorio Documents indicando la ruta completa.
 
 	$ cp -pR fichero /home/user/directorio/
-		# -R Indica que se va a copiar un directorio recursivamente, salvo los ficheros especiales
-		# -p Indica que se va a copiar preservando permisos, propietario, grupo y fechas.
+        # -R Indica que se va a copiar un directorio recursivamente, salvo los ficheros especiales
+        # -p Indica que se va a copiar preservando permisos, propietario, grupo y fechas.
+    
 Copia el fichero hacia directorio, conservando el nombre actual del fichero.
 
-		
+
 	$ mv ruta_fichero1 ruta_fichero2
+
 Mueve y/o renombra ficheros o directorios.
 
 	$ mkdir directorio
+
 Crea un directorio.
 
 	$ rmdir directorio
+
 Borra un directorio vacío.
 
 	$ rm archivo
+
 Elimina archivos.
 
 	$ rm -r directorio
+
 Borra los ficheros de un directorio recursivamente.
 
 	$ wc
-Muestra el número de palabras, líneas y caracteres de un archivo.
+
+Muestra el número de líneas, palabras y caracteres.
 
 	$ touch fichero
+
 Crea un fichero con la fecha actual.
 
-	$ ifconfig
+	$ ifconfig	
+
 Muestra la configuración de los adaptadores de red. También se puede utilizar "ip -a".
 
-##Comandos del gestor de paquetes
+
+## Comandos del gestos de paquetes
 
 	$apt
+
 apt es un gestor de paquetes de línea de comando. Sus comandos más básicos son:
 
-	$apt list "argumentos" 
+	$apt list "argumentos"
+
 Lista los paquetes según los nombres.
 (Ej: --installed --upgradable, --all-versions --manual-installed, --target-release, --verbose)
 
-	$apt search "cadena" 
+	$apt search "cadena"
+
 busca en las descripciones de los paquetes.
 (Ej:apt search redeclipse Ordenando... Hecho  Buscar en todo el texto... Hecho redeclipse/stable 1.5.8-1 amd64 free, casual arena shooter)
 
-	$apt show "paquete" 
+	$apt show "paquete"
+
 Muestra detalles del paquete.
 
 	#apt install "paquete(s)" 
+
 Instala paquetes.
-(Ej: apt install bash)
+(Ej: apt install vim)
 
 	#apt remove "paquete(s)"
+
 Elimina paquetes.
-(Ej: apt remove bash)
+(Ej: apt remove vim)
 
 	#apt autoremove "paquete(s)"
+
 Elimina automáticamente todos los paquetes sin utilizar.
 (Ej: apt autoremove)
 
 	#apt update 
+
 Actualiza la lista de paquetes.
 (Ej: apt update)
 
 	#apt upgrade
+
 Actualiza el sistema mediante la instalación/actualización de paquetes.
 (Ej: apt upgrade)
 
 	#apt full-upgrade
+
 Actualiza el sistema mediante la instalación/eliminación/actualización de paquetes
 (Ej: apt full-upgrade)
 
 	#apt edit sources
+
 Permite entrar a editar sus repositorios fuente
 (Ej: apt edit-sources)

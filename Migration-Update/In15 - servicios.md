@@ -2,8 +2,6 @@
 
 Vivimos una época en la que systemd se ha "apoderado" de la gran mayoría de sistemas linux. No queremos entrar en un debate de si systemd es bueno o malo.
 
-Los desarrolladores de Parrot lo tienen claro: https://blog.parrotsec.org/debian-and-devuan/ 
-
 De todas formas, en caso de cambiar algo, será en un futuro. Actualmente el sistema cuenta con systemd, tal y como tiene su hermana mayor Debian.
  
 Aun así, los desarrolladores han convertido los scripts service para que hagan un "hook" a systemd, y así podamos seguir utilizando nuestro querido "service" y "update-rc.d". (Si esto no le suena, no se preocupe y continúe leyendo).
@@ -113,7 +111,8 @@ Varias palabras claves podemos observar en la salida de estado de un servicio:
 
 
 ## Listando unidades con systemctl
-Consulta el estado de todas las unidades   
+
+Consulta el estado de todas las unidades
 
 	┌─[root@parrot]─[~]
 	└──╼ #systemctl 

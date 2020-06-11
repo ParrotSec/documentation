@@ -44,7 +44,8 @@ Para poder trabajar con particiones del tipo NTFS necesitaremos tener instalado 
 	ntfs-3g is already the newest version (1:2016.2.22AR.2-2).
 	0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 
-Ahora ya, tan sólo nos queda seleccionar un punto de montaje (la ruta en la que accederemos a nuestro dispositivo). En mi caso, seleccionaré /mnt. Usted seleccione otra ruta si lo prefiere. NOTA: Monte su dispositivo en un directorio vacío.
+Ahora ya tan sólo nos queda seleccionar un punto de montaje (la ruta en la que accederemos a nuestro dispositivo), en mi caso, seleccionaré /mnt. Usted seleccione otra ruta si lo prefiere.
+NOTA: Monte su dispositivo en un directorio vacío.
 
 	┌─[root@parrot]─[~]
 	└──╼ #mount /dev/sdb1 /mnt/

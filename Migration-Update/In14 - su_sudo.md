@@ -38,7 +38,7 @@ Podría interesarnos convertirnos en otro usuario, por ejemplo test2:
 	Password: 
 
 
-Vemos que simplemente hemos cambiado el nombre del usuario al que nos queremos convertir. En cualquier caso, nos solicitará la contraseña de dicho usuario. No la nuestra, sino la del usuario en el que nos queremos convertir. Si es root, la contraseña de root. Si es test2, la contraseña de test2.
+Vemos que simplemente hemos cambiado el nombre del usuario al que nos queremos convertir. En cualquier caso nos solicitará la contraseña de dicho usuario, no la nuestra, sino la del usuario en el que nos queremos convertir. Si es root, la contraseña de root. Si es test2, la contraseña de test2.
 
 Entre las opciones que podemos usar con "su" (man 1 su), existe una para convertirnos en el usuario pero con todo su "enviroment" tal y como si nos hubiésemos logeado en el sistema. Esta opción es "-" o "-l". Es decir, tendremos todas las variables de entorno de dicho usuario, pero si no utilizamos la opción, no necesariamente las tendremos:
 
@@ -142,11 +142,11 @@ El fichero de configuración, es "/etc/sudoers". Lo podemos editar con nuestro e
 
 
 
-Este fichero expuesto arriba, es la configuración por defecto en ParrotSec.
+Este fichero expuesto arriba es la configuración por defecto en ParrotSec.
 
 La línea "%sudo    ALL=(ALL:ALL) ALL" establece que cualquier usuario que pertenezca al grupo sudo podrá ejecutar cualquier comando (se sobreentiende que como root).
 
-No vamos a ver más configuraciones, tiene una guía extensa en la página del manual sudoers (man 5 sudoers). También puede acudir a su buscador favorito y buscar ejemplos sudo. Pero tenga en cuenta que, aunque en este ejemplo estamos otorgando la posibilidad a un usuario para que ejecute tareas como root, también podría configurar sudo para que se ejecutasen tareas como otro usuario distinto (por ejemplo un usuario de base de datos) o que el usuario sólo pudiese ejecutar algunas tareas (y no todas) como root. Pero el ejemplo que tenemos es el descrito. Usuarios del grupo sudo pueden ejecutar cualquier tarea como root.
+No vamos a ver más configuraciones, debido a que tiene una guía extensa en la página del manual sudoers (man 5 sudoers). También puede acudir a su buscador favorito y buscar ejemplos sudo. Pero tenga en cuenta que, aunque en este ejemplo estamos otorgando la posibilidad a un usuario para que ejecute tareas como root, también podría configurar sudo para que se ejecutasen tareas como otro usuario distinto (por ejemplo un usuario de base de datos) o que el usuario sólo pudiese ejecutar algunas tareas (y no todas) como root. Pero el ejemplo que tenemos es el descrito. Usuarios del grupo sudo pueden ejecutar cualquier tarea como root.
 
 De acuerdo con lo visto, necesitamos que nuestro usuario test pueda ejecutar tareas como root. Tal y como vimos, este usuario debe pertenecer al grupo sudo. Para ver la membresía de un usuario ejecutamos la instrucción "id", seguida del nombre de usuario.
 
@@ -223,7 +223,7 @@ Hemos visto comandos, si se me permite un poco absurdos. Pero llegado el caso, n
 	Retype new UNIX password: 
 	passwd: password updated successfully
 
-En este último ejemplo ha cambiado la contraseña de root ;-).
+En este último ejemplo ha cambiado la contraseña de root.
 
 
 # Diferencia entre su y sudo

@@ -11,33 +11,34 @@ Los ligeros se preocupan de consumir la menor cantidad de recursos para garantiz
 
 # Algunos entornos de escritorio
 
-**MATE**: es el entorno que usa parrot. El nombre proviene de una planta que se usa como energizante. Surgió de un fork de GNOME2. Es un escritorio bastante ligero que con 512MB de memoria funciona bien. Esta escrito en C , C++ y python.
+**MATE**: 
+Es el entorno que usa parrot. El nombre proviene de una planta que se usa como energizante. Surgió de un fork de GNOME2. Es un escritorio bastante ligero que con 512MB de memoria funciona bien. Esta escrito en C , C++ y python.
 
 **GNOME**:
 El objetivo de este entorno es crear un sistema de escritorio para el usuario final
- que sea completo, libre y fácil de usar. Usa las bibliotecas gráficas GTK y está
- bajo licencia GPL. Una característica bastante útil, aunque común a prácticamente
- cualquier entorno, es el poder usar varios espacios de trabajo, cada uno con un
- escritorio independiente de los demás. El hecho de pasar aplicaciones entre
- escritorios es tan simple como arrastrar con el ratón la ventana de dicha aplicación a otro escritorio.
+que sea completo, libre y fácil de usar. Usa las bibliotecas gráficas GTK y está
+bajo licencia GPL. Una característica bastante útil, aunque común a prácticamente
+cualquier entorno, es el poder usar varios espacios de trabajo, cada uno con un
+escritorio independiente de los demás. El hecho de pasar aplicaciones entre
+escritorios es tan simple como arrastrar con el ratón la ventana de dicha aplicación a otro escritorio.
 GNOME es muy configurable, ya que se puede personalizar prácticamente cualquier cosa. Menús,
- iconos, tipos de letra, fondo de escritorio, pantalla, tema para las ventanas, sonido
- o la interacción con las ventanas entre otras.
+iconos, tipos de letra, fondo de escritorio, pantalla, tema para las ventanas, sonido
+o la interacción con las ventanas entre otras.
 
 **KDE**:
 Este entorno se basa en la personalización, y de la misma manera
- que GNOME prácticamente cualquier aspecto puede ser configurado
- por el usuario de la manera que él quiera. Actualmente la última
- versión estable es la 4.16 y tiene como elemento central en su
- diseño a Plasma. Esta herramienta se crea con el objetivo de 
+que GNOME prácticamente cualquier aspecto puede ser configurado
+por el usuario de la manera que él quiera. Actualmente la última
+versión estable es la 4.16 y tiene como elemento central en su
+diseño a Plasma. Esta herramienta se crea con el objetivo de 
 combinar el panel Kicker, KDesktop y el gestor de widgets,
- en un único elemento.
+en un único elemento.
 Este es un escritorio diseñado, además, para ser bonito y eso conlleva
- que tenga mayor consumo de recursos que GNOME. También es cierto
- que el mayor consumo de recursos no es exagerado, aunque si
- sensiblemente superior siendo más pronunciado en la carga del
- escritorio. Donde más evidente se nota esta diferencia es en
- equipos con los recursos más ajustados.
+que tenga mayor consumo de recursos que GNOME. También es cierto
+que el mayor consumo de recursos no es exagerado, aunque si
+sensiblemente superior siendo más pronunciado en la carga del
+escritorio. Donde más evidente se nota esta diferencia es en
+equipos con los recursos más ajustados.
 
 **UNITY**:
 Los elementos que tiene Unity son un lanzador a la izquierda que sirve como lugar donde se encuentran los accesos directos de las aplicaciones, un contenido central llamado "Lugares" que muestra todos los archivos y aplicaciones de usuario, además de ofrecer un buscador de categorías y aplicaciones.

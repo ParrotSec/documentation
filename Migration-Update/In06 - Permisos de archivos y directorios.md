@@ -24,7 +24,7 @@ El significado de estos permisos es diferente para archivos y para carpetas, a c
 
 En el caso de archivo.txt, tiene los siguientes permisos:
 
-	Propietario	Grupo	Resto de usuarios
+	Propietario	   Grupo	Resto de usuarios
 	r w -           r w -	r - -
 
 Esto quiere decir que todos los usuarios del sistema tienen permisos para leer este archivo, pero solo el propietario del archivo y los usuarios que sean miembros del grupo propietario podrán realizar modificaciones en este archivo.
@@ -32,7 +32,7 @@ Esto quiere decir que todos los usuarios del sistema tienen permisos para leer e
 Para calcular el valor de un permiso nos basaremos en la suma de sus valores decimales según la siguiente correspondencia:
    
 	 --------------------------
-	|Permiso	|r | w | x |
+	|Permiso	    |r | w | x |
 	|---------------|--|---|---|
 	|Valor decimal	|4 | 2 | 1 |
 	 --------------------------
@@ -54,7 +54,7 @@ O sea, el valor decimal para el permiso de lectura es 4, el valor decimal para p
  	|---------|-------|
  	|  -w-    |   2   |
  	|---------|-------|
- 	|  --r    |   1   |
+ 	|  --x    |   1   |
  	|---------|-------|
  	|  ---    |   0   |
  	 -----------------
@@ -107,23 +107,23 @@ Ahora el usuario propietario y los usuarios miembros del grupo propietario tiene
 
 Otra manera de añadir o quitar permisos, es utilizando estos modos:
 
-- a --> indica que se aplicará a todos
+- a  --> indica que se aplicará a todos
 
-- u --> indica que se aplicará al usuario
+- u  --> indica que se aplicará al usuario
 
-- g --> indica que se aplicará al grupo
+- g  --> indica que se aplicará al grupo
 
-- o --> indica que se aplicará a otros
+- o  --> indica que se aplicará a otros
 
-- + --> indica que se añade el permiso
+- +  --> indica que se añade el permiso
 
-- - --> indica que se quita el permiso
+- -  --> indica que se quita el permiso
 
-- r --> indica permiso de lectura
+- r  --> indica permiso de lectura
 
-- w --> indica permiso de escritura
+- w  --> indica permiso de escritura
 
-- x --> indica permiso de ejecución
+- x  --> indica permiso de ejecución
 
 
 La sintaxis básica para utilizar "chmod" con estos modos es la siguiente:
@@ -167,7 +167,7 @@ Chown (change owner) es otra utilidad del sistema que nos permite realizar cambi
 
 Su sintáxis básica es la siguiente:
 
-	$ chown [opciones] [propietario]:[grupo (obcional)] [archivos o directorios]
+	$ chown [opciones] [propietario]:[grupo (opcional)] [archivos o directorios]
 
 Opciones de chown:
 
