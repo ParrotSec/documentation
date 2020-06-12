@@ -19,7 +19,7 @@ Nota: Debemos tener en cuenta que los programas SUID (firejail lo es) son consid
 
 ## Utilizando firejail
 
-Si hubiésemos instalado firejail, se podría lanzar (En su distribución ParrotSec no es necesario!!!) la instrucción "sudo firecfg" para que todos los perfiles que existan dentro del directorio de configuración firejail (/etc/firejail) generen un enlace simbólico en el directorio /usr/local/bin que apunten a /usr/bin/firejail. Los desarrolladores de ParrotSec ya lo han hecho por nosotros. O al menos han "linkado" las aplicaciones más comunes.
+Si hubiésemos instalado firejail, se podría lanzar (En su distribución ParrotSec no es necesario!!!) la instrucción "sudo firecfg" para que todos los perfiles que existan dentro del directorio de configuración firejail (/etc/firejail) generen un enlace simbólico en el directorio /usr/local/bin que apunten a /usr/bin/firejail. Los desarrolladores de ParrotSec ya lo han hecho por nosotros, o al menos han "linkado" las aplicaciones más comunes.
 
         $ls -la /usr/local/bin/
         total 12
@@ -73,7 +73,7 @@ Nota: Antes de ejecutar el comando anterior no olvide crear el perfil del progra
 
 ## Perfiles firejail
 
-En el punto anterior, hemos hablado de los perfiles de firejail. Existe un perfil por cada programa que se lanza dentro de firejail. Estos perfiles le indican a firejail que propiedades y características debe activar para el programa lanzado: que directorios puede ver, en cuales puede escribir, si debe crear ficheros y/o directorios temporales, si debe ejecutarse en un entorno privado, etc…  Estos perfiles se encuentran ubicados en el directorio /etc/firejail. Como podrá observar, existe al menos un perfil por cada aplicación que se lanza dentro de firejail. Los nombres de estos archivos son "nombre_programa.profile".
+En el punto anterior, hemos hablado de los perfiles de firejail. Existe un perfil por cada programa que se lanza dentro de firejail. Estos perfiles le indican a firejail que propiedades y características debe activar para el programa lanzado: que directorios puede ver, en cuales puede escribir, si debe crear ficheros y/o directorios temporales, si debe ejecutarse en un entorno privado, etc. Estos perfiles se encuentran ubicados en el directorio /etc/firejail. Como podrá observar, existe al menos un perfil por cada aplicación que se lanza dentro de firejail. Los nombres de estos archivos son "nombre_programa.profile".
 
 
         $ ls -al /etc/firejail/

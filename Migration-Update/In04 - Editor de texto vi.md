@@ -28,6 +28,10 @@ Use los siguientes comandos para desplazarse dentro de un archivo:
 - Desplazarse un carácter hacia la izquierda en la línea actual
 	
 		h
+		
+- Desplazarse un carácter a la derecha en la línea actual
+	
+		l
  
 - Pasar a la línea siguiente
 	
@@ -37,18 +41,16 @@ Use los siguientes comandos para desplazarse dentro de un archivo:
 	
 		k
 
-- Desplazarse un carácter a la derecha en la línea actual
-	
-		l
-
 - Pasar a la palabra siguiente en la línea actual
 	
 		w
 
 - Pasar al siguiente fin de palabra en la línea actual
+
 		e
 
 - Pasar al anterior inicio de palabra en la línea actual
+
 		b
 
 - Pasar a la página siguiente

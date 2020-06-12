@@ -1,9 +1,9 @@
 # APT (Gestión de software Parrot)
 
 Veremos en este capítulo una introducción al gestor de paquetes APT para Parrot.
-Un programa es una serie de instrucciones. Estas instrucciones vienen en archivos de texto llamados fuentes. Para que funcionen en nuestros sistemas se necesita pasarlos a lenguaje máquina. A este paso se le llama compilación. La compilación genera uno o varios archivos, entendibles por el sistema, que se denominan binarios.
+Un programa es una serie de instrucciones. Estas instrucciones vienen en archivos de texto llamados fuentes. Para que funcionen en nuestros sistemas se necesita pasarlos a lenguaje máquina. A este paso se le llama compilación. La compilación genera uno o varios archivos entendibles por el sistema que se denominan binarios.
 
-Actualmente no es necesario que el usuario compile las fuentes de cada programa. Los desarrolladores se encargan de compilarlos por nosotros y generar los respectivos binarios. Como un programa puede llevar, no sólo el ejecutable, sino otra serie de ficheros, los desarrolladores "empaquetan" dicho software en un archivo llamado paquete. Dos son los más famosos, paquetes RPM y paquetes DEB. RPM fue desarrollada por Red Hat y DEB por debian. Parrot utiliza el formato DEB.
+Actualmente no es necesario que el usuario compile las fuentes de cada programa. Los desarrolladores se encargan de compilarlos por nosotros y generar los respectivos binarios. Como un programa puede llevar, no sólo el ejecutable, sino otra serie de ficheros, los desarrolladores "empaquetan" dicho software en un archivo llamado paquete. Dos son los más famosos, paquetes RPM y paquetes DEB. RPM fue desarrollada por Red Hat y DEB por Debian. Parrot utiliza el formato DEB.
 
 Para compilar algunos programas son necesarias librerías y otros programas. Si intentásemos compilar un programa que tuviese dependencias con otras librerías y otros programas, anteriormente a su compilación deberíamos instalar dichas "dependencias". Igualmente, si queremos instalar un binario necesitaremos tener instaladas las dependencias necesarias para su correcto funcionamiento.
 
@@ -40,7 +40,7 @@ También puede ver el documento de "Lista de espejos (Mirrors)".
 
 ## Gestor de paquetes (APT)
 
-El gestor de paquetes de parrot es apt. Este gestor se encarga de instalar paquetes, comprobar dependencias, actualizar el sistema, entre otras cosas. 
+El gestor de paquetes de Parrot es apt. Este gestor se encarga de instalar paquetes, comprobar dependencias, actualizar el sistema, entre otras cosas. 
 Veamos qué podemos hacer con él. Veremos las opciones más comunes, pero aún asi disponemos de varias páginas man (apt, apt-get, apt-cache, dpkg), que no debería dejar de visitar:
 
 - Buscar un paquete o cadena de texto:

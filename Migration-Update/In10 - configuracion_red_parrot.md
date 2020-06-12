@@ -70,7 +70,7 @@ El comando "ip addr show" nos muestra la configuración actual de nuestras inter
 
 ## Añadiendo una conexión de red
 
-El comando "nmcli con add" se utiliza para añadir nuevas conexiones de red. En el ejemplo que veremos se asume que el nombre de la conexión que se va a añadir no está siendo utilizada.   
+El comando "nmcli con add" se utiliza para añadir nuevas conexiones de red. En el ejemplo que veremos se asume que el nombre de la conexión que se va a añadir no está siendo utilizada.
 El siguiente comando añadirá una nueva conexión (con_dhcp) para nuestra interfaz eth0, la cual obtendrá la información de red utilizando DHCP y se autoconectará en el inicio del sistema.
 A continuación, comprobaremos su configuración desde el propio nmcli y también mirando su fichero de configuración:
 
@@ -340,7 +340,7 @@ El comando "hostname" muestra o cambia temporalmente el nombre de nuestro sistem
 	parrot
 
 
-Podemos modificar el fichero /etc/hostname para cambiar el nombre de nuestro sistema.  
+Podemos modificar el fichero /etc/hostname para cambiar el nombre de nuestro sistema.
 
 También podemos utilizar el comando hostnamectl, con la opción set-hostname. "hostnamectl" también nos sirve para comprobar el nombre de nuestro sistema actualmente.
 

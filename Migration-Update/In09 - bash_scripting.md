@@ -13,15 +13,15 @@ Bash es principalmente un lenguaje de scripting, aparte de una shell. Vamos a in
 
 
 
-En la primera línea del script simplemente definimos el intérprete a utilizar. NOTA: No hay espacio antes de  #!/bin/bash.   
-En la segunda línea podemos ver un comentario. Cualquier cosa que empiece por '#', salvo '#!' que apareció en la primera línea, será tomado por el intérprete como un comentario y no se ejecutará. Acostúmbrese a escribir sus scripts con estos comentarios, para explicar lo que va haciendo y posteriormente pueda revisar su código de una manera más fácil.   
-En la tercera línea utilizamos la instrucción "echo" para mostrar un texto por pantalla. En nuestro caso "Hola ParrotSec".   
-Guardamos el script en la ubicación que deseemos con el nombre "hola_parrot.sh", o cualquier otro que deseemos.   
+En la primera línea del script simplemente definimos el intérprete a utilizar. NOTA: No hay espacio antes de  #!/bin/bash.
+En la segunda línea podemos ver un comentario. Cualquier cosa que empiece por '#', salvo '#!' que apareció en la primera línea, será tomado por el intérprete como un comentario y no se ejecutará. Acostúmbrese a escribir sus scripts con estos comentarios, para explicar lo que va haciendo y posteriormente pueda revisar su código de una manera más fácil.
+En la tercera línea utilizamos la instrucción "echo" para mostrar un texto por pantalla. En nuestro caso "Hola ParrotSec".
+Guardamos el script en la ubicación que deseemos con el nombre "hola_parrot.sh", o cualquier otro que deseemos.
 
-Y eso es todo. Muy sencillo verdad?  
+Y eso es todo. Muy sencillo verdad?
 
 
-Para poder ejecutar el script, el archivo debe tener los permisos correctos. Para cambiar los permisos utilizaremos la instrucción "chmod" (change mode) así:  
+Para poder ejecutar el script, el archivo debe tener los permisos correctos. Para cambiar los permisos utilizaremos la instrucción "chmod" (change mode) así:
 
 	$ chmod u+x /Path/donde/este/el/archivo/hola_parrot.sh   #Añade permiso de ejecución al usuario propietario del script
 	# O
@@ -29,7 +29,7 @@ Para poder ejecutar el script, el archivo debe tener los permisos correctos. Par
 
 Esto nos dará los permisos necesarios para poder ejecutar el script. Ahora puede abrir un terminal y ejecutar el script de la siguiente manera:
 
-	$ /Path/donde/este/el/archivo/hola_parrot.sh
+	$ ./Path/donde/este/el/archivo/hola_parrot.sh
 
 Si todo es correcto podrá ver el texto "Hola Parrotsec" por pantalla. Felicidades!!! Acaba de crear su primer Bash script.
 
@@ -106,8 +106,8 @@ El formato para construir estructuras de control condicionales es:
 		comandos
 	fi
 
-Las líneas  else if, else o  elif no son estrictamente necesarias, pero se podrá utilizar si se desea.  
-Es importante cerrar las estructuras de control condicionales para indicar que se han terminado las instrucciones de esta estructura. Para ello utilizaremos "fi".  
+Las líneas  else if, else o  elif no son estrictamente necesarias, pero se podrá utilizar si se desea.
+Es importante cerrar las estructuras de control condicionales para indicar que se han terminado las instrucciones de esta estructura. Para ello utilizaremos "fi".
 Veamos un ejemplo.  
 
 Comprobemos el valor introducido por un usuario y mostremos diferentes textos en función de dicho valor:
@@ -162,14 +162,14 @@ Otra forma:
 	fi 
 			
 
-Esta última forma nos permite escribir de forma sencilla condicionales que bien podrían ir encadenadas (ejemplo 1), pero que requerirían mayor atención, sobre todo en el cierre de estas condiciones (fi). Hay otras formas de tener el control de condiciones múltiples pero hablaremos más adelante de esto.  
+Esta última forma nos permite escribir de forma sencilla condicionales que bien podrían ir encadenadas (ejemplo 1), pero que requerirían mayor atención, sobre todo en el cierre de estas condiciones (fi). Hay otras formas de tener el control de condiciones múltiples pero hablaremos más adelante de esto.
 
 
 
-Hemos visto cómo podemos controlar condiciones sobre cadenas de texto, pero podemos ejecutar estructuras de control condicional sobre valores alfanuméricos.  
-Podríamos utilizar condiciones del estilo "Si variable es mayor o igual que un número dado, resta 1 a variable", "Si una variable es menor que un valor dado, suma 3 a variable2", ...  
+Hemos visto cómo podemos controlar condiciones sobre cadenas de texto, pero podemos ejecutar estructuras de control condicional sobre valores alfanuméricos.
+Podríamos utilizar condiciones del estilo "Si variable es mayor o igual que un número dado, resta 1 a variable", "Si una variable es menor que un valor dado, suma 3 a variable2", ...
 
-Ejemplo:  
+Ejemplo:
 
 	#!/bin/bash
 	echo "Introduzca un valor:"
@@ -282,13 +282,11 @@ Mire el siguiente ejemplo:
 
 	$ echo "hola "Parrot""
 
-Pues bien, para que las comillas intermedias sean parte de la cadena a mostrar debemos escapar dichas comillas. Esto se hace anteponiendo un símbolo '\' al carácter especial. Esto es muy utilizado para otros comandos también. Siguiendo con nuestro ejemplo, el comando quedaría de la siguiente forma:  
+Pues bien, para que las comillas intermedias sean parte de la cadena a mostrar debemos escapar dichas comillas. Esto se hace anteponiendo un símbolo '\' al carácter especial. Esto es muy utilizado para otros comandos también. Siguiendo con nuestro ejemplo, el comando quedaría de la siguiente forma:
 
 	$ echo " hola \"Parrot\"  "
 
 Se han añadido varios espacios en la cadena a mostrar, tanto al principio como al final, simplemente para que se vea más claro el ejemplo.	 
-
-
 
 
 Ej. 2:
@@ -345,7 +343,7 @@ Ej. 1:
 			;;
 	esac
 
-Anexo Ej. 1:   
+Anexo Ej. 1:
 El valor de $1, es la primera opción pasada a nuestro script. Es decir, si nuestro script se llama "miscript.sh", podríamos ejecutar "./miscript.sh opcion1" y $1 sería igual a opcion1.
 
 
@@ -401,16 +399,16 @@ Ej. 1:
 	done
 
 
-Anexo Ej. 1:   
+Anexo Ej. 1:
 Como puede observar en este ejemplo, hemos encadenado dentro de nuestra estructura "select" otra estructura de tipo case. 
 
 
 
 ## Estructura blucle: FOR
-Para acciones repetitivas, se han creado estructuras en forma de bucle. Hay varios tipos. En este primer lugar veremos bucles for.    
-El bucle es una lista de comandos que se realiza de forma repetitiva.    
-En el caso de FOR, este bloque se repetirá mientras tengamos valores en la lista que estamos comprobando.   
-La forma que tiene esta estructura es la siguiente:   
+Para acciones repetitivas, se han creado estructuras en forma de bucle. Hay varios tipos. En este primer lugar veremos bucles for.
+El bucle es una lista de comandos que se realiza de forma repetitiva.
+En el caso de FOR, este bloque se repetirá mientras tengamos valores en la lista que estamos comprobando.
+La forma que tiene esta estructura es la siguiente:
 
 	for variable [in lista]
 	do
@@ -457,8 +455,8 @@ Este ejemplo de for, es igual (no es extraño ya que es heredado de él) al for 
 
 
 ## Estructura bucle: WHILE
-En esta estructura, el bucle se ejecutará mientras se cumpla una condición.   
-La forma que tiene esta estructura es:   
+En esta estructura, el bucle se ejecutará mientras se cumpla una condición.
+La forma que tiene esta estructura es:
 
 	while condicion
 	do
@@ -489,7 +487,7 @@ Ej. 2
 		sleep 1
 	done
 
-Anexo Ej. 2:    
+Anexo Ej. 2:
 Si a continuación de while ponemos el símbolo ":", el bucle se ejecutará de forma ininterrumpida.
 
 
@@ -508,7 +506,7 @@ Se utiliza esta estructura para leer un archivo línea a línea. "archivo" es un
 
 ## Estructura bucle: UNTIL
 El bucle until continúa ejecutando comandos mientras se cumpla la condición. Una vez que dicha condición sea falsa, se sale del bucle.
-La forma que tiene esta estructura es:  
+La forma que tiene esta estructura es:
 
 	until condicion
 	do
@@ -518,13 +516,13 @@ La forma que tiene esta estructura es:
 	done 
 
 
-Diferencias de bucle until y while:    
+Diferencias de bucle until y while:
 	1- El bucle until se ejecuta mientras la condición retorna un valor "nozero".   
 	2- El bucle while se ejecuta mientras la condición retorna un valor "zero".   
 	3- El bucle until siempre se ejecuta por lo menos una vez.    
 
 
-Ej. 1:  
+Ej. 1:
 
 	#!/bin/bash
 	i=1
@@ -542,20 +540,18 @@ Ej. 1:
 
 En bash scripting, incluso en la shell, podemos asignar a una variable el resultado de un comando que ejecutemos. La forma elegante de hacerlo es con el siguiente formato: VARIABLE=$(comando).
 
-Ejemplo    
+Ejemplo:
 
 	$ VARIABLE=$(who)
 	$ echo $VARIABLE
 
-Al ejecutar estos comandos, se nos mostrará por pantalla los usuarios conectados a cualquier terminal de nuestro sistema.      
+Al ejecutar estos comandos, se nos mostrará por pantalla los usuarios conectados a cualquier terminal de nuestro sistema.
 Tenga en cuenta que esto elimina los saltos de línea. Acuérdese de que puede utilizar pipes "|" para filtrar el resultado. Como en el siguiente ejemplo:
 	
 	$ VARIABLE=$(who|awk '{print $1}')
 	$ echo $VARIABLE
 
 En este ejemplo hemos recogido, mediante awk, el primer campo de la salida de who. Es decir, el/los nombre/s de usuario logeado/s en nuestro sistema.
-
-
 
 
 
@@ -570,14 +566,14 @@ Al ejecutar el primer comando deberemos ver lo siguiente (o algo parecido):
 
 	-rw-r--r-- 1 root root 3395 Sep 15 08:37 /etc/passwd	
 
-Este resultado, al ser correcto, se ha mostrado en el terminal por la salida estándar o "1".  
-En el segundo comando veremos un mensaje de error, ya que el archivo no existe.   
+Este resultado, al ser correcto, se ha mostrado en el terminal por la salida estándar o "1".
+En el segundo comando veremos un mensaje de error, ya que el archivo no existe.
 
 	ls: cannot access '/nombre_no_existente': No such file or directory
 
-Para mostrar este resultado, el sistema ha direccionado ese error a la salida "2" o salida de errores.  
+Para mostrar este resultado, el sistema ha direccionado ese error a la salida "2" o salida de errores.
 
-Podemos redirigir esa salida a un fichero si queremos (incluso al fichero especial /dev/null, el "agujero negro" o papelera sin retorno del sistema).  
+Podemos redirigir esa salida a un fichero si queremos (incluso al fichero especial /dev/null, el "agujero negro" o papelera sin retorno del sistema).
 
 Veamos varios ejemplos, abriendo una terminal:
 
@@ -585,24 +581,24 @@ Veamos varios ejemplos, abriendo una terminal:
 	$ cat salida1.standard
 
 Vemos que, aparentemente, el primer comando no ha mostrado nada por pantalla. Lo que hemos hecho es redirigir su salida estándar a un archivo salida1.txt.
-El operador "1" se puede omitir si se desea. Podríamos haber escrito:  
+El operador "1" se puede omitir si se desea. Podríamos haber escrito:
 	
 	$ ls -la /etc/passwd > salida1.standard
 
-Siendo exactamente igual. Esto sólo lo podemos hacer para la salida estándar, no podemos utilizarlo para la salida de errores.  
+Siendo exactamente igual. Esto sólo lo podemos hacer para la salida estándar, no podemos utilizarlo para la salida de errores.
 
-Veamos cómo podemos redirigir la salida de errores. Como ya hemos comentado, la salida de errores tiene un puntero representado con el número "2".   
+Veamos cómo podemos redirigir la salida de errores. Como ya hemos comentado, la salida de errores tiene un puntero representado con el número "2".
 
 	$ ls -la /nombre_no_existente 2> salida2.error
 	$ cat salida2.error
 
-En este caso, como en el ejemplo anterior, no vemos el error por pantalla ya que hemos redirigido esta salida ("2" por ser error) al archivo salida2.txt.   
+En este caso, como en el ejemplo anterior, no vemos el error por pantalla ya que hemos redirigido esta salida ("2" por ser error) al archivo salida2.txt.
 
-Podemos, también, direccionar en una sola línea tanto la salida estándar como la de errores:   
+Podemos, también, direccionar en una sola línea tanto la salida estándar como la de errores:
 	
 	$ ls -la /etc/passwd /nombre_no existente 1> salida1.standar 2>salida2.error
 
-Existen varias opciones para redireccionar las dos salidas a un archivo común:   
+Existen varias opciones para redireccionar las dos salidas a un archivo común: 
 	
 	$ ls -la /etc/passwd /nombre_no_existente 1> salida.txt 2> salida.txt
 
@@ -610,9 +606,9 @@ O también:
 
 	$ ls -la /etc/passwd /nombre/no_existente > salida.txt 2>&1
 
-En el caso "2>&1", estamos indicando al sistema que la salida de errores ("2"), se redirija al mismo lugar donde apunta la salida uno. Como primeramente hemos redireccionado la salida "1" (estándar) al archivo salida.txt, los mensajes de error también aparecerán en el mismo archivo. Podríamos traducir "2>&1" como "la salida de errores (2) redirígela (>) a donde apunte (&) la salida estándar (1)".  
+En el caso "2>&1", estamos indicando al sistema que la salida de errores ("2"), se redirija al mismo lugar donde apunta la salida uno. Como primeramente hemos redireccionado la salida "1" (estándar) al archivo salida.txt, los mensajes de error también aparecerán en el mismo archivo. Podríamos traducir "2>&1" como "la salida de errores (2) redirígela (>) a donde apunte (&) la salida estándar (1)".
 
-Redirigiendo las salidas, bien sea la estándar como la de errores, a un archivo, este se generará vacío cada vez que el símbolo ">" aparezca. Veamos esto con un ejemplo, mediante un script que nos escriba la fecha del sistema cada segundo en un archivo:  
+Redirigiendo las salidas, bien sea la estándar como la de errores, a un archivo, este se generará vacío cada vez que el símbolo ">" aparezca. Veamos esto con un ejemplo, mediante un script que nos escriba la fecha del sistema cada segundo en un archivo:
 
 	#!/bin/bash
 	#
@@ -629,7 +625,7 @@ Redirigiendo las salidas, bien sea la estándar como la de errores, a un archivo
 	done
 
 
-En este ejemplo, hemos redirigido con el símbolo ">" la salida de "date" a "fecha.txt". Si hacemos "cat fecha.txt" sólo veremos una línea (la de la última ejecución). Explicando esto en más detalle, vemos que nuestro script ha repetido la iteración "for" 3 veces. En la primera ejecución, tras mostrar por pantalla la salida de "date", ha creado un archivo nuevo "fecha.txt" para escribir la salida estándar del siguiente "date". En la segunda ejecución del bucle ocurre lo mismo. En la instrucción "date > fecha.txt", la salida del comando se redirige a un archivo recién creado llamado "fecha.txt", sobrescribiéndolo. De esta forma perderá el contenido de la primera iteración. En la tercera pasada vuelve a ocurrir exactamente lo mismo, generando que el archivo resultante sólo muestre la última ejecución.   
+En este ejemplo, hemos redirigido con el símbolo ">" la salida de "date" a "fecha.txt". Si hacemos "cat fecha.txt" sólo veremos una línea (la de la última ejecución). Explicando esto en más detalle, vemos que nuestro script ha repetido la iteración "for" 3 veces. En la primera ejecución, tras mostrar por pantalla la salida de "date", ha creado un archivo nuevo "fecha.txt" para escribir la salida estándar del siguiente "date". En la segunda ejecución del bucle ocurre lo mismo. En la instrucción "date > fecha.txt", la salida del comando se redirige a un archivo recién creado llamado "fecha.txt", sobrescribiéndolo. De esta forma perderá el contenido de la primera iteración. En la tercera pasada vuelve a ocurrir exactamente lo mismo, generando que el archivo resultante sólo muestre la última ejecución.
 Para que no ocurra esto, podemos utilizar los símbolos de redirección ">>". Con esto, conseguiremos que no se sobrescriba el archivo, añadiendo una linea de salida por cada ejecución.
 
 	#!/bin/bash
@@ -650,8 +646,8 @@ Para que no ocurra esto, podemos utilizar los símbolos de redirección ">>". Co
 Ahora sí, el archivo contiene la salida de las tres iteraciones.
 
 
-Existe un comando para poder añadir las salidas de un comando a un archivo y mostrarlos también por pantalla. Esta instrucción es "tee".     
-De esta forma, nuestro script quedará de la siguiente forma:   
+Existe un comando para poder añadir las salidas de un comando a un archivo y mostrarlos también por pantalla. Esta instrucción es "tee".
+De esta forma, nuestro script quedará de la siguiente forma:
 
 	#!/bin/bash
 	#
@@ -768,9 +764,9 @@ La salida de estos dos comandos debería ser algo perecido a:
 	ls: cannot access 'ficheronoexistente': No such file or directory
 	2
 
-La primera línea indica un error a la hora de listar la existencia de un archivo (inventado para la ocasión).  
-En la segunda línea la respuesta es un "2". Es decir, nuestro "ls" devolvió un "2" ya que se produjo un error.   
-Tenga en cuenta que "echo $?", solamente podrá retener el "exit code" de la última instrucción ejecutada, en este caso un "ls" de un fichero inexistente.   
+La primera línea indica un error a la hora de listar la existencia de un archivo (inventado para la ocasión).
+En la segunda línea la respuesta es un "2". Es decir, nuestro "ls" devolvió un "2" ya que se produjo un error.
+Tenga en cuenta que "echo $?", solamente podrá retener el "exit code" de la última instrucción ejecutada, en este caso un "ls" de un fichero inexistente.
 
 Comprobemos el "exit code" del mismo comando sobre un archivo que sí exista:
 
@@ -844,7 +840,7 @@ Intente comprobar las diferentes opciones de nuestro "case". En cada una de las 
 	$RANDOM - Devuelve un número aleatorio cada vez que es invocado.
 
 
-Si escribe "env" en la línea de comandos, podrá ver una lista con diferentes variables que puede utilizar.   
+Si escribe "env" en la línea de comandos, podrá ver una lista con diferentes variables que puede utilizar.
 También puede ver otras variables y mucha más información en la página del manual de bash. 
 	$ man bash
 
@@ -906,19 +902,19 @@ Veamos el ejemplo más simple:
 
 	$ whiptail --title "Ejemplo de diálogo" --infobox "Parrot es maravilloso" 8 78
 
-Ejecutamos (o escribimos en un bash script) whiptail con las siguientes opciones:   
-- title "Título". El título que queramos para nuestro cuadro de diálogo.    
-- infobox "texto". Seleccionamos el tipo de cuadro de diálogo que queremos utilizar.    
-- 8 78. El tamaño de nuestra caja.         
+Ejecutamos (o escribimos en un bash script) whiptail con las siguientes opciones:
+- title "Título". El título que queramos para nuestro cuadro de diálogo.
+- infobox "texto". Seleccionamos el tipo de cuadro de diálogo que queremos utilizar.
+- 8 78. El tamaño de nuestra caja.
 
 ## Dónde conseguir más información
-Podemos conseguir más información en las siguientes fuentes:   
-- El man de bash   
-- http://tldp.org/guides.html   
-- http://linuxcommand.org/   
-- Realizando las búsquedas pertinentes en su buscador favorito  
-- Preguntando en el foro de parrotsec https://community.parrotsec.org/   
-- Accediendo al grupo de telegram tanto en inglés(https://t.me/parrotsecgroup) como en español (https://t.me/ParrotSpanishGroup). ESTAREMOS ENCANTADOS DE CONOCERLE Y AYUDARLE EN LO QUE PODAMOS.    
+Podemos conseguir más información en las siguientes fuentes:
+- El man de bash
+- http://tldp.org/guides.html 
+- http://linuxcommand.org/
+- Realizando las búsquedas pertinentes en su buscador favorito
+- Preguntando en el foro de parrotsec https://community.parrotsec.org/
+- Accediendo al grupo de telegram tanto en inglés(https://t.me/parrotsecgroup) como en español (https://t.me/ParrotSpanishGroup). ESTAREMOS ENCANTADOS DE CONOCERLE Y AYUDARLE EN LO QUE PODAMOS.
 
 
 

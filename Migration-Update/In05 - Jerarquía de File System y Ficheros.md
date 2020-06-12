@@ -29,7 +29,7 @@ Para entender la jerarquía de los Ficheros en Linux a continuación daremos una
 
 
 	DIRECTORIO	DEFINICIÓN/CONTENIDO
-	/		Directorio Raíz o Principal, el que contiene toda la estructura de directorios y ficheros del sistema, en otras palabras, todo lo que existe en Linux está en algún punto por debajo de este directorio.
+	/		    Directorio Raíz o Principal, el que contiene toda la estructura de directorios y ficheros del sistema, en otras palabras, todo lo que existe en Linux está en algún punto por debajo de este directorio.
 	/bin		Contiene los binarios esenciales de los sistemas Linux/Unix, accesibles para todos los usuarios. Al referirnos a estos archivos como “binarios” nos estamos refiriendo a ejecutables ya compilados.
 	/boot		Contiene el Kernel (núcleo del sistema), initrd, grub, etc.  Son archivos utilizados durante el arranque del sistema.
 	/dev		Agrupa los dispositivos esenciales, almacenamiento, teclado, terminales, sonido, video, cd, dvd, impresoras, etc.
@@ -48,7 +48,7 @@ Para entender la jerarquía de los Ficheros en Linux a continuación daremos una
 	/tmp		Es un directorio donde se almacenan ficheros temporales, ya sean de instalación o ejecución de los programas. Se puede configurar la periodicidad de limpieza de este directorio.
 	/usr		A diferencia de /sbin ó /bin contiene binarios que no son esenciales para el sistema, en este directorio se encuentra una sub-jerarquía para datos compartidos de sólo lectura. Este directorio puede ser compartido por múltiples ordenadores, pero no debe contener datos en el ordenador que los comparte.
 	/usr/bin	Binarios administrables de la mayoría de aplicaciones de escritorio, entre otras disponibles para todos los usuarios.
-	/usr/include	Contiene archivos cabecera (headers files o include files). Son archivos que son aprovechados por otros archivos incluyéndolos en su contenido.
+	/usr/include Contiene archivos cabecera (headers files o include files). Son archivos que son aprovechados por otros archivos incluyéndolos en su contenido.
 	/usr/lib	Bibliotecas compartidas de los binarios.
 	/usr/local	Datos locales del sistema. 
 	/usr/sbin	Sistema de binarios no esenciales. Por ejemplo, demonios ejecutados normalmente durante el arranque.

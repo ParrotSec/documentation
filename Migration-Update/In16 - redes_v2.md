@@ -22,7 +22,7 @@ Ejemplos:
 	* 195.255.1.37
 
 
-Existen direcciones ip públicas y privadas. Las direcciones IP públicas son las que se utilizan para poder interconectar dispositivos por Internet, mientras que las privadas son utilizadas dentro de una organización, empresa o en nuestras propias casas.  
+Existen direcciones ip públicas y privadas. Las direcciones IP públicas son las que se utilizan para poder interconectar dispositivos por Internet, mientras que las privadas son utilizadas dentro de una organización, empresa o en nuestras propias casas.
 
 Pondré un ejemplo para intentar explicar esto (los datos son inventados y los pondré sólo a modo de ejemplo). Supongamos nuestro router de casa, nuestro PC, una impresora y nuestra página favorita de internet.
 
@@ -79,7 +79,7 @@ Es decir, con este valor indicamos a nuestro equipo si debe enviar un dato (paqu
 
 Tabla de máscaras posibles:
 
-	Decimal 	CIDR 	Nº hosts
+	Decimal 	    CIDR 	Nº hosts
 	--------------- ----	--------
 	255.255.255.255	/32
 	255.255.255.254	/31
@@ -152,7 +152,7 @@ Como ya hemos dicho anteriormente, todos los sistemas conectados disponen de una
 
 Pongamos como ejemplo la navegación a una página web. Cuando escribimos en nuestro navegador el nombre de una página, el sistema, primeramente, preguntará a nuestro DNS cual es la dirección IP de la dirección que estamos solicitando. Nuestro DNS devolverá, a nuestro sistema, una dirección IP que se corresponderá con la página que estamos solicitando.
 
-La herramienta "dig" nos permite comprobar las direcciones ips de un nombre de dominio.
+La herramienta "dig" nos permite comprobar las direcciones IPs de un nombre de dominio.
 
 	┌─[user@parrot]─[~]
 	└──╼ $dig parrotsec.org

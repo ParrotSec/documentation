@@ -29,7 +29,7 @@
 
 - cat -n fichero
 		
-		Muestra el contenido de un fichero.(-n lo numera)
+		Muestra el contenido de un fichero (-n lo numera).    
 
 - pr -t fichero
 	
@@ -53,7 +53,7 @@
 		
 		echo nos muestra en pantalla el texto que le siga.
 
-- grep \'cadena\' archivo
+- grep '\cadena'\ archivo
 		
 		Muestra las líneas del archivo que contienen la cadena.
 
@@ -81,11 +81,11 @@
 		
 		Muestra las primeras líneas de un archivo, 10 por defecto. Admite opción -n igual que el comando tail.
 
-- find /usr -name lilo -print
+- find /boot -name grub
 		
-		Busca todos los ficheros con nombre lilo en /usr.
+		Busca todos los ficheros con nombre grub en /boot.
 
-- find /home/paco -name *.jpg -print
+- find /home/paco -name *.jpg
 	
 		Busca todas las imágenes .jpg en /home/paco.
 
@@ -105,18 +105,18 @@
 		
 		Muestra el listado de comandos usados por el usuario (~/.bash_history)
 
-- cd nom_directorio
+- cd nombre_directorio
 		
 		Cambia de directorio
 
       	
 	1 - cd ..
         
-		Vuelves al anterior.
+		Vuelves al directorio anterior.
      
 	2 - cd /home/paco/.mozilla
         	
-		Entras al de mozilla.(indicando la ruta completa)
+		Entras al directorio de .mozilla(indicando la ruta completa)
 
 - cp -dpR fichero1 ruta_fichero2
 		
@@ -139,21 +139,23 @@
 	-a
      	
 		Lo mismo que -dpR .
+		
 
 - mv ruta_fichero1 ruta_fichero2
 		
 		Mueve y/o renombra ficheros o directorios.
 
-- mkdir nom_directorio
+- mkdir nombre_directorio
 		
 		Crea un directorio.
 
 - rmdir nom_directorio
 		
-		Elimina un directorio(tiene que estar vacío).
+		Elimina un directorio siempre y cuando esté vacío.
+		
 - rm archivo
 
-		Elimina archivos .
+		Elimina archivos.
 
 	rm -r directorio
 		
@@ -194,7 +196,7 @@
 
 - wc fichero
 		
-		Muestra el nº de palabras, líneas y caracteres de un archivo.
+		Muestra el nº de líneas, palabras y caracteres.
 
 - wc -c fichero
 		
@@ -234,15 +236,20 @@
 		
 		Cambia el grupo de un fichero o directorio.
 
-- chmod [-R][ugo][+/- rwxs] fichero
+- chmod [-R][ugoa][+/- rwxs] fichero
 		
 		Cambia los permisos de acceso de un fichero
 
-		+: da permisos -: quita permisos
-		u: propietario R: recursivo
-		g: grupo r: lectura ejemplo: chmod +x fichero, es lo mismo que: chmod a+x fichero
-		o: otros w: escritura explicación: a es la opción por defecto.
-		a: todos x: ejecución
+        R: recursivo
+        u: propietario 
+		g: grupo
+		o: otros
+		a: todos 
+		+: da permisos 
+		-: quita permisos
+		r: lectura ejemplo: chmod +x fichero, es lo mismo que: chmod a+x fichero
+		w: escritura explicación: a es la opción por defecto.
+		x: ejecución
 		s: los atributos suid y sgid, otorgan a un \"fichero\" los permisos de su dueño o grupo respectivamente, cada vez 
 		que se ejecute, sea quien sea el que lo ejecute.
 
@@ -275,14 +282,14 @@
         7z e fichero_comprimido
 - Descomprimir.
 
-        7z x fichero_comprimido -o ruta_de_destino
+        7z x fichero_comprimido -oruta_de_destino
 - Extraer donde indicamos.
 
     	7z l fichero_comprimido
 - Ver contenido.
 
         7z t fichero_comprimido
-- Chequea el contenido.
+- Chequea la integridad del archivo.
 
 ##### Notas sobre 7zip
 
@@ -290,7 +297,7 @@ Comprime en formato 7z, zip, gzip, bzip2 y tar.
 Si es un directorio lo hace recursivamente sin emplear la opción -r
         
         
-- Con -t{tipo de fichero} tras las opción \"a\" elegimos el formato de compresión:
+- Con -t{tipo de fichero} tras las opción "\a"\ elegimos el formato de compresión:
 		
 		7z a -tgzip fichero.gz fichero
 
@@ -308,6 +315,7 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
 
 
 ###### Archivos zip
+
         zip -r fichero.zip fichero ; ejemplo: zip -r sinatra.zip ./sinatra/
 - Comprimir zip.
         
@@ -315,8 +323,10 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
 - Descomprimir zip.
         
         unzip -v archivo.zip
-
 - Ver contenido zip.
+
+
+###### Archivos rar
         
         unrar e -r archivo.rar (e extrae en el directorio actual)
 
@@ -330,7 +340,10 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
 
 - Ver contenido rar.
 
-        gzip -r fichero ; ejemplo: gzip -r ./sinatra
+
+###### Archivos gzip
+
+        gzip fichero ; ejemplo: gzip fichero.txt
 
 - Comprimir gz.
 
@@ -341,22 +354,26 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
         gzip -c fichero.gz
 
 - Ver contenido gz.
+
+
+###### Archivos bzip2
         
-        bzip2 fichero ; ejemplo: bzip2 ./sinatra/*.ogg
+        bzip2 fichero ; ejemplo: bzip2 fichero.txt
 
 - Comprimir bz2.
         
         bzip2 -d fichero.bz2
 
 - Descomprimir bz2.
-       
-       
+
+
 ##### NOTA:
 r equivale en todos los casos a recursivo.
 Mientras que zip comprime y empaqueta, gzip ó bzip2 sólo comprimen ficheros, no directorios, para eso existe tar.
 
 
 ##### Ficheros tar
+
         tar -vcf archivo.tar /fichero1 /fichero2 ...(fichero puede ser directorio)
 - Empaquetar.
 
@@ -369,17 +386,19 @@ Mientras que zip comprime y empaqueta, gzip ó bzip2 sólo comprimen ficheros, n
 ##### Para comprimir varios ficheros y empaquetarlos en un solo archivo hay que combinar el tar y el gzip o el bzip2 de la siguiente manera:
 
 ##### Ficheros tar.gz (tgz)
+
         tar -zvcf archivo.tgz directorio
 - Empaquetar y comprimir.
 
-
         tar -zvxf archivo.tgz
 - Desempaquetar y descomprimir.
-        
+
         tar -zvtf archivo.tgz
 - Ver contenido.
-        
+
+
 ##### Ficheros tar.bz2 (tbz2)
+
         tar -jvcf archivo.tbz2 directorio
 - Empaquetar y comprimir.
 
@@ -388,6 +407,7 @@ Mientras que zip comprime y empaqueta, gzip ó bzip2 sólo comprimen ficheros, n
 
         tar -jvtf archivo.tbz2
 - Ver contenido.
+
 
 ##### Opciones de tar:
 -c : crea un nuevo archivo.
@@ -401,7 +421,7 @@ cuando se usa con la opción -x, retira del archivo el fichero especificado.
 
 ### Comodines
 
-- (~) Sustituye el directorio home de manera que:
+- (~) Se refiere al directorio home de manera que:
 
 - ~/comandos.txt equivale a /home/paco/comandos.txt (si estamos en nuestro propio directorio)
 - ~pepe/comandos.txt equivale a /home/pepe/comandos.txt (pepe es otro usuario)
@@ -414,14 +434,14 @@ cuando se usa con la opción -x, retira del archivo el fichero especificado.
 
         ls ?epe
 
-- mostraría todos los ficheros de 4 caracteres y acabados en epe
+- mostraría todos los ficheros de 4 caracteres que acaben en epe
 
 
 - (*) Sustituye cualquier sucesión de caracteres. Ejemplos:
 
-        ls .ba*
+        ls *.ba
 
-- muestra todos los directorios o ficheros que comiencen con .ba
+- muestra todos los directorios o ficheros que terminen con .ba
 
         ls .*
 
@@ -429,7 +449,7 @@ cuando se usa con la opción -x, retira del archivo el fichero especificado.
 
         rm -r *
 
-- otra manera de desinstalar el sistema operativo.
+- borra de manera recursiva todos los ficheros y directorio de la ubicación actual
 
         rm *.jpg
 

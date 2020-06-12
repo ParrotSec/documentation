@@ -148,7 +148,7 @@ Estos parámetros modifican las acciones del comando chage:
 
 - El parámetro -I establece el número de días entre la caducidad de la contraseña y la cuenta. Una cuenta caducada no se puede utilizar o puede obligar al usuario a cambiar la contraseña inmediatamente después de conectarse. Esto depende de la configuración elegida por la distribución.
 
-- El parámetro -E establece una fecha de caducidad obsoleta. Por ejemplo, puede utilizar -E 2017/12/31 para que una cuenta venza el 31 de Diciembre del 2017 o utilizando el número de días que han pasado desde el 1 de Enero de 1970. También es importante mencionar que el valor "-1" no representa una fecha de caducidad.
+- El parámetro -E establece una fecha de caducidad obsoleta. Por ejemplo, puede utilizar -E 2020/12/31 para que una cuenta venza el 31 de Diciembre del 2020 o utilizando el número de días que han pasado desde el 1 de Enero de 1970. También es importante mencionar que el valor "-1" no representa una fecha de caducidad.
 
 - El parámetro -W establece el número de días antes de la expiración de la cuenta, en los que el sistema debe enviar avisos sobre la caducidad inminente al usuario. Es importante mencionar que estos avisos solo se muestran a usuarios de inicio de sesión en modo texto, los usuarios que inician sesión desde la GUI por lo general no ven estos avisos.
 
