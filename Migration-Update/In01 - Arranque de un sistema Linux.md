@@ -1,6 +1,6 @@
 ## Arranque de un Sistema Linux.
 
-El proceso de arranque en todo sistema de computadores comienza desde la BIOS y Linux no es la excepción. En este capítulo vamos a hablar sobre el proceso de arranque de un sistema Linux, vamos a ver qué sucede en nuestro sistema desde que pulsamos el botón de encendido hasta que el sistema operativo está completamente cargado. También vamos a ver las distintas fases por las cuales pasa nuestro sistema en todo el proceso de arranque incluyendo archivos y comandos involucrados. Básicamente existen cuatro fases de arranque en un sistema Linux:
+El proceso de arranque en todo sistema de computadores comienza desde la BIOS y Linux no es la excepción. En este capítulo vamos a hablar sobre el proceso de arranque de un sistema Linux, vamos a ver qué sucede en nuestro sistema, desde que pulsamos el botón de encendido hasta que el sistema operativo está completamente cargado. También vamos a ver las distintas fases por las cuales pasa nuestro sistema en todo el proceso de arranque, incluyendo archivos y comandos involucrados. Básicamente existen cuatro fases de arranque en un sistema Linux:
 
 - Fase 1: Hardware y BIOS
 - Fase 2: BootLoader o Cargador de Arranque
@@ -17,12 +17,12 @@ A continuación, vamos a ver cada una de estas fases de arranque y cómo funcion
 
  La BIOS se encarga de realizar las siguientes tareas:
 	
-  - Verificar la Integridad del código de la BIOS.
-  - Determina por qué se ejecuta el POST (arranque en frío, reset, error, standby, hibernación, etc.)
-  - Busca, dimensiona y verifica la memoria del sistema (RAM y ROM)
-  - Proporciona la interfaz de usuario para configurar parámetros del sistema (Velocidad de CPU, orden de arranque, tunning y overclocking, entre otras configuraciones particulares de otros fabricantes)
-  - Identifica, organiza y selecciona los dispositivos de arranque disponibles.
-  - Comienza el proceso de arranque del sistema, llamado Bootloader.
+  - Verificar la integridad del código de la BIOS.
+  - Determinar por qué se ejecuta el POST (arranque en frío, reset, error, standby, hibernación, etc.)
+  - Buscar, dimensionar y verificar las memorias del sistema (RAM y ROM).
+  - Proporcionar la interfaz de usuario para configurar parámetros del sistema (Velocidad de CPU, orden de arranque, tunning y overclocking, entre otras configuraciones particulares de otros fabricantes)
+  - Identificar, organizar y seleccionar los dispositivos de arranque disponibles.
+  - Comenzar el proceso de arranque del sistema, llamado Bootloader.
 
   Una vez que la BIOS realiza todas las pruebas necesarias y chequea la configuración correspondiente del sistema, y si todo está bien, pasa el control del sistema al Bootloader o Cargador de Arranque.
 
@@ -34,7 +34,7 @@ Ubicaciones de los Bootloaders (Cargadores de arranque):
 	
   - En un disquete (actualmente es una opción obsoleta).
   - En el disco duro: a menudo se encuentra ubicado en el primer sector de una partición del disco duro, en el sector de arranque global MBR (Master Boot Record) o en moderno sistema de particiones GUID Globally-Unique Identifier (GPT) que es el estándar EFI (Extensible Firmware Interface) propuesto por Intel para reemplazar el viejo BIOS (GPT sustituye al MBR usado con el BIOS en ordenadores y portátiles modernos).
-  - También podemos encontrar el Bootloader en un CD-ROM o DVD-ROM
+  - También podemos encontrar el Bootloader en un CD-ROM o DVD-ROM.
   - Existen algunos tipos de Bootloaders que se pueden cargar desde la red como es el caso de LinuxBios (una alternativa Open Source que tiene como objetivos sustituir la BIOS normal con una Bios con una pequeña inicialización de Hardware y un kernel de Linux comprimido, evitar el uso de Bootloaders, entre otras...)
 
 
@@ -50,7 +50,7 @@ Tipos de Bootloaders en Linux
 ### LILO
 LILO: es un Bootloader rudimentario de una sola etapa, no entiende de sistemas operativos ni de sistemas de ficheros. Lilo lee datos desde el disco utilizando llamadas nativas de la BIOS que indican directamente los ficheros que se necesitan, estos ficheros son almacenados a través de un fichero mapa que se almacena en el sector de arranque.
 
-Funcionamiento de LILO: El firmware carga el sector de arranque de LILO y lo ejecuta, luego LILO carga su fichero mapa por medio de llamadas de la BIOS, el cual muestra el prompt de opciones a cargar. El usuario selecciona el kernel que desea arrancar y LILO carga el kernel seleccionado por medio de llamadas de la BIOS y utilizando los parámetros de ubicación en el fichero mapa. Por último, LILO ejecuta el kernel indicando donde está el root fs (el sistema de archivos de raíz) y si es necesario el ramdisk.
+Funcionamiento de LILO: El firmware carga el sector de arranque de LILO y lo ejecuta, luego LILO carga su fichero mapa por medio de llamadas de la BIOS, el cual muestra el prompt de opciones a cargar. El usuario selecciona el kernel que desea arrancar y LILO carga el kernel seleccionado por medio de llamadas de la BIOS y utilizando los parámetros de ubicación en el fichero mapa. Por último, LILO ejecuta el kernel indicando dónde está el root fs (el sistema de archivos de raíz) y si es necesario el ramdisk.
 
 Ficheros de LILO:
 	
