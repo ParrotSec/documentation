@@ -37,7 +37,7 @@
 	
 	
 - cat fichero | less
-- cat fichero | lmore
+- cat fichero | more
 - more fichero
 - less fichero
 	
@@ -53,9 +53,9 @@
 		
 		echo nos muestra en pantalla el texto que le siga.
 
-- grep '\cadena'\ archivo
+- grep 'cadena' archivo
 		
-		Muestra las líneas del archivo que contienen la cadena.
+		Muestra las líneas del archivo que contienen la palabra cadena.
 
 - stat fichero
 		
@@ -79,7 +79,7 @@
 
 - head fichero
 		
-		Muestra las primeras líneas de un archivo, 10 por defecto. Admite opción -n igual que el comando tail.
+		Muestra las primeras líneas de un archivo, 10 por defecto. Admite la opción -n al igual que el comando tail.
 
 - find /boot -name grub
 		
@@ -87,7 +87,7 @@
 
 - find /home/paco -name *.jpg
 	
-		Busca todas las imágenes .jpg en /home/paco.
+		Busca todas las imágenes .jpg en el fichero /home/paco. 
 
 - whereis ejecutable
 		
@@ -118,9 +118,9 @@
         	
 		Entras al directorio de .mozilla(indicando la ruta completa)
 
-- cp -dpR fichero1 ruta_fichero2
+- cp -dpR fichero1 nueva_ruta/fichero2
 		
-		Realiza una copia del fichero1 a ruta_fichero2, cambiándole el nombre.
+		Realiza una copia del fichero1 a una nueva ruta, cambiándole el nombre a fichero2.
 
 	cp -dpR fichero1 /directorio
 		
@@ -171,8 +171,8 @@
 
 - ln -s ruta_directorio ruta_enlace
 		
-		Crea un enlace simbólico (con diferente inodo, es decir se crea un nuevo fichero que apunta al 
-		\"apuntado\", permitiendo enlazar con directorios y con ficheros de otro sistema de archivos)
+		Crea un enlace simbólico (con diferente inodo,donde ruta_directorio se enlazará a ruta_enlace, es decir se crea un nuevo fichero que apunta al 
+		\"apuntado\", permitiendo enlazar con directorios y con ficheros de otro sistema de archivos.)
 
 - diff [opciones] fichero1 fichero2
 		

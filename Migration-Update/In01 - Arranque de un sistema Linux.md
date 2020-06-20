@@ -32,7 +32,7 @@ A continuación, vamos a ver cada una de estas fases de arranque y cómo funcion
 
 Ubicaciones de los Bootloaders (Cargadores de arranque):
 	
-  - En un disquete (actualmente es una opción obsoleta).
+  - En un disquete (actualmente obsoleto).
   - En el disco duro: a menudo se encuentra ubicado en el primer sector de una partición del disco duro, en el sector de arranque global MBR (Master Boot Record) o en moderno sistema de particiones GUID Globally-Unique Identifier (GPT) que es el estándar EFI (Extensible Firmware Interface) propuesto por Intel para reemplazar el viejo BIOS (GPT sustituye al MBR usado con el BIOS en ordenadores y portátiles modernos).
   - También podemos encontrar el Bootloader en un CD-ROM o DVD-ROM.
   - Existen algunos tipos de Bootloaders que se pueden cargar desde la red como es el caso de LinuxBios (una alternativa Open Source que tiene como objetivos sustituir la BIOS normal con una Bios con una pequeña inicialización de Hardware y un kernel de Linux comprimido, evitar el uso de Bootloaders, entre otras...)
