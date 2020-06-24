@@ -41,7 +41,7 @@ In this page we list contributors and members, past and present, who have contri
 | terabreik        | Jose Gatica           | Spanish Community Leader <br> Forum Moderator                    | josegatica at parrotsec dot org |
 | ByteHackr        | Sandipan Roy(nemo)    | Indian community Leader <br> Forum Moderator                     | sandipan at parrotsec dot org    |
 | AresX            |                       | Chinese Community Leader <br> Forum Moderator                   | |
-| anubi5           | Abdel Rhman Anter     | Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
+| anubi5           | Abdel Rhman Anter     | Security Team Leader <br> Arabic Community Leader <br> Forum Moderator                     | anubi5 at parrotsec dot org  |
 | disrupt_the_flow |         | Greek Community Leader <br> Forum Moderator                                | disrupt_the_flow at parrotsec dot org|
 |  Mr-B Relax     | Bimantara Sutato Putra | Indonesian Community Leader <br> Forum Moderator                | |
 | Jarfr             | Jérôme Brichese                      | French Community Leader <br> Forum Moderator                | jarfr at parrotsec dot org |
