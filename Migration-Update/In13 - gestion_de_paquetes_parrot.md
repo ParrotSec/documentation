@@ -19,7 +19,7 @@ Las funciones principales de un gestor de paquetes deben ser:
 - Eliminación de software
 
 
-El gestor de paquetes debe comprobar en una ubicación dada (puede ser un directorio local o una dirección de red), la disponibilidad de dicho software. A estas ubicaciones se les llama repositorios. El sistema mantiene archivos de configuración para comprobar la ubicación de sus repositorios.
+El gestor de paquetes debe comprobar en una ubicación dada (puede ser un directorio local o una dirección de red) la disponibilidad de dicho software. A estas ubicaciones se les llama repositorios. El sistema mantiene archivos de configuración para comprobar la ubicación de sus repositorios.
 
 Comencemos...
 
@@ -33,9 +33,9 @@ En el sistema de ficheros, encontramos en la ruta "/etc/sources.list.d", el arch
 	deb http://deb.parrotsec.org/parrot stable main contrib non-free
 	#deb-src http://archive.parrotsec.org/parrot stable contrib non-free
 
-Con esto nos aseguramos tener la lista de repositorios correcta. En esta ubicación, los desarrolladores de Parrot, mantienen los paquetes actualizados.
+Con esto nos aseguramos tener la lista de repositorios correcta. En esta ubicación los desarrolladores de Parrot mantienen los paquetes actualizados.
 
-También puede ver el documento de "Lista de espejos (Mirrors)".
+También puede revisar el documento de "Lista de espejos (Mirrors)".
 
 
 ## Gestor de paquetes (APT)
@@ -97,4 +97,4 @@ Veamos qué podemos hacer con él. Veremos las opciones más comunes, pero aún 
 		# apt autoclean
 
 
-Estos son sólo unos ejemplos. Si requiere más información debería comprobar la página del manual (man 8 apt).
+Estos son sólo algunos ejemplos. Si requiere más información, consulte la página del manual (man 8 apt).
