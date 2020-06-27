@@ -23,7 +23,7 @@ escritorio independiente de los demás. El hecho de pasar aplicaciones entre
 escritorios es tan simple como arrastrar con el ratón la ventana de dicha aplicación a otro escritorio.
 GNOME es muy configurable, ya que se puede personalizar prácticamente cualquier cosa. Menús,
 iconos, tipos de letra, fondo de escritorio, pantalla, tema para las ventanas, sonido
-o la interacción con las ventanas entre otras.
+o la interacción con las ventanas entre otras. Actualmente es el entorno de escritorio por defecto en Debian GNU/Linux.
 
 **KDE**:
 Este entorno se basa en la personalización, y de la misma manera
@@ -38,10 +38,10 @@ que tenga mayor consumo de recursos que GNOME. También es cierto
 que el mayor consumo de recursos no es exagerado, aunque si
 sensiblemente superior siendo más pronunciado en la carga del
 escritorio. Donde más evidente se nota esta diferencia es en
-equipos con los recursos más ajustados.
+equipos con los recursos más ajustados. Es generalmente uno de los entornos recomendados para personas que recién comienzan su aventura por GNU/Linux.
 
 **UNITY**:
-Los elementos que tiene Unity son un lanzador a la izquierda que sirve como lugar donde se encuentran los accesos directos de las aplicaciones, un contenido central llamado "Lugares" que muestra todos los archivos y aplicaciones de usuario, además de ofrecer un buscador de categorías y aplicaciones.
+Los elementos que tiene Unity son un lanzador a la izquierda que sirve como lugar donde se encuentran los accesos directos de las aplicaciones, un contenido central llamado "Lugares" que muestra todos los archivos y aplicaciones de usuario, además de ofrecer un buscador de categorías y aplicaciones. Actualmente (2020) ya no es el entorno de escritorio por defecto en Ubuntu y está mayormente siendo probado para mejoras en Ubuntu Touch.
 
 
 **XFCE**: es un entorno muy ligero, y resulta ideal para equipos con menos recursos, ya que el no ser un entorno visualmente tan potente como pueden ser los anteriores, hace que no consuma tantos recursos. También hay que apuntar que el no ser tan potente visualmente no le impide que pueda ser muy personalizable, pudiendo cambiar temas de ventana, fondos de escritorio, protectores de pantalla, tipos de letras o cualquier aspecto visual del mismo.
@@ -49,7 +49,7 @@ Los elementos que tiene Unity son un lanzador a la izquierda que sirve como luga
 **LXDE**:
 De la misma manera que los anteriores, este entorno está disponible para varios sistemas Unix y GNU/Linux. LXDE (Lightweight X11 Desktop Environment) pretende ser, como su propio nombre indica, un entorno de escritorio X11 ligero. Utiliza Openbox como gestor de ventanas predeterminado.
 
-Los componentes de LXDE son independientes, a diferencia de otros entornos de escritorio, lo que hace que tengan muy pocas dependencias. Y como entorno ligero que es, está diseñado especialmente para equipos con escasos recursos como netbooks o ordenadores antiguos.
+Los componentes de LXDE son independientes, a diferencia de otros entornos de escritorio, lo que hace que tengan muy pocas dependencias. Y como entorno ligero que es, está diseñado especialmente para equipos con escasos recursos como netbooks u ordenadores antiguos.
 
 **OTROS ENTORNOS**:
 - XFast: entorno ligero que además de portable funciona en muchos dispositivos. Su objetivo principal es contar con un entorno gráfico muy rápido. Ideal para equipos con pocos recursos.
