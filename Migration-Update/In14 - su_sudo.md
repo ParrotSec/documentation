@@ -142,7 +142,7 @@ El fichero de configuración, es "/etc/sudoers". Lo podemos editar con nuestro e
 
 
 
-Este fichero expuesto arriba es la configuración por defecto en ParrotSec.
+Este fichero expuesto arriba es la configuración por defecto en ParrotOS.
 
 La línea "%sudo    ALL=(ALL:ALL) ALL" establece que cualquier usuario que pertenezca al grupo sudo podrá ejecutar cualquier comando (se sobreentiende que como root).
 
