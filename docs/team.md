@@ -12,6 +12,7 @@ In this page we list contributors and members, past and present, who have contri
 
 # Official Team Contacts
 |         Team         |              Contact              |
+| -------------------- | --------------------------------- |
 |  Board of Directors  |   director at parrotsec dot org   |
 |   Development Team   |     team at parrotsec dot org     |
 
