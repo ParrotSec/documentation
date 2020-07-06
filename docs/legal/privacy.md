@@ -10,6 +10,13 @@ NOTE: This policy is incomplete (it does not yet cover all the infrastructure of
 
 ## Privacy Policy
 
+### Parrot OS
+The Parrot operating system does not include trackers or telemetry from the Parrot team or its partners, and we do not track our users on the system.
+
+Parrot OS is a bundle of many complex programs and subsystems, and each of the programs installed on the system may implement it's own telemetry "features".
+
+The Parrot Security Team does its best to provide a system completely clean from trackers, and no data is collected from our users, but additional programs installed on the system by the end user may change this statement. It is up to the end user to make sure that newly installed programs don't ship their own telemetry if privacy is required.
+
 ### Parrot's Content Delivery Network
 
 What do these servers actually do? What kind of private information is stored? How is it stored? And what happens if an edge node is cloned and analyzed?
