@@ -63,7 +63,7 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
+| marafed          |  Federica Marasà      | Graphic Designer                                                | marafed at parrotsec dot org |
 | Serverket        |  Manuel Hernandez     | Graphic Designer                                                |                              |
 | janopineda       |  Alejandro Pineda     |                                                                 |                              |
 
