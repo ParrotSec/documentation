@@ -10,8 +10,12 @@ The Parrot Project is a community-driven project.
 
 In this page we list contributors and members, past and present, who have contributed significantly to the project.
 
+# Official Team Contacts
+|         Team         |              Contact              |
+|  Board of Directors  |   director at parrotsec dot org   |
+|   Development Team   |     team at parrotsec dot org     |
 
-# Core Dev Team
+# Core Team
 
 | nickname         |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
