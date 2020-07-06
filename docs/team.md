@@ -15,22 +15,23 @@ In this page we list contributors and members, past and present, who have contri
 
 | nickname         |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Sysadmin<br>Repository Maintainer    | palinuro at parrotsec dot org|
-| mibofra          | Francesco Bonanno     | ARM Releases Dev<br>Core Dev<br>Sysadmin<br>IPFS Repository Maintainer | mibofra at parrotsec dot org |
-| marafed          | Federica Marasà       | Project Manager <br> Package Maintainer <br> Graphic Designer   | marafed at parrotsec dot org |
-| Tissy            | Irene Pirrotta        | Project Manager <br> Package Maintainer <br> Social Media Manager |  tissy at parrotsec dot org  |
+| palinuro         | Lorenzo Faletra       | Team Leader<br>Core Dev<br>Infrastructure Manager<br>Release manager | palinuro at parrotsec dot org|
+| marafed          | Federica Marasà       | Project Manager<br>Web Dev<br>Social Media Manager<br>Graphic Designer<br> | marafed at parrotsec dot org |
+| Tissy            | Irene Pirrotta        | Project Manager<br>ARM Dev<br>Community Manager |  tissy at parrotsec dot org  |
+| h0tw4t3r         | Vlad                  | Core Dev<br>Package Maintainer | h0tw4t3r at parrotsec dot org | 
+| Dm Knght         | Nông Hoàng Tú         | Core Dev<br>Package Maintainer |   dmknght at parrotsec dot org    |
 
 
 &nbsp;
 
-# Dev Team
+# Contributors
+
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
+| v1s1t0r          |                       | Airgeddon Creator/Maintainer                                    | v1s1t0r.1s.h3r3 at gmail dot com |
+| nikksno          | Nicolas North         | Sysadmin<br>legal support                                       |      nz at os dot vu         |
 | Andi             |                       | Dev                                                             |   | 
-| h0tw4t3r         |                       | Dev <br> Forum Moderator <br> Tutorial Writer <br> Website contributor   | h0tw4t3r at parrotsec dot org | 
-| Dm Knght         | Nông Hoàng Tú         | Dev <br> Forum Moderator <br> Tutorial writer                   |   dmknght at parrotsec dot org    |
 | disrupt_the_flow |                  | Dev <br> Docs writer <br> Telegram Admin      | disrupt_the_flow at parrotsec dot org|
-| gnugr            | Vangelis Mouhtsis     | Debian/MATE dev<br>                  | gnugr at parrotsec dot org   |
 &nbsp;
 
 # Community Team
@@ -46,7 +47,6 @@ In this page we list contributors and members, past and present, who have contri
 | Jarfr             | Jérôme Brichese                      | French Community Leader <br> Forum Moderator                | jarfr at parrotsec dot org |
 | Kratvers         |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
 | ku3k3n             |    | German Community Leader <br> Forum Moderator                 |  |
-| rowie           |                       | German Community Leader (Alternate) <br> Forum Moderator                   | rowie at parrotsec dot org |
 | Nico_Paul        | Nico Gialluca         | English Community Leader <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
 | Kidklown         |                       | English Community  <br> Forum Moderator                          | |
 | Jeff             | Jeff Szydel           | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
@@ -54,7 +54,15 @@ In this page we list contributors and members, past and present, who have contri
 | mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                     | |
 |   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose at riseup dot net  |
 | KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
+&nbsp;
 
+# Security Team
+|  nickname        |         name          |                             role(s)                             |           email              |
+| ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
+| anubi5           | Abdel Rhman Anter     | Security Team Leader                     | anubi5 at parrotsec dot org  |
+| ByteHackr        | Sandipan Roy(nemo)    |Security Engineer                     | sandipan at parrotsec dot org    |
+| XC0D3        | Raul Alderete    |                      |    |
+| Spade        |     |                      |    |
 
 &nbsp;
 
@@ -62,18 +70,10 @@ In this page we list contributors and members, past and present, who have contri
 
 |  nickname        |         name          |                             role(s)                             |           email              |
 | ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| marafed          | Federica Marasà       | Graphic Designer                                                | marafed at parrotsec dot org |
-| Serverket        |  Manuel Hernandez     | Graphic Designer                                             |                          |
-| janopineda       |  Alejandro Pineda     |                                                                 |                             |
+| marafed          |  Federica Marasà      | Graphic Designer                                                | marafed at parrotsec dot org |
+| Serverket        |  Manuel Hernandez     | Graphic Designer                                                |                              |
+| janopineda       |  Alejandro Pineda     |                                                                 |                              |
 
-&nbsp;
-
-# Contributors
-
-|  nickname        |         name          |                             role(s)                             |           email              |
-| ---------------- | --------------------- | --------------------------------------------------------------- | ---------------------------- |
-| v1s1t0r          |                       | Airgeddon Creator/Maintainer                                    | v1s1t0r.1s.h3r3 at gmail dot com |
-| nikksno          | Nicolas North         | Sysadmin<br>legal support                                       |      nz at os dot vu         |
 &nbsp;
 
 # Special Thanks
@@ -81,6 +81,7 @@ In this page we list contributors and members, past and present, who have contri
 |          Name         |
 |:----------------------|
 | Nanni Bassetti (Caine)|
+| Albano Battistella (Zorin OS)|
 | Darix Deros (KNXSecurity)|
 | Giancarlo Niccolai    |
 | Nathaniel Jones       |
@@ -98,11 +99,9 @@ In this page we list contributors and members, past and present, who have contri
 | Paal             |                       | Former Forum setup <br>Organizer<br>Graphic Design                     |   paal at parrotsec dot org  |
 | sheireen         | Lisetta Ferrero       | Former Core Dev                                                        | sheireen at parrotsec dot org | 
 | s1udge           |                       | Operations lead <br> Forum Admin <br> Docs writer <br> Dev             | s1udge at parrotsec dot org  |
-| qr0f1l3r         | Andre Patock         | Contributor  <br> Forum Admin <br>                                     | andrepatock at parrotsec dot org
+| qr0f1l3r         | Andre Patock         | Contributor  <br> Forum Admin <br>                                     | andrepatock at parrotsec dot org |
+| mibofra          | Francesco Bonanno     | ARM Contributor | mibofra at parrotsec dot org |
+| gnugr            | Vangelis Mouhtsis     | Debian/MATE dev<br>                  | gnugr at parrotsec dot org   |
 
 &nbsp;
 
-&nbsp;
-
-[Using Parrot](https://docs.parrotlinux.org/info/start/) | [Troubleshooting](https://docs.parrotlinux.org/trbl/start/) | [Linux Beginner Guide](https://docs.parrotlinux.org/library/lbg-basics/) | [Home](https://docs.parrotlinux.org/)
-  
