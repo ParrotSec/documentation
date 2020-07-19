@@ -112,7 +112,7 @@ Nota: Al escribir dos puntos (:), el cursor se desplazará a la última línea d
 ## Modos vi
 
 Modo comandos:
-En este modo, podemos desplazarnos dentro de un archivo y efectuar operaciones de edición, buscar texto, eliminar texto, etc. Vi suele iniciarse en modo comandos.
+Vi suele iniciarse en modo comandos. En este modo, podemos desplazarnos dentro de un archivo y efectuar operaciones de edición, buscar texto, eliminar texto, etc. 
 
 Modo insertar:
 En el modo insertar, podemos escribir texto nuevo en el punto de inserción de un archivo. Para volver al modo comandos, presione la tecla Esc.

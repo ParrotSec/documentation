@@ -310,7 +310,7 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
 		1º)
      	   	- 7z a -ttar prueba.tar *.txt
 
-        	2º)
+        2º)
         	- 7z a -tgzip prueba.tgz prueba.tar
 
 
@@ -328,11 +328,11 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
 
 ###### Archivos rar
         
-        unrar e -r archivo.rar (e extrae en el directorio actual)
+        unrar e -r archivo.rar ("e" extrae en el directorio actual)
 
 - Descomprimir rar.
         
-        unrar x -r archivo.rar directorio de destino (x extrae donde se indique)
+        unrar x -r archivo.rar directorio_de_destino ("x" extrae donde se indique)
 
 - Descomprimir rar.
         
