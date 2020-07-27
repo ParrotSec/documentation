@@ -1,33 +1,37 @@
-<h1>Documentación oficial Parrot Security OS (español)</h1>
-
-Bienvenidos a la documentación oficial en español de Parrot Security OS, proyecto que ha sido posible primeramente gracias al aporte de miembros de la comunidad de habla hispana de la distro del lorito.
+<h1>Parrot Security Official Documentation</h1>
+This project has been possible thanks to Parrot distro spanish language community members's work.
+You can see our online doc on https://docs.parrotsec.org/doku.php, also we care about creating new contents.
 
 <hr>
 
-El <b>equipo directivo</b> de Parrot Security OS en español se compone de las siguientes personas:
+Our <b>ParrotSec Leader Team</b>  in spanish language is:
+- José Gatica (ParrotSec-ES Team Leader)
 
-- <b>Lorenzo "palinuro" Faletra</b> (Director y Desarrollador Parrot Security OS)<p>
-- <b>José Gatica</b> (Director de proyecto ParrotSec-ES)
+    English Doc Team:
+    - Eloir Corona
+    - Adrian "Ghostar" Baldiviezo
+- Josu Elgezabal (Documentation Leader)
+- Romell Marín (Documentation Leader)
+- Claudio Marcial (Web Leader Team)
+- Alejandro Pineda (ParrotSec-ES Art)
+- Raúl Alderete (Audiovisual Material)
+<br>
+<b>Lorenzo "palinuro" Faletra</b> (Parrot Security OS Leader and Developer)
 
-- Manuel Hernández (Diseño ParrotSec-ES)
-- Romell Marín (Director de Documentación)
-- Claudio Marcial (Director equipo web)
-- Alejandro Pineda (Diseño ParrotSec-ES)
-- Raúl Alderete (Material Audiovisual)
-<br>
-Agradecemos la colaboración constante e incansable durante todos estos años a nuestro querido amigo <b>Josu Elgezabal</b>. De toda la bandada, eres de los que valen oro.
-<br>
 <hr>
 
-Si quieres unirte a nosotros y colaborar con este y otros proyectos, te invitamos a unirte a nuestro grupo en Telegram a través del siguiente link https://t.me/ParrotSpanishGroup
+If you want to join us and colaborate with this project, we invite you to join to our Telegram chat group with the next link: https://t.me/ParrotSpanishGroup
 
-También puedes encontrarnos en nuestra fanpage de Facebook: https://www.facebook.com/parrot.es/
+You can find us on our Facebook Group too: https://www.facebook.com/groups/parrotsec
 
-Nuestra web: https://www.parrotsec.org/
+<h3>Our web:</h3>
 
-Además, si encuentras algún detalle por mejorar o corregir, puedes escribir por correo a josegatica@parrotsec.org.
+· English: https://www.parrotsec.org/
 
-<h2>¿Por qué PARROT (Loro)?</h2>
+· Spanish: https://www.parrotsec-es.org/
 
-"No concebimos que un pirata que zurca los siete mares, peleando batallas y haciendo juerga con sus filibusteros, no tenga un loro en su hombro"
+Also, if you find some mistake (hey! we're humans), you can write an email to josegatica@parrotsec.org.
 
+<h2>Why Parrot?</h2>
+
+"Because it was born as a game, and every pirate of the seven seas needs a parrot on his shoulders if he wants to board the galleons with his crew of jailbird filibusters"
