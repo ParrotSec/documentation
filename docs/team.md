@@ -53,9 +53,8 @@ In this page we list contributors and members, past and present, who have contri
 | Kratvers         |       Denis           | Russian Community Leader <br> Forum Moderator                   | |
 | ku3k3n             |    | German Community Leader <br> Forum Moderator                 |  |
 | Nico_Paul        | Nico Gialluca         | English Community Leader <br> Forum Moderator <br>Organizer     | nico at parrotsec dot org  | 
-| Kidklown         |                       | English Community  <br> Forum Moderator                          | |
 | Jeff             | Jeff Szydel           | Facebook admin <br> System Tester                            |   jeff at parrotsec dot org  |
-| Zaphod BB        |                       | Telegram Admin <br> Forum Moderator                             | ptd at parrotsec dot org  |
+| PTD        |                       | Telegram Admin <br> Forum Moderator                             | ptd at parrotsec dot org  |
 | mastrobirraio    | Pino Matranga         | Web Team Leader <br> Italian Community Leader <br> Forum Moderator                     | |
 |   LulzRose       | Kurt Bruggeman        |                                                                 |  LulzRose at riseup dot net  |
 | KileXt           |                       | Forum Moderator <br> Tutorial writer                            |                              |
