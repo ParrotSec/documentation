@@ -14,7 +14,7 @@ Penetration testing is a time intensive job, maintaining your toolkit shouldn't
 be also. We make it easier for professionals to accomplish the important stuff 
 by reducing the time and effort wasted making sure their tools work.
 
-Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://docs.parrotlinux.org/intro/what-is-parrot/#should-i-use-parrot)" to be sure.
+Not sure if Parrot is for you? Check out "[Should I use Parrot?](https://docs.parrotsec.org/intro/what-is-parrot/#should-i-use-parrot)" to be sure.
 
 ### What is the default live password?
 
@@ -52,6 +52,28 @@ Then click on the button to update the packages list.
 
 Click on the other button to select the upgrades and finally apply the changes.
 
+
+### Security or Home edition, which one should i choose?
+
+Parrot Home Edition and Parrot Security Edition are identical, and the only difference between them is the set of software that comes pre-installed.
+
+Parrot OS Home Edition comes with **no** security tools, while Parrot OS Security Edition comes with all the hacking and pentest tools pre-installed.
+
+You can install Parrot Home and install only the hacking tools you actually need, or you can install all of them at once with `sudo apt install parrot-tools-full`
+
+You can also install Parrot Home as your primary OS and then install the Security Edition as a virtual machine to isolate your home environment form your working one.
+
+
+### MATE or KDE, which one should i choose?
+
+MATE is our primary Desktop Environment and it is what we consider to be the default one.
+
+If you don't know which one to choose, go with the MATE edition.
+
+KDE Plasma is another Desktop Environment with a different look and feel that you can try if the MATE edition is not for you.
+
+We also support other desktop environments like XFCE and i3, but these are experimental and it is up to you to customize them to fit your needs.
+
 ### Why isn't $toolname installed?
 
 We have a set of prerequisites to check before a tool makes its way into our repositories such as:
@@ -75,11 +97,11 @@ If the answers were “Yes” we're more than glad to take your request via our 
 
 ### Where can bugs be submitted?
 
-If the bug involves a specific piece of software maintained by Parrot, then search the project on our [Dev Portal](https://nest.parrot.sh/) and open an issue.
+If the bug involves a specific piece of software maintained by Parrot, then search the project on our [Dev Portal](https://nest.parrotsec.org/) and open an issue.
 
 If the bug involves a software package that is not listed, then you should contact the maintainer of that particular software.
 
-If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotlinux.org/c/development/)
+If you are not sure what software is involved, or if you don't know how to contact the upstream developer, then contact us on our [Community Portal](https://community.parrotsec.org/c/development/)
 
 ### What should my sources.list look like?
 
@@ -153,7 +175,7 @@ There are several and we think you should try both to really get a solid feeling
 
 ### Can I contribute to this FAQ?
 
-Of course! The pages are written in Markdown and can be accessed [here](https://nest.parrotsec.org/parrot-organization/documentation/blob/master/docs/faq.md).
+Of course! The pages are written in Markdown and can be accessed [here](https://nest.parrotsec.org/org/documentation/blob/master/docs/faq.md).
 
 
 &nbsp;

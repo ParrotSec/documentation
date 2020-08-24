@@ -15,7 +15,7 @@ visible: true
 
 &nbsp;
 
-### If you can't find the answer here, or in our [FAQ](https://docs.parrotlinux.org/faq/) please post on the [forum](https://community.parrotsec.org/c/support/)
+### If you can't find the answer here, or in our [FAQ](https://docs.parrotsec.org/faq/) please post on the [forum](https://community.parrotsec.org/c/support/)
 &nbsp;
 
 ---
@@ -24,7 +24,7 @@ If you've never used Linux we suggest you look at this course by the Linux found
 </b>
 
 NOTE: Currently a WIP (work in progress, some links might not work and some documentation is likely missing.)<br>
-(looking for how to install? see [here](https://docs.parrotlinux.org/getting-started/start/))
+(looking for how to install? see [here](https://docs.parrotsec.org/getting-started/start/))
 ### Setup and Configuration
 
 - [System Requirements](system-requirements.md) 
