@@ -10,11 +10,11 @@ visible: true
 
 &nbsp;
 
-**ParrotOS** (Parrot Security, ParrotOS) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
+**Parrot Security** (Parrot OS, Parrot) is a free and open source GNU/Linux distribution based on [Debian Testing](https://www.debian.org/releases/testing/) designed for security experts, developers and privacy aware people.
 
 It includes a full portable arsenal for IT security and digital forensics operations, but it also includes everything you need to develop your own programs or protect your privacy while surfing the net.
 
-The operating system ships with the MATE desktop environment preinstalled and is available in several flavors to fit your needs.
+The operating system ships by default with either MATE or KDE desktop environments and is available in several flavors to fit your needs.
 
 
 ![macaw-poly](https://docs.parrotlinux.org/img/macaw-poly.jpg)
@@ -28,11 +28,11 @@ The operating system ships with the MATE desktop environment preinstalled and is
 
 ### History and Team
 
-The first public release appeared on April 10th, 2013 as the result of the work of **Lorenzo Faletra** who continues to lead development.
+The first public release appeared on April 10th, 2013 as the result of the work of [**Lorenzo Faletra**](https://palinuro.dev) who continues to lead development.
 
-Originally developed as part of Frozenbox, the effort has grown to include a community of open source developers, professional security experts, advocates of digital rights, and Linux enthusiasts from all around the globe.
+Originally developed as part of Frozenbox (a community forum by the same creator of Parrot), the effort has grown to include a community of open source developers, professional security experts, advocates of digital rights, and Linux enthusiasts from all around the globe.
 
-The project is headquartered in Palermo, Italy and it is supported by an international team of experts and enthusiasts.
+The project is headquartered in Palermo, Italy and governed by Parrot Security CIC, a community interest company registered in the UK.
 
 ---
 
@@ -40,18 +40,7 @@ The project is headquartered in Palermo, Italy and it is supported by an interna
 
 The system is designed to be familiar for the security expert and easy to use for the new entry student, but it does not try to hide its internals as other general purpose distributions try to do.
 
-**Parrot can be used as a daily system**, and it provides all the programs for the day to day tasks, including dedicated system flavors that don't ship security tools.
-
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Secure Sandboxed Environment
-
-People familiar with other pentest distributions may notice that Parrot is quite unique, as **it does not allow direct root logins** for safety reasons (root can only be used with sudo), and it provides its own sandbox system by combining [Firejail](https://firejail.wordpress.com) and [AppArmor](https://wiki.ubuntu.com/AppArmor) with custom security profiles.
+**Parrot can be used as a daily system**, and it provides all the programs for the day to day tasks, including a dedicated edition of the system (Parrot HOME) that don't include security tools.
 
 
 &nbsp;
@@ -84,7 +73,7 @@ In this section we will explain how different is Parrot compared to other genera
 
 
 
-<img src="https://docs.parrotlinux.org/img/parrot.svg" width="200">
+<img src="https://docs.parrotsec.org/img/parrot.svg" width="200">
 
 
 ### General purpose distributions
@@ -111,13 +100,15 @@ Our goal is to allow any professional pentester to make a whole security test fr
 
 ### Secure distributions
 
-Parrot includes its own sandbox system obtained with the combination of [Firejail](https://firejail.wordpress.com) and [AppArmor](https://wiki.ubuntu.com/AppArmor) with custom security profiles.
+Parrot Security ships with custom hardening profiles and configurations for [AppArmor](https://wiki.ubuntu.com/AppArmor) and other linux hardening technologies, and takes inspiration from the success of other projects that deliver the highest level of security in the GNU/Linux scenario, like [Tails](https://tails.boum.org) and [Whonix](https://www.whonix.org) to sandbox the system and deliver a layer of security above the average.
 
 User applications in Parrot are **protected** and **"jailed"** to limit the damages in case the system is compromised.
 
-All this additional security comes with a cost: it is harder to adopt bad behaviors on Parrot. For instance it is not possible to log in as root with the whole desktop environment, or to start critical applications like browsers, media players or advanced document readers with unnecessary privileged permissions.
+All this additional security comes with a cost: it is harder to adopt bad behaviors on Parrot. For instance **it is not possible to log in as root** with the whole desktop environment, or to start critical applications like browsers, media players or advanced document readers with unnecessary privileged permissions.
 
-The user can still open root consoles, launch security tools with privileged permissions and use the system without limits. The only thing that changes is that all the critical user applications are now protected from very bad behaviors and common exploit techniques, and the damages caused by advanced exploits are very limited.
+The user can still open root consoles, launch security tools with privileged permissions and use the system without limits. The only thing that changes is that all the critical user applications are now protected from very bad behaviors and common exploit techniques, or even 0days, and the damages caused by advanced exploits are very limited.
+
+Additional and more aggressive sandboxing can be achieved with [Firejail](https://docs.parrotsec.org/info/firejail/)
 
 ---
 
@@ -137,11 +128,12 @@ The no-automount behavior is consistent and stable, but no protection is provide
 
  * Security Experts
  * Digital forensics experts
- * Engineering and IT Students
+ * Computer Science/Engineering Students
  * Researchers
- * Journalists & Hacktivists
  * Wannabe Hackers
- * Police officers and special security institutions
+ * Software developers
+ * Journalists, Hacktivists and Whistleblowers
+ * Police officers and security agencies
 
 &nbsp;
 

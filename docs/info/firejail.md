@@ -10,7 +10,7 @@ NOTE: Currently a WIP (work in progress, some links might not work and some docu
 
 ## What is Firejail
 
-Firejail is a SUID program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces and seccomp-bpf. It allows a process and all its descendants to have their own private view of the globally shared kernel resources, such as the network stack, process table, mount table.
+Firejail is a SUID program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces and seccomp-bpf. It allows a process and all its descendants to have their own private view of the globally shared kernel resources, such as the network stack, process table, mount table and system files, and it is used to allow a program to access only the resources it needs to work in order to remove elements commonly used in system exploitation or reduce the attack surface and limit the damage caused by a successful attack even in 0day exploits are involved.<
 
 Written in C with virtually no dependencies, the software runs on any Linux computer with a 3.x kernel version or newer. The sandbox is lightweight, the overhead is low. There are no complicated configuration files to edit, no socket connections open, no daemons running in the background. All security features are implemented directly in Linux kernel and available on any Linux computer. The program is released under GPL v2 license.
 
@@ -20,7 +20,20 @@ firejail firefox
 ```
 Firejail uses profiles to set the security protections for each of the applications executed inside of it - you can find the default profiles in /etc/firejail/application.profile. Should you require custom profiles for applications not included, or wish to modify the defaults, you may place new rules or copies of the defaults in the ~/.config/firejail/ directory. You may have multiple custom profile files for a single application, and you may share the same profile file among several applications.
 
-If firejail does not have a profile for a particular application, it uses its restrictive system-wide default profile. This can result in the application not functioning as desired, without first creating a custom, and less restrictive profile. 
+If firejail does not have a profile for a particular application, it uses its restrictive system-wide default profile. This can result in the application not functioning as desired, without first creating a custom, and less restrictive profile.
+
+## Installing Firejail
+
+Firejail used to be pre-installed in Parrot, but in more recent versions you have to install it by yourself.
+
+Firejail was a very effective and easy to implement sandboxing technology, but its impact in system usability was huge, and Parrot decided to adopt other sandboxing solutions (like Apparmor) and leave firejail only for the brave hearts.
+
+Use the following commands to install Firejail
+
+```bash
+sudo apt update
+sudo apt install firejail firejail-profiles
+```
 
 ## Using Firejail
 
