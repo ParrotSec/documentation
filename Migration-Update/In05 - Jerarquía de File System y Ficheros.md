@@ -29,7 +29,7 @@ Para entender la jerarquía de los Ficheros en Linux a continuación daremos una
 
 
 	DIRECTORIO	DEFINICIÓN/CONTENIDO
-	/		    Directorio Raíz o Principal, el que contiene toda la estructura de directorios y ficheros del sistema, en otras palabras, todo lo que existe en Linux está en algún punto por debajo de este directorio.
+	/		    Directorio Raíz o Principal, es el que contiene toda la estructura de directorios y ficheros del sistema, en otras palabras, todo lo que existe en Linux está en algún punto por debajo de este directorio.
 	/bin		Contiene los binarios esenciales de los sistemas Linux/Unix, accesibles para todos los usuarios. Al referirnos a estos archivos como “binarios” nos estamos refiriendo a ejecutables ya compilados.
 	/boot		Contiene el Kernel (núcleo del sistema), initrd, grub, etc.  Son archivos utilizados durante el arranque del sistema.
 	/dev		Agrupa los dispositivos esenciales, almacenamiento, teclado, terminales, sonido, video, cd, dvd, impresoras, etc.
