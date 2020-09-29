@@ -262,7 +262,7 @@ Muestra en pantalla el texto que le siga.
 
 	$ grep 'cadena' archivo
 
-Muestra las líneas de un archivo que contienen la palabra cadena.
+Muestra las líneas de un archivo que contienen  cadena.
 
 	$ stat fichero
 
