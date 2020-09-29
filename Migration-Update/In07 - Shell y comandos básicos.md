@@ -112,7 +112,7 @@ Para cambiar al usuario "parrot" u otro usuario del sistema, ejecutamos "su", se
 	parrot
 
 
-como puede ver hemos utilizado el comando "su" para cambiar nuestra identidad por la del usuario "parrot" sin necesidad de cerrar sesión. A partir de ahora todas las operaciones que realizamos en el sistema se ejecutarán con los permisos del usuario "parrot". Para regresar hacia nuestro usuario normal, basta con ejecutar el comando "exit".
+Como puede ver hemos utilizado el comando "su" para cambiar nuestra identidad por la del usuario "parrot" sin necesidad de cerrar sesión. A partir de ahora todas las operaciones que realizamos en el sistema se ejecutarán con los permisos del usuario "parrot". Para regresar hacia nuestro usuario normal, basta con ejecutar el comando "exit".
 
 	$ su parrot
 	contraseña: <contraseña del usuario parrot>
@@ -134,7 +134,7 @@ También podemos usar el comando "su" para cambiar hacia el usuario "root". No e
 	$ whoami
 	user
 
-Nótese como el prompt cambió el símbolo de $ por el símbolo #. Esto se debe a que el símbolo $ representa a los usuarios normales del sistema y el símbolo # representa al superusuario (root). Al igual que en el ejemplo anterior, para volver hacia nuestro usuario ejecutamos el comando exit.
+Nótese como el prompt cambió el símbolo $ por el símbolo #. Esto se debe a que el símbolo $ representa a los usuarios normales del sistema y el símbolo # representa al superusuario (root). Al igual que en el ejemplo anterior, para volver hacia nuestro usuario ejecutamos el comando exit.
 
 En caso de querer cambiar hacia un usuario y a la vez cambiar hacia su carpeta personal y demás variables de entorno, agregamos un símbolo menos (-) entre el comando su y el nombre del usuario, ejemplo:
 
@@ -262,7 +262,7 @@ Muestra en pantalla el texto que le siga.
 
 	$ grep 'cadena' archivo
 
-Muestra las líneas de un archivo que contienen cadena.
+Muestra las líneas de un archivo que contienen la palabra cadena.
 
 	$ stat fichero
 
