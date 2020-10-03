@@ -29,7 +29,7 @@ ejemplo:
 
 	$ sudo useradd -m -d /home/parrot -g hackers -G hackers,noobs,sudo parrot
 
-Este comando nos creará al usuario parrot. Su carpeta home sería /home/parrot,con el grupo por defecto hackers y los grupos secundarios hackers,noobs,sudo.
+Este comando nos creará al usuario parrot. Su carpeta home sería /home/parrot, con el grupo por defecto hackers y los grupos secundarios hackers,noobs,sudo.
 
 
 "adduser" es una utilidad menos compleja, ya que nos autocompleta prácticamente casi todo. Es útil para la creación de usuarios estándares en un sistema pequeño. Su sintaxis básica es la siguiente:
