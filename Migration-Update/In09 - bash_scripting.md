@@ -174,7 +174,7 @@ Ejemplo:
 	#!/bin/bash
 	echo "Introduzca un valor:"
 	read valor
-	if [ $ valor -ge 5 ]
+	if [ $valor -ge 5 ]
 	then 
 		echo "El valor introducido es mayor o igual a 5"
 	else
@@ -625,7 +625,7 @@ Redirigiendo las salidas, bien sea la estándar como la de errores, a un archivo
 	done
 
 
-En este ejemplo, hemos redirigido con el símbolo ">" la salida de "date" a "fecha.txt". Si hacemos "cat fecha.txt" sólo veremos una línea (la de la última ejecución). Explicando esto en más detalle, vemos que nuestro script ha repetido la iteración "for" 3 veces. En la primera ejecución, tras mostrar por pantalla la salida de "date", ha creado un archivo nuevo "fecha.txt" para escribir la salida estándar del siguiente "date". En la segunda ejecución del bucle ocurre lo mismo. En la instrucción "date > fecha.txt", la salida del comando se redirige a un archivo recién creado llamado "fecha.txt", sobrescribiéndolo. De esta forma perderá el contenido de la primera iteración. En la tercera pasada vuelve a ocurrir exactamente lo mismo, generando que el archivo resultante sólo muestre la última ejecución.
+En este ejemplo, hemos redirigido con el símbolo ">" la salida de "date" a "fecha.txt". Si hacemos "cat fecha.txt" sólo veremos una línea (la de la última ejecución). Explicando esto en más detalle, vemos que nuestro script ha repetido la iteración "for" 3 veces. En la primera ejecución, tras mostrar por pantalla la salida de "date", ha creado un archivo nuevo "fecha.txt" para escribir la salida estándar del siguiente "date". En la segunda ejecución del bucle ocurre lo mismo. En la instrucción "date > fecha.txt", la salida del comando se redirige a un archivo recién creado llamado "fecha.txt", sobrescribiéndolo. De esta forma perderá el contenido de la primera iteración. En la tercera pasada vuelve a ocurrir lo mismo, generando que el archivo resultante sólo muestre la última ejecución.
 Para que no ocurra esto, podemos utilizar los símbolos de redirección ">>". Con esto, conseguiremos que no se sobrescriba el archivo, añadiendo una linea de salida por cada ejecución.
 
 	#!/bin/bash
