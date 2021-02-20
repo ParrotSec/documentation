@@ -3,7 +3,7 @@ Guys, please check it out and let me know your thoughts. Changes have been made 
 When using Parrot's chat services, please observe the following guidelines:
 
 General Rules:
-~ English, Only
+~ English, Only -for global community- (or the language of the community you are in)
 * No Spam
 * No advertising
 * No NSFW
@@ -31,4 +31,6 @@ For Asking Help:
 ~ Warning
 
 To Appeal a ban or action send a PM to @reporting on the forum, detailing what happened and why you think it was wrong. The moderator will have a chance to give his side of the story and a decision will be made shortly after. All decisions are final.
+
+Porn, Crypto or phishing attempt links == Instant BAN
 
