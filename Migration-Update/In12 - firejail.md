@@ -23,23 +23,23 @@ Si hubiésemos instalado firejail, se podría lanzar (En su distribución Parrot
 
         $ls -la /usr/local/bin/
         total 12
-        drwxrwsr-x  2 root staff 4096 Apr 18 11:54 .
+        drwxrwsr-x  2 root staff 4096 Feb 18 11:54 .
         drwxrwsr-x 10 root staff 4096 Feb  8 12:42 ..
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 VirtualBox -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 apktool -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 arduino -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 atril -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 claws-mail -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 conky -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 cvlc -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 dex2jar -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 display -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 dnsmasq -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 eom -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 evince -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 exiftool -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 ffmpeg -> /usr/bin/firejail
-        lrwxrwxrwx  1 root staff   17 Apr 18 11:54 firefox -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 VirtualBox -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 apktool -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 arduino -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 atril -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 claws-mail -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 conky -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 cvlc -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 dex2jar -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 display -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 dnsmasq -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 eom -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 evince -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 exiftool -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 ffmpeg -> /usr/bin/firejail
+        lrwxrwxrwx  1 root staff   17 Feb 18 11:54 firefox -> /usr/bin/firejail
         ...
         ...
         ...
