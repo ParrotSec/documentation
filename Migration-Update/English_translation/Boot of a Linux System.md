@@ -1,18 +1,18 @@
-Boot of a Linux System
+## Boot of a Linux System ##
 
 The boot process in every computers system starts from the BIOS, and Linux is no the exception. In this chapter we are going to be talking about the boot process of a Linux system, we will see what happens in our system since we push the power button until the operative system is fully charged. We will also see the different phases for which our system passes in every boot process, including involved files and commands. Basically, there are four boot phases in a Linux system:
 
-Phase 1: Hardware and BIOS
+**Phase 1**: Hardware and BIOS
 
-Phase 2: BootLoader
+**Phase 2**: BootLoader
 
-Phase 3: Kernel
+**Phase 3**: Kernel
 
-Phase 4: Init
+**Phase 4**: Init
 
 Next we will see each of these boot phases and how they work.
 
-Phase 1: Hardware and BIOS
+### Phase 1: Hardware and BIOS ###
 
 The boot process starts from the moment we push the power button in our computer. In this phase, the system initiates passing the control to the BIOS.
 
@@ -29,11 +29,11 @@ BIOS is responsible for performing the next tasks:
 
 Once the BIOS performs all the necessary tests and checks the system corresponding configuration, if everything is OK, passes the system control to the Bootloader.
 
-Phase 2: Bootloader
+### Phase 2: Bootloader ###
 
 The Bootloader objective is to load part of the operating system Kernel and execute it. In this phase, the bootloader takes control of the computer system and is in charge of loading the rest of the operative system. There are many types of Bootloaders, and these can be loaded from many storage units.
 
-Bootloaders Locations:
+#### Bootloaders Locations: ####
 
 	* On a floppy disk (currently obsolete).
 	* On the hard drive: it is often located in the first sector of a hard drive partition, in the global boot MBR (Master Boot Record) sector, or in the modern partition system GUID Globally-Unique Identifier (GPT), which is the standard EFI (Extensible Firmware Interface), proposed by Intel to replace the old BIOS (GPT replaces the MBR ised with the BIOS in modern computers and laptops.)
@@ -47,11 +47,11 @@ Types of Bootloaders in Linux
 
 	They are both capable of loading Linux systems as well as other operating systems and are usually located in the MBR of the hard drive.
 
-LILO: is a rudimentary single-stage Bootloader, does not understand operating systems or file systems. LILO reads data from the hard drive using native calles from the BIOS, that directly indicate the needed files. These files are storaged through a map file, which is  stored in the boot loader.
+**LILO**: is a rudimentary single-stage Bootloader, does not understand operating systems or file systems. LILO reads data from the hard drive using native calles from the BIOS, that directly indicate the needed files. These files are storaged through a map file, which is  stored in the boot loader.
 
-LILO Operation: The firmware loads the LILO boot sector and execute it, the LILO loads its map file by means of BIOS calls, which shows the options message to load. The user selects the kernel he wants to start and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Finallly, LILO executes the kernel that indicates where the root fs is (the root file system) and, if necessary, the ramdisk.
+**LILO Operation**: The firmware loads the LILO boot sector and execute it, the LILO loads its map file by means of BIOS calls, which shows the options message to load. The user selects the kernel he wants to start and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Finallly, LILO executes the kernel that indicates where the root fs is (the root file system) and, if necessary, the ramdisk.
 
-LILO Files:
+**LILO Files**:
 
 	* Example of /etc/lilo.conf
 
@@ -72,15 +72,15 @@ LILO Files:
 
 	$lilo /etc/lilo.conf
 
-GRUB: is a more advanced and modern Bootloader than LILO. It works in two or three stages and has the capacity to load a kernel via network. GRUB, in each stage, loads more elements to boot, it understands files and allows to specify parameters dynamically at startup. It does not use static values.
+**GRUB**: is a more advanced and modern Bootloader than LILO. It works in two or three stages and has the capacity to load a kernel via network. GRUB, in each stage, loads more elements to boot, it understands files and allows to specify parameters dynamically at startup. It does not use static values.
 
-GRUB Operation: As mentioned above, GRUB has two or three stages, it is said to have two or three stages because the second stage is optional. Next we will see each of these stages.
+**GRUB Operation**: As mentioned above, GRUB has two or three stages, it is said to have two or three stages because the second stage is optional. Next we will see each of these stages.
 
-Stage 1: The firmware loads the GRUB boot sector in memory.
+**Stage 1**: The firmware loads the GRUB boot sector in memory.
 
-Stage 1.5: Its objective is to load the code that recognizes file systems and from there load stage 2 as a file.
+**Stage 1.5**: Its objective is to load the code that recognizes file systems and from there load stage 2 as a file.
 
-Stage 2: GRUB shows the menu with the boot options that we have defined and a prompt where we can specify ramdisk, kernels, etc. to load.
+**Stage 2**: GRUB shows the menu with the boot options that we have defined and a prompt where we can specify ramdisk, kernels, etc. to load.
 
 These GRUB stages and characteristics demonstrate its power and superiority to LILO, it is capable of loading files and performing dynamic tasks in the boot phase of the system, hence it is Bootloader by excellence in the vast majority of distributions.
 
@@ -99,7 +99,7 @@ GRUB files in Parrot:
 
 These files vary depending on the distribution. In distributions based on Debian, it usually looks like this.
 
-Phase 3: Kernel
+### Phase 3: Kernel ###
 
 
 A brief description of the Linux Kernel:
@@ -130,7 +130,7 @@ Mounts the root filesystem (/).
 
 From here, it calls the init process that runs with a uid 0 and will be the father of all other processes.
 
-Phase 4: Init
+### Phase 4: Init ###
 
 At this moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root file system. From now on, the rest of the operations will be performed directly or indirectly by the init process. The init process reads the configuration to be used from the / etc / inittab file and executes the /etc/rc.sysinit command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
 
