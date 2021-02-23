@@ -1,7 +1,9 @@
-Installation procedure of a Lemp Nginx web server in ParrotSec
-What is LEMP?
+## Installation procedure of a Lemp Nginx web server in ParrotSec ##
+
+### What is LEMP? ###
+
 You can find what is this combination of these technologies used mainly to define the infrastructure of a web server, using a programming paradigm for development.
-In -> <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="blank">LEMP</a>
+In <a href="https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29" target="blank">LEMP</a>
 First of all you need to have root access
 <a href="https://github.com/josegatica/parrot-docu-es/blob/master/set_root_pw.md" target="blank">Set Root Password</a>
 Then personalize your ParrotSec
