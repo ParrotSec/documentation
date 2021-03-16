@@ -1,5 +1,5 @@
 
-Groups and User Accounts in GNU/Linux
+# Groups and User Accounts in GNU/Linux #
 
 GNU/Linux is a multi-user system, which is based on data account structures and procedures used to identify individual users in a system. Managing these accounts is a basic administration but it is an important skill that we must have when we decide to be GNU/Linux users. Much of the system administration in day-to-day tasks is based on the administration of users, registrations, deregistration, modification of users, configuration of their environments, etc. In this chapter we will see how to do these tasks from the command line. This is a very important issue that every GNU/Linux user should know and master.
 
@@ -7,26 +7,26 @@ Surely you already have a basic understanding of accounts. In Linux, the account
 
 Typical Linux accounts are user accounts identified through the account username, this type of account is for people who need access to the system. Linux accounts can also be system service accounts, also called daemons (program that provides a particular service). Daemons don't log on to a Linux system, however, they need an account on the system in order to run. There are also types of specialized accounts that are created for unique purposes, such as a user account to receive email but not be able to access the local system.
 
-Linking Users through Groups.
+## Linking Users through Groups. ##
 
 Linux uses groups to organize users, they are defined in similar configuration files, have names similar to user names and are represented internally by numbers. Each file on Linux is associated with a specific user and a specific group, this allows us to assign various permissions to members of a group, for example members of the "Management" group in a company can be allowed to read some files, but members of the "Workers" group will be disallowed access to these files. Since Linux provides access to most hardware devices through files, this mechanism can also be used to control access to hardware. Each group can have from none to as many members as users in the system.
 
 Group membership is controlled via the /etc/group file, this file contains a list of groups and members of each group. Each user has a primary group, this primary group of each user is set in the configuration log in /etc/passwd, this file defines each system account through individual account configuration logs. When users log on to the computer, their member group is set up in their main group. A user can access files belonging to other groups as long as the user belongs to that group and the group's permissions allow access by that user. To run programs or create files that do not belong to your primary group, the user must run the "newgrp" command to change the current group membership.
 
-Setting up User Account
+## Setting up User Account ##
 
 The frequency with which user accounts are maintained depends on the nature of the system being managed. Some systems, such as small workstations, rarely require changes, while others, such as multi-user servers, may require daily maintenance. In this chapter we will work with the traditional tools used in Linux to perform this type of operations, registrations, deregistration, modification and deletion of user accounts. Most of today's distributions are delivered with GUI tools that allow us to perform these same operations, these GUI tools vary depending on the distribution so it is difficult to give a general explanation for all distributions of these GUI tools. In general, text-based tools provide greater flexibility and are more widely applicable.
 
-Adding Users
+## Adding Users ##
 
 To add users on Linux, we can use the "useradd" command (in some distributions we can find it as "adduser"). Its basic syntax is as follows:
 
 	$ sudo useradd [-c comment] [-d home_direcrory] [-e expiration_date] [-f idle_days] 
-[-g default_group] [-G group] [-p password] [-s shell] [-u UID] user_name
+	[-g default_group] [-G group] [-p password] [-s shell] [-u UID] user_name
 
 Example:
 
-$ sudo useradd -m -d /home/parrot -g hackers -G hackers,noobs,sudo parrot
+	$ sudo useradd -m -d /home/parrot -g hackers -G hackers,noobs,sudo parrot
 
 This command would create us the user "parrot", its home folder would be /home/parrot, default group "hackers", secondary groups "hackers", "noobs", "sudo".
 
@@ -53,7 +53,7 @@ Example:
 
 With this we would have already created the parror user in the system.
 
-Modifying User Accounts.
+## Modifying User Accounts. ##
 
 Usually, user accounts are modified at the user's request or to implement a new security policy or system change.
 
@@ -65,7 +65,7 @@ User accounts can be modified in several ways.
 
 3 - Using the system tools previously used to create accounts.
 
-Configure or Change Passwords
+## Configure or Change Passwords ##
 
 The "useradd" tool provides the -p parameter for setting a password, this tool is not very useful when directly adding a user because it requires a pre-hash password. Therefore, it is usually easier to create an account in a disabled form (because you don't use the -p parameter) and once the account is created, set a password for it. To do this we can use the "passwd" tool, its syntax is as follows:
 
@@ -88,7 +88,7 @@ Previously we created the account for the user "Parrot The Pirate (parrot)", to 
 	Retype new UNIX password: 
 	passwd: password updated successfully
 
-Basic Use of usermod
+## Basic Use of usermod ##
 
 The "usermod" tool is very similar to the "useradd" tool in terms of its functions and parameters, with the difference that it is for making changes to an existing account rather than creating a new one. The differences between the two tools are as follows:
 
@@ -113,7 +113,7 @@ When using the -G option to add a user to new groups, keep in mind that any grou
 
 In the previous example, we used the command "groups" to show the current group of the user's account, the current group is parish, to add it as a member in another group, we used the command usermod with the parameters -a and -G this allows us to keep the membership in the original group (parrot).
 
-Using the chage Command
+## Using the chage Command ##
 
 The "chage" command allows us to modify the account settings related to account expiration. It is possible to set up Linux accounts so that they expire automatically if two conditions are met:
 
@@ -124,7 +124,7 @@ The "chage" command allows us to modify the account settings related to account 
 These settings are controlled through the chage utility, their syntax is as follows:
 
 	chage [-l] [-m minimum_days] [-M maximum_days] [-d last_day] [-I idle_days] 
-[-E expiration_days] [-W warning] user_name
+	[-E expiration_days] [-W warning] user_name
 
 These parameters modify the actions of the "chage" command.
 
@@ -142,7 +142,7 @@ These parameters modify the actions of the "chage" command.
 
 - Parameter -W sets the number of days before the expiration of the account in which the system must send alerts about the impending expiration to the user. It is important to note that these warnings are only displayed to logon users in text mode, users logging in from the GUI usually do not see these warnings.
 
-Description of the Account Configuration Files
+## Description of the Account Configuration Files ##
 
 User configuration files can be modified directly, the /etc/passwd and /etc/shadow files control most of the basic features of an account. Both files consist of a set of records, one line per account record. Each record begins with a user name and continues with a set of fields determined by colon (:). Many of these items can be modified with "usermod" or "passwd". A typical /etc/passwd registry entry is similar to the following:
 
