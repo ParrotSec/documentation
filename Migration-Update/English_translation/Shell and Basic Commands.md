@@ -7,57 +7,93 @@ An excellent command to start using the shell is "uname", this shows us what ope
 	$ uname
 	Linux
 
-By using the option -a we can find additional information.
+By using the option -a we can find additional information:
+
 	$ uname -a
 	Linux parrot 4.11.0-parrot6-amd64 # 1 SMP Parrot 4.11.6-1parrot6 (2017-06-28) x86_64 GNU / Linux
-The "-a" option gives us more information, including the current version of the Linux kernel that is used, the hostname, the system architecture.
+
+The "-a" option gives us more information, including the current version of the Linux kernel that is used, the hostname and the system architecture.
+
 The Shell allows us to execute internal and external commands, it is important to differentiate each of these two types.
-Internal commands are those that are integrated in the Shell (Built into shell), these internal commands allow us to perform common tasks such as:
+
+**Internal commands** are those that are integrated in the Shell (built into shell); these internal commands allow us to perform common tasks such as:
+
 Show the current directory:
+
 	$ pwd
+
 Change directory:
-	$ cd / route / del / nuevo / directory
+
+	$ cd / route / of / new / directory
+
 Show a text on the screen:
+
 	$ echo "Text we want to show"
+
 Runtime of a command:
+
 	$ time pwd 		# This tells us the execution time of the pwd command
+
 Set options:
+
 	$ set --help
+
 The set command displays a wide variety of options related to shell operations. These options are very similar to the environment variables, but they are not the same thing.
+
 Close the Shell:
+
 	$ exit
-The exit and logout commands end the shell. The exit command ends any shell, while the logout command only terminates the login shell. These login shell are those that start at the start of a text mode session.
+
+The exit and logout commands ends the shell. The exit command ends any shell, while the logout command only terminates the login shell. These login shell are those that start at the start of a text mode session.
+
 	$ logout
+
 It can be easily checked when a command is Internal or External using the "type" command before the command that we want to check.
+
 	$ type cd
 	cd is a shell builtin
+
 	$ type bash
 	bash is / bin / bash
+
 Some internal commands are duplicated by external commands that do exactly the same function, these external commands are not always installed on all systems. We can check which of these internal commands are duplicated by external commands by using the "-a" option when executing the "type" command.
+
 	$ type -a pwd
 	pwd is a shell builtin
-	pwd is / bin / pwd
+	pwd is /usr/bin/pwd
+	pwd is /bin/pwd
+
 In the previous execution we can see how an external installation of the pwd command exists in ParrotSec. It is important to mention that when an external command is installed, the internal command has priority. If we want to execute the external command instead of the internal one, we must specify the external command path, example:
+
 	$ / bin / pwd
 	/ home / user
+
 These are some basic concepts that you must learn before going deeper into the use of the Shell and commands in GNU / Linux. It is important to have knowledge not only of the operations that can be performed with a command but also of its origin and how it works.
 
-Using su and sudo
+## Using su and sudo ##
+
 The su and sudo commands are often confused, let's say they have a small relationship since both, in one way or another, are to scale privileges in a Linux system or to execute commands as a super user, but in reality they are very different, they perform different functions and the use of both is totally different. In this chapter we will explain the use of each of them.
 
-Su command
+## Su command ##
+
 The su command is the acronym for Switch User, as its name tells us, this command allows us to change user without having to log out and log in again with the user we want to change. To explain the use of the su command, we are going to use "whoami" (this command shows us the current user that we are working with in the system) and pwd that we saw in previous examples.
+
 	$ whoami
 	user
 	$ pwd
 	/ home / user
+
 As you can see these commands, you show us that we are the "user" user and we are in the "/ home / user" directory, now if we are going to use the "su" command.
+
 To change the user "parrot" or another user of the system we execute its followed by the username to which we want to change:
+
 	$ your parrot
 	password: <parrot user password>
 	$ whoami
 	parrot
+
 As you can see we have used the command "su" to change to the user "parrot" without the need to log out, from now on all the operations that we carry out in the system will be with the permissions of the user "parrot". To return to our normal user, simply execute the "exit" command.
+
 	$ your parrot
 	password: <parrot user password>
 	$ whoami
@@ -65,7 +101,9 @@ As you can see we have used the command "su" to change to the user "parrot" with
 	$ exit
 	$ whoami
 	user
+
 We can also use the command "su" to change to the user "root", it is not necessary to specify the user "root" because if no user is specified, "su" defaults to the user "root".
+
 	$ su
 	password: <user password root>
 	# whoami
@@ -73,8 +111,11 @@ We can also use the command "su" to change to the user "root", it is not necessa
 	# exit
 	$ whoami
 	user
+
 Note how the prompt changed the symbol of $ to the symbol #, this is because the symbol $ represents the normal users of the system and the symbol of # represents the super user (root). Like to return to our user we execute the exit command.
+
 In case you want to change to a user and at the same time change to your personal folder and other environment variables, add a minus (-) symbol between the su command and the user's name, example:
+
 	$ whoami
 	user
 	$ pwd
@@ -85,11 +126,14 @@ In case you want to change to a user and at the same time change to your persona
 	parrot
 	$ pwd
 	/ home / parrot
+
 For a better understanding of your command, we invite you to check the manual, executing from the terminal:
+
 	$ man su
+
 To exit the manual, press the "q" key.
 
-Sudo command
+## Sudo command ##
 Sudo is the acronym for "Switch User DO" (Change User and Do ...). This command allows us to change the root user in an imperceptible way and execute commands or actions with the privileges of the root user in a completely secure way. In large part of the Linux distributions we have the sudo command installed by default. This command can not be used by all users of the system, there is a group called "sudoers users", the users belonging to this group are the only ones that are authorized to use this command, it is usually only configured for users system administrators. The configuration file is located in / etc / sudoers.
 Content of the sudoers file in Parrot:
 	# This file MUST be edited with the 'visudo' command as root.
