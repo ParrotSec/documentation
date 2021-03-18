@@ -10,7 +10,7 @@ An excellent command to start using the shell is "uname", this shows us what ope
 By using the option -a we can find additional information:
 
 	$ uname -a
-	Linux parrot 4.11.0-parrot6-amd64 # 1 SMP Parrot 4.11.6-1parrot6 (2017-06-28) x86_64 GNU / Linux
+	Linux parrot 4.11.0-parrot6-amd64 # 1 SMP Parrot 4.11.6-1parrot6 (2017-06-28) x86_64 GNU/Linux
 
 The "-a" option gives us more information, including the current version of the Linux kernel that is used, the hostname and the system architecture.
 
@@ -32,7 +32,8 @@ Show a text on the screen:
 
 Runtime of a command:
 
-	$ time pwd 		# This tells us the execution time of the pwd command
+	$ time pwd
+	(This tells us the execution time of the pwd command.)
 
 Set options:
 
@@ -54,7 +55,7 @@ It can be easily checked when a command is Internal or External using the "type"
 	cd is a shell builtin
 
 	$ type bash
-	bash is / bin / bash
+	bash is /bin/bash
 
 Some internal commands are duplicated by external commands that do exactly the same function, these external commands are not always installed on all systems. We can check which of these internal commands are duplicated by external commands by using the "-a" option when executing the "type" command.
 
@@ -65,12 +66,12 @@ Some internal commands are duplicated by external commands that do exactly the s
 
 In the previous execution we can see how an external installation of the pwd command exists in ParrotSec. It is important to mention that when an external command is installed, the internal command has priority. If we want to execute the external command instead of the internal one, we must specify the external command path, example:
 
-	$ / bin / pwd
-	/ home / user
+	$ /bin/pwd
+	/home/user
 
 These are some basic concepts that you must learn before going deeper into the use of the Shell and commands in GNU / Linux. It is important to have knowledge not only of the operations that can be performed with a command but also of its origin and how it works.
 
-## Using su and sudo ##
+## Using **su** and **sudo** ##
 
 The su and sudo commands are often confused, let's say they have a small relationship since both, in one way or another, are to scale privileges in a Linux system or to execute commands as a super user, but in reality they are very different, they perform different functions and the use of both is totally different. In this chapter we will explain the use of each of them.
 
@@ -81,7 +82,7 @@ The su command is the acronym for Switch User, as its name tells us, this comman
 	$ whoami
 	user
 	$ pwd
-	/ home / user
+	/home/user
 
 As you can see these commands, you show us that we are the "user" user and we are in the "/ home / user" directory, now if we are going to use the "su" command.
 
@@ -119,25 +120,25 @@ In case you want to change to a user and at the same time change to your persona
 	$ whoami
 	user
 	$ pwd
-	/ home / user
+	/home/user
 	$ su - parrot
 	password:
 	$ whoami
 	parrot
 	$ pwd
-	/ home / parrot
+	/home/parrot
 
 For a better understanding of your command, we invite you to check the manual, executing from the terminal:
 
 	$ man su
 
-To exit the manual, press the "q" key.
+	(To exit the manual, press the "q" key.)
 
 ## Sudo command ##
 
 Sudo is the acronym for "Switch User DO" (Change User and Do ...). This command allows us to change the root user in an imperceptible way and execute commands or actions with the privileges of the root user in a completely secure way. In large part of the Linux distributions we have the sudo command installed by default.
 
-This command can not be used by all users of the system, there is a group called "sudoers users", the users belonging to this group are the only ones that are authorized to use this command, it is usually only configured for users system administrators. The configuration file is located in / etc / sudoers.
+This command can not be used by all users of the system, there is a group called "sudoers users", the users belonging to this group are the only ones that are authorized to use this command, it is usually only configured for users system administrators. The configuration file is located in /etc/sudoers.
 
 Content of the sudoers file in Parrot:
 
@@ -150,7 +151,7 @@ Content of the sudoers file in Parrot:
 	#
 	Defaults env_reset
 	Defaults mail_badpass
-	Defaults secure_path = "/ usr / local / sbin: / usr / local / bin: / usr / sbin: / usr / bin: / sbin: / bin"
+	Defaults secure_path = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin: /sbin: /bin"
 	# Host alias specification
 	# User alias specification
 	# Cmnd alias specification
@@ -172,8 +173,8 @@ What does all this mean? Simply explained:
 In case you want to install an application from the repositories, or perform some other task that needs administrative permissions, we find the following error.
 
 	$ apt-get install chromium
-	E: Could not open lock file / var / lib / dpkg / lock - open (13: Permission denied)
-	E: Unable to lock the administration directory (/ var / lib / dpkg /), are you root?
+	E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+	E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
 It tells us that the permission has been denied and asks us if we are root, instead if we use the sudo command in front:
 
@@ -245,11 +246,11 @@ The sudo command asks us our user password and then executes the next command wi
 	$ head file
 	(Displays the first 10 lines of a file. Support -n just like the tail command.)
 
-	$ find / usr -name lilo -print
-	(Find all the files with the name lilo in / usr.)
+	$ find /usr -name lilo -print
+	(Find all the files with the name lilo in /usr.)
 
-	$ find / home / user -name * .jpg -print
-	(Search all the images * .jpg in / home / user /)
+	$ find /home/user -name * .jpg -print
+	(Search all the images * .jpg in /home/user/)
 
 	$ pwd
 	(Displays the current directory.)
@@ -263,16 +264,16 @@ The sudo command asks us our user password and then executes the next command wi
 	$ cd ..
 	(Go back to the previous directory.)
 
-	$ cd / home / user / Documents
+	$ cd /home/user/Documents
 	(Change to the Documents directory indicating the full path.)
 
-	$ cp -pR file / home / user / directory /
+	$ cp -pR file /home/user/directory/
 	(-R Indicates that a directory will be copied recursively, except special files.)
 	(-p Indicates that will be copied preserving permissions, owner, group and dates.
 	Copy the file to the directory, keeping the current name of the file.)
 
 	$ mv file_path1 file_path2
-	(Move and / or rename files or directories.)
+	(Move and/or rename files or directories.)
 
 	$ mkdir directory
 	(Create a directory.)
