@@ -1,5 +1,6 @@
-Shell and Linux Basic Commands
-Every new user, before doing anything else in Linux, must understand how the Shell works and how to use it in Linux. The Shell allows us to execute commands to perform almost any function in the system, is the way we have to speak directly with the operating system without using the GUI (Graphical User Interface).
+# Shell and Linux Basic Commands #
+
+Every new user, before doing anything else in Linux, must understand how the Shell works and how to use it. The Shell allows us to execute commands to perform almost any function in the system, is the way we have to speak directly with the operating system without using the GUI (Graphical User Interface).
 An excellent command to start using the shell is "uname", this shows us what operating system we are using.
 	$ uname
 	Linux
