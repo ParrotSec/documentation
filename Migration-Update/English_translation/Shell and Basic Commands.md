@@ -134,8 +134,13 @@ For a better understanding of your command, we invite you to check the manual, e
 To exit the manual, press the "q" key.
 
 ## Sudo command ##
-Sudo is the acronym for "Switch User DO" (Change User and Do ...). This command allows us to change the root user in an imperceptible way and execute commands or actions with the privileges of the root user in a completely secure way. In large part of the Linux distributions we have the sudo command installed by default. This command can not be used by all users of the system, there is a group called "sudoers users", the users belonging to this group are the only ones that are authorized to use this command, it is usually only configured for users system administrators. The configuration file is located in / etc / sudoers.
+
+Sudo is the acronym for "Switch User DO" (Change User and Do ...). This command allows us to change the root user in an imperceptible way and execute commands or actions with the privileges of the root user in a completely secure way. In large part of the Linux distributions we have the sudo command installed by default.
+
+This command can not be used by all users of the system, there is a group called "sudoers users", the users belonging to this group are the only ones that are authorized to use this command, it is usually only configured for users system administrators. The configuration file is located in / etc / sudoers.
+
 Content of the sudoers file in Parrot:
+
 	# This file MUST be edited with the 'visudo' command as root.
 	#
 	# Please consider adding local content in /etc/sudoers.d/ instead of
@@ -156,129 +161,136 @@ Content of the sudoers file in Parrot:
 	# See sudoers (5) for more information on "#include" directives:
 	#include /etc/sudoers.d
 
-What does all this mean?
-Simply explained:
+What does all this mean? Simply explained:
+
 - All the lines preceded by the # symbol are comments that indicate each section of the configuration file, these comments are ignored by the system.
 - The section "# User privilege specification" which contains "root ALL = (ALL: ALL) ALL", indicates that the user "root" has the right to use the sudo command and edit the configuration of the "sudoers" file. If you want to add another user to "sudoers", we can add a similar line to the user "root" with the name of the desired user, for example: "parrot ALL = (ALL: ALL) ALL". In case the user "parrot is not in the group" sudoers users "or" sudo ", this new line would allow him to make use of the command" sudo ".
 - The section "# Allow members of group sudo to execute any command" that contains "% sudo ALL = (ALL: ALL) ALL", indicates that the members of the group "sudo" have permissions to use this command, modify the configuration of sudoers, etc. That is, this section allows us to add all the members of a specified group so that they have permission to use the sudo command. Example: "% administrators ALL = (ALL: ALL) ALL", this line allows all members of the group "administrators" to use the sudo command, etc ...
 
-Examples of sudo command usage
+## Examples of sudo command usage ##
+
 In case you want to install an application from the repositories, or perform some other task that needs administrative permissions, we find the following error.
+
 	$ apt-get install chromium
 	E: Could not open lock file / var / lib / dpkg / lock - open (13: Permission denied)
 	E: Unable to lock the administration directory (/ var / lib / dpkg /), are you root?
+
 It tells us that the permission has been denied and asks us if we are root, instead if we use the sudo command in front:
+
 	$ sudo apt-get install chromium
 	[sudo] password for parrot:
 	Reading package lists ... Done
 	Building dependence tree
 	Reading state information ... Done
 	.............
+
 The sudo command asks us our user password and then executes the next command with administrative privileges.
-Working with files from the Shell
-$ ls
-List files of a directory.
 
-$ ls -l
-List also the properties and attributes.
+### Working with files from the Shell ###
 
-$ ls -la
-Lists files including the hidden ones of the system.
+	$ ls
+	(List files of a directory.)
 
-$ ls -la | more
-Lists the files of a directory in a paged form.
+	$ ls -l
+	(List also the properties and attributes.)
 
-$ ls -lh
-File list specifying the unit of size.
+	$ ls -la
+	(Lists files including the hidden ones of the system.)
 
-$ ls -l | grep ^ d
-List only the directories.
+	$ ls -la | more
+	(Lists the files of a directory in a paged form.)
 
-$ cat -n file
-Displays the contents of a file (-n numbers).
+	$ ls -lh
+	(File list specifying the unit of size.)
 
-$ pr -t file
-Shows the contents of a file in a formatted way
+	$ ls -l | grep ^ d
+	(List only the directories.)
 
-$ more file
-$ less file
-They show the contents of a file in a paged form.
+	$ cat -n file
+	(Displays the contents of a file (-n numbers).)
 
-$ zcat file
-$ zmore file
-$ zless file
-They show the contents of a compressed file (.gz).
+	$ pr -t file
+	(Shows the contents of a file in a formatted way.)
 
-$ echo chain
-Shows on the screen the text that follows.
+	$ more file
+	$ less file
+	(They show the contents of a file in a paged form.)
 
-$ grep 'string' file
-Shows the lines of a file that contain the string.
+	$ zcat file
+	$ zmore file
+	$ zless file
+	(They show the contents of a compressed file (.gz).)
 
-$ stat file
-Shows the status of a file.
+	$ echo chain
+	(Shows on the screen the text that follows.)
 
-$ file file
-Shows what type a file is.
+	$ grep 'string' file
+	(Shows the lines of a file that contain the string.)
 
-$ tail file
-Shows the last lines of a file, 10 by default.
+	$ stat file
+	(Shows the status of a file.)
 
-$ tail -n 12 file
-Displays the last 12 lines of a file.
+	$ file file
+	(Shows what type a file is.)
 
-$ tail -f file
-It shows the last lines of the file, updating it as they are added. Useful to control logs.
+	$ tail file
+	(Shows the last lines of a file, 10 by default.)
 
-$ head file
-Displays the first 10 lines of a file. Support -n just like the tail command.
+	$ tail -n 12 file
+	(Displays the last 12 lines of a file.)
 
-$ find / usr -name lilo -print
-Find all the files with the name lilo in / usr.
+	$ tail -f file
+	(It shows the last lines of the file, updating it as they are added. Useful to control logs.)
 
-$ find / home / user -name * .jpg -print
-Search all the images * .jpg in / home / user /
+	$ head file
+	(Displays the first 10 lines of a file. Support -n just like the tail command.)
 
-$ pwd
-Displays the current directory.
+	$ find / usr -name lilo -print
+	(Find all the files with the name lilo in / usr.)
 
-$ history
-Displays the list of commands used by the user.
+	$ find / home / user -name * .jpg -print
+	(Search all the images * .jpg in / home / user /)
 
-$ cd directory
-Change directory
+	$ pwd
+	(Displays the current directory.)
 
-$ cd ..
-Go back to the previous directory.
+	$ history
+	(Displays the list of commands used by the user.)
 
-$ cd / home / user / Documents
-Change to the Documents directory indicating the full path.
+	$ cd directory
+	(Change directory.)
 
-$ cp -pR file / home / user / directory /
-# -R Indicates that a directory will be copied recursively, except special files
-# -p Incica that will be copied preserving permissions, owner, group and dates.
-Copy the file to the directory, keeping the current name of the file.
+	$ cd ..
+	(Go back to the previous directory.)
 
-$ mv file_path1 file_path2
-Move and / or rename files or directories.
+	$ cd / home / user / Documents
+	(Change to the Documents directory indicating the full path.)
 
-$ mkdir directory
-Create a directory.
+	$ cp -pR file / home / user / directory /
+	(-R Indicates that a directory will be copied recursively, except special files.)
+	(-p Indicates that will be copied preserving permissions, owner, group and dates.
+	Copy the file to the directory, keeping the current name of the file.)
 
-$ rdir directory
-Delete an empty directory.
+	$ mv file_path1 file_path2
+	(Move and / or rename files or directories.)
 
-$ rm file
-Delete files
+	$ mkdir directory
+	(Create a directory.)
 
-$ rm -r directory
-Delete the files of a directory recursively.
+	$ rdir directory
+	(Delete an empty directory.)
 
-$ wc
-Shows the number of words, lines and characters of a file.
+	$ rm file
+	(Delete files.)
 
-$ touch file
-Create a file with the current date.
+	$ rm -r directory
+	(Delete the files of a directory recursively.)
 
-$ ifconfig
-It shows the configuration of the network adapters
+	$ wc
+	(Shows the number of words, lines and characters of a file.)
+
+	$ touch file
+	(Create a file with the current date.)
+
+	$ ifconfig
+	(It shows the configuration of the network adapters.)
