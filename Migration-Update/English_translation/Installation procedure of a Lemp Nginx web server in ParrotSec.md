@@ -38,9 +38,7 @@ Ok now let's configure PHP fpm pool and memory limits
 	sudo nano /etc/php/7.1/fpm/pool.d/www.conf
 	[www] user = www-data group = www-data listen = /run/php/php7.1-fpm.sock listen.owner = www-data listen.group = www-data listen.mode = 0666 pm = ondemand pm.max_children = 5 pm.process_idle_timeout = 10s pm.max_requests = 200 chdir = /
 
-Save the changes with Ctr + x
-Let's respond that we are safe by pressing Y
-Restart php7.1-fpm to reflect the changes
+Save the changes with 'Ctr + x' and let's respond that we are safe by pressing Y, then restart php7.1-fpm to reflect the changes
 	
 	sudo systemctl restart php7.1-fpm
 
