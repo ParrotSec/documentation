@@ -150,8 +150,8 @@ Set the memory value to load plugins and import Wordpress rests
 
 Search this area in the file and add the line
 
-	# Basic Settings
-    	##
+### Basic Settings ###
+
 	client_max_body_size 20M;
 
 Let's apply the changes to Nginx
