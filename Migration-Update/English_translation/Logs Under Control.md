@@ -1,4 +1,4 @@
-Logs under control
+## Logs under control ##
 
 First log in to your Parrot Security
 In my case I'm using version 3.9 Intruter in VPS and 3.8 JollyRoger on Android with Linux Deploy
@@ -27,7 +27,7 @@ We go with postgresql
 	2. ls
 In my case I have these 3 files:
 
- 	postgresql-10-main.log postgresql-9.6-main.log postgresql-9.6-main.log.1
+	postgresql-10-main.log postgresql-9.6-main.log postgresql-9.6-main.log.1
 	
 If we want to see the content of one of them we use this command'cat'
 Example:
@@ -80,7 +80,7 @@ Contains global system messages, including messages logged during startup. Sever
 	
 kern.log contains the log of kernel initialization at system startup, as well as any kernel errors or informational messages that are sent from the kernel
 
-  cat /var/log/kern.log
+	cat /var/log/kern.log
   
 Shows recent login information. This is a command that is executed to see the information provided.
 How to use the "last" command
