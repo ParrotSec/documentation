@@ -25,6 +25,7 @@ We go with postgresql
 
 	1. cd /var/log/postgresql
 	2. ls
+	
 In my case I have these 3 files:
 
 	postgresql-10-main.log postgresql-9.6-main.log postgresql-9.6-main.log.1
