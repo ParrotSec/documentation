@@ -5,12 +5,13 @@ You can see our online doc on https://docs.parrotsec.org/doku.php, also we care 
 
 ---
 
-Our **Parrot OS Leader Team**  in spanish language is:
+Our **Parrot OS Leader Team** in spanish language is:
 - José Gatica (ParrotSec-ES Team Leader)
 - Josu Elgezabal (Documentation Leader)
 - Romell Marín (Documentation Leader)
 - Claudio Marcial (Web Leader Team)
-- Alejandro Pineda (ParrotSec-ES Art)
+- Alejandro Pineda (ParrotOS-ES Art)
+- Manuel Hernández (ParrotOS-ES Art)
 - Raúl Alderete (Audiovisual Material)
 
 English Doc Team (past contributors):
