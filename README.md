@@ -1,10 +1,52 @@
-# Parrot Project Working Docs
+# Parrot New Documentation
 
-This repository is a temporary holding place while the Parrot Team writes up
-documents typically specific to the organization and structure of the Parrot 
-Project but, also things like forum guidelines. When the docs are finished they should be moved out to the appropriate repository.
+New Parrot documentation using mdbook
 
-For questions, please email: `team AT parrotsec DOT org`
- 
+## Why this?
 
+Maybe mdbook can be useful for the new Parrot documentation. It is lightweight, modern and written in Rust.
 
+## Installation
+
+Compile mdbook https://github.com/Ruin0x11/mdBook/tree/localization
+
+`cd mdbook`
+
+`cargo build`
+
+## Build 
+
+Run `mdbook serve` to build and deploy (and eventually rebuild it at each change) the book on http://localhost:3000 
+
+Run `mdbook clean` to delete the build directory (which the book is generated)
+
+To allowing space in SUMMARY.md's link destination use <.md file>, for example:
+` - [What is Parrot](<./01.- What is Parrot.md>) `
+
+## Localization
+Thanks to the mdbook fork by Ruin0x11 (https://github.com/Ruin0x11/mdBook) it is possible to make the documentation multilanguage. To do this, you need to add `[language.key_lang]` to the book.toml file. 
+
+Also you will need to change the main structure of the src folder, like the following example: 
+
+```
+├── book.toml
+└── src
+    ├── en
+    │   ├── chapter
+    │   │   ├── 1.md
+    │   │   ├── 2.md
+    │   │   └── README.md
+    │   ├── README.md
+    │   ├── SUMMARY.md
+    │   └── untranslated.md
+    └── es
+        ├── chapter
+        │   ├── 1.md
+        │   ├── 2.md
+        │   ├── 3.md
+        │   └── README.md
+        ├── README.md
+        └── SUMMARY.md
+```
+
+Everything is still to be tested properly.

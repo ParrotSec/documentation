@@ -1,0 +1,46 @@
+[book]
+authors = ["Parrot Team"]
+language = "en"
+multilingual = true
+src = "src"
+title = "Parrot OS Documentation"
+description = "New documentation for Parrot OS"
+
+[build]
+build-dir = "build"
+create-missing = false
+
+[output.html]
+theme = "parrot-theme" # tweak this theme here: /parrot-theme/css/variables.css
+default-theme = "parrot"
+preferred-dark-theme = "parrot"
+mathjax-support = false
+additional-css = ["static/custom.css"]
+additional-js = ["static/custom.js"]
+no-section-label = true
+# input-404 = "not-found.md
+# git-repository-url = "nest.parrotsec.org"
+
+[output.html.print]
+enable = false
+
+[output.html.search]
+enable = true
+limit-results = 15
+teaser-word-count = 15
+expand = true
+heading-split-level = 3
+
+[output.html.fold]
+enable = true
+level = 0
+
+[language.en]
+name = "Test"
+title = "Parrot OS Documentation"
+description = "New documentation for Parrot OS"
+
+[language.es]
+name = "MIGRACIÓN 3.0 - ParrotDoc"
+title = "Parrot OS Documentación"
+description = "Documentación para ParrotOS"
