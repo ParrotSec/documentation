@@ -46,3 +46,7 @@
     background: inherit;
     font-size: inherit;
 }
+
+.chapter li a.active {
+    border-bottom: 1px solid #2c9091;
+}

@@ -14,7 +14,11 @@ Our **Parrot OS Leader Team** in spanish language is:
 - Manuel Hernández (ParrotOS-ES Art)
 - Raúl Alderete (Audiovisual Material)
 
-English Doc Team (past contributors):
+English Doc Team 
+- Dario Camonita
+- José Gatica
+
+**(past contributors):**
 - Eloir Corona
 - Adrian "Ghostar" Baldiviezo
 ---
