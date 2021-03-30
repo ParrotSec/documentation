@@ -1,1 +1,0 @@
-Test, prova, funziona? Funziona.
