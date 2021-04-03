@@ -50,3 +50,7 @@
 .chapter li a.active {
     border-bottom: 1px solid #2c9091;
 }
+
+.menu-bar button:focus {
+    outline: 0;
+}
