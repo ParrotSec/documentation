@@ -51,6 +51,10 @@
     border-bottom: 1px solid #2c9091;
 }
 
+.chapter li {
+    color: #57cbcc;
+}
+
 .menu-bar button:focus {
     outline: 0;
 }
