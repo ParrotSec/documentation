@@ -3,7 +3,7 @@ authors = ["Parrot Team"]
 language = "en"
 multilingual = true
 src = "src"
-title = "Parrot OS Documentation"
+title = "Parrot Documentation"
 description = "New documentation for Parrot OS"
 
 [build]
@@ -37,10 +37,10 @@ level = 0
 
 [language.en]
 name = "Test"
-title = "Parrot OS Documentation"
+title = "Parrot Documentation"
 description = "New documentation for Parrot OS"
 
 [language.es]
 name = "MIGRACIÓN 3.0 - ParrotDoc"
-title = "Parrot OS Documentación"
+title = "Parrot Documentación"
 description = "Documentación para ParrotOS"
