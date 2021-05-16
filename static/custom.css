@@ -2,7 +2,6 @@
     border: 1px solid transparent;
     display: inline-block;
     text-transform: uppercase;
-    transition: all .3s ease-in 0s;
     text-decoration: none;
     padding: 17px 25px;
     letter-spacing: 1px;
@@ -51,6 +50,36 @@
     border-bottom: 1px solid #2c9091;
 }
 
+.chapter li {
+    color: #57cbcc;
+}
+
 .menu-bar button:focus {
     outline: 0;
+}
+
+@media screen and (max-width: 415px) {
+    a.back-btn {
+        display: none;
+    }
+    
+    .language-popup {
+        left: 100px;
+    }
+
+    a.back-btn-sidebar {
+        border: 1px solid transparent;
+        display: block !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 17px 25px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-family: anaheim, sans-serif;
+    }
+
+    .sidebar .sidebar-scrollbox {
+        top: 52px;
+    }
 }
