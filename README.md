@@ -8,11 +8,13 @@ Maybe mdbook can be useful for the new Parrot documentation. It is lightweight, 
 
 ## Installation
 
-Compile mdbook https://github.com/Ruin0x11/mdBook/tree/localization
+Inside this branch there is already a compiled and optimized version of mdbook (16.9 mb), but if you want you can compile yourself mdbook https://github.com/Nutomic/mdBook/tree/localization
 
 `cd mdbook`
 
-`cargo build`
+`cargo build --release`
+
+and the generated binary file will be on `./target/release` folder.
 
 ## Build 
 
@@ -24,7 +26,7 @@ To allowing space in SUMMARY.md's link destination use <.md file>, for example:
 ` - [What is Parrot](<./01.- What is Parrot.md>) `
 
 ## Localization
-Thanks to the mdbook fork by Ruin0x11 (https://github.com/Ruin0x11/mdBook) it is possible to make the documentation multilanguage. To do this, you need to add `[language.key_lang]` to the book.toml file. 
+Thanks to the mdbook fork by Ruin0x11 (and updated by Nutomic https://github.com/Nutomic/mdBook/tree/localization) it is possible to make the documentation multilanguage. To do this, you need to add `[language.key_lang]` to the book.toml file. 
 
 Also you will need to change the main structure of the src folder, like the following example: 
 
