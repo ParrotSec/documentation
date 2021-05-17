@@ -264,4 +264,4 @@ In the previous example, we can see how the user and group owner of all the file
 	┌─[root@parrot-armhf]─[/home/parrot]
 	└──╼ #
 
-En el ejemplo anterior, se puede apreciar como el grupo propietario de los archivos wireless-dos-ids.py y wireless-dos.py cambió de parrot a root.
+In the above example, you can see how the group that owns the files wireless-dos-ids.py and wireless-dos.py changed from root to parrot user.

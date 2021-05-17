@@ -328,4 +328,4 @@ We can also use the hostnamectl command, with the option set-hostname. "hostname
 
 Please do not miss the video of our partner Xc0d3, in which he shows us methods to configure the network. You can see it here:
 
-https://www.youtube.com/watch?v=1HcGUP90eMU&index=8&list=PLUFdNvWy-5CHapOW43A2T6i0fcVBHzHy0
+https://youtu.be/1HcGUP90eMU

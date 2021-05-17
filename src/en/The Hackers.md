@@ -21,4 +21,4 @@ In a survey of people with knowledge in the field of information technology, alm
 
 ## What influence and role do they play in the world of technology? ##
 
-Hackers currently play a very important role in the technological world since they are in charge of developing, testing, verifying errors and many other activities that make us more comfortable with technology, they make the most intuitive technology for its use .
+Hackers currently play a very important role in the technological world since they are in charge of developing, testing, verifying errors and many other activities that make us more comfortable with technology, they make the most intuitive technology for its use.
