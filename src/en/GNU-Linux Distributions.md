@@ -67,8 +67,11 @@ These are large collections of desktop programs, rather than simpler environment
 
 The following graph shows the evolution of all Linux distributions from 1993 to 2007.
 
-[[Image: https://ubunturoot.files.wordpress.com/2008/02/44218-linuxdistrotimeline-72.png ]]
+![distro timeline](https://ubunturoot.files.wordpress.com/2008/02/44218-linuxdistrotimeline-72.png)
 
-[[Image: https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg ]]
+[here for better quality](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
-== Info == [https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Linux Distribuci�n Linux] [https://es.wikipedia.org/wiki/Escritorio_Linux] [http://proyectopinguino.blogspot.com.es/2008/09/escritorios-para-linux-gnome-kde.html]
+## More info ##
+- [https://en.wikipedia.org/wiki/Linux_distribution](https://en.wikipedia.org/wiki/Linux_distribution)
+- [https://en.wikipedia.org/wiki/Desktop_environment](https://en.wikipedia.org/wiki/Desktop_environment)
+- [http://proyectopinguino.blogspot.com.es/2008/09/escritorios-para-linux-gnome-kde.html](http://proyectopinguino.blogspot.com.es/2008/09/escritorios-para-linux-gnome-kde.html)

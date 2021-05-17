@@ -1,7 +1,7 @@
 # Parrot Security Official Documentation #
 
 This project has been possible thanks to Parrot OS community members's work.
-You can see our online doc on https://docs.parrotsec.org/doku.php, also we care about creating new contents.
+You can see our online doc on https://docs.parrotsec.org, also we care about creating new contents.
 
 ---
 
