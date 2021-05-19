@@ -84,7 +84,7 @@ We have this script folder, in which not all scripts hace the execution permissi
 	-rwxr-xr-x 1 parrot hackers  780 oct 18 01:17 wireless-dos-ids.py
 	-rw-r--r-- 1 parrot hackers 1587 oct 18 01:05 wireless-dos.py
 
-As you can see in the execution of "ls -l scripts/", some scrpits have execution permissions for all the system users (which is not recommended), while others do not have execution permissioneven for the pwner user. To correct this error we apply the following permissions:
+As you can see in the execution of `ls -l scripts/`, some scrpits have execution permissions for all the system users (which is not recommended), while others do not have execution permissioneven for the pwner user. To correct this error we apply the following permissions:
 
 	┌─[root@parrot-armhf]─[/home/parrot]
 	└──╼ #chmod -R 770 scripts/
@@ -99,16 +99,25 @@ As you can see in the execution of "ls -l scripts/", some scrpits have execution
 Now the owner user and the members of the owner group have read, write and execute permissions, while other users of the system do not have access to this file.
 
 Another way to add or remove permissions is using these modes:
-
+\
 a --> indicates that it will be applied to all
+\
 u --> indicates that it will be applied to the user
+\
 g --> indicates that it will be applied to the group
+\
 o --> indicates that it will apply to others
+\
 ° --> indicates that the permission is added
+\
 ° --> indicates  that the permission is removed
+\
 r --> indicates  read permission
+\
 w --> indicates write permission
+\
 x--> indicates execution permission
+\
 
 The basic syntax for using "chmod" with these modes is as follows:
 
@@ -147,13 +156,19 @@ Its basic syntax is the following:
 	$ chown [options] [owner]: [group (optional)] [files or directories]
 
 Chown options:
-
--R --> Recursively changes the owner of the directories along with all its contents.
--v or --verbose --> Used to show a more descriptive output.
---version --> See the version number of the program.
--dereference --> Acts on symbolic links instead of on the destination.
--h or --no-deference --> In the case of symbolic links, change the owner of the destination instead of the link itself.
---reference --> Changes the owner of a file, taking as reference the owner of the other.
+\
+`-R` --> Recursively changes the owner of the directories along with all its contents.
+\
+`-v or --verbose` --> Used to show a more descriptive output.
+\
+`--version` --> See the version number of the program.
+\
+`-dereference` --> Acts on symbolic links instead of on the destination.
+\
+`-h or --no-deference` --> In the case of symbolic links, change the owner of the destination instead of the link itself.
+\
+`--reference` --> Changes the owner of a file, taking as reference the owner of the other.
+\
 
 Examples of use:
 
@@ -208,19 +223,19 @@ The chgrp command is used to change the group to which a file or directory belon
 
 Options
 
--R -> Recursively changes the group to which the directories belong together with all their contents.
+`-R` -> Recursively changes the group to which the directories belong together with all their contents.
 
--v (or --verbose) -> Used to show a more descriptive output.
+`-v (or --verbose)` -> Used to show a more descriptive output.
 
---version -> See the version number of the program.
+`--version` -> See the version number of the program.
 
---dereference -> Acts on symbolic links instead of on the destination.
+`--dereference` -> Acts on symbolic links instead of on the destination.
 
--h (or --no-dereference) -> In the case of symbolic links, change the destination group instead of the link itself.
+`-h (or --no-dereference)` -> In the case of symbolic links, change the destination group instead of the link itself.
 
---reference -> Change the group of a file taking as reference the owner of another.
+`--reference` -> Change the group of a file taking as reference the owner of another.
 
-They are practically the same "chown" options, with the difference that "chgrp" only changes the group that owns files and / or directories, keeping the user owner.
+They are practically the same **"chown"** options, with the difference that **"chgrp"** only changes the group that owns files and / or directories, keeping the user owner.
 
 Example of use of chgrp:
 

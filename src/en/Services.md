@@ -2,7 +2,7 @@
 
 We are living at a time when systemd has "seized" the vast majority of linux systems. We don't want to enter into a debate about whether systemd is good or bad.
 
-Parrot developers are clear: https://blog.parrotsec.org/debian-and-devuan/
+Parrot developers are clear: [Debian and Devuan](https://parrotsec.org/blog/2017-06-13-debian-and-devuan/)
 
 Anyway, if anything changes, it will be in the future. Currently the system has systemd, just like its older sister Debian.
 
@@ -22,7 +22,7 @@ For many years, the Linux and Unix systems ID 1 process has been the "init" proc
 
 The frequently used daemons were often booted at system startup with "system V and LSB boot scripts". Less often demons were started on demand as inetd or xinetd.
 
-The "System V"system, which as has been said took many (too many?) years with us, had a number of limitations. This is why different starting systems have emerged to try to solve this. Debian (and the vast majority of distributions) have chosen "systemd" as the boot method.
+The **"System V"** system, which as has been said took many (too many?) years with us, had a number of limitations. This is why different starting systems have emerged to try to solve this. Debian (and the vast majority of distributions) have chosen "systemd" as the boot method.
 
 ## systemctl and sytemd units ##
 
@@ -48,9 +48,13 @@ We can see a list of the different types of units handled by systemd we can use 
 
 Some units are:
 
+\
 - "Service" units. They have a ". service" extension and represent the system services. This type of drive is used to boot frequently accessed daemons, such as a web server.
+\
 - "Socket units". They have the extension ". socket" and represent communication between processes (IPC).
+\
 - "Path" units. They have the extension ". path" and are used to delay the activation of a service until the Filesystem is active.
+\
 
 You can check all units in your system with the "systemctl list-unit-files"instruction. Check how each unit has an extension that tells us what type of object it is.
 

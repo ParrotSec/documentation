@@ -31,7 +31,7 @@
     - [Intro to GNU/Linux Security](<./Intro to GNU-Linux Security.md>)
     - [Logs Under Control](<./Logs Under Control.md>)
     - [Network Configuration - Parrot](<./Network Configuration - Parrot.md>)
-    - [Parrot Package Management.md](<./Parrot Package Management.md>)
+    - [Parrot Package Management](<./Parrot Package Management.md>)
     - [Reverse Engineering](<./Reverse Engineering.md>)
     - [Services](<./Services.md>)
     - [Shell and Basic Commands](<./Shell and Basic Commands.md>)

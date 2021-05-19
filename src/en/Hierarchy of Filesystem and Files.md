@@ -1,6 +1,6 @@
 ## Hierarchy of filesystem and files ##
 
-The main problem of every migrant user to GNU / Linux is the structure of files, since it is customary commonly to mention directories like "C: / users / User / Desktop" in Windows, which does not happen in the distribution GNU/Linux. To facilitate the "migration" of users to GNU/Linux, the hierarchy of filesystems contained in the aforementioned system will be explained in detail below. Framed in two basic types Static/Dynamic and Shareable/Restricted in which the entire Linux directory tree is organized.
+The main problem of every migrant user to GNU / Linux is the structure of files, since it is customary commonly to mention directories like **"C:/users/User/Desktop"** in Windows, which does not happen in the distribution GNU/Linux. To facilitate the "migration" of users to GNU/Linux, the hierarchy of filesystems contained in the aforementioned system will be explained in detail below. Framed in two basic types Static/Dynamic and Shareable/Restricted in which the entire Linux directory tree is organized.
 
 ### Some features of the Linux files system ###
 
@@ -11,13 +11,13 @@ The main problem of every migrant user to GNU / Linux is the structure of files,
 
 ### GNU/Linux typological classification ###
 
-- STATIC: Contains files that only the root user can change. Binaries, libraries, documentation, etc. However, these are available for read-only by any other user of the system. Some of these directories are: /bin, /boot, /opt, /sbin, /usr, /proc, etc.
+- **STATIC**: Contains files that only the root user can change. Binaries, libraries, documentation, etc. However, these are available for read-only by any other user of the system. Some of these directories are: /bin, /boot, /opt, /sbin, /usr, /proc, etc.
 
-- DYNAMICS: As the name says, in this category are the files that can be modified, (some of them only by the root). These types of directories are usually backed up more often. Some of these directories are: /var/mail, /var/spool, /var/run, /home, etc.
+- **DYNAMICS**: As the name says, in this category are the files that can be modified, (some of them only by the root). These types of directories are usually backed up more often. Some of these directories are: /var/mail, /var/spool, /var/run, /home, etc.
 
-- SHAREABLE: These are directories that can de shared over the network.
+- **SHAREABLE**: These are directories that can de shared over the network.
 
-- RESTRICTED: Contains directories that can not be shared, that can only be viewed and/or modified by the root. Some of these directories are: /etc, /var/lock, /var/run, etc.
+- **RESTRICTED**: Contains directories that can not be shared, that can only be viewed and/or modified by the root. Some of these directories are: /etc, /var/lock, /var/run, etc.
 
 All Linux/Unix directories hang from the so-called root directory "/". You could at first glance make a comparison with the "C: \" Windows directory, however, there are notable differences between them:
 

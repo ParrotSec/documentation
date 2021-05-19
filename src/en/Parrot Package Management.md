@@ -39,55 +39,54 @@ The Parrot package manager is apt. This manager is responsible for installing pa
 
 - Search for a package or text string:
 
-	apt search <text_string>
+	`apt search <text_string>`
 
 - Show packege information:
 
-	apt show <package>
+	`apt show <package>`
 
 - Show a package dependencies:
 
- 	apt depends <package>
+ 	`apt depends <package>`
 
 - Show the names of all the packages installed in the system:
 
-	apt list --installed
+	`apt list --installed`
 	
 - Install a package:
 
-	apt install <package>
+	`apt install <package>`
 
 - Unistall a package:
 
-	apt remove <package>
+	`apt remove <package>`
 
 - Delete a package including its configuration files:
 
-	apt purge <package>
+	`apt purge <package>`
 
 - Delete automatically those packages that are not been used:
 
-	apt autoremove
+	`apt autoremove`
 
 - Update the repositories information:
 
-	apt update
+	`apt update`
 
 - Update a package to the last available version in the repository:
 
-	apt upgrade <package>
+	`apt upgrade <package>`
 	
 - Update the system. It will update all the packages that have a higher version:
 
-	apt upgrade
+	`apt upgrade`
 
 - Update the full distribution. It will update our system to the next available version:
 
-	apt dist-upgrade
+	`apt dist-upgrade`
 
 - Clean caches, downloaded packages, etc:
 
-	apt clean
-	apt autoclean
+	`apt clean &&	apt autoclean`
 
 These are just some examples. If more information is required, you shoul check the manual page (man 8 apt).

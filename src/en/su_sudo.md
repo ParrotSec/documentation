@@ -6,7 +6,7 @@ But there will be tasks for which we need to become root or at least have their 
 
 ## The command "su" ##
 
-The "su" command is used to become another user. It can be root or it can be another user of the system.
+The **"su"** command is used to become another user. It can be root or it can be another user of the system.
 
 The general way to use it is:
 
@@ -91,7 +91,7 @@ NOTE2: If we execute "su" as the root user, we will not be prompted for the pass
 
 ## The command "sudo" ##
 
-The command "sudo" allows us to execute tasks like another user, without the need to know the password of such user. It is a way to delegate tasks to other users without the need to give any password (this way you should not share the root password).
+The command **"sudo"** allows us to execute tasks like another user, without the need to know the password of such user. It is a way to delegate tasks to other users without the need to give any password (this way you should not share the root password).
 
 ## sudoers configuration ##
 
@@ -217,6 +217,6 @@ In this last example the root password has changed ;-).
 
 In summary:
 
-su --> It makes us another user and we must know the corresponding password.
+`su` --> It makes us another user and we must know the corresponding password.
 
-sudo --> It allows us to execute commands like other users and we do not have to know the password of such user.
+`sudo` --> It allows us to execute commands like other users and we do not have to know the password of such user.
