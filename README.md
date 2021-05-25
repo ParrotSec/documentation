@@ -18,9 +18,9 @@ and the generated binary file will be on `./target/release` folder.
 
 ## Build 
 
-Run `mdbook serve` to build and deploy (and eventually rebuild it at each change) the book on http://localhost:3000 
+Run `./mdbook serve` to build and deploy (and eventually rebuild it at each change) the book on http://localhost:3000 
 
-Run `mdbook clean` to delete the build directory (which the book is generated)
+Run `./mdbook clean` to delete the build directory (which the book is generated)
 
 To allowing space in SUMMARY.md's link destination use <.md file>, for example:
 ` - [What is Parrot](<./01.- What is Parrot.md>) `
