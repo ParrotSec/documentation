@@ -104,22 +104,8 @@
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <a href="https://parrotsec.org" class="back-btn-sidebar" style="background: #57cbcc; color:#222; display: none;">back to website</a>
             <div class="sidebar-scrollbox">
-                {{#toc}}{{/toc}}
-            </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
-        </nav>
-
-        <div id="page-wrapper" class="page-wrapper">
-
-            <div class="page">
-                {{> header}}
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
-                    <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                <div class="sidebar-buttons">
+                   <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -143,23 +129,50 @@
                             <li role="none"><a href="../en/index.html"><button role="menuitem" class="language">English</button></a></li>
                             <li role="none"><a href="../es/index.html"><button role="menuitem" class="language">Spanish</button></a></li>
                         </ul>
+                </div>
+                {{#toc}}{{/toc}}
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                {{> header}}
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="grow-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
                     </div>
                     
-                    <h1 class="menu-title"><img src="favicon.png" alt="ParrotOS" /> {{ book_title }}</h1>
-
-                    <div class="right-buttons">
-                        {{#if print_enable}}
-                        <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        {{/if}}
-                        {{#if git_repository_url}}
-                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                        </a>
-                        {{/if}}
-                        <!-- Back to website button -->
-                        <a href="https://parrotsec.org" class="back-btn" style="background: #57cbcc; color:#222;">back to website</a>
+                    <div class="grow-container">
+                        <h1 class="menu-title"><img src="favicon.png" alt="ParrotOS" /> {{ book_title }}</h1>
+                    </div>
+                    <div class="grow-container">
+                        <div class="right-buttons">
+                            {{#if print_enable}}
+                            <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            {{/if}}
+                            {{#if git_repository_url}}
+                            <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
+                            </a>
+                            {{/if}}
+                            <!-- Back to website button -->
+			    <div class="back-btn">
+                               <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                               <a href="https://parrotsec.org">back to website</a>
+                            </div>
+                            <div class="back-btn-short">
+                               <a href="https://parrotsec.org"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
 

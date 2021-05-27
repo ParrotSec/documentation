@@ -1,17 +1,78 @@
+.right-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grow-container {
+    flex-grow: 1;
+}
+
+.sidebar-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.sidebar-buttons button {
+    position: relative;
+    padding: 0 8px;
+    z-index: 10;
+    line-height: var(--menu-bar-height);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.back-btn-short {
+    display: none;
+    padding: 11px 25px;
+    border-radius: 10px;
+    margin: 0 6px 0 0;
+    background: #65ddea;
+}
+
+.back-btn-short a {
+    color: #222 !important;
+}
+
 .back-btn {
+    display: none;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 6px 0 -156px;
+    background: #65ddea;
     border: 1px solid transparent;
-    display: inline-block;
+    padding: 11px 25px;
+}
+
+.back-btn a {
+    margin-left: 1rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 17px 25px;
     letter-spacing: 1px;
     font-size: 14px;
     font-family: anaheim, sans-serif;
+    color: #222 !important;
+}
+
+#menu-bar .back-btn-short i {
+    font-size: 18px;
+    padding: 0;
+    z-index: 0;
+    cursor: auto;
+    line-height: normal;
+    color: #222 !important;
+}
+
+#menu-bar .back-btn i {
+    font-size: 18px;
+    padding: 0;
+    z-index: 0;
+    cursor: auto;
+    line-height: normal;
+    color: #222 !important;
 }
 
 .language-popup {
     position: absolute;
-    left: 150px;
+    left: 213px;
     top: var(--menu-bar-height);
     z-index: 1000;
     border-radius: 4px;
@@ -60,6 +121,17 @@
 
 th {
     color: #000;
+}
+@media screen and (min-width: 416px) and (max-width: 1050px) {
+    .back-btn-short {
+      display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .back-btn {
+      display: flex;
+    }
 }
 
 @media screen and (max-width: 415px) {

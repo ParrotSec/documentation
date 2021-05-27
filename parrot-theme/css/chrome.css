@@ -4,7 +4,9 @@
 
 ::-webkit-scrollbar {
     background: var(--bg);
+    width: 1px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--scrollbar);
 }
@@ -28,6 +30,7 @@ a > .hljs {
 #menu-bar {
     position: relative;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     background-color: var(--bg);
     border-bottom-color: var(--bg);
@@ -49,7 +52,7 @@ a > .hljs {
     height: var(--menu-bar-height);
 }
 #menu-bar.bordered {
-    border-bottom-color: var(--table-border-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #menu-bar i, #menu-bar .icon-button {
     position: relative;
@@ -92,9 +95,11 @@ a > .hljs {
 }
 
 .menu-title {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: var(--menu-bar-height);
     text-align: center;
     margin: 0;
@@ -105,7 +110,9 @@ a > .hljs {
 }
 
 .menu-title > img {
-    width: 15px;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
 }
 
 .js .menu-title {
@@ -120,7 +127,7 @@ a > .hljs {
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
 .menu-bar a i {
-    color: var(--icons);
+    color: var(--fg);
 }
 
 .menu-bar i:hover,
@@ -328,6 +335,7 @@ ul#searchresults span.teaser em {
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-fg);
+    z-index: 102;
 }
 .sidebar-resizing {
     -moz-user-select: none;
@@ -348,7 +356,7 @@ ul#searchresults span.teaser em {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px 10px;
+    padding: 0px 10px 10px 10px;
 }
 .sidebar .sidebar-resize-handle {
     position: absolute;
@@ -375,12 +383,15 @@ ul#searchresults span.teaser em {
 .sidebar-visible .page-wrapper {
     transform: translateX(var(--sidebar-width));
 }
+
 @media only screen and (min-width: 620px) {
     .sidebar-visible .page-wrapper {
         transform: none;
         margin-left: var(--sidebar-width);
     }
+    
 }
+
 
 .chapter {
     list-style: none outside none;
