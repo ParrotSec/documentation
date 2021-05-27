@@ -104,35 +104,35 @@ These files vary depending on the distribution. In distributions based on Debian
 
 A brief description of the Linux Kernel:
 
-Monolithic architecture
+- Monolithic architecture
 
-It is a complex program composed of a large number of logical subsystems.
+- It is a complex program composed of a large number of logical subsystems.
 
-Managed directly by Linus Torvalds.
+- Managed directly by Linus Torvalds.
 
-With module loading capacity.
+- With module loading capacity.
 
-It is formed by a logical layer but internally works with more.
+- It is formed by a logical layer but internally works with more.
 
-In this phase begins the execution of the kernel, decompressing itself. Then the kernel initialization begins and the checking and commissioning of some of the devices for which it has been supported.
+- In this phase begins the execution of the kernel, decompressing itself. Then the kernel initialization begins and the checking and commissioning of some of the devices for which it has been supported.
 
-It detects the CPU and its speed.
+- It detects the CPU and its speed.
 
-Initializes the display to show information on the screen.
+- Initializes the display to show information on the screen.
 
-Check the PCI bus and identifies and creates a table with the peripherals connected.
+- Check the PCI bus and identifies and creates a table with the peripherals connected.
 
-Initializes the virtual memory management system, including the swapper (swap memory).
+- Initializes the virtual memory management system, including the swapper (swap memory).
 
-Initializes all the peripherals compiled inside the kernel, normally only the necessary peripherals are configured for this boot phase, the rest are configured as modules.
+- Initializes all the peripherals compiled inside the kernel, normally only the necessary peripherals are configured for this boot phase, the rest are configured as modules.
 
-Mounts the root filesystem (/).
+- Mounts the root filesystem (/).
 
-From here, it calls the init process that runs with a uid 0 and will be the father of all other processes.
+- From here, it calls the init process that runs with a uid 0 and will be the father of all other processes.
 
 ### Phase 4: Init ###
 
-At this moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root file system. From now on, the rest of the operations will be performed directly or indirectly by the init process. The init process reads the configuration to be used from the / etc / inittab file and executes the /etc/rc.sysinit command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
+At this moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root file system. From now on, the rest of the operations will be performed directly or indirectly by the init process. The init process reads the configuration to be used from the `/etc/inittab` file and executes the `/etc/rc.sysinit` command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
 
 So far we have seen the four phases of the boot process of a Linux system on a computer. We can conclude this chapter with the following summary:
 

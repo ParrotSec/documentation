@@ -27,42 +27,35 @@ This means that all the system users have permissions to read this file, but onl
 
 To calculate the value of a permit, we will base the sum of its decimal values according to the following correspondence:
 
---------------------------------------------------
 |Permission	|r |w| x |
 |-----------------------------------|--|---|----|
 |Decimal Value	|4| 2 | 1 |
- ------------------------------------------------
+
 That is, the decimal value for the read permission is 4, the value for write permission is 2 and the value for execution permission is 1. Therefore, the possible values for a permission are the following:
 
------------------
-|Permission | Value |
-|-------------------------------|
-|  rwx |   7   |
-|---------|------|
+
+
+
+| Permission | Value |
+|------------|--------|
+|    rwx     |   7   |
 |  rw-  |   6   |
-|---------|------|
 |  r-x    |   5   |
-|---------|------|
 |  r--     |   4   |
-|---------|------|
 |  -wx  |   3   |
-|---------|------|
 |  -w-   |   2   |
-|---------|------|
-|  --r     |   1   |
-|---------|------|
-|  ---      |  0   |
- -----------------
+|  --r     |   1 |
+|   ---   |  0   |
+
+
+
 
 Therefore, we come to the following conclusion: 
 
-------------------------
 | Permission     |   Value  |
 |-----------------------|-------------|
 | rwx rwx rwx  |   777      |
-|-----------------------|-------------|
 | rwx r-x r--        |   754      |
-|-----------------------|-------------|
 | r-x r- - ----------- |   540      |
  -------------------------------------
 

@@ -13,12 +13,12 @@ The package is generally distributed in its compiled version and the installatio
 
 ### Some of the most used package managers are: ###
 
-* RPM, created by Red Hat and used by a large number of Linux distributions, is the packet format of the Linux Standard Base. Originally introduced by Red Hat, but now used in many distributions, such as Mandriva.
-* Deb, Debian packages, originally introduced by Debian, but also used by others like Knoppix and Ubuntu.
-* .tgz, used by Slackware, packages the software using tar and gzip. But there are also some higher level tools to deal with this format: slapt-get, slackpkg and swaret.
-* Ebuilds, a file containing information about how to obtain, compile and install a package on the Gentoo Linux Portage system with the emerging command. Generally, these installations are based on the compilation of sources, although some binary packages can be installed in this way.
-* Pacman, for Arch Linux, uses precompiled binaries distributed in a. pkg. tar. gz or. pkg. tar. xz file.
-* PET, used by Puppy Linux, its derivatives and Quirky, its sister project.
+* **rpm**, created by Red Hat and used by a large number of Linux distributions, is the packet format of the Linux Standard Base. Originally introduced by Red Hat, but now used in many distributions, such as Mandriva.
+* **deb**, Debian packages, originally introduced by Debian, but also used by others like Knoppix and Ubuntu.
+* **.tgz**, used by Slackware, packages the software using tar and gzip. But there are also some higher level tools to deal with this format: slapt-get, slackpkg and swaret.
+* **ebuilds**, a file containing information about how to obtain, compile and install a package on the Gentoo Linux Portage system with the emerging command. Generally, these installations are based on the compilation of sources, although some binary packages can be installed in this way.
+* **pacman**, for Arch Linux, uses precompiled binaries distributed in a. pkg. tar. gz or. pkg. tar. xz file.
+* **pet**, used by Puppy Linux, its derivatives and Quirky, its sister project.
 
 ## Desktop Environments ##
 
