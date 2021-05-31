@@ -265,8 +265,8 @@ Services are booted at system startup when creating links in the correct systemd
 
 ## Summary of systemctl Commands ##
 
-	Command:						Task:
------------------------------------------------------------------------
+	Command:			Task:
+
 	systemctl status UNIT		View details of a unit
 	systemctl stop UNIT			Stop a service
 	systemctl start UNIT		Start a service

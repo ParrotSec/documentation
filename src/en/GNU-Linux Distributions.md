@@ -24,11 +24,11 @@ The package is generally distributed in its compiled version and the installatio
 
 The desktop is the visual environment that interacts between the Linux kernel and the programs, being vital for the user. When you install the operating system, it will come with a pre-installed desktop, but later you can install a different one and choose which desktop you want to use each time in the login menu. Depending on the computer you have and the use you want to give it, it will be convenient to use a specific desktop.
 
-Commonly people tend to confuse distribution with desktop. We can see two visually equal distributions that work differently from the inside. For example, we could have Arch with a KDE desktop and a Debian with a KDE desktop. They're visually the same. Inside, for example, to install an Arch package you will use pacman -S, and Debian apt-get install.
+Commonly people tend to confuse distribution with desktop. We can see two visually equal distributions that work differently from the inside. For example, we could have Arch with a KDE desktop and a Debian with a KDE desktop. They're visually the same. Inside, for example, to install an **Arch** package you will use `pacman -S`, and **Debian** `apt install`.
 
 The GNU/linux desktop will usually have "end-user" packages installed by default. Some Linux distributions have focused specifically on the desktop role. Others include a set of all applications for the platform. In this case, the user can choose between "desktop" or "server" when the operating system is installed.
 
-Some desktop environments GNU/Linux offers many alternatives. The most popular desktop environments are GNOME, KDE, XFCE, MATE and Cinnamon.
+Some desktop environments GNU/Linux offers many alternatives. The most popular desktop environments are **GNOME**, **KDE**, **XFCE**, **MATE** and **Cinnamon**.
 
 These are large collections of desktop programs, rather than simpler environments of X window managers such as FVWM, IceWM and many others. These environments present a GUI using a metaphor desk.
 
