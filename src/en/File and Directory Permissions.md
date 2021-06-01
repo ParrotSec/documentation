@@ -4,7 +4,7 @@ Previously we mentioned that, in Linux, all the files of the system belong to a 
 
 Let's analyze the output of the command "ls -l"
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ # ls -l archivo.txt 
 	-rw-rw-r-- 1 parrot hackers    0    oct 16 12:32 archivo.txt
 	drwxr-xr-x 3 parrot hackers  4096   oct 15 16:25 scripts
@@ -69,7 +69,7 @@ Basic syntax of chmod:
 
 We have this script folder, in which not all scripts hace the execution permissions.
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rw-r--r-- 1 parrot hackers  932 oct 18 01:06 ddos-detect.py
@@ -79,9 +79,9 @@ We have this script folder, in which not all scripts hace the execution permissi
 
 As you can see in the execution of `ls -l scripts/`, some scrpits have execution permissions for all the system users (which is not recommended), while others do not have execution permissioneven for the pwner user. To correct this error we apply the following permissions:
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R 770 scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrwx--- 1 parrot hackers  932 oct 18 01:06 ddos-detect.py
@@ -128,9 +128,9 @@ These would be possible combinations:
 
 Example of use:
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R og-x scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 parrot hackers  932 oct 18 01:06 ddos-detect.py
@@ -140,7 +140,7 @@ Example of use:
 
 If we analyze the result of the previous execution, we can notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
 
-Use of the command chown
+## Use of the command chown
 
 Chwon (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is to change the owner of a file or folder.
 
@@ -165,50 +165,50 @@ Chown options:
 
 Examples of use:
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 parrot parrot  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 parrot parrot  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot parrot  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot parrot 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R root:root scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 root root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 
 In the previous example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner use.
 	
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 root root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R parrot scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 parrot root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 parrot root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 
 
 In the previous example, you can see how the user who owns all the files within the scripts directory changed to parrot.
 
-Use of the command chgrp
+## Use of the command chgrp
 
 The chgrp command is used to change the group to which a file or directory belongs. Its basic sntaxis is the following:
 
@@ -232,44 +232,44 @@ They are practically the same **"chown"** options, with the difference that **"c
 
 Example of use of chgrp:
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 parrot parrot  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 parrot parrot  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot parrot  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot parrot 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R root:root scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 root root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 
 In the previous example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner user.
 
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 root root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R parrot scripts/
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
 	-rwxrw---- 1 parrot root  932 oct 18 01:06 ddos-detect.py
 	-rwxrw---- 1 parrot root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot-armhf]─[/home/parrot]
+	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 
 In the above example, you can see how the group that owns the files wireless-dos-ids.py and wireless-dos.py changed from root to parrot user.
