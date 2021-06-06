@@ -60,3 +60,32 @@ LILO files:
 - To load the configuration, execute the lilo command:
 
   		$ lilo /etc/lilo.conf
+
+### GRUB
+
+GRUB: it is a more advanced and modern Bootloader than LILO. It works in two or three stages (Stages) and has the capacity to load a kernel via the network. GRUB at each stage is loading more elements to boot, it understands files and allows you to specify parameters dynamically at startup, it does not use static values.
+
+How GRUB works: As mentioned above, GRUB has two or three stages, it is said to have two or three because the second stage is optional. Next, we are going to see each of these stages.
+
+- Stage 1: The firmware loads the GRUB boot sector into memory.
+- Stage 1.5: Its objective is to load the code that recognizes file systems and from there load stage 2 as a file.
+- Stage 2: GRUB shows the menu with the boot options that we have defined and a prompt where we can specify ramdisk, kernels, etc. to load.
+
+After these stages, GRUB executes the entered commands, those defined by us in the configuration file (grub.conf, menu.lst, grub.cfg, depending on the distribution) and begins loading the kernel.
+
+These stages and characteristics of GRUB demonstrate its power and superiority to LILO, it is capable of loading files and performing dynamic tasks in the system boot phase, hence it is the Bootloader par excellence in the vast majority of distributions.
+
+GRUB files in Parrot:
+
+	$ ls -la
+	total 1359
+	drwxr-xr-x 5 root root    1024 oct  3 21:36 .
+	drwxr-xr-x 4 root root    1024 oct 12 22:34 ..
+	drwxr-xr-x 2 root root    1024 oct  3 21:36 fonts
+	-r--r--r-- 1 root root    6574 oct  3 21:36 grub.cfg
+	-rw-r--r-- 1 root root    1024 oct  3 21:36 grubenv
+	drwxr-xr-x 2 root root    9216 oct  3 21:36 i386-pc
+	drwxr-xr-x 2 root root    1024 oct  3 21:36 locale
+	-rw-r--r-- 1 root root 1362622 oct  3 21:24 unicode.pf2
+
+These files vary depending on the distribution, in Debian-based distributions, it usually looks like this.
