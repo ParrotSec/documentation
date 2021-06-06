@@ -55,212 +55,212 @@ Mostrar las líneas del archivo que contienen la palabra cadena:
 
 	grep 'cadena' archivo
 		
-		
+Mostrar el estado de un fichero:
 
-- stat fichero
+	stat fichero
 		
-		Muestra el estado de un fichero.
+Mostrar de qué tipo es un fichero:
 
-- file fichero
+	file fichero
 		
-		Muestra de qué tipo es un fichero.
+Mostrar las últimas líneas de un archivo, 10 por defecto:
 
-- tail archivo
+	tail archivo
 		
-		Muestra las últimas líneas de un archivo, 10 por defecto.
+Mostrar las 12 últimas líneas del archivo:
 
-	1 - tail -n 12 archivo
+	tail -n 12 archivo
 		
-		Muestra las 12 últimas líneas del archivo.
+Mostrar las últimas líneas del archivo, actualizándolo a medida que se van añadiendo. Útil para controlar logs:
       
-	2 - tail -f archivo
+	tail -f archivo
 		
-		Muestra las últimas líneas del archivo, actualizándolo a medida que se van añadiendo. Útil para controlar logs.
+Mostrar las primeras líneas de un archivo, 10 por defecto. Admite la opción -n al igual que el comando tail:
 
-- head fichero
+	head fichero
 		
-		Muestra las primeras líneas de un archivo, 10 por defecto. Admite la opción -n al igual que el comando tail.
+Buscar todos los ficheros con nombre grub en /boot.
 
-- find /boot -name grub
+	find /boot -name grub
 		
-		Busca todos los ficheros con nombre grub en /boot.
+Buscar todas las imágenes .jpg en el fichero /home/user:
 
-- find /home/paco -name *.jpg
+	find /home/user -name *.jpg
 	
-		Busca todas las imágenes .jpg en el fichero /home/paco. 
+Buscar ejecutables(ejemplo: whereis find):
 
-- whereis ejecutable
+	whereis ejecutable
 		
-		Busca ejecutables(ejemplo: whereis find)
+Mostrar la ubicación del comando indicado. 
+Si es un comando interno del shell mostrará algo así como: command is a shell builtin:
 
-- type comando
+	type comando
 		
-		Muestra la ubicación del comando indicado. 
-		Si es un comando interno del shell mostrará algo así como: command is a shell builtin.
-- pwd
-		
-		Visualiza el directorio actual.
+Visualiza el directorio actual:
 
-- history
+	pwd
 		
-		Muestra el listado de comandos usados por el usuario (~/.bash_history)
+Mostrar el listado de comandos usados por el usuario (~/.bash_history):
 
-- cd nombre_directorio
+	history
 		
-		Cambia de directorio
+Cambiar de directorio	
 
+	cd nombre_directorio
+		
+		
+Volver al directorio anterior:
       	
-	1 - cd ..
+	cd ..
         
-		Vuelves al directorio anterior.
+Entrar al directorio de .mozilla(indicando la ruta completa):
      
-	2 - cd /home/paco/.mozilla
+	cd /home/user/.mozilla
         	
-		Entras al directorio de .mozilla(indicando la ruta completa)
+Realizar una copia del fichero1 a una nueva ruta, cambiándole el nombre a fichero2:
 
-- cp -dpR fichero1 nueva_ruta/fichero2
+	cp -dpR fichero1 nueva_ruta/fichero2
 		
-		Realiza una copia del fichero1 a una nueva ruta, cambiándole el nombre a fichero2.
+Copiar fichero1 a directorio, conservando fichero1 el nombre:
 
 	cp -dpR fichero1 /directorio
 		
-		Copia fichero1 a directorio, conservando fichero1 el nombre.
+Copiar un directorio recursivamente, salvo los ficheros especiales:
+
 	-R
      	
-		Copia un directorio recursivamente, salvo los ficheros especiales.
+Copiar preservando permisos, propietario, grupos y fechas:
+		
 	-p
      	
-		Copia preservando permisos, propietario, grupos y fechas.
+Conservar los enlaces simbólicos como tales y preserva las relaciones de los duros:
         
 	-d
      	
-		Conserva los enlaces simbólicos como tales y preserva las relaciones de los duros.
+Lo mismo que -dpR:	
       	
 	-a
      	
-		Lo mismo que -dpR .
-		
+Mover y/o renombrar ficheros o directorios.		
 
-- mv ruta_fichero1 ruta_fichero2
+	mv ruta_fichero1 ruta_fichero2
 		
-		Mueve y/o renombra ficheros o directorios.
+Crear un directorio:
 
-- mkdir nombre_directorio
+	mkdir nombre_directorio
 		
-		Crea un directorio.
+Eliminar un directorio siempre y cuando esté vacío:
 
-- rmdir nom_directorio
+	rmdir nom_directorio
 		
-		Elimina un directorio siempre y cuando esté vacío.
+Eliminar archivos:
 		
-- rm archivo
+	rm archivo
 
-		Elimina archivos.
+Borrar los ficheros de un directorio recursivamente:
 
 	rm -r directorio
 		
-		Borra los ficheros de un directorio recursivamente.
+Borrar todos los ficheros .jpg del directorio actual:
 
 	rm *.jpg
 	
-		Borra todos los ficheros .jpg del directorio actual.
+Crear un enlace duro (con el mismo inodo, es decir mismo fichero con distintos nombres):
 
-- ln ruta_fichero ruta_enlace
+	ln ruta_fichero ruta_enlace
 	
-		Crea un enlace duro (con el mismo inodo, es decir mismo fichero con distintos nombres)
+Crea un enlace simbólico (con diferente inodo,donde ruta_directorio se enlazará a ruta_enlace, es decir se crea un nuevo fichero que apunta al \"apuntado\", permitiendo enlazar con directorios y con ficheros de otro sistema de archivos.):
 
-- ln -s ruta_directorio ruta_enlace
+	ln -s ruta_directorio ruta_enlace
 		
-		Crea un enlace simbólico (con diferente inodo,donde ruta_directorio se enlazará a ruta_enlace, es decir se crea un nuevo fichero que apunta al 
-		\"apuntado\", permitiendo enlazar con directorios y con ficheros de otro sistema de archivos.)
+Comparar ficheros:
 
-- diff [opciones] fichero1 fichero2
+	diff [opciones] fichero1 fichero2
 		
-		Compara ficheros.
+Descartar espacio en blanco cuando compara líneas:
 
 	diff -w fichero1 fichero2
 
-		Descarta espacio en blanco cuando compara líneas.
+Informar sólo de si los ficheros difieren, no de los detalles de las diferencias:	
 
 	diff -q fichero1 fichero2
 		
-		Informa sólo de si los ficheros difieren, no de los detalles de las diferencias.
+Mostrar la salida a dos columnas:
 
 	diff -y fichero1 fichero2
 		
-		Muestra la salida a dos columnas. 
+Mostrar las líneas coincidentes entre fichero1 y fichero2:
 
-- join [opciones] fichero1 fichero2
+	join [opciones] fichero1 fichero2
 		
-		Muestra las líneas coincidentes entre fichero1 y fichero2.
+Mostrar el nº de líneas, palabras y caracteres:
 
-- wc fichero
+	wc fichero
 		
-		Muestra el nº de líneas, palabras y caracteres.
+Mostrar el tamaño en bytes de un fichero.
 
-- wc -c fichero
+	wc -c fichero
 		
-		Muestra el tamaño en bytes de un fichero.
+Cambiar las fechas de acceso (-a) y/o modificación (-m) de un archivo.
 
-- touch [-am][-t] fichero
+	touch [-am][-t] fichero
 		
-		Cambia las fechas de acceso (-a) y/o modificación (-m) de un archivo.
+A la fecha actual. Si no existiese el fichero, se crearía:
 
 	touch -am fichero
 		
-		A la fecha actual. Si no existiese el fichero, se crearía.
+AAMMDDhhmm.ss ------- Si no se especifican los segundos, tomaría 0 como valor. A la fecha especificada, si no existiese el fichero,se crearía:
 
 	touch -am -t 0604031433.30 fich
                 
-		AAMMDDhhmm.ss ------- Si no se especifican los segundos, tomaría 0 como valor. 
-		A la fecha especificada, si no existiese el fichero,se crearía.
+Usado sin opciones crearía un fichero con la fecha actual:
 
 	touch fichero
 		
-		Usado sin opciones crearía un fichero con la fecha actual.
+Partir un archivo:
 
-
-- split -b 1445640 mozart.ogg mozart
+	split -b 1445640 mozart.ogg mozart
   	  
-			Partir un archivo
+Unir las distintas partes de un fichero cortado con split:	
 
-- cat mozart.* > mozart.ogg
+	cat mozart.* > mozart.ogg
 		
-		Unir las distintas partes de un fichero cortado con split.
+Cambiar el propietario de un fichero o directorio.
 
-- chown [-R] usuario fichero
+	chown [-R] usuario fichero
 		
-		Cambia el propietario de un fichero o directorio.
+Cambia el grupo de un fichero o directorio.
 
-- chgrp [-R] grupo fichero
+	chgrp [-R] grupo fichero
 		
-		Cambia el grupo de un fichero o directorio.
+Cambiar los permisos de acceso de un fichero
 
-- chmod [-R][ugoa][+/- rwxs] fichero
-		
-		Cambia los permisos de acceso de un fichero
+	chmod [-R][ugoa][+/- rwxs] fichero		
 
-        R: recursivo
-        u: propietario 
-		g: grupo
-		o: otros
-		a: todos 
-		+: da permisos 
-		-: quita permisos
-		r: lectura ejemplo: chmod +x fichero, es lo mismo que: chmod a+x fichero
-		w: escritura explicación: a es la opción por defecto.
-		x: ejecución
-		s: los atributos suid y sgid, otorgan a un \"fichero\" los permisos de su dueño o grupo respectivamente, cada vez 
-		que se ejecute, sea quien sea el que lo ejecute.
+	R: recursivo
+	u: propietario 
+	g: grupo
+	o: otros
+	a: todos 
+	+: da permisos 
+	-: quita permisos
+	r: lectura ejemplo: chmod +x fichero, es lo mismo que: chmod a+x fichero
+	w: escritura explicación: a es la opción por defecto.
+	x: ejecución
+	s: los atributos suid y sgid, otorgan a un \"fichero\" los permisos de su dueño o grupo respectivamente, cada vez que se ejecute, sea quien sea el que lo ejecute.
 
-		Ejemplo: chmod +s /usr/bin/cdrecord
+Ejemplo:
 
-		Cómo afectan los permisos a los directorios:
-		r permite ver su contenido(no el de sus ficheros)
-		w permite añadir o eliminar ficheros (no modificarlos)
-		x permite acceder al directorio.
+	chmod +s /usr/bin/cdrecord
 
-		Método absoluto de determinar los permisos: chmod 760 fichero
+Cómo afectan los permisos a los directorios:
+
+- r permite ver su contenido(no el de sus ficheros)
+- w permite añadir o eliminar ficheros (no modificarlos)
+- x permite acceder al directorio.
+
+Método absoluto de determinar los permisos: chmod 760 fichero
+
 		explicación:          dueño     grupo      otros
 		------------          -----     -----      -----
 		ascii                  r w x     r w -      - - -
