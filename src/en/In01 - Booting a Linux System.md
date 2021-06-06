@@ -27,3 +27,15 @@ Bootloader locations:
   - On the hard disk: it is often located in the first sector of a hard disk partition, in the global boot sector MBR (Master Boot Record) or in a modern GUID Globally-Unique Identifier (GPT) partition system which is the EFI (Extensible Firmware Interface) standard proposed by Intel to replace the old BIOS (GPT replaces the MBR used with the BIOS in modern computers and laptops).
   - We can also find the Bootloader on a CD-ROM or DVD-ROM.
   - There are some types of Bootloaders that can be loaded from the network such as LinuxBios (an Open Source alternative that aims to replace the normal BIOS with a Bios with a small hardware initialization and a compressed Linux kernel, avoid the use of Bootloaders, among others ...)
+
+Types of Bootloaders in Linux
+
+  - LILO: The LInux LOader
+  - GRUB: GRand Unifying Bootloader
+
+Both are capable of loading both Linux systems and other operating systems and are usually located in the hard drive's MBR.
+
+### LILO
+LILO: it is a rudimentary single-stage Bootloader, it does not understand operating systems or file systems. Lilo reads data from disk using native BIOS calls that directly indicate the files that are needed, these files are stored through a map file that is stored in the boot sector.
+
+How LILO works: The firmware loads LILO's boot sector and executes it, then LILO loads its map file through BIOS calls, which shows the loading options prompt. The user selects the kernel to boot and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Lastly, LILO executes the kernel indicating where the root fs is (the root filesystem) and if necessary the ramdisk.
