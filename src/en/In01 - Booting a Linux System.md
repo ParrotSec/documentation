@@ -89,3 +89,24 @@ GRUB files in Parrot:
 	-rw-r--r-- 1 root root 1362622 oct  3 21:24 unicode.pf2
 
 These files vary depending on the distribution, in Debian-based distributions, it usually looks like this.
+
+## Phase 3: Kernel
+
+Brief description of the Linux kernel:
+
+  - Monolithic Architecture.
+  - It is a complex program composed of a large number of logical subsystems.
+  - Managed directly by Linus Torvalds.
+  - With module load capacity.
+  - It is formed by a logical layer but internally it works with more.
+
+
+In this phase the execution of the kernel begins, decompressing itself. Then begins the kernel initialization and the checking and commissioning of some of the devices for which it has been supported.
+
+  - Detects the CPU and its speed.
+  - Initializes the display to show information on the screen.
+  - Checks the PCI bus and identifies and creates a table with the connected peripherals.
+  - Initializes the virtual memory management system, including the swapper (exchanger or exchange memory, swap).
+  - Initializes all the peripherals compiled within the kernel, normally only the peripherals necessary for this phase of the boot are configured in this way, the rest are configured as modules.
+  - Mount the root (/) filesystem.
+  - From here it calls the init process that runs with a uid 0 and will be the parent of all other processes.
