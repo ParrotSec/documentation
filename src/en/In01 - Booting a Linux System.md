@@ -110,3 +110,17 @@ In this phase the execution of the kernel begins, decompressing itself. Then beg
   - Initializes all the peripherals compiled within the kernel, normally only the peripherals necessary for this phase of the boot are configured in this way, the rest are configured as modules.
   - Mount the root (/) filesystem.
   - From here it calls the init process that runs with a uid 0 and will be the parent of all other processes.
+
+## Phase 4: Init.
+
+At the moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root filesystem. From now on, the rest of the operations will be carried out directly or indirectly by the init process. The init process reads the configuration to be used from the / etc / inittab file and executes the /etc/rc.sysinit command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
+
+So far we have seen the four Phases of the boot process of a Linux system on a computer. We can conclude this chapter with the following summary:
+
+The boot process of a Linux system on a computer starts from when we press the power button, it gives life to our hardware by making it work. After power-on, the hardware is tested by the BIOS POST, this makes a mapping of the hardware that we have in our computer and tests it, if everything is working correctly, the boot process continues.
+
+The BIOS uses the default configuration by the manufacturer of the board of our computer or a configuration modified by the user, then it gives way to the Bootloader or Boot Manager that we have installed in the initial partition of our hard disk.
+
+The Bootloader is in charge of showing us the boot options that we previously configured in the system installation, the default options in a recent installation or those of an installation DVD or Live. Once the user chooses a boot option, the kernel is unzipped and subsequently started.
+
+The Kernel performs a small check of the necessary devices and which have been supported, such as CPU, Display, RAM and virtual memory (swap) and other necessary devices, the Kernel ends up mounting the root file system and finally starts the init process. Init is responsible for starting the rest of the system processes, thus initiating the login in text mode or the graphical interface in systems with GUI (Graphical User Interface) and allowing us to use the operating system.
