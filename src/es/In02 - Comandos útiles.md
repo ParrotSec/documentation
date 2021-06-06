@@ -2,60 +2,60 @@
 
 ### Trabajo con Ficheros
 
-- ls
+Listar los ficheros de un directorio:
+
+	ls
 		
-		Lista los ficheros de un directorio.
+Listar también las propiedades y atributos:
 	
+	ls -l
+		
+Lista ficheros incluidos los ocultos de sistema:
+
+	ls -la
 	
-	1 - ls -l
-		
-		Lista también las propiedades y atributos.
+Listar los ficheros de un directorio de forma paginada:
 
-	2 - ls -la
+	ls -la | more
+		
+Listar ficheros especificando la unidad de tamaño (Kilobyte, Megabyte, Gigabyte):	
+
+	ls -lh
+		
+Listar sólo los directorios:
+
+	ls -l | grep ^d
+		
+Mostrar el contenido de un fichero (-n lo numera):	
+
+	cat -n fichero
+		
+Mostrar el contenido de un fichero de manera formateada.: 
+
+	pr -t fichero
 	
-		Lista ficheros incluidos los ocultos de sistema.
-
-	3 - ls -la | more
-		
-		Lista los ficheros de un directorio de forma paginada.
-
-	4 - ls -lh
-		
-		Lista ficheros especificando la unidad de tamaño (Kilobyte, Megabyte, Gigabyte).
-
-	5 - ls -l | grep ^d
-		
-		Lista sólo los directorios
-
-- cat -n fichero
-		
-		Muestra el contenido de un fichero (-n lo numera).    
-
-- pr -t fichero
+Mostrar el contenido de un fichero de forma paginada:
 	
-		Muestra el contenido de un fichero de manera formateada
+	cat fichero | less
+	cat fichero | more
+	more fichero
+	less fichero
 	
-	
-- cat fichero | less
-- cat fichero | more
-- more fichero
-- less fichero
-	
-		Muestran el contenido de un fichero de forma paginada.
+Mostrar el contenido de un fichero comprimido (.gz):
 
-- zcat fichero
-- zmore fichero
-- zless fichero
+	zcat fichero
+	zmore fichero
+	zless fichero
 		
-		Muestran el contenido de un fichero comprimido (.gz)
+'echo' nos muestra en pantalla el texto que le siga:
 
-- echo cadena
+	echo cadena
 		
-		echo nos muestra en pantalla el texto que le siga.
+Mostrar las líneas del archivo que contienen la palabra cadena:
 
-- grep 'cadena' archivo
+	grep 'cadena' archivo
 		
-		Muestra las líneas del archivo que contienen la palabra cadena.
+		
 
 - stat fichero
 		
