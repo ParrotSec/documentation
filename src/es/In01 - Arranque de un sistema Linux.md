@@ -69,7 +69,7 @@ Ficheros de LILO:
 		table=/dev/hda
 		label=win
 	
-- Para cargar la configuración hay que ejecutar el comando lilo.
+- Para cargar la configuración hay que ejecutar el comando lilo:
 	
   		$ lilo /etc/lilo.conf
 
@@ -131,4 +131,12 @@ En estos momentos el kernel está cargado, tenemos gestión de memoria, una part
 
 Hasta aquí hemos visto las cuatro Fases del proceso de arranque de un sistema Linux en un ordenador. Podemos concluir este capítulo con el siguiente resumen:
 
-El proceso de arranque de un sistema Linux en un ordenador comienza desde que presionamos el botón de encendido, éste le da vida a nuestro hardware haciéndolo funcionar. Luego del encendido, el hardware es testeado por el POST de la BIOS, este hace un mapeo del hardware que tenemos en nuestro ordenador y lo prueba, si todo está funcionando correctamente, continúa el proceso de arranque. La BIOS utiliza la configuración predeterminada por el fabricante de la placa de nuestro ordenador o una configuración modificada por el usuario, luego da paso al Bootloader o Gestor de Arranque que tengamos instalado en la partición inicial de nuestro disco duro. El Bootloader es el encargado de mostrarnos las opciones de boot que configuramos previamente en la instalación del sistema, las opciones por defecto en una instalación reciente o las de un DVD de instalación o Live. Una vez que el usuario escoge una opción de boot, el Kernel es descomprimido y posteriormente se inicia. El Kernel realiza un pequeño chequeo de los dispositivos necesarios y a los cuales se le ha dado soporte, como es el caso de CPU, Display, memoria RAM y memoria virtual (swap) y otros dispositivos necesarios, el Kernel termina montando el sistema de ficheros root y por último inicia el proceso init. Init es el encargado de iniciar el resto de los procesos del sistema, iniciando así el login en modo texto o la interfaz gráfica en sistemas con GUI (Interfaz Gráfica de Usuario) y permitiéndonos hacer uso del sistema operativo.
+El proceso de arranque de un sistema Linux en un ordenador comienza desde que presionamos el botón de encendido, éste le da vida a nuestro hardware haciéndolo funcionar.
+
+Luego del encendido, el hardware es testeado por el POST de la BIOS, este hace un mapeo del hardware que tenemos en nuestro ordenador y lo prueba, si todo está funcionando correctamente, continúa el proceso de arranque.
+
+La BIOS utiliza la configuración predeterminada por el fabricante de la placa de nuestro ordenador o una configuración modificada por el usuario, luego da paso al Bootloader o Gestor de Arranque que tengamos instalado en la partición inicial de nuestro disco duro.
+
+El Bootloader es el encargado de mostrarnos las opciones de boot que configuramos previamente en la instalación del sistema, las opciones por defecto en una instalación reciente o las de un DVD de instalación o Live. Una vez que el usuario escoge una opción de boot, el Kernel es descomprimido y posteriormente se inicia.
+
+El Kernel realiza un pequeño chequeo de los dispositivos necesarios y a los cuales se le ha dado soporte, como es el caso de CPU, Display, memoria RAM y memoria virtual (swap) y otros dispositivos necesarios, el Kernel termina montando el sistema de ficheros root y por último inicia el proceso init. Init es el encargado de iniciar el resto de los procesos del sistema, iniciando así el login en modo texto o la interfaz gráfica en sistemas con GUI (Interfaz Gráfica de Usuario) y permitiéndonos hacer uso del sistema operativo.
