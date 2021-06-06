@@ -274,7 +274,7 @@ Método absoluto de determinar los permisos: chmod 760 fichero
 
 
 
-### Empaquetado y compresión
+## Empaquetado y compresión
 
         7z a fichero.7z fichero
 - Comprimir.
