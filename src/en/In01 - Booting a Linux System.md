@@ -59,7 +59,7 @@ LILO files:
 
 - To load the configuration, execute the lilo command:
 
-  		$ lilo /etc/lilo.conf
+        $ lilo /etc/lilo.conf
 
 ### GRUB
 
