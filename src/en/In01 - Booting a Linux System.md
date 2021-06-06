@@ -39,3 +39,24 @@ Both are capable of loading both Linux systems and other operating systems and a
 LILO: it is a rudimentary single-stage Bootloader, it does not understand operating systems or file systems. Lilo reads data from disk using native BIOS calls that directly indicate the files that are needed, these files are stored through a map file that is stored in the boot sector.
 
 How LILO works: The firmware loads LILO's boot sector and executes it, then LILO loads its map file through BIOS calls, which shows the loading options prompt. The user selects the kernel to boot and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Lastly, LILO executes the kernel indicating where the root fs is (the root filesystem) and if necessary the ramdisk.
+
+LILO files:
+
+- Example of /etc/lilo.conf
+
+    boot=/dev/hda2
+    root=/dev/hda2
+    install=/boot/boot.b
+    map=/boot/map
+    vga=normal
+    delay=20
+    image=/vmlinuz
+    label=Linux
+    read-only
+    other=/dev/hda1
+    table=/dev/hda
+    label=win
+
+- To load the configuration, execute the lilo command:
+
+  		$ lilo /etc/lilo.conf
