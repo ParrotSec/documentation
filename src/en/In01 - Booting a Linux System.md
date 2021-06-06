@@ -15,4 +15,15 @@ The BIOS takes care of the following tasks:
   - Identify, organize and select available boot devices.
   - Start the system boot process, called Bootloader.
 
-  Once the BIOS performs all the necessary tests and checks the corresponding configuration of the system, and if everything is fine, it passes control of the system to the Bootloader or Boot Loader.
+Once the BIOS performs all the necessary tests and checks the corresponding configuration of the system, and if everything is fine, it passes control of the system to the Bootloader or Boot Loader.
+
+## Phase 2: Bootloader
+
+The objective of the Bootloader is to load part of the Kernel of the operating system and execute it. In this phase, the Bootloader takes control of the computer system and is responsible for loading the rest of the operating system. There are several types of Bootloaders and these can be loaded from various storage units.
+
+Bootloader locations:
+
+  - On a floppy disk (currently obsolete).
+  - On the hard disk: it is often located in the first sector of a hard disk partition, in the global boot sector MBR (Master Boot Record) or in a modern GUID Globally-Unique Identifier (GPT) partition system which is the EFI (Extensible Firmware Interface) standard proposed by Intel to replace the old BIOS (GPT replaces the MBR used with the BIOS in modern computers and laptops).
+  - We can also find the Bootloader on a CD-ROM or DVD-ROM.
+  - There are some types of Bootloaders that can be loaded from the network such as LinuxBios (an Open Source alternative that aims to replace the normal BIOS with a Bios with a small hardware initialization and a compressed Linux kernel, avoid the use of Bootloaders, among others ...)
