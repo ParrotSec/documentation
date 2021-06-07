@@ -297,7 +297,7 @@ Chequea la integridad del archivo:
         7z t fichero_comprimido
 
 
-##### Notas sobre 7zip
+## Notas sobre 7zip
 
 Comprime en formato 7z, zip, gzip, bzip2 y tar.
 Si es un directorio lo hace recursivamente sin emplear la opción -r
@@ -320,31 +320,36 @@ Si es un directorio lo hace recursivamente sin emplear la opción -r
         	- 7z a -tgzip prueba.tgz prueba.tar
 
 
-###### Archivos zip
+## Archivos zip
+
+Comprimir zip:
 
         zip -r fichero.zip fichero ; ejemplo: zip -r sinatra.zip ./sinatra/
-- Comprimir zip.
-        
+
+Descomprimir zip:
+
         unzip archivo.zip
-- Descomprimir zip.
-        
+
+Ver contenido zip:
+
         unzip -v archivo.zip
-- Ver contenido zip.
 
 
-###### Archivos rar
-        
+
+## Archivos rar
+
+Descomprimir rar:
+
         unrar e -r archivo.rar ("e" extrae en el directorio actual)
 
-- Descomprimir rar.
+Descomprimir rar:
         
         unrar x -r archivo.rar directorio_de_destino ("x" extrae donde se indique)
 
-- Descomprimir rar.
+Ver contenido rar:
         
         unrar v archivo.rar
 
-- Ver contenido rar.
 
 
 ###### Archivos gzip
