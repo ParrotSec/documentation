@@ -1,88 +1,79 @@
-## Boot of a Linux System ##
+## Booting a Linux system.
 
-The boot process in every computers system starts from the BIOS, and Linux is no the exception. In this chapter we are going to be talking about the boot process of a Linux system, we will see what happens in our system since we push the power button until the operative system is fully charged. We will also see the different phases for which our system passes in every boot process, including involved files and commands. Basically, there are four boot phases in a Linux system:
+## Phase 1: Hardware and BIOS
 
-**Phase 1**: Hardware and BIOS
+The boot process begins when we press the power button on our computer. In this phase the system starts passing control to the BIOS.
 
-**Phase 2**: BootLoader
+The BIOS is a small program that is recorded in the memory of the motherboard, this program saves the configuration of our system, it is in charge of performing the POST, Power on Self Test or Power On Self Test (It is the process verification of the components of a computer system, is in charge of configuring and diagnosing the state of the hardware). This memory, where the BIOS is located, is continuously powered by the motherboard's battery to maintain the configuration.
 
-**Phase 3**: Kernel
+The BIOS takes care of the following tasks:
 
-**Phase 4**: Init
+  - Verify the integrity of the BIOS code.
+  - Determine why POST is running (cold boot, reset, error, standby, hibernation, etc.)
+  - Search, size and verify the system memories (RAM and ROM).
+  - Provide the user interface to configure system parameters (CPU speed, boot order, tuning and overclocking, among other particular configurations from other manufacturers)
+  - Identify, organize and select available boot devices.
+  - Start the system boot process, called Bootloader.
 
-Next we will see each of these boot phases and how they work.
+Once the BIOS performs all the necessary tests and checks the corresponding configuration of the system, and if everything is fine, it passes control of the system to the Bootloader or Boot Loader.
 
-### Phase 1: Hardware and BIOS ###
+## Phase 2: Bootloader
 
-The boot process starts from the moment we push the power button in our computer. In this phase, the system initiates passing the control to the BIOS.
+The objective of the Bootloader is to load part of the Kernel of the operating system and execute it. In this phase, the Bootloader takes control of the computer system and is responsible for loading the rest of the operating system. There are several types of Bootloaders and these can be loaded from various storage units.
 
-BIOS is a little program recorded in the board memory (Motherboard). This program saves our system configuration, is the one in charged of performing the POST, Power on Self Test (The computer system components verification process, in charge of configuring and diagnosing the hardware state). This memory is located in the BIOS, it is continuously maintained by the board battery to keep the configuration.
+Bootloader locations:
 
-BIOS is responsible for performing the next tasks:
-
-	* Verify the BIOS code integrity.
-	* Determine why POST executes (cold boot, reset, error, standby, hibernation)
-	* Search, size and verify the system memory (RAM and ROM)
-	* Provides the user interface to configure system parameters (CPU speed, boot orden, tunning and overclocking, among other particular configurations from diverse manufacturers)
-	* Identifies, organizes and selects the available boot devices.
-	* Begins the system boot process, called Bootloader.
-
-Once the BIOS performs all the necessary tests and checks the system corresponding configuration, if everything is OK, passes the system control to the Bootloader.
-
-### Phase 2: Bootloader ###
-
-The Bootloader objective is to load part of the operating system Kernel and execute it. In this phase, the bootloader takes control of the computer system and is in charge of loading the rest of the operative system. There are many types of Bootloaders, and these can be loaded from many storage units.
-
-#### Bootloaders Locations: ####
-
-	* On a floppy disk (currently obsolete).
-	* On the hard drive: it is often located in the first sector of a hard drive partition, in the global boot MBR (Master Boot Record) sector, or in the modern partition system GUID Globally-Unique Identifier (GPT), which is the standard EFI (Extensible Firmware Interface), proposed by Intel to replace the old BIOS (GPT replaces the MBR ised with the BIOS in modern computers and laptops.)
-	* We can also find the Bootloader in a CD-ROM or DVD-ROM.
-	* There are some Bootloader types that can be loaded from the network, such as LinuxBios (an Open Source alternative that aims to replace the normal BIOS with a little initialization of Hardware and compressed Linux Kernel, avoid the use of Bootloaders, among others...)
+  - On a floppy disk (currently obsolete).
+  - On the hard disk: it is often located in the first sector of a hard disk partition, in the global boot sector MBR (Master Boot Record) or in a modern GUID Globally-Unique Identifier (GPT) partition system which is the EFI (Extensible Firmware Interface) standard proposed by Intel to replace the old BIOS (GPT replaces the MBR used with the BIOS in modern computers and laptops).
+  - We can also find the Bootloader on a CD-ROM or DVD-ROM.
+  - There are some types of Bootloaders that can be loaded from the network such as LinuxBios (an Open Source alternative that aims to replace the normal BIOS with a Bios with a small hardware initialization and a compressed Linux kernel, avoid the use of Bootloaders, among others ...)
 
 Types of Bootloaders in Linux
 
-	* LILO: The LInux LOader
-	* GRUB: GRand Unifying Bootloader
+  - LILO: The LInux LOader
+  - GRUB: GRand Unifying Bootloader
 
-	They are both capable of loading Linux systems as well as other operating systems and are usually located in the MBR of the hard drive.
+Both are capable of loading both Linux systems and other operating systems and are usually located in the hard drive's MBR.
 
-**LILO**: is a rudimentary single-stage Bootloader, does not understand operating systems or file systems. LILO reads data from the hard drive using native calles from the BIOS, that directly indicate the needed files. These files are storaged through a map file, which is  stored in the boot loader.
+### LILO
+LILO: it is a rudimentary single-stage Bootloader, it does not understand operating systems or file systems. Lilo reads data from disk using native BIOS calls that directly indicate the files that are needed, these files are stored through a map file that is stored in the boot sector.
 
-**LILO Operation**: The firmware loads the LILO boot sector and execute it, the LILO loads its map file by means of BIOS calls, which shows the options message to load. The user selects the kernel he wants to start and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Finallly, LILO executes the kernel that indicates where the root fs is (the root file system) and, if necessary, the ramdisk.
+How LILO works: The firmware loads LILO's boot sector and executes it, then LILO loads its map file through BIOS calls, which shows the loading options prompt. The user selects the kernel to boot and LILO loads the selected kernel through BIOS calls and using the location parameters in the map file. Lastly, LILO executes the kernel indicating where the root fs is (the root filesystem) and if necessary the ramdisk.
 
-**LILO Files**:
+LILO files:
 
-	* Example of /etc/lilo.conf
+- Example of /etc/lilo.conf
 
-	boot=/dev/hda2
- 	root=/dev/hda2
-	install=/boot/boot.b
-	map=/boot/map
-	vga=normal
-	delay=20
-	image=/vmlinuz
-	label=Linux
-	read-only
-	other=/dev/hda1
-	table=/dev/hda
-	label=win
+        boot=/dev/hda2
+        root=/dev/hda2
+        install=/boot/boot.b
+        map=/boot/map
+        vga=normal
+        delay=20
+        image=/vmlinuz
+        label=Linux
+        read-only
+        other=/dev/hda1
+        table=/dev/hda
+        label=win
 
-	- To load the configuration you must execute the lilo command
+- To load the configuration, execute the lilo command:
 
-	$lilo /etc/lilo.conf
+        $ lilo /etc/lilo.conf
 
-**GRUB**: is a more advanced and modern Bootloader than LILO. It works in two or three stages and has the capacity to load a kernel via network. GRUB, in each stage, loads more elements to boot, it understands files and allows to specify parameters dynamically at startup. It does not use static values.
+### GRUB
 
-**GRUB Operation**: As mentioned above, GRUB has two or three stages, it is said to have two or three stages because the second stage is optional. Next we will see each of these stages.
+GRUB: it is a more advanced and modern Bootloader than LILO. It works in two or three stages (Stages) and has the capacity to load a kernel via the network. GRUB at each stage is loading more elements to boot, it understands files and allows you to specify parameters dynamically at startup, it does not use static values.
 
-**Stage 1**: The firmware loads the GRUB boot sector in memory.
+How GRUB works: As mentioned above, GRUB has two or three stages, it is said to have two or three because the second stage is optional. Next, we are going to see each of these stages.
 
-**Stage 1.5**: Its objective is to load the code that recognizes file systems and from there load stage 2 as a file.
+- Stage 1: The firmware loads the GRUB boot sector into memory.
+- Stage 1.5: Its objective is to load the code that recognizes file systems and from there load stage 2 as a file.
+- Stage 2: GRUB shows the menu with the boot options that we have defined and a prompt where we can specify ramdisk, kernels, etc. to load.
 
-**Stage 2**: GRUB shows the menu with the boot options that we have defined and a prompt where we can specify ramdisk, kernels, etc. to load.
+After these stages, GRUB executes the entered commands, those defined by us in the configuration file (grub.conf, menu.lst, grub.cfg, depending on the distribution) and begins loading the kernel.
 
-These GRUB stages and characteristics demonstrate its power and superiority to LILO, it is capable of loading files and performing dynamic tasks in the boot phase of the system, hence it is Bootloader by excellence in the vast majority of distributions.
+These stages and characteristics of GRUB demonstrate its power and superiority to LILO, it is capable of loading files and performing dynamic tasks in the system boot phase, hence it is the Bootloader par excellence in the vast majority of distributions.
 
 GRUB files in Parrot:
 
@@ -97,43 +88,39 @@ GRUB files in Parrot:
 	drwxr-xr-x 2 root root    1024 oct  3 21:36 locale
 	-rw-r--r-- 1 root root 1362622 oct  3 21:24 unicode.pf2
 
-These files vary depending on the distribution. In distributions based on Debian, it usually looks like this.
+These files vary depending on the distribution, in Debian-based distributions, it usually looks like this.
 
-### Phase 3: Kernel ###
+## Phase 3: Kernel
+
+Brief description of the Linux kernel:
+
+  - Monolithic Architecture.
+  - It is a complex program composed of a large number of logical subsystems.
+  - Managed directly by Linus Torvalds.
+  - With module load capacity.
+  - It is formed by a logical layer but internally it works with more.
 
 
-A brief description of the Linux Kernel:
+In this phase the execution of the kernel begins, decompressing itself. Then begins the kernel initialization and the checking and commissioning of some of the devices for which it has been supported.
 
-- Monolithic architecture
+  - Detects the CPU and its speed.
+  - Initializes the display to show information on the screen.
+  - Checks the PCI bus and identifies and creates a table with the connected peripherals.
+  - Initializes the virtual memory management system, including the swapper (exchanger or exchange memory, swap).
+  - Initializes all the peripherals compiled within the kernel, normally only the peripherals necessary for this phase of the boot are configured in this way, the rest are configured as modules.
+  - Mount the root (/) filesystem.
+  - From here it calls the init process that runs with a uid 0 and will be the parent of all other processes.
 
-- It is a complex program composed of a large number of logical subsystems.
+## Phase 4: Init.
 
-- Managed directly by Linus Torvalds.
+At the moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root filesystem. From now on, the rest of the operations will be carried out directly or indirectly by the init process. The init process reads the configuration to be used from the / etc / inittab file and executes the /etc/rc.sysinit command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
 
-- With module loading capacity.
+So far we have seen the four Phases of the boot process of a Linux system on a computer. We can conclude this chapter with the following summary:
 
-- It is formed by a logical layer but internally works with more.
+The boot process of a Linux system on a computer starts from when we press the power button, it gives life to our hardware by making it work. After power-on, the hardware is tested by the BIOS POST, this makes a mapping of the hardware that we have in our computer and tests it, if everything is working correctly, the boot process continues.
 
-- In this phase begins the execution of the kernel, decompressing itself. Then the kernel initialization begins and the checking and commissioning of some of the devices for which it has been supported.
+The BIOS uses the default configuration by the manufacturer of the board of our computer or a configuration modified by the user, then it gives way to the Bootloader or Boot Manager that we have installed in the initial partition of our hard disk.
 
-- It detects the CPU and its speed.
+The Bootloader is in charge of showing us the boot options that we previously configured in the system installation, the default options in a recent installation or those of an installation DVD or Live. Once the user chooses a boot option, the kernel is unzipped and subsequently started.
 
-- Initializes the display to show information on the screen.
-
-- Check the PCI bus and identifies and creates a table with the peripherals connected.
-
-- Initializes the virtual memory management system, including the swapper (swap memory).
-
-- Initializes all the peripherals compiled inside the kernel, normally only the necessary peripherals are configured for this boot phase, the rest are configured as modules.
-
-- Mounts the root filesystem (/).
-
-- From here, it calls the init process that runs with a uid 0 and will be the father of all other processes.
-
-### Phase 4: Init ###
-
-At this moment the kernel is loaded, we have memory management, a part of the hardware is initialized and we have a root file system. From now on, the rest of the operations will be performed directly or indirectly by the init process. The init process reads the configuration to be used from the `/etc/inittab` file and executes the `/etc/rc.sysinit` command, which performs a basic initialization of the system. Depending on the runlevel, it executes the established commands.
-
-So far we have seen the four phases of the boot process of a Linux system on a computer. We can conclude this chapter with the following summary:
-
-The process of starting a Linux system on a computer starts from the moment we press the power button, it gives life to our hardware, making it work. After the power up, the hardware is tested by the POST of the BIOS, this makes a mapping of the hardware that we have in our computer and it tests it, if everything is working correctly, the boot process continues. The BIOS uses the default configuration by the board manufacturer of our computer or a configuration modified by the user, then gives way to the Bootloader that we have installed in the initial partition of our hard disk. The Bootloader is responsible for showing us the boot options that we previously configured in the system installation, the default options in a recent installation or those of an installation DVD or Live. Once the user chooses a boot option, the Kernel is decompressed and then starts. The Kernel performs a small check of the necessary devices and which have been supported, as is the case of CPU, Display, RAM memory and virtual memory (swap) and other necessary devices, the Kernel ends up mounting the root filesystem and finally start the init process. Init is responsible for the rest of the rest of the system processes, thus initiating the login in text mode or the graphical interface in systems with GUI (Graphical User Interface) and allowing us to make use of the operating system.
+The Kernel performs a small check of the necessary devices and which have been supported, such as CPU, Display, RAM and virtual memory (swap) and other necessary devices, the Kernel ends up mounting the root file system and finally starts the init process. Init is responsible for starting the rest of the system processes, thus initiating the login in text mode or the graphical interface in systems with GUI (Graphical User Interface) and allowing us to use the operating system.
