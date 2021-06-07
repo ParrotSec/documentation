@@ -352,33 +352,33 @@ Ver contenido rar:
 
 
 
-###### Archivos gzip
+## Archivos gzip
+
+Comprimir gz:
 
         gzip fichero ; ejemplo: gzip fichero.txt
 
-- Comprimir gz.
+Descomprimir gz:
 
         gzip -d fichero.gz
 
-- Descomprimir gz.
+Ver contenido gz:
         
         gzip -c fichero.gz
 
-- Ver contenido gz.
 
+## Archivos bzip2
 
-###### Archivos bzip2
+Comprimir bz2:
         
         bzip2 fichero ; ejemplo: bzip2 fichero.txt
 
-- Comprimir bz2.
+Descomprimir bz2:
         
         bzip2 -d fichero.bz2
 
-- Descomprimir bz2.
 
-
-##### NOTA:
+- ### NOTA:
 r equivale en todos los casos a recursivo.
 Mientras que zip comprime y empaqueta, gzip ó bzip2 sólo comprimen ficheros, no directorios, para eso existe tar.
 
