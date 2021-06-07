@@ -276,20 +276,26 @@ Método absoluto de determinar los permisos: chmod 760 fichero
 
 ## Empaquetado y compresión
 
+Comprimir:
+
         7z a fichero.7z fichero
-- Comprimir.
+
+Descomprimir:
 
         7z e fichero_comprimido
-- Descomprimir.
 
-        7z x fichero_comprimido -oruta_de_destino
-- Extraer donde indicamos.
+Extraer donde indicamos:
+
+        7z x fichero_comprimido -ruta_de_destino
+
+Ver contenido:
 
     	7z l fichero_comprimido
-- Ver contenido.
+
+Chequea la integridad del archivo:
 
         7z t fichero_comprimido
-- Chequea la integridad del archivo.
+
 
 ##### Notas sobre 7zip
 
