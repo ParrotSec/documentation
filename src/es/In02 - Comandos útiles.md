@@ -383,41 +383,51 @@ r equivale en todos los casos a recursivo.
 Mientras que zip comprime y empaqueta, gzip ó bzip2 sólo comprimen ficheros, no directorios, para eso existe tar.
 
 
-##### Ficheros tar
+## Ficheros tar
+
+Empaquetar:
 
         tar -vcf archivo.tar /fichero1 /fichero2 ...(fichero puede ser directorio)
-- Empaquetar.
+
+Desempaquetar:
 
         tar -vxf archivo.tar
-- Desempaquetar.
+
+Ver contenido:
 
         tar -vtf archivo.tar
-- Ver contenido.
 
-##### Para comprimir varios ficheros y empaquetarlos en un solo archivo hay que combinar el tar y el gzip o el bzip2 de la siguiente manera:
 
-##### Ficheros tar.gz (tgz)
+<b> Para comprimir varios ficheros y empaquetarlos en un solo archivo hay que combinar el tar y el gzip o el bzip2 de la siguiente manera:</b>
+
+## Ficheros tar.gz (tgz)
+
+Empaquetar y comprimir:
 
         tar -zvcf archivo.tgz directorio
-- Empaquetar y comprimir.
+
+Desempaquetar y descomprimir:
 
         tar -zvxf archivo.tgz
-- Desempaquetar y descomprimir.
+
+Ver contenido:
 
         tar -zvtf archivo.tgz
-- Ver contenido.
 
+## Ficheros tar.bz2 (tbz2)
 
-##### Ficheros tar.bz2 (tbz2)
+Empaquetar y comprimir:
 
         tar -jvcf archivo.tbz2 directorio
-- Empaquetar y comprimir.
+
+Desempaquetar y descomprimir:
 
         tar -jvxf archivo.tbz2
-- Desempaquetar y descomprimir.
+
+Ver contenido:
 
         tar -jvtf archivo.tbz2
-- Ver contenido.
+
 
 
 ##### Opciones de tar:
