@@ -20,7 +20,7 @@
 - [Anonsurf](<./18.- Anonsurf.md>)
 - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
 - [Mirrors List](<./20.- Mirrors List.md>)
-- [GNU/Linux](<./21.- GNU-Linux.md>)
+- [GNU/Linux](<./21.- GNU-Linux basics.md>)
 
 - [General information about GNU/Linux]()
     - [Boot of a Linux System](<./Boot of a Linux System.md>)
