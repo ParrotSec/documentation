@@ -429,63 +429,64 @@ Ver contenido:
         tar -jvtf archivo.tbz2
 
 
+## Opciones de tar:
 
-##### Opciones de tar:
--c : crea un nuevo archivo.
--f : cuando se usa con la opción -c, usa el nombre del fichero especificado para la creación del fichero tar
+- -c : crea un nuevo archivo.
+- -f : cuando se usa con la opción -c, usa el nombre del fichero especificado para la creación del fichero tar
 cuando se usa con la opción -x, retira del archivo el fichero especificado.
--t : muestra la lista de los ficheros que se encuentran en el fichero tar
--v : muestra el proceso de archivo de los ficheros.
--x : extrae los ficheros de un archivo.
--z : comprime el fichero tar con gzip.
--j : comprime el fichero tar con bzip2.
+- -t : muestra la lista de los ficheros que se encuentran en el fichero tar
+- -v : muestra el proceso de archivo de los ficheros.
+- -x : extrae los ficheros de un archivo.
+- -z : comprime el fichero tar con gzip.
+- -j : comprime el fichero tar con bzip2.
 
 ### Comodines
 
 - (~) Se refiere al directorio home de manera que:
 
-- ~/comandos.txt equivale a /home/paco/comandos.txt (si estamos en nuestro propio directorio)
-- ~pepe/comandos.txt equivale a /home/pepe/comandos.txt (pepe es otro usuario)
+- ~/comandos.txt equivale a /home/user/comandos.txt (si estamos en nuestro propio directorio)
+- ~/user2/comandos.txt equivale a /home/user2/comandos.txt (user2 es otro usuario)
 
 - (?) Sustituye un solo caracter. Ejemplos:
   
-        ls p?pe
+        ls u?er
 
 - mostraría todos los ficheros cuyos 1º 3º y 4º caracteres fuesen p,p y e
 
-        ls ?epe
-
-- mostraría todos los ficheros de 4 caracteres que acaben en epe
 
 
-- (*) Sustituye cualquier sucesión de caracteres. Ejemplos:
+- mostrar todos los ficheros de 4 caracteres que acaben en ser
+
+        ls ?ser
+
+- mostrar todos los directorios o ficheros que terminen con .ba
 
         ls *.ba
 
-- muestra todos los directorios o ficheros que terminen con .ba
+- mostrar todos los archivos ocultos.
 
         ls .*
 
-- muestra todos los archivos ocultos.
+- borrar de manera recursiva todos los ficheros y directorio de la ubicación actual
 
         rm -r *
 
-- borra de manera recursiva todos los ficheros y directorio de la ubicación actual
+- borrar todas las imágenes jpg
 
         rm *.jpg
 
-- borra todas las imágenes jpg
+- pasar de ogg a wav todos los ogg del directorio en el que estamos.
 
         oggdec *.ogg
 
-- pasa de ogg a wav todos los ogg del directorio en el que estamos.
 
 - (;) Puesto entre dos comandos hace que tras el primero se ejecute el segundo. Ejemplos:
 
+		'ver siguiente ejemplo'
+
+- el siguiente nos abrirá el editor nano para que escribamos lo que queramos en un nuevo archivo que se llamará nuevo.txt y tras guardar y salir del editor, cat nos mostrará el contenido de lo que acabamos de crear:
+
         nano nuevo.txt ; cat nuevo.txt
 
-- nos abrirá el editor nano para que escribamos lo que queramos en un nuevo archivo que se llamará nuevo.txt y tras guardar y salir del editor, cat nos mostrará el contenido de lo que acabamos de crear. 
 
 
-
-# == Documento en Construcción ==
