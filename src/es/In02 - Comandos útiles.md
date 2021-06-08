@@ -482,7 +482,7 @@ cuando se usa con la opción -x, retira del archivo el fichero especificado.
 
 - (;) Puesto entre dos comandos hace que tras el primero se ejecute el segundo. Ejemplos:
 
-		'ver siguiente ejemplo'
+		* 'ver siguiente ejemplo' *
 
 - el siguiente nos abrirá el editor nano para que escribamos lo que queramos en un nuevo archivo que se llamará nuevo.txt y tras guardar y salir del editor, cat nos mostrará el contenido de lo que acabamos de crear:
 
