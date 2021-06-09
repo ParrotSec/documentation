@@ -24,7 +24,7 @@ Show the current directory:
 
 Change directory:
 
-	$ cd / route / of / new / directory
+	$ cd /route/of/new/directory
 
 Show a text on the screen:
 

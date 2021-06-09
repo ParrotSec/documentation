@@ -2,7 +2,7 @@
 
 - [What is Parrot](<./01.- What is Parrot.md>)
 - [Where to get](<./02.- Where to get.md>)
-- [What version to choose](<./03.- What version to choose.md>)
+- [Which version to choose](<./03.- Which version to choose.md>)
 - [What is Live Mode](<./04.- What is Live Mode.md>)
 - [How to create a Live boot device](<./05.- How to create a Live boot device.md>)
     - [How to boot](<./06.- How to boot.md>)
@@ -33,7 +33,7 @@
     - [Intro to GNU/Linux Security](<./Intro to GNU-Linux Security.md>)
     - [Logs Under Control](<./Logs Under Control.md>)
     - [Network Configuration - Parrot](<./Network Configuration - Parrot.md>)
-    - [Parrot Package Management](<./Parrot Package Management.md>)
+    - [Parrot Software Management](<./Parrot Software Management.md>)
     - [Reverse Engineering](<./Reverse Engineering.md>)
     - [Services](<./Services.md>)
     - [Shell and Basic Commands](<./Shell and Basic Commands.md>)
