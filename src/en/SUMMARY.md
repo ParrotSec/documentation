@@ -3,11 +3,13 @@
 - [What is Parrot](<./01.- What is Parrot.md>)
 - [Download Parrot](<./02.- Download Parrot.md>)
 - [Install Parrot](<./03.- Installation.md>)
+<!-- 
 - [Parrot on Docker](<./Parrot on Docker.md>)
 - [What is Live Mode](<./04.- What is Live Mode.md>)
 - [How to create a Live boot device](<./05.- How to create a Live boot device.md>)
     - [How to boot](<./06.- How to boot.md>)
     - [Parrot USB Live Persistence](<./07.- Parrot USB Live Persistence.md>)
+-->
 - [Parrot in a Virtual Machine]()
     - [Install in a Virtual Machine](<./08.- Install in a Virtual Machine.md>)
     - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
@@ -15,17 +17,14 @@
 - [Dualboot with Windows](<./09.- Dualboot with Windows.md>)
 - [Change MySQL - PostgreSQL Password](<./12.- Change MySQL - PostgreSQL Password.md>)
 - [Supported WiFi devices](<./13.- Supported WiFi devices.md>)
--->
 - [Using a Nvidia GPU on Parrot]()
     - [Nvidia drivers](<./14.- Nvidia drivers.md>)
     - [Nvidia driver install](<./16.- Nvidia driver install.md>)
-<!-- 
 - [Metasploit Framework](<./17.- Metasploit Framework.md>)
 - [Anonsurf](<./18.- Anonsurf.md>)
--->
 - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
 - [Mirrors List](<./20.- Mirrors List.md>)
-
+-->
 - [General information about GNU/Linux]()
     - [What is GNU/Linux](<./21.- GNU-Linux basics.md>)
     - [Boot of a Linux System](<./Boot of a Linux System.md>)
