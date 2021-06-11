@@ -11,7 +11,7 @@
     - [Parrot USB Live Persistence](<./07.- Parrot USB Live Persistence.md>)
 -->
 - [Parrot in a Virtual Machine]()
-    - [Install in a Virtual Machine](<./08.- Install in a Virtual Machine.md>)
+    - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
     - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
 <!--
 - [Dualboot with Windows](<./09.- Dualboot with Windows.md>)
