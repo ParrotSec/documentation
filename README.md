@@ -52,3 +52,11 @@ Also you will need to change the main structure of the src folder, like the foll
 ```
 
 Everything is still to be tested properly.
+
+### Troubleshooting:
+
+It's possible that the `./mdbook serve` command return this error:
+
+**./mdbook: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.33' not found (required by ./mdbook)**
+
+Not all distros might have the latest glibc library, so update your system or update it through [https://www.gnu.org/software/libc/sources.html](https://www.gnu.org/software/libc/sources.html)

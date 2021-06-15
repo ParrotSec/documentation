@@ -22,7 +22,9 @@
     - [Nvidia driver install](<./16.- Nvidia driver install.md>)
 - [Metasploit Framework](<./17.- Metasploit Framework.md>)
 - [Anonsurf](<./18.- Anonsurf.md>)
+-->
 - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
+<!--
 - [Mirrors List](<./20.- Mirrors List.md>)
 -->
 - [General information about GNU/Linux]()

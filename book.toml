@@ -36,11 +36,11 @@ enable = true
 level = 0
 
 [language.en]
-name = "Test"
+name = "Parrot OS Documentation"
 title = "Parrot Documentation"
 description = "New documentation for Parrot OS"
 
 [language.es]
-name = "MIGRACIÓN 3.0 - ParrotDoc"
+name = "Parrot OS Spanish Documentation"
 title = "Parrot Documentación"
 description = "Documentación para ParrotOS"
