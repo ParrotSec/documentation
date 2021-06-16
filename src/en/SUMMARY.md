@@ -3,10 +3,11 @@
 - [What is Parrot](<./01.- What is Parrot.md>)
 - [Download Parrot](<./02.- Download Parrot.md>)
 - [Install Parrot](<./03.- Installation.md>)
+- [How to create a Parrot USB drive](<./05.- How to create a Parrot USB drive.md>)
 <!-- 
 - [Parrot on Docker](<./Parrot on Docker.md>)
 - [What is Live Mode](<./04.- What is Live Mode.md>)
-- [How to create a Live boot device](<./05.- How to create a Live boot device.md>)
+- [How to create a Live boot device](<./05.- How to create a Parrot USB drive.md>)
     - [How to boot](<./06.- How to boot.md>)
     - [Parrot USB Live Persistence](<./07.- Parrot USB Live Persistence.md>)
 -->
