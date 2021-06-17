@@ -1,6 +1,6 @@
 # Summary
 
-- [Welcome to the Parrot Documentation](<./welcome to parrot doc.md>)
+- [Welcome to the Parrot Documentation](<./00.- welcome to parrot doc.md>)
 
 - [Introduction]()
     - [What is Parrot](<./01.- What is Parrot.md>)
@@ -13,10 +13,10 @@
     - [Parrot in a Virtual Machine]()
         - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
         - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
-    - [Parrot on Docker](<./Parrot on Docker.md>)
+    - [Parrot on Docker](<./22.- Parrot on Docker.md>)
 
 - [Configuration]()
-    - [Parrot Software Management](<./Parrot Software Management.md>) 
+    - [Parrot Software Management](<./23.- Parrot Software Management.md>) 
     - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
 
