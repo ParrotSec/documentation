@@ -6,7 +6,7 @@ Currently it is not necessary for the user to compile the sources of each progra
 
 To compile some programs, some libraries and other programmes are necessary. If we tried to compile a program that had dependencies with other libraries and other programs, we should install these "dependencies" previously to its compilation. Likewise, if we want to install a binary we will need to have installed the necessary dependencies for its correct operation.
 
-To manage these dependencies and the "packages" installation, package managers have been created. There are numerous packet managers, some graphics and other in command line. In this chapter, we will see one of the most famous, created by the Debian developers, and the one used by Parrot... APT.
+To manage these dependencies and the "packages" installation, package managers have been created. There are numerous packet managers, some graphics and other in command line. In this chapter, we will see one of the most famous, created by the Debian developers, and the one used by Parrot... **APT**.
 
 The main functions of a package manager must be:
 
@@ -37,56 +37,69 @@ You can also see the file "Mirrors"
 
 The Parrot package manager is apt. This manager is responsible for installing packages, checking dependencies, updating the system, among other things. Let's see we can do with it. We will see the most common options, but we can see several man pages (apt, apt-get, apt-cache, dpkg)
 
-- Search for a package or text string:
+Search for a package or text string:
 
-	`apt search <text_string>`
+    apt search <text_string>
 
-- Show packege information:
+\
+Show package information:
 
-	`apt show <package>`
+    apt show <package>
 
-- Show a package dependencies:
+\
+Show a package dependencies:
 
- 	`apt depends <package>`
+    apt depends <package>
 
-- Show the names of all the packages installed in the system:
+\
+Show the names of all the packages installed in the system:
 
-	`apt list --installed`
+    apt list --installed
 	
-- Install a package:
+\
+Install a package:
 
-	`apt install <package>`
+    apt install <package>
 
-- Unistall a package:
+\
+Uninstall a package:
 
-	`apt remove <package>`
+    apt remove <package>
 
-- Delete a package including its configuration files:
+\
+Delete a package including its configuration files:
 
-	`apt purge <package>`
+    apt purge <package>
 
-- Delete automatically those packages that are not been used:
+\
+Delete automatically those packages that are not been used (be careful with this command, due to apt's hell dependency it may delete unwanted packages): 
 
-	`apt autoremove`
+    apt autoremove
 
-- Update the repositories information:
+\
+Update the repositories information:
 
-	`apt update`
+    apt update
 
-- Update a package to the last available version in the repository:
+\
+Update a package to the last available version in the repository:
 
-	`apt upgrade <package>`
+    apt upgrade <package>
 	
-- Update the system. It will update all the packages that have a higher version:
+\
+Update the system. It will update all the packages that have a higher version:
 
-	`apt upgrade`
+    apt update
 
-- Update the full distribution. It will update our system to the next available version:
+\
+Update the full distribution. It will update our system to the next available version:
 
-	`apt dist-upgrade`
+    parrot-upgrade
 
-- Clean caches, downloaded packages, etc:
+\
+Clean caches, downloaded packages, etc:
 
-	`apt clean &&	apt autoclean`
+    apt clean && apt autoclean
 
+\
 These are just some examples. If more information is required, you shoul check the manual page (man 8 apt).

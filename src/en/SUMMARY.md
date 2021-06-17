@@ -1,19 +1,30 @@
 # Summary
 
-- [What is Parrot](<./01.- What is Parrot.md>)
-- [Download Parrot](<./02.- Download Parrot.md>)
-- [Install Parrot](<./03.- Installation.md>)
-- [How to create a Parrot USB drive](<./05.- How to create a Parrot USB drive.md>)
+- [Introduction]()
+    - [What is Parrot](<./01.- What is Parrot.md>)
+    - [Download Parrot](<./02.- Download Parrot.md>)
+    - [What is GNU/Linux](<./21.- GNU-Linux basics.md>)
+
+- [Installation]()
+    - [Install Parrot](<./03.- Installation.md>)
+    - [How to create a Parrot USB drive](<./05.- How to create a Parrot USB drive.md>)
+    - [Parrot in a Virtual Machine]()
+        - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
+        - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
+    - [Parrot on Docker](<./Parrot on Docker.md>)
+
+- [Configuration]()
+    - [Parrot Software Management](<./Parrot Software Management.md>) 
+    - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
+    - [File and Directory Permissions](<./File and Directory Permissions.md>)
+
+
 <!-- 
-- [Parrot on Docker](<./Parrot on Docker.md>)
 - [What is Live Mode](<./04.- What is Live Mode.md>)
 - [How to create a Live boot device](<./05.- How to create a Parrot USB drive.md>)
     - [How to boot](<./06.- How to boot.md>)
     - [Parrot USB Live Persistence](<./07.- Parrot USB Live Persistence.md>)
 -->
-- [Parrot in a Virtual Machine]()
-    - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
-    - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
 <!--
 - [Dualboot with Windows](<./09.- Dualboot with Windows.md>)
 - [Change MySQL - PostgreSQL Password](<./12.- Change MySQL - PostgreSQL Password.md>)
@@ -24,21 +35,17 @@
 - [Metasploit Framework](<./17.- Metasploit Framework.md>)
 - [Anonsurf](<./18.- Anonsurf.md>)
 -->
-- [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
 <!--
 - [Mirrors List](<./20.- Mirrors List.md>)
 -->
 - [General information about GNU/Linux]()
-    - [What is GNU/Linux](<./21.- GNU-Linux basics.md>)
     - [Boot of a Linux System](<./Boot of a Linux System.md>)
-    - [File and Directory Permissions](<./File and Directory Permissions.md>)
     - [GNU/Linux Distributions](<./GNU-Linux Distributions.md>)
     - [Hierarchy of Filesystem and Files](<./Hierarchy of Filesystem and Files.md>)
     - [Installation procedure of a Lemp Nginx web server in ParrotSec](<./Installation procedure of a Lemp Nginx web server in ParrotSec.md>)
     - [Intro to GNU/Linux Security](<./Intro to GNU-Linux Security.md>)
     - [Logs Under Control](<./Logs Under Control.md>)
     - [Network Configuration - Parrot](<./Network Configuration - Parrot.md>)
-    - [Parrot Software Management](<./Parrot Software Management.md>)
     - [Reverse Engineering](<./Reverse Engineering.md>)
     - [Services](<./Services.md>)
     - [Shell and Basic Commands](<./Shell and Basic Commands.md>)
