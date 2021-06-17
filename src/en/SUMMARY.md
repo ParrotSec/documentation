@@ -1,5 +1,7 @@
 # Summary
 
+- [Welcome to the Parrot Documentation](<./welcome to parrot doc.md>)
+
 - [Introduction]()
     - [What is Parrot](<./01.- What is Parrot.md>)
     - [Download Parrot](<./02.- Download Parrot.md>)
@@ -17,7 +19,6 @@
     - [Parrot Software Management](<./Parrot Software Management.md>) 
     - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
-
 
 <!-- 
 - [What is Live Mode](<./04.- What is Live Mode.md>)
@@ -37,7 +38,6 @@
 -->
 <!--
 - [Mirrors List](<./20.- Mirrors List.md>)
--->
 - [General information about GNU/Linux]()
     - [Boot of a Linux System](<./Boot of a Linux System.md>)
     - [GNU/Linux Distributions](<./GNU-Linux Distributions.md>)
@@ -53,3 +53,4 @@
     - [The Hackers](<./The Hackers.md>)
     - [Users and Groups](<./Users and Groups.md>)
     - [What is Pentesting](<./What is Pentesting.md>)
+-->

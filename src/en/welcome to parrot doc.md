@@ -1,0 +1,25 @@
+
+\
+\
+
+<h1 align="center">Welcome to our Documentation</h1>
+
+An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.
+
+The documentation is a continuous Work In Progress (WIP), and all Parrot users are invited to contribute to the creation and translation process of this portal.
+
+At the moment, it is divided into three main areas:
+
+- [Introduction](<./01.- What is Parrot.md>), containing all the basic information on the Parrot project
+
+- [Installation](<./03.- Installation.md>), where it is shown how to install Parrot on your physical or virtual machine, create a boot device, docker, etc...
+
+- [Configuration](<./Parrot Software Management.md>), here you will find the more technical aspects, some tips on how to configure some software, management of your system, etc...
+
+\
+\
+
+<div style="text-align: center;">
+    <a href="https://parrotsec.org/download/"><img src="./images/parrot-4.11.jpg" width="60%"/></a>
+</div>
+
