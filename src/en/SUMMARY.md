@@ -19,6 +19,7 @@
     - [Parrot Software Management](<./23.- Parrot Software Management.md>) 
     - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
+    - [Hash and key verification](<./24.- Hash and key verification.md>)
 
 <!-- 
 - [What is Live Mode](<./04.- What is Live Mode.md>)
