@@ -18,6 +18,7 @@
     - [Parrot Software Management](<./23.- Parrot Software Management.md>) 
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
     - [Hash and key verification](<./24.- Hash and key verification.md>)
+    - [AppArmor](<./25.- AppArmor.md>)
 
 -[Troubleshooting]()
 
