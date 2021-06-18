@@ -21,6 +21,7 @@
     - [AppArmor](<./25.- AppArmor.md>)
 
 -[Troubleshooting]()
+-[F.A.Q.]()
 
 <!-- 
 - [Parrot on Docker](<./22.- Parrot on Docker.md>)
