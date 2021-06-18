@@ -13,15 +13,17 @@
     - [Parrot in a Virtual Machine]()
         - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
         - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
-    - [Parrot on Docker](<./22.- Parrot on Docker.md>)
 
 - [Configuration]()
     - [Parrot Software Management](<./23.- Parrot Software Management.md>) 
-    - [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
     - [Hash and key verification](<./24.- Hash and key verification.md>)
 
+-[Troubleshooting]()
+
 <!-- 
+- [Parrot on Docker](<./22.- Parrot on Docker.md>)
+- [Compile a custom kernel](<./19.- Compile a custom kernel.md>)
 - [What is Live Mode](<./04.- What is Live Mode.md>)
 - [How to create a Live boot device](<./05.- How to create a Parrot USB drive.md>)
     - [How to boot](<./06.- How to boot.md>)
