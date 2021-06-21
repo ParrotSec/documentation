@@ -14,6 +14,7 @@
     - [Parrot in a Virtual Machine]()
         - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
         - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
+    - [Parrot on QubesOS](<./27.- Parrot on QubesOS.md>)
 
 - [Configuration]()
     - [Parrot Software Management](<./23.- Parrot Software Management.md>) 
