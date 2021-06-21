@@ -2,24 +2,24 @@
 
 Previously we mentioned that, in Linux, all the files of the system belong to a user and a group. The owner of a file is the user who created it and the main group of this file is the group of the user who created it. For example, in previous chapters we worked with the user "parrot", if this user creates a file, the user "parrot" and the default group of the parrot user, will be the owners of this new file, so the file belongs to the parrot user and the default group of the parrot user. For this reason, we often need to use the "sudo" command to be able to read, modify or execute some files and programs of the system or make changes in the permissions of the files in question.
 
-Let's analyze the output of the command "ls -l"
+Let's analyze the output of the command `ls -l`
 
 	┌─[root@parrot]─[/home/parrot]
-	└──╼ # ls -l archivo.txt 
-	-rw-rw-r-- 1 parrot hackers    0    oct 16 12:32 archivo.txt
+	└──╼ # ls -l archive.txt 
+	-rw-rw-r-- 1 parrot hackers    0    oct 16 12:32 archive.txt
 	drwxr-xr-x 3 parrot hackers  4096   oct 15 16:25 scripts
 
-The output of the command "ls -l" indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's stop in the fields, permissions, user and group, and let's focus on the first field (file permissions). In Linux, the permissions management that the users and the groups of users have on the files and the folders, is carried out by means of a simple scheme of three types of permissions:
+The output of the command `ls -l` indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's stop in the fields, permissions, user and group, and let's focus on the first field (file permissions). In Linux, the permissions management that the users and the groups of users have on the files and the folders, is carried out by means of a simple scheme of three types of permissions:
 
-Read permission, represented by the "r" letter.
+**Read** permission, represented by the "**r**" letter.
 
-Write permission, represented by the "w" letter.
+**Write** permission, represented by the "**w**" letter.
 
-Execution permission, repersented by the "x" letter.
+**Execution** permission, repersented by the "**x**" letter.
 
 The meanin of these premissions s different for files and folders, then we will explain each of the cases.
 
-In the case of a .txt file, it has the following permissions:
+In the case of a *.txt* file, it has the following permissions:
 
 	Owner	Group	Other Users
 	r  w  -	r  w  -	r  -  -
@@ -57,11 +57,10 @@ Therefore, we come to the following conclusion:
 | rwx rwx rwx  |   777      |
 | rwx r-x r--        |   754      |
 | r-x r- - ----------- |   540      |
- -------------------------------------
 
 Having this clear, we can move to the use of "chmod", which help us managing the files and folders permissions.
 
-Use of chmod
+#### chmod ####
 
 Basic syntax of chmod:
 
@@ -93,38 +92,38 @@ Now the owner user and the members of the owner group have read, write and execu
 
 Another way to add or remove permissions is using these modes:
 \
-a --> indicates that it will be applied to all
+`a` --> indicates that it will be applied to all
 \
-u --> indicates that it will be applied to the user
+`u` --> indicates that it will be applied to the user
 \
-g --> indicates that it will be applied to the group
+`g` --> indicates that it will be applied to the group
 \
-o --> indicates that it will apply to others
+`o` --> indicates that it will apply to others
 \
-° --> indicates that the permission is added
+`+` --> indicates that the permission is added
 \
-° --> indicates  that the permission is removed
+`-` --> indicates  that the permission is removed
 \
-r --> indicates  read permission
+`r` --> indicates  read permission
 \
-w --> indicates write permission
+`w` --> indicates write permission
 \
-x--> indicates execution permission
+`x` --> indicates execution permission
 \
 
 The basic syntax for using "chmod" with these modes is as follows:
 
-	# chmod [a | u | g | o] [+ | -] [r | w | x]
+    chmod [a | u | g | o] [+ | -] [r | w | x]
 
 That is, to whom the permit is applied, add or remove permission and type pf permit that is to be added or removed.
 
 These would be possible combinations:
 
-- a+r Read permissions for all
-- +r As before, if nothing is indicated, 'a' is assumed.
-- og-x Removes execution permission from all but the user.
-- u+rwx Gives all the permissions to the user.
-- o-rwx Remove the permissions fron the others.
+- `a+r` Read permissions for all
+- `+r` As before, if nothing is indicated, 'a' is assumed.
+- `og-x` Removes execution permission from all but the user.
+- `u+rwx` Gives all the permissions to the user.
+- `o-rwx` Remove the permissions fron the others.
 
 Example of use:
 
@@ -140,7 +139,7 @@ Example of use:
 
 If we analyze the result of the previous execution, we can notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
 
-## Use of the command chown
+#### chown ####
 
 Chwon (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is to change the owner of a file or folder.
 
@@ -208,7 +207,7 @@ In the previous example, we can see how the user and group owner of all the file
 
 In the previous example, you can see how the user who owns all the files within the scripts directory changed to parrot.
 
-## Use of the command chgrp
+#### chgrp ####
 
 The chgrp command is used to change the group to which a file or directory belongs. Its basic sntaxis is the following:
 
@@ -239,8 +238,10 @@ Example of use of chgrp:
 	-rwxrw---- 1 parrot parrot  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot parrot  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot parrot 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R root:root scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -248,6 +249,7 @@ Example of use of chgrp:
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 
@@ -260,8 +262,10 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R parrot scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -269,6 +273,7 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 parrot root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #
 

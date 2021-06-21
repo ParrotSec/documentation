@@ -4,8 +4,9 @@
 
 - [Introduction]()
     - [What is Parrot](<./01.- What is Parrot.md>)
-    - [Download Parrot](<./02.- Download Parrot.md>)
     - [What is GNU/Linux](<./21.- GNU-Linux basics.md>)
+    - [Download Parrot](<./02.- Download Parrot.md>)
+    - [Desktop Enviroments](<./26.- Desktop Enviroments.md>)
 
 - [Installation]()
     - [Install Parrot](<./03.- Installation.md>)
