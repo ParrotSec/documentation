@@ -1,6 +1,6 @@
 ## File and Directory Permissions ##
 
-Previously we mentioned that, in Linux, all the files of the system belong to a user and a group. The owner of a file is the user who created it and the main group of this file is the group of the user who created it. For example, in previous chapters we worked with the user "parrot", if this user creates a file, the user "parrot" and the default group of the parrot user, will be the owners of this new file, so the file belongs to the parrot user and the default group of the parrot user. For this reason, we often need to use the "sudo" command to be able to read, modify or execute some files and programs of the system or make changes in the permissions of the files in question.
+Previously we mentioned that, in Linux, all the files of the system belong to a user and a group. The owner of a file is the user who created it and the main group of this file is the group of the user who created it. For example, in previous chapters we worked with the user "parrot". If this user creates a file, the user "parrot" and the default group of the parrot user will be the owners of this new file, so the file belongs to the parrot user and the default group of the parrot user. For this reason we often use the "sudo" command to be able to read, modify or execute files and programs of the system or make changes in the permissions of the files in question.
 
 Let's analyze the output of the command `ls -l`
 
@@ -9,7 +9,7 @@ Let's analyze the output of the command `ls -l`
 	-rw-rw-r-- 1 parrot hackers    0    oct 16 12:32 archive.txt
 	drwxr-xr-x 3 parrot hackers  4096   oct 15 16:25 scripts
 
-The output of the command `ls -l` indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's stop in the fields, permissions, user and group, and let's focus on the first field (file permissions). In Linux, the permissions management that the users and the groups of users have on the files and the folders, is carried out by means of a simple scheme of three types of permissions:
+The output of the command `ls -l` indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's start with the fields permission, user, and group.We will focus on the first field (file permissions). In Linux, the permissions management that the users and the groups of users have on the files and the folders is carried out using a simple scheme of three types of permissions:
 
 **Read** permission, represented by the "**r**" letter.
 
@@ -115,9 +115,9 @@ The basic syntax for using "chmod" with these modes is as follows:
 
     chmod [a | u | g | o] [+ | -] [r | w | x]
 
-That is, to whom the permit is applied, add or remove permission and type pf permit that is to be added or removed.
+That is, to whom the permit is applied, add or remove permission and type of permit that is to be added or removed.
 
-These would be possible combinations:
+Possible combinations:
 
 - `a+r` Read permissions for all
 - `+r` As before, if nothing is indicated, 'a' is assumed.
@@ -137,7 +137,7 @@ Example of use:
 	-rwxrw---- 1 parrot hackers  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot hackers 1587 oct 18 01:05 wireless-dos.py
 
-If we analyze the result of the previous execution, we can notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
+If we analyze the result of the previous execution, we notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
 
 #### chown ####
 
