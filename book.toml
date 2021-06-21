@@ -19,7 +19,7 @@ additional-css = ["static/custom.css"]
 additional-js = ["static/custom.js"]
 no-section-label = true
 # input-404 = "not-found.md
-# git-repository-url = "nest.parrotsec.org"
+git-repository-url = "nest.parrotsec.org"
 
 [output.html.print]
 enable = false
