@@ -22,8 +22,13 @@
     - [Hash and key verification](<./24.- Hash and key verification.md>)
     - [AppArmor](<./25.- AppArmor.md>)
 
--[Troubleshooting]()
--[F.A.Q.]()
+- [Troubleshooting]()
+- [F.A.Q.]()
+
+- [Legal]()
+    - [Privacy Policy](<./Privacy Policy.md>)
+    - [Warrant Canary](<./Warrant Canary.md>)
+
 
 <!-- 
 - [Parrot on Docker](<./22.- Parrot on Docker.md>)
