@@ -21,10 +21,11 @@
     - [File and Directory Permissions](<./File and Directory Permissions.md>)
     - [Hash and key verification](<./24.- Hash and key verification.md>)
     - [AppArmor](<./25.- AppArmor.md>)
-
+    - [Assistive Technologies](<./28.- Assistive Technologies.md>)
+<!-- 
 - [Troubleshooting]()
 - [F.A.Q.]()
-
+-->
 - [Legal]()
     - [Privacy Policy](<./Privacy Policy.md>)
     - [Warrant Canary](<./Warrant Canary.md>)
