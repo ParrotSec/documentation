@@ -7,6 +7,7 @@
     - [What is GNU/Linux](<./21.- GNU-Linux basics.md>)
     - [Download Parrot](<./02.- Download Parrot.md>)
     - [Desktop Enviroments](<./26.- Desktop Enviroments.md>)
+    - [Community & Social](<./29.- Community.md>)
 
 - [Installation]()
     - [Install Parrot](<./03.- Installation.md>)
