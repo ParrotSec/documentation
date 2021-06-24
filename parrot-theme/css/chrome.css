@@ -403,6 +403,27 @@ ul#searchresults span.teaser em {
     width: 100%;
 }
 
+.section::before {
+top: 0px;
+left: 0px;
+width: 1px;
+bottom: 0px;
+content: "";
+position: absolute;
+background-image: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-size: initial;
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: var(--theme-hover);
+}
+
+
+
 .chapter li {
     display: flex;
     color: var(--sidebar-non-existant);
@@ -412,23 +433,20 @@ ul#searchresults span.teaser em {
     padding: 0;
     text-decoration: none;
     color: var(--sidebar-fg);
+}
+.chapter li .section .chapter-item {
     transition: all 300ms ease-in-out;
 }
 
-.chapter li a:hover {
+.chapter li .section .chapter-item:hover {
+    background-color: var(--theme-hover);
+}
+/*
+.chapter-item.expanded {
     color: var(--sidebar-active);
     background-color: var(--theme-hover);
-    border-radius: 5px;
-    transition: all 300ms ease-in-out;
-    padding: .35rem 1rem;
 }
-
-.chapter li a.active {
-    color: var(--sidebar-active);
-    background-color: var(--theme-hover);
-    border-radius: 5px;
-    padding: .35rem 1rem;
-}
+*/
 
 .chapter li > a.toggle {
     cursor: pointer;
@@ -450,7 +468,7 @@ ul#searchresults span.teaser em {
 
 .chapter li.chapter-item {
     line-height: 1.5em;
-    margin-top: 0.6em;
+    padding: 4px 0px 4px 20px;
 }
 
 .chapter li.expanded > a.toggle div {
@@ -472,6 +490,9 @@ ul#searchresults span.teaser em {
 }
 
 .section {
+    position: relative;
+    margin-left: 20px;
+    padding: 0 !important; 
     list-style: none outside none;
     padding-left: 20px;
     line-height: 1.9em;
