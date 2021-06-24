@@ -16,6 +16,7 @@
         - [Install Parrot on VirtualBox](<./08.- Install Parrot on VirtualBox.md>)
         - [Virtualbox Guest Additions](<./15.- Virtualbox Guest Additions.md>)
     - [Parrot on Docker](<./22.- Parrot on Docker.md>)
+    - [Dualboot with Windows](<./09.- Dualboot with Windows.md>)
     - [Parrot on QubesOS](<./27.- Parrot on QubesOS.md>)
 
 - [Configuration]()
@@ -42,7 +43,6 @@
     - [Parrot USB Live Persistence](<./07.- Parrot USB Live Persistence.md>)
 -->
 <!--
-- [Dualboot with Windows](<./09.- Dualboot with Windows.md>)
 - [Change MySQL - PostgreSQL Password](<./12.- Change MySQL - PostgreSQL Password.md>)
 - [Supported WiFi devices](<./13.- Supported WiFi devices.md>)
 - [Using a Nvidia GPU on Parrot]()
