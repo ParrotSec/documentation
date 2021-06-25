@@ -40,7 +40,7 @@ name = "Parrot OS Documentation"
 title = "Parrot Documentation"
 description = "New documentation for Parrot OS"
 
-[language.es]
-name = "Parrot OS Spanish Documentation"
-title = "Parrot Documentación"
-description = "Documentación para ParrotOS"
+# [language.es]
+# name = "Parrot OS Spanish Documentation"
+# title = "Parrot Documentación"
+# description = "Documentación para ParrotOS"
