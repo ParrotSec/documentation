@@ -1,6 +1,6 @@
 ### Compile locally mdBook for Parrot Documentation
 
-First step: Create the working directory and clone locally the Documentation repo
+## First step: Create the working directory and clone locally the Documentation repo
 
 `mkdir doc`
 
@@ -10,7 +10,7 @@ First step: Create the working directory and clone locally the Documentation rep
 
 `git switch doc-assembled`
 
-Second step: Clone mdBook repo
+## Second step: Clone mdBook repo
 
 `cd ..`
 
@@ -20,21 +20,23 @@ Second step: Clone mdBook repo
 
 `git switch localization`
 
-Third step: Compile mdBook
+## Third step: Compile and launch mdBook
 
 `cargo build --release`
 
-Wait for the compiler to finish its work, then go to the third step:
+### Wait for the compiler to finish its work, then copy the compiled binary in the documentation directory:
 
 `mv ~/mdBook/target/release/mdbook ~/misc/mdbook `
 
-Now that mdBook has been compiled, launch it:
+### Now that mdBook has been compiled, launch it:
 
 `cd ~/misc/mdbook`
 `./mdbook serve`
 
-Then open your favorite launcher and type:
+### Finally, open your favorite launcher and type:
 
 `localhost:3000`
 
-and there's our beautiful documentation running locally.
+
+
+**and there's our beautiful documentation running locally.**
