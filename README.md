@@ -1,62 +1,40 @@
-# Parrot New Documentation
+### Compile locally mdBook for Parrot Documentation
 
-New Parrot documentation using mdbook
+First step: Create the working directory and clone locally the Documentation repo
 
-## Why this?
+`mkdir doc`
 
-Maybe mdbook can be useful for the new Parrot documentation. It is lightweight, modern and written in Rust.
+`git clone https://nest.parrotsec.org/org/community-team/misc.git `
 
-## Installation
+`cd misc`
 
-Inside this branch there is already a compiled and optimized version of mdbook (16.9 mb), but if you want you can compile yourself mdbook https://github.com/Nutomic/mdBook/tree/localization
+`git switch doc-assembled`
 
-`cd mdbook`
+Second step: Clone mdBook repo
+
+`cd ..`
+
+`git clone https://github.com/Nutomic/mdBook.git`
+
+`cd mdBook`
+
+`git switch localization`
+
+Third step: Compile mdBook
 
 `cargo build --release`
 
-and the generated binary file will be on `./target/release` folder.
+Wait for the compiler to finish its work, then go to the third step:
 
-## Build 
+`mv ~/mdBook/target/release/mdbook ~/misc/mdbook `
 
-Run `./mdbook serve` to build and deploy (and eventually rebuild it at each change) the book on http://localhost:3000 
+Now that mdBook has been compiled, launch it:
 
-Run `./mdbook clean` to delete the build directory (which the book is generated)
+`cd ~/misc/mdbook`
+`./mdbook serve`
 
-To allowing space in SUMMARY.md's link destination use <.md file>, for example:
-` - [What is Parrot](<./01.- What is Parrot.md>) `
+Then open your favorite launcher and type:
 
-## Localization
-Thanks to the mdbook fork by Ruin0x11 (and updated by Nutomic https://github.com/Nutomic/mdBook/tree/localization) it is possible to make the documentation multilanguage. To do this, you need to add `[language.key_lang]` to the book.toml file. 
+`localhost:3000`
 
-Also you will need to change the main structure of the src folder, like the following example: 
-
-```
-├── book.toml
-└── src
-    ├── en
-    │   ├── chapter
-    │   │   ├── 1.md
-    │   │   ├── 2.md
-    │   │   └── README.md
-    │   ├── README.md
-    │   ├── SUMMARY.md
-    │   └── untranslated.md
-    └── es
-        ├── chapter
-        │   ├── 1.md
-        │   ├── 2.md
-        │   ├── 3.md
-        │   └── README.md
-        ├── README.md
-        └── SUMMARY.md
-```
-
-Everything is still to be tested properly.
-
-### Troubleshooting:
-
-It's possible that the `./mdbook serve` command return this error:
-
-**./mdbook: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.33' not found (required by ./mdbook)**
-
-Not all distros might have the latest glibc library, so update your system or update it through [https://www.gnu.org/software/libc/sources.html](https://www.gnu.org/software/libc/sources.html)
+and there's our beautiful documentation running locally.
