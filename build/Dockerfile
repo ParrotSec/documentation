@@ -11,12 +11,13 @@ RUN apt update;apt -y install git --no-install-recommends;rm -rf /var/lib/apt/li
 RUN apt update;apt -y install cargo --no-install-recommends;rm -rf /var/lib/apt/lists/*
 
 # Install mirrorbits
-RUN git clone https://github.com/Nutomic/mdBook.git /mdbook;
+RUN git clone https://github.com/Nutomic/mdBook.git /mdbook
 WORKDIR /mdbook
-RUN git checkout localization; \
+RUN git checkout localization && \
     cargo build --release
-RUN mv /mdbook/target/release/mdbook /usr/bin/mdbook; \
-    chmod +x /usr/bin/mdbook; \
+RUN mv /mdbook/target/release/mdbook /usr/bin/mdbook && \
+    chmod +x /usr/bin/mdbook && \
     rm -rf /mdbook
 
 CMD /usr/bin/mdbook
+ENTRYPOINT /usr/bin/mdbook $@
