@@ -1,42 +1,19 @@
-### Compile locally mdBook for Parrot Documentation
+# Parrot Documentation
 
-## First step: Create the working directory and clone locally the Documentation repo
+This repository holds the Parrot Security documentation source code.
 
-`mkdir doc`
+## Dependencies
 
-`git clone https://nest.parrotsec.org/org/community-team/misc.git `
+The only dependency to build the project is `docker`, or any other OCI-compatible container software. `podman` is supported as well.
 
-`cd misc`
+## Test the project
 
-`git switch doc-assembled`
+run: `make test`
 
-## Second step: Clone mdBook repo
+then open `localhost:3000`
 
-`cd ..`
+### Build the project
 
-`git clone https://github.com/Nutomic/mdBook.git`
+run: `make build`
 
-`cd mdBook`
-
-`git switch localization`
-
-## Third step: Compile and launch mdBook
-
-`cargo build --release`
-
-### Wait for the compiler to finish its work, then copy the compiled binary in the documentation directory:
-
-`mv ~/mdBook/target/release/mdbook ~/misc/mdbook `
-
-### Now that mdBook has been compiled, launch it:
-
-`cd ~/misc/mdbook`
-`./mdbook serve`
-
-### Finally, open your favorite launcher and type:
-
-`localhost:3000`
-
-
-
-**and there's our beautiful documentation running locally.**
+then check the `build` directory
