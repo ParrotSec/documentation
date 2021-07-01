@@ -1,5 +1,5 @@
 image:
-	docker build -t mdbook build/
+	docker build -t mdbook .
 
 build: image
 	

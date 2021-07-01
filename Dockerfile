@@ -17,7 +17,7 @@ RUN git checkout localization && \
     cargo build --release
 RUN mv /mdbook/target/release/mdbook /usr/bin/mdbook && \
     chmod +x /usr/bin/mdbook && \
-    rm -rf /mdbook;
+    rm -rf /mdbook; \
     mkdir /project
 
 WORKDIR /project
