@@ -5,4 +5,4 @@ build: image
 	docker run --rm -ti -v $(shell pwd):/project mdbook - build
 
 test: image
-	docker run --rm -ti -v $(shell pwd):/project mdbook - serve
+	docker run --rm -ti --network host -v $(shell pwd):/project mdbook - serve
