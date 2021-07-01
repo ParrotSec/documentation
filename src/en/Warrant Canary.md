@@ -20,21 +20,33 @@ Warrant Canary, July 6 2020
     -----BEGIN PGP SIGNED MESSAGE-----
     Hash: SHA256
     
-    
     Signed Warrant Canary n.2: no incidents or warrants as of July 6 2020
+
+    This page is to inform users that Parrot Security has not
+    been served with a secret government subpoena for its servers
+    (Parrot Project, Parrot Security CIC, Lorenzo Faletra or other 
+    directly involved partners), software (Parrot OS and its official 
+    derivatives), or services (community services, gitlab instance, 
+    email service, cryptpad service, cloud platform, CDN nodes, hosted portals etc).
     
+    If a warrant canary has not been updated in the time period 
+    specified by Parrot Security, or if this page disappears, 
+    users are to assume that Parrot Project has indeed been served with a secret subpoena.
     
-    This page is to inform users that Parrot Security has not been served with a secret government subpoena for its servers (Parrot Project, Parrot Security CIC, Lorenzo Faletra or other directly involved partners), software (Parrot OS and its official derivatives), or services (community services, gitlab instance, email service, cryptpad service, cloud platform, CDN nodes, hosted portals etc).
+    The intention is to allow Parrot Security to warn users of the 
+    existence of a subpoena passively, without disclosing to others 
+    that the government has sought or obtained access to information or 
+    records under a secret subpoena.
     
-    If a warrant canary has not been updated in the time period specified by Parrot Security, or if this page disappears, users are to assume that Parrot Project has indeed been served with a secret subpoena.
+    Warrant Canaries have been found to be legal by the United States Justice Department,
+    so long as they are passive in their notifications.
     
-    The intention is to allow Parrot Security to warn users of the existence of a subpoena passively, without disclosing to others that the government has sought or obtained access to information or records under a secret subpoena.
+    This message is signed with the GPG keys of the Parrot OS archive keyrings
+     and the Team Leader (and actual legal holder) of Parrot Security.
     
-    Warrant Canaries have been found to be legal by the United States Justice Department, so long as they are passive in their notifications.
-    
-    This message is signed with the GPG keys of the Parrot OS archive keyrings and the Team Leader (and actual legal holder) of Parrot Security.
-    
-    Every new canary update since July 10 2019 will be digitally signed, and older versions of the canary will be archived and made available in a public archive.
+    Every new canary update since July 10 2019 will be digitally signed, 
+    and older versions of the canary will be archived and made available in a 
+    public archive.
     
     signed with:
     
@@ -47,6 +59,9 @@ Warrant Canary, July 6 2020
     GPG ID: 813E EFE8 0280 C579 E2A1  F5E6 B56F FA94 6EB1 660A
     GPG KEY: https://deb.parrotsec.org/misc/archive.gpg
     
+
+\
+
     
     -----BEGIN PGP SIGNATURE-----
     
@@ -76,11 +91,11 @@ Warrant Canary, July 6 2020
     -----END PGP SIGNATURE-----
     
 
-[Warrant Canary n.0](https://nest.parrotsec.org/org/documentation/-/raw/dev/docs/legal/warrant-canary-0.md)
+[Warrant Canary n.0](https://nest.parrotsec.org/org/documentation/-/blob/old/docs/legal/warrant-canary-0.md)
 
 \
 
-[Warrant Canary n.1](https://nest.parrotsec.org/org/documentation/-/raw/dev/docs/legal/warrant-canary-1.md)
+[Warrant Canary n.1](https://nest.parrotsec.org/org/documentation/-/blob/old/docs/legal/warrant-canary-1.md)
 
 FUCK YEAH! WE ARE STILL SAFE :)
 
