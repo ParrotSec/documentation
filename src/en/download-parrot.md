@@ -18,8 +18,8 @@ Highly recommended for PC Desktops and Laptops with at least 4GB of RAM, for a s
 
 | Desktop Enviroment |  Size  |
 |--------------------|--------|
-|<strong>[MATE](<../en/desktop-enviroments.html#mate-desktop>)</strong>| 4.1 GB |
-|<strong>[KDE](<../en/desktop-enviroments.html#kde-desktop>)</strong>| 4.2 GB |
+|<strong>[MATE](<./desktop-enviroments.html#mate-desktop>)</strong>| 4.1 GB |
+|<strong>[KDE](<./desktop-enviroments.html#kde-desktop>)</strong>| 4.2 GB |
 
 ### Parrot 4.11.2 Home Edition ###
 This version of Parrot is a lightweight installation which provides the essential tools needed to start working.
@@ -30,9 +30,9 @@ Recommended for those who are familiar with Pentesting Distros but require a min
 
 | Desktop Enviroment |  Size  |
 |--------------------|--------|
-|<strong>[MATE](<../en/desktop-enviroments.html#mate-desktop>)</strong>| 1.9 GB |
-|<strong>[KDE](<../en/desktop-enviroments.html#kde-desktop>)</strong>| 2.0 GB |
-|<strong>[XFCE](<../en/desktop-enviroments.html#xfce-desktop>)</strong>| 1.8 GB |
+|<strong>[MATE](<./desktop-enviroments.html#mate-desktop>)</strong>| 1.9 GB |
+|<strong>[KDE](<./desktop-enviroments.html#kde-desktop>)</strong>| 2.0 GB |
+|<strong>[XFCE](<./desktop-enviroments.html#xfce-desktop>)</strong>| 1.8 GB |
 
 
 ### Parrot 4.11.2 Security & Home OVA ###
@@ -59,4 +59,4 @@ Forget all you know about pentesting circumstances. Carrying a laptop everywhere
 You can now have a remote VPS loaded with Parrot OS ready to perform all sort of tasks from an embedded terminal, with discretion. 
 This edition does not provide a GUI out of the box, but it's available in the repositories if needed.
 
-[Check it out now](<../en/parrot-on-docker.html>)
+[Check it out now](<./parrot-on-docker.html>)
