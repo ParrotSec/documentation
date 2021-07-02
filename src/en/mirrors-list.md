@@ -1,596 +1,248 @@
-# Mirrors list #
+The Parrot Project not only delivers a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
+
+The Parrot repository is used to provide officially supported software, system updates and security fixes.
+
+# The mirrors network #
+
+The software in the parrot archive is delivered in form of deb packages, and these packages are served through a vast network of mirror servers that provide the same set of packages distributed all around the world for faster software delivery.
+
+The Parrot system is configured to use the central parrot archive directors. The Parrot directors are special servers that collect all the requests of the end users and redirect them to the geographically nearest download server available for the user who made the request.
+
+### Security measures ###
+
+The Parrot Mirror Network is secured by centralized digital signatures and the mirrors can't inject fake updates.
+
+If a evil mirror tries to inject a fake package, the parrot system will automatically refuse to download and install it, and will raise an alert message.
+
+This security measure implemented in APT (the parrot/debian package manager) is very efficient and reliable because digital signatures are applied offline by the Parrot archive maintainer, and not by the mirror servers, ensuring direct and secure developer-to-user chain of trust.
 
-The following is a list of all the mirrors of our repository. \
-If you want, you can [make your own mirror](./mirrors-list.html#make-your-own-mirror).
+## Configuration and custom setup ##
 
-## sources.list ##
+The APT package manager uses `/etc/apt/sources.list` and any *.list* file found in the `/etc/apt/sources.list.d/` directory.
 
-### What should my sources.list look like? ###
 
-**/etc/apt/sources.list** should be **EMPTY**
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <i class="fa fa-info-circle badge" aria-hidden="true"></i>
 
-**/etc/apt/sources.list.d/parrot.list** should contain the following content
+**Note**
 
-<code>
-deb http://deb.parrotsec.org/parrot stable main contrib non-free
+  </div>
+  <div class="panel-body">
+  /etc/apt/sources.list is EMPTY and the default APT configuration is located at /etc/apt/sources.list.d/parrot.list.
+  </div>
+</div>
 
-#deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
-</code>
+### Content of /etc/apt/sources.list.d/parrot.list ###
 
+    deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
+    #deb-src https://deb.parrot.sh/parrot/ rolling main contrib non-free
+    deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+    #deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+    
+## Other mirrors for manual configuration ##
 
+### NCSA ###
+North Central and South Americas
 
-## TOR ##
+| Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
+|:----------------------------------|:---------------:|:-----|:-------------------|
+|Massachussetts<br>MIT<br>1 Gbps|SIPB MIT|[mirrors.mit.edu/parrot](http://mirrors.mit.edu/parrot/)|<sub>deb http://mirrors.mit.edu/parrot/ rolling main contrib non-free</sub>|
+|New York<br>Clarkson<br>1 Gbps|Clarkson University|[mirror.clarkson.edu/parrot](https://mirror.clarkson.edu/parrot/)|<sub>deb https://mirror.clarkson.edu/parrot/ rolling main contrib non-free</sub>|
+|Oregon<br>Osuosl<br>1 Gbps|Oregon State University - Open Source Lab|[ftp.osuosl.org/pub/parrotos](https://ftp.osuosl.org/pub/parrotos)|<sub>deb https://ftp.osuosl.org/pub/parrotos rolling main contrib non-free</sub>|
+|California<br>Berkeley<br>1 Gbps|Berkeley Open Computing Facility|[mirrors.ocf.berkeley.edu/parrot](http://mirrors.ocf.berkeley.edu/parrot)|<sub>deb https://mirrors.ocf.berkeley.edu/parrot/ rolling main contrib non-free</sub>|
+|California<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.sfo12.us.leaseweb.net/parrot](https://mirror.sfo12.us.leaseweb.net/parrot)|<sub>deb https://mirror.sfo12.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Flodira<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.mia11.us.leaseweb.net/parrot](https://mirror.mia11.us.leaseweb.net/parrot)|<sub>deb https://mirror.mia11.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Virginia<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.wdc1.us.leaseweb.net/parrot](https://mirror.wdc1.us.leaseweb.net/parrot)|<sub>deb https://mirror.wdc1.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Texas<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.dal10.us.leaseweb.net/parrot](https://mirror.dal10.us.leaseweb.net/parrot)|<sub>deb https://mirror.dal10.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Winnipeg - Canada<br>muug<br>10 Gbps|Manitoba Unix User Group|[muug.ca/mirror/parrot/](https://muug.ca/mirror/parrot/)|<sub>deb https://muug.ca/mirror/parrot/ rolling main contrib non-free</sub>|
+|Beauharnois - Canada<br>Cythin<br>100 Mbps|Cythin.com|[parrot.ca.mirror.cythin.com/parrot](https://parrot.ca.mirror.cythin.com/parrot)|<sub>deb https://parrot.ca.mirror.cythin.com/parrot rolling main contrib non-free</sub>|
+|Ecuador<br>CEDIA<br>100 Mbps|RED CEDIA (National research and education center of Ecuador)|[mirror.cedia.org.ec/parrot](http://mirror.cedia.org.ec/parrot)|<sub>deb https://mirror.cedia.org.ec/parrot/ rolling main contrib non-free</sub>|
+|Ecuador<br>UTA<br>100 Mbps|UTA (Universidad Técnica de ambato)|[mirror.uta.edu.ec/parrot](http://mirror.uta.edu.ec/parrot)|<sub>deb https://mirror.uta.edu.ec/parrot/rolling main contrib non-free<</sub>|
+|Ecuador<br>UEB<br>100 Mbps|UEB (Universidad Estatal de Bolivar)|[mirror.ueb.edu.ec/parrot](http://mirror.ueb.edu.ec/parrot)|<sub>deb https://mirror.ueb.edu.ec/parrot/ rolling main contrib non-free</sub>|
+|Brazil<br>USP<br>1 Gbps|University of Sao Paulo|[sft.if.usp.br/parrot](http://sft.if.usp.br/parrot)|<sub>deb http://sft.if.usp.br/parrot/ main contrib non-free</sub>|
 
-One of our users have set up a TOR hidden service with a full copy of our repository, it is safe as every file is checked against strong GPG signatures
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
 
-\
+### EMEA
+Europe Middle East and Asia
 
-**stable repository**
+| Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
+|:----------------------------------|:---------------:|:-----|:-------------------|
+|Italy<br>GARR<br>10 Gbps|GARR Consortium (Italian Research & Education Network)|[parrot.mirror.garr.it/mirrors/parrot](http://parrot.mirror.garr.it/mirrors/parrot)|<sub>deb https://parrot.mirror.garr.it/mirrors/parrot/ rolling main contrib non-free</sub>|
+|Italy<br>udupalermo<br>300 Mbps|UDU Palermo (Unione Degli Universitari)|[mirror.udupalermo.it/parrot](http://mirror.udupalermo.it/parrot)|<sub>deb http://mirror.udupalermo.it/parrot/ rolling main contrib non-free</sub>|
+|Germany<br>Halifax<br>20 Gbps|RWTH-Aachen (Halifax students group)|[ftp.halifax.rwth-aachen.de/parrotsec](http://ftp.halifax.rwth-aachen.de/parrotsec)|<sub>deb https://ftp.halifax.rwth-aachen.de/parrotsec/ rolling main contrib non-free</sub>|
+|Germany<br>Esslingen<br>10 Gbps|Esslingen (University of Applied Sciences)|[ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org](http://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org)|<sub>deb https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/ rolling main contrib non-free</sub>|
+|Germany<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.fra10.de.leaseweb.net/parrot](https://mirror.fra10.de.leaseweb.net/parrot)|<sub>deb https://mirror.fra10.de.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Netherlands<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.ams1.nl.leaseweb.net/parrot](https://mirror.ams1.nl.leaseweb.net/parrot)|<sub>deb https://mirror.ams1.nl.leaseweb.net/parrot rolling main contrib non-free</sub>|
+|Netherlands<br>NLUUG<br>10 Gbps|Nluug|[ftp.nluug.nl/os/Linux/distr/parrot](http://ftp.nluug.nl/os/Linux/distr/parrot)|<sub>deb https://ftp.nluug.nl/os/Linux/distr/parrot/ rolling main contrib non-free</sub>|
+|Sweden<br>UMU<br>20 Gbps|ACC UMU (Academic Computer Club, Umea University)|[ftp.acc.umu.se/mirror/parrotsec.org/parrot](http://ftp.acc.umu.se/mirror/parrotsec.org/parrot)|<sub>deb https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/ rolling main contrib non-free</sub>|
+|Greece<br>UOC<br>1 Gbps|UoC (University of Crete - Computer Center)|[ftp.cc.uoc.gr/mirrors/linux/parrot](http://ftp.cc.uoc.gr/mirrors/linux/parrot)|<sub>deb https://ftp.cc.uoc.gr/mirrors/linux/parrot/ rolling main contrib non-free</sub>|
+|Belgium<br>Belnet<br>10 Gbps|Belnet (The Belgian National Research)|[ftp.belnet.be/archive.parrotsec.org](http://ftp.belnet.be/mirror/archive.parrotsec.org)|<sub>deb http://ftp.belnet.be/mirror/archive.parrotsec.org/ rolling main contrib non-free</sub>|
+|Spain<br>Osluz<br>1 Gbps|Osluz (Oficina de software libre de la Universidad de Zaragoza)|[matojo.unizar.es/parrot](http://matojo.unizar.es/parrot)|<sub>deb http://matojo.unizar.es/parrot/ rolling main contrib non-free</sub>|
+|Portugal<br>UP<br>1 Gbps|U.Porto (University of Porto)|[mirrors.up.pt/parrot](http://mirrors.up.pt/parrot)|<sub>deb https://mirrors.up.pt/parrot/ rolling main contrib non-free</sub>|
+|Denmark<br>Dotsrc<br>10 Gbps|Dotsrc (Aalborg university)|[mirrors.dotsrc.org/parrot](http://mirrors.dotsrc.org/parrot)|<sub>deb https://mirrors.dotsrc.org/parrot/ rolling main contrib non-free</sub>|
+|France<br>Cythin<br>100 Mbps|Cythin.com|[parrot.mirror.cythin.com/parrot](https://parrot.mirror.cythin.com/parrot)|<sub>deb https://parrot.mirror.cythin.com/parrot rolling main contrib non-free</sub>|
+|Hungary<br>quantum-mirror<br>200Mbps|quantum-mirror.hu|[quantum-mirror.hu/mirrors/pub/parrot](https://quantum-mirror.hu/mirrors/pub/parrot)|<sub>deb https://quantum-mirror.hu/mirrors/pub/parrot rolling main contrib non-free</sub>|
+|Turkey<br>EB<br>100 Mbps|EB|[turkey.archive.parrotsec.org/parrot](http://turkey.archive.parrotsec.org/parrot)|<sub>deb http://turkey.archive.parrotsec.org/parrot/ rolling main contrib non-free</sub>|
+|Russia<br>Yandex<br>1 Gbps|Yandex|[mirror.yandex.ru/mirrors/parrot](http://mirror.yandex.ru/mirrors/parrot)|<sub>deb https://mirror.yandex.ru/mirrors/parrot/ rolling main contrib non-free</sub>|
+|Russia<br>Truenetwork<br>10 Gbps|Truenetwork|[mirror.truenetwork.ru/parrot](http://mirror.truenetwork.ru/parrot)|<sub>deb https://mirror.truenetwork.ru/parrot/ rolling main contrib non-free</sub>|
+|Ukraine<br>Volia<br>1 Gbps|Volia|[parrotsec.volia.net/](https://parrotsec.volia.net/)|<sub>deb https://parrotsec.volia.net/ rolling main contrib non-free</sub>|
+|Iran<br>ASIS<br>1 Gbps|ASIS|[parrot.asis.io](http://parrot.asis.io)|<sub>deb http://parrot.asis.io/ rolling main contrib non-free</sub>|
+|Ukraine<br>comsys<br>1 Gbps|KPI (National Technical University of Ukraine - Comsys)|[mirrors.comsys.kpi.ua/parrot](http://mirrors.comsys.kpi.ua/parrot)|<sub>only ISO files are mirrored</sub>|
 
-        deb http://mjnlk3fwben7433a.onion/parrot/ parrot main contrib non-free
 
-        #deb-src http://mjnlk3fwben7433a.onion/parrot/ parrot main contrib non-free
+### APAC
+Asia and Pacific
 
+| Location<br>Mirror ID<br>bandwidth| Provider Name | URL | APT config string |
+|:--------------------------------------|:---------------:|:-----|:-------------------|
+|Bangladesh<br>Amberit<br>1 Gbps|Amberit (formerly Dhakacom)|[mirror.amberit.com.bd/parrotsec](http://mirror.amberit.com.bd/parrotsec)|<sub>deb http://mirror.amberit.com.bd/parrotsec/ rolling main contrib non-free</sub>|
+|Taiwan<br>NCHC<br>20 Gbps|NCHC (Free Software Lab)|[free.nchc.org.tw/parrot](http://free.nchc.org.tw/parrot)|<sub>deb http://free.nchc.org.tw/parrot/ rolling main contrib non-free</sub>|
+|Singapore<br>0x<br>10 Gbps|0x|[mirror.0x.sg/parrot](http://mirror.0x.sg/parrot)|<sub>deb https://mirror.0x.sg/parrot/ rolling main contrib non-free</sub>|
+|China<br>USTC<br>1Gbps CMCC<br>1Gbps Cernet<br>300Mbps ChinaNet|University of Science and Technology of China and USTCLUG|[mirrors.ustc.edu.cn/parrot](http://mirrors.ustc.edu.cn/parrot)|<sub>deb http://mirrors.ustc.edu.cn/parrot rolling main contrib non-free</sub>|
+|China<br>TUNA<br>2 Gbps|TUNA (Tsinghua university of Beijing, TUNA association)|[mirrors.tuna.tsinghua.edu.cn/parrot](http://mirrors.tuna.tsinghua.edu.cn/parrot)|<sub>deb https://mirrors.tuna.tsinghua.edu.cn/parrot/ rolling main contrib non-free</sub>|
+|China<br>SHU<br>2 Gbps|SHU(Shanghai University)|[mirrors.shu.edu.cn/parrot](http://mirrors.shu.edu.cn/parrot)|<sub>deb https://mirrors.shu.edu.cn/parrot/ rolling main contrib non-free</sub>|
+|China<br>SJTUG<br>2 Gbps|SJTUG (SJTU *NIX User Group)|[mirrors.sjtug.sjtu.edu.cn/parrot](http://mirrors.sjtug.sjtu.edu.cn/parrot)|<sub>deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ rolling main contrib non-free</sub>|
+|New Caledonia<br>Lagoon<br>1 Gbps|Lagoon Networks|[mirror.lagoon.nc/pub/parrot](http://mirror.lagoon.nc/pub/parrot)|<sub>deb http://mirror.lagoon.nc/pub/parrot/ rolling main contrib non-free</sub>|
+|Thailand<br>KKU<br>1 Gbps|KKU (Khon Kaen University)|[mirror.kku.ac.th/parrot](http://mirror.kku.ac.th/parrot)|<sub>deb https://mirror.kku.ac.th/parrot/ rolling main contrib non-free</sub>|
+|Indonesia<br>Datautama<br>1 Gbps|Datautama (PT. Data Utama Dinamika)|[kartolo.sby.datautama.net.id/parrot](http://kartolo.sby.datautama.net.id/parrot)|<sub>deb http://kartolo.sby.datautama.net.id/parrot/ rolling main contrib non-free</sub>|
+|New Zeland<br>Takeshi<br>1 Gbps worldwide<br>10 Gbps New Zeland|Takeshi (D T Consulting Ltd)|[mirrors.takeshi.nz/parrot](https://mirrors.takeshi.nz/parrot/)|<sub>deb https://mirrors.takeshi.nz/parrot rolling main contrib non-free</sub>|
 
-## North America ##
 
+## Make your own mirror
 
-<span style="color: #57cbcc">Massachussetts SIPB MIT (Student Information Processing Board, Massachussetts Institute of Technology), 1 Gbps</span>
+You can set up a Parrot archive mirror on your server for personal or public usage by following the steps below.
 
-      http://mirrors.mit.edu/parrot/
 
+### Make sure to have enough free space
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+You can sync the entire repository or pick just the ISO images.
 
-**stable repository**
+Make sure to have enough free space to host a mirror, and be ready for future upgrades as the archive size fluctuates.
 
-        deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free
-        #deb-src http://mirrors.mit.edu/parrot/ parrot main contrib non-free
+The current archive size is available here [archive.parrotsec.org/parrot/misc/archive-size.txt](https://deb.parrotsec.org/parrot/misc/archive-size.txt)
 
-----
-\
-<span style="color: #57cbcc">Michigan, LUG MTU (Michigan Tech Linux User Group)</span>
 
-        **mirror deleted**
+### Choose the upstream server
 
-----
-\
-<span style="color: #57cbcc">Virginia, JMU (James Madison University)</span>
+We handle several domains for repository syncing services, we suggest you use `rsync.parrot.sh` for automatic and failproof setups, but upstream settings can be adjusted in case of specific needs.
 
-This mirror is no longer available, but we want to dedicate a big **"Thank you"** to the mirror maintainers who supported us in our early years.
+Feel free to contact the Parrot team if you have specific mirroring needs or bandwidth limitations. We can provide you dedicated upstream sources or professional support for your mirror.
 
-----
-\
-<span style="color: #57cbcc">New York, Clarkson University, 1 Gbps</span>
+<pre>
+Main Mirror Director:
+    rsync.parrot.sh
 
-      https://mirror.clarkson.edu/parrot/
+Global Zones (read the notes):
+    EMEA:
+        emea.rsync.parrot.sh
+    NCSA:
+        ncsa.rsync.parrot.sh
+    APAC:
+        apac.rsync.parrot.sh
+</pre>
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+Single archives may be unavailable or replaced form time to time.
 
-**stable repository**
+`rsync.parrot.sh` is automatically balanced between all the available mirrors and will give you zero downtimes.
 
-        deb https://mirror.clarkson.edu/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.clarkson.edu/parrot/ parrot main contrib non-free
 
+### Download the archive
 
-----
-\
-<span style="color: #57cbcc">California, Berkeley Open Computing Facility, 1 Gbps</span>
+If you sync the entire archive with the below instructions, you do NOT need to synchronize the ISO archive. ISO files are included by default!
 
-      https://mirrors.ocf.berkeley.edu/parrot/
+#### Sync the repository
 
+    rsync -Pahv --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+#### Configure a cronjob
 
-**stable repository**
+launch the following command:
 
-        deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free
-        #deb-src https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free
+    crontab -e
 
+and add the following content to the crontab file:
 
-\
-## South America ##
+    */10 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot
 
-<span style="color: #57cbcc">Ecuador, RED CEDIA (National research and education center of Ecuador), 100 Mbps</span>
 
-      https://mirror.cedia.org.ec/parrot/
 
+### Download the ISO archive only
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+Do not sync the ISO archive if you are already synchronizing the full archive with the above instructions. ISO files are already provided with the instructions in the precedent paragraph.
 
-**stable repository**
+use the following instructions if you want to sync only the ISO files.
 
-        deb https://mirror.cedia.org.ec/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.cedia.org.ec/parrot/ parrot main contrib non-free
+#### Sync the repository
 
-----
-\
-<span style="color: #57cbcc">Ecuador, UTA (Universidad Técnica de ambato), 100 Mbps</span>
+    rsync -Pahv --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot
 
-      https://mirror.uta.edu.ec/parrot/
+#### Configure a cronjob
 
+launch the following command:
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+    crontab -e
 
-**stable repository**
+and add the following content to the crontab file:
 
-        deb https://mirror.uta.edu.ec/parrot/parrot main contrib non-free
-        #deb-src https://mirror.uta.edu.ec/parrot/ parrot main contrib non-free
+    30 2 * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot
 
-----
-\
-<span style="color: #57cbcc">Brazil, University of Sao Paulo, 1 Gbps</span>
 
-      http://sft.if.usp.br/parrot/
+### Expose your mirror via rsync
 
+Your mirror can be exposed via rsync to allow other people to sync from you and to allow our mirror director to periodically scan your mirror and perform indexing and health checks.
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+Rsync exposure is mandatory to add your mirror to our official list.
 
-**stable repository**
+The following instructions will set up rsync and expose the parrot archive in compliance with our standards on a debian/ubuntu server. Minor adjustments are required for other non-apt systems.
 
-        deb http://sft.if.usp.br/parrot/ main contrib non-free
-        #deb-src http://sft.if.usp.br/parrot/ parrot main contrib non-free
+install rsync with:
 
-----
-\
-<span style="color: #57cbcc">Ecuador, UEB (Universidad Estatal de Bolivar), 100 Mbps</span>
+    sudo apt install rsync
 
-      https://mirror.ueb.edu.ec/parrot/
+edit /etc/rsyncd.conf with nano:
 
+    sudo nano /etc/rsyncd.conf
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+paste the following settings in the config file and save it:
 
-**stable repository**
+    [parrot]
+            comment = Parrot OS - full archive [rsync.parrot.sh/parrot]
+            path = /var/www/html/parrot/
+            hosts allow = *
+            #hosts deny = *
+            list=true
+            uid=www-data
+            gid=www-data
+            read only = yes
+            use chroot=yes
+            dont compress # for better performance
+    
+    [parrot-iso]
+            comment = Parrot OS - ISO files only [rsync.parrot.sh/parrot-iso]
+            path = /var/www/html/parrot/
+            exclude = pool dists
+            hosts allow = *
+            list=true
+            uid=www-data
+            gid=www-data
+            read only = yes
+            use chroot=yes
+            dont compress
 
-        deb https://mirror.ueb.edu.ec/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.ueb.edu.ec/parrot/ parrot main contrib non-free
 
-----
-\
-<span style="color: #57cbcc">Ecuador, ESPOCH (Escuela Superior Politecnica de Chimborazo)</span>
+Enable the rsync service:
 
-This mirror is no longer available, but we want to dedicate a big **"Thank you"** to the mirror maintainers who supported us in our early years.
+    sudo systemctl enable rsync    
 
-\
-## Europe ##
+Start the rsync service:
 
-<span style="color: #57cbcc">Italy, GARR Consortium (Italian Research & Education Network), 10 Gbps</span>
+    sudo service rsync start
 
-      https://ba.mirror.garr.it/mirrors/parrot/ (Master)
-      https://ct.mirror.garr.it/mirrors/parrot/
-      https://na.mirror.garr.it/mirrors/parrot/
-      https://rm.mirror.garr.it/mirrors/parrot/
-      https://bo.mirror.garr.it/mirrors/parrot/
-      https://mi.mirror.garr.it/mirrors/parrot/
 
+### Make your mirror official
 
-**repository setup** (etc/apt/sources.list.d/parrot.list)
+If you want your mirror to be added to our official mirrors list and to our mirror directors, email us at `team AT parrotsec DOT org`
 
-**stable repository**
-
-        deb https://ba.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free
-        #deb-src https://ba.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free
-----
-\
-<span style="color: #57cbcc">France, Parrot Project, 250 Mbps</span>
-
-      https://archive1.parrotsec.org/parrot/
-      https://parrot-euro.archive.parrotsec.org/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://parrot-euro.archive.parrotsec.org/parrot/ parrot main contrib non-free
-        #deb-src https://parrot-euro.archive.parrotsec.org/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Germany, RWTH-Aachen (Halifax students group), 20 Gbps</span>
-
-      https://ftp.halifax.rwth-aachen.de/parrotsec/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
-        #deb-src https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Netherland, Nluug, 10 Gbps</span>
-
-      https://ftp.nluug.nl/os/Linux/distr/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp.nluug.nl/os/Linux/distr/parrot/ parrot main contrib non-free
-        #deb-src https://ftp.nluug.nl/os/Linux/distr/parrot/ parrot main contrib non-free
-----
-\
-<span style="color: #57cbcc">Poland, Onet Datacenter, 10 Gbps</span>
-
-      http://mirror.onet.pl/pub/mirrors/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://mirror.onet.pl/pub/mirrors/parrot/ parrot main contrib non-free
-        #deb-src http://mirror.onet.pl/pub/mirrors/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Sweden, ACC UMU (Academic Computer Club, Umea University), 20 Gbps</span>
-
-      https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/ parrot main contrib non-free
-        #deb-src https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Ireland, Heanet (Ireland's National Research & Education Network), 10 Gbps</span>
-
-     https://ftp.heanet.ie/pub/parrotsec/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp.heanet.ie/pub/parrotsec/ parrot main contrib non-free
-        #deb-src https://ftp.heanet.ie/pub/parrotsec/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Germany, Esslingen (University of Applied Sciences), 10 Gbps</span>
-
-      https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/ parrot main contrib non-free
-        #deb-src https://ftp-stud.hs-esslingen.de/pub/Mirrors/archive.parrotsec.org/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Greece, UoC (University of Crete - Computer Center), 1 Gbps</span>
-
-      https://ftp.cc.uoc.gr/mirrors/linux/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://ftp.cc.uoc.gr/mirrors/linux/parrot/ parrot main contrib non-free
-        #deb-src https://ftp.cc.uoc.gr/mirrors/linux/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">France, Babylon.network, 10 Gbps</span>
-
-      https://fr.mirror.babylon.network/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://fr.mirror.babylon.network/parrot/ parrot main contrib non-free
-        #deb-src https://fr.mirror.babylon.network/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Netherlands, Babylon.network, 10 Gbps</span>
-
-      https://nl.mirror.babylon.network/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://nl.mirror.babylon.network/parrot/ parrot main contrib non-free
-        #deb-src https://nl.mirror.babylon.network/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Belgium, Belnet (The Belgian National Research), 10 Gbps</span>
-
-     http://ftp.belnet.be/archive.parrotsec.org/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://ftp.belnet.be/archive.parrotsec.org/ parrot main contrib non-free
-        #deb-src http://ftp.belnet.be/archive.parrotsec.org/ parrot main contrib non-free
-        
-----
-\
-<span style="color: #57cbcc">Spain, Osluz (Oficina de software libre de la Universidad de Zaragoza), 1 Gbps</span>
-
-     http://matojo.unizar.es/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://matojo.unizar.es/parrot/ parrot main contrib non-free
-        #deb-src http://matojo.unizar.es/parrot/ parrot main contrib non-free
-        
-----
-\
-<span style="color: #57cbcc">Portugal, U.Porto (University of Porto), 1 Gbps</span>
-
-     https://mirrors.up.pt/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirrors.up.pt/parrot/ parrot main contrib non-free
-        #deb-src https://mirrors.up.pt/parrot/ parrot main contrib non-free
-        
-----
-\
-<span style="color: #57cbcc">Denmark, Dotsrc (Aalborg university), 10 Gbps</span>
-
-     https://mirrors.dotsrc.org/parrot-iso/ (ISO archive)
-     https://mirrors.dotsrc.org/parrot-repo/ (Repository archive)
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirrors.dotsrc.org/parrot-repo/ parrot main contrib non-free
-        #deb-src https://mirrors.dotsrc.org/parrot-repo/ parrot main contrib non-free
-        
-\
-\
-## Asia ##
-
-<span style="color: #57cbcc">Russia, Yandex, 1 Gbps</span>
-
-      https://mirror.yandex.ru/mirrors/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirror.yandex.ru/mirrors/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.yandex.ru/mirrors/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Bangladesh, Amberit (formerly Dhakacom), 1 Gbps</span>
-
-      http://mirror.amberit.com.bd/parrotsec/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://mirror.amberit.com.bd/parrotsec/ parrot main contrib non-free
-        #deb-src http://mirror.amberit.com.bd/parrotsec/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Taiwan, NCHC (Free Software Lab), 20 Gbps</span>
-
-      http://free.nchc.org.tw/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://free.nchc.org.tw/parrot/ parrot main contrib non-free
-        #deb-src http://free.nchc.org.tw/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Singapore, 0x, 10 Gbps</span>
-
-	https://mirror.0x.sg/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirror.0x.sg/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.0x.sg/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">China, USTC (University of Science and Technology of China and USTCLUG) - Hefei University</span>
-\
-
-*1 Gbps for CMCC* \
-*1 Gbps for Cernet* \
-*300 Mbps for ChinaNet* \
-
-      https://mirrors.ustc.edu.cn/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirrors.ustc.edu.cn/parrot/ parrot main contrib non-free
-        #deb-src https://mirrors.ustc.edu.cn/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">China, TUNA (Tsinghua university of Beijing, TUNA association), 2 Gbps</span>
-
-	https://mirrors.tuna.tsinghua.edu.cn/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free
-        #deb-src https://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free
-
-\
-\
-## Middle East ##
-
-<span style="color: #57cbcc">Iran, ASIS, 1 Gbps</span>
-
-      http://parrot.asis.io/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://parrot.asis.io/ parrot main contrib non-free
-        #deb-src http://parrot.asis.io/ parrot main contrib non-free
-
-
-\
-\
-## Oceania ##
-
-<span style="color: #57cbcc">New Caledonia, Lagoon, 1 Gbps</span>
-
-      http://mirror.lagoon.nc/pub/parrot/
-
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://mirror.lagoon.nc/pub/parrot/ parrot main contrib non-free
-        #deb-src http://mirror.lagoon.nc/pub/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Thailand, KKU (Khon Kaen University), 1 Gbps</span>
-
-      https://mirror.kku.ac.th/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb https://mirror.kku.ac.th/parrot/ parrot main contrib non-free
-        #deb-src https://mirror.kku.ac.th/parrot/ parrot main contrib non-free
-
-----
-\
-<span style="color: #57cbcc">Indonesia, Datautama (PT. Data Utama Dinamika), 1 Gbps</span>
-
-      http://kartolo.sby.datautama.net.id/parrot/
-
-**repository setup** (etc/apt/sources.list.d/parrot.list)
-
-**stable repository**
-
-        deb http://kartolo.sby.datautama.net.id/parrot/ parrot main contrib non-free
-        #deb-src http://kartolo.sby.datautama.net.id/parrot/ parrot main contrib non-free
-
-\
-\
-## Africa ##
-
-Aptus - Tanzania, discontinued
-
-----
-
-
-## Make your own mirror ##
-
-you can configure a Parrot mirror using rsync
-
-
-Setup the webserver you prefer (as for example **Apache**) to fit your own needs.
-
-By default Apache makes the folder `/var/www/html` publicly available through your IP address, but you can customize everything as you want.
-
-
-The following command downloads the Parrot repository in the directory `/var/www/html/parrot`
-
-change the final parameter to download it in a custom folder
-
-#### Choose the master server ####
-
-We have 2 master servers offering official rsync archives:
-
-**EUROPE**
-
-        archive1.parrotsec.org
-
-**NORTH AMERICA**
-
-        archive2.parrotsec.org
-
-*NOTE*: archive.parrotsec.org randomly resolves to archive1 and archive2
-        
-\
-\
-
-#### Download the Parrot Mirror ####
-
-Note: if you want to host the entire archive hosted in our servers (mirroring all the **archive.parrotsec.org** directory) use the following code
-
-<code>rsync -az --delete rsync://archive.parrotsec.org:/parrot /var/www/html/parrot</code>
-
-\
-\
-
-#### Download the ISO archive only ####
-
-<file>
-Note: if you want to host the ISO images ONLY
-       use the following code
-</file>
-
-<code>rsync -az --delete rsync://archive.parrotsec.org:/parrot-iso /var/www/html/parrot</code>
-
-\
-\
-
-#### Configure a cronjob ####
-
-once you have tested how the mirror works, then you can proceed by setting up a cronjob to re-synchronize the repository when you want, we suggest to synchronize it once per hour, so let's see how to set up a hourly cronjob:
-
-Open a terminal window and type
-
-`crontab -e`
-
-then add the command to execute
-
-<code>30 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -az --delete rsync://archive.parrotsec.org:/parrot /var/www/html/parrot'</code>
-
-and save it.
-
-\
-\
-
-#### Add the mirror in this list ####
-
-If you are setting up a personal archive then it is all you need, but if you want to make it an official Parrot mirror, then email us to `team AT parrotsec DOT org`
+have fun :)
