@@ -17,8 +17,8 @@ You need a USB drive of at least 8 GB for Security Edition and 4 GB for Home Edi
 A quick summary of which tools you can use to create your Parrot USB:
 
 - [Balena Etcher](<../en/how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-balena-etcher>)
-- [DD command line tool](<../en/how-tocreate-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-dd-command-line-tool>)
-- [ROSA image writer](<../en/how-tocreate-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-rosa-image-writer>)
+- [DD command line tool](<../en/how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-dd-command-line-tool>)
+- [ROSA image writer](<../en/how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-rosa-image-writer>)
 
 
 ## Parrot USB boot procedure using Balena Etcher ##
@@ -63,15 +63,3 @@ Select the ISO and USB.
 <img src="./images/usb_boot/rosa1.png" width="60%"/>
 
 Click on *Write* and wait for the writing procedure to finish.
-
-
-<!-- 
-## How to boot ##
-
-If you don't know how to boot with your new bootable device follow [this guide](<./06.- How to boot.html>).
-
-
-## USB Persistence ##
-
-You can find some guidelines about how to create a live device with Persistence [here](<./07.- Parrot USB Live Persistence.html>).
--->

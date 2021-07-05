@@ -80,6 +80,7 @@ As you can see in the execution of `ls -l scripts/`, some scrpits have execution
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R 770 scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -129,6 +130,7 @@ Example of use:
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R og-x scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -171,8 +173,10 @@ Examples of use:
 	-rwxrw---- 1 parrot parrot  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot parrot  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot parrot 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R root:root scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -180,8 +184,6 @@ Examples of use:
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot]─[/home/parrot]
-	└──╼ #
 
 In the previous example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner use.
 	
@@ -192,8 +194,10 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 root root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chown -R parrot scripts/
+
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
 	total 16
@@ -201,9 +205,6 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 parrot root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
-	┌─[root@parrot]─[/home/parrot]
-	└──╼ #
-
 
 In the previous example, you can see how the user who owns all the files within the scripts directory changed to parrot.
 
@@ -250,9 +251,6 @@ Example of use of chgrp:
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
 
-	┌─[root@parrot]─[/home/parrot]
-	└──╼ #
-
 In the previous example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner user.
 
 	┌─[root@parrot]─[/home/parrot]
@@ -273,8 +271,5 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 parrot root  235 oct 18 01:06 ping.sh
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
-
-	┌─[root@parrot]─[/home/parrot]
-	└──╼ #
 
 In the above example, you can see how the group that owns the files wireless-dos-ids.py and wireless-dos.py changed from root to parrot user.
