@@ -50,7 +50,7 @@ past contributors:
 - Manuel Hernández (ParrotOS-ES Art)
 - Raúl Alderete (Audiovisual Material)
 
-If you want to join us and colaborate with this project, we invite you to join in our [Telegram chat group](https://t.me/parrotsecgroup). You can find us on our [Facebook group](https://www.facebook.com/groups/parrotsec) too.
+If you want to join us and collaborate with this project, we invite you to join in our [Telegram chat group](https://t.me/parrotsecgroup). You can find us on our [Facebook group](https://www.facebook.com/groups/parrotsec) too.
 
 Also, if you find some mistake (hey! we're humans), you can write an email to:
 \

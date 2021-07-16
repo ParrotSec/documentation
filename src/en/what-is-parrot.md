@@ -41,7 +41,7 @@ The system has its own applications repository including all the packages suppor
 
 Additionally, Parrot supports [Snap](https://snapcraft.io/), a package distribution system that provides easy access to many other programs that GNU/Linux distributions don't always ship in their software archives.
 
-[Flatpak](https://flatpak.org/) is an universal software store similar to Snap. It can be installed from the Parrot official repository.
+[Flatpak](https://flatpak.org/) is a universal software store similar to Snap. It can be installed from the Parrot official repository.
 
 Also Parrot supports [Wine](https://www.winehq.org/), a compatibility layer to run Windows applications in GNU/Linux environments.
  

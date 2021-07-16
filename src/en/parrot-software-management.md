@@ -6,7 +6,7 @@ The user doesn't need to compile the sources of each program as the developers a
 
 To compile programs, often 3rd party libraries and other programs are necessary. If we tried to compile a program that had dependencies with other libraries and other programs, we would install these "dependencies" before its compilation. Likewise, if we want to install a binary we will need to have installed the necessary dependencies for its correct operation.
 
-To manage these dependencies and the "package" installation, package managers have been created. There are numerous packet managers, some graphical and others via the command line. In this chapter, we will see one of the most famous, created by the Debian developers, and the one used by Parrot: **APT**.
+To manage these dependencies and the "package" installation, package managers have been created. There are numerous package managers, some graphical and others via the command line. In this chapter, we will see one of the most famous, created by the Debian developers, and the one used by Parrot: **APT**.
 
 The main functions of a package manager must be:
 
@@ -68,7 +68,7 @@ Delete a package including its configuration files:
     apt purge <package>
 
 \
-Delete automatically those packages that are not been used (be careful with this command, due to apt's hell dependency it may delete unwanted packages): 
+Delete automatically those packages that are not being used (be careful with this command, due to apt's hell dependency it may delete unwanted packages): 
 
     apt autoremove
 

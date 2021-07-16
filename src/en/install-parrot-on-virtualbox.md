@@ -81,7 +81,7 @@ Choose which fits your needs and click *Next*.
 <img src="./images/vbox/6.png" width="85%"/>
 
 ### Step 3 - Modify VirtualBox settings ###
-So far, we’ve done the followings, checklist for you:
+So far, we’ve done the following, checklist for you:
 
   * Created a New Virtual Machine
   * Created Virtual Hard disk

@@ -16,7 +16,7 @@ There are two ways for proceeding.
 
 This method gives the freedom to choose for ParrotOS the desired amount of space and the number of partitions wanted.
 
-**NOTE:** The **Security** edition needs *at least* 40GB of space, **Home** edition needs *at least* 20GB of space (which has been used for this guide.). No Swap partition has been set because it has been used an SSD.
+**NOTE:** The **Security** edition needs *at least* 40GB of space, **Home** edition needs *at least* 20GB of space (which has been used for this guide.). No Swap partition has been set because it has been used on an SSD.
 \
 \
 
@@ -33,7 +33,7 @@ In detail:
 * **/dev/sda1** is the boot partition.
 * **/dev/sda2** is MSR (Microsoft Reserved partition).
 * **/dev/sda3** is where Windows 10 exists.
-* **/dev/sda4** is an hidden partition which contains Windows Files for Recovery.
+* **/dev/sda4** is a hidden partition which contains Windows Files for Recovery.
 
 This is the standard partitioning for Windows, which follows this exact order.
 Select **/dev/sda3** then click on *Edit*.
@@ -50,10 +50,9 @@ Drag the bar or set the value for getting the desired partition size (in this ca
 
 <img src="./images/dualboot/db7.png" width="70%"/>
 
-This is the updated situation, after shrinking the Windows partition it has been created an unallocated space of 20GB, select it and click on *Create*:
+This is the updated situation, after shrinking the Windows partition, an unallocated space of 20GB is available. Select it, then click on *Create*:
 
 <img src="./images/dualboot/db8.png"/>
-
 
 These are the settings for new partition, set the file system you want (ParrotOS uses BTRFS by default), set the mount point in / (**root**), then click on *OK*:
 

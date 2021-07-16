@@ -4,7 +4,7 @@ Parrot OS is available for download [here](https://parrotsec.org/download/).
 
 ## Which version should I choose? ##
 
-Parrot comes in a lot of shapes and sizes in order to fit all possible hardware and users needs.
+Parrot comes in a lot of shapes and sizes in order to fit all possible hardware and users' needs.
 
 Depending on what hardware configuration and scope you have, consider these options:
 

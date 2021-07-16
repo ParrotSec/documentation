@@ -17,7 +17,7 @@ The output of the command `ls -l` indicates whether it is a file (-) or director
 
 **Execution** permission, repersented by the "**x**" letter.
 
-The meanin of these premissions s different for files and folders, then we will explain each of the cases.
+The meaning of these permissions is different for files and folders, then we will explain each of the cases.
 
 In the case of a *.txt* file, it has the following permissions:
 
@@ -58,7 +58,7 @@ Therefore, we come to the following conclusion:
 | rwx r-x r--        |   754      |
 | r-x r- - ----------- |   540      |
 
-Having this clear, we can move to the use of "chmod", which help us managing the files and folders permissions.
+Having this clear, we can move to the use of "chmod", which help us manage the files and folders' permissions.
 
 #### chmod ####
 
@@ -66,7 +66,7 @@ Basic syntax of chmod:
 
 	$ chmod [mode] [permissions] [file or directory]
 
-We have this script folder, in which not all scripts hace the execution permissions.
+We have this script folder, in which not all scripts have the execution permissions.
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
@@ -76,7 +76,7 @@ We have this script folder, in which not all scripts hace the execution permissi
 	-rwxr-xr-x 1 parrot hackers  780 oct 18 01:17 wireless-dos-ids.py
 	-rw-r--r-- 1 parrot hackers 1587 oct 18 01:05 wireless-dos.py
 
-As you can see in the execution of `ls -l scripts/`, some scrpits have execution permissions for all the system users (which is not recommended), while others do not have execution permissioneven for the pwner user. To correct this error we apply the following permissions:
+As you can see in the execution of `ls -l scripts/`, some scripts have execution permissions for all the system users (which is not recommended), while others do not have execution permission even for the owner user. To correct this error we apply the following permissions:
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R 770 scripts/
@@ -124,7 +124,7 @@ Possible combinations:
 - `+r` As before, if nothing is indicated, 'a' is assumed.
 - `og-x` Removes execution permission from all but the user.
 - `u+rwx` Gives all the permissions to the user.
-- `o-rwx` Remove the permissions fron the others.
+- `o-rwx` Remove the permissions from the others.
 
 Example of use:
 
@@ -143,7 +143,7 @@ If we analyze the result of the previous execution, we notice how the execution 
 
 #### chown ####
 
-Chwon (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is to change the owner of a file or folder.
+chown (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is to change the owner of a file or folder.
 
 Its basic syntax is the following:
 
@@ -210,7 +210,7 @@ In the previous example, you can see how the user who owns all the files within 
 
 #### chgrp ####
 
-The chgrp command is used to change the group to which a file or directory belongs. Its basic sntaxis is the following:
+The chgrp command is used to change the group to which a file or directory belongs. Its basic syntax is the following:
 
 	$ chgrp [options] [file (s)] or [directory (s)]
 

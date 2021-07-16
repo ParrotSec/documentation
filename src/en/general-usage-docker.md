@@ -71,13 +71,13 @@ If you need to expose a port to other machines outside your local computer, use 
 
 Note that the first port is the port that will be opened on your host, and the second one is the container port to bind to.
 
-Here a reference usage of the **-p** flag:
+Here is a reference usage of the **-p** flag:
 
 `-p <host port>:<container port>` (e.g. `-p 8080:80`) \
 `-p <host port>:<container port>/<protocol>` (e.g. `-p 8080:80/tcp`) \
 \
 `-p <address>:<host port>:<container port>` (e.g. `-p 192.168.1.30:8080:80`) \
-in case of multiple adresses on host network.
+in case of multiple addresses on host network.
 
 #### Use network host instead of docker NAT ####
 
