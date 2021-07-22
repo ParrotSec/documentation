@@ -52,16 +52,8 @@ North Central and South Americas
 |Massachussetts<br>MIT<br>1 Gbps|SIPB MIT|[mirrors.mit.edu/parrot](http://mirrors.mit.edu/parrot/)|<sub>deb http://mirrors.mit.edu/parrot/ rolling main contrib non-free</sub>|
 |New York<br>Clarkson<br>1 Gbps|Clarkson University|[mirror.clarkson.edu/parrot](https://mirror.clarkson.edu/parrot/)|<sub>deb https://mirror.clarkson.edu/parrot/ rolling main contrib non-free</sub>|
 |Oregon<br>Osuosl<br>1 Gbps|Oregon State University - Open Source Lab|[ftp.osuosl.org/pub/parrotos](https://ftp.osuosl.org/pub/parrotos)|<sub>deb https://ftp.osuosl.org/pub/parrotos rolling main contrib non-free</sub>|
-|Oregon<br>/<br>/|wasabi-oregon|[s3.us-west-1.wasabisys.com/parrot-oregon](https://s3.us-west-1.wasabisys.com/parrot-oregon)|<sub>deb https://s3.us-west-1.wasabisys.com/parrot-oregon main contrib non-free</sub>|
 |California<br>Berkeley<br>1 Gbps|Berkeley Open Computing Facility|[mirrors.ocf.berkeley.edu/parrot](http://mirrors.ocf.berkeley.edu/parrot)|<sub>deb https://mirrors.ocf.berkeley.edu/parrot/ rolling main contrib non-free</sub>|
-|California<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.sfo12.us.leaseweb.net/parrot](https://mirror.sfo12.us.leaseweb.net/parrot)|<sub>deb https://mirror.sfo12.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
-|Florida<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.mia11.us.leaseweb.net/parrot](https://mirror.mia11.us.leaseweb.net/parrot)|<sub>deb https://mirror.mia11.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
 |Virginia<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.wdc1.us.leaseweb.net/parrot](https://mirror.wdc1.us.leaseweb.net/parrot)|<sub>deb https://mirror.wdc1.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
-|Virginia<br>/<br>/|wasabi-virginia|[s3.us-east-2.wasabisys.com/parrot-virginia](https://s3.us-east-2.wasabisys.com/parrot-virginia)|<sub>deb https://s3.us-east-2.wasabisys.com/parrot-virginia main contrib non-free</sub>|
-|Texas<br>Leaseweb<br>10 Gbps|Leaseweb|[mirror.dal10.us.leaseweb.net/parrot](https://mirror.dal10.us.leaseweb.net/parrot)|<sub>deb https://mirror.dal10.us.leaseweb.net/parrot rolling main contrib non-free</sub>|
-|Texas<br>/<br>/|wasabi-texas|[s3.us-central-1.wasabisys.com/parrot-texas](https://s3.us-central-1.wasabisys.com/parrot-texas)|<sub>deb https://s3.us-central-1.wasabisys.com/parrot-texas main contrib non-free</sub>|
-|Winnipeg - Canada<br>muug<br>10 Gbps|Manitoba Unix User Group|[muug.ca/mirror/parrot/](https://muug.ca/mirror/parrot/)|<sub>deb https://muug.ca/mirror/parrot/ rolling main contrib non-free</sub>|
-|Beauharnois - Canada<br>Cythin<br>100 Mbps|Cythin.com|[parrot.ca.mirror.cythin.com/parrot](https://parrot.ca.mirror.cythin.com/parrot)|<sub>deb https://parrot.ca.mirror.cythin.com/parrot rolling main contrib non-free</sub>|
 |Ecuador<br>CEDIA<br>100 Mbps|RED CEDIA (National research and education center of Ecuador)|[mirror.cedia.org.ec/parrot](http://mirror.cedia.org.ec/parrot)|<sub>deb https://mirror.cedia.org.ec/parrot/ rolling main contrib non-free</sub>|
 |Ecuador<br>UTA<br>100 Mbps|UTA (Universidad Técnica de ambato)|[mirror.uta.edu.ec/parrot](http://mirror.uta.edu.ec/parrot)|<sub>deb https://mirror.uta.edu.ec/parrot/rolling main contrib non-free<</sub>|
 |Ecuador<br>UEB<br>100 Mbps|UEB (Universidad Estatal de Bolivar)|[mirror.ueb.edu.ec/parrot](http://mirror.ueb.edu.ec/parrot)|<sub>deb https://mirror.ueb.edu.ec/parrot/ rolling main contrib non-free</sub>|
@@ -81,7 +73,6 @@ Europe Middle East and Asia
 |Germany<br>pyratelan<br>/|pyratelan|[mirror.pyratelan.org/parrot](https://mirror.pyratelan.org/parrot)|<sub>deb https://mirror.pyratelan.org/parrot rolling main contrib non-free</sub>|
 |Netherlands<br>NLUUG<br>10 Gbps|Nluug|[ftp.nluug.nl/os/Linux/distr/parrot](http://ftp.nluug.nl/os/Linux/distr/parrot)|<sub>deb https://ftp.nluug.nl/os/Linux/distr/parrot/ rolling main contrib non-free</sub>|
 |Netherlands<br>lyrahosting<br>/|lyrahosting|[mirror.lyrahosting.com/parrot](https://mirror.lyrahosting.com/parrot)|<sub>deb  https://mirror.lyrahosting.com/parrot rolling main contrib non-free</sub>|
-|Netherlands<br>wasabi-amsterdam<br>/|wasabi-amsterdam|[s3.eu-central-1.wasabisys.com/parrot-amsterdam](https://s3.eu-central-1.wasabisys.com/parrot-amsterdam)|<sub>deb  https://s3.eu-central-1.wasabisys.com/parrot-amsterdam rolling main contrib non-free</sub>|
 |Sweden<br>UMU<br>20 Gbps|ACC UMU (Academic Computer Club, Umea University)|[ftp.acc.umu.se/mirror/parrotsec.org/parrot](http://ftp.acc.umu.se/mirror/parrotsec.org/parrot)|<sub>deb https://ftp.acc.umu.se/mirror/parrotsec.org/parrot/ rolling main contrib non-free</sub>|
 |Greece<br>UOC<br>1 Gbps|UoC (University of Crete - Computer Center)|[ftp.cc.uoc.gr/mirrors/linux/parrot](http://ftp.cc.uoc.gr/mirrors/linux/parrot)|<sub>deb https://ftp.cc.uoc.gr/mirrors/linux/parrot/ rolling main contrib non-free</sub>|
 |Belgium<br>Belnet<br>10 Gbps|Belnet (The Belgian National Research)|[ftp.belnet.be/archive.parrotsec.org](http://ftp.belnet.be/mirror/archive.parrotsec.org)|<sub>deb http://ftp.belnet.be/mirror/archive.parrotsec.org/ rolling main contrib non-free</sub>|
@@ -89,7 +80,7 @@ Europe Middle East and Asia
 |Portugal<br>UP<br>1 Gbps|U.Porto (University of Porto)|[mirrors.up.pt/parrot](http://mirrors.up.pt/parrot)|<sub>deb https://mirrors.up.pt/parrot/ rolling main contrib non-free</sub>|
 |Denmark<br>Dotsrc<br>10 Gbps|Dotsrc (Aalborg university)|[mirrors.dotsrc.org/parrot](http://mirrors.dotsrc.org/parrot)|<sub>deb https://mirrors.dotsrc.org/parrot/ rolling main contrib non-free</sub>|
 |France<br>Cythin<br>100 Mbps|Cythin.com|[parrot.mirror.cythin.com/parrot](https://parrot.mirror.cythin.com/parrot)|<sub>deb https://parrot.mirror.cythin.com/parrot rolling main contrib non-free</sub>|
-|France<br>iriseden<br>/|iriseden|[parrot-mirror.iriseden.eu](https://parrot-mirror.iriseden.eu)|<sub>deb https://parrot-mirror.iriseden.eu rolling main contrib non-free</sub>|
+|France<br>iriseden<br>/|iriseden|[parrot-mirror.iriseden.eu/parrot](https://parrot-mirror.iriseden.eu/parrot)|<sub>deb https://parrot-mirror.iriseden.eu/parrot rolling main contrib non-free</sub>|
 |Hungary<br>quantum-mirror<br>700 Mbps|quantum-mirror.hu|[quantum-mirror.hu/mirrors/pub/parrot](https://quantum-mirror.hu/mirrors/pub/parrot)|<sub>deb https://quantum-mirror.hu/mirrors/pub/parrot rolling main contrib non-free</sub>|
 |Turkey<br>EB<br>100 Mbps|EB|[turkey.archive.parrotsec.org/parrot](http://turkey.archive.parrotsec.org/parrot)|<sub>deb http://turkey.archive.parrotsec.org/parrot/ rolling main contrib non-free</sub>|
 |Estonia<br>cspacehosting<br>/|cspacehosting|[mirror.cspacehostings.com/parrotsec](https://mirror.cspacehostings.com/parrotsec)|<sub>deb https://mirror.cspacehostings.com/parrotsec rolling main contrib non-free</sub>|
@@ -114,8 +105,6 @@ Asia and Pacific
 |New Caledonia<br>Lagoon<br>1 Gbps|Lagoon Networks|[mirror.lagoon.nc/pub/parrot](http://mirror.lagoon.nc/pub/parrot)|<sub>deb http://mirror.lagoon.nc/pub/parrot/ rolling main contrib non-free</sub>|
 |Thailand<br>KKU<br>1 Gbps|KKU (Khon Kaen University)|[mirror.kku.ac.th/parrot](http://mirror.kku.ac.th/parrot)|<sub>deb https://mirror.kku.ac.th/parrot/ rolling main contrib non-free</sub>|
 |Indonesia<br>Datautama<br>1 Gbps|Datautama (PT. Data Utama Dinamika)|[kartolo.sby.datautama.net.id/parrot](http://kartolo.sby.datautama.net.id/parrot)|<sub>deb http://kartolo.sby.datautama.net.id/parrot/ rolling main contrib non-free</sub>|
-|New Zeland<br>Takeshi<br>1 Gbps worldwide<br>10 Gbps New Zeland|Takeshi (D T Consulting Ltd)|[mirrors.takeshi.nz/parrot](https://mirrors.takeshi.nz/parrot/)|<sub>deb https://mirrors.takeshi.nz/parrot rolling main contrib non-free</sub>|
-|Sud Corea<br>krmir<br>/|krmir|[mirror.krmir.org/parrot](https://mirror.krmir.org/parrot)|<sub>deb https://mirror.krmir.org/parrot rolling main contrib non-free</sub>|
 
 ## Make your own mirror ##
 
