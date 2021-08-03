@@ -4,7 +4,7 @@
 
 First of all, you need to download the latest ISO file from our [website](https://parrotsec.org/download/).
 
-Then you can burn it using [Balena Etcher](https:https://www.balena.io/etcher/) or [ROSA ImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter). They both work on GNU/Linux, Mac OS and Windows. We strongly recommend to use Etcher, but you can also use the **DD command line tool** if you prefer it.
+Then you can burn it using [Balena Etcher](https://www.balena.io/etcher/) or [ROSA ImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter). They both work on GNU/Linux, Mac OS and Windows. We strongly recommend to use Etcher, but you can also use the **DD command line tool** if you prefer it.
 
 The Parrot ISO uses the iso9660 format (also known as isohybrid). It is a special ISO format that contains not only the partition content, but also the partition table.
 
