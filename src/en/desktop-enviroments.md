@@ -8,6 +8,23 @@ The difference between the three officially supported DE mainly concerns graphic
 
 Feel free to [download](https://parrotsec.org/download/) the edition that is useful to you and with the DE that you like the most! 
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <i class="fa fa-info-circle badge" aria-hidden="true"></i>
+
+**Note**
+
+  </div>
+  <div class="panel-body">
+  It may be useful to know that the user can install more DE on their Parrot, just type in a terminal:
+        
+      sudo apt update && sudo apt install parrot-<desktop environment>
+
+  then restart your computer. 
+  In the login session you can change DE by clicking on the white dot ⚪️ (it's the "default session") and change DE. You can now use the newly installed DE with all the tools and configurations already present previously.
+  </div>
+</div>
+
 ## MATE Desktop ##
 
 [Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-home-4.11.2_amd64.iso)
@@ -41,4 +58,3 @@ If you have another DE, you can install XFCE by:
 `sudo apt install parrot-xfce`
 
 <img src="./images/DE/xfce.png"/>
-

@@ -10,9 +10,20 @@ After following the steps for setting the [Parrot Installation](./installation.m
 
 <img src="./images/dualboot/db1.png"/>
 
-There are two ways for proceeding.
+There are two ways for proceeding: 
 
-## Method 1: Manual Partitioning
+ - [Method 1: Automated Partitioning](<./dualboot-with-windows.html#method-1-automated-partitioning>) \
+ - [Method 2: Manual Partitioning](<./dualboot-with-windows.html#method-2-manual-partitioning>)
+
+
+## Method 1: Automated Partitioning
+
+This is more way easier. You just have to select **Install alongside** then select **/dev/sda3** within the bar, drag the bottom bar to resize the partition in order to assign the desired amount of space for ParrotOS, then click on *Next* and proceed with the installation.
+
+<img src="./images/dualboot/db2.png"/>
+
+
+## Method 2: Manual Partitioning
 
 This method gives the freedom to choose for ParrotOS the desired amount of space and the number of partitions wanted.
 
@@ -71,11 +82,3 @@ Set the mount point in **/boot/efi** then click on *OK*:
 This is the final situation, proceed with the installation by clicking on *Next*:
 
 <img src="./images/dualboot/db12.png"/>
-
-
-
-## Method 2: Automated Partitioning
-
-This is more way easier. You just have to select **Install alongside** then select **/dev/sda3** within the bar, drag the bottom bar to resize the partition in order to assign the desired amount of space for ParrotOS, then click on *Next* and proceed with the installation.
-
-<img src="./images/dualboot/db2.png"/>

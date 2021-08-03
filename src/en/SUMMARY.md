@@ -6,6 +6,7 @@
     - [What is Parrot](<./what-is-parrot.md>)
     - [What is GNU/Linux](<./gnu-linux-basics.md>)
     - [Download Parrot](<./download-parrot.md>)
+    - [System requirements](./system-requirements.md)
     - [Desktop Enviroments](<./desktop-enviroments.md>)
     - [Community & Social](<./community.md>)
 
@@ -20,7 +21,8 @@
     - [Parrot on QubesOS](<./parrot-on-qubesos.md>)
 
 - [Configuration]()
-    - [Parrot Software Management](<./parrot-software-management.md>) 
+    - [Parrot Software Management](<./parrot-software-management.md>)
+    - [Nvidia drivers](<./nvidia-drivers.md>)
     - [File and Directory Permissions](<./file-and-directory-permissions.md>)
     - [Hash and key verification](<./hash-and-key-verification.md>)
     - [AppArmor](<./apparmor.md>)

@@ -21,7 +21,7 @@ The package manager must check in a given location (it can be a local directory 
 
 ## List of Repositories ##
 
-Although in Parrot it is not necessary (nor recommended) to add new repositories or modify existing ones, we will see where we can configure them. In the file system, under the path "/etc/sources.list.d", we find the file parrot.list. The content of this file should be:
+Although in Parrot it is not necessary (nor recommended) to add new repositories or modify existing ones, we will see where we can configure them. In the file system, under the path "/etc/apt/sources.list.d", we find the file parrot.list. The content of this file should be:
 
 	## stable repository
 	deb http://deb.parrotsec.org/parrot stable main contrib non-free
