@@ -1,6 +1,6 @@
 ## File and Directory Permissions ##
 
-Previously we mentioned that, in Linux, all the files of the system belong to a user and a group. The owner of a file is the user who created it and the main group of this file is the group of the user who created it. For example, in previous chapters we worked with the user "parrot". If this user creates a file, the user "parrot" and the default group of the parrot user will be the owners of this new file, so the file belongs to the parrot user and the default group of the parrot user. For this reason we often use the "sudo" command to be able to read, modify or execute files and programs of the system or make changes in the permissions of the files in question.
+With GNU/Linux, all the files of the system belong to a user and a group. The owner of a file is the user who created it and the main group of this file is that of the user who created it. For example, in the other chapters, we worked with a user account simply called **user**. If this user creates a file, it belongs to the parrot user and the default group of the parrot user. For this reason, we often use the `sudo` command to be able to read, modify or execute files and programs of the system or make changes in the permissions of the files in question.
 
 Let's analyze the output of the command `ls -l`
 
@@ -9,7 +9,7 @@ Let's analyze the output of the command `ls -l`
 	-rw-rw-r-- 1 parrot hackers    0    oct 16 12:32 archive.txt
 	drwxr-xr-x 3 parrot hackers  4096   oct 15 16:25 scripts
 
-The output of the command `ls -l` indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's start with the fields permission, user, and group.We will focus on the first field (file permissions). In Linux, the permissions management that the users and the groups of users have on the files and the folders is carried out using a simple scheme of three types of permissions:
+The output of the command `ls -l` indicates whether it is a file (-) or directory (d), the permissions of the file/directory (rw-rw-r--), the following field (indicates the number of files/directories) user and group to which it belongs (parrot hackers), size (0), last modification date (Oct 16 12:32) and name (file.txt and scripts). Let's start with the fields permission, user, and group. We will focus on the first field (file permissions). In Linux, the permission management that the users and the groups of users have on the files and folders is carried out using a simple scheme of three types of permission:
 
 **Read** permission, represented by the "**r**" letter.
 
@@ -17,21 +17,21 @@ The output of the command `ls -l` indicates whether it is a file (-) or director
 
 **Execution** permission, repersented by the "**x**" letter.
 
-The meaning of these permissions is different for files and folders, then we will explain each of the cases.
+The meaning of the permissions is different for files and folders. We will explain each of these.
 
 In the case of a *.txt* file, it has the following permissions:
 
 	Owner	Group	Other Users
 	r  w  -	r  w  -	r  -  -
-This means that all the system users have permissions to read this file, but only the owner and the members of the owner group can make modifications to this file.
+This means that all the system users have permission to read this file, but only the owner and the members of the owner group can make modifications to this file.
 
-To calculate the value of a permit, we will base the sum of its decimal values according to the following correspondence:
+To calculate the value, we will base the sum of its decimal values according to the following correspondence:
 
 |Permission	|r |w| x |
 |-----------------------------------|--|---|----|
 |Decimal Value	|4| 2 | 1 |
 
-That is, the decimal value for the read permission is 4, the value for write permission is 2 and the value for execution permission is 1. Therefore, the possible values for a permission are the following:
+That is, the decimal value for the read permission is 4, the value for write permission is 2 and the value for execute permission is 1. The possible values are as follows:
 
 
 
@@ -58,7 +58,7 @@ Therefore, we come to the following conclusion:
 | rwx r-x r--        |   754      |
 | r-x r- - ----------- |   540      |
 
-Having this clear, we can move to the use of "chmod", which help us manage the files and folders' permissions.
+Having this clear, we can use "chmod", which helps us manage the files and folders' permissions.
 
 #### chmod ####
 
@@ -66,7 +66,7 @@ Basic syntax of chmod:
 
 	$ chmod [mode] [permissions] [file or directory]
 
-We have this script folder, in which not all scripts have the execution permissions.
+In the example below, we have a script folder in which not all scripts have the execute permission.
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
@@ -76,7 +76,7 @@ We have this script folder, in which not all scripts have the execution permissi
 	-rwxr-xr-x 1 parrot hackers  780 oct 18 01:17 wireless-dos-ids.py
 	-rw-r--r-- 1 parrot hackers 1587 oct 18 01:05 wireless-dos.py
 
-As you can see in the execution of `ls -l scripts/`, some scripts have execution permissions for all the system users (which is not recommended), while others do not have execution permission even for the owner user. To correct this error we apply the following permissions:
+As you can see in the execution of `ls -l scripts/`, some scripts have execution permissions for all the system users (which is not recommended), while others do not have execution permission even for the owner user. To correct this error we apply the following:
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #chmod -R 770 scripts/
@@ -116,7 +116,7 @@ The basic syntax for using "chmod" with these modes is as follows:
 
     chmod [a | u | g | o] [+ | -] [r | w | x]
 
-That is, to whom the permit is applied, add or remove permission and type of permit that is to be added or removed.
+To who this is applied, add or remove permissions, and the type of permission that is to be add or removed.
 
 Possible combinations:
 
@@ -139,13 +139,13 @@ Example of use:
 	-rwxrw---- 1 parrot hackers  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot hackers 1587 oct 18 01:05 wireless-dos.py
 
-If we analyze the result of the previous execution, we notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
+If we analyze the the previous results, we notice how the execution permissions have been eliminated for all system users, including the members of the owner group, except the owner user, which conserves the read, write and execute permissions.
 
 #### chown ####
 
-chown (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is to change the owner of a file or folder.
+chown (Change owner) is another system utility that allows us to make changes to the ownership of the files, it looks like "chmod" but the function it performs is different. As the name implies, it is used to change the owner of a file or folder.
 
-Its basic syntax is the following:
+Its basic syntax is as follows:
 
 	$ chown [options] [owner]: [group (optional)] [files or directories]
 
@@ -206,7 +206,7 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
 
-In the previous example, you can see how the user who owns all the files within the scripts directory changed to parrot.
+You can see how the user who owns all the files within the scripts directory changed to parrot.
 
 #### chgrp ####
 
@@ -251,7 +251,7 @@ Example of use of chgrp:
 	-rwxrw---- 1 root root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 root root 1587 oct 18 01:05 wireless-dos.py
 
-In the previous example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner user.
+In this example, we can see how the user and group owner of all the files that are in the scripts directory have changed. Let's see an example where we are only going to change the owner user.
 
 	┌─[root@parrot]─[/home/parrot]
 	└──╼ #ls -l scripts/
@@ -272,4 +272,4 @@ In the previous example, we can see how the user and group owner of all the file
 	-rwxrw---- 1 parrot root  780 oct 18 01:17 wireless-dos-ids.py
 	-rwxrw---- 1 parrot root 1587 oct 18 01:05 wireless-dos.py
 
-In the above example, you can see how the group that owns the files wireless-dos-ids.py and wireless-dos.py changed from root to parrot user.
+You can see how the group that owns the files wireless-dos-ids.py and wireless-dos.py changed from root to parrot user.
