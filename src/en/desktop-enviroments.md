@@ -27,9 +27,9 @@ Feel free to [download](https://parrotsec.org/download/) the edition that is use
 
 ## MATE Desktop ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-home-4.11.2_amd64.iso)
+[Download Home Edition](https://parrotsec.org/home-edition/)
 \
-[Download Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-security-4.11.2_amd64.iso)
+[Download Security Edition](https://parrotsec.org/security-edition/)
 
 If you have another DE, you can install MATE by:
 \
@@ -39,9 +39,9 @@ If you have another DE, you can install MATE by:
 
 ## KDE Desktop ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-home-4.11.2_amd64.iso)
+[Download Home Edition](hhttps://parrotsec.org/home-edition/)
 \
-[Download Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-security-4.11.2_amd64.iso)
+[Download Security Edition](https://parrotsec.org/security-edition/)
 
 If you have another DE, you can install KDE by:
 \
@@ -51,7 +51,7 @@ If you have another DE, you can install KDE by:
 
 ## XFCE Desktop ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-xfce-4.11.2_amd64.iso)
+[Download Home Edition](https://parrotsec.org/home-edition/)
 
 If you have another DE, you can install XFCE by:
 \

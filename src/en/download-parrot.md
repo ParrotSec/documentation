@@ -38,7 +38,7 @@ Recommended for those who are familiar with Pentesting Distros but require a min
 ### Parrot 4.11.2 Security & Home OVA ###
 Purposed for a quick VM setup, this version is intended to work on your favorite virtualization software.
 
-[Download](https://download.parrot.sh/parrot/iso/4.11.1/Parrot-home-4.11.2_virtual.ova.mirrorlist)
+[Download](https://parrotsec.org/virtual/)
 
 | Edition  |  Size  |
 |----------|--------|
