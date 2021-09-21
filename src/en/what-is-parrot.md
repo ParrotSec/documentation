@@ -75,8 +75,6 @@ Our goal is to allow any professional pentester to make a whole security test fr
 
 Parrot Security ships with custom hardening profiles and configurations for AppArmor and other linux hardening technologies, and takes inspiration from the success of other projects that deliver the highest level of security in the GNU/Linux scenario, like Tails and Whonix to sandbox the system and deliver a layer of security above the average.
 
-User applications in Parrot are protected and "jailed" to limit the damages in case the system is compromised.
-
 All this additional security comes with a cost: it is harder to adopt bad behaviors on Parrot. For instance it is not possible to log in as root with the whole desktop environment, or to start critical applications like browsers, media players or advanced document readers with unnecessary privileged permissions.
 
 The user can still open root consoles, launch security tools with privileged permissions and use the system without limits. The only thing that changes is that all the critical user applications are now protected from very bad behaviors and common exploit techniques, or even zero-days, and the damages caused by advanced exploits are very limited.
@@ -99,5 +97,3 @@ In summary, Parrot is made for :
 - Researchers
 - Wannabe Hackers
 - Software developers
-- Journalists, Hacktivists and Whistleblowers
-- Police officers and security agencies

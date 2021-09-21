@@ -83,11 +83,6 @@ Update a package to the last available version in the repository:
     apt upgrade <package>
 	
 \
-Update the system. It will update all the packages that have a higher version:
-
-    apt update
-
-\
 Update the full distribution. It will update our system to the next available version:
 
     parrot-upgrade

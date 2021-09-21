@@ -88,6 +88,7 @@ Europe Middle East and Asia
 |Russia<br>Truenetwork<br>10 Gbps|Truenetwork|[mirror.truenetwork.ru/parrot](http://mirror.truenetwork.ru/parrot)|<sub>deb https://mirror.truenetwork.ru/parrot/ rolling main contrib non-free</sub>|
 |Russia<br>surf<br>/|surf|[mirror.surf/parrot](https://mirror.surf/parrot)|<sub>deb https://mirror.surf/parrot rolling main contrib non-free</sub>|
 |Ukraine<br>comsys<br>1 Gbps|KPI (National Technical University of Ukraine - Comsys)|[mirrors.comsys.kpi.ua/parrot](http://mirrors.comsys.kpi.ua/parrot)|<sub>only ISO files are mirrored</sub>|
+|Ukraine<br>astra.in.ua<br>/|ISP|[parrot.astra.in.ua/](https://parrot.astra.in.ua/)|<sub>deb https://parrot.astra.in.ua/ rolling main contrib non-free</sub>|
 
 
 ### APAC ###

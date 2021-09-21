@@ -29,6 +29,9 @@
     - [General usage on Docker](<./general-usage-docker.md>)
     - [Assistive Technologies](<./assistive-technologies.md>)
     - [Mirrors list](<./mirrors-list.md>)
+    
+- [Troubleshooting]()
+    - [Grub](<./troubleshooting-grub.md>)
 
 - [Legal]()
     - [Privacy Policy](<./privacy-policy.md>)
