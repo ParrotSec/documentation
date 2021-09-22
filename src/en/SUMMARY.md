@@ -20,6 +20,9 @@
     - [Dualboot with Windows](<./dualboot-with-windows.md>)
     - [Parrot on QubesOS](<./parrot-on-qubesos.md>)
 
+- [Parrot Tools]()
+    - [AnonSurf](<./anonsurf.md>)
+
 - [Configuration]()
     - [Parrot Software Management](<./parrot-software-management.md>)
     - [Nvidia drivers](<./nvidia-drivers.md>)
