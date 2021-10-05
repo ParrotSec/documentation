@@ -18,7 +18,6 @@ mathjax-support = false
 additional-css = ["static/custom.css"]
 additional-js = ["static/custom.js"]
 no-section-label = true
-# input-404 = "not-found.md
 # git-repository-url = "nest.parrotsec.org"
 
 [output.html.print]
@@ -38,9 +37,14 @@ level = 0
 [language.en]
 name = "Parrot OS Documentation"
 title = "Parrot Documentation"
-description = "New documentation for Parrot OS"
+description = "Documentation for Parrot OS"
 
-# [language.es]
-# name = "Parrot OS Spanish Documentation"
-# title = "Parrot Documentación"
-# description = "Documentación para ParrotOS"
+[language.es]
+name = "Parrot OS Spanish Documentation"
+title = "Parrot Documentación"
+description = "Documentación para ParrotOS"
+
+[language.fr]
+name = "Parrot OS French Documentation"
+title = "Documentation Parrot"
+description = "Documentation pour ParrotOS"
