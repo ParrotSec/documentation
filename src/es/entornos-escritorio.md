@@ -10,9 +10,9 @@ La diferencia entre los tres DE con soporte oficial se refiere principalmente a 
 
 ## Escritorio MATE ##
 
-[Descargar Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-home-4.11.2_amd64.iso)
+[Descargar Home Edition](https://parrotsec.org/home-edition/)
 \
-[Descargar Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-security-4.11.2_amd64.iso)
+[Descargar Security Edition](https://parrotsec.org/security-edition/)
 
 Si tienes otro DE, puedes instalar MATE con:
 \
@@ -22,9 +22,9 @@ Si tienes otro DE, puedes instalar MATE con:
 
 ## Escritorio KDE ##
 
-[Descargar Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-home-4.11.2_amd64.iso)
+[Descargar Home Edition](https://parrotsec.org/home-edition/)
 \
-[Descargar Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-security-4.11.2_amd64.iso)
+[Descargar Security Edition](https://parrotsec.org/security-edition/)
 
 Si tienes otro DE, puedes instalar KDE con:
 \
@@ -34,7 +34,7 @@ Si tienes otro DE, puedes instalar KDE con:
 
 ## Escritorio XFCE ##
 
-[Descargar Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-xfce-4.11.2_amd64.iso)
+[Descargar Home Edition](https://parrotsec.org/home-edition/)
 
 Si tienes otro DE, puedes instalar XFCE con:
 \

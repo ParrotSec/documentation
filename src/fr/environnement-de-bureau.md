@@ -27,9 +27,9 @@ Dans la session de connexion, vous pouvez changer de DE en cliquant sur le point
 
 ## Bureau MATE ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-home-4.11.2_amd64.iso)
+[Download Home Edition](hhttps://parrotsec.org/home-edition/)
 \
-[Download Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-security-4.11.2_amd64.iso)
+[Download Security Edition](https://parrotsec.org/security-edition/)
 
 Si vous avez un autre DE, vous pouvez installer MATE par :
 \
@@ -39,9 +39,9 @@ Si vous avez un autre DE, vous pouvez installer MATE par :
 
 ## Bureau KDE ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-home-4.11.2_amd64.iso)
+[Download Home Edition](hhttps://parrotsec.org/home-edition/)
 \
-[Download Security Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-kde-security-4.11.2_amd64.iso)
+[Download Security Edition](https://parrotsec.org/security-edition/)
 
 Si vous avez un autre DE, vous pouvez installer KDE par :
 \
@@ -51,7 +51,7 @@ Si vous avez un autre DE, vous pouvez installer KDE par :
 
 ## Bureau XFCE ##
 
-[Download Home Edition](https://download.parrot.sh/parrot/iso/4.11.2/Parrot-xfce-4.11.2_amd64.iso)
+[Download Home Edition](hhttps://parrotsec.org/home-edition/)
 
 Si vous avez un autre DE, vous pouvez installer XFCE par :
 \

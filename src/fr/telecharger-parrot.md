@@ -21,8 +21,8 @@ Fortement recommandé pour les PC de bureau et les portables avec au moins 4 Go 
 
 |  Environnement de bureau |  Taille  |
 |--------------------------|--------|
-|<strong>[MATE](<./desktop-enviroments.html#mate-desktop>)</strong>| 4.1 GB |
-|<strong>[KDE](<./desktop-enviroments.html#kde-desktop>)</strong>| 4.2 GB |
+|<strong>[MATE](<./environnement-de-bureau.html#bureau-mate>)</strong>| 4.1 GB |
+|<strong>[KDE](<./environnement-de-bureau.html#bureau-kde>)</strong>| 4.2 GB |
 
 ### Parrot 4.11.2 Home Edition 
 Cette version de Parrot est une installation légère qui fournit les outils essentiels pour commencer à travailler.
@@ -33,15 +33,15 @@ Recommandée pour ceux qui sont familiers avec les distros de Pentesting mais qu
 
 | Environnement de bureau |  Size  |
 |-------------------------|--------|
-|<strong>[MATE](<./desktop-enviroments.html#mate-desktop>)</strong>| 1.9 GB |
-|<strong>[KDE](<./desktop-enviroments.html#kde-desktop>)</strong>| 2.0 GB |
-|<strong>[XFCE](<./desktop-enviroments.html#xfce-desktop>)</strong>| 1.8 GB |
+|<strong>[MATE](<./environnement-de-bureau.html#bureau-mate>)</strong>| 1.9 GB |
+|<strong>[KDE](<./environnement-de-bureau.html#bureau-kde>)</strong>| 2.0 GB |
+|<strong>[XFCE](<./environnement-de-bureau.html#bureau-xfce>)</strong>| 1.8 GB |
 
 
 ### Parrot 4.11.2 Security & Home OVA ###
 Destinée à une installation rapide de la VM, cette version est prévue pour fonctionner sur votre logiciel de virtualisation préféré.
 
-[Download](https://download.parrot.sh/parrot/iso/4.11.1/Parrot-home-4.11.2_virtual.ova.mirrorlist)
+[Download](https://parrotsec.org/virtual/)
 
 | Edition  |  Taille  |
 |----------|----------|
