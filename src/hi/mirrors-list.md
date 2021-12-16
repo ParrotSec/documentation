@@ -1,26 +1,26 @@
-The Parrot Project not only delivers a ready-to-use system in the ISO format, but it also provides a vast amount of additional software that can be installed apart from the official parrot repository.
+पेरोट परियोजना न केवल आईएसओ प्रारूप में उपयोग के लिए तैयार प्रणाली प्रदान करती है, बल्कि यह अतिरिक्त सॉफ्टवेयर की एक बड़ी मात्रा भी प्रदान करती है जिसे आधिकारिक पेरोट भंडार के अलावा स्थापित किया जा सकता है।
 
-The Parrot repository is used to provide officially supported software, system updates and security fixes.
+पेरोट भंडार का उपयोग आधिकारिक तौर पर समर्थित सॉफ़्टवेयर, सिस्टम अपडेट और सुरक्षा सुधार प्रदान करने के लिए किया जाता है।
 
 # The mirrors network #
 
-The software in the parrot archive is delivered in form of deb packages, and these packages are served through a vast network of mirror servers that provide the same set of packages distributed all around the world for faster software delivery.
+पेरोट संग्रह में सॉफ्टवेयर डेब पैकेज के रूप में दिया जाता है, और इन पैकेजों को मिरर सर्वर के एक विशाल नेटवर्क के माध्यम से परोसा जाता है जो तेजी से सॉफ्टवेयर वितरण के लिए दुनिया भर में वितरित पैकेजों का एक ही सेट प्रदान करता है।
 
-The Parrot system is configured to use the central parrot archive directors. The Parrot directors are special servers that collect all the requests of the end users and redirect them to the geographically nearest download server available for the user who made the request.
+केंद्रीय पेरोट संग्रह निदेशकों का उपयोग करने के लिए पेरोट प्रणाली को कॉन्फ़िगर किया गया है। पेरोट निदेशक विशेष सर्वर होते हैं जो अंतिम उपयोगकर्ताओं के सभी अनुरोधों को एकत्र करते हैं और उन्हें अनुरोध करने वाले उपयोगकर्ता के लिए उपलब्ध भौगोलिक दृष्टि से निकटतम डाउनलोड सर्वर पर पुनर्निर्देशित करते हैं।
 
-If you want and can, you can make your own mirror for Parrot following [this procedure](./mirrors-list.html#make-your-own-mirror).
+यदि आप चाहते हैं और कर सकते हैं, तो आप [इस प्रक्रिया](./make-mirror.html) का पालन करके पेरोट के लिए अपना खुद का दर्पण बना सकते हैं
 
-### Security measures ###
+### सुरक्षा उपाय ###
 
-The Parrot Mirror Network is secured by centralized digital signatures and the mirrors can't inject fake updates.
+पेरोट मिरर नेटवर्क केंद्रीकृत डिजिटल हस्ताक्षरों द्वारा सुरक्षित है और दर्पण नकली अपडेट को इंजेक्ट नहीं कर सकते हैं।
 
-If an evil mirror tries to inject a fake package, the Parrot system will automatically refuse to download and install it, and will raise an alert message.
+यदि कोई दुष्ट दर्पण नकली पैकेज को इंजेक्ट करने का प्रयास करता है, तो पेरोट सिस्टम स्वचालित रूप से इसे डाउनलोड और इंस्टॉल करने से मना कर देगा, और एक अलर्ट संदेश उठाएगा।
 
-This security measure implemented in APT (the Parrot/Debian package manager) is very efficient and reliable because digital signatures are applied offline by the Parrot archive maintainer, and not by the mirror servers, ensuring direct and secure developer-to-user chain of trust.
+एपीटी (पेरोट/डेबियन पैकेज मैनेजर) में लागू किया गया यह सुरक्षा उपाय बहुत ही कुशल और विश्वसनीय है क्योंकि डिजिटल हस्ताक्षर को पेरोट संग्रह अनुरक्षक द्वारा ऑफ़लाइन लागू किया जाता है, न कि दर्पण सर्वर द्वारा, विश्वास की प्रत्यक्ष और सुरक्षित डेवलपर-से-उपयोगकर्ता श्रृंखला सुनिश्चित करने के लिए।
 
 ## Configuration and custom setup ##
 
-The APT package manager uses `/etc/apt/sources.list` and any *.list* file found in the `/etc/apt/sources.list.d/` directory.
+APT पैकेज मैनेजर `/etc/apt/sources.list` और `/etc/apt/sources.list.d/` निर्देशिका में पाई जाने वाली किसी भी *.list* फ़ाइल का उपयोग करता है।
 
 
 <div class="panel panel-info">
@@ -31,7 +31,7 @@ The APT package manager uses `/etc/apt/sources.list` and any *.list* file found 
 
   </div>
   <div class="panel-body">
-  /etc/apt/sources.list is EMPTY and the default APT configuration is located at /etc/apt/sources.list.d/parrot.list.
+  /etc/apt/sources.list खाली है और डिफ़ॉल्ट APT कॉन्फ़िगरेशन /etc/apt/sources.list.d/parrot.list पर स्थित है।
   </div>
 </div>
 
@@ -43,16 +43,6 @@ The APT package manager uses `/etc/apt/sources.list` and any *.list* file found 
     #deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
     
 ## Other mirrors for manual configuration ##
-
-### Worldwide (CDN) ###
-
-| Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
-|:----------------------------------|:---------------:|:-----|:-------------------|
-|Parrot Infrastructure<br>/<br>/|Parrot Infrastructure|[deb.parrot.sh/parrot](https://deb.parrot.sh/parrot)|<sub>deb https://deb.parrot.sh/parrot rolling main contrib non-free</sub>|
-|Azure<br>/<br>/|Microsoft Azure|[edge1.parrot.run/parrot](https://edge1.parrot.run/parrot)|<sub>deb https://edge1.parrot.run/parrot rolling main contrib non-free</sub>|
-|AWS<br>/<br>/|AWS - Amazon Web Services|[edge2.parrot.run/parrot](https://edge2.parrot.run/parrot)|<sub>deb https://edge2.parrot.run/parrot rolling main contrib non-free</sub>|
-|BunnyCDN<br>/<br>/|Bunny.net|[edge3.parrot.run](https://edge3.parrot.run)|<sub>deb https://edge3.parrot.run rolling main contrib non-free</sub>|
-|Alibaba<br>/<br>10 Gbps|Alibaba Cloud|[mirrors.aliyun.com/parrot](https://mirrors.aliyun.com/parrot)|<sub>deb https://mirrors.aliyun.com/parrot rolling main contrib non-free</sub>|
 
 ### NCSA ###
 North Central and South Americas
@@ -68,7 +58,7 @@ North Central and South Americas
 |Ecuador<br>UTA<br>100 Mbps|UTA (Universidad Técnica de ambato)|[mirror.uta.edu.ec/parrot](http://mirror.uta.edu.ec/parrot)|<sub>deb https://mirror.uta.edu.ec/parrot/rolling main contrib non-free<</sub>|
 |Ecuador<br>UEB<br>100 Mbps|UEB (Universidad Estatal de Bolivar)|[mirror.ueb.edu.ec/parrot](http://mirror.ueb.edu.ec/parrot)|<sub>deb https://mirror.ueb.edu.ec/parrot/ rolling main contrib non-free</sub>|
 |Brazil<br>USP<br>1 Gbps|University of Sao Paulo|[sft.if.usp.br/parrot](http://sft.if.usp.br/parrot)|<sub>deb http://sft.if.usp.br/parrot/ main contrib non-free</sub>|
-|Canada<br>/<br>/|0xem|[https://mirror.0xem.ma/parrot/](https://mirror.0xem.ma/parrot/)|<sub>deb https://mirror.0xem.ma/parrot/ main contrib non-free</sub>|
+|Canada<br>/<br>/|Emma Samms|[https://mirror.0xem.ma/parrot/](https://mirror.0xem.ma/parrot/)|<sub>deb https://mirror.0xem.ma/parrot/ main contrib non-free</sub>|
 
 
 ### EMEA ###

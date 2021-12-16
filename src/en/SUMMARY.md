@@ -31,6 +31,7 @@
     - [AppArmor](<./apparmor.md>)
     - [General usage on Docker](<./general-usage-docker.md>)
     - [Assistive Technologies](<./assistive-technologies.md>)
+    - [Make your Mirror](./make-mirror.md)
     - [Mirrors list](<./mirrors-list.md>)
     
 - [Troubleshooting]()
