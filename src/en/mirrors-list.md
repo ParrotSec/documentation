@@ -68,7 +68,7 @@ North Central and South Americas
 |Ecuador<br>UTA<br>100 Mbps|UTA (Universidad Técnica de ambato)|[mirror.uta.edu.ec/parrot](http://mirror.uta.edu.ec/parrot)|<sub>deb https://mirror.uta.edu.ec/parrot/rolling main contrib non-free<</sub>|
 |Ecuador<br>UEB<br>100 Mbps|UEB (Universidad Estatal de Bolivar)|[mirror.ueb.edu.ec/parrot](http://mirror.ueb.edu.ec/parrot)|<sub>deb https://mirror.ueb.edu.ec/parrot/ rolling main contrib non-free</sub>|
 |Brazil<br>USP<br>1 Gbps|University of Sao Paulo|[sft.if.usp.br/parrot](http://sft.if.usp.br/parrot)|<sub>deb http://sft.if.usp.br/parrot/ main contrib non-free</sub>|
-|Canada<br>/<br>/|0xem|[https://mirror.0xem.ma/parrot/](https://mirror.0xem.ma/parrot/)|<sub>deb https://mirror.0xem.ma/parrot/ main contrib non-free</sub>|
+|Canada<br>/<br>/|Emma Samms|[https://mirror.0xem.ma/parrot/](https://mirror.0xem.ma/parrot/)|<sub>deb https://mirror.0xem.ma/parrot/ main contrib non-free</sub>|
 
 
 ### EMEA ###
