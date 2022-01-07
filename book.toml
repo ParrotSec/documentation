@@ -48,3 +48,8 @@ description = "Documentación para ParrotOS"
 name = "Parrot OS French Documentation"
 title = "Documentation Parrot"
 description = "Documentation pour ParrotOS"
+
+[language.hi]
+name = "Parrot OS Hindi Documentation"
+title = "Parrot प्रलेखन"
+description = "के लिए दस्तावेज ParrotOS"
