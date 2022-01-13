@@ -72,7 +72,7 @@ North Central and South Americas
 
 
 ### EMEA ###
-Europe Middle East and Asia
+Europe Middle East and Africa
 
 | Location<br>Mirror ID<br>bandwidth | Provider Name | URL | APT config string |
 |:----------------------------------|:---------------:|:-----|:-------------------|

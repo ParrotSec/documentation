@@ -39,7 +39,7 @@ Once you’ve installed VirtualBox:
 
 ### Step 1.1 - Enter a name for your Virtual Machine ###
 
-Enter Parrot Security as the name. Set "Type" to **Linux**, and set "Version" to **Other Linux (64-bit)**.
+Enter Parrot Security as the name. Set "Type" to **Linux**, and set "Version" to **Debian (64-bit)**.
 
 <img src="./images/vbox/1.png" width="85%"/>
 
