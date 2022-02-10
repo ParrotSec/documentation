@@ -115,3 +115,4 @@ Asia and Pacific
 |New Caledonia<br>Lagoon<br>1 Gbps|Lagoon Networks|[mirror.lagoon.nc/pub/parrot](http://mirror.lagoon.nc/pub/parrot)|<sub>deb http://mirror.lagoon.nc/pub/parrot/ rolling main contrib non-free</sub>|
 |Thailand<br>KKU<br>1 Gbps|KKU (Khon Kaen University)|[mirror.kku.ac.th/parrot](http://mirror.kku.ac.th/parrot)|<sub>deb https://mirror.kku.ac.th/parrot/ rolling main contrib non-free</sub>|
 |Indonesia<br>Datautama<br>1 Gbps|Datautama (PT. Data Utama Dinamika)|[kartolo.sby.datautama.net.id/parrot](http://kartolo.sby.datautama.net.id/parrot)|<sub>deb http://kartolo.sby.datautama.net.id/parrot/ rolling main contrib non-free</sub>|
+|Thailand<br>NIPA.CLOUD<br>10 Gbps|NIPA.CLOUD 1st Cloud Thailand|[https://mirrors.nipa.cloud/parrot/](https://mirrors.nipa.cloud/parrot/)|<sub>deb https://mirrors.nipa.cloud/parrot/ rolling main contrib non-free</sub>|
