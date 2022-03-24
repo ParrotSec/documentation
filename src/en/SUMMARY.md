@@ -22,6 +22,7 @@
     
 - [Parrot Tools]()
     - [AnonSurf](<./anonsurf.md>)
+    - [nmap](<./nmap.md>)
 
 - [Configuration]()
     - [Parrot Software Management](<./parrot-software-management.md>) 
