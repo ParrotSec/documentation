@@ -16,24 +16,24 @@
     - [Parrot in a Virtual Machine]()
         - [Install Parrot on VirtualBox](<./install-parrot-on-virtualbox.md>)
         - [Virtualbox Guest Additions](<./virtualbox-guest-additions.md>)
+        - [Parrot on VMware](<./parrot-on-vmware.md>)
     - [Parrot on Docker](<./parrot-on-docker.md>)
     - [Dualboot with Windows](<./dualboot-with-windows.md>)
-    - [Parrot on QubesOS](<./parrot-on-qubesos.md>)
-
+    
 - [Parrot Tools]()
     - [AnonSurf](<./anonsurf.md>)
 
 - [Configuration]()
-    - [Parrot Software Management](<./parrot-software-management.md>)
+    - [Parrot Software Management](<./parrot-software-management.md>) 
     - [Nvidia drivers](<./nvidia-drivers.md>)
     - [File and Directory Permissions](<./file-and-directory-permissions.md>)
     - [Hash and key verification](<./hash-and-key-verification.md>)
     - [AppArmor](<./apparmor.md>)
     - [General usage on Docker](<./general-usage-docker.md>)
     - [Assistive Technologies](<./assistive-technologies.md>)
-    - [Make your Mirror](./make-mirror.md)
+    - [Make your Mirror](<./make-mirror.md>)
     - [Mirrors list](<./mirrors-list.md>)
-    
+
 - [Troubleshooting]()
     - [Grub](<./troubleshooting-grub.md>)
 

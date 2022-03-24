@@ -43,13 +43,6 @@ available flavors:
 
 **parrotsec/core:rolling-i386** - based on parrot rolling (debian testing) i386
 
-**parrotsec/core:lts-amd64** - based on parrot lts (devuan stable) amd64
-
-**parrotsec/core:lts-i386** - based on parrot lts (devuan stable) i386
-
-**parrotsec/core:lts-arm64** - based on parrot lts (devuan stable) arm64
-
-**parrotsec/core:lts-armhf** - based on parrot lts (devuan stable) armhf
 
 *launch the container*:
     

@@ -3,20 +3,22 @@
 <h1 align="center">What is Parrot OS?</h1>
 
 
-Parrot Security (Parrot OS, Parrot) is a Free and Open source GNU/Linux distribution based on *Debian Testing* designed for security experts, developers and privacy aware people.
+Parrot Security (Parrot OS, Parrot) is a Free and Open source GNU/Linux distribution based on *Debian Stable* designed for security experts, developers and privacy aware people.
 
 It includes a full portable arsenal for IT security and digital forensics operations. It also includes everything you need to develop your own programs or protect your privacy while surfing the net.
 
-Parrot is available in the [Security](https://parrotsec.org/security-edition) and [Home](https://parrotsec.org/home-edition) Editions, even as VM and also on Docker.
+Parrot is available in three main editions, [Security](https://parrotsec.org/download/?version=security), [Home](https://parrotsec.org/download/?version=security) and [Architect](https://parrotsec.org/download/?version=architect) Edition, even as Virtual Machine (Virtual Box, Parallels and VMware), on [Raspberry Pi](https://parrotsec.org/download/?version=raspberry) and also on Docker.
 
-The operating system ships by default with either MATE, KDE and XFCE (only Home Edition) Desktop Environments.
+From version 5.0 LTS, support for ARM platforms (arm64 and armhf) is back, and some images are also available for boards like Raspberry Pi.
+
+The operating system ships by default with MATE Desktop Environment, but it is possible to install others DEs.
 
 \
 \
 
 ![ParrotOS Desktop](./images/parrot_desktop.png)
 
-<h5 align="center">Parrot Security 4.11 with MATE Desktop</h5>
+<h5 align="center">Parrot Security 5.0 with MATE Desktop</h5>
 
 \
 
@@ -27,6 +29,10 @@ The first public release appeared on April 10th, 2013 as the result of the work 
 Originally developed as part of Frozenbox (a community forum by the same creator of Parrot), the effort has grown to include a community of open source developers, professional security experts, advocates of digital rights, and Linux enthusiasts from all around the globe.
 
 The project is headquartered in Palermo, Italy and governed by Parrot Security CIC, a community interest company registered in the UK.
+
+## Why "Parrot"? ##
+
+*Because it was born as a game, and every pirate of the seven seas needs a parrot on his shoulders if he wants to board the galleons with his crew of jailbird filibusters*.
 
 ### Who is it designed for ###
 

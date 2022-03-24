@@ -70,7 +70,7 @@ For more infomations, check the [VirtualBox manual](https://www.virtualbox.org/m
 
 \
 
-**2.** VirtualBox will not find the Guest Additions and for this it will ask you to download them, click on *Download*. We recommend adding an additional secondary optical drive, because once the guest additions are downloaded, they will be mounted on a second drive.
+**2.** VirtualBox will not automatically find the Guest Additions, instead it will ask you to download them (Click on *Download*). We recommend adding an additional secondary optical drive, because once the guest additions are downloaded, they will be mounted on a second drive.
 
 <img src="./images/vbox/guest_additions2.png" width="85%"/> 
 
@@ -88,16 +88,16 @@ Click on "**insert**". If it returns an error (maybe it can't mount the iso you 
 
 <img src="./images/vbox/guest_additions5.png"/> 
 
-**3.** Then go to the Guest Addition ISO folder, and here open a terminal and give 
+**3.** Then go to the Guest Addition ISO folder, open a terminal and type
 
     sudo chmod +x VBoxLinuxAdditions.run
 
-Once done it, execute
+Once done, execute
 
     sudo ./VBoxLinuxAdditions.run
 
 
-**4.** Wait for the installation process. At installation completed, reboot the virtual machine with 
+**4.** Wait for the installation to finish. Once completed, reboot the virtual machine with 
 
 <img src="./images/vbox/guest_additions6.png" width="80%"/> 
 

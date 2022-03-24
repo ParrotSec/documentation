@@ -52,7 +52,7 @@ launch the following command:
 
 and add the following content to the crontab file:
 
-    */10 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot'
+    */10 * * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot /var/www/html/parrot
 
 
 
@@ -74,7 +74,7 @@ launch the following command:
 
 and add the following content to the crontab file:
 
-    30 2 * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot
+    30 2 * * * flock -xn /tmp/parrot-rsync.lock -c 'rsync -aq --delete-after rsync://rsync.parrot.sh:/parrot-iso /var/www/html/parrot'
 
 
 ### Expose your mirror via rsync ###

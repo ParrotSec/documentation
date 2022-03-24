@@ -51,4 +51,4 @@ Our community lives in several places, here are some links to stay in touch with
 |<strong>Russian Community</strong>|<a href="https://t.me/ParrotSecRU">Telegram</a>|
 |<strong>Turkish Community</strong>|<a href="https://t.me/parrotsecturkey">Telegram</a>|
 |<strong>Brazilian Community</strong>|<a href="https://t.me/ParrotOSBR">Telegram</a>|
-|<strong>Poland Community</strong>|<a href="https://t.me/+GHKJSCbDrp9mYzlk">Telegram</a>|
+|<strong>Poland Community</strong>|<a href="https://t.me/+aNKyFiv1suZkNTc0">Telegram</a>|

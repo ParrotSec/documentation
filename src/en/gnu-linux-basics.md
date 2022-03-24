@@ -12,7 +12,7 @@ Four are the freedoms that define "Free Software":
 - **Freedom 3**: The freedom to distribute copies of its modified versions to third parties. This allows you to offer the entire community the opportunity to benefit from the modifications. Access to the source code is a necessary condition for this.
 
 \
-A program is "free software" if it appropriately grants users all of these freedoms. Otherwise it is not free. It is said to be "Proprietary Software" or "Proprietary Software".
+A program is "free software" if it appropriately grants users all of these freedoms. Otherwise it is not free. It is said to be "Proprietary Software".
 
 By way of summary we could say that:
 - "Free Software" or "Libre Software" does not necessarily mean that it is free, although in many cases it is.

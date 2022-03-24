@@ -1,12 +1,24 @@
 # How to install Parrot OS #
 
-This is a guide that will help you install Parrot OS (latest version) on your computer step-by-step through the default and official installer: *Calamares*. 
+This guide will help you install Parrot OS (latest version) on your computer step-by-step through the default official installer: *Calamares*. 
 
-This guide applies to both the [Security](https://parrotsec.org/security-edition) and [Home](https://parrotsec.org/home-edition) Editions.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <i class="fa fa-info-circle badge" aria-hidden="true"></i>
+
+**Note**
+
+  </div>
+  <div class="panel-body">
+  The following guide is for ParrotOS 4.11, but the installation procedure is the same for installing ParrotOS 5.0 (it will be properly updated soon).
+  </div>
+</div>
+
+This guide applies to both the [Security](https://parrotsec.org/download/?version=security) and [Home](https://parrotsec.org/download/?version=home) Edition.
 
 Any problems or missing details, please report it to the official [Parrot forum](https://community.parrotsec.org).
 
-Insert your installation media into your computer and through your BIOS settings start Parrot. A screen will appear with several options, including some more advanced ones. 
+Insert your installation media into your computer and through your BIOS settings start Parrot. A screen will appear with several options, including some more advanced. 
 
 Select **Try/Install** and press *Enter*.
 

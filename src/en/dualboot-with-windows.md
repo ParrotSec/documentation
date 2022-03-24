@@ -82,3 +82,4 @@ Set the mount point in **/boot/efi** then click on *OK*:
 This is the final situation, proceed with the installation by clicking on *Next*:
 
 <img src="./images/dualboot/db12.png"/>
+
