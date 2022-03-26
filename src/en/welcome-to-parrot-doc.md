@@ -17,11 +17,8 @@ At the moment, it is divided into three main areas:
 \
 
 <div style="text-align: center;">
-    <a href="https://parrotsec.org/blog/2022-03-24-what’s-new-with-parrot-5.0"><img src="./images/parrot-5.png" width="100%"/></a>
+    <a href="https://parrotsec.org/blog/2022-03-24-parrot-5.0-press-release"><img src="./images/parrot-5.png" width="100%"/></a>
 </div>
-
-
-## This Documentation ##
 
 This documentation has been possible thanks to Parrot OS community members's work.
 
