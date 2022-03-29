@@ -13,7 +13,7 @@ RUN apt update;apt -y install cargo --no-install-recommends;rm -rf /var/lib/apt/
 # Install mdbook
 RUN git clone https://github.com/Ruin0x11/mdBook.git /mdbook
 WORKDIR /mdbook
-RUN git checkout localization && \
+RUN git checkout localization-4 && \
     cargo build --release
 RUN mv /mdbook/target/release/mdbook /usr/bin/mdbook && \
     chmod +x /usr/bin/mdbook && \
