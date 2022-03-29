@@ -36,7 +36,7 @@ First of all, being written in Nim, some dependencies need to be installed:
 
 \
 
-    nimble install gintro
+    sudo apt install libnim-gintro-dev
 
 Then you can download the anonsurf source:
 
