@@ -62,6 +62,21 @@ Once the file has been saved, proceed with the installation of the Nvidia driver
 
     sudo apt update && sudo apt install nvidia-driver
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <i class="fa fa-info-circle badge" aria-hidden="true"></i>
+
+**Note**
+
+  </div>
+  <div class="panel-body">
+  From kernel 5.16, for compatibility problems, it may be necessary to install the drivers with the following command:
+        
+    sudo apt install nvidia-driver -t parrot-backports
+
+  </div>
+</div>
+
 This completes the installation, but we recommend that you check that everything went well. To do this, you can use the official utility from Nvidia called [nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface).
 
 Install it by running:
