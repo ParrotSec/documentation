@@ -28,7 +28,7 @@ If for any reason AppArmor is not pre-installed, continue reading below.
 
 \
 
-To enable AppArmor run the followng commands:
+To enable AppArmor run the following commands:
 
     sudo mkdir -p /etc/default/grub.d
 

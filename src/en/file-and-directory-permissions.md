@@ -15,7 +15,7 @@ The output of the command `ls -l` indicates whether it is a file (-) or director
 
 **Write** permission, represented by the "**w**" letter.
 
-**Execution** permission, repersented by the "**x**" letter.
+**Execution** permission, represented by the "**x**" letter.
 
 The meaning of the permissions is different for files and folders. We will explain each of these.
 
