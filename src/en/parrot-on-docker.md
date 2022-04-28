@@ -223,7 +223,7 @@ Example usage:
     
     cd metasploit-framework
 
-*make your modfications to the package here*
+*make your modifications to the package here*
 
     cd ..
 

@@ -84,7 +84,7 @@ For more infomations, check the [VirtualBox manual](https://www.virtualbox.org/m
 
 \
 
-Click on "**insert**". If it returns an error (maybe it can't mount the iso you just downloaded, then turn off the virtual machine, and return to the main VirtualBox screen, go to *Setting > Storage*, here add another optical drive (make sure it is secondary so as not to give problems in booting the distro). 
+Click on "**insert**". If it returns an error (maybe it can't mount the iso you just downloaded, then turn off the virtual machine, and return to the main VirtualBox screen, go to *Setting > Storage*, here add another optical drive and make sure it is secondary so as not to give problems in booting the distro). 
 
 <img src="./images/vbox/guest_additions5.png"/> 
 
