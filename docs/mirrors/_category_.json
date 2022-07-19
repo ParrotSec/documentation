@@ -1,0 +1,8 @@
+{
+    "label": "Mirrors",
+    "position": 10,
+    "link": {
+      "type": "generated-index",
+      "description": "The software in the parrot archive is delivered in form of deb packages, and these packages are served through a vast network of mirror servers that provide the same set of packages distributed all around the world for faster software delivery."
+    }
+}

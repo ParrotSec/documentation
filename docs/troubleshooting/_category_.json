@@ -1,0 +1,8 @@
+{
+    "label": "Troubleshooting",
+    "position": 8,
+    "link": {
+        "type": "generated-index",
+        "description": "In this section there will be guides or tutorials to solve some possible problems that an inexperienced user might face."
+    }
+}

@@ -1,19 +1,41 @@
-# Parrot Documentation
+# Website
 
-This repository holds the Parrot Security documentation source code.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Dependencies
+### Installation
 
-The only dependency to build the project is `docker`, or any other OCI-compatible container software. `podman` is supported as well.
+```
+$ yarn
+```
 
-## Test the project
+### Local Development
 
-run: `make test`
+```
+$ yarn start
+```
 
-then open `localhost:3000`
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build the project
+### Build
 
-run: `make build`
+```
+$ yarn build
+```
 
-then check the `build` directory
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
