@@ -60,7 +60,7 @@ const config = {
     ({
       defaultMode: 'dark',
       navbar: {
-        title: 'ParrotOS',
+        /* title: 'ParrotOS', */
         logo: {
           alt: 'Parrot Logo',
           src: 'img/parrot-logo.svg',
@@ -157,6 +157,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  customFields: {
+		wallpaper: 'parrot_desktop.png',
+	},
 };
 
 module.exports = config;

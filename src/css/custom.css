@@ -33,3 +33,7 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: #5CCCFA;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.navbar__brand {
+  margin-right: 0;
+}

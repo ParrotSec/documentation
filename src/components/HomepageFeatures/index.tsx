@@ -73,11 +73,11 @@ const FeatureList = [
 
 function Feature({id, title, Svg, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4 card text--center shadow--lw')}>
       <div className="text--center">
         <Svg id={id} className={styles.featureSvg} role='img' />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--xs">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
