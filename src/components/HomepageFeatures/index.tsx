@@ -17,7 +17,7 @@ const FeatureList = [
   {
     id: 2,
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/feature_images/download.svg').default,
+    Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go

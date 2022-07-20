@@ -2,6 +2,7 @@
     "label": "Virtualization",
     "position": 4,
     "link": {
-      "type": "generated-index"
+      "type": "generated-index",
+      "description": "Parrot on VirtualBox and VMware."
     }
   }

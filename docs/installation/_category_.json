@@ -2,6 +2,7 @@
     "label": "Installation",
     "position": 3,
     "link": {
-      "type": "generated-index"
+      "type": "generated-index",
+      "description": "How to install ParrotOS on your computer? Follow these guides step by step."
     }
   }
