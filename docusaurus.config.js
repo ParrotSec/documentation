@@ -69,12 +69,13 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'welcome-to-parrot-doc',
+            docId: 'introduction/what-is-parrot',
             position: 'left',
             label: 'Documentation',
           },
           /** {to: '/blog', label: 'Blog', position: 'left'}, **/
           {to: 'https://parrotsec.org/download', label: 'Download', position: 'left'},
+          {to: 'https://parrotsec.org/contribute/', label: 'Contribute', position: 'left'},
           {
             href: 'https://nest.parrotsec.org',
             label: 'GitLab',

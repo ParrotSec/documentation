@@ -5,29 +5,27 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     id: 1,
-    title: 'Easy to Use',
+    title: 'Introduction',
     Svg: require('@site/static/img/feature_images/download.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Containing all the basic information on the Parrot project.
       </>
     ),
   },
   {
     id: 2,
-    title: 'Focus on What Matters',
+    title: 'Installation',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Where it is shown how to install Parrot on your physical or virtual machine, create a boot device, docker, etc...
       </>
     ),
   },
   {
     id: 3,
-    title: 'Powered by React',
+    title: 'Virtualization',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -38,18 +36,17 @@ const FeatureList = [
   },
   {
     id: 4,
-    title: 'Easy to Use',
+    title: 'Configuration',
     Svg: require('@site/static/img/feature_images/troubleshooting.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Here you will find the more technical aspects, some tips on how to configure some software, management of your system, etc...
       </>
     ),
   },
   {
     id: 5,
-    title: 'Focus on What Matters',
+    title: 'Cloud',
     Svg: require('@site/static/img/feature_images/getstarted.svg').default,
     description: (
       <>
@@ -60,7 +57,7 @@ const FeatureList = [
   },
   {
     id: 6,
-    title: 'Powered by React',
+    title: 'USB',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -71,7 +68,7 @@ const FeatureList = [
   },
   {
     id: 7,
-    title: 'Easy to Use',
+    title: 'Troubleshooting',
     Svg: require('@site/static/img/feature_images/download.svg').default,
     description: (
       <>
@@ -82,7 +79,7 @@ const FeatureList = [
   },
   {
     id: 8,
-    title: 'Focus on What Matters',
+    title: 'Tools',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -93,7 +90,7 @@ const FeatureList = [
   },
   {
     id: 9,
-    title: 'Powered by React',
+    title: 'Mirrors',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -126,6 +123,11 @@ export default function HomepageFeatures(): JSX.Element {
           {FeatureList.map((props) => (
             <Feature key={props.id} {...props} />
           ))}
+        </div>
+        <div className="container padding-top--lg text--center">
+          <div className="padding-horiz--md">
+            <p>The documentation is a continuous Work In Progress (WIP), and <strong>all Parrot users</strong> are invited to contribute to the creation and translation process of this portal.</p>
+          </div>
         </div>
       </div>
     </section>

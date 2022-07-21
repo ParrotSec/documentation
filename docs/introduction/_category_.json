@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form."
+    "description": "This documentation has been possible thanks to ParrotOS community members's work. If you want to join us and collaborate with this project, we invite you to join in our Telegram chat group. You can find us on our Facebook group too. Also, if you find some mistake (hey! we're humans), you can write an email to: team@parrotsec.org or open a merge request in the official documentation repository. it will be analyzed and reviewed as soon as possible."
   }
 }

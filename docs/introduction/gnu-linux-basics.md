@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # What is GNU/Linux?
 
+GNU/Linux is an operating system built over the years thanks to the contributions of many developers around the world. Few of its peculiarities will be described here.
+
 ## Free Software
 
 "Free software" is software that respects the freedom of users and their community. Broadly speaking, it means that users have the freedom to run, copy, distribute, study, modify, and improve the software. In other words, "free software" is a question of freedom, not price. To understand the concept, think of "free" as "free speech", not "free beer." In English, sometimes in the place of "free software" we say "libre software", using that spanish adjective, derived from "freedom", to show that we do not mean that the software is free.
