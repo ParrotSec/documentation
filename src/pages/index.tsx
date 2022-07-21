@@ -34,13 +34,13 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       {/* HomepageContainer */}
-      <div className='padding-vert--lg text--center'>
+      <div className="padding-vert--lg text--center">
         <h1 className="hero__title">{siteConfig.title}</h1>
       </div>
       <div className="container">
         <div className="row">
           <div className="col col--7 hero__subtitle text--center">
-            <p className='hero__subtitle'>{siteConfig.tagline}</p>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
             <div className={styles.buttons}>
               <Link
                 className="button button--outline button--secondary button--lg"
