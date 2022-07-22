@@ -6,7 +6,7 @@ const FeatureList = [
   {
     id: 1,
     title: 'Introduction',
-    Svg: require('@site/static/img/feature_images/download.svg').default,
+    Svg: require('@site/static/img/feature_images/getstarted.svg').default,
     description: (
       <>
         Containing all the basic information on the Parrot project.
@@ -37,7 +37,7 @@ const FeatureList = [
   {
     id: 4,
     title: 'Configuration',
-    Svg: require('@site/static/img/feature_images/troubleshooting.svg').default,
+    Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
         Here you will find the more technical aspects, some tips on how to configure some software, management of your system, etc...
@@ -47,7 +47,7 @@ const FeatureList = [
   {
     id: 5,
     title: 'Cloud',
-    Svg: require('@site/static/img/feature_images/getstarted.svg').default,
+    Svg: require('@site/static/img/feature_images/cloud.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -69,7 +69,7 @@ const FeatureList = [
   {
     id: 7,
     title: 'Troubleshooting',
-    Svg: require('@site/static/img/feature_images/download.svg').default,
+    Svg: require('@site/static/img/feature_images/troubleshooting.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -80,7 +80,7 @@ const FeatureList = [
   {
     id: 8,
     title: 'Tools',
-    Svg: require('@site/static/img/feature_images/config.svg').default,
+    Svg: require('@site/static/img/feature_images/tools.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
