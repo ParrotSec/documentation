@@ -32,7 +32,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description={`${siteConfig.tagline}`}>
       <div className="padding-vert--lg text--center">
         <h1 className="hero__title">{siteConfig.title}</h1>
       </div>

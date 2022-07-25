@@ -1,11 +1,13 @@
 import React, { ElementType } from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
     id: 1,
     title: 'Introduction',
+    url: '/docs/introduction/what-is-parrot',
     Svg: require('@site/static/img/feature_images/getstarted.svg').default,
     description: (
       <>
@@ -16,16 +18,19 @@ const FeatureList = [
   {
     id: 2,
     title: 'Installation',
+    url: '/docs/installation',
     Svg: require('@site/static/img/feature_images/installation.svg').default,
     description: (
       <>
-        Where it is shown how to install Parrot on your physical or virtual machine, create a boot device, docker, etc...
+        Where it is shown how to install Parrot on your physical or virtual
+        machine, create a boot device, Docker, etc...
       </>
     ),
   },
   {
     id: 3,
     title: 'Virtualization',
+    url: '/docs/category/virtualization',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -37,80 +42,88 @@ const FeatureList = [
   {
     id: 4,
     title: 'Configuration',
+    url: '/docs/category/configuration',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
-        Here you will find the more technical aspects, some tips on how to configure some software, management of your system, etc...
+        Find the more technical aspects, some tips on how to configure 
+        some software, management of your system, etc...
       </>
     ),
   },
   {
     id: 5,
     title: 'Cloud',
+    url: '/docs/category/cloud',
     Svg: require('@site/static/img/feature_images/cloud.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Install ParrotOS on your servers, or use it as a Docker container.
       </>
     ),
   },
   {
     id: 6,
     title: 'USB',
-    Svg: require('@site/static/img/feature_images/config.svg').default,
+    url: '/docs/usb/how-to-create-a-parrot-usb-drive',
+    Svg: require('@site/static/img/feature_images/usb.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Create a bootable USB with ParrotOS inside, install the OS or 
+        try it in live mode.
       </>
     ),
   },
   {
     id: 7,
     title: 'Troubleshooting',
+    url: '/docs/category/troubleshooting',
     Svg: require('@site/static/img/feature_images/troubleshooting.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Here there will be guides or tutorials to solve some possible
+        problems that an inexperienced user might face.
       </>
     ),
   },
   {
     id: 8,
     title: 'Tools',
+    url: '/docs/category/tools',
     Svg: require('@site/static/img/feature_images/tools.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        This section contains some information on some of the software most
+        used or developed by the Parrot team.
       </>
     ),
   },
   {
     id: 9,
     title: 'Mirrors',
-    Svg: require('@site/static/img/feature_images/config.svg').default,
+    url: '/docs/mirrors/mirrors-list',
+    Svg: require('@site/static/img/feature_images/mirrors.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The software in the Parrot archive is delivered in form of deb packages, 
+        and these packages are served through a vast network of mirror servers.
       </>
     ),
   },
 ];
 
-function Feature({id, title, Svg, description}) {
+function Feature({id, title, Svg, description, url}) {
   return (
-    <div className="col col--3 card text--center shadow--lw margin--md">
-      <div className="text--center">
-        <Svg id={id} className={styles.featureSvg} role='img' />
-      </div>
-      <div className="text--center padding-horiz--xs">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+    <div className="col col--3 card text--center shadow--md margin--md">
+      <Link to={url}>
+        <div className="text--center padding-vert--md">
+          <Svg id={id} className={styles.featureSvg} role='img' />
+        </div>
+        <div className="text--center padding-horiz--xs">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </Link>
     </div>
   );
 }
