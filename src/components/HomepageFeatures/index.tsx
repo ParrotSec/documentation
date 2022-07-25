@@ -1,6 +1,6 @@
-import React, { ElementType } from 'react';
+import React from 'react';
 import clsx from 'clsx';
-import styles from './styles.module.css';
+import styles from './index.module.css';
 import Link from '@docusaurus/Link';
 
 const FeatureList = [
@@ -112,12 +112,12 @@ const FeatureList = [
   },
 ];
 
-function Feature({id, title, Svg, description, url}) {
+function Feature({title, Svg, description, url}) {
   return (
     <div className="col col--3 card text--center shadow--md margin--md">
-      <Link to={url}>
+      <Link to={url} style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <div className="text--center padding-vert--md">
-          <Svg id={id} className={styles.featureSvg} role='img' />
+          <Svg className={styles.featureSvg} role='img' />
         </div>
         <div className="text--center padding-horiz--xs">
           <h3>{title}</h3>
@@ -139,7 +139,11 @@ export default function HomepageFeatures(): JSX.Element {
         </div>
         <div className="container padding-top--lg text--center">
           <div className="padding-horiz--md">
-            <p>The documentation is a continuous Work In Progress (WIP), and <strong>all Parrot users</strong> are invited to contribute to the creation and translation process of this portal.</p>
+            <p>
+              The documentation is a continuous Work In Progress (WIP), 
+              and <strong>all Parrot users</strong> are invited to 
+              contribute to the creation and translation process of this portal.
+            </p>
           </div>
         </div>
       </div>
