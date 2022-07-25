@@ -33,7 +33,6 @@ export default function Home(): JSX.Element {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      {/* HomepageContainer */}
       <div className="padding-vert--lg text--center">
         <h1 className="hero__title">{siteConfig.title}</h1>
       </div>
@@ -58,70 +57,8 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      {/*<HomepageHeader />*/}
       <main>
         <HomepageFeatures />
-        {/*<div className="container">
-          <div className="row">
-            <div className="col col--4">
-              <div className="card-demo">
-                <div className="card">
-                  <div className="card__header">
-                    <h3>Lorem Ipsum</h3>
-                  </div>
-                  <div className="card__body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                      suspendisse ultrices gravida.
-                    </p>
-                  </div>
-                  <div className="card__footer">
-                    <button className="button button--secondary button--block">See All</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col col--4">
-              <div className="card-demo">
-                <div className="card">
-                  <div className="card__header">
-                    <h3>Lorem Ipsum</h3>
-                  </div>
-                  <div className="card__body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                      suspendisse ultrices gravida.
-                    </p>
-                  </div>
-                  <div className="card__footer">
-                    <button className="button button--secondary button--block">See All</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col col--4">
-              <div className="card-demo">
-                <div className="card">
-                  <div className="card__header">
-                    <h3>Lorem Ipsum</h3>
-                  </div>
-                  <div className="card__body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                      suspendisse ultrices gravida.
-                    </p>
-                  </div>
-                  <div className="card__footer">
-                    <button className="button button--secondary button--block">See All</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>*/}
       </main>
     </Layout>
   );

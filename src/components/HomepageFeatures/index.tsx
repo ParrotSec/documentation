@@ -16,7 +16,7 @@ const FeatureList = [
   {
     id: 2,
     title: 'Installation',
-    Svg: require('@site/static/img/feature_images/config.svg').default,
+    Svg: require('@site/static/img/feature_images/installation.svg').default,
     description: (
       <>
         Where it is shown how to install Parrot on your physical or virtual machine, create a boot device, docker, etc...
