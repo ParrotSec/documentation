@@ -27,7 +27,7 @@ function HomepageHeader() {
 			<div className="col col--5">
 				<div className="card__image margin--md">
 					<img
-							src={useBaseUrl(`img/${siteConfig.customFields.wallpaper}`)}
+						src={useBaseUrl(`img/${siteConfig.customFields.wallpaper}`)}
 					/>
 				</div>
 			</div>

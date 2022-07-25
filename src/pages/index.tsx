@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageHeader from '@site/src/components/HomepageHeader';
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
@@ -17,3 +17,5 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
+
+export default Home
