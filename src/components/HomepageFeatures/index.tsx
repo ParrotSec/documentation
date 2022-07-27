@@ -31,7 +31,7 @@ const FeatureList = [
     id: 3,
     title: 'Virtualization',
     url: '/docs/category/virtualization',
-    Svg: require('@site/static/img/feature_images/config.svg').default,
+    Svg: require('@site/static/img/feature_images/virtualization.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -137,7 +137,7 @@ function HomepageFeatures(): JSX.Element {
             <Feature key={props.id} {...props} />
           ))}
         </div>
-        <div className="container padding-top--lg text--center">
+        <div className="container__items--center padding-top--lg text--center">
           <div className="padding-horiz--md">
             <p>
               The documentation is a continuous Work In Progress (WIP), 
