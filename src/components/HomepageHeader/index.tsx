@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
@@ -18,20 +18,20 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--outline button--secondary button--lg"
-						to="/docs/category/introduction">
+						to="docs/introduction/what-is-parrot">
 						Get Started
 					</Link>
 				</div>
 			</div>
 			{/*
-      <div className="col col--5">
+			<div className="col col--5">
 				<div className="card__image margin--md">
 					<img
 						src={useBaseUrl(`img/${siteConfig.customFields.wallpaper}`)}
 					/>
 				</div>
-      </div>
-      */}
+			</div>
+			*/}
 			</div>
 		</div>
 	);
