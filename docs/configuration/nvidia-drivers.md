@@ -8,7 +8,7 @@ Initially, Parrot uses the Nvidia **nouveau open source drivers**, since they su
 
 However, it may be necessary to use other drivers that give greater compatibility with different software and make the most of your GPU. For this reason, you can install **Nvidia's official (closed source) drivers**.
 
-You have two ways to install, either via [the Parrot repository](./nvidia-drivers.html#install-the-driver-via-the-parrot-repository) or [from the official Nvidia website](./nvidia-drivers.html#install-the-driver-from-the-official-nvidia-website).
+You have two ways to install, either via [the Parrot repository](./nvidia-drivers.html#install-the-driver-via-the-parrot-repositories) or [from the official Nvidia website](./nvidia-drivers.html#install-the-driver-from-the-official-nvidia-website).
 
 
 :::info Note

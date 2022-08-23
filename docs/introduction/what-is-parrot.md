@@ -8,7 +8,7 @@ Parrot Security (ParrotOS, Parrot) is a Free and Open source GNU/Linux distribut
 
 It includes a full portable arsenal for IT security and digital forensics operations. It also includes everything you need to develop your own programs or protect your privacy while surfing the net.
 
-Parrot is available in three main editions, [Security](https://parrotsec.org/download/?version=security), [Home](https://parrotsec.org/download/?version=security) and [Architect](https://parrotsec.org/download/?version=architect) Edition, even as Virtual Machine (Virtual Box, Parallels and VMware), on [Raspberry Pi](https://parrotsec.org/download/?version=raspberry) and also on Docker.
+Parrot is available in three main editions, [Security](https://parrotsec.org/download/?version=security), [Home](https://parrotsec.org/download/?version=home) and [Architect](https://parrotsec.org/download/?version=architect) Edition, even as Virtual Machine (Virtual Box, Parallels and VMware), on [Raspberry Pi](https://parrotsec.org/download/?version=raspberry) and also on Docker.
 
 From version 5.0 LTS, support for ARM platforms (arm64 and armhf) is back, and some images are also available for boards like Raspberry Pi.
 
@@ -34,7 +34,7 @@ The project is headquartered in Palermo, Italy and governed by Parrot Security C
 
 The system is designed to be familiar for the security expert and easy to use for the new entry student, but it does not try to hide its internals as other general purpose distributions try to do.
 
-Parrot can be used as a daily system. It provides all the programs for the day to day tasks, including a dedicated edition of the system ([Parrot Home Edition](../en/download-parrot.html#security-or-home-edition-which-one-should-i-choose)) that doesn't include security tools.
+Parrot can be used as a daily system. It provides all the programs for the day to day tasks, including a dedicated edition of the system ([Parrot Home Edition](https://parrotsec.org/download/?version=home)) that doesn't include security tools.
 
 ### Software Management
 

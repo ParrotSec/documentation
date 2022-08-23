@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Parrot OS is available for download [here](https://parrotsec.org/download/).
 
-The OS also runs on older machines, but it is recommended to consult the system requirements [here](./system-requirements.html).
+The OS also runs on older machines, but it is recommended to consult the system requirements.
 
 ## Which version should I choose?
 
