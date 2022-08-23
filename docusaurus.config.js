@@ -10,7 +10,7 @@ const config = {
   tagline: 'An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.',
   url: 'https://parrotsec.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
