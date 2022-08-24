@@ -1,8 +1,12 @@
-image:
-	docker build -t parrot-documentation .
+dev:
+	docker build --target development -t parrot-documentation .
 
-build: image
-	docker run --rm -ti -v $(shell pwd):/project mdbook - build
+prod:
+	docker build --target production -t parrot-documentation .
 
-test: image
+test: dev
 	docker run --rm -ti -p 3000:3000 parrot-documentation
+
+deploy:
+	docker build --target deploy -t parrot-documentation .
+	docker run --rm -ti -p 8080:80 parrot-documentation
