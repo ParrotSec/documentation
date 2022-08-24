@@ -1,12 +1,13 @@
-FROM node:16-alpine
+FROM alpine:3.16
 LABEL maintainer="danterolle@parrotsec.org"
 
-# Update system
-RUN apk add git
+RUN apk add nodejs yarn && yarn install
 
+COPY ./ /documentation/
+WORKDIR /documentation/
+
+RUN yarn install
 EXPOSE 3000
-RUN git clone https://github.com/ParrotSec/documentation.git /documentation
-WORKDIR /documentation
 
-RUN npm install
-CMD ["npm", "run", "start"]
+ENTRYPOINT [ "/usr/bin/yarn" ]
+CMD [ "start", "--host", "0.0.0.0" ]
