@@ -4,7 +4,7 @@ LABEL maintainer="danterolle@parrotsec.org"
 # DEVELOPMENT TARGET
 FROM base AS development
 
-RUN apk add nodejs yarn && yarn install
+RUN apk add nodejs yarn
 COPY ./ /documentation/
 WORKDIR /documentation/
 
