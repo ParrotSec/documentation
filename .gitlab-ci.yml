@@ -1,13 +1,49 @@
 services:
   - docker:dind
 
-stages:
-  - build
+.test: &test-script |
+  docker build -t test .
+  mkdir -p build
+  docker run --rm -ti -v $(pwd)/build:/build test -- cp /documentation/build /build
 
-docker_build:
+
+.beta: &beta-script |
+  docker build -t private.parrot.run/documentation:beta .
+  echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+  docker push private.parrot.run/documentationg:beta
+
+
+.prod: &prod-script |
+  docker build -t private.parrot.run/documentation:latest .
+  echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+  docker push private.parrot.run/documentationg:latest
+
+
+
+build_production:
   stage: build
+  only:
+    - master
   image: docker:latest
   script:
-    - docker build -t private.parrot.run/documentation:latest .
-    - echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
-    - docker push private.parrot.run/documentationg:latest
+    - *prod-script
+
+build_beta:
+  stage: build
+  only:
+    - beta
+  image: docker:latest
+  script:
+    - *beta-script
+
+build_test:
+  stage: build
+  except:
+    - beta
+    - master
+  image: docker:latest
+  artifacts:
+    paths:
+      - build
+  script:
+    - *test-script
