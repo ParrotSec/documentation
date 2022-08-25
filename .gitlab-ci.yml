@@ -9,13 +9,13 @@ services:
 
 .beta: &beta-script |
   docker build -t private.parrot.run/documentation:beta .
-  echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+  docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD private.parrot.run
   docker push private.parrot.run/documentation:beta
 
 
 .prod: &prod-script |
   docker build -t private.parrot.run/documentation:latest .
-  echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+  docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD private.parrot.run
   docker push private.parrot.run/documentation:latest
 
 

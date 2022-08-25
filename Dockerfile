@@ -22,4 +22,4 @@ RUN yarn run build
 FROM nginx:stable-alpine AS deploy
 
 WORKDIR /documentation/
-COPY --from=production /documentation/build /usr/share/nginx/html/
+COPY --from=production /usr/share/nginx/html/
