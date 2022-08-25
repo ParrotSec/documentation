@@ -4,19 +4,19 @@ services:
 .test: &test-script |
   docker build -t test .
   mkdir -p build
-  docker run --rm -ti -v $(pwd)/build:/build test -- cp /documentation/build /build
+  docker run --rm -ti -v $(pwd)/build:/build test -- cp -rg /documentation/build /build
 
 
 .beta: &beta-script |
   docker build -t private.parrot.run/documentation:beta .
   echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
-  docker push private.parrot.run/documentationg:beta
+  docker push private.parrot.run/documentation:beta
 
 
 .prod: &prod-script |
   docker build -t private.parrot.run/documentation:latest .
   echo $DOCKER_REGISTRY_PASSWORD | docker login -u $DOCKER_REGISTRY_USER --password-stdin
-  docker push private.parrot.run/documentationg:latest
+  docker push private.parrot.run/documentation:latest
 
 
 
