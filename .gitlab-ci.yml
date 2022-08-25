@@ -4,7 +4,7 @@ services:
 .test: &test-script |
   docker build -t test .
   mkdir -p build
-  docker run --rm -v $(pwd)/build:/build test -- cp -rg /documentation/build /build
+  docker run --rm -v $(pwd)/build:/build test -- cp -r /usr/share/nginx/html/ /build
 
 
 .beta: &beta-script |
