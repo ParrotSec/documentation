@@ -1,0 +1,13 @@
+services:
+  - docker:dind
+
+stages:
+  - build
+
+docker_build:
+  stage: build
+  image: docker:latest
+  script:
+    - docker build -t private.parrot.run/documentation:latest .
+    - docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD
+    - docker push private.parrot.run/documentation:latest

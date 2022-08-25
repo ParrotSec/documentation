@@ -1,10 +1,6 @@
-FROM alpine:latest AS base
-LABEL maintainer="danterolle@parrotsec.org"
-
 # DEVELOPMENT TARGET
-FROM base AS development
+FROM node:16 AS development
 
-RUN apk add nodejs yarn
 COPY ./ /documentation/
 WORKDIR /documentation/
 
@@ -15,9 +11,8 @@ ENTRYPOINT [ "/usr/bin/yarn" ]
 CMD [ "start", "--host", "0.0.0.0" ]
 
 # PRODUCTION TARGET
-FROM base AS production
+FROM node:16 AS production
 
-RUN apk add nodejs yarn
 COPY ./ /documentation/
 WORKDIR /documentation/
 
@@ -28,5 +23,3 @@ FROM nginx:stable-alpine AS deploy
 
 WORKDIR /documentation/
 COPY --from=production /documentation/build /usr/share/nginx/html/
-
-CMD [ "nginx", "-g", "daemon off;" ]
