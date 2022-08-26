@@ -7,8 +7,8 @@ WORKDIR /documentation/
 RUN yarn install
 EXPOSE 3000
 
-ENTRYPOINT [ "/usr/bin/yarn" ]
-CMD [ "start", "--host", "0.0.0.0" ]
+ENTRYPOINT [ "yarn" ]
+CMD [ "start" ]
 
 # PRODUCTION TARGET
 FROM docker.parrot.run/library/node:16 AS production

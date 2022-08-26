@@ -6,19 +6,15 @@ services:
   mkdir -p build
   docker run --rm -v $(pwd)/build:/build test -- cp -r /usr/share/nginx/html/ /build
 
-
 .beta: &beta-script |
   docker build -t private.parrot.run/documentation:beta .
   docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD private.parrot.run
   docker push private.parrot.run/documentation:beta
 
-
 .prod: &prod-script |
   docker build -t private.parrot.run/documentation:latest .
   docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PASSWORD private.parrot.run
   docker push private.parrot.run/documentation:latest
-
-
 
 build_production:
   stage: build
