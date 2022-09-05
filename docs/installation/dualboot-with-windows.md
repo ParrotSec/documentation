@@ -6,7 +6,9 @@ sidebar_position: 2
 
 It's possible to install ParrotOS alongside Windows, thanks to GRUB and a correct partitioning. 
 
-**NOTE:** Disable Secure Boot and CSM from UEFI settings in your machine.
+:::info Note
+  Disable Secure Boot and CSM from UEFI settings in your machine.
+:::
 
 After following the steps for setting the [Parrot Installation](./) before partitioning, the situation will be similar to this:
 
