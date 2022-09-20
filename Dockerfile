@@ -1,7 +1,7 @@
 # DEVELOPMENT TARGET
 FROM parrot.run/core:5 AS development
 
-RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg -t parrot-backports && apt clean
+RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg -t parrot && apt clean
 
 COPY ./ /documentation/
 WORKDIR /documentation/
@@ -14,7 +14,7 @@ CMD [ "start" ]
 # PRODUCTION TARGET
 FROM parrot.run/core:5 AS production
 
-RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg -t parrot-backports && apt clean
+RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg -t parrot && apt clean
 
 COPY ./ /documentation/
 WORKDIR /documentation/
