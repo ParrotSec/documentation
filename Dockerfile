@@ -1,17 +1,20 @@
 # DEVELOPMENT TARGET
-FROM docker.parrot.run/library/node:16 AS development
+FROM parrot.run/core:5 AS development
+
+RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg && apt clean
 
 COPY ./ /documentation/
 WORKDIR /documentation/
 
 RUN yarn install
-EXPOSE 3000
 
 ENTRYPOINT [ "yarn" ]
 CMD [ "start" ]
 
 # PRODUCTION TARGET
-FROM docker.parrot.run/library/node:16 AS production
+FROM parrot.run/core:5 AS production
+
+RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg && apt clean
 
 COPY ./ /documentation/
 WORKDIR /documentation/
