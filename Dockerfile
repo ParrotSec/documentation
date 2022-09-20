@@ -1,10 +1,9 @@
 # PRODUCTION TARGET
-FROM parrot.run/core:5 AS build
-
-RUN apt update && apt -y upgrade && apt -y install nodejs npm yarnpkg -t parrot && apt clean && ln -s /usr/bin/yarnpkg /usr/bin/yarn
+FROM docker.parrot.run/library/node:16 AS build
 
 COPY ./ /documentation/
 WORKDIR /documentation/
+RUN yarn install
 RUN yarn run build
 
 # DEPLOY
