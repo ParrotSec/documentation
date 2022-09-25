@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Launch a container
 
-    docker run --name pcore-1 -ti parrotsec/core
+    docker run --name pcore-1 -ti parrot.run/core
 
 :::info Note
   the pcore-1 name is arbitrary and can be customized.
@@ -32,15 +32,15 @@ sidebar_position: 2
 
 on terminal 1:
 
-    docker run --name pentest1 -ti parrotsec/security
+    docker run --name pentest1 -ti parrot.run/security
 
 on terminal 2: 
     
-    docker run --name pentest2 -ti parrotsec/security
+    docker run --name pentest2 -ti parrot.run/security
 
 on terminal 3: 
     
-    docker run --name msf-listener -ti parrotsec/tools-metasploit
+    docker run --name msf-listener -ti parrot.run/metasploit
 
 ### Remove all the containers
 
@@ -48,7 +48,7 @@ on terminal 3:
 
 ### Start a container and automatically remove it on exit
 
-    docker run --rm -ti parrotsec/core
+    docker run --rm -ti parrot.run/core
 
 ## Use Volumes to share files with the host:
 
@@ -56,21 +56,21 @@ It is a good practice to not keep persistent docker containers, but to remove th
 
 The following command creates a **work** folder inside the current directory and mounts it in */work* inside the container.
 
-    docker run --rm -ti -v $PWD/work:/work parrotsec/core
+    docker run --rm -ti -v $PWD/work:/work parrot.run/core
 
 ### Use Volumes to share files across multiple containers
 
 on terminal 1:
 
-    docker run --name pentest -ti -v $PWD/work:/work parrotsec/security
+    docker run --name pentest -ti -v $PWD/work:/work parrot.run/security
 
 on terminal 2: 
 
-    docker run --rm --network host -v $PWD/work:/work -ti parrotsec/security
+    docker run --rm --network host -v $PWD/work:/work -ti parrot.run/security
 
 on terminal 3: 
     
-    docker run --rm -v $PWD/work:/work -ti parrotsec/tools-metasploit
+    docker run --rm -v $PWD/work:/work -ti parrot.run/metasploit
 
 ### Open a port from the container to the host
 
@@ -80,7 +80,7 @@ All the traffic from within the docker container will be NATted by the host comp
 
 If you need to expose a port to other machines outside your local computer, use the following example:
 
-    docker run --rm -p 8080:80 -ti parrotsec/core
+    docker run --rm -p 8080:80 -ti parrot.run/core
 
 Note that the first port is the port that will be opened on your host, and the second one is the container port to bind to.
 
@@ -102,7 +102,7 @@ All the traffic from within the docker container will be NATted by the host comp
 
 If you need to make the docker container share the same networking space of the host machine, then use the **--network host** flag as shown below
 
-    docker run --rm --network host -ti parrotsec/core
+    docker run --rm --network host -ti parrot.run/core
 
 :::info Note 1
   Every port opened in the container will be opened on the host as well.
