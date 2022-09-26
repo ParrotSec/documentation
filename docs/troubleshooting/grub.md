@@ -12,7 +12,7 @@ In order to repair GRUB:
 
 ## Step 1 - Pick up ParrotOS Live ISO
 
-[Download](https://parrotsec.org/download/) the latest ParrotOS .iso, [flash it onto an USB drive](https://parrotsec.org/docs/how-to-create-a-parrot-usb-drive.html) and boot it.
+[Download](https://parrotsec.org/download/) the latest ParrotOS .iso, [flash it onto an USB drive](../usb/how-to-create-a-parrot-usb-drive) and boot it.
 
 ## Step 2 - Disk and partition identification
 

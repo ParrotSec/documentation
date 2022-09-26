@@ -16,9 +16,9 @@ You need a USB drive of at least 8 GB for Security Edition and 4 GB for Home Edi
 
 A quick summary of which tools you can use to create your Parrot USB:
 
-- [Balena Etcher](<#how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-balena-etcher>)
-- [DD command line tool](<#how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-dd-command-line-tool>)
-- [ROSA image writer](<#how-to-create-a-parrot-usb-drive.html#parrot-usb-boot-procedure-using-rosa-image-writer>)
+- [Balena Etcher](how-to-create-a-parrot-usb-drive#parrot-usb-boot-procedure-using-balena-etcher)
+- [DD command line tool](how-to-create-a-parrot-usb-drive#parrot-usb-boot-procedure-using-dd-command-line-tool)
+- [ROSA image writer](how-to-create-a-parrot-usb-drive#parrot-usb-boot-procedure-using-rosa-image-writer)
 
 
 ## Parrot USB boot procedure using Balena Etcher

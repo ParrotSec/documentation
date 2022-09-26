@@ -1,4 +1,4 @@
-# ParrotOS on Raspberry Pi.
+# ParrotOS on Raspberry Pi
 
 One of the novelties of Parrot 5.x is the version dedicated to Raspberry Pi devices. From now on you can harness the full power of ParrotOS on your Raspberry!
 
