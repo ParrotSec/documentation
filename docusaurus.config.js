@@ -84,7 +84,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://nest.parrotsec.org',
+            href: 'https://gitlab.com/parrotsec',
             label: 'GitLab',
             position: 'right',
           },
@@ -132,7 +132,7 @@ const config = {
             items: [
               {
                 label: 'GitLab',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://gitlab.com/parrotsec',
               },
               {
                 label: 'GitHub',
