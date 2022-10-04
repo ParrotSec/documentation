@@ -171,6 +171,7 @@ const config = {
       [
         '@docusaurus/plugin-content-docs',
         {
+          id: "d1",
           path: 'docs'
         },
       ],
