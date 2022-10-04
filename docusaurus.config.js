@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/palenight');
 const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -165,7 +166,15 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
+    
+    plugins: [
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          path: 'docs'
+        },
+      ],
+    ],
   /*
   customFields: {
 		wallpaper: 'parrot_desktop.png',
