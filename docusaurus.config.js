@@ -91,7 +91,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         links: [
           {
             title: 'Social',
@@ -166,9 +166,11 @@ const config = {
       },
     }),
 
+  /*
   customFields: {
 		wallpaper: 'parrot_desktop.png',
 	},
+  */
 };
 
 module.exports = config;
