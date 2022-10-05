@@ -166,16 +166,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    
-    plugins: [
-      [
-        '@docusaurus/plugin-content-docs',
-        {
-          id: "d1",
-          path: 'docs'
-        },
-      ],
-    ],
   /*
   customFields: {
 		wallpaper: 'parrot_desktop.png',
