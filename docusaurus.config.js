@@ -10,7 +10,7 @@ const config = {
   title: 'ParrotOS Documentation',
   tagline: 'An important part of any operating system is documentation, the technical manuals which describe the operation and use of programs. As part of its efforts to create a high-quality free operating system, the Parrot Project is making every effort to provide all of its users with proper documentation in an easily accessible form.',
   url: 'https://parrotsec.org',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -35,6 +35,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/'
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -92,7 +93,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Social',

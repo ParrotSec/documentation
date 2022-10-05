@@ -7,7 +7,7 @@ const FeatureList = [
   {
     id: 1,
     title: 'Introduction',
-    url: '/docs/category/introduction',
+    url: '/introduction',
     Svg: require('@site/static/img/feature_images/getstarted.svg').default,
     description: (
       <>
@@ -18,7 +18,7 @@ const FeatureList = [
   {
     id: 2,
     title: 'Installation',
-    url: '/docs/installation',
+    url: '/installation/',
     Svg: require('@site/static/img/feature_images/installation.svg').default,
     description: (
       <>
@@ -30,7 +30,7 @@ const FeatureList = [
   {
     id: 3,
     title: 'Virtualization',
-    url: '/docs/category/virtualization',
+    url: '/category/virtualization/',
     Svg: require('@site/static/img/feature_images/virtualization.svg').default,
     description: (
       <>
@@ -42,7 +42,7 @@ const FeatureList = [
   {
     id: 4,
     title: 'Configuration',
-    url: '/docs/category/configuration',
+    url: '/category/configuration',
     Svg: require('@site/static/img/feature_images/config.svg').default,
     description: (
       <>
@@ -54,7 +54,7 @@ const FeatureList = [
   {
     id: 5,
     title: 'Cloud',
-    url: '/docs/category/cloud',
+    url: '/category/cloud',
     Svg: require('@site/static/img/feature_images/cloud.svg').default,
     description: (
       <>
@@ -65,7 +65,7 @@ const FeatureList = [
   {
     id: 6,
     title: 'USB',
-    url: '/docs/usb/how-to-create-a-parrot-usb-drive',
+    url: '/category/usb',
     Svg: require('@site/static/img/feature_images/usb.svg').default,
     description: (
       <>
@@ -77,7 +77,7 @@ const FeatureList = [
   {
     id: 7,
     title: 'Troubleshooting',
-    url: '/docs/category/troubleshooting',
+    url: '/category/troubleshooting',
     Svg: require('@site/static/img/feature_images/troubleshooting.svg').default,
     description: (
       <>
@@ -89,7 +89,7 @@ const FeatureList = [
   {
     id: 8,
     title: 'Tools',
-    url: '/docs/category/tools',
+    url: '/category/tools',
     Svg: require('@site/static/img/feature_images/tools.svg').default,
     description: (
       <>
@@ -101,7 +101,7 @@ const FeatureList = [
   {
     id: 9,
     title: 'Mirrors',
-    url: '/docs/mirrors/mirrors-list',
+    url: '/mirrors/mirrors-list',
     Svg: require('@site/static/img/feature_images/mirrors.svg').default,
     description: (
       <>
