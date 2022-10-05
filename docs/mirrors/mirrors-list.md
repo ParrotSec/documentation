@@ -56,6 +56,7 @@ The APT package manager uses `/etc/apt/sources.list` and any *.list* file found 
 |:----------------------------------|:---------------:|:-----|:-------------------|
 |Massachussetts<br />MIT<br />1 Gbps|SIPB MIT|[mirrors.mit.edu/parrot](http://mirrors.mit.edu/parrot/)|<sub>deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free</sub>|
 |New York<br />Clarkson<br />1 Gbps|Clarkson University|[mirror.clarkson.edu/parrot](https://mirror.clarkson.edu/parrot/)|<sub>deb https://mirror.clarkson.edu/parrot/ parrot main contrib non-free</sub>|
+|New Jersey<br />Princeton<br />1 Gbps|Princeton University|[mirror.math.princeton.edu/pub/parrot/](https://mirror.math.princeton.edu/pub/parrot/)|<sub>deb https://mirror.math.princeton.edu/pub/parrot/ parrot main contrib non-free</sub>|
 |Oregon<br />Osuosl<br />1 Gbps|Oregon State University - Open Source Lab|[ftp.osuosl.org/pub/parrotos](https://ftp.osuosl.org/pub/parrotos)|<sub>deb https://ftp.osuosl.org/pub/parrotos parrot main contrib non-free</sub>|
 |California<br />Berkeley<br />1 Gbps|Berkeley Open Computing Facility|[mirrors.ocf.berkeley.edu/parrot](http://mirrors.ocf.berkeley.edu/parrot)|<sub>deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free</sub>|
 |Virginia<br />Leaseweb<br />10 Gbps|Leaseweb|[mirror.wdc1.us.leaseweb.net/parrot](https://mirror.wdc1.us.leaseweb.net/parrot)|<sub>deb https://mirror.wdc1.us.leaseweb.net/parrot parrot main contrib non-free</sub>|
