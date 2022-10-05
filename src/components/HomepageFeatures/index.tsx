@@ -7,7 +7,7 @@ const FeatureList = [
   {
     id: 1,
     title: 'Introduction',
-    url: '/introduction',
+    url: '/category/introduction',
     Svg: require('@site/static/img/feature_images/getstarted.svg').default,
     description: (
       <>
