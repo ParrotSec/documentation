@@ -1,6 +1,7 @@
 # Dependencies
 yarn.lock
 /node_modules
+.idea
 
 # Production
 /build
