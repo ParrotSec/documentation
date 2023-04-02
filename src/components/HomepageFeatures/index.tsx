@@ -34,8 +34,8 @@ const FeatureList = [
     Svg: require('@site/static/img/feature_images/virtualization.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        A brief overview of the virtualization softwares supported by ParrotOS, such as VirtualBox and VMware, 
+        and how to install and configure them.
       </>
     ),
   },
